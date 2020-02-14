@@ -48,9 +48,36 @@
   }
 }
 
-.site-logo img {
-  max-height: 2rem;
-  cursor:pointer;
+.site-logo { 
+    max-height: 2rem;
+    cursor:pointer;
+    &.dark {
+        background: url("/assets/images/logos/rec-dark.png") no-repeat;
+        background-size: contain;
+        &:hover {
+            background: url("/assets/images/logos/rec-light.png") no-repeat;
+            background-size: contain;
+            -moz-box-shadow:    3px 3px 6px 7px #fff;
+            -webkit-box-shadow: 3px 3px 6px 7px #fff;
+            box-shadow:         3px 3px 6px 7px #fff;
+        }
+    }
+
+    &.light {
+        background: url("/assets/images/logos/rec-light.png") no-repeat;
+        background-size: contain;
+        &:hover {
+            background: url("/assets/images/logos/rec-dark.png") no-repeat;
+            background-size: contain;
+            -moz-box-shadow:    3px 3px 6px 7px rgb(38, 42, 50);
+            -webkit-box-shadow: 3px 3px 6px 7px rgb(38, 42, 50);
+            box-shadow:         3px 3px 6px 7px rgb(38, 42, 50);
+        }
+    }
+    img {
+        max-height: 2rem;
+        cursor:pointer;
+    }
 }
 
 .site-title {
