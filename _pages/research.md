@@ -44,7 +44,7 @@ mda:
     excerpt: "**Multimodal Dialogue Processing**: Research on building dialogue systems that converse with humans naturally has recently attracted a lot of attention. Most work on this area assumes text-based conversation, where the user message is modeled as a sequence of words in a vocabulary. Real-world human conversation, in contrast, involves other modalities, such as voice, facial expression and body language, which can influence the conversation significantly in certain scenarios. In this project, we are exploring the impact of incorporating the audio features of the user message into generative dialogue systems." 
 ---
 
-We engage ourselves in multiple research topics with the aim to improve semantic understanding of media and to build simple yet intuitive algorithms. We are always on the lookout to explore interesting directions and our motto is to generate *impactful research*. 
+At the DeCLaRe Lab, we engage ourselves in multiple research topics with the aim to improve semantic understanding of media and to build simple yet intuitive algorithms. We are always on the lookout to explore interesting directions and our motto is to generate *impactful research*.
 
 Our current research interests can be broadly categorized as: 
 
