@@ -16,20 +16,20 @@ articlecolour: "#00001a"
 
 soujanya:
   - image_path: /assets/images/people/soujanya.JPG
-    excerpt: "**Soujanya Poria** is an assistant professor at Singapore University of Technology and Design. His research interests include natural language processing, multimodal sentiment analysis, dialogue systems."
+    excerpt: "**Soujanya Poria** is an assistant professor at Singapore University of Technology and Design and a senior member at the DeCLaRe Lab. His research interests include natural language processing, multimodal sentiment analysis, dialogue systems."
     btn_label: "Read More"
     url: "https://people.sutd.edu.sg/~sporia/"
     btn_class: "btn btn--primary btn--small"
 navonil:
   - image_path: /assets/images/people/navo.jpg
-    excerpt: "**Navonil Mazumder** is a scientist at Singapore University of Technology and Design. He is doing research on conversation analysis and multimodal sentiment analysis."
+    excerpt: "**Navonil Mazumder** is a scientist at the DeCLaRe Lab, Singapore University of Technology and Design. He is doing research on conversation analysis and multimodal sentiment analysis."
     url: "https://nlp.cic.ipn.mx/~navonil/"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
 
 devamanyu:
   - image_path: /assets/images/people/devamanyu.jpg
-    excerpt: "**Devamanyu Hazarika** is a senior Ph.D. candidate at NUS Singapore. He is advised by Dr. Roger Zimmermann and Dr. Soujanya Poria. His research analyzes contextual affective systems, which has applications in multimodal emotional conversations, and computational sarcasm analysis."
+    excerpt: "**Devamanyu Hazarika** is a senior Ph.D. candidate at NUS Singapore. He is advised by Dr. Roger Zimmermann and Dr. Soujanya Poria. At DeCLaRe Lab, his research focuses contextual affective systems, which has applications in multimodal emotional conversations, and computational sarcasm analysis."
     url: "http://devamanyu.com"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
@@ -38,38 +38,38 @@ devamanyu:
 
 deepanway:
   - image_path: /assets/images/people/deepanway.jpeg
-    excerpt: "**Deepanway Ghosal** is currently a Ph.D. student at ISTD in Singapore University of Technology and Design advised by Dr. Soujanya Poria. His research interest is in the areas of graph neural networks and commonsense reasoning for natural language processing."
+    excerpt: "**Deepanway Ghosal** is currently a Ph.D. student at the DeCLaRe Lab in Singapore University of Technology and Design advised by Dr. Soujanya Poria. His research interest is in the areas of graph neural networks and commonsense reasoning for natural language processing."
     url: "https://deepanwayx.github.io/"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
    
 hui:
   - image_path: /assets/images/people/hui_chen.jpg
-    excerpt: "**Hui Chen** is currently a Ph.D. student advised by Dr. Soujanya Poria at ISTD in Singapore University of Technology and Design since January 2019. Her research interests include natural language processing and multimodal analysis."
+    excerpt: "**Hui Chen** is currently a Ph.D. student advised by Dr. Soujanya Poria at the DeCLaRe Lab in Singapore University of Technology and Design since January 2019. Her research interests include natural language processing and multimodal analysis."
     url: "https://chchenhui.github.io/"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
 
 rishabh:
   - image_path: /assets/images/people/rishabh.jpg
-    excerpt: "**Rishabh Bhardwaj** is a first-year Ph.D. student at SUTD. Before joining SUTD, he was a researcher in School of Computing at National University of Singapore. His noticeable research experiences include research summer at University of Alberta, Canada via Mitacs Scholarship and CEERI Pilani, an Indian institute dedicated to research."
+    excerpt: "**Rishabh Bhardwaj** is a first-year Ph.D. student at the DeCLaRe Lab, SUTD. Before joining the DeCLaRe Lab, he was a researcher in School of Computing at National University of Singapore. His noticeable research experiences include research summer at University of Alberta, Canada via Mitacs Scholarship and CEERI Pilani, an Indian institute dedicated to research."
 
 shunqi:
   - image_path: /assets/images/people/shunqi_wang.jpeg
-    excerpt: "**Shunqi Wang** was an undergraduate student at SUTD, and is now a Ph.D. student advised by Dr. Soujanya Poria and Dr. Cheung Ngai-man. His research directions include computer vision, natural language processing and multi-modality."
+    excerpt: "**Shunqi Wang** was an undergraduate student at SUTD, and is now a Ph.D. student advised by Dr. Soujanya Poria and Dr. Cheung Ngai-man at the the DeCLaRe Lab. His research directions include computer vision, natural language processing and multi-modality."
 
 
 
 jiankun:
   - image_path: /assets/images/people/jiankun.jpeg
-    excerpt: "**Jiankun Lu** is a final year ISTD student at SUTD. His main area of  interests is natural language processing."
+    excerpt: "**Jiankun Lu** is a final year ISTD student at SUTD and a junior member at the DeCLaRe Lab. His main area of  interests is natural language processing."
     url: "https://www.linkedin.com/in/jiankun-lu-314b38150/"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
 
 shanshan:
   - image_path: /assets/images/people/shanshan.jpeg
-    excerpt: "**Shanshan Peng** is a final year undergraduate student at SUTD. Her research interests include machine translation, sentiment analysis, and language modeling."
+    excerpt: "**Shanshan Peng** is a final year undergraduate student at SUTD and a junior member at the DeCLaRe Lab. Her research interests include machine translation, sentiment analysis, and language modeling."
     url: "https://www.linkedin.com/in/shanshan-peng-a9b674146/"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
@@ -169,7 +169,7 @@ rajiv:
      
 ---
 
-We have an amazing team of researchers comprising of PhD Students, Senior Researchers, and Collaborators. 
+We have an amazing team of researchers comprising of PhD Students, Senior Researchers, and Collaborators at the DeCLaRe Lab. 
 
 
 
