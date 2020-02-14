@@ -7,13 +7,14 @@ related: false
 
 
 logo:
-  - image_path: /assets/images/logo-sq-color-correct-new2.png
+  - image_path: /assets/images/logos/square-light.png
+    id: "big-home-logo"
     excerpt: "Welcome fellow researchers! We hereby **DeCLaRE** our quest to breathe _cognitive_ and _language_ skills of human-like depth into machines by solving challenging NLP problems, such as, dialogue comprehension and generation, commonsense reasoning, multimodal understanding, and more. Addressing such open research problems requires powerful, scalable, and data-hungry algorithms. As such, we develop cutting-edge neural models, based on sound linguistic concepts. To know more about our work, please browse our catalog of [publications](/publications/).
     <br>
     <br>
     > *Intrigued by our logo? [Read](/assets/images/logo-explanation.pdf) the story behind it.*"
 ---
-{% include feature_row id="logo" type="left" %}
+{% include feature_row_home_img id="logo" type="left" %}
 
 ### News
 

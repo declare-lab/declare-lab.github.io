@@ -9,7 +9,6 @@
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
-  <script src="{{ '/assets/js/skinToggle.js' | relative_url }}"></script>
   <head>
     {% include head.html %}
     {% include head/custom.html %}
@@ -23,6 +22,18 @@
     <div class="initial-content">
       {{ content }}
     </div>
+    <script src="{{ '/assets/js/skinToggle.js' | relative_url }}"></script>
+    <script>
+        let darkMode = localStorage.getItem("darkMode");
+
+        if (darkMode === "enabled") {
+            enableDarkMode();
+        }
+        else {
+            disableDarkMode();
+        }
+    </script>
+
 
     {% if site.search == true %}
       <div class="search-content">
