@@ -9,6 +9,7 @@
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+  <script src="{{ '/assets/js/skinToggle.js' | relative_url }}"></script>
   <head>
     {% include head.html %}
     {% include head/custom.html %}
@@ -22,15 +23,26 @@
     <div class="initial-content">
       {{ content }}
     </div>
-    <script src="{{ '/assets/js/skinToggle.js' | relative_url }}"></script>
     <script>
         let darkMode = localStorage.getItem("darkMode");
 
         if (darkMode === "enabled") {
-            enableDarkMode();
+            var link = document.getElementById('nav-bar-logo');
+            link.src =  link.src.replace('light', 'dark');
+            link = document.getElementById('dark-toggle-link');
+            link.href =  link.href.replace('light', 'dark');
+            e = document.getElementById('big-home-logo');
+            if (e !== null)
+                e.src = e.src.replace('light', 'dark');
         }
         else {
-            disableDarkMode();
+            var link = document.getElementById('nav-bar-logo');
+            link.src =  link.src.replace('dark', 'light');
+            link = document.getElementById('dark-toggle-link');
+            link.href =  link.href.replace('dark', 'light');
+            e = document.getElementById('big-home-logo');
+            if (e !== null)
+                e.src = e.src.replace('dark', 'light');
         }
     </script>
 
@@ -49,6 +61,23 @@
     </div>
 
     {% include scripts.html %}
+
+    <script>
+        if (darkMode === "enabled") {
+            var e = document.getElementById('dark-toggle');
+            if (e !== null)
+                e.classList.add('fa-toggle-on');
+                if (e !== null)
+                    e.classList.remove('fa-toggle-off');
+        }
+        else {
+            var e = document.getElementById('dark-toggle');
+            if (e !== null)
+                e.classList.add('fa-toggle-off');
+                if (e !== null)
+                    e.classList.remove('fa-toggle-on');
+        }
+    </script>
 
   </body>
 </html>

@@ -8,11 +8,15 @@
 // }
 
 function disableDarkMode() {
-    var link = document.getElementById('dark-toggle-link');
-    let temp =  link.href.replace('main', 'light');
-    link.href =  temp.replace('dark', 'light');
-    var e = document.getElementById('dark-toggle').children[0];
-    e.src = e.src.replace('dark', 'light');
+    var link = document.getElementById('nav-bar-logo');
+    link.src =  link.src.replace('dark', 'light');
+    link = document.getElementById('dark-toggle-link');
+    link.href =  link.href.replace('dark', 'light');
+    var e = document.getElementById('dark-toggle');
+    if (e !== null)
+        e.classList.add('fa-toggle-off');
+        if (e !== null)
+            e.classList.remove('fa-toggle-on');
     e = document.getElementById('big-home-logo');
     if (e !== null)
         e.src = e.src.replace('dark', 'light');
@@ -20,11 +24,15 @@ function disableDarkMode() {
 }
 
 function enableDarkMode() {
-    var link = document.getElementById('dark-toggle-link');
-    let temp =  link.href.replace('main', 'dark');
-    link.href =  temp.replace('light', 'dark');
-    var e = document.getElementById('dark-toggle').children[0];
-    e.src = e.src.replace('light', 'dark');
+    var link = document.getElementById('nav-bar-logo');
+    link.src =  link.src.replace('light', 'dark');
+    link = document.getElementById('dark-toggle-link');
+    link.href =  link.href.replace('light', 'dark');
+    var e = document.getElementById('dark-toggle');
+    if (e !== null)
+        e.classList.add('fa-toggle-on');
+        if (e !== null)
+            e.classList.remove('fa-toggle-off');
     e = document.getElementById('big-home-logo');
     if (e !== null)
         e.src = e.src.replace('light', 'dark');
