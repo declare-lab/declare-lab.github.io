@@ -8,6 +8,7 @@ $(window).on("load", function() {
   var $btn = $("nav.greedy-nav .greedy-nav__toggle");
   var $vlinks = $("nav.greedy-nav .visible-links");
   var $hlinks = $("nav.greedy-nav .hidden-links");
+  var $sitelogo = $("#nav-bar-logo");
 
   var numOfItems = 0;
   var totalSpace = 0;
@@ -25,7 +26,7 @@ $(window).on("load", function() {
 
   function check() {
     // Get instant state
-    availableSpace = $vlinks.width() - $btn.width();
+    availableSpace = $vlinks.width() - $btn.width() - $sitelogo.width();
     numOfVisibleItems = $vlinks.children().length;
     requiredSpace = breakWidths[numOfVisibleItems - 1];
 
