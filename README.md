@@ -1,1 +1,1 @@
-The website is available on https://declare-lab.net
+The website is available on https://declare-lab.github.io
