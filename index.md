@@ -21,7 +21,7 @@ logo:
 <div class="notice--success">
   <h4>New paper</h4>
   <p>
-    New paper on Sentiment Analysis - Beneath the Tip of the Iceberg: Current Challenges and New Directions in Sentiment Analysis Research [Read here](/assets/pdfs/Sentiment_Analysis_New_Directions.pdf).
+    New paper on Sentiment Analysis - Beneath the Tip of the Iceberg: Current Challenges and New Directions in Sentiment Analysis Research <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Sentiment_Analysis_New_Directions.pdf">Read here</a>.
   </p>
 </div>
 <div class="notice--info">
