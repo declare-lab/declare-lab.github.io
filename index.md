@@ -18,6 +18,12 @@ logo:
 
 ### News
 
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
+    New paper on Sentiment Analysis - Beneath the Tip of the Iceberg: Current Challenges and New Directions in Sentiment Analysis Research <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Sentiment_Analysis_New_Directions.pdf">[Read here].</a>
+  </p>
+</div>
 <div class="notice--info">
   <h4>Opening</h4>
   <p>We have a number of openings to join us at the DeCLaRe Lab as postdocs and research assistants/associates. Drop an email to <a href="mailto:sporia@sutd.edu.sg">Soujanya</a></p>
@@ -34,11 +40,8 @@ logo:
   	The DeCLaRe lab secured funding from DSO for a project on complex question answering. Thank you, DSO!
   </p>
   </div>
-  <div class="notice--success">
+<div class="notice--success">
   <h4>New paper</h4>
-  <p>
-    New paper on Sentiment Analysis - Beneath the Tip of the Iceberg: Current Challenges and New Directions in Sentiment Analysis Research <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Sentiment_Analysis_New_Directions.pdf">[Read here].</a>
-  </p>
   <p>
   	New paper on transfer learning - Hazarika, Devamanyu, Soujanya Poria, Roger Zimmermann, and Rada Mihalcea. "Emotion Recognition in Conversations with Transfer Learning from Generative Conversation Modeling. <a href="https://arxiv.org/pdf/1910.04980">[Download the paper].</a>
   </p>
