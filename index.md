@@ -37,6 +37,9 @@ logo:
   <div class="notice--success">
   <h4>New paper</h4>
   <p>
+    New paper on Sentiment Analysis: Beneath the Tip of the Iceberg: Current Challenges and New Directions in Sentiment Analysis Research <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Sentiment_Analysis_New_Directions.pdf">[Read here].</a>
+  </p>
+  <p>
   	New paper on transfer learning - Hazarika, Devamanyu, Soujanya Poria, Roger Zimmermann, and Rada Mihalcea. "Emotion Recognition in Conversations with Transfer Learning from Generative Conversation Modeling. <a href="https://arxiv.org/pdf/1910.04980">[Download the paper].</a>
   </p>
 </div>
