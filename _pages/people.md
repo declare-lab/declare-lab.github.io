@@ -45,7 +45,7 @@ deepanway:
    
 hui:
   - image_path: /assets/images/people/hui_chen.jpg
-    excerpt: "**Hui Chen** is currently a Ph.D. student advised by Dr. Soujanya Poria at the DeCLaRe Lab in Singapore University of Technology and Design since January 2019. Her research interests include natural language processing and multimodal analysis."
+    excerpt: "**Hui Chen** is currently a Ph.D. student advised by Dr. Soujanya Poria at the DeCLaRe Lab in Singapore University of Technology and Design since January 2019. Before that, she obtained her B.Eng degree in Computer Science and Technology from Zhejiang University, China. Her research interests include natural language processing and multimodal analysis."
     url: "https://chchenhui.github.io/"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
