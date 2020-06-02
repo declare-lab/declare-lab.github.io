@@ -58,6 +58,12 @@ shunqi:
   - image_path: /assets/images/people/shunqi_wang.jpeg
     excerpt: "**Shunqi Wang** was an undergraduate student at SUTD, and is now a Ph.D. student advised by Dr. Soujanya Poria and Dr. Cheung Ngai-man at the the DeCLaRe Lab. His research directions include computer vision, natural language processing and multi-modality."
 
+henryhan:
+  - image_path: /assets/images/people/henryhan.jpeg
+    excerpt: "**Wei Han** is an incoming Ph.D. student advised by Dr. Soujanya Poria at the DeCLaReLab in Singapore University of Technology and Design since Sept. 2020. Before joining DeCLaRe Lab, he was an Mphil student in the department of electronic and computer engineering in HKUST. His research interests include natural language processing and deep learning."
+    url: "https://github.com/Clement25"
+    btn_label: "Read More"
+    btn_class: "btn btn--primary btn--small"
 
 
 jiankun:
@@ -74,6 +80,13 @@ shanshan:
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
     
+pengfei:
+  - image_path: /assets/images/people/hongpengfei.jpg
+    excerpt: "**Hong Pengfei** is a final year undergraduate student at SUTD and a junior member at the DeCLaRe Lab. His research interests include statistical machine learning as well as deep learning, such as Dialog System, Discourse Parsing, Named Entity Recognition, Relation Extraction and Knowledge Graph."
+    url: "https://github.com/Emrys-Hong"
+    btn_label: "Read More"
+    btn_class: "btn btn--primary btn--small"
+
 
 
 rada:
@@ -193,12 +206,15 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
 
 {% include feature_row2 id="shunqi" type="left" %}
 
+{% include feature_row2 id="henryhan" type="left" %}
+
 ## Undergraduates
 
 {% include feature_row2 id="jiankun" type="left" %}
 
 {% include feature_row2 id="shanshan" type="left" %}
 
+{% include feature_row2 id="pengfei" type="left" %}
 
 ## Collaborators
 
