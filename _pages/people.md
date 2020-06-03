@@ -65,6 +65,13 @@ henryhan:
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
 
+timothy:
+  - image_path: /assets/images/people/timothy.jpg
+    excerpt: "**Timothy** is a final year undergraduate student and an incoming Ph.D student at SUTD. His main research interests include Natural Language Processing with Deep Learning (DL), explainable DL and performance execution of DL models. He is also passionate about making DL more accessible to various audiences."
+    url: "https://github.com/tlkh"
+    btn_label: "Read More"
+    btn_class: "btn btn--primary btn--small"
+
 
 jiankun:
   - image_path: /assets/images/people/jiankun.jpeg
@@ -207,6 +214,8 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
 {% include feature_row2 id="shunqi" type="left" %}
 
 {% include feature_row2 id="henryhan" type="left" %}
+
+{% include feature_row2 id="timothy" type="left" %}
 
 ## Undergraduates
 
