@@ -67,7 +67,7 @@ henryhan:
 
 timothy:
   - image_path: /assets/images/people/timothy.jpg
-    excerpt: "**Timothy** is a final year undergraduate student and an incoming Ph.D student at SUTD. His main research interests include Natural Language Processing with Deep Learning (DL), explainable DL and performance execution of DL models. He is also passionate about making DL more accessible to various audiences."
+    excerpt: "**Timothy** is a final year undergraduate student and an incoming Ph.D. student at SUTD. His main research interests include Natural Language Processing with Deep Learning (DL), explainable DL and performance execution of DL models. He is also passionate about making DL more accessible to various audiences."
     url: "https://github.com/tlkh"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
