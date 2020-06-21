@@ -67,7 +67,7 @@ henryhan:
 
 timothy:
   - image_path: /assets/images/people/timothy.jpg
-    excerpt: "**Timothy** is a final year undergraduate student and an incoming Ph.D. student at SUTD. His main research interests include Natural Language Processing with Deep Learning (DL), explainable DL and performance execution of DL models. He is also passionate about making DL more accessible to various audiences."
+    excerpt: "**Timothy Liu** is a final year undergraduate student and an incoming Ph.D. student at SUTD. His main research interests include Natural Language Processing with Deep Learning (DL), explainable DL and performance execution of DL models. He is also passionate about making DL more accessible to various audiences."
     url: "https://github.com/tlkh"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
@@ -89,7 +89,7 @@ shanshan:
     
 pengfei:
   - image_path: /assets/images/people/hongpengfei.jpg
-    excerpt: "**Hong Pengfei** is a final year undergraduate student at SUTD and a junior member at the DeCLaRe Lab. His research interests include statistical machine learning as well as deep learning, such as Dialog System, Discourse Parsing, Named Entity Recognition, Relation Extraction and Knowledge Graph."
+    excerpt: "**Pengfei Hong** is a final year undergraduate student at SUTD and a junior member at the DeCLaRe Lab. His research interests include statistical machine learning as well as deep learning, such as Dialog System, Discourse Parsing, Named Entity Recognition, Relation Extraction and Knowledge Graph."
     url: "https://github.com/Emrys-Hong"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
