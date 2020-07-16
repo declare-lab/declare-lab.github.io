@@ -34,6 +34,9 @@ devamanyu:
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
 
+sarthak:
+  - image_path: /assets/images/people/sarthak.jpg
+    excerpt: "**Sarthak Bhagat** is a research assistant at the DeCLaRe Lab in Singapore University of Technology and Design advised by Dr. Soujanya Poria. He recently graduated from IIIT Delhi with Honors and his research interests include Computer Vision and Representation Learning."
 
 
 deepanway:
@@ -200,6 +203,8 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
 {% include feature_row2 id="navonil" type="left" %}
 
 {% include feature_row2 id="devamanyu" type="left" %}
+
+{% include feature_row2 id="sarthak" type="left" %}
 
 
 
