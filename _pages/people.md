@@ -193,7 +193,7 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
 
 
 
-## Senior Researchers
+## Research Staff
 
 {% include feature_row2 id="soujanya" type="left" %}
 
