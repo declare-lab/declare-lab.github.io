@@ -36,24 +36,24 @@ devamanyu:
 
 sarthak:
   - image_path: /assets/images/people/sarthak.jpg
-    excerpt: "**Sarthak Bhagat** is a research assistant at the DeCLaRe Lab in Singapore University of Technology and Design advised by Dr. Soujanya Poria. He recently graduated from IIIT Delhi with Honors and his research interests include Computer Vision and Representation Learning."
+    excerpt: "**Sarthak Bhagat** is a research assistant at the DeCLaRe Lab in Singapore University of Technology and Design. He recently graduated from IIIT Delhi with Honors and his research interests include Computer Vision and Representation Learning."
 
 shagun:
   - image_path: /assets/images/people/shagun.jpg
-    excerpt: "**Shagun Uppal** is a research assistant at the DeCLaRe Lab in Singapore University of Technology and Design advised by Dr. Soujanya Poria. She graduated with B.Tech in CSE from IIIT Delhi (2020) and her main research interests revolve around representation learning and visual-question answering and self-supervised methods. "
+    excerpt: "**Shagun Uppal** is a research assistant at the DeCLaRe Lab in Singapore University of Technology and Design. She graduated with B.Tech in CSE from IIIT Delhi (2020) and her main research interests revolve around representation learning and visual-question answering and self-supervised methods. "
 
 
 
 deepanway:
   - image_path: /assets/images/people/deepanway.jpeg
-    excerpt: "**Deepanway Ghosal** is currently a Ph.D. student at the DeCLaRe Lab in Singapore University of Technology and Design advised by Dr. Soujanya Poria. His research interest is in the areas of graph neural networks and commonsense reasoning for natural language processing."
+    excerpt: "**Deepanway Ghosal** is currently a Ph.D. student at the DeCLaRe Lab in Singapore University of Technology and Design. His research interest is in the areas of graph neural networks and commonsense reasoning for natural language processing."
     url: "https://deepanwayx.github.io/"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
    
 hui:
   - image_path: /assets/images/people/hui_chen.jpg
-    excerpt: "**Hui Chen** is currently a Ph.D. student advised by Dr. Soujanya Poria at the DeCLaRe Lab in Singapore University of Technology and Design since January 2019. Before that, she obtained her B.Eng degree in Computer Science and Technology from Zhejiang University, China. Her research interests include natural language processing and multimodal analysis."
+    excerpt: "**Hui Chen** is currently a Ph.D. student at the DeCLaRe Lab in Singapore University of Technology and Design since January 2019. Before that, she obtained her B.Eng degree in Computer Science and Technology from Zhejiang University, China. Her research interests include natural language processing and multimodal analysis."
     url: "https://chchenhui.github.io/"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
@@ -68,7 +68,7 @@ shunqi:
 
 henryhan:
   - image_path: /assets/images/people/henryhan.jpeg
-    excerpt: "**Wei Han** is an incoming Ph.D. student advised by Dr. Soujanya Poria at the DeCLaReLab in Singapore University of Technology and Design since Sept. 2020. Before joining DeCLaRe Lab, he was an Mphil student in the department of electronic and computer engineering in HKUST. His research interests include natural language processing and deep learning."
+    excerpt: "**Wei Han** is an incoming Ph.D. student at the DeCLaReLab in Singapore University of Technology and Design since Sept. 2020. Before joining DeCLaRe Lab, he was an Mphil student in the department of electronic and computer engineering in HKUST. His research interests include natural language processing and deep learning."
     url: "https://github.com/Clement25"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
