@@ -396,7 +396,7 @@ spotlight3:
 
 <div class="notice">
 	<p>
-        <b>Emotion Recognition in Conversations with Transfer Learning from Generative Conversation Modeling</b><br>
+        <b>Conversational Transfer Learning for Emotion Recognition</b><br>
 		Devamanyu Hazarika, Soujanya Poria, Roger Zimmermann, and Rada Mihalcea<br>
         arXiv preprint arXiv:1910.04980 (2019).
 		<a href="https://arxiv.org/pdf/1910.04980" target="_blank" class="btn btn--info btn--small" role="button">pdf</a>
@@ -513,6 +513,16 @@ spotlight3:
 		<a href="https://arxiv.org/pdf/1806.06228" target="_blank" class="btn btn--info btn--small" role="button">pdf</a>
 	</p>
 </div>
+
+<div class="notice">
+	<p>
+        <b>MISA: Modality-Invariant and -Specific Representations for Multimodal Sentiment Analysis</b><br>
+		Devamanyu Hazarika, Roger Zimmermann, and Soujanya Poria<br>
+        ACM MM 2020
+		<a href="https://arxiv.org/pdf/2005.03545.pdf" target="_blank" class="btn btn--info btn--small" role="button">pdf</a>
+	</p>
+</div>
+
 
 <div class="notice">
 	<p>
