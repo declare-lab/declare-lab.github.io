@@ -217,8 +217,6 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
 
 {% include feature_row2 id="henryhan" type="left" %}
 
-{% include feature_row2 id="timothy" type="left" %}
-
 ## Undergraduates
 
 {% include feature_row2 id="jiankun" type="left" %}
