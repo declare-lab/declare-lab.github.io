@@ -47,8 +47,8 @@ spotlight3:
 	<p>
 		<b>Beneath the Tip of the Iceberg: Current Challenges and New Directions in Sentiment Analysis Research</b> <br>
 		Soujanya Poria, Devamanyu Hazarika, Navonil Majumder, and Rada Mihalcea <br> 
-		Arxiv
-		<a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Sentiment_Analysis_New_Directions.pdf" target="_blank" class="btn btn--info btn--small" role="button">pdf</a>
+		IEEE Transactions on Affective Computing
+		<a href="https://arxiv.org/pdf/2005.00357.pdf" target="_blank" class="btn btn--info btn--small" role="button">pdf</a>
 	</p>
 </div>
 
@@ -330,6 +330,33 @@ spotlight3:
 
 
 ## Dialogue systems/ Emotion recognition in conversations
+
+<div class="notice">
+	<p>
+        <b>Utterance-level Dialogue Understanding: An Empirical Study</b><br>
+		Deepanway Ghosal, Navonil Majumder, Rada Mihalcea, Soujanya Poria<br>
+        arXiv preprint arXiv:2009.13902 (2020).
+		<a href="https://arxiv.org/pdf/2009.13902" target="_blank" class="btn btn--info btn--small" role="button">pdf</a>
+	</p>
+</div>
+
+<div class="notice">
+	<p>
+        <b>MIME: MIMicking Emotions for Empathetic Response Generation</b><br>
+		Navonil Majumder, Pengfei Hong, Shanshan Peng, Jiankun Lu, Deepanway Ghosal, Alexander Gelbukh, Rada Mihalcea, Soujanya Poria<br>
+        In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP), pp. 8968–8979. Association for Computational Linguistics, Online (2020)
+		<a href="https://www.aclweb.org/anthology/2020.emnlp-main.721.pdf" target="_blank" class="btn btn--info btn--small" role="button">pdf</a>
+	</p>
+</div>
+
+<div class="notice">
+	<p>
+        <b>COSMIC: COmmonSense knowledge for eMotion Identification in Conversations</b><br>
+		Deepanway Ghosal, Navonil Majumder, Alexander Gelbukh, Rada Mihalcea, Soujanya Poria<br>
+        In Findings of the Association for Computational Linguistics: EMNLP 2020, pp. 2470–2481. Association for Computational Linguistics, Online (2020)
+		<a href="https://www.aclweb.org/anthology/2020.findings-emnlp.224.pdf" target="_blank" class="btn btn--info btn--small" role="button">pdf</a>
+	</p>
+</div>
 
 <div class="notice">
 	<p>
