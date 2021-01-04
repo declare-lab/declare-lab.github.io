@@ -21,6 +21,13 @@ logo:
 <div class="notice--success">
   <h4>New paper</h4>
   <p>
+    New paper - Recognizing Emotion Cause in Conversations <a href="https://arxiv.org/pdf/2012.11820.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
     New paper on Sentiment Analysis - Beneath the Tip of the Iceberg: Current Challenges and New Directions in Sentiment Analysis Research <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Sentiment_Analysis_New_Directions.pdf">Read here</a>.
   </p>
 </div>
