@@ -75,21 +75,21 @@ henryhan:
 
 jiankun:
   - image_path: /assets/images/people/jiankun.jpeg
-    excerpt: "**Jiankun Lu** is a final year ISTD student at SUTD and a junior member at the DeCLaRe Lab. His main area of  interests is natural language processing."
+    excerpt: "**Jiankun Lu** was a junior member at the DeCLaRe Lab. He now works at ByteDance. His main area of interests is natural language processing."
     url: "https://www.linkedin.com/in/jiankun-lu-314b38150/"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
 
 shanshan:
   - image_path: /assets/images/people/shanshan.jpeg
-    excerpt: "**Shanshan Peng** is a final year undergraduate student at SUTD and a junior member at the DeCLaRe Lab. Her research interests include machine translation, sentiment analysis, and language modeling."
+    excerpt: "**Shanshan Peng** was a junior member at the DeCLaRe Lab. She now works at PayPal. Her research interests include machine translation, sentiment analysis, and language modeling."
     url: "https://www.linkedin.com/in/shanshan-peng-a9b674146/"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
     
 pengfei:
   - image_path: /assets/images/people/hongpengfei.jpg
-    excerpt: "**Pengfei Hong** is a final year undergraduate student at SUTD and a junior member at the DeCLaRe Lab. His research interests include statistical machine learning as well as deep learning, such as Dialog System, Discourse Parsing, Named Entity Recognition, Relation Extraction and Knowledge Graph."
+    excerpt: "**Pengfei Hong** is a research assistant and a part-time Ph.D. candidate at the DeCLaRe Lab. His research interests include statistical machine learning as well as deep learning, such as Dialog System, Discourse Parsing, Named Entity Recognition, Relation Extraction and Knowledge Graph."
     url: "https://github.com/Emrys-Hong"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
@@ -201,9 +201,11 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
 
 {% include feature_row2 id="devamanyu" type="left" %}
 
-{% include feature_row2 id="sarthak" type="left" %}
+{% include feature_row2 id="pengfei" type="left" %}
 
-{% include feature_row2 id="shagun" type="left" %}
+<!-- {% include feature_row2 id="sarthak" type="left" %} -->
+
+<!-- {% include feature_row2 id="shagun" type="left" %} -->
 
 ## Ph.D. Students
 
@@ -217,13 +219,11 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
 
 {% include feature_row2 id="henryhan" type="left" %}
 
-## Undergraduates
+## Alumni
 
 {% include feature_row2 id="jiankun" type="left" %}
 
 {% include feature_row2 id="shanshan" type="left" %}
-
-{% include feature_row2 id="pengfei" type="left" %}
 
 ## Collaborators
 
@@ -251,4 +251,4 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
 
 {% include feature_row2 id="newton" type="left" %}
 
-{% include feature_row2 id="rajiv" type="left" %}
+<!-- {% include feature_row2 id="rajiv" type="left" %} -->
