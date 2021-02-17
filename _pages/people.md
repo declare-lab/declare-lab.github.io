@@ -42,7 +42,9 @@ shagun:
   - image_path: /assets/images/people/shagun.jpg
     excerpt: "**Shagun Uppal** is a research assistant at the DeCLaRe Lab in Singapore University of Technology and Design. She graduated with B.Tech in CSE from IIIT Delhi (2020) and her main research interests revolve around representation learning and visual-question answering and self-supervised methods. "
 
-
+samson:
+  - image_path: /assets/images/people/samson.jpg
+    excerpt: "**Samson Yu** is a research assistant at the DeCLaRe lab. His research interests include knowledge graphs, embodied AI and multimodal deep learning."
 
 deepanway:
   - image_path: /assets/images/people/deepanway.jpeg
@@ -202,6 +204,8 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
 {% include feature_row2 id="devamanyu" type="left" %}
 
 {% include feature_row2 id="pengfei" type="left" %}
+
+{% include feature_row2 id="samson" type="left" %}
 
 <!-- {% include feature_row2 id="sarthak" type="left" %} -->
 
