@@ -70,7 +70,7 @@ shunqi:
 
 henryhan:
   - image_path: /assets/images/people/henryhan.jpeg
-    excerpt: "**Wei Han** is an incoming Ph.D. student at the DeCLaReLab in Singapore University of Technology and Design since Sept. 2020. Before joining DeCLaRe Lab, he was an Mphil student in the department of electronic and computer engineering in HKUST. His research interests include natural language processing and deep learning."
+    excerpt: "**Wei Han** is a Ph.D. student at the DeCLaReLab in Singapore University of Technology and Design since September 2020. Before joining DeCLaRe Lab, he was an Mphil student in the department of electronic and computer engineering in HKUST. His research interests include natural language processing and deep learning."
     url: "https://github.com/Clement25"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
