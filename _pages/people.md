@@ -70,8 +70,15 @@ shunqi:
 
 henryhan:
   - image_path: /assets/images/people/henryhan.jpeg
-    excerpt: "**Wei Han** is a Ph.D. student at the DeCLaReLab in Singapore University of Technology and Design since September 2020. Before joining DeCLaRe Lab, he was an Mphil student in the department of electronic and computer engineering in HKUST. His research interests include natural language processing and deep learning."
+    excerpt: "**Wei Han** is a Ph.D. student at the DeCLaRe Lab in Singapore University of Technology and Design since September 2020. Before joining DeCLaRe Lab, he was an Mphil student in the department of electronic and computer engineering in HKUST. His research interests include natural language processing and deep learning."
     url: "https://github.com/Clement25"
+    btn_label: "Read More"
+    btn_class: "btn btn--primary btn--small"
+
+ken:
+  - image_path: /assets/images/people/ken.jpg
+    excerpt: "**Chia Yew Ken** is a Ph.D. student at the DeCLaRe Lab in Singapore University of Technology and Design since January 2021. His research interests include natural language processing, sentiment analysis and dialogue."
+    url: "http://chiayewken.herokuapp.com/"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
 
@@ -222,6 +229,8 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
 {% include feature_row2 id="shunqi" type="left" %}
 
 {% include feature_row2 id="henryhan" type="left" %}
+
+{% include feature_row2 id="ken" type="left" %}
 
 ## Alumni
 
