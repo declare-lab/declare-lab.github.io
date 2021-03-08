@@ -17,10 +17,10 @@ articlecolour: "#00001a"
 ## Important Dates
 
 |  | |
-| Registration opens             | TBA |
-| Registration closes            | TBA |
-| Round 1                        | TBA |
-| Round 1 results                | TBA |
+| Registration opens             | 9/03/2021 |
+| Registration closes            | 23/03/2021 |
+| Round 1                        | 28/03/2021 or by 28/04/2021 |
+| Round 1 results                | 10/05/2021 |
 | Invitational Round Camp Starts | TBA |
 | Team Singapore at IOL          | TBA |
 
