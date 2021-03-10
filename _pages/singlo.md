@@ -52,9 +52,6 @@ Register [here]() to participate in the SLO 2021.
 
 <!-- ## SLO 2021 Participants -->
 
-| Name 	| Roll Number 	|
-|-	|-	|
-
 
 ## Sample Questions
 
