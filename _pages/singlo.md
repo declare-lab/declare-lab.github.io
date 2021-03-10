@@ -50,7 +50,7 @@ Register [here]() to participate in the SLO 2021.
 - A participant may also register at the nearest center on the exam day as a "walk-in" applicant by sharing the registration details.
 - Once the registration is done, a tentative list of students and their roll numbers will be posted on this website. Keep checking this website for further updates!
 
-## SLO 2021 Participants
+<!-- ## SLO 2021 Participants -->
 
 | Name 	| Roll Number 	|
 |-	|-	|
