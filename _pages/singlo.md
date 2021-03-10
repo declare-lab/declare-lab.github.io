@@ -50,6 +50,7 @@ No prior knowledge of linguistics or languages is required: even the hardest pro
 
 ## Sample Questions
 
+- SingLO is accredited by the Asia Pacific Linguistics Olympiad (APLO). The participants of SingLO will be evaluated against the problems prepared by [APLO](https://aplo.asia/).
 - Please refer to this link for the sample questions: [https://aplo.asia/problems-by-year/](https://aplo.asia/problems-by-year/)
 
 ## International Linguistics Olympiad
