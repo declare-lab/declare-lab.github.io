@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Singapore Linguistics Olympiad"
-permalink: /sol/
+permalink: /singlo/
 author_profile: false
 <!-- classes: wide -->
 related: false
