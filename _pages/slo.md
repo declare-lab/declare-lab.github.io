@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Singapore Linguistics Olympiad"
-permalink: /singlo/
+permalink: /slo/
 author_profile: false
 <!-- classes: wide -->
 related: false
@@ -13,7 +13,7 @@ toc_sticky: true
 articlecolour: "#00001a"
 
 ---
-Welcome to the page of the Singapore Linguistics Olympiad (SingLO). From the Singapore Linguistics Olympiad, the top performing students are selected to represent Singapore at the The International Linguistics Olympiad (IOL).
+Welcome to the page of the Singapore Linguistics Olympiad (SLO). From the Singapore Linguistics Olympiad, the top performing students are selected to represent Singapore at the The International Linguistics Olympiad (IOL).
 
 From the official [website](https://ioling.org/)
 
@@ -43,7 +43,7 @@ No prior knowledge of linguistics or languages is required: even the hardest pro
 
 ## Important Points
 
-- A participant may also register at the nearest center on the exam day as a "walk-in" applicant by sharing the registration details and paying the fees equivalent to the standard registration fees for that year.
+- A participant may also register at the nearest center on the exam day as a "walk-in" applicant by sharing the registration details.
 - Once the registration is done, a tentative list of students and their roll numbers will be posted on this website. Keep checking this website for further updates!
 
 ## Sample Questions
