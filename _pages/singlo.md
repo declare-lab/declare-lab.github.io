@@ -21,6 +21,8 @@ From the official [website](https://ioling.org/)
 
 No prior knowledge of linguistics or languages is required: even the hardest problems require only your logical ability, patient work, and willingness to think around corners.”
 
+Register [here]() to participate in the SLO 2021.
+
 ## Important Dates
 
 |  | |
@@ -30,6 +32,8 @@ No prior knowledge of linguistics or languages is required: even the hardest pro
 | SLO results                    | 23/04/2021 |
 | Invitational Round Camp Starts | TBA |
 | Team Singapore at IOL          | TBA |
+
+## Registration Link
 
 ## Eligibility Criteria
 
@@ -45,6 +49,12 @@ No prior knowledge of linguistics or languages is required: even the hardest pro
 
 - A participant may also register at the nearest center on the exam day as a "walk-in" applicant by sharing the registration details.
 - Once the registration is done, a tentative list of students and their roll numbers will be posted on this website. Keep checking this website for further updates!
+
+## SLO 2021 Participants
+
+| Name 	| Roll Number|
+|-	|-	|
+
 
 ## Sample Questions
 
