@@ -24,10 +24,10 @@ No prior knowledge of linguistics or languages is required: even the hardest pro
 ## Important Dates
 
 |  | |
-| Registration opens             | 9/03/2021 |
-| Registration closes            | 23/03/2021 |
-| Round 1                        | Tentatively in the third week of April |
-| Round 1 results                | By 10/05/2021 |
+| Registration opens             | 11/03/2021 |
+| Registration closes            | 07/04/2021 |
+| SLO Contest                    | 16/04/2021 |
+| SLO results                    | 23/04/2021 |
 | Invitational Round Camp Starts | TBA |
 | Team Singapore at IOL          | TBA |
 
