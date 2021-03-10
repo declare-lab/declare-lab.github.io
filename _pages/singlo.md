@@ -38,10 +38,8 @@ No prior knowledge of linguistics or languages is required: even the hardest pro
   - A participant must carry an official school photo ID that states his/her name, school name, and current grade (or date of birth).
 - If you are not enrolled at a school, then your eligible category depends on your age:
   - You have to be under the age of 20.
-  - If a participant has attended the Invitational Round Camp in any previous year, he/she can appear only in the Senior contest.
-  - A participant must carry a government-issued photo ID (Aadhaar card, passport, etc.) that states his/her name and date of birth.
-- Participants who have represented Singapore at SOL 2019 are eligible for direct entry to the Invitational Round camp, and need not appear for the Round 1 contest.
-- Participants who are not Singaporean citizens are eligible to participate in the Round 1 contest provided they reside in Singapore and are enrolled at a school in Singapore.
+  - A participant must carry a government-issued photo ID (NRIC, FIN, passport, etc.) that states his/her name and date of birth.
+- Participants who are not Singaporean citizens are eligible to participate in the SingLO contest provided they reside in Singapore and are enrolled at a school in Singapore.
 
 ## Important Points
 
