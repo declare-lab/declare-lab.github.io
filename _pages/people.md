@@ -96,6 +96,13 @@ shanshan:
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
     
+joanna:
+  - image_path: /assets/images/people/joanna.jpeg
+    excerpt: "**Joanna Saw** is a Masters student at SUTD. Her research interests include natural language processing, sentiment analysis and deep learning."
+    url: "https://www.linkedin.com/in/joannasaw/"
+    btn_label: "Read More"
+    btn_class: "btn btn--primary btn--small"
+    
 pengfei:
   - image_path: /assets/images/people/hongpengfei.jpg
     excerpt: "**Pengfei Hong** is a research assistant and a part-time Ph.D. candidate at the DeCLaRe Lab. His research interests include statistical machine learning as well as deep learning, such as Dialog System, Discourse Parsing, Named Entity Recognition, Relation Extraction and Knowledge Graph."
@@ -231,6 +238,10 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
 {% include feature_row2 id="henryhan" type="left" %}
 
 {% include feature_row2 id="ken" type="left" %}
+
+## Masters Students
+
+{% include feature_row2 id="joanna" type="left" %}
 
 ## Alumni
 
