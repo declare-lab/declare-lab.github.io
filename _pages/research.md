@@ -63,6 +63,7 @@ Our current research interests can be broadly categorized as:
 
 
 ## Commonsense-aware NLP
+<button type="button" class="btn btn-primary btn-sg">Funded by</button> : *The MoE Tier-2.*
 
 {% include feature_row id="csk" type="left" %}
 
