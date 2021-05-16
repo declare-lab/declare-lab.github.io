@@ -73,7 +73,7 @@ Our current research interests can be broadly categorized as:
 {% include feature_row id="qa" type="left" %}
 
 
-## Affective and Empathetic Dialogue
+## Affective and Empathetic Dialogue Understanding
 <button type="button" class="btn btn-primary btn-sg">Funded by</button> : *Adobe Research.*
 
 {% include feature_row id="dia" type="left" %}
