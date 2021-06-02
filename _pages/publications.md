@@ -30,7 +30,7 @@ spotlight3:
   - image_path: /assets/images/papers/meld.png
     excerpt: "**[MELD: A multimodal multi-party dataset for emotion recognition in conversations.](https://www.aclweb.org/anthology/P19-1050.pdf)** <br> Soujanya Poria, Devamanyu Hazarika, Navonil Majumder, Gautam Naik, Erik Cambria, and Rada Mihalcea.   <br> ACL 2019.  [(code)](https://github.com/declare-lab/MELD)"
   - image_path: /assets/images/resources/cider.png
-    excerpt: "**[CIDER: Commonsense Inference for Dialogue Explanation and Reasoning.](https://arxiv.org/pdf/2106.00510.pdf)** <br> Deepanway Ghosal, Pengfei Hong, Siqi Shen, Navonil Majumder, Rada Mihalcea, Soujanya Poria.   <br> ACL 2019.  [(code)](https://github.com/declare-lab/CIDER)"
+    excerpt: "**[CIDER: Commonsense Inference for Dialogue Explanation and Reasoning.](https://arxiv.org/pdf/2106.00510.pdf)** <br> Deepanway Ghosal, Pengfei Hong, Siqi Shen, Navonil Majumder, Rada Mihalcea, Soujanya Poria.   <br> SIGDIAL 2021.  [(code)](https://github.com/declare-lab/CIDER)"
 spotlight4:
   - image_path: /assets/images/resources/RECCON.png
     excerpt: "**[Recognizing Emotion Cause in Conversations.](https://arxiv.org/pdf/2012.11820.pdf)** <br> Soujanya Poria, Navonil Majumder, Devamanyu Hazarika, Deepanway Ghosal, Rishabh Bhardwaj, Samson Yu Bai Jian, Romila Ghosh, Niyati Chhaya, Alexander Gelbukh, Rada Mihalcea.   <br> Preprint 2020.  [(code)](https://github.com/declare-lab/MELD)"
