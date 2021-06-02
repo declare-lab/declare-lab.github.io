@@ -21,15 +21,19 @@ spotlight2:
   - image_path: /assets/images/papers/aspect_extraction.png
     excerpt: "**[Aspect extraction for opinion mining with a deep convolutional neural network.](https://www.sciencedirect.com/science/article/abs/pii/S0950705116301721)** <br> Soujanya Poria, Erik Cambria, and Alexander Gelbukh.   <br> Knowledge-Based Systems. [(code)](https://github.com/soujanyaporia/aspect-extraction)" 
   - image_path: /assets/images/papers/dialogueRNN.png
-    excerpt: "**[Dialoguernn: An attentive rnn for emotion detection in conversations.](https://arxiv.org/pdf/1811.00405.pdf)** <br> Navonil Majumder, Soujanya Poria, Devamanyu Hazarika, Rada Mihalcea, Alexander Gelbukh, and Erik Cambria.   <br> AAAI 2019.  [(code)](https://github.com/SenticNet/conv-emotion/)"
+    excerpt: "**[Dialoguernn: An attentive rnn for emotion detection in conversations.](https://arxiv.org/pdf/1811.00405.pdf)** <br> Navonil Majumder, Soujanya Poria, Devamanyu Hazarika, Rada Mihalcea, Alexander Gelbukh, and Erik Cambria.   <br> AAAI 2019.  [(code)](https://github.com/declare-lab/conv-emotion/)"
   - image_path: /assets/images/papers/cmn.png
-    excerpt: "**[Conversational memory network for emotion recognition in dyadic dialogue videos.](http://www.aclweb.org/anthology/N18-1193)** <br> Devamanyu Hazarika, Soujanya Poria, Amir Zadeh, Erik Cambria, Louis-Philippe Morency, and Roger Zimmermann.  <br> NAACL 2018.  [(code)](https://github.com/SenticNet/conv-emotion/)"
+    excerpt: "**[Conversational memory network for emotion recognition in dyadic dialogue videos.](http://www.aclweb.org/anthology/N18-1193)** <br> Devamanyu Hazarika, Soujanya Poria, Amir Zadeh, Erik Cambria, Louis-Philippe Morency, and Roger Zimmermann.  <br> NAACL 2018.  [(code)](https://github.com/declare-lab/conv-emotion/)"
 spotlight3:
   - image_path: /assets/images/papers/dialogueGCN.png
     excerpt: "**[Dialoguegcn: A graph convolutional neural network for emotion recognition in conversation.](https://www.aclweb.org/anthology/D19-1015.pdf)** <br> Deepanway Ghosal, Navonil Majumder, Soujanya Poria, Niyati Chhaya, and Alexander Gelbukh.  <br> NAACL 2018.  [(code)](https://github.com/SenticNet/conv-emotion/)"
   - image_path: /assets/images/papers/meld.png
-    excerpt: "**[MELD: A multimodal multi-party dataset for emotion recognition in conversations.](https://www.aclweb.org/anthology/P19-1050.pdf)** <br> Soujanya Poria, Devamanyu Hazarika, Navonil Majumder, Gautam Naik, Erik Cambria, and Rada Mihalcea.   <br> ACL 2019.  [(code)](https://github.com/SenticNet/MELD)"
-
+    excerpt: "**[MELD: A multimodal multi-party dataset for emotion recognition in conversations.](https://www.aclweb.org/anthology/P19-1050.pdf)** <br> Soujanya Poria, Devamanyu Hazarika, Navonil Majumder, Gautam Naik, Erik Cambria, and Rada Mihalcea.   <br> ACL 2019.  [(code)](https://github.com/declare-lab/MELD)"
+  - image_path: /assets/images/resources/cider.png
+    excerpt: "**[CIDER: Commonsense Inference for Dialogue Explanation and Reasoning.](https://arxiv.org/pdf/2106.00510.pdf)** <br> Deepanway Ghosal, Pengfei Hong, Siqi Shen, Navonil Majumder, Rada Mihalcea, Soujanya Poria.   <br> ACL 2019.  [(code)](https://github.com/declare-lab/CIDER)"
+spotlight4:
+  - image_path: /assets/images/resources/RECCON.png
+    excerpt: "**[Recognizing Emotion Cause in Conversations.](https://arxiv.org/pdf/2012.11820.pdf)** <br> Soujanya Poria, Navonil Majumder, Devamanyu Hazarika, Deepanway Ghosal, Rishabh Bhardwaj, Samson Yu Bai Jian, Romila Ghosh, Niyati Chhaya, Alexander Gelbukh, Rada Mihalcea.   <br> Preprint 2020.  [(code)](https://github.com/declare-lab/MELD)"
 ---
 
 
@@ -37,6 +41,7 @@ spotlight3:
 {% include feature_row id="spotlight1" %}
 {% include feature_row id="spotlight2" %}
 {% include feature_row id="spotlight3" %}
+{% include feature_row id="spotlight4" %}
 
 
 
