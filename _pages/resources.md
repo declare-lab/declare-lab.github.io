@@ -12,7 +12,33 @@ articlecolour: "#00001a"
 
 ---
 
+## CIDER: Commonsense Inference for Dialogue Explanation and Reasoning 
 
+![image-center](/assets/images/resources/cider.png){: .width-paper-image-100 .align-center}
+
+
+Commonsense inference to understand and explain human language is a fundamental research problem in natural language processing. Explaining human conversations poses a great challenge as it requires contextual understanding, planning, inference, and several aspects of reasoning including causal, temporal, and commonsense reasoning. In this work, we introduce CIDER – a manually curated dataset that contains dyadic dialogue explanations in the form of implicit and explicit
+knowledge triplets inferred using contextual commonsense inference. Extracting such rich explanations from conversations can be conducive to improving several downstream applications. The annotated triplets are categorized by the type of commonsense knowledge present (e.g., causal, conditional, temporal).
+We set up three different tasks conditioned on the annotated dataset: Dialogue-level Natural Language Inference, Span Extraction, and Multi-choice Span Selection. Baseline results obtained with transformer-based models reveal that the tasks are difficult, paving the way for promising future research.
+{: style="text-align: justify;"}
+
+<a href="https://github.com/declare-lab/CIDER" target="_blank" class="btn btn--inverse btn--small" role="button">webpage</a> <a href="https://arxiv.org/pdf/2106.00510.pdf" target="_blank" class="btn btn--inverse btn--small" role="button">pdf</a>
+
+
+<hr>
+
+## RECCON: Recognizing Emotion Cause in Conversations  
+
+![image-center](/assets/images/resources/RECCON.png){: .width-paper-image-100 .align-center}
+
+
+Recognizing the cause behind emotions in text is a fundamental yet under-explored area of research in NLP. Advances in this area hold the potential to improve interpretability and performance in affect-based models. Identifying emotion causes at the utterance level in conversations is particularly challenging due to the intermingling dynamic among the interlocutors. To this end, we introduce the task of recognizing emotion cause in conversations with an accompanying dataset named RECCON. Furthermore, we define different cause types based on the source of the causes and establish strong transformer-based baselines to address two different sub-tasks of RECCON: 1) Causal Span Extraction and 2) Causal Emotion Entailment.
+{: style="text-align: justify;"}
+
+<a href="https://github.com/declare-lab/RECCON" target="_blank" class="btn btn--inverse btn--small" role="button">webpage</a> <a href="https://arxiv.org/pdf/2012.11820.pdf" target="_blank" class="btn btn--inverse btn--small" role="button">pdf</a>
+
+
+<hr>
 
 
 
