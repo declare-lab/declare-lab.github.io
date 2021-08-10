@@ -24,6 +24,12 @@ logo:
   </p>
 </div>
 
+<div class="notice--warning">
+  <h4>New paper</h4>
+  <p>
+    New paper - Aspect Sentiment Triplet Extraction UsingReinforcement Learning. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/ASTE_RL_CIKM_2021_FINAL.pdf">Read here</a>.
+  </p>
+</div>
 <div class="notice--success">
   <h4>New paper</h4>
   <p>
