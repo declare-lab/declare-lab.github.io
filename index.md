@@ -27,13 +27,13 @@ logo:
 <div class="notice--warning">
   <h4>New paper</h4>
   <p>
-    New paper - Aspect Sentiment Triplet Extraction Using Reinforcement Learning. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/ASTE_RL_CIKM_2021_FINAL.pdf">Read here</a>.
+    New paper - Aspect Sentiment Triplet Extraction Using Reinforcement Learning. CIKM 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/ASTE_RL_CIKM_2021_FINAL.pdf">Read here</a>.
   </p>
 </div>
 <div class="notice--success">
   <h4>New paper</h4>
   <p>
-    New paper - Exploring the Role of Context in Utterance-level Emotion, Act and Intent Classification in Conversations: An Empirical Study <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/dialogue-understanding-acl2021-findings.pdf">Read here</a>.
+    New paper - Exploring the Role of Context in Utterance-level Emotion, Act and Intent Classification in Conversations: An Empirical Study. EMNLP 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/dialogue-understanding-acl2021-findings.pdf">Read here</a>.
   </p>
 </div>
 
