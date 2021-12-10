@@ -146,13 +146,6 @@ zadeh:
     url: "https://www.amir-zadeh.com/"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
-
-erik:
-  - image_path: /assets/images/people/erik.jpg
-    excerpt: "**Erik Cambria** is an Associate Professor at Nanyang Technology University, where he also holds the appointment of Provost Chair in Computer Science and Engineering. His research interests include affective computing, sentiment analysis, natural language understanding and commonsense reasoning."
-    url: "http://sentic.net"
-    btn_label: "Read More"
-    btn_class: "btn btn--primary btn--small" 
     
 amir:
   - image_path: /assets/images/people/amir.jpg
