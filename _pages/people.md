@@ -42,9 +42,17 @@ shagun:
   - image_path: /assets/images/people/shagun.jpg
     excerpt: "**Shagun Uppal** is a research assistant at the DeCLaRe Lab in Singapore University of Technology and Design. She graduated with B.Tech in CSE from IIIT Delhi (2020) and her main research interests revolve around representation learning and visual-question answering and self-supervised methods. "
 
-samson:
-  - image_path: /assets/images/people/samson.jpg
-    excerpt: "**Samson Yu** is a research assistant at the DeCLaRe lab. His research interests include knowledge graphs, embodied AI and multimodal deep learning."
+henry_lim:
+  - image_path: /assets/images/people/henry_lim.jpg
+    excerpt: "**Henry Lim** is a research assistant at the DeCLaRe lab. His research interests include prompt tuning and language models."
+    
+shaozuo:
+  - image_path: /assets/images/people/shaozuo.jpg
+    excerpt: "**Zhang Shaozuo** is a research assistant at DeCLaRe Lab. His current research direction includes Question Answering. He is starting part-time Ph.D. student this year."
+
+yixuan: 
+  - image_path: /assets/images/people/yixuan.jpg
+    excerpt: "**Yi Xuan Tan** is a research assistant at the DeCLaRe lab. <to be added>"
 
 deepanway:
   - image_path: /assets/images/people/deepanway.jpeg
@@ -81,6 +89,14 @@ ken:
     url: "http://chiayewken.herokuapp.com/"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
+  
+yingting:
+  - image_path: /assets/images/people/yingting.jpg
+    excerpt: "**Yingting Li** is a Ph.D. candidate at the Beijing University of Posts and Telecommunications，and study at SUTD as an exchange student. Her research interests include knowledge graph questions and answers, multimodal emotional conversations and multimodal sentiment analysis."
+
+xiaocui:
+  - image_path: /assets/images/people/xiaocui.jpg
+    excerpt: "**Yang Xiaocui** is an exchange Ph.D. student that studies at the DeCLaRe Lab of Singapore University of Technology and Design since October 2021. Her research interests include Natural Language Processing and Multimodal Sentiment Analysis."
 
 jiankun:
   - image_path: /assets/images/people/jiankun.jpeg
@@ -95,6 +111,10 @@ shanshan:
     url: "https://www.linkedin.com/in/shanshan-peng-a9b674146/"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
+  
+samson:
+  - image_path: /assets/images/people/samson.jpg
+    excerpt: "**Samson Yu** was a research assistant at the DeCLaRe Lab. He now works at A*STAR. His research interests include knowledge graphs, embodied AI and multimodal deep learning."
     
 joanna:
   - image_path: /assets/images/people/joanna.jpeg
@@ -105,7 +125,7 @@ joanna:
     
 pengfei:
   - image_path: /assets/images/people/hongpengfei.jpg
-    excerpt: "**Pengfei Hong** is a research assistant and a part-time Ph.D. candidate at the DeCLaRe Lab. His research interests include statistical machine learning as well as deep learning, such as Dialog System, Discourse Parsing, Named Entity Recognition, Relation Extraction and Knowledge Graph."
+    excerpt: "**Pengfei Hong** is a research assistant and a part-time Ph.D. candidate at the DeCLaRe Lab. His research interests include Causality, Common Sense and Generation."
     url: "https://github.com/Emrys-Hong"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
@@ -211,8 +231,12 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
 {% include feature_row2 id="devamanyu" type="left" %}
 
 {% include feature_row2 id="pengfei" type="left" %}
+  
+{% include feature_row2 id="henry_lim" type="left" %}
 
-{% include feature_row2 id="samson" type="left" %}
+<!-- {% include feature_row2 id="shaozuo" type="left" %} -->
+
+<!-- {% include feature_row2 id="yixuan" type="left" %}-->
 
 <!-- {% include feature_row2 id="sarthak" type="left" %} -->
 
@@ -232,6 +256,10 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
 
 {% include feature_row2 id="ken" type="left" %}
 
+{% include feature_row2 id="yingting" type="left" %}
+  
+{% include feature_row2 id="xiaocui" type="left" %}
+
 ## Masters Students
 
 {% include feature_row2 id="joanna" type="left" %}
@@ -241,6 +269,8 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
 {% include feature_row2 id="jiankun" type="left" %}
 
 {% include feature_row2 id="shanshan" type="left" %}
+
+{% include feature_row2 id="samson" type="left" %}
 
 ## Collaborators
 
