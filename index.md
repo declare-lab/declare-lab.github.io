@@ -42,7 +42,7 @@ logo:
 <div class="notice--success">
   <h4>New paper</h4>
   <p>
-    New Paper - Multimodal analysis combining monitoring modalities to elicit cognitive states and perform screening for mental disorders. US Patent App. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/MULTIMODAL ANALYSIS COMBINING MONITORING MODALITIES.pdf">Read here</a>.
+    New Paper - Multimodal Analysis Combining Monitoring Modalities To Elicit Cognitive States And Perform Screening For Mental Disorders. US Patent App. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/MULTIMODAL ANALYSIS COMBINING MONITORING MODALITIES.pdf">Read here</a>.
   </p>
 </div>
 
@@ -84,7 +84,28 @@ logo:
 <div class="notice--success">
   <h4>New paper</h4>
   <p>
-    New Paper - CIDER: Commonsense Inference for Dialogue Explanation and Reasoning. SIGDIAL 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/CIDER.pdf">Read here</a>.
+    New Paper - CIDER: Commonsense Inference for Dialogue Explanation and Reasoning. ACL 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Investigating Gender Bias in BERT.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
+    New Paper - Investigating Gender Bias in BERT. Cognitive Computation. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Investigating Gender Bias in BERT.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
+    New Paper - Deep Neural Approaches to Relation Triplets Extraction: A Comprehensive Survey. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Deep Neural Approaches to Relation Triplets Extraction.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
+    New Paper - Persuasive Dialogue Understanding: the Baselines and Negative Results. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Persuasive Dialogue Understanding the Baselines and Negative Results.pdf">Read here</a>.
   </p>
 </div>
 
