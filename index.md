@@ -56,6 +56,35 @@ logo:
 <div class="notice--success">
   <h4>New paper</h4>
   <p>
+    New Paper - Causal Augmentation for Causal Sentence Classification. ACL 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Causal Augmentation for Causal Sentence Classification.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
+    New Paper - Zero-Shot Controlled Generation with Encoder-Decoder Transformers. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Zero-Shot Controlled Generation with Encoder-Decoder Transformers.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
+    New Paper - Analyzing the Domain Robustness of Pretrained Language Models, Layer by Layer. ACL 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Analyzing the Domain Robustness of Pretrained Language Models.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success"> 4
+  <h4>New paper</h4>
+  <p>
+    New Paper - Conversational Transfer Learning for Emotion Recognition. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Conversational Transfer Learning for Emotion.pdf">Read here</a>.
+  </p>
+</div>
+
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
     New Paper - Aspect Sentiment Triplet Extraction Using Reinforcement Learning. CIKM 77. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Aspect Sentiment Triplet Extraction Using.pdf">Read here</a>.
   </p>
 </div>
