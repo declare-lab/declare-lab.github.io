@@ -21,6 +21,34 @@ logo:
 <div class="notice--success">
   <h4>New paper</h4>
   <p>
+    New Paper - Multimodal Sentiment Detection Based on Multi-channel Graph Neural Networks. ACL 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Multimodal Sentiment Detection Based on Multi-channel.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
+    New Paper - Learning Span-Level Interactions for Aspect Sentiment Triplet Extraction. ACL 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Learning Span-Level Interactions for Aspect Sentiment Triplet Extraction.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
+    New Paper - Federated Distillation of Natural Language Understanding with Confident Sinkhorns. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/FEDERATED DISTILLATION OF NATURAL LANGUAGE.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
+    New Paper - Multi-trends Enhanced Dynamic Micro-video Recommendation. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Multi-trends Enhanced Dynamic Micro-video Recommendation.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
     New Paper - Multimodal Research in Vision and Language: A Review of Current and Emerging Trends. Information Fusion 77. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Multimodal Research in Vision and Language.pdf">Read here</a>.
   </p>
 </div>
