@@ -52,7 +52,7 @@ shaozuo:
 
 yixuan: 
   - image_path: /assets/images/people/yixuan.jpg
-    excerpt: "**Yi Xuan Tan** is a research assistant at the DeCLaRe lab. <to be added>"
+    excerpt: "**Yi Xuan Tan** is a research assistant at the DeCLaRe Lab. His research interests include natural language representation, machine translation and automatic speech recognition."
 
 deepanway:
   - image_path: /assets/images/people/deepanway.jpeg
@@ -236,7 +236,7 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
 
 <!-- {% include feature_row2 id="shaozuo" type="left" %} -->
 
-<!-- {% include feature_row2 id="yixuan" type="left" %}-->
+{% include feature_row2 id="yixuan" type="left" %}
 
 <!-- {% include feature_row2 id="sarthak" type="left" %} -->
 
