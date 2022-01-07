@@ -21,7 +21,14 @@ logo:
 <div class="notice--success">
   <h4>New paper</h4>
   <p>
-    New paper on Multimodal Sentiment Analysis - Bi-Bimodal Modality Fusion for Correlation-Controlled Multimodal Sentiment Analysis <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Bi-Bimodal_Analysis.pdf">Read here</a>.
+    New Paper - STaCK: Sentence Ordering with Temporal Commonsense Knowledge. EMNLP 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/STaCK.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
+    Best Paper Award Honorable Mention - Bi-Bimodal Modality Fusion for Correlation-Controlled Multimodal Sentiment Analysis. ICMI 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Bi-Bimodal_Analysis.pdf">Read here</a>.
   </p>
 </div>
 
