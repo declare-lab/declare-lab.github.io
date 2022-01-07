@@ -21,6 +21,41 @@ logo:
 <div class="notice--success">
   <h4>New paper</h4>
   <p>
+    New Paper - Multimodal Research in Vision and Language: A Review of Current and Emerging Trends. Information Fusion 77. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Multimodal Research in Vision and Language.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
+    New Paper - Aspect Sentiment Triplet Extraction Using Reinforcement Learning. CIKM 77. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Aspect Sentiment Triplet Extraction Using.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
+    New Paper - M2H2: A Multimodal Multiparty Hindi Dataset For Humor Recognition in Conversations. ICMI 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/M2H2.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
+    New Paper - Multimodal analysis combining monitoring modalities to elicit cognitive states and perform screening for mental disorders. US Patent App. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/MULTIMODAL ANALYSIS COMBINING MONITORING MODALITIES.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
+    New Paper - Improving Distantly Supervised Relation Extraction with Self-Ensemble Noise Filtering. US Patent App. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Improving Distantly Supervised Relation Extraction.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
     New Paper - STaCK: Sentence Ordering with Temporal Commonsense Knowledge. EMNLP 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/STaCK.pdf">Read here</a>.
   </p>
 </div>
@@ -65,6 +100,7 @@ logo:
     New paper - Aspect Sentiment Triplet Extraction Using Reinforcement Learning. CIKM 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/ASTE_RL_CIKM_2021_FINAL.pdf">Read here</a>.
   </p>
 </div>
+
 <div class="notice--success">
   <h4>New paper</h4>
   <p>
