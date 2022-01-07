@@ -28,7 +28,28 @@ logo:
 <div class="notice--success">
   <h4>New paper</h4>
   <p>
+    New Paper - Improving Multimodal Fusion with Hierarchical Mutual Information Maximization for Multimodal Sentiment Analysis. EMNLP 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Improving_Multimodal_Fusion.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
     Best Paper Award Honorable Mention - Bi-Bimodal Modality Fusion for Correlation-Controlled Multimodal Sentiment Analysis. ICMI 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Bi-Bimodal_Analysis.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
+    New Paper - More Identifiable yet Equally Performant Transformers for Text Classification. ACL 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Equally Performant Transformers.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
+    New Paper - CIDER: Commonsense Inference for Dialogue Explanation and Reasoning. SIGDIAL 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/CIDER.pdf">Read here</a>.
   </p>
 </div>
 
