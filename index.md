@@ -49,7 +49,7 @@ logo:
 <div class="notice--success">
   <h4>New paper</h4>
   <p>
-    New Paper - Improving Distantly Supervised Relation Extraction with Self-Ensemble Noise Filtering. US Patent App. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Improving Distantly Supervised Relation Extraction.pdf">Read here</a>.
+    New Paper - Improving Distantly Supervised Relation Extraction with Self-Ensemble Noise Filtering. ACL 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Improving Distantly Supervised Relation Extraction.pdf">Read here</a>.
   </p>
 </div>
 
@@ -91,7 +91,7 @@ logo:
 <div class="notice--success">
   <h4>New paper</h4>
   <p>
-    New Paper - Investigating Gender Bias in BERT. Cognitive Computation. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Investigating Gender Bias in BERT.pdf">Read here</a>.
+    New Paper - Investigating Gender Bias in BERT. Cognitive Computation. Cognitive Computation, 1-11. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Investigating Gender Bias in BERT.pdf">Read here</a>.
   </p>
 </div>
 
@@ -105,7 +105,7 @@ logo:
 <div class="notice--success">
   <h4>New paper</h4>
   <p>
-    New Paper - Persuasive Dialogue Understanding: the Baselines and Negative Results. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Persuasive Dialogue Understanding the Baselines and Negative Results.pdf">Read here</a>.
+    New Paper - Persuasive Dialogue Understanding: the Baselines and Negative Results. Neurocomputing 431. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Persuasive Dialogue Understanding the Baselines and Negative Results.pdf">Read here</a>.
   </p>
 </div>
 
@@ -125,14 +125,21 @@ logo:
 <div class="notice--success">
   <h4>New paper</h4>
   <p>
-    New paper - Exploring the Role of Context in Utterance-level Emotion, Act and Intent Classification in Conversations: An Empirical Study. EMNLP 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/dialogue-understanding-acl2021-findings.pdf">Read here</a>.
+    New paper - Exploring the Role of Context in Utterance-level Emotion, Act and Intent Classification in Conversations: An Empirical Study. ACL-IJCNLP 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/dialogue-understanding-acl2021-findings.pdf">Read here</a>.
   </p>
 </div>
 
 <div class="notice--success">
   <h4>New paper</h4>
   <p>
-    New paper - Recognizing Emotion Cause in Conversations <a href="https://arxiv.org/pdf/2012.11820.pdf">Read here</a>.
+    New paper - Exemplars-guided Empathetic Response Generation Controlled by the Elements of Human Communication. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Exemplars-guided Empathetic Response.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
+    New paper - Recognizing Emotion Cause in Conversations. Cognitive Computation 13 (5). <a href="https://arxiv.org/pdf/2012.11820.pdf">Read here</a>.
   </p>
 </div>
 
