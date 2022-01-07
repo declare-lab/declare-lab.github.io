@@ -48,7 +48,7 @@ henry_lim:
     
 shaozuo:
   - image_path: /assets/images/people/shaozuo.jpg
-    excerpt: "**Zhang Shaozuo** is a research assistant at DeCLaRe Lab. His current research direction includes Question Answering. He is starting part-time Ph.D. student this year."
+    excerpt: "**Shaozuo Zhang** is a research assistant and part-time Ph.D. student at the DeCLaRe Lab. His current research direction includes Question Answering."
 
 yixuan: 
   - image_path: /assets/images/people/yixuan.jpg
