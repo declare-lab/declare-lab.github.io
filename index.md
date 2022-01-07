@@ -18,6 +18,13 @@ logo:
 
 ### News
 
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
+    New paper on Multimodal Sentiment Analysis - Bi-Bimodal Modality Fusion for Correlation-Controlled Multimodal Sentiment Analysis <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Bi-Bimodal_Analysis.pdf">Read here</a>.
+  </p>
+</div>
+
 <div class="notice--warning">
   <h4>Funding</h4>
   <p>The DeCLaRe lab has been awarded Tier 2 funding by the Ministry of Education (MoE), Singapore. We are grateful to MoE for their generosity. The project will focus on building techniques for Commonsense-aware NLP. Shoutout to the team-- Prof. Rada Mihalcea, Dr. Navonil Majumder, Prof. Alexander Gelbukh, Devamanyu Hazarika, and Deepanway Ghosal without whom it was not possible.
