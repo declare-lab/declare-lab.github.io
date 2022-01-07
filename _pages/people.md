@@ -234,7 +234,7 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
   
 {% include feature_row2 id="henry_lim" type="left" %}
 
-<!-- {% include feature_row2 id="shaozuo" type="left" %} -->
+{% include feature_row2 id="shaozuo" type="left" %}
 
 {% include feature_row2 id="yixuan" type="left" %}
 
