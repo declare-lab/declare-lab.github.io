@@ -21,6 +21,13 @@ logo:
 <div class="notice--success">
   <h4>New paper</h4>
   <p>
+    Best Paper Award Honorable Mention - Bi-Bimodal Modality Fusion for Correlation-Controlled Multimodal Sentiment Analysis. ICMI 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Bi-Bimodal_Analysis.pdf">Read here</a>.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>New paper</h4>
+  <p>
     New Paper - Multimodal Sentiment Detection Based on Multi-channel Graph Neural Networks. ACL 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Multimodal Sentiment Detection Based on Multi-channel.pdf">Read here</a>.
   </p>
 </div>
@@ -74,7 +81,7 @@ logo:
   </p>
 </div>
 
-<div class="notice--success"> 4
+<div class="notice--success"> 
   <h4>New paper</h4>
   <p>
     New Paper - Conversational Transfer Learning for Emotion Recognition. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Conversational Transfer Learning for Emotion.pdf">Read here</a>.
@@ -121,13 +128,6 @@ logo:
   <h4>New paper</h4>
   <p>
     New Paper - Improving Multimodal Fusion with Hierarchical Mutual Information Maximization for Multimodal Sentiment Analysis. EMNLP 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Improving_Multimodal_Fusion.pdf">Read here</a>.
-  </p>
-</div>
-
-<div class="notice--success">
-  <h4>New paper</h4>
-  <p>
-    Best Paper Award Honorable Mention - Bi-Bimodal Modality Fusion for Correlation-Controlled Multimodal Sentiment Analysis. ICMI 2021. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Bi-Bimodal_Analysis.pdf">Read here</a>.
   </p>
 </div>
 
