@@ -20,13 +20,13 @@ logo:
 
 <div class="notice--warning">
   <h4>ACL 2022</h4>
-  <p>Soujanya Poria is serving as Publicity cochair for <a href="https://www.2022.aclweb.org/" target="_blank">ACL 2022</a>!
+  <p>Prof. Soujanya Poria is serving as Publicity co-chair for <a href="https://www.2022.aclweb.org/" target="_blank">ACL 2022</a>!
   </p>
 </div>
 
 <div class="notice--warning">
   <h4>ACL 2022</h4>
-  <p>Soujanya Poria is serving as Workshop cochair for <a href="https://www.2022.aclweb.org/" target="_blank">ACL 2022</a>!
+  <p>Prof. Soujanya Poria is serving as Workshop co-chair for <a href="https://www.2022.aclweb.org/" target="_blank">AACL 2022</a>!
   </p>
 </div>
 
