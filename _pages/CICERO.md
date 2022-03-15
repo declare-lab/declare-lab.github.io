@@ -13,11 +13,10 @@ toc_sticky: true
 articlecolour: "#00001a"
 
 ---
-CICERO: A Dataset for Contextualized Commonsense Inference in Dialogues
 
-<a href="" target="_blank" class="btn btn--inverse btn--small" role="button">Paper</a> 
-<a href="https://github.com/declare-lab/CICERO" target="_blank" class="btn btn--inverse btn--small" role="button">Code</a>
-<a href="https://github.com/declare-lab/CICERO/master/data/" target="_blank" class="btn btn--inverse btn--small" role="button">Dataset</a>
+<a href="" target="_blank" class="btn btn--inverse btn--large" role="button">Paper</a> 
+<a href="https://github.com/declare-lab/CICERO" target="_blank" class="btn btn--inverse btn--large" role="button">Code</a>
+<a href="https://github.com/declare-lab/CICERO/master/data/" target="_blank" class="btn btn--inverse btn--large" role="button">Dataset</a>
 
 <h1> Announcing CICERO, a new Dataset for Contextualized Commonsense Inference in Dialogues. </h1>
 <hr>
