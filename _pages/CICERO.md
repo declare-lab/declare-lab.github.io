@@ -27,7 +27,7 @@ articlecolour: "#00001a"
 
 ![image-center](/assets/images/resources/cicero.png){: .width-paper-image-100 .align-center}
 
-# Citation
+## Citation
 
 If this dataset is useful in your research, cite the following paper:
 
