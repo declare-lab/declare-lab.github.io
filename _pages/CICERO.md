@@ -26,11 +26,3 @@ articlecolour: "#00001a"
 CICERO contains 53,000 inferences for five commonsense dimensions -- cause, subsequent event, prerequisite, motivation, and emotional reaction -- collected from 5600 dialogues. We design two challenging generative and multi-choice alternative selection tasks for the state-of-the-art NLP models to solve.
 
 ![image-center](/assets/images/resources/cicero.png){: .width-paper-image-100 .align-center}
-
-## Citation
-
-If this dataset is useful in your research, cite the following paper:
-
-<div class="notice--success">
-    CICERO: A Dataset for Contextualized Commonsense Inference in Dialogues. Deepanway Ghosal and Siqi Shen and Navonil Majumder and Rada Mihalcea and Soujanya Poria. ACL 2022.
-<div>
