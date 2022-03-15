@@ -14,13 +14,22 @@ articlecolour: "#00001a"
 
 ---
 
+<head>
+<link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+<style>
+spano {
+    font-family: 'Cinzel Decorative';font-size: 22px;
+}
+</style>
+</head>
+
 <a href="" target="_blank" class="btn btn--success btn--large" role="button">Paper</a> 
 <a href="https://github.com/declare-lab/CICERO" target="_blank" class="btn btn--warning btn--large" role="button">Code</a>
 <a href="https://github.com/declare-lab/CICERO/master/data/" target="_blank" class="btn btn--info btn--large" role="button">Dataset</a>
 
-<h1> Announcing CICERO, a new Dataset for Contextualized Commonsense Inference in Dialogues. </h1>
+<h1> Announcing <spano>CICERO</spano>, a new Dataset for Contextualized Commonsense Inference in Dialogues. </h1>
 <hr>
-CICERO contains 53,000 inferences for five commonsense dimensions -- cause, subsequent event, prerequisite, motivation, and emotional reaction -- collected from 5600 dialogues. We design two challenging generative and multi-choice alternative selection tasks for the state-of-the-art NLP models to solve.
+<spano>CICERO</spano> contains 53,000 inferences for five commonsense dimensions -- cause, subsequent event, prerequisite, motivation, and emotional reaction -- collected from 5600 dialogues. We design two challenging generative and multi-choice alternative selection tasks for the state-of-the-art NLP models to solve.
 
 ![image-center](/assets/images/resources/cicero.png){: .width-paper-image-100 .align-center}
 
