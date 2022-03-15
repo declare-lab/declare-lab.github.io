@@ -14,16 +14,6 @@ articlecolour: "#00001a"
 
 ---
 
-<head>
-<link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
-<style>
-spano {
-    font-family: 'Cinzel Decorative';font-size: 22px;
-}
-</style>
-</head>
-
 <h1> <spano>CICERO</spano>: A Dataset for Contextualized Commonsense Inference in Dialogues <h1>
 
 <a href="" target="_blank" class="btn btn--success btn--large" role="button">Paper</a> 
