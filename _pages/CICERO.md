@@ -12,6 +12,17 @@ toc_sticky: true
 
 articlecolour: "#00001a"
 
+authors:
+  - image_path: /assets/images/papers/deep.png
+    title: "Deepanway Ghosal"
+  - image_path: /assets/images/papers/siqi.png
+    title: "Siqi Shen" 
+  - image_path: /assets/images/papers/navo.png
+    title: "Navonil Majumder"
+  - image_path: /assets/images/papers/rada.png
+    title: "Rada Mihalcea" 
+  - image_path: /assets/images/papers/soujanya.png
+    title: "Soujanya Poria"
 ---
 
 ## <spani>CICERO</spani>: A Dataset for Contextualized Commonsense Inference in Dialogues (ACL 2022)
@@ -83,5 +94,4 @@ If this dataset is useful in your research, cite the following paper:
 | T5-large (M) | Multiple-answers subset | Multiple-answers subset | NA | 20.62 | 20.62 |
     
 ### Authors
-
-    
+{% include feature_row id="authors" %}
