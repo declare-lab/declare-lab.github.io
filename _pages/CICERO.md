@@ -19,6 +19,7 @@ authors:
     excerpt: "Siqi Shen" 
   - image_path: /assets/images/people/navo.jpg
     excerpt: "Navonil Majumder"
+authors2:
   - image_path: /assets/images/people/rada.jpg
     excerpt: "Rada Mihalcea" 
   - image_path: /assets/images/people/soujanya.JPG
@@ -95,6 +96,7 @@ If this dataset is useful in your research, cite the following paper:
     
 ### Authors
 
+{% include feature_row id="authors" type="center" %}
 {% include feature_row id="authors" type="center" %}
 <!-- <div class="containerimage">
 	<img src="/assets/images/people/deepanway.jpeg">
