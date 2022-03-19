@@ -105,3 +105,18 @@ If this dataset is useful in your research, cite the following paper:
 	<figcaption>Rada Mihalcea</figcaption>
 	<img src="/assets/images/people/soujanya.JPG">
 </div>
+
+<div class="rowcus">
+  <div class="columncus">
+    <img src="/assets/images/people/deepanway.jpeg" alt="Deepanway Ghosal" style="width:100%">
+    <figcaption align="center">Deepanway Ghosal</figcaption>
+  </div>
+  <div class="columncus">
+    <img src="/assets/images/people/siqi.jpeg" alt="Siqi Shen" style="width:100%">
+    <figcaption>Siqi Shen</figcaption>
+  </div>
+  <div class="columncus">
+    <img src="/assets/images/people/siqi.jpeg" alt="Navonil Majumder" style="width:100%">
+    <figcaption>Navonil Majumder</figcaption>
+  </div>
+</div>
