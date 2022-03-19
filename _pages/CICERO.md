@@ -96,6 +96,10 @@ If this dataset is useful in your research, cite the following paper:
 ### Authors
 <figure class="third">
 	<img src="/assets/images/people/deepanway.jpeg">
-	<img src="/assets/images/people/deepanway.jpeg">
-	<img src="/assets/images/people/deepanway.jpeg">
+	<img src="/assets/images/people/siqi.jpeg">
+	<img src="/assets/images/people/navo.jpg">
+</figure>
+<figure class="two">
+	<img src="/assets/images/people/rada.jpg">
+	<img src="/assets/images/people/soujanya.JPG">
 </figure>
