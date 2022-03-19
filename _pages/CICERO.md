@@ -35,9 +35,9 @@ If this dataset is useful in your research, cite the following paper:
     <p> <spano>CICERO</spano>: A Dataset for Contextualized Commonsense Inference in Dialogues. Deepanway Ghosal and Siqi Shen and Navonil Majumder and Rada Mihalcea and Soujanya Poria. ACL 2022.</p>
 </div>
 
-### Leaderboard (Answer Generation Task)
+### Leaderboard (<spano>CICERO</spano> <sub>NLG</sub>: Answer Generation Task)
 
-<p>If you wonder how to report results on <spano>CICERO</spano> and easily compare with the other models, refer to Table 14 in the paper and corresponding discussions. The following leaderboard will also be updated frequently.</p>
+<p>If you wonder how to report results on <spano>CICERO</spano> and easily compare with the other models for the task <spano>CICERO</spano> <sub>NLG</sub>, refer to Table 10 in the paper and corresponding discussions. The following leaderboard will also be updated frequently.</p>
 
 |**Relation**           | **Model** | **BLEU1** | **BLEU2** | **METEOR** | **ROUGE** | **CIDEr** | **Sem-Sim** |
 |------------------|--------------------|--------------------|--------------------|---------------------|--------------------|--------------------|----------------------|
@@ -67,7 +67,7 @@ If this dataset is useful in your research, cite the following paper:
 |                  | COMET              | 0.3428             | 0.2381             | 0.1935              | 0.3649             | 0.6286             | 0.6962               |
 |                  | GLUCOSE-T5         | 0.3546             | 0.2582             | 0.2037              | 0.3840             | 0.7499             | 0.7048               |
 
-### Leaderboard (Answer Selection Task)
+### Leaderboard (<spano>CICERO</spano> <sub>MCQ</sub>: Answer Selection Task)
 
 <p>If you wonder how to report results on <spano>CICERO</spano> and easily compare with the other models, refer to Table 14 in the paper and corresponding discussions. The following leaderboard will also be updated frequently.</p>
 
