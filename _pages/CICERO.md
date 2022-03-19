@@ -35,7 +35,7 @@ If this dataset is useful in your research, cite the following paper:
     <p> <spano>CICERO</spano>: A Dataset for Contextualized Commonsense Inference in Dialogues. Deepanway Ghosal and Siqi Shen and Navonil Majumder and Rada Mihalcea and Soujanya Poria. ACL 2022.</p>
 <div>
     
-### Leaderboard
+## Leaderboard
 
 <p>If you wonder how to report results on <spano>CICERO</spano> and easily compare with the other models, refer to Table 14 in the paper and corresponding discussions. The following leaderboard will also be updated frequently.</p>
 
@@ -52,6 +52,6 @@ If this dataset is useful in your research, cite the following paper:
 
 <p> Notes: The models with (S) are only trained and evaluated on the subset of <spano>CICERO</CICERO> that contains instances with single correct answers. These models were not trained on the instances with multiple correct answers. On the other side, the models with (L) are trained and evaluated on only the multiple-answers subset of <spano>CICERO</CICERO>. These models are neither trained nor evaluated on instances with single correct answer.</p>
     
-### Authors
+## Authors
 
     
