@@ -14,15 +14,15 @@ articlecolour: "#00001a"
 
 authors:
   - image_path: /assets/images/people/deepanway.jpeg
-    title: "Deepanway Ghosal"
+    excerpt: "Deepanway Ghosal"
   - image_path: /assets/images/people/siqi.jpeg
-    title: "Siqi Shen" 
+    excerpt: "Siqi Shen" 
   - image_path: /assets/images/people/navo.jpg
-    title: "Navonil Majumder"
+    excerpt: "Navonil Majumder"
   - image_path: /assets/images/people/rada.jpg
-    title: "Rada Mihalcea" 
+    excerpt: "Rada Mihalcea" 
   - image_path: /assets/images/people/soujanya.JPG
-    title: "Soujanya Poria"
+    excerpt: "Soujanya Poria"
 ---
 
 ## <spani>CICERO</spani>: A Dataset for Contextualized Commonsense Inference in Dialogues (ACL 2022)
