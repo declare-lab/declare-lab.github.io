@@ -96,8 +96,8 @@ If this dataset is useful in your research, cite the following paper:
     
 ### Authors
 
-{% include feature_row id="authors" type="center" %}
-{% include feature_row id="authors" type="center" %}
+{% include feature_row id="authors" %}
+{% include feature_row id="authors2" %}
 <!-- <div class="containerimage">
 	<img src="/assets/images/people/deepanway.jpeg">
 	<figcaption>Deepanway Ghosal</figcaption>
