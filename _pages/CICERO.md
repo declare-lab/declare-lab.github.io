@@ -94,7 +94,7 @@ If this dataset is useful in your research, cite the following paper:
 | T5-large | Multiple-answers subset | Multiple-answers subset | NA | 20.62 | 20.62 |
     
 ### Authors
-<div class="containerimage">
+<!-- <div class="containerimage">
 	<img src="/assets/images/people/deepanway.jpeg">
 	<figcaption>Deepanway Ghosal</figcaption>
 	<img src="/assets/images/people/siqi.jpeg">
@@ -104,7 +104,7 @@ If this dataset is useful in your research, cite the following paper:
 	<img src="/assets/images/people/rada.jpg">
 	<figcaption>Rada Mihalcea</figcaption>
 	<img src="/assets/images/people/soujanya.JPG">
-</div>
+</div> -->
 
 <div class="rowcus">
   <div class="columncus">
