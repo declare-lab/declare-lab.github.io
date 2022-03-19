@@ -5,7 +5,7 @@ permalink: /CICERO/
 author_profile: false
 <!-- classes: wide -->
 related: false
-toc: false
+toc: true
 toc_label: "Table of Contents"
 toc_icon: "cogs"
 toc_sticky: true
@@ -14,7 +14,7 @@ articlecolour: "#00001a"
 
 ---
 
-<h1> <spani>CICERO</spani>: A Dataset for Contextualized Commonsense Inference in Dialogues (ACL 2022) </h1>
+## <spani>CICERO</spani>: A Dataset for Contextualized Commonsense Inference in Dialogues (ACL 2022)
 
 <a href="" target="_blank" class="btn btn--success btn--large" role="button">Paper</a> 
 <a href="https://github.com/declare-lab/CICERO" target="_blank" class="btn btn--warning btn--large" role="button">Code</a>
@@ -27,7 +27,7 @@ articlecolour: "#00001a"
 
 ![image-center](/assets/images/resources/cicero.png){: .width-paper-image-100 .align-center}
 
-## Citation
+### Citation
 
 If this dataset is useful in your research, cite the following paper:
 
