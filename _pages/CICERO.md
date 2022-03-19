@@ -13,15 +13,15 @@ toc_sticky: true
 articlecolour: "#00001a"
 
 authors:
-  - image_path: /assets/images/papers/deep.png
+  - image_path: /assets/images/people/deepanway.jpeg
     title: "Deepanway Ghosal"
-  - image_path: /assets/images/papers/siqi.png
+  - image_path: /assets/images/people/siqi.jpeg
     title: "Siqi Shen" 
-  - image_path: /assets/images/papers/navo.png
+  - image_path: /assets/images/people/navo.jpg
     title: "Navonil Majumder"
-  - image_path: /assets/images/papers/rada.png
+  - image_path: /assets/images/people/rada.jpg
     title: "Rada Mihalcea" 
-  - image_path: /assets/images/papers/soujanya.png
+  - image_path: /assets/images/people/soujanya.JPG
     title: "Soujanya Poria"
 ---
 
