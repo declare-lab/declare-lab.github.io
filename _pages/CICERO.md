@@ -94,10 +94,8 @@ If this dataset is useful in your research, cite the following paper:
 | T5-large | Multiple-answers subset | Multiple-answers subset | NA | 20.62 | 20.62 |
     
 ### Authors
-<figure class="five">
+<figure class="third">
 	<img src="/assets/images/people/deepanway.jpeg">
 	<img src="/assets/images/people/deepanway.jpeg">
 	<img src="/assets/images/people/deepanway.jpeg">
-  <img src="/assets/images/people/deepanway.jpeg">
-  <img src="/assets/images/people/deepanway.jpeg">
 </figure>
