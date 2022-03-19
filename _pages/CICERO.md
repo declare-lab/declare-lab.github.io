@@ -96,8 +96,11 @@ If this dataset is useful in your research, cite the following paper:
 ### Authors
 <figure class="third">
 	<img src="/assets/images/people/deepanway.jpeg">
+	<figcaption>Deepanway Ghosal</figcaption>
 	<img src="/assets/images/people/siqi.jpeg">
+	<figcaption>Siqi Shen</figcaption>
 	<img src="/assets/images/people/navo.jpg">
+	<figcaption>Navonil Majumder</figcaption>
 </figure>
 <figure class="half">
 	<img src="/assets/images/people/rada.jpg">
