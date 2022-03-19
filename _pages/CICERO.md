@@ -94,15 +94,13 @@ If this dataset is useful in your research, cite the following paper:
 | T5-large | Multiple-answers subset | Multiple-answers subset | NA | 20.62 | 20.62 |
     
 ### Authors
-<figure class="third">
+<div class="containerimage">
 	<img src="/assets/images/people/deepanway.jpeg">
 	<figcaption>Deepanway Ghosal</figcaption>
 	<img src="/assets/images/people/siqi.jpeg">
 	<figcaption>Siqi Shen</figcaption>
 	<img src="/assets/images/people/navo.jpg">
 	<figcaption>Navonil Majumder</figcaption>
-</figure>
-<figure class="half">
 	<img src="/assets/images/people/rada.jpg">
 	<img src="/assets/images/people/soujanya.JPG">
-</figure>
+</div>
