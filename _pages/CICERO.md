@@ -84,14 +84,14 @@ If this dataset is useful in your research, cite the following paper:
 
 | Model | Trained on | Evaluated On | Single+Multi-answers Accuracy | Single-answer Accuracy | Multiple-answers Accuracy
 | :---: |   :---: |  :---:      |     :---:      |          :---: |        :---: |
-| T5-large | Entire Dataset | Entire Dataset |  77.68 | 92.71 |  3.38 |
-| Unified QA| Entire Dataset | Entire Dataset | 77.51 | 92.45 |  3.60 |
-| Unified QA (S) | Single-answer subset| Single-answer subset | NA | 95.70 | NA |
-| T5-large (S) | Single-answer subset | Single-answer subset| NA | 95.54 | NA |
-| ELECTRA-large (S)| Single-answer subset | Single-answer subset  | NA  | 86.82      | NA |
-| RoBERTa-large (S) | Multiple-answers subset| Multiple-answers subset   | NA    | 83.28    | NA |
-| Unified QA (M) | Multiple-answers subset | Multiple-answers subset | NA | 24.33 | 24.33 |
-| T5-large (M) | Multiple-answers subset | Multiple-answers subset | NA | 20.62 | 20.62 |
+| T5-large | Entire Dataset | Entire Dataset |  **77.68** | 92.71 |  3.38 |
+| Unified QA Large| Entire Dataset | Entire Dataset | 77.51 | 92.45 |  3.60 |
+| Unified QA Large | Single-answer subset| Single-answer subset | NA | **95.70** | NA |
+| T5-large | Single-answer subset | Single-answer subset| NA | 95.54 | NA |
+| ELECTRA-large| Single-answer subset | Single-answer subset  | NA  | 86.82      | NA |
+| RoBERTa-large | Multiple-answers subset| Multiple-answers subset   | NA    | 83.28    | NA |
+| Unified QA Large | Multiple-answers subset | Multiple-answers subset | NA | 24.33 | **24.33** |
+| T5-large | Multiple-answers subset | Multiple-answers subset | NA | 20.62 | 20.62 |
     
 ### Authors
 <figure class="five">
