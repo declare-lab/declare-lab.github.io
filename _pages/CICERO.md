@@ -109,22 +109,22 @@ If this dataset is useful in your research, cite the following paper:
 <div class="rowcus">
   <div class="columncus">
     <img src="/assets/images/people/deepanway.jpeg" alt="Deepanway Ghosal" style="width:100%">
-    <figcaption align="center">Deepanway Ghosal</figcaption>
+	  <figcaption align="center"><a href="https://deepanwayx.github.io/">Deepanway Ghosal</a></figcaption>
   </div>
   <div class="columncus">
     <img src="/assets/images/people/siqi.jpeg" alt="Siqi Shen" style="width:100%">
-    <figcaption align="center">Siqi Shen</figcaption>
+	  <figcaption align="center"><a href="">Siqi Shen</a></figcaption>
   </div>
   <div class="columncus">
     <img src="/assets/images/people/navo.jpg" alt="Navonil Majumder" style="width:100%">
-    <figcaption align="center">Navonil Majumder</figcaption>
+	  <figcaption align="center"><a href="https://nmder.info/">Navonil Majumder</a></figcaption>
   </div>
   <div class="columncus">
     <img src="/assets/images/people/rada.jpg" alt="Rada Mihalcea" style="width:100%">
-    <figcaption align="center">Rada Mihalcea</figcaption>
+	  <figcaption align="center"><a href="https://web.eecs.umich.edu/~mihalcea/">Rada Mihalcea</a></figcaption>
   </div>
   <div class="columncus">
     <img src="/assets/images/people/soujanya.JPG" alt="Soujanya Poria" style="width:100%">
-    <figcaption align="center">Soujanya Poria</figcaption>
+	  <figcaption align="center"><a href="https://sporia.info">Soujanya Poria</a></figcaption>
   </div>
 </div>
