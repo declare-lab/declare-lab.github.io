@@ -116,7 +116,15 @@ If this dataset is useful in your research, cite the following paper:
     <figcaption>Siqi Shen</figcaption>
   </div>
   <div class="columncus">
-    <img src="/assets/images/people/siqi.jpeg" alt="Navonil Majumder" style="width:100%">
+    <img src="/assets/images/people/navo.jpg" alt="Navonil Majumder" style="width:100%">
     <figcaption>Navonil Majumder</figcaption>
+  </div>
+  <div class="columncus">
+    <img src="/assets/images/people/rada.jpg" alt="Rada Mihalcea" style="width:100%">
+    <figcaption>Rada Mihalcea</figcaption>
+  </div>
+  <div class="columncus">
+    <img src="/assets/images/people/soujanya.JPG" alt="Soujanya Poria" style="width:100%">
+    <figcaption>Soujanya Poria</figcaption>
   </div>
 </div>
