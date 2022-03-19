@@ -99,7 +99,7 @@ If this dataset is useful in your research, cite the following paper:
 	<img src="/assets/images/people/siqi.jpeg">
 	<img src="/assets/images/people/navo.jpg">
 </figure>
-<figure class="two">
+<figure class="half">
 	<img src="/assets/images/people/rada.jpg">
 	<img src="/assets/images/people/soujanya.JPG">
 </figure>
