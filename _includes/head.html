@@ -31,9 +31,22 @@ spani {
   width: auto;
   justify-content: center;
 }
+* {
+  box-sizing: border-box;
+}
 
-figurecustom {
-    text-align: center;
+.columncus {
+  float: left;
+  width: 33.33%;
+  height: 150px;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.rowcus::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 </style>
 
