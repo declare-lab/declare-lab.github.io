@@ -47,10 +47,10 @@ If this dataset is useful in your research, cite the following paper:
 | Unified QA| 77.51 | 92.45 |  3.60 |
 | T5-large (S) | NA | 95.54 | NA |
 | Unified QA (S) | NA | 95.70 | NA |
-| T5-large (L) | NA | 20.62 | NA |
-| Unified QA (L) | NA | 24.33 | NA |
+| T5-large (M) | NA | 20.62 | NA |
+| Unified QA (M) | NA | 24.33 | NA |
 
-<p> Notes: The models with (S) are only trained and evaluated on the subset of <spano>CICERO</spano> that contains instances with single correct answers. These models were not trained on the instances with multiple correct answers. On the other side, the models with (L) are trained and evaluated on only the multiple-answers subset of <spano>CICERO</spano>. These models are neither trained nor evaluated on instances with single correct answer.</p>
+<p> Notes: The models listed with (S) are only trained and evaluated on the subset of <spano>CICERO</spano> that contains instances with single correct answers. These models were not trained on the instances with multiple correct answers. On the other side, the models listed with (M) are trained and evaluated on only the multiple-answers subset of <spano>CICERO</spano>. These models are neither trained nor evaluated on instances with single correct answer.</p>
     
 ## Authors
 
