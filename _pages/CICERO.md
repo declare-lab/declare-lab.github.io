@@ -69,20 +69,18 @@ If this dataset is useful in your research, cite the following paper:
 
 ### Leaderboard (<spano>CICERO</spano> <sub>MCQ</sub>: Answer Selection Task)
 
-<p>If you wonder how to report results on <spano>CICERO</spano> and easily compare with the other models, refer to Table 14 in the paper and corresponding discussions. The following leaderboard will also be updated frequently.</p>
+<p>If you wonder how to report results on <spano>CICERO</spano> and easily compare with the other models, refer to Table 14 in the paper and corresponding discussions. We sort the results based on the models' performance on the entire dataset. This leaderboard will also be updated frequently.</p>
 
-| Model | Single+Multi-answer Accuracy | Single-answer Accuracy | Multiple-answers Accuracy
-| :---:        |     :---:      |          :---: |        :---: |
-| RoBERTa-large (S)  | NA    | 83.28    | NA |
-| ELECTRA-large (S)   | NA       | 86.82      | NA |
-| T5-large |  77.68 | 92.71 |  3.38 |
-| Unified QA| 77.51 | 92.45 |  3.60 |
-| T5-large (S) | NA | 95.54 | NA |
-| Unified QA (S) | NA | 95.70 | NA |
-| T5-large (M) | NA | 20.62 | NA |
-| Unified QA (M) | NA | 24.33 | NA |
-
-<p> Notes: The models listed with (S) are only trained and evaluated on the subset of <spano>CICERO</spano> that contains instances with single correct answers. These models were not trained on the instances with multiple correct answers. On the other side, the models listed with (M) are trained and evaluated on only the multiple-answers subset of <spano>CICERO</spano>. These models are neither trained nor evaluated on instances with single correct answer.</p>
+| Model | Trained on | Evaluated On | Single+Multi-answers Accuracy | Single-answer Accuracy | Multiple-answers Accuracy
+| :---: |   :---: |  :---:      |     :---:      |          :---: |        :---: |
+| T5-large | Entire Dataset | Entire Dataset |  77.68 | 92.71 |  3.38 |
+| Unified QA| Entire Dataset | Entire Dataset | 77.51 | 92.45 |  3.60 |
+| Unified QA (S) | Single-answer subset| Single-answer subset | NA | 95.70 | NA |
+| T5-large (S) | Single-answer subset | Single-answer subset| NA | 95.54 | NA |
+| ELECTRA-large (S)| Single-answer subset | Single-answer subset  | NA  | 86.82      | NA |
+| RoBERTa-large (S) | Multiple-answers subset| Multiple-answers subset   | NA    | 83.28    | NA |
+| Unified QA (M) | Multiple-answers subset | Multiple-answers subset | NA | 24.33 | 24.33 |
+| T5-large (M) | Multiple-answers subset | Multiple-answers subset | NA | 20.62 | 20.62 |
     
 ### Authors
 
