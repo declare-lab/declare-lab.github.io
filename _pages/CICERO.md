@@ -94,6 +94,8 @@ If this dataset is useful in your research, cite the following paper:
 | T5-large | Multiple-answers subset | Multiple-answers subset | NA | 20.62 | 20.62 |
     
 ### Authors
+
+{% include feature_row id="authors" type="center" %}
 <!-- <div class="containerimage">
 	<img src="/assets/images/people/deepanway.jpeg">
 	<figcaption>Deepanway Ghosal</figcaption>
@@ -106,7 +108,7 @@ If this dataset is useful in your research, cite the following paper:
 	<img src="/assets/images/people/soujanya.JPG">
 </div> -->
 
-<div class="rowcus">
+<!-- <div class="rowcus">
   <div class="columncus">
     <img src="/assets/images/people/deepanway.jpeg" alt="Deepanway Ghosal" style="width:100%">
 	  <figcaption align="center"><a href="https://deepanwayx.github.io/">Deepanway Ghosal</a></figcaption>
@@ -127,4 +129,4 @@ If this dataset is useful in your research, cite the following paper:
     <img src="/assets/images/people/soujanya.JPG" alt="Soujanya Poria" style="width:100%">
 	  <figcaption align="center"><a href="https://sporia.info">Soujanya Poria</a></figcaption>
   </div>
-</div>
+</div> -->
