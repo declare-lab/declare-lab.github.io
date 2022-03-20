@@ -20,7 +20,7 @@ articlecolour: "#00001a"
 <p>We introduced <spano> CICERO </spano>, a new dataset for dialogue reasoning with contextualized commonsense inference. It contains 53K inferences for five commonsense dimensions – cause, subsequent event, prerequisite, motivation, and emotional reaction collected from  5.6K dialogues. To show the usefulness of CICERO for dialogue reasoning, we design several challenging generative and multichoice answer selection tasks for state-of-the-art NLP models to solve.</p>
 {: style="text-align: justify;"}
 
-<a href="https://github.com/declare-lab/CICERO" target="_blank" class="btn btn--inverse btn--small" role="button">webpage</a> <a href="" target="_blank" class="btn btn--inverse btn--small" role="button">pdf</a>
+<a href="https://declare-lab.github.io/CICERO/" target="_blank" class="btn btn--inverse btn--small" role="button">webpage</a> <a href="" target="_blank" class="btn btn--inverse btn--small" role="button">pdf</a>
 
 
 <hr>
