@@ -30,7 +30,7 @@ authors2:
 
 <a href="" target="_blank" class="btn btn--success btn--large" role="button">Paper</a> 
 <a href="https://github.com/declare-lab/CICERO" target="_blank" class="btn btn--warning btn--large" role="button">Code</a>
-<a href="https://github.com/declare-lab/CICERO/master/data/" target="_blank" class="btn btn--info btn--large" role="button">Dataset</a>
+<a href="https://github.com/declare-lab/CICERO/tree/main/data" target="_blank" class="btn btn--info btn--large" role="button">Dataset</a>
 
 <p> <strong> Announcing <spano>CICERO</spano>, a new Dataset for Contextualized Commonsense Inference in Dialogues. </strong> </p>
 
