@@ -90,7 +90,7 @@ If this dataset is useful in your research, cite the following paper:
 | Unified QA Large | Single-answer subset| Single-answer subset | NA | **95.70** | NA |
 | T5-large | Single-answer subset | Single-answer subset| NA | 95.54 | NA |
 | ELECTRA-large| Single-answer subset | Single-answer subset  | NA  | 86.82      | NA |
-| RoBERTa-large | Multiple-answers subset| Multiple-answers subset   | NA    | 83.28    | NA |
+| RoBERTa-large | Single-answer subset| Single-answer subset   | NA    | 83.28    | NA |
 | Unified QA Large | Multiple-answers subset | Multiple-answers subset | NA | NA | **24.33** |
 | T5-large | Multiple-answers subset | Multiple-answers subset | NA | NA | 20.62 |
     
