@@ -28,7 +28,7 @@ authors2:
 
 ## <spani>CICERO</spani>: A Dataset for Contextualized Commonsense Inference in Dialogues (ACL 2022)
 
-<a href="https://declare-lab.net/assets/pdfs/cicero.pdf" target="_blank" class="btn btn--success btn--large" role="button">Paper</a> 
+<a href="https://arxiv.org/pdf/2203.13926.pdf" target="_blank" class="btn btn--success btn--large" role="button">Paper</a> 
 <a href="https://github.com/declare-lab/CICERO" target="_blank" class="btn btn--warning btn--large" role="button">Code</a>
 <a href="https://github.com/declare-lab/CICERO/tree/main/data" target="_blank" class="btn btn--info btn--large" role="button">Dataset</a>
 
