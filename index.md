@@ -18,6 +18,13 @@ logo:
 
 ### News
 
+
+<div class="notice--warning">
+  <h4>COLING 2022</h4>
+  <p>New paper: KNOT: Knowledge Distillation using Optimal Transport for Solving NLP Tasks. <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/KNOT.pdf" target="_blank">Download Now!</a>
+  </p>
+</div>
+
 <div class="notice--warning">
   <h4>ACL 2022</h4>
   <p>Prof. Soujanya Poria is serving as Publicity co-chair for <a href="https://www.2022.aclweb.org/" target="_blank">ACL 2022</a>!
