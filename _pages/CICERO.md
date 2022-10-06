@@ -55,7 +55,7 @@ Depending on a situation, multiple different reasonings are possible each leadin
 
 ![image-center](/assets/images/resources/cicerov2.png){: .width-paper-image-100 .align-center}
 
-### Citation
+## Citation
 
 If these datasets are useful in your research, cite the following papers:
 
