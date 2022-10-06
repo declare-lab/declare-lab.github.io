@@ -51,7 +51,7 @@ The purpose of this repository is to introduce new dialogue-level commonsense in
 <a href="https://github.com/declare-lab/CICERO/tree/main/v2/" target="_blank" class="btn btn--warning btn--large" role="button">Code</a>
 <a href="https://github.com/declare-lab/CICERO/releases/download/v2.0.0/data.zip" target="_blank" class="btn btn--info btn--large" role="button">Dataset</a>
 
-Depending on a situation, multiple different reasonings are possible each leading to various unique inferences. In constructing CICERO-v2, we asked annotators to write more than one plausible inference for each dialogue context. We call this task --- Multiview Contextual Commonsense Inference, a highly challenging task for large language models.
+Depending on a situation, multiple different reasonings are possible each leading to various unique inferences. In constructing CICERO-v2, we asked annotators to write more than one plausible inference for each dialogue context. We call this task --- Multiview Contextual Commonsense Inference, a highly challenging task for large language models. CICERO-v2 contains more than 7500 dialogue contexts each manually annotated with more than one plausible inferences for the following relation types: cause, subsequent event, emotional reaction, motivation.
 
 ![image-center](/assets/images/resources/cicerov2.png){: .width-paper-image-100 .align-center}
 
