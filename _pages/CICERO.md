@@ -35,10 +35,8 @@ The purpose of this repository is to introduce new dialogue-level commonsense in
 <h1> <spani>CICERO</spani>: A Dataset for Contextualized Commonsense Inference in Dialogues (ACL 2022) </h1>
 
 <a href="https://arxiv.org/pdf/2203.13926.pdf" target="_blank" class="btn btn--success btn--large" role="button">Paper</a> 
-<a href="https://github.com/declare-lab/CICERO/main/v1/" target="_blank" class="btn btn--warning btn--large" role="button">Code</a>
+<a href="https://github.com/declare-lab/CICERO/tree/main/v1/" target="_blank" class="btn btn--warning btn--large" role="button">Code</a>
 <a href="https://github.com/declare-lab/CICERO/releases/download/v1.0.0/data.zip" target="_blank" class="btn btn--info btn--large" role="button">Dataset</a>
-
-<p> <strong> <spano>CICERO-v1</spano>, a new Dataset for Contextualized Commonsense Inference in Dialogues. </strong> </p>
 
 
 <p><spano>CICERO</spano> contains 53,000 inferences for five commonsense dimensions -- cause, subsequent event, prerequisite, motivation, and emotional reaction -- collected from 5600 dialogues. We design two challenging generative and multi-choice alternative selection tasks for the state-of-the-art NLP models to solve.</p>
@@ -50,7 +48,7 @@ The purpose of this repository is to introduce new dialogue-level commonsense in
 <h1>Multiview Contextual Commonsense Inference: A New Dataset and Task</h1>
 
 <a href="." target="_blank" class="btn btn--success btn--large" role="button">Paper</a> 
-<a href="https://github.com/declare-lab/CICERO/main/v2/" target="_blank" class="btn btn--warning btn--large" role="button">Code</a>
+<a href="https://github.com/declare-lab/CICERO/tree/main/v2/" target="_blank" class="btn btn--warning btn--large" role="button">Code</a>
 <a href="https://github.com/declare-lab/CICERO/releases/download/v2.0.0/data.zip" target="_blank" class="btn btn--info btn--large" role="button">Dataset</a>
 
 Depending on a situation, multiple different reasonings are possible each leading to various unique inferences. In constructing CICERO-v2, we asked annotators to write more than one plausible inference for dialogue contexts. We call this task --- Multiview Contextual Commonsense Inference, a highly challenging task for large language models.
