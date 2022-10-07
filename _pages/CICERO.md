@@ -47,7 +47,7 @@ The purpose of this repository is to introduce new dialogue-level commonsense in
 
 <h1>Multiview Contextual Commonsense Inference: A New Dataset and Task</h1>
 
-<a href="." target="_blank" class="btn btn--success btn--large" role="button">Paper</a> 
+<a href="https://arxiv.org/abs/2210.02890" target="_blank" class="btn btn--success btn--large" role="button">Paper</a> 
 <a href="https://github.com/declare-lab/CICERO/tree/main/v2/" target="_blank" class="btn btn--warning btn--large" role="button">Code</a>
 <a href="https://github.com/declare-lab/CICERO/releases/download/v2.0.0/data.zip" target="_blank" class="btn btn--info btn--large" role="button">Dataset</a>
 
