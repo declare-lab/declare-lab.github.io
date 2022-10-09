@@ -18,6 +18,11 @@ logo:
 
 ### News
 
+<div class="notice--success">
+  <h4>EMNLP 2022</h4>
+  <p> Five papers accepted at EMNLP 2022. Congratulations to all the collaborators.
+  </p>
+</div>
 
 <div class="notice--warning">
   <h4>COLING 2022</h4>
