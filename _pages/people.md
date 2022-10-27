@@ -220,7 +220,7 @@ rajiv:
 
 We have an amazing team of researchers comprising of PhD Students, Senior Researchers, and Collaborators at the DeCLaRe Lab. If you want to join DeCLaRe Lab, please email any of our team members.
 
-
+![image-center](/assets/images/resources/team.jpg){: .width-paper-image-100 .align-center}
 
 ## Research Staff
 
