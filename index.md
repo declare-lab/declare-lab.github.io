@@ -16,6 +16,8 @@ logo:
 ---
 {% include feature_row_home_img id="logo" type="left" %}
 
+![image-center](/assets/images/resources/lab.jpg){: .width-paper-image-100 .align-center}
+
 ### News
 
 <div class="notice--success">
