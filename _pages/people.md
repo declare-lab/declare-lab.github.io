@@ -29,7 +29,7 @@ navonil:
 
 devamanyu:
   - image_path: /assets/images/people/devamanyu.jpg
-    excerpt: "**Devamanyu Hazarika** is a senior Ph.D. candidate at NUS Singapore. He is advised by Dr. Roger Zimmermann and Dr. Soujanya Poria. At DeCLaRe Lab, his research focuses contextual affective systems, which has applications in multimodal emotional conversations, and computational sarcasm analysis."
+    excerpt: "**Devamanyu Hazarika** got his Ph.D. from NUS, Singapore and now with Amazon Science. He was advised by Dr. Roger Zimmermann and Dr. Soujanya Poria. His research focuses contextual affective systems, which has applications in multimodal emotional conversations, and computational sarcasm analysis."
     url: "http://devamanyu.com"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
@@ -130,7 +130,19 @@ pengfei:
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
 
+cherina:
+  - image_path: /assets/images/people/cherina.jpg
+    excerpt: "**Cherina** is a Ph.D. student at the DeCLaRe Lab in Singapore University of Technology and Design since January 2023. Her research interests include computer vision, natural language processing and speech."
+    url: "."
+    btn_label: "Read More"
+    btn_class: "btn btn--primary btn--small"
 
+qi:
+  - image_path: /assets/images/people/qi.jpg
+    excerpt: "**Qi Sun** is a Ph.D. candidate at the Nanjing University of Science and Technology，and study at SUTD as an exchange student. Her research interests include relation extraction, entity recognition and sentiment analysis."
+    url: "."
+    btn_label: "Read More"
+    btn_class: "btn btn--primary btn--small"
 
 rada:
   - image_path: /assets/images/people/rada.jpg
@@ -214,7 +226,7 @@ rajiv:
     excerpt: "**Rajiv Ratn Shah** currently works as an Assistant Professor in the Department of Computer Science and Engineering (joint appointment with the Department of Human-centered Design) at IIIT-Delhi. His research interests include multimedia content processing, natural language processing, image processing, multimodal computing, data science, social media computing, and the internet of things."
     url: "https://www.iiitd.edu.in/~rajivratn/"
     btn_label: "Read More"
-    btn_class: "btn btn--primary btn--small" 
+    btn_class: "btn btn--primary btn--small"
      
 ---
 
@@ -228,7 +240,7 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
 
 {% include feature_row2 id="navonil" type="left" %}
 
-{% include feature_row2 id="devamanyu" type="left" %}
+
 
 {% include feature_row2 id="pengfei" type="left" %}
   
@@ -250,8 +262,6 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
 
 {% include feature_row2 id="rishabh" type="left" %}
 
-{% include feature_row2 id="shunqi" type="left" %}
-
 {% include feature_row2 id="henryhan" type="left" %}
 
 {% include feature_row2 id="ken" type="left" %}
@@ -260,11 +270,19 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
   
 {% include feature_row2 id="xiaocui" type="left" %}
 
+{% include feature_row2 id="cherina" type="left" %}
+
+{% include feature_row2 id="qi" type="left" %}
+
 ## Masters Students
+
+
+
+## Alumni
 
 {% include feature_row2 id="joanna" type="left" %}
 
-## Alumni
+{% include feature_row2 id="devamanyu" type="left" %}
 
 {% include feature_row2 id="jiankun" type="left" %}
 
