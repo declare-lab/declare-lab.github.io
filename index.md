@@ -13,7 +13,6 @@ logo:
 ---
 
 {% include feature_row_home_img id="logo" type="left" %}
-
 > *Intrigued by our logo? [Read](/assets/images/logo-explanation.pdf) the story behind it.*"
   ![image-center](/assets/images/resources/logo-explanation.png){: .width-paper-image-100 .align-center}
 
