@@ -103,7 +103,7 @@ social:
 analytics:
   provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "UA-157535414-1"
+    tracking_id          : "G-BG36V3PL08"
     anonymize_ip         : false # true, false (default)
 
 
