@@ -270,8 +270,8 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
   
 {% include feature_row2 id="xiaocui" type="left" %}
 
-{% include feature_row2 id="cherina" type="left" %}
-
+<!-- {% include feature_row2 id="cherina" type="left" %}
+ -->
 {% include feature_row2 id="qi" type="left" %}
 
 ## Masters Students
