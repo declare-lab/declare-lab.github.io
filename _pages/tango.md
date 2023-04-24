@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+  
+---
+layout: single
+title: ""
+permalink: /tango/
+author_profile: false
+<!-- classes: wide -->
+related: false
+toc: true
+toc_label: "Table of Contents"
+toc_icon: "cogs"
+toc_sticky: true
+
+articlecolour: "#00001a"
+---
 
 <head>
   <meta charset="utf-8">
