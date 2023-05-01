@@ -1,0 +1,724 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Hugo 0.66.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+  <!-- <link rel="stylesheet" href="../css/normalize.css"> -->
+  <!-- <link rel="stylesheet" href="../css/skeleton.css"> -->
+  <!-- <link rel="stylesheet" href="../css/custom.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="alternate" href="index.xml" type="application/rss+xml" title="Speech Research">
+  <!-- <link rel="shortcut icon" href="favicon.png" type="image/x-icon" /> -->
+  <title>Text-to-Audio Generation using Instruction Tuned LLM and Latent Diffusion Model</title>
+<style>
+figcaption {
+	color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+}
+table {
+	font-family: inherit;
+	font-size: inherit;
+	color: #061E61;
+}
+thead {
+	background-color: inherit;
+	border-bottom: inherit;
+}
+h2 {
+	font-size: 1.5rem;
+}
+</style>
+</head>
+
+  <font size="5">
+
+    <div class="container">
+
+      <header role="banner">
+
+      </header>
+      <main role="main">
+        <article itemscope itemtype="https://schema.org/BlogPosting">
+          <br>
+          <h1 itemprop="headline" align="center">
+            <font color="000093" size="7">Text-to-Audio Generation using Instruction Tuned LLM and Latent Diffusion Model
+            </font>
+          </h1>
+          <br>
+          <p style="line-height:1" align="center"><b>
+              <font color="061E61">Deepanway Ghosal<sup>1</sup>, Navonil Majumder<sup>1</sup>, Ambuj Mehrish<sup>1</sup>, Soujanya
+                Poria<sup>1</sup></font>
+            </b></p>
+<!--           <p style="line-height:1" align="center"><b>
+              <font color="061E61">Danilo Mandic<sup>2</sup>, Wenwu Wang<sup>1</sup>, Mark D. Plumley<sup>1</sup></font>
+            </b></p> -->
+          <p style="line-height:0.6" align="center">
+            <font color="061E61"><sup>1</sup>DeCLaRe Lab, Singapore University of Technology and Design, Singapore</font>
+          </p>
+ <!--          <p style="line-height:0.6" align="center">
+            <font color="061E61"> <sup>2</sup>Department of EEE, Imperial College London, London, UK</font>
+          </p>
+          <p style="line-height:1" align="center">
+            <font color="061E61"><sup>*</sup>Equal Contribution</font>
+          </p> -->
+          <section itemprop="entry-text">
+            <br>
+            <div class="container">
+              <center>
+                <p><a href="https://arxiv.org/abs/2304.13731">[Paper on ArXiv]</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/declare-lab/tango">[Code on GitHub]</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://huggingface.co/spaces/declare-lab/tango">[Hugging Face Space]</a></p>
+              </center>
+            </div>
+            <h2 id="abstract">
+              <font color="000093">Abstract</font>
+            </h2>
+            <p style="text-align: justify;">
+              <font color="061E61"> The immense scale of the recent large language models (LLM) allows many interesting properties, such as, instruction and chain-of-thought-based fine-tuning, that has significantly improved zero- and few-shot performance in many natural language processing (NLP) tasks. Inspired by such successes, we adopt such an instruction-tuned LLM FLAN-T5 as the text encoder for text-to-audio (TTA) generation—a task where the goal is to generate an audio from its textual description. The prior works on TTA either pre-trained a joint text-audio encoder or used a non-instruction-tuned model, such as, T5. Consequently, our latent diffusion model (LDM)-based approach (TANGO) outperforms the state-of-the-art AudioLDM on most metrics and stays comparable on the rest on AudioCaps test set, despite training the LDM on a 63 times smaller dataset and keeping the text encoder frozen. This improvement might also be attributed to the adoption of audio pressure level-based sound mixing for training set augmentation, whereas the prior methods take a random mix. </font>
+            </p>
+
+            <h2 id="note">
+              <font color="000093">Note</font>
+            </h2>
+            <li>
+              <font color="061E61"> TANGO generates text-conditional sound effects, including human speech, and music.</font>
+            </li>
+            <li>
+              <font color="061E61"> The LDM is trained on a four A6000 GPUs, with text supervision from instruction tuned LLM -- FLAN-T5. </font>
+            </li>
+            <li>
+              <font color="061E61"> Despite training TANGO's LDM with 63x less data, it manages to produce superior sound quality to the baselines</font>
+            </li>
+
+            <br>
+            <figure>
+              <p align="center"><img src="../tango.png" width="100%" class="center" /></p>
+              <figcaption>
+                <p style="text-align: justify">
+		<font color="061E61"><b>Figure 1:</b> TANGO, as depicted in this figure, has three major components: i) textual-prompt encoder, ii) latent diffusion model (LDM), and iii) mel-spectogram/audio VAE. The textual-prompt encoder (FLAN-T5) encodes the input description of the audio. Subsequently, the textual representation is used to construct a latent representation of the audio or audio prior from standard Gaussian noise, using reverse diffusion. Thereafter the decoder of the mel-spectogram VAE constructs a mel-spectogram from the latent audio representation. This mel-spectogram is fed to a vocoder to generate the final audio.</font>
+                </p>
+              </figcaption>
+            </figure>
+
+
+            <br>
+
+            <p><b>
+                <font color="061E61">Some Examples:</font>
+              </b></p>
+
+            <table class="table" align="center" style="table-layout: fixed;word-break:break-word">
+              <!-- <thead> -->
+                <tr>
+                  <td scope="col" width="33%">
+                    <font color="061E61">A man is speaking </font>in a <em style="color:red;">huge room</em>.
+                  </td>
+                  <td scope="col" width="33%">
+                    <font color="061E61">A man is speaking </font>in a <em style="color:red;">small room</em>.
+                  </td>
+                  <td scope="col" width="33%">
+                    <font color="061E61">A man is speaking </font>in a <em style="color:red;">studio</em>.
+                  </td>
+                </tr>
+              <!-- </thead> -->
+              <tbody>
+                <tr>
+                  <td scope="row"><audio controls="controls">
+                      <source src="../samples/examples/A man is speaking in a huge room_sample1.wav" autoplay />
+                      Your browser does not support the audio element.
+                    </audio></td>
+                  <td><audio controls="controls">
+                      <source src="../samples/examples/A man is speaking in a small room_sample1.wav"
+                        autoplay />Your browser does not support the audio element.
+                    </audio></td>
+                  <td><audio controls="controls">
+                      <source
+                        src="../samples/examples/A man is speaking in a studio_sample1.wav"
+                        autoplay />Your browser does not support the audio element.
+                    </audio></td>
+                </tr>
+                <tr>
+                   <td scope="col" width="33%">
+                    A racing car is passing by and disappear.
+                  </td>
+                    <td scope="col" width="33%">
+                    Describe the sound of the battlefiled.
+                  </td>   
+                  <td scope="col" width="33%">
+                    Describe the sound of the factory.
+                  </td>              
+                </tr>
+                <tr>
+                  <td scope="row"><audio controls="controls">
+                      <source src="../samples/examples/A racing car is passing by and disappear_sample1.wav" autoplay />
+                      Your browser does not support the audio element.
+                    </audio></td>
+                  <td><audio controls="controls">
+                      <source src="../samples/examples/Describe the sound of the battlefiled_sample1.wav"
+                        autoplay />Your browser does not support the audio element.
+                    </audio></td>
+                  <td><audio controls="controls">
+                      <source
+                        src="../samples/examples/Describe the sound of the factory_sample1.wav"
+                        autoplay />Your browser does not support the audio element.
+                    </audio></td>
+                </tr>
+
+                <tr>
+                   <td scope="col" width="33%">
+                    Describe the sound of the ocean.
+                  </td>
+                    <td scope="col" width="33%">
+                    Nature environmental noise with various bird vocalization, high fidelity, children playing far away and light wind.
+                  </td>   
+                  <td scope="col" width="33%">
+                    Loud bus roaring and voices.
+                  </td>              
+                </tr>
+                <tr>
+                  <td scope="row"><audio controls="controls">
+                      <source src="../samples/examples/Describe the sound of the ocean_sample1.wav" autoplay />
+                      Your browser does not support the audio element.
+                    </audio></td>
+                  <td><audio controls="controls">
+                      <source src="../samples/examples/Nature environmental noise with various bird vocalization, high fidelity, children playing far away and light wind_sample1.wav"
+                        autoplay />Your browser does not support the audio element.
+                    </audio></td>
+                  <td><audio controls="controls">
+                      <source
+                        src="../samples/examples/184. Loud bus roaring and voices.wav"
+                        autoplay />Your browser does not support the audio element.
+                    </audio></td>
+                </tr>
+                <tr>
+                   <td scope="col" width="33%">
+                    A cup is filled from a faucet.
+                  </td>
+                    <td scope="col" width="33%">
+                    A door shutting and a female speaking.
+                  </td>   
+                  <td scope="col" width="33%">
+                    A helicopter is in flight.
+                  </td>              
+                </tr>
+                <tr>
+                  <td scope="row"><audio controls="controls">
+                      <source src="../samples/examples/A cup is filled from a faucet.wav" autoplay />
+                      Your browser does not support the audio element.
+                    </audio></td>
+                  <td><audio controls="controls">
+                      <source src="../samples/examples/A door shutting and a female speaking.wav"
+                        autoplay />Your browser does not support the audio element.
+                    </audio></td>
+                  <td><audio controls="controls">
+                      <source
+                        src="../samples/examples/A helicopter is in flight.wav"
+                        autoplay />Your browser does not support the audio element.
+                    </audio></td>
+                </tr>
+                <tr>
+                   <td scope="col" width="33%">
+                    A machine is making clicking sound as people talk in the background.
+                  </td>
+                    <td scope="col" width="33%">
+                    A missile launching followed by an explosion and metal screeching as a motor hums in the background.
+                  </td>   
+                  <td scope="col" width="33%">
+                    A person snoring.
+                  </td>              
+                </tr>
+                <tr>
+                  <td scope="row"><audio controls="controls">
+                      <source src="../samples/examples/A machine is making clicking sound as people talk in the background.wav" autoplay />
+                      Your browser does not support the audio element.
+                    </audio></td>
+                  <td><audio controls="controls">
+                      <source src="../samples/examples/A missile launching followed by an explosion and metal screeching as a motor hums in the background.wav"
+                        autoplay />Your browser does not support the audio element.
+                    </audio></td>
+                  <td><audio controls="controls">
+                      <source
+                        src="../samples/examples/A person snoring.wav"
+                        autoplay />Your browser does not support the audio element.
+                    </audio></td>
+                </tr>
+                <tr>
+                   <td scope="col" width="33%">
+                    A toilet is flushed.
+                  </td>
+                    <td scope="col" width="33%">
+                    A woman and a baby are having a conversation.
+                  </td>   
+                  <td scope="col" width="33%">
+                    Applause from a crowd with distant clicking and a man speaking over a loudspeaker.
+                  </td>              
+                </tr>
+                <tr>
+                  <td scope="row"><audio controls="controls">
+                      <source src="../samples/examples/A toilet is flushed.wav" autoplay />
+                      Your browser does not support the audio element.
+                    </audio></td>
+                  <td><audio controls="controls">
+                      <source src="../samples/examples/A woman and a baby are having a conversation.wav"
+                        autoplay />Your browser does not support the audio element.
+                    </audio></td>
+                  <td><audio controls="controls">
+                      <source
+                        src="../samples/examples/Applause from a crowd with distant clicking and a man speaking over a loudspeaker.wav"
+                        autoplay />Your browser does not support the audio element.
+                    </audio></td>
+                </tr>
+                <tr>
+                   <td scope="col" width="33%">
+                    Ducks quack and water splashes with some animal screeching in the background.
+                  </td>
+                    <td scope="col" width="33%">
+                    Emergency sirens wailing.
+                  </td>   
+                  <td scope="col" width="33%">
+                    Female speech, a toilet flushing and then more speech.
+                  </td>              
+                </tr>
+                <tr>
+                  <td scope="row"><audio controls="controls">
+                      <source src="../samples/examples/Ducks quack and water splashes with some animal screeching in the background.wav" autoplay />
+                      Your browser does not support the audio element.
+                    </audio></td>
+                  <td><audio controls="controls">
+                      <source src="../samples/examples/Emergency sirens wailing.wav"
+                        autoplay />Your browser does not support the audio element.
+                    </audio></td>
+                  <td><audio controls="controls">
+                      <source
+                        src="../samples/examples/Female speech, a toilet flushing and then more speech.wav"
+                        autoplay />Your browser does not support the audio element.
+                    </audio></td>
+                </tr>
+                <tr>
+                   <td scope="col" width="33%">
+                    Food sizzling with some knocking and banging followed by a woman speaking.
+                  </td>
+                    <td scope="col" width="33%">
+                    Motor vehicles are driving with loud engines and a person whistles.
+                  </td>   
+                  <td scope="col" width="33%">
+                    Water trickling with man speaking.
+                  </td>              
+                </tr>
+                <tr>
+                  <td scope="row"><audio controls="controls">
+                      <source src="../samples/examples/Food sizzling with some knocking and banging followed by a woman speaking.wav" autoplay />
+                      Your browser does not support the audio element.
+                    </audio></td>
+                  <td><audio controls="controls">
+                      <source src="../samples/examples/Motor vehicles are driving with loud engines and a person whistles.wav"
+                        autoplay />Your browser does not support the audio element.
+                    </audio></td>
+                  <td><audio controls="controls">
+                      <source
+                        src="../samples/examples/Water trickling with man speaking.wav"
+                        autoplay />Your browser does not support the audio element.
+                    </audio></td>
+                </tr>
+                <tr>
+                   <td scope="col" width="33%">
+                    Whistling with birds chirping.
+                  </td>             
+                </tr>
+                <tr>
+                  <td scope="row"><audio controls="controls">
+                      <source src="../samples/examples/Whistling with birds chirping.wav" autoplay />
+                      Your browser does not support the audio element.
+                    </audio></td>
+                </tr>                   
+              </tbody>
+            </table>
+
+
+
+
+            <p><b>
+                <font color="061E61">Multiconcept and Temporal Order Control:</font>
+              </b></p>
+
+<table class="table" align="center" style="table-layout: fixed;word-break:break-word">
+  <thead>
+    <tr>
+      <th>Text Description
+	      <br>
+	      <div style="color:#007bff;font-size:medium;">
+		      <span style="color:red">red</span>-prompt audios are from <a href="https://huggingface.co/spaces/declare-lab/tango">[demo]</a>
+	      </div>
+      </th>
+      <th>AudioLDM</th>
+      <th>TANGO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="color:red;">Gentle water stream, birds chirping and sudden gun shot</td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/AudioLDM-Lemon/Gentle water stream, birds chirping and sudden gun shot.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/Tango2-RT/Gentle water stream, birds chirping and sudden gun shot.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td style="color:red;">dogs are barking and gunshot in the background</td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/AudioLDM-Lemon/dogs are barking and gunshot in the background.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/Tango2-RT/dogs are barking and gunshot in the background.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td style="color:red;">Wooden table tapping sound while water pouring</td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/AudioLDM-Lemon/Wooden table tapping sound while water pouring.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/Tango2-RT/Wooden table tapping sound while water pouring.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td style="color:red;">two gunshots followed by birds flying away while chirping</td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/AudioLDM-Lemon/two gunshots followed by birds flying away while chirping.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/Tango2-RT/two gunshots followed by birds flying away while chirping.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td style="color:red;">Someone urinating</td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/AudioLDM-Lemon/Someone urinating.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/Tango2-RT/Someone urinating.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+	<tr>
+      <td style="color:red;">Elephant noise</td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/AudioLDM-Lemon/elephant noise.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/Tango2-RT/elephant noise.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>	 
+    <tr>
+      <td style="color:red;">dogs are fighting</td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/AudioLDM-Lemon/dogs are fighting.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/Tango2-RT/dogs are fighting.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td style="color:red;">A dog barking and a cat mewing and a racing car passes by</td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/AudioLDM-Lemon/A dog barking and a cat mewing and a racing car passes by.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/Tango2-RT/A dog barking and a cat mewing and a racing car passes by.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td style="color:red;">A dog barking and a man talking and a racing car passes by</td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/AudioLDM-Lemon/A dog barking and a man talking and a racing car passes by.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/Tango2-RT/A dog barking and a man talking and a racing car passes by.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td style="color:red;">A dog barking</td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/AudioLDM-Lemon/A dog barking.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/Tango2-RT/A dog barking.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td style="color:red;">Motor vehicles are driving with loud engines and a person whistles</td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/AudioLDM-Lemon/Motor vehicles are driving with loud engines and a person whistles.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/Tango2-RT/Motor vehicles are driving with loud engines and a person whistles.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td style="color:red;">People cheering in a stadium while rolling thunder and lightning strikes</td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/AudioLDM-Lemon/People cheering in a stadium while rolling thunder and lightning strikes.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/Tango2-RT/People cheering in a stadium while rolling thunder and lightning strikes.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td style="color:red;">People cheering in a stadium</td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/AudioLDM-Lemon/People cheering in a stadium.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/Tango2-RT/People cheering in a stadium.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>A man talking followed by a goat baaing then a metal gate sliding shut as ducks quack and wind blows into a microphone.</td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/AudioLDM-Lemon/67. A man talking followed by a goat baaing then a metal gate sliding shut as ducks quack and wind blows into a microphone.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/Tango2-RT/67. A man talking followed by a goat baaing then a metal gate sliding shut as ducks quack and wind blows into a microphone.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>A man speaking followed by a faucet turning on and off while pouring water twice proceeded by water draining down a pipe</td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/AudioLDM-Lemon/116. A man speaking followed by a faucet turning on and off while pouring water twice proceeded by water draining down a pipe.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/Tango2-RT/116. A man speaking followed by a faucet turning on and off while pouring water twice proceeded by water draining down a pipe.wav" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>A bicycle peddling on dirt and gravel followed by a man speaking then laughing</td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/AudioLDM-Lemon/134. A bicycle peddling on dirt and gravel followed by a man speaking then laughing.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/Tango2-RT/134. A bicycle peddling on dirt and gravel followed by a man speaking then laughing.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>A man speaks followed by a popping noise and laughter</td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/AudioLDM-Lemon/143. A man speaks followed by a popping noise and laughter.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/Tango2-RT/143. A man speaks followed by a popping noise and laughter.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Quiet speech and then and airplane flying away</td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/AudioLDM-Lemon/423. Quiet speech and then and airplane flying away.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+      <td>
+        <audio controls="controls">
+          <source src="../samples/temporal/Tango2-RT/423. Quiet speech and then and airplane flying away.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+            <!-- <br></br> -->
+            <hr>
+            <h2 id="Limitations">
+              <font color="000093">Limitations</font>
+            </h2>
+            <div class="container">
+              <p>
+                TANGO is trained on the small AudioCaps dataset so it may not generate good audio samples related to concepts that it has not seen in training (e.g. singing). For the same reason, TANGO is not always able to finely control its generations over textual control prompts. For example, the generations from TANGO for prompts 'Chopping tomatoes on a wooden table' and 'Chopping potatoes on a metal table' are very similar. 'Chopping vegetables on a table' also produces similar audio samples. Training text-to-audio generation models on larger datasets is thus required for the model to learn the composition of textual concepts and varied text-audio mappings. We are training another verison of TANGO on larger datasets to enhance its generalization, compositional and controllable generation ability.
+              </p>
+            </div>            
+            <h2 id="Other comments">
+              <font color="000093">Other comments</font>
+            </h2>
+            <div class="container">
+              <p>
+                1. We share <a href="https://github.com/declare-lab/tango">our code on github</a>, which aims to open source the audio generation model training and evaluation for easier comparison.
+              </p>
+              <p>
+                <!-- 2. We are double checking the copy-right issue on open-sourcing our pretrained model. This will not take too long. -->
+                2. We have released our model checkpoints for reproducibility.
+              </p>
+            </div>
+            <h2 id="Acknowledgement">
+              <font color="000093">Acknowledgement</font>
+            </h2>
+            <div class="container">
+              <p>
+                This website is created based on <a href = "https://github.com/AudioLDM/AudioLDM.github.io."> https://github.com/AudioLDM/AudioLDM.github.io </a>
+              </p>
+            </div> 
+          </section>
+        </article>
+      </main>
+
+    </div>
+</font>
+
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-139981676-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+    <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+         HTML: ["input/TeX","output/HTML-CSS"],
+         TeX: {
+                Macros: {
+                         bm: ["\\boldsymbol{#1}", 1],
+                         argmax: ["\\mathop{\\rm arg\\,max}\\limits"],
+                         argmin: ["\\mathop{\\rm arg\\,min}\\limits"]},
+                extensions: ["AMSmath.js","AMSsymbols.js"],
+                equationNumbers: { autoNumber: "AMS" } },
+         extensions: ["tex2jax.js"],
+         jax: ["input/TeX","output/HTML-CSS"],
+         tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                    processEscapes: true },
+         "HTML-CSS": { availableFonts: ["TeX"],
+                       linebreaks: { automatic: true } }
+     });
+ </script>
+
+    <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       tex2jax: {
+         skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+       }
+     });
+ </script>
+
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+
+
+
+
+
+</html>

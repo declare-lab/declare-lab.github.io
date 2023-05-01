@@ -11,7 +11,7 @@ main:
   - title: "Resources"
     url: /resources/
   - title: "TANGO"
-    url: /tango/
+    url: /_pages/tango/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
