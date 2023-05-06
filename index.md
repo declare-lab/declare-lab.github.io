@@ -21,7 +21,7 @@ logo:
 ### News
 <div class="notice--success">
 <h4>Collaboration with Microsoft Research</h4>
-<p> DeCLaRe Lab is thrilled to announce our selection for the Microsoft Research Accelerate Foundation Models Academic Research program. This program will enable us to contribute to the development of fair and responsible open source LLMs. We are excited to compare the performance of our models to OpenAI's LLMs, including GPT-4 and ChatGPT. For updates on our progress and developments, please follow our repository at <a href="https://github.com/declare-lab/flan-eval">https://github.com/declare-lab/flan-eval</a>. Thank you for your support! </p>
+<p> DeCLaRe Lab is thrilled to announce our selection for the Microsoft Research Accelerate Foundation Models Academic Research program. This program will enable us to contribute to the development of fair and responsible open source LLMs. We are excited to compare the performance of our models to OpenAI's LLMs, including GPT-4 and ChatGPT. </p>
 </div>
 
 <div class="notice--success">
