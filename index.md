@@ -20,8 +20,32 @@ logo:
 
 ### News
 <div class="notice--success">
+  <h4>Interspeech 2023</h4>
+  <p> Two papers accepted at Interspeech 2023. Congratulations to all the collaborators.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>ACL 2023</h4>
+  <p> Three papers accepted at ACL 2023. Congratulations to all the collaborators.
+  </p>
+</div>
+
+<div class="notice--success">
 <h4>Collaboration with Microsoft Research</h4>
 <p> DeCLaRe Lab is thrilled to announce our selection for the Microsoft Research Accelerate Foundation Models Academic Research program. This program will enable us to contribute to the development of fair and responsible open source LLMs. We are excited to compare the performance of our models to OpenAI's LLMs, including GPT-4 and ChatGPT. </p>
+</div>
+
+<div class="notice--success">
+  <h4>ICASSP 2023</h4>
+  <p> Two papers accepted at ICASSP 2023. Congratulations to all the collaborators.
+  </p>
+</div>
+
+<div class="notice--success">
+  <h4>EACL 2023</h4>
+  <p> Two papers accepted at EACL 2022. Congratulations to all the collaborators.
+  </p>
 </div>
 
 <div class="notice--success">
