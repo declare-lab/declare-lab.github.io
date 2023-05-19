@@ -20,6 +20,11 @@ logo:
 
 ### News
 <div class="notice--success">
+  <h4>Oracle Research Grant 2023</h4>
+  <p> DeCLaRe Lab is proud to receive a research grant from Oracle. It will help us to train our generative models on Oracle's cloud infrastructure. 
+  </p>
+</div>
+<div class="notice--success">
   <h4>Interspeech 2023</h4>
   <p> Two papers accepted at Interspeech 2023. Congratulations to all the collaborators.
   </p>
