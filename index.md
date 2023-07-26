@@ -20,6 +20,12 @@ logo:
 
 ### News
 <div class="notice--success">
+  <h4>ACM MM 2023</h4>
+  <p> Two papers accepted at ACM MM 2023.
+  </p>
+</div>
+
+<div class="notice--success">
   <h4>Oracle Research Grant 2023</h4>
   <p> DeCLaRe Lab is proud to receive a research grant from Oracle. It will help us to train our generative models on Oracle's cloud infrastructure. 
   </p>
