@@ -12,7 +12,60 @@ articlecolour: "#00001a"
 ---
 
 ## 2023
-
+<div class="notice">
+	<p>
+        <b>Chain of Knowledge: A Framework for Grounding Large Language Models with Structured Knowledge Bases</b> <br>
+       X Li • R Zhao • YK Chia • B Ding • L Bing • S Joty • S Poria<br> 
+	</p>
+</div>
+<div class="notice">
+	<p>
+        <b>LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models</b> <br>
+       Z Hu • Y Lan • L Wang • W Xu • EP Lim • RKW Lee • L Bing • S Poria<br> 
+	</p>
+</div>
+<div class="notice">
+	<p>
+        <b>Beyond Words: A Comprehensive Survey of Sentence Representations</b> <br>
+       AR Kashyap • TT Nguyen • V Schlegel • S Winkler • SK Ng • S Poria<br> 
+	</p>
+</div>
+<div class="notice">
+	<p>
+        <b>Domain-Expanded ASTE: Rethinking Generalization in Aspect Sentiment Triplet Extraction</b> <br>
+       C Ken • H Chen • W Han • G Chen • SM Aljunied • S Poria • L Bing<br> 
+	</p>
+</div>
+<div class="notice">
+	<p>
+        <b>INSTRUCTEVAL: Towards Holistic Evaluation of Instruction-Tuned Large Language Models</b> <br>
+       C Ken • P Hong • L Bing • S Poria<br> 
+	</p>
+</div>
+<div class="notice">
+	<p>
+        <b>Flacuna: Unleashing the Problem Solving Power of Vicuna using FLAN Fine-Tuning</b> <br>
+       D Ghosal • C Ken • N Majumder • S Poria<br> 
+	</p>
+</div>
+<div class="notice">
+	<p>
+        <b>SAS Video-QA: Self-Adaptive Sampling for Efficient Video Question-Answering</b> <br>
+       W Han • H Chen • M Kan • S Poria<br> 
+	</p>
+</div>
+<div class="notice">
+	<p>
+        <b>Red-Teaming Large Language Models using Chain of Utterances for Safety-Alignment</b> <br>
+        R Bhardwaj • S Poria<br> 
+	</p>
+</div>
+<div class="notice">
+	<p>
+        <b>Large Language Models for Automated Open-domain Scientific Hypotheses Discovery</b> <br>
+        Z Yang • X Du • J Li • J Zheng • S Poria • E Cambria<br> 
+	</p>
+</div>
 <div class="notice">
 	<p>
         <b>WikiDes: A Wikipedia-based dataset for generating short descriptions from paragraphs</b> <br>
