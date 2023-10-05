@@ -291,7 +291,7 @@ articlecolour: "#00001a"
 	<p>
         <b>RelationPrompt: Leveraging Prompts to Generate Synthetic Data for Zero-Shot Relation Triplet Extraction</b> <br>
         Yew Chia • Lidong Bing • Soujanya Poria • Luo Si<br> 
-        https://doi.org/10.48550/arXiv.2203.09101
+        <a href="https://doi.org/10.48550/arXiv.2203.09101">arXiv</a>
 	</p>
 </div>
 
@@ -299,7 +299,7 @@ articlecolour: "#00001a"
 	<p>
         <b>CICERO: A Dataset for Contextualized Commonsense Inference in Dialogues</b> <br>
         Deepanway Ghosal • Siqi Shen • Navonil Majumder • Rada Mihalcea • Soujanya Poria<br> 
-        https://doi.org/10.48550/arXiv.2203.13926
+        <a href="https://doi.org/10.48550/arXiv.2203.13926">arXiv</a>
 	</p>
 </div>
 
@@ -307,7 +307,7 @@ articlecolour: "#00001a"
 	<p>
         <b>So Different Yet So Alike! Constrained Unsupervised Text Style Transfer</b> <br>
         Abhinav Kashyap • Devamanyu Hazarika • Min-Yen Kan • Roger Zimmermann • Soujanya Poria<br> 
-        https://doi.org/10.48550/arXiv.2205.04093
+        <a href="https://doi.org/10.48550/arXiv.2205.04093">arXiv</a>
 	</p>
 </div>
 
@@ -315,7 +315,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Analyzing Modality Robustness in Multimodal Sentiment Analysis</b> <br>
         Devamanyu Hazarika • Yingting Li • Bo Cheng • Shuai Zhao • Roger Zimmermann • Soujanya Poria<br> 
-        https://doi.org/10.48550/arXiv.2205.15465
+        <a href="https://doi.org/10.48550/arXiv.2205.15465">arXiv</a>
 	</p>
 </div>
 
@@ -323,7 +323,7 @@ articlecolour: "#00001a"
 	<p>
         <b>SANCL: Multimodal Review Helpfulness Prediction with Selective Attention and Natural Contrastive Learning</b> <br>
         Wei Han • Hui Chen • Zhen Hai • Soujanya Poria • Lidong Bing<br> 
-        https://doi.org/10.48550/arXiv.2209.05040
+        <a href="https://doi.org/10.48550/arXiv.2209.05040">arXiv</a>
 	</p>
 </div>
 
@@ -331,7 +331,7 @@ articlecolour: "#00001a"
 	<p>
         <b>DoubleMix: Simple Interpolation-Based Data Augmentation for Text Classification</b> <br>
         Hui Chen • Wei Han • Diyi Yang • Soujanya Poria<br> 
-        https://doi.org/10.48550/arXiv.2209.05297
+        <a href="https://doi.org/10.48550/arXiv.2209.05297">arXiv</a>
 	</p>
 </div>
 
@@ -339,7 +339,7 @@ articlecolour: "#00001a"
 	<p>
         <b>WikiDes: A Wikipedia-Based Dataset for Generating Short Descriptions from Paragraphs</b> <br>
         Hoang Ta • Abu Rahman • Navonil Majumder • Amir Hussain • Lotfollah Najjar • Newton Howard • Soujanya Poria • Alexander Gelbukh<br> 
-        https://doi.org/10.48550/arXiv.2209.13101
+        <a href="https://doi.org/10.48550/arXiv.2209.13101">arXiv</a>
 	</p>
 </div>
 
@@ -347,7 +347,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Multiview Contextual Commonsense Inference: A New Dataset and Task</b> <br>
         Siqi Shen • Deepanway Ghosal • Navonil Majumder • Henry Lim • Rada Mihalcea • Soujanya Poria<br> 
-        https://doi.org/10.48550/arXiv.2210.02890
+        <a href="https://doi.org/10.48550/arXiv.2210.02890">arXiv</a>
 	</p>
 </div>
 
@@ -355,7 +355,7 @@ articlecolour: "#00001a"
 	<p>
         <b>SAT: Improving Semi-Supervised Text Classification with Simple Instance-Adaptive Self-Training</b> <br>
         Hui Chen • Wei Han • Soujanya Poria<br> 
-        https://doi.org/10.48550/arXiv.2210.12653
+        <a href="https://doi.org/10.48550/arXiv.2210.12653">arXiv</a>
 	</p>
 </div>
 
@@ -363,7 +363,7 @@ articlecolour: "#00001a"
 	<p>
         <b>MM-Align: Learning Optimal Transport-based Alignment Dynamics for Fast and Accurate Inference on Missing Modality Sequences</b> <br>
         Wei Han • Hui Chen • Min-Yen Kan • Soujanya Poria<br> 
-        https://doi.org/10.48550/arXiv.2210.12798
+        <a href="https://doi.org/10.48550/arXiv.2210.12798">arXiv</a>
 	</p>
 </div>
 
@@ -371,7 +371,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Two is Better than Many? Binary Classification as an Effective Approach to Multi-Choice Question Answering</b> <br>
         Deepanway Ghosal • Navonil Majumder • Rada Mihalcea • Soujanya Poria<br> 
-        https://doi.org/10.48550/arXiv.2210.16495
+        <a href="https://doi.org/10.48550/arXiv.2210.16495">arXiv</a>
 	</p>
 </div>
 
@@ -379,7 +379,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Few-shot Multimodal Sentiment Analysis based on Multimodal Probabilistic Fusion Prompts</b> <br>
         Xiaocui Yang • Shi Feng • Daling Wang • Pengfei Hong • Soujanya Poria<br> 
-        https://doi.org/10.48550/arXiv.2211.06607
+        <a href="https://doi.org/10.48550/arXiv.2211.06607">arXiv</a>
 	</p>
 </div>
 
@@ -387,7 +387,7 @@ articlecolour: "#00001a"
 	<p>
         <b>A Dataset for Hyper-Relational Extraction and a Cube-Filling Approach</b> <br>
         Yew Chia • Lidong Bing • Sharifah Mahani • Luo Si • Soujanya Poria<br> 
-        https://doi.org/10.48550/arXiv.2211.10018
+        <a href="https://doi.org/10.48550/arXiv.2211.10018">arXiv</a>
 	</p>
 </div>
 
@@ -557,7 +557,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Retrieving and Reading: A Comprehensive Survey on Open-domain Question Answering</b> <br>
         Fengbin Zhu • Wenqiang Lei • Chao Wang • Jianming Zheng • Soujanya Poria • Tat-Seng Chua<br> 
-        https://arxiv.org/abs/2101.00774
+        <a href="https://arxiv.org/abs/2101.00774">arXiv</a>
 	</p>
 </div>
 
@@ -565,7 +565,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Deep Neural Approaches to Relation Triplets Extraction: A Comprehensive Survey</b> <br>
         Tapas Nayak • Navonil Majumder • Pawan Goyal • Soujanya Poria<br> 
-        https://arxiv.org/abs/2103.16929
+        <a href="https://arxiv.org/abs/2103.16929">arXiv</a>
 	</p>
 </div>
 
@@ -573,7 +573,7 @@ articlecolour: "#00001a"
 	<p>
         <b>CIDER: Commonsense Inference for Dialogue Explanation and Reasoning</b> <br>
         Deepanway Ghosal • Pengfei Hong • Siqi Shen • Navonil Majumder • Rada Mihalcea • Soujanya Poria<br> 
-        https://arxiv.org/abs/2106.00510
+        <a href="https://arxiv.org/abs/2106.00510">arXiv</a>
 	</p>
 </div>
 
@@ -581,7 +581,7 @@ articlecolour: "#00001a"
 	<p>
         <b>More Identifiable yet Equally Performant Transformers for Text Classification</b> <br>
         Rishabh Bhardwaj • Navonil Majumder • Soujanya Poria • Eduard Hovy<br> 
-        https://arxiv.org/abs/2106.01269
+        <a href="https://arxiv.org/abs/2106.01269">arXiv</a>
 	</p>
 </div>
 
@@ -589,7 +589,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Exemplars-guided Empathetic Response Generation Controlled by the Elements of Human Communication</b> <br>
         Navonil Majumder • Deepanway Ghosal • Devamanyu Hazarika • Alexander Gelbukh • Rada Mihalcea • Soujanya Poria<br> 
-        https://arxiv.org/abs/2106.11791
+        <a href="https://arxiv.org/abs/2106.11791">arXiv</a>
 	</p>
 </div>
 
@@ -597,7 +597,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Bi-Bimodal Modality Fusion for Correlation-Controlled Multimodal Sentiment Analysis</b> <br>
         Wei Han • Hui Chen • Alexander Gelbukh • Amir Zadeh • Louis-Philippe Morency • Soujanya Poria<br> 
-        https://arxiv.org/abs/2107.13669
+        <a href="https://arxiv.org/abs/2107.13669">arXiv</a>
 	</p>
 </div>
 
@@ -605,7 +605,7 @@ articlecolour: "#00001a"
 	<p>
         <b>M2H2: A Multimodal Multiparty Hindi Dataset For Humor Recognition in Conversations</b> <br>
         Dushyant Chauhan • Gopendra Singh • Navonil Majumder • Amir Zadeh • Asif Ekbal • Pushpak Bhattacharyya • Louis-Philippe Morency • Soujanya Poria<br> 
-        https://arxiv.org/abs/2108.01260
+        <a href="https://arxiv.org/abs/2108.01260">arXiv</a>
 	</p>
 </div>
 
@@ -613,7 +613,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Aspect Sentiment Triplet Extraction Using Reinforcement Learning</b> <br>
         Samson Jian • Tapas Nayak • Navonil Majumder • Soujanya Poria<br> 
-        https://arxiv.org/abs/2108.06107
+        <a href="https://arxiv.org/abs/2108.06107">arXiv</a>
 	</p>
 </div>
 
@@ -621,7 +621,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Improving Distantly Supervised Relation Extraction with Self-Ensemble Noise Filtering</b> <br>
         Tapas Nayak • Navonil Majumder • Soujanya Poria<br> 
-        https://arxiv.org/abs/2108.09689
+        <a href="https://arxiv.org/abs/2108.09689">arXiv</a>
 	</p>
 </div>
 
@@ -629,7 +629,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Improving Multimodal Fusion with Hierarchical Mutual Information Maximization for Multimodal Sentiment Analysis</b> <br>
         Wei Han • Hui Chen • Soujanya Poria<br> 
-        https://arxiv.org/abs/2109.00412
+        <a href="https://arxiv.org/abs/2109.00412">arXiv</a>
 	</p>
 </div>
 
@@ -637,7 +637,7 @@ articlecolour: "#00001a"
 	<p>
         <b>STaCK: Sentence Ordering with Temporal Commonsense Knowledge</b> <br>
         Deepanway Ghosal • Navonil Majumder • Rada Mihalcea • Soujanya Poria<br> 
-        https://arxiv.org/abs/2109.02247
+        <a href="https://arxiv.org/abs/2109.02247">arXiv</a>
 	</p>
 </div>
 
@@ -645,7 +645,7 @@ articlecolour: "#00001a"
 	<p>
         <b>PIP: Physical Interaction Prediction via Mental Imagery with Span Selection</b> <br>
         Jiafei Duan • Samson Yu • Soujanya Poria • Bihan Wen • Cheston Tan<br> 
-        https://arxiv.org/abs/2109.04683
+        <a href="https://arxiv.org/abs/2109.04683">arXiv</a>
 	</p>
 </div>
 
@@ -653,7 +653,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Federated Distillation of Natural Language Understanding with Confident Sinkhorns</b> <br>
         Rishabh Bhardwaj • Tushar Vaidya • Soujanya Poria<br> 
-        https://arxiv.org/abs/2110.02432
+        <a href="https://arxiv.org/abs/2110.02432">arXiv</a>
 	</p>
 </div>
 
@@ -735,7 +735,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Beneath the Tip of the Iceberg: Current Challenges and New Directions in Sentiment Analysis Research</b> <br>
         Soujanya Poria • Devamanyu Hazarika • Navonil Majumder • Rada Mihalcea<br> 
-        https://arxiv.org/abs/2005.00357
+        <a href="https://arxiv.org/abs/2005.00357">arXiv</a>
 	</p>
 </div>
 
@@ -743,7 +743,7 @@ articlecolour: "#00001a"
 	<p>
         <b>KinGDOM: Knowledge-Guided DOMain adaptation for sentiment analysis</b> <br>
         Deepanway Ghosal • Devamanyu Hazarika • Abhinaba Roy • Navonil Majumder • Rada Mihalcea • Soujanya Poria<br> 
-        https://arxiv.org/abs/2005.00791
+        <a href="https://arxiv.org/abs/2005.00791">arXiv</a>
 	</p>
 </div>
 
@@ -751,7 +751,7 @@ articlecolour: "#00001a"
 	<p>
         <b>MISA: Modality-Invariant and -Specific Representations for Multimodal Sentiment Analysis</b> <br>
         Devamanyu Hazarika • Roger Zimmermann • Soujanya Poria<br> 
-        https://arxiv.org/abs/2005.03545
+        <a href="https://arxiv.org/abs/2005.03545">arXiv</a>
 	</p>
 </div>
 
@@ -759,7 +759,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Improving Aspect-Level Sentiment Analysis with Aspect Extraction</b> <br>
         Navonil Majumder • Rishabh Bhardwaj • Soujanya Poria • Amir Zadeh • Alexander Gelbukh • Amir Hussain • Louis-Philippe Morency<br> 
-        https://arxiv.org/abs/2005.06607
+        <a href="https://arxiv.org/abs/2005.06607">arXiv</a>
 	</p>
 </div>
 
@@ -767,7 +767,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Investigating Gender Bias in BERT</b> <br>
         Rishabh Bhardwaj • Navonil Majumder • Soujanya Poria<br> 
-        https://arxiv.org/abs/2009.05021
+        <a href="https://arxiv.org/abs/2009.05021">arXiv</a>
 	</p>
 </div>
 
@@ -775,7 +775,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Dialogue Relation Extraction with Document-level Heterogeneous Graph Attention Networks</b> <br>
         Hui Chen • Pengfei Hong • Wei Han • Navonil Majumder • Soujanya Poria<br> 
-        https://arxiv.org/abs/2009.05092
+        <a href="https://arxiv.org/abs/2009.05092">arXiv</a>
 	</p>
 </div>
 
@@ -783,7 +783,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Utterance-level Dialogue Understanding: An Empirical Study</b> <br>
         Deepanway Ghosal • Navonil Majumder • Rada Mihalcea • Soujanya Poria<br> 
-        https://arxiv.org/abs/2009.13902
+        <a href="https://arxiv.org/abs/2009.13902">arXiv</a>
 	</p>
 </div>
 
@@ -791,7 +791,7 @@ articlecolour: "#00001a"
 	<p>
         <b>MIME: MIMicking Emotions for Empathetic Response Generation</b> <br>
         Navonil Majumder • Pengfei Hong • Shanshan Peng • Jiankun Lu • Deepanway Ghosal • Alexander Gelbukh • Rada Mihalcea • Soujanya Poria<br> 
-        https://arxiv.org/abs/2010.01454
+        <a href="https://arxiv.org/abs/2010.01454">arXiv</a>
 	</p>
 </div>
 
@@ -799,7 +799,7 @@ articlecolour: "#00001a"
 	<p>
         <b>COSMIC: COmmonSense knowledge for eMotion Identification in Conversations</b> <br>
         Deepanway Ghosal • Navonil Majumder • Alexander Gelbukh • Rada Mihalcea • Soujanya Poria<br> 
-        https://arxiv.org/abs/2010.02795
+        <a href="https://arxiv.org/abs/2010.02795">arXiv</a>
 	</p>
 </div>
 
@@ -807,7 +807,7 @@ articlecolour: "#00001a"
 	<p>
         <b>MTGAT: Multimodal Temporal Graph Attention Networks for Unaligned Human Multimodal Language Sequences</b> <br>
         Jianing Yang • Yongxin Wang • Ruitao Yi • Yuying Zhu • Azaan Rehman • Amir Zadeh • Soujanya Poria • Louis-Philippe Morency<br> 
-        https://arxiv.org/abs/2010.11985
+        <a href="https://arxiv.org/abs/2010.11985">arXiv</a>
 	</p>
 </div>
 
@@ -815,7 +815,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Persuasive Dialogue Understanding: the Baselines and Negative Results</b> <br>
         Hui Chen • Deepanway Ghosal • Navonil Majumder • Amir Hussain • Soujanya Poria<br> 
-        https://arxiv.org/abs/2011.09954
+        <a href="https://arxiv.org/abs/2011.09954">arXiv</a>
 	</p>
 </div>
 
@@ -823,7 +823,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Improving Zero Shot Learning Baselines with Commonsense Knowledge</b> <br>
         Abhinaba Roy • Deepanway Ghosal • Erik Cambria • Navonil Majumder • Rada Mihalcea • Soujanya Poria<br> 
-        https://arxiv.org/abs/2012.06236
+        <a href="https://arxiv.org/abs/2012.06236">arXiv</a>
 	</p>
 </div>
 
@@ -831,7 +831,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Recognizing Emotion Cause in Conversations</b> <br>
         Soujanya Poria • Navonil Majumder • Devamanyu Hazarika • Deepanway Ghosal • Rishabh Bhardwaj • Samson Jian • Romila Ghosh • Niyati Chhaya • Alexander Gelbukh • Rada Mihalcea<br> 
-        https://arxiv.org/abs/2012.11820
+        <a href="https://arxiv.org/abs/2012.11820">arXiv</a>
 	</p>
 </div>
 
@@ -945,7 +945,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Phonetic-enriched Text Representation for Chinese Sentiment Analysis with Reinforcement Learning</b> <br>
         Haiyun Peng • Yukun Ma • Soujanya Poria • Yang Li • Erik Cambria<br> 
-        http://arxiv.org/abs/1901.07880
+        <a href="http://arxiv.org/abs/1901.07880">arXiv</a>
 	</p>
 </div>
 
@@ -953,7 +953,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Sentiment and Sarcasm Classification with Multitask Learning</b> <br>
         Navonil Majumder • Soujanya Poria • Haiyun Peng • Niyati Chhaya • Erik Cambria • Alexander Gelbukh<br> 
-        http://arxiv.org/abs/1901.08014
+        <a href="http://arxiv.org/abs/1901.08014">arXiv</a>
 	</p>
 </div>
 
@@ -961,7 +961,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Emotion Recognition in Conversation: Research Challenges, Datasets, and Recent Advances</b> <br>
         Soujanya Poria • Navonil Majumder • Rada Mihalcea • Eduard Hovy<br> 
-        http://arxiv.org/abs/1905.02947
+        <a href="http://arxiv.org/abs/1905.02947">arXiv</a>
 	</p>
 </div>
 
@@ -969,7 +969,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Multi-task Learning for Multi-modal Emotion Recognition and Sentiment Analysis</b> <br>
         Md. Akhtar • Dushyant Chauhan • Deepanway Ghosal • Soujanya Poria • Asif Ekbal • Pushpak Bhattacharyya<br> 
-        http://arxiv.org/abs/1905.05812
+        <a href="http://arxiv.org/abs/1905.05812">arXiv</a>
 	</p>
 </div>
 
@@ -977,7 +977,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Towards Multimodal Sarcasm Detection (An _Obviously_ Perfect Paper)</b> <br>
         Santiago Castro • Devamanyu Hazarika • Verónica Pérez-Rosas • Roger Zimmermann • Rada Mihalcea • Soujanya Poria<br> 
-        http://arxiv.org/abs/1906.01815
+        <a href="http://arxiv.org/abs/1906.01815">arXiv</a>
 	</p>
 </div>
 
@@ -985,7 +985,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Variational Fusion for Multimodal Sentiment Analysis</b> <br>
         Navonil Majumder • Soujanya Poria • Gangeshwar Krishnamurthy • Niyati Chhaya • Rada Mihalcea • Alexander Gelbukh<br> 
-        http://arxiv.org/abs/1908.06008
+        <a href="http://arxiv.org/abs/1908.06008">arXiv</a>
 	</p>
 </div>
 
@@ -993,7 +993,7 @@ articlecolour: "#00001a"
 	<p>
         <b>DialogueGCN: A Graph Convolutional Neural Network for Emotion Recognition in Conversation</b> <br>
         Deepanway Ghosal • Navonil Majumder • Soujanya Poria • Niyati Chhaya • Alexander Gelbukh<br> 
-        http://arxiv.org/abs/1908.11540
+        <a href="http://arxiv.org/abs/1908.11540">arXiv</a>
 	</p>
 </div>
 
@@ -1001,7 +1001,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Emotion Recognition in Conversations with Transfer Learning from Generative Conversation Modeling</b> <br>
         Devamanyu Hazarika • Soujanya Poria • Roger Zimmermann • Rada Mihalcea<br> 
-        http://arxiv.org/abs/1910.04980
+        <a href="http://arxiv.org/abs/1910.04980">arXiv</a>
 	</p>
 </div>
 
@@ -1009,7 +1009,7 @@ articlecolour: "#00001a"
 	<p>
         <b>WildMix Dataset and Spectro-Temporal Transformer Model for Monoaural Audio Source Separation</b> <br>
         Amir Zadeh • Tianjun Ma • Soujanya Poria • Louis-Philippe Morency<br> 
-        http://arxiv.org/abs/1911.09783
+        <a href="http://arxiv.org/abs/1911.09783">arXiv</a>
 	</p>
 </div>
 
@@ -1017,7 +1017,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Factorized Multimodal Transformer for Multimodal Sequential Learning</b> <br>
         Amir Zadeh • Chengfeng Mao • Kelly Shi • Yiwei Zhang • Paul Liang • Soujanya Poria • Louis-Philippe Morency<br> 
-        http://arxiv.org/abs/1911.09826
+        <a href="http://arxiv.org/abs/1911.09826">arXiv</a>
 	</p>
 </div>
 
@@ -1179,7 +1179,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Multi-attention Recurrent Network for Human Communication Comprehension</b> <br>
         Amir Zadeh • Paul Liang • Soujanya Poria • Prateek Vij • Erik Cambria • Louis-Philippe Morency<br> 
-        http://arxiv.org/abs/1802.00923
+        <a href="http://arxiv.org/abs/1802.00923">arXiv</a>
 	</p>
 </div>
 
@@ -1187,7 +1187,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Memory Fusion Network for Multi-view Sequential Learning</b> <br>
         Amir Zadeh • Paul Liang • Navonil Mazumder • Soujanya Poria • Erik Cambria • Louis-Philippe Morency<br> 
-        http://arxiv.org/abs/1802.00927
+        <a href="http://arxiv.org/abs/1802.00927">arXiv</a>
 	</p>
 </div>
 
@@ -1195,7 +1195,7 @@ articlecolour: "#00001a"
 	<p>
         <b>A Deep Learning Approach for Multimodal Deception Detection</b> <br>
         Gangeshwar Krishnamurthy • Navonil Majumder • Soujanya Poria • Erik Cambria<br> 
-        http://arxiv.org/abs/1803.00344
+        <a href="http://arxiv.org/abs/1803.00344">arXiv</a>
 	</p>
 </div>
 
@@ -1203,7 +1203,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Multimodal Sentiment Analysis: Addressing Key Issues and Setting up Baselines</b> <br>
         Soujanya Poria • Navonil Majumder • Devamanyu Hazarika • Erik Cambria • Amir Hussain • Alexander Gelbukh<br> 
-        http://arxiv.org/abs/1803.07427
+        <a href="http://arxiv.org/abs/1803.07427">arXiv</a>
 	</p>
 </div>
 
@@ -1211,7 +1211,7 @@ articlecolour: "#00001a"
 	<p>
         <b>CASCADE: Contextual Sarcasm Detection in Online Discussion Forums</b> <br>
         Devamanyu Hazarika • Soujanya Poria • Sruthi Gorantla • Erik Cambria • Roger Zimmermann • Rada Mihalcea<br> 
-        http://arxiv.org/abs/1805.06413
+        <a href="http://arxiv.org/abs/1805.06413">arXiv</a>
 	</p>
 </div>
 
@@ -1219,7 +1219,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Anaphora and Coreference Resolution: A Review</b> <br>
         Rhea Sukthanker • Soujanya Poria • Erik Cambria • Ramkumar Thirunavukarasu<br> 
-        http://arxiv.org/abs/1805.11824
+        <a href="http://arxiv.org/abs/1805.11824">arXiv</a>
 	</p>
 </div>
 
@@ -1227,7 +1227,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Multimodal Sentiment Analysis using Hierarchical Fusion with Context Modeling</b> <br>
         Navonil Majumder • Devamanyu Hazarika • Alexander Gelbukh • Erik Cambria • Soujanya Poria<br> 
-        http://arxiv.org/abs/1806.06228
+        <a href="http://arxiv.org/abs/1806.06228">arXiv</a>
 	</p>
 </div>
 
@@ -1235,7 +1235,7 @@ articlecolour: "#00001a"
 	<p>
         <b>MELD: A Multimodal Multi-Party Dataset for Emotion Recognition in Conversations</b> <br>
         Soujanya Poria • Devamanyu Hazarika • Navonil Majumder • Gautam Naik • Erik Cambria • Rada Mihalcea<br> 
-        http://arxiv.org/abs/1810.02508
+        <a href="http://arxiv.org/abs/1810.02508">arXiv</a>
 	</p>
 </div>
 
@@ -1243,7 +1243,7 @@ articlecolour: "#00001a"
 	<p>
         <b>DialogueRNN: An Attentive RNN for Emotion Detection in Conversations</b> <br>
         Navonil Majumder • Soujanya Poria • Devamanyu Hazarika • Rada Mihalcea • Alexander Gelbukh • Erik Cambria<br> 
-        http://arxiv.org/abs/1811.00405
+        <a href="http://arxiv.org/abs/1811.00405">arXiv</a>
 	</p>
 </div>
 
@@ -1253,7 +1253,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Novel symbolic and machine-learning approaches for text-based and multimodal sentiment analysis</b> <br>
         Soujanya Poria<br> 
-        https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.714680
+        <a href="https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.714680">arXiv</a>
 	</p>
 </div>
 
@@ -1325,7 +1325,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Developing a concept-level knowledge base for sentiment analysis in Singlish</b> <br>
         Rajiv Bajpai • Soujanya Poria • Danyuan Ho • Erik Cambria<br> 
-        http://arxiv.org/abs/1707.04408
+        <a href="http://arxiv.org/abs/1707.04408">arXiv</a>
 	</p>
 </div>
 
@@ -1333,7 +1333,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Tensor Fusion Network for Multimodal Sentiment Analysis</b> <br>
         Amir Zadeh • Minghai Chen • Soujanya Poria • Erik Cambria • Louis-Philippe Morency<br> 
-        http://arxiv.org/abs/1707.07250
+        <a href="http://arxiv.org/abs/1707.07250">arXiv</a>
 	</p>
 </div>
 
@@ -1341,7 +1341,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Benchmarking Multimodal Sentiment Analysis</b> <br>
         Erik Cambria • Devamanyu Hazarika • Soujanya Poria • Amir Hussain • R. Subramanyam<br> 
-        http://arxiv.org/abs/1707.09538
+        <a href="http://arxiv.org/abs/1707.09538">arXiv</a>
 	</p>
 </div>
 
@@ -1349,7 +1349,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Recent Trends in Deep Learning Based Natural Language Processing</b> <br>
         Tom Young • Devamanyu Hazarika • Soujanya Poria • Erik Cambria<br> 
-        http://arxiv.org/abs/1708.02709
+        <a href="http://arxiv.org/abs/1708.02709">arXiv</a>
 	</p>
 </div>
 
@@ -1357,7 +1357,7 @@ articlecolour: "#00001a"
 	<p>
         <b>Basic tasks of sentiment analysis</b> <br>
         Iti Chaturvedi • Soujanya Poria • Erik Cambria<br> 
-        http://arxiv.org/abs/1710.06536
+        <a href="http://arxiv.org/abs/1710.06536">arXiv</a>
 	</p>
 </div>
 
@@ -1447,7 +1447,7 @@ articlecolour: "#00001a"
 	<p>
         <b>A Deeper Look into Sarcastic Tweets Using Deep Convolutional Neural Networks</b> <br>
         Soujanya Poria • Erik Cambria • Devamanyu Hazarika • Prateek Vij<br> 
-        http://arxiv.org/abs/1610.08815
+        <a href="http://arxiv.org/abs/1610.08815">arXiv</a>
 	</p>
 </div>
 
