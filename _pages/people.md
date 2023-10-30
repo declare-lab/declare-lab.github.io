@@ -26,6 +26,18 @@ navonil:
     url: "https://nlp.cic.ipn.mx/~navonil/"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
+rima:
+  - image_path: https://lh3.googleusercontent.com/vVtiDzthBukeo5yKmmzCs7sEuXnusqstwllCBA2briMr-G899mdbBs-SHNIPe5CIM2qUkXVaP8mUE6RjtlbcfeHFvCk_PVOnGoHFGqLMRqRAxvqxXAVKE3YjxVR6-ESklA=w1280
+    excerpt: "**Rima Hazra** is a scientist at the DeCLaRe Lab, Singapore University of Technology and Design. She is researching on misinformation detection."
+    url: "https://www.linkedin.com/in/rimahazra93/?originalSubdomain=sg"
+    btn_label: "Read More"
+    btn_class: "btn btn--primary btn--small"
+ambuj:
+  - image_path: /assets/images/people/ambuj.jpeg
+    excerpt: "**Navonil Mazumder** is a scientist at the DeCLaRe Lab, Singapore University of Technology and Design. He is researching on speech processing"
+    url: "https://www.linkedin.com/in/ambuj-mehrish-159a0417b/"
+    btn_label: "Read More"
+    btn_class: "btn btn--primary btn--small"
 
 devamanyu:
   - image_path: /assets/images/people/devamanyu.jpg
@@ -230,25 +242,27 @@ rajiv:
      
 ---
 
-We have an amazing team of researchers comprising of PhD Students, Senior Researchers, and Collaborators at the DeCLaRe Lab. If you want to join DeCLaRe Lab, please email any of our team members.
+We have an amazing team of researchers comprising PhD Students, Senior Researchers, and Collaborators at the DeCLaRe Lab. If you want to join DeCLaRe Lab, please email any of our team members.
 
 ![image-center](/assets/images/resources/team.jpg){: .width-paper-image-100 .align-center}
 
-## Research Staff
+## Principal Investigator
 
 {% include feature_row2 id="soujanya" type="left" %}
 
+## Research Staff
+
 {% include feature_row2 id="navonil" type="left" %}
 
+{% include feature_row2 id="rima" type="left" %}
 
+{% include feature_row2 id="ambuj" type="left" %}
 
 {% include feature_row2 id="pengfei" type="left" %}
   
 {% include feature_row2 id="henry_lim" type="left" %}
 
 {% include feature_row2 id="shaozuo" type="left" %}
-
-{% include feature_row2 id="yixuan" type="left" %}
 
 <!-- {% include feature_row2 id="sarthak" type="left" %} -->
 
@@ -289,6 +303,8 @@ We have an amazing team of researchers comprising of PhD Students, Senior Resear
 {% include feature_row2 id="shanshan" type="left" %}
 
 {% include feature_row2 id="samson" type="left" %}
+
+{% include feature_row2 id="yixuan" type="left" %}
 
 ## Collaborators
 
