@@ -27,7 +27,7 @@ navonil:
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
 rima:
-  - image_path: https://lh3.googleusercontent.com/vVtiDzthBukeo5yKmmzCs7sEuXnusqstwllCBA2briMr-G899mdbBs-SHNIPe5CIM2qUkXVaP8mUE6RjtlbcfeHFvCk_PVOnGoHFGqLMRqRAxvqxXAVKE3YjxVR6-ESklA=w1280
+  - image_path: /assets/images/people/rima.jpeg
     excerpt: "**Rima Hazra** is a scientist at the DeCLaRe Lab, Singapore University of Technology and Design. She is researching on misinformation detection."
     url: "https://www.linkedin.com/in/rimahazra93/?originalSubdomain=sg"
     btn_label: "Read More"
