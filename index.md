@@ -19,6 +19,13 @@ logo:
 ![image-center](/assets/images/resources/lab.jpg){: .width-paper-image-100 .align-center}
 
 ### News
+
+<div class="notice--success">
+  <h4>ICLR, EACL and WWW</h4>
+  <p> We got one paper at ICLR, one at EACL, and one at WWW. Congratulations to all the co-authors!
+  </p>
+</div>
+
 <div class="notice--success">
   <h4>ACM MM 2023</h4>
   <p> Two papers accepted at ACM MM 2023.
