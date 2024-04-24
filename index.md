@@ -19,7 +19,11 @@ logo:
 ![image-center](/assets/images/resources/lab.jpg){: .width-paper-image-100 .align-center}
 
 ### News
-
+<div class="notice--success">
+  <h4>Google's Gemma Academic Program Award!</h4>
+  <p> We are thrilled to receive a research grant from Google! Congratulations to Rishabh.
+  </p>
+</div>
 <div class="notice--success">
   <h4>ICLR, EACL and WWW</h4>
   <p> We got one paper at ICLR, one at EACL, and one at WWW. Congratulations to all the co-authors!
