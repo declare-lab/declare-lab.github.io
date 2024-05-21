@@ -23,6 +23,7 @@ logo:
   <h4>ACL 2024</h4>
   <p> We got four papers accepted at ACL 2024! Congratulations to all the co-authors.
   </p>
+</div>
 <div class="notice--success">
   <h4>Google's Gemma Academic Program Award!</h4>
   <p> We are thrilled to receive a research grant from Google! Congratulations to Rishabh.
