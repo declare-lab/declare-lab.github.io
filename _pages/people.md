@@ -68,14 +68,14 @@ yixuan:
 
 deepanway:
   - image_path: /assets/images/people/deepanway.jpeg
-    excerpt: "**Deepanway Ghosal** is currently a Ph.D. student at the DeCLaRe Lab in Singapore University of Technology and Design. His research interest is in the areas of graph neural networks and commonsense reasoning for natural language processing."
+    excerpt: "**Deepanway Ghosal** is currently working at Deepmind."
     url: "https://deepanwayx.github.io/"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
    
 hui:
   - image_path: /assets/images/people/hui_chen.jpg
-    excerpt: "**Hui Chen** is currently a Ph.D. student at the DeCLaRe Lab in Singapore University of Technology and Design since January 2019. Before that, she obtained her B.Eng degree in Computer Science and Technology from Zhejiang University, China. Her research interests include natural language processing and multimodal analysis."
+    excerpt: "**Hui Chen** is currently work at NTU"
     url: "https://chchenhui.github.io/"
     btn_label: "Read More"
     btn_class: "btn btn--primary btn--small"
@@ -270,10 +270,6 @@ We have an amazing team of researchers comprising PhD Students, Senior Researche
 
 ## Ph.D. Students
 
-{% include feature_row2 id="deepanway" type="left" %}
-
-{% include feature_row2 id="hui" type="left" %}
-
 {% include feature_row2 id="rishabh" type="left" %}
 
 {% include feature_row2 id="henryhan" type="left" %}
@@ -293,6 +289,10 @@ We have an amazing team of researchers comprising PhD Students, Senior Researche
 
 
 ## Alumni
+
+{% include feature_row2 id="deepanway" type="left" %}
+
+{% include feature_row2 id="hui" type="left" %}
 
 {% include feature_row2 id="joanna" type="left" %}
 
