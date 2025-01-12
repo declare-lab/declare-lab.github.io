@@ -264,10 +264,6 @@ We have an amazing team of researchers comprising PhD Students, Senior Researche
 
 {% include feature_row2 id="shaozuo" type="left" %}
 
-<!-- {% include feature_row2 id="sarthak" type="left" %} -->
-
-<!-- {% include feature_row2 id="shagun" type="left" %} -->
-
 ## Ph.D. Students
 
 {% include feature_row2 id="rishabh" type="left" %}
@@ -280,8 +276,6 @@ We have an amazing team of researchers comprising PhD Students, Senior Researche
   
 {% include feature_row2 id="xiaocui" type="left" %}
 
-<!-- {% include feature_row2 id="cherina" type="left" %}
- -->
 {% include feature_row2 id="qi" type="left" %}
 
 ## Masters Students
@@ -305,31 +299,3 @@ We have an amazing team of researchers comprising PhD Students, Senior Researche
 {% include feature_row2 id="samson" type="left" %}
 
 {% include feature_row2 id="yixuan" type="left" %}
-
-## Collaborators
-
-{% include feature_row2 id="rada" type="left" %}
-
-{% include feature_row2 id="hovy" type="left" %}
-
-{% include feature_row2 id="morency" type="left" %}
-
-{% include feature_row2 id="gelbukh" type="left" %}
-
-{% include feature_row2 id="zadeh" type="left" %}
-
-{% include feature_row2 id="erik" type="left" %}
-
-{% include feature_row2 id="amir" type="left" %}
-
-{% include feature_row2 id="asif" type="left" %}
-
-{% include feature_row2 id="pushpak" type="left" %}
-
-{% include feature_row2 id="roger" type="left" %}
-
-{% include feature_row2 id="niyati" type="left" %}
-
-{% include feature_row2 id="newton" type="left" %}
-
-<!-- {% include feature_row2 id="rajiv" type="left" %} -->
