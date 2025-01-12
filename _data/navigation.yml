@@ -10,8 +10,6 @@ main:
     url: /people/
   - title: "Resources"
     url: /resources/
-  - title: "TANGO"
-    url: /_pages/tango/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
