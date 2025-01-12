@@ -2,14 +2,11 @@
 main:
   - title: "About"
     url: /index
-  - title: "Research"
-    url: /research/
   - title: "Publications"
-    url: /publications/
+    url: https://scholar.google.co.in/citations?hl=en&user=oS6gRc4AAAAJ&view_op=list_works&sortby=pubdate
   - title: "People"
     url: /people/
-  - title: "Resources"
-    url: /resources/
+    
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
