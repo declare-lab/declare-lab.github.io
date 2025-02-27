@@ -204,6 +204,7 @@ We have an amazing team of researchers comprising PhD Students, Senior Researche
 * [**Qi Sun**](https://scholar.google.com/citations?user=GpH4vXwAAAAJ)
 * [**Shaozuo Zhang**](https://sg.linkedin.com/in/shaozuo-zhang-233a7b195)
 * [**Rishabh Bhardwaj**](https://scholar.google.com/citations?user=nomHn1sAAAAJ&hl=en)
+* [**Shang Hong**](https://scholar.google.com/citations?user=Oh-S7jsAAAAJ&hl=en)
 
 ## Ph.D. Students
 
@@ -220,14 +221,13 @@ We have an amazing team of researchers comprising PhD Students, Senior Researche
 
 * [**Deepanway Ghosal**](https://deepanwayx.github.io/) (Now at Deepmind)
 * [**Chia Yew Ken**](http://chiayewken.herokuapp.com/) (Now at Alibaba)
-* [**Hui Chen**](https://chchenhui.github.io/) (Now postdoc at NTU)
-* [**Devamanyu Hazarika**](http://devamanyu.com) (Now at Amazon)
+* [**Hui Chen**](https://chchenhui.github.io/) (Now postdoc at NUS)
+* [**Devamanyu Hazarika**](http://devamanyu.com) (Now at Meta, Ex-Amazon)
 * [**Rishabh Bhardwaj**](https://scholar.google.com/citations?user=nomHn1sAAAAJ&hl=en) (Founder of Walled AI)
 
 
 ## Former Masters Students and Research Staff
 
-* [**Shang Hong**](https://scholar.google.com/citations?user=Oh-S7jsAAAAJ&hl=en)
 * [**Bryan Chew**](https://www.linkedin.com/in/bchewlj/?originalSubdomain=sg)
 * [**Samson Yu**](https://samsonyubaijian.github.io) (Now RA at NUS)
 * [**Yi Xuan Tan**](https://sg.linkedin.com/in/yi-xuan-tan-41b64617a)
