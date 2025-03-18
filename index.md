@@ -9,8 +9,7 @@ related: false
 logo:
   - image_path: /assets/images/logos/square-light.png
     id: "big-home-logo"
-    excerpt: "Welcome fellow researchers to the DeCLaRe Lab! We are a small academic research group working on interesting and challenging AI problems. To know more about our work, please browse our catalog of [publications](https://declare-lab.github.io/publications/). Want to be part of the team? Please drop us an [email](sporia@sutd.edu.sg).
-"
+    excerpt: "Welcome fellow researchers to the DeCLaRe Lab! We are a small academic research group working on interesting and challenging AI problems. To know more about our work, please browse our catalog of [publications](https://declare-lab.github.io/publications/). Want to be part of the team? Please drop us an [email](sporia@sutd.edu.sg)."
 ---
 
 {% include feature_row_home_img id="logo" type="left" %}
