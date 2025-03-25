@@ -20,6 +20,7 @@ Here are some key research by our lab that got some attention:
 - **Text-to-Audio Generative Models:** [Tango](https://dl.acm.org/doi/abs/10.1145/3581783.3612348), [TangoFlux](https://arxiv.org/pdf/2412.21037)
 - **LLM Evaluation:** [InstructEval](https://arxiv.org/pdf/2306.04757), [Reasoning Problems](https://arxiv.org/pdf/2401.09395), [PuzzleVQA and AlgoPuzzleVQA](https://arxiv.org/pdf/2502.01081)
 - **AI Safety:** [Red Teaming](https://arxiv.org/pdf/2308.09662), [Resta](https://arxiv.org/pdf/2402.11746)
+- **Retrieval Augmented Generation:** [CoK](https://arxiv.org/pdf/2305.13269), [Trust-Score](https://arxiv.org/pdf/2409.11242)
 > *Intrigued by our logo? [Read](/assets/images/logo-explanation.pdf) the story behind it.*"
   ![image-center](/assets/images/resources/logo-explanation.png){: .width-paper-image-100 .align-center}
 
