@@ -21,6 +21,13 @@ Here are some key research by our lab that got some attention:
 - **LLM Evaluation:** [InstructEval](https://arxiv.org/pdf/2306.04757), [Reasoning Problems](https://arxiv.org/pdf/2401.09395), [PuzzleVQA and AlgoPuzzleVQA](https://arxiv.org/pdf/2502.01081)
 - **AI Safety/Bias:** [Red Teaming](https://arxiv.org/pdf/2308.09662), [Resta](https://arxiv.org/pdf/2402.11746), [Gender Bias](https://arxiv.org/abs/2009.05021), [Cultural Bias](https://arxiv.org/pdf/2405.04655)
 - **Retrieval Augmented Generation:** [CoK](https://arxiv.org/pdf/2305.13269), [Trust-Score](https://arxiv.org/pdf/2409.11242)
+
+# Keen to Join Our Lab?
+<div class="notice--success">
+  <h4>Please Read these Slides</h4>
+  <p> If you would like to join our lab, we encourage you to get familiar with the research topics we are interested in. <a href = "https://docs.google.com/presentation/d/17edmwBfMHhduRq4KSKrXz8_pK_aokH0SHawiR4ZNK9U/edit?usp=sharing">Here are the slides for this.</a>  
+  </p>
+</div>
   
 > *Intrigued by our logo? [Read](/assets/images/logo-explanation.pdf) the story behind it.*"
   ![image-center](/assets/images/resources/logo-explanation.png){: .width-paper-image-100 .align-center}
