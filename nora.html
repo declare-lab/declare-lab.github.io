@@ -82,6 +82,7 @@ h2 {
             <h2 id="abstract">
               <font color="000093">Abstract</font>
             </h2>
+            
             <p style="text-align: justify;">
               <font color="061E61">Existing Visual-Language-Action (VLA) models have shown promising performance in zero-shot scenarios, demonstrating impressive task execution and reasoning capabilities. However, a significant challenge arises from the limitations of visual encoding, which can result in failures during tasks such as object grasping. Moreover, these models typically suffer from high computational overhead due to their large sizes, often exceeding 7B parameters. While these models excel in reasoning and task planning, the substantial computational overhead they incur makes them impractical for real-time robotic environments, where speed and efficiency are paramount. Given the common practice of fine-tuning VLA models for specific tasks, there is a clear need for a smaller, more efficient model that can be fine-tuned on consumer-grade GPUs.  To address the limitations of existing VLA models, we propose NORA, a 3B-parameter model designed to reduce computational overhead while maintaining strong task performance. NORA adopts the Qwen-2.5-VL-3B multimodal model as the backbone, leveraging its superior visual-semantic understanding to enhance visual reasoning and action grounding. Additionally, our NORA is trained on 970k real-world robot demonstrations and equipped with the FAST+ tokenizer for efficient action sequence generation. Experimental results demonstrate that NORA outperforms existing large-scale VLA models, achieving better task performance with significantly reduced computational overhead, making it a more practical solution for real-time robotic autonomy.</font>
             </p>
@@ -100,6 +101,7 @@ h2 {
             <!-- </li> -->
 
             <br>
+            <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/_6AsL7AAPzk?si=di4MXco-w73zlj1y" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
             <figure>
               <p align="center"><img src="../NORA.png" width="100%" class="center" /></p>
               <figcaption>
@@ -111,8 +113,45 @@ h2 {
 
 
             <br>
-
             <p id="demos"><b>
+              <font color="061E61">Examples of NORA peforming difficult task:</font>
+            </b></p>
+
+          <table class="table" align="center" style="table-layout: fixed;word-break:break-word">
+              <tr>
+                <td scope="col" width="33%">
+                  <font color="061E61"><i>Task Instruction</i></font>
+                </td>
+                <td scope="col" width="66%">
+                  <font color="061E61"><i>Policy Execution</i></font>
+                </td>
+              </tr>
+            <tbody>
+              <tr>
+                <td scope="row">Put the pink toy in pot (with object distraction)</td>
+                <td>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HiYl45UZLZw?si=2VLnDXTyNHXlm1eR" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </td>
+          </tr>
+          <tr>
+            <td scope="row">Put the carrot in pot (with human distraction)</td>
+            <td>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uwFSFn1sqmk?si=iNxxOeiaQEjswyGx"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </td>
+        </tr>
+        <tr>
+          <td scope="row">Put the pink toy in pot (with human+object distraction)</td>
+          <td>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/txOXdlM40oQ?si=WNe2O4d3WrCzgr4F"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </td>
+      </tr>
+            <p id="demos"><b>
+            </iframe>
+          </td>
+        </tr>
+      </tbody>
+      </table>
                 <font color="061E61">Examples of NORA in action:</font>
               </b></p>
 
@@ -129,6 +168,7 @@ h2 {
                 <tr>
                   <td scope="row">Put the blue cube on the plate</td>
                   <td>
+                    
                     <iframe width="640" height="360"
                       src="https://www.youtube.com/embed/vhRcvLRs5lI" 
                       frameborder="0" allowfullscreen>
