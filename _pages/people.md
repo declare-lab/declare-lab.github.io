@@ -202,18 +202,15 @@ We have an amazing team of researchers comprising PhD Students, Senior Researche
 * [**Navonil Majumder**](https://scholar.google.com/citations?user=jPfEvuQAAAAJ&hl=en&oi=ao)
 * [**Ambuj Mehrish**](https://www.linkedin.com/in/ambuj-mehrish-159a0417b/)
 * [**Qi Sun**](https://scholar.google.com/citations?user=GpH4vXwAAAAJ)
-* [**Shaozuo Zhang**](https://sg.linkedin.com/in/shaozuo-zhang-233a7b195)
 * [**Rishabh Bhardwaj**](https://scholar.google.com/citations?user=nomHn1sAAAAJ&hl=en)
 * [**Shang Hong**](https://scholar.google.com/citations?user=Oh-S7jsAAAAJ&hl=en)
 
 ## Ph.D. Students
 
-* [**Wei Han**](https://github.com/Clement25)
 * [**Maojia Song**](https://scholar.google.com/citations?user=J1cg8fIAAAAJ&hl=zh-CN)
 * [**Vernon Toh**](https://scholar.google.com/citations?user=ZUPDabgAAAAJ&hl=en)
 * [**Weisheng Jin**](https://scholar.google.com/citations?user=6ycWC-cAAAAJ&hl=en)
 * [**Javid Akhtar**](https://www.linkedin.com/in/jaavid-aktar-7481451bb/)
-* [**Pengfei Hong**](https://github.com/Emrys-Hong)
 * [**Chia Yu**](https://github.com/hungchiayu1)
 * [**Pala Tej Deep**](https://github.com/Tej-Deep)
 
@@ -224,7 +221,8 @@ We have an amazing team of researchers comprising PhD Students, Senior Researche
 * [**Hui Chen**](https://chchenhui.github.io/) (Now postdoc at NUS)
 * [**Devamanyu Hazarika**](http://devamanyu.com) (Now at Meta, Ex-Amazon)
 * [**Rishabh Bhardwaj**](https://scholar.google.com/citations?user=nomHn1sAAAAJ&hl=en) (Founder of Walled AI)
-
+* [**Wei Han**](https://github.com/Clement25) (Now at Huawei)
+* [**Pengfei Hong**](https://github.com/Emrys-Hong)
 
 ## Former Masters Students and Research Staff
 
@@ -237,3 +235,4 @@ We have an amazing team of researchers comprising PhD Students, Senior Researche
 * [**Joanna Saw**](https://www.linkedin.com/in/joannasaw/)
 * [**Yingting Li**](https://www.linkedin.com/in/yingting-li-a598481b8)
 * [**Yang Xiaocui**](https://yangxiaocui1215.github.io)
+* [**Shaozuo Zhang**](https://sg.linkedin.com/in/shaozuo-zhang-233a7b195)
