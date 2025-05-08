@@ -5,83 +5,255 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NORA: A Small Open-Sourced Generalist Vision Language Action Model for Embodied Tasks</title>
   <!-- Fonts & CSS -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-..." crossorigin="anonymous">
   <style>
-    body { font-family: 'Roboto', sans-serif; background: #f8f9fa; color: #061E61; margin: 0; }
+    :root {
+      --primary-color: #061E61;
+      --secondary-color: #1a2a6c;
+      --bg-light: #f8f9fa;
+      --btn-bg: #e0e0e0;
+      --btn-hover: #cccccc;
+      --radius: 1rem;
+      --spacing: 1.5rem;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--bg-light);
+      color: var(--primary-color);
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
     .header {
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: calc(var(--spacing) * 2) 1rem;
+      text-align: center;
+    }
+    .logo-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .logo {
+      width: 80px;
+    }
+    .main-title {
+      font-size: 3rem;
+      color: #000093;
+      margin: 0;
+      font-weight: 700;
+    }
+    .subtitle {
+      font-size: 1.75rem;
+      color: var(--secondary-color);
+      margin: 0.75rem 0 1.5rem;
+      font-weight: 600;
+    }
+    .authors {
+      font-size: 1.125rem;
+      font-weight: 500;
+      margin-bottom: var(--spacing);
+    }
+    .affiliations {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: calc(var(--spacing) * 1.5);
+      margin-bottom: var(--spacing);
+    }
+    .affiliations img {
+      height: 60px;
+      transition: transform 0.3s;
+    }
+    .affiliations img:hover {
+      transform: scale(1.1);
+    }
+    .links {
+      margin-bottom: calc(var(--spacing) * 1.5);
+    }
+    .links .btn {
+      margin: 0 0.75rem;
+      font-weight: 600;
+      color: var(--primary-color);
+      background-color: var(--btn-bg);
+      border: none;
+      border-radius: var(--radius);
+      padding: 0.5rem 1.25rem;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .links .btn:hover {
+      background-color: var(--btn-hover);
+      transform: translateY(-2px);
+    }
+    main {
+      padding: var(--spacing) 1rem 3rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section + section {
+      margin-top: calc(var(--spacing) * 2);
+    }
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: var(--spacing);
+      color: var(--secondary-color);
+      position: relative;
+    }
+    section h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: var(--primary-color);
+      margin: 0.5rem auto 0;
+      border-radius: 2px;
+    }
+    .teaser-section img,
+    .architecture img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      margin: auto;
+      display: block;
+    }
+    .abstract p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.0625rem;
+      text-align: justify;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+      gap: var(--spacing);
+      margin: 0 auto;
+    }
+    .video-item {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .video-item:hover {
+      transform: translateY(-4px);
+    }
+    .iframe-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 aspect */
+      background: #000;
+    }
+    .iframe-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .video-caption {
+      padding: 0.75rem;
+      text-align: center;
+      font-weight: 600;
+      background: #fff;
+    }
+    .intro-grid {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 1rem;
-    padding: 1rem 2rem;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   }
-    .logo { width: 80px; margin-right: 1rem; }
-    .title { font-size: 2rem; color: #000093; margin: 0; }
-    .authors { text-align: center; margin-top: .5rem; font-weight: 500; }
-    .affiliations { text-align: center; font-size: .9rem; color: #555; margin-bottom: 1.5rem; }
-    .abstract { background: #fff; padding: 2rem; border-radius: .75rem; box-shadow: 0 4px 8px rgba(0,0,0,0.05); margin: 2rem auto; max-width: 1200px; }
-    .teaser { width: 100%; height: auto; display: block; margin: 1rem 0; border-radius: .75rem; object-fit: contain; }
-    .links { text-align: center; margin: .5rem 0 2rem; }
-    .links a { margin: 0 .75rem; font-weight: 600; color: #000093; text-decoration: none; }
-    .architecture { margin: 2rem auto; max-width: 800px; }
-    .architecture img { width: 100%; height: auto; border-radius: .75rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-    .architecture-caption { text-align: center; font-style: italic; margin-top: .5rem; color: #555; }
-    .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 1.5rem; margin-bottom: 3rem; }
-    .video-item { display: flex; flex-direction: column; background: #fff; border-radius: .75rem; box-shadow: 0 4px 8px rgba(0,0,0,0.05); overflow: visible; }
-    .iframe-wrapper { position: relative; width: 100%; padding-top: 56.25%; background: #000; border-top-left-radius: .75rem; border-top-right-radius: .75rem; overflow: hidden; }
-    .iframe-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
-    .video-caption { padding: .75rem; text-align: center; font-weight: 600; background: #fff; border-bottom-left-radius: .75rem; border-bottom-right-radius: .75rem; }
+  .intro-item {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;       /* fallback centering if you ever switch out of flex */
+  }
+
+  /* 2) Give the wrapper an aspect ratio so it “holds” space */
+  .intro-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* modern CSS for 16:9 videos */
+    position: relative;   /* for the absolute‐positioned iframe */
+  }
+
+  /* 3) Make the iframe fill that wrapper */
+  .intro-wrapper iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
     footer { text-align: center; padding: 2rem 0; font-size: .875rem; color: #6c757d; }
   </style>
 </head>
 <body>
   <header class="header">
-    <img src="https://raw.githubusercontent.com/declare-lab/nora/main/assets/nora-logo.png" alt="NORA Logo" class="logo">
-    <h1 class="title">NORA: A Small Open-Sourced Generalist Vision Language Action Model for Embodied Tasks</h1>
-  </header>
-  <div class="authors">
-    Chia-Yu Hung¹, Qi Sun¹, Pengfei Hong¹, Amir Zadeh², Chuan Li², U-Xuan Tan¹, Navonil Majumder¹, Soujanya Poria¹
-  </div>
-  <div class="affiliations">
-    ¹ DeCLaRe Lab, Singapore University of Technology and Design &nbsp;&nbsp;|&nbsp;&nbsp; ² Lambda Labs
-  </div>
-  <main class="container">
-    <!-- Teaser and Links -->
-    <img src="https://declare-lab.github.io/NORA_teaser.png" alt="NORA Teaser" class="teaser">
-    <section class="abstract">
-      <h2>Abstract</h2>
-      <p>Existing Visual-Language-Action (VLA) models have shown promising performance in zero-shot scenarios, demonstrating impressive task execution and reasoning capabilities. However, a significant challenge arises from the limitations of visual encoding, which can result in failures during tasks such as object grasping. Moreover, these models typically suffer from high computational overhead due to their large sizes, often exceeding 7B parameters. While these models excel in reasoning and task planning, the substantial computational overhead they incur makes them impractical for real-time robotic environments, where speed and efficiency are paramount. Given the common practice of fine-tuning VLA models for specific tasks, there is a clear need for a smaller, more efficient model that can be fine-tuned on consumer-grade GPUs.</p>
-      <p>To address the limitations of existing VLA models, we propose NORA, a 3B-parameter model designed to reduce computational overhead while maintaining strong task performance. NORA adopts the Qwen-2.5-VL-3B multimodal model as the backbone, leveraging its superior visual-semantic understanding to enhance visual reasoning and action grounding. Additionally, NORA is trained on 970k real-world robot demonstrations and equipped with the FAST+ tokenizer for efficient action sequence generation. Experimental results demonstrate that NORA outperforms existing large-scale VLA models, achieving better task performance with significantly reduced computational overhead, making it a more practical solution for real-time robotic autonomy.</p>
-    </section>
-
+    <div class="logo-title">
+      <img src="https://raw.githubusercontent.com/declare-lab/nora/main/assets/nora-logo.png" alt="NORA Logo" class="logo">
+      <h1 class="main-title">NORA</h1>
+    </div>
+    <h2 class="subtitle">A Small Open-Sourced Generalist Vision Language Action Model for Embodied Tasks</h2>
+    <div class="authors">Chia-Yu Hung, Qi Sun, Pengfei Hong, Amir Zadeh, Chuan Li, U-Xuan Tan, Navonil Majumder, Soujanya Poria</div>
+    <div class="affiliations">
+      <a href="https://declare-lab.github.io/rec-light.png" target="_blank"><img src="https://declare-lab.github.io/rec-light.png" alt="DeCLaRe Lab"></a>
+      <a href="https://www.sutd.edu.sg/" target="_blank"><img src="https://scholarshipguide.com.sg/images/providers/94.png" alt="SUTD"></a>
+      <a href="https://lambdalabs.com/" target="_blank"><img src="https://trust.lambda.ai/api/share/a1d6b6ac-7647-40c6-b836-673f56b9feaf/logo.png" alt="Lambda Labs"></a>
+    </div>
     <div class="links">
-      <a href="https://arxiv.org/abs/2504.19854" target="_blank">[Paper on ArXiv]</a>
-      <a href="https://github.com/declare-lab/nora" target="_blank">[Code on GitHub]</a>
-      <a href="https://huggingface.co/collections/declare-lab/nora-6811ba3e820ef362d9eca281" target="_blank">[Hugging Face]</a>
+      <a href="https://arxiv.org/abs/2504.19854" class="btn btn-lg" target="_blank">arXiv</a>
+      <a href="https://github.com/declare-lab/nora" class="btn btn-lg" target="_blank">GitHub</a>
+      <a href="https://huggingface.co/collections/declare-lab/nora-6811ba3e820ef362d9eca281" class="btn btn-lg" target="_blank">Hugging Face</a>
     </div>
+  </header>
 
-    <!-- Architecture Diagram -->
-    <div class="architecture">
-      <img src="https://declare-lab.github.io/NORA.png" alt="NORA Architecture">
-      <div class="architecture-caption">Figure: NORA system architecture with image encoder, VLM, and FAST+ tokenizer.</div>
-    </div>
-
+  <main>
     <!-- Intro Video -->
-    <div class="video-grid">
-      <div class="video-item">
-        <div class="iframe-wrapper">
-          <iframe data-src="https://www.youtube.com/embed/_6AsL7AAPzk?si=di4MXco-w73zlj1y" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <!-- No caption for intro -->
+<section>
+  <div class="intro-grid">
+    <div class="intro-item">
+      <div class="intro-wrapper">
+        <iframe
+          data-src="https://www.youtube.com/embed/_6AsL7AAPzk?si=di4MXco-w73zlj1y"
+          allow="encrypted-media; picture-in-picture"
+          allowfullscreen>
+        </iframe>
       </div>
     </div>
+  </div>
+</section>
 
-    <h2 class="section-title">Examples of NORA Performing Difficult Tasks</h2>
-    <div class="video-grid">
-      <div class="video-item">
+
+    <!-- Abstract -->
+    <section class="abstract">
+      <h2>Abstract</h2>
+      <p>Existing Visual-Language-Action (VLA) models have shown promising performance in zero-shot scenarios, demonstrating impressive task execution and reasoning capabilities. However, a significant challenge arises from the limitations of visual encoding, which can result in failures during tasks such as object grasping. Moreover, these models typically suffer from high computational overhead due to their large sizes, often exceeding 7B parameters. While these models excel in reasoning and task planning, the substantial computational overhead they incur makes them impractical for real-time robotic environments, where speed and efficiency are paramount. Given the common practice of fine-tuning VLA models for specific tasks, there is a clear need for a smaller, more efficient model that can be fine-tuned on consumer-grade GPUs. To address the limitations of existing VLA models, we propose NORA, a 3B-parameter model designed to reduce computational overhead while maintaining strong task performance. NORA adopts the Qwen-2.5-VL-3B multimodal model as the backbone, leveraging its superior visual-semantic understanding to enhance visual reasoning and action grounding. Additionally, our NORA is trained on 970k real-world robot demonstrations and equipped with the FAST+ tokenizer for efficient action sequence generation. Experimental results demonstrate that NORA outperforms existing large-scale VLA models, achieving better task performance with significantly reduced computational overhead, making it a more practical solution for real-time robotic autonomy.</p>
+    </section>
+
+    <!-- Teaser with Title -->
+    <section class="teaser-section">
+      <h2>Summarized Performance with WidowX</h2>
+      <img src="https://declare-lab.github.io/NORA_teaser.png" alt="NORA Teaser" class="teaser">
+    </section>
+
+    <!-- The Framework -->
+    <section class="architecture">
+      <h2>The Framework</h2>
+      <img src="https://declare-lab.github.io/NORA.png" alt="NORA Architecture">
+    </section>
+
+    <!-- Examples of NORA Performing Difficult Tasks -->
+    <section>
+      <h2>Examples of NORA Performing Difficult Tasks</h2>
+      <div class="video-grid">
+        <div class="video-item">
         <div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/HiYl45UZLZw?si=2VLnDXTyNHXlm1eR" allowfullscreen></iframe></div>
         <div class="video-caption">With object distraction: Put the pink toy in pot</div>
       </div>
@@ -93,10 +265,13 @@
         <div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/txOXdlM40oQ?si=WNe2O4d3WrCzgr4F" allowfullscreen></iframe></div>
         <div class="video-caption">With human + object distraction: Put the pink toy in pot</div>
       </div>
-    </div>
+      </div>
+    </section>
 
-    <h2 class="section-title">More Examples of NORA in Action</h2>
-    <div class="video-grid">
+    <!-- More Examples of NORA in Action -->
+    <section>
+      <h2>More Examples of NORA in Action</h2>
+      <div class="video-grid">
       <div class="video-item"><div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/vhRcvLRs5lI" allowfullscreen></iframe></div><div class="video-caption">Put the blue cube on the plate</div></div>
       <div class="video-item"><div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/k3seqSaGftU" allowfullscreen></iframe></div><div class="video-caption">Put the corn and carrot in pan</div></div>
       <div class="video-item"><div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/8RzuMsOkw2o" allowfullscreen></iframe></div><div class="video-caption">Put banana and carrot in pot</div></div>
@@ -107,30 +282,53 @@
       <div class="video-item"><div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/Xajw9eaB940" allowfullscreen></iframe></div><div class="video-caption">Put the blue cube on the plate</div></div>
       <div class="video-item"><div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/YF6RH24j5nI" allowfullscreen></iframe></div><div class="video-caption">Put banana in pot</div></div>
       <div class="video-item"><div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/ftHc9aISAQw" allowfullscreen></iframe></div><div class="video-caption">Put the red bottle and the hamburger in the pan</div></div>
-    </div>
+      </div>
+    </section>
   </main>
-  <footer>&copy; 2025 DeCLaRe Lab, Singapore University of Technology and Design</footer>
+<footer>&copy; 2025 DeCLaRe Lab, Singapore University of Technology and Design</footer>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Helper to build a looped YouTube embed URL
+    function buildYouTubeUrl(baseSrc) {
+      // Extract the video ID from the embed URL
+      const match = baseSrc.match(/\/embed\/([^?&]+)/);
+      const videoId = match ? match[1] : '';
+      const url = new URL(baseSrc);
+      // Always mute, loop, and autoplay
+      url.searchParams.set('autoplay', '1');
+      url.searchParams.set('mute', '1');
+      url.searchParams.set('loop', '1');
+      // Required for looping: playlist must equal the same video ID
+      if (videoId) {
+        url.searchParams.set('playlist', videoId);
+      }
+      return url.toString();
+    }
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // Load all iframes initially
-      document.querySelectorAll('iframe[data-src]').forEach(iframe => {
-        iframe.src = iframe.getAttribute('data-src');
-      });
-      // Autoplay on scroll
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          const iframe = entry.target;
-          const src = iframe.getAttribute('data-src');
-          if (entry.isIntersecting) {
-            iframe.src = src + (src.includes('?') ? '&' : '?') + 'autoplay=1&mute=1';
-          } else {
-            iframe.src = src;
-          }
-        });
-      }, { threshold: 0.6 });
-      document.querySelectorAll('iframe[data-src]').forEach(el => observer.observe(el));
+    // Load all iframes initially (but without autoplay/loop until in view)
+    document.querySelectorAll('iframe[data-src]').forEach(iframe => {
+      iframe.src = iframe.getAttribute('data-src');
     });
-  </script>
+
+    // Observe scroll position to trigger autoplay+loop when 60% visible
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const iframe = entry.target;
+        const baseSrc = iframe.getAttribute('data-src');
+        if (entry.isIntersecting) {
+          // Build and set the looped autoplay URL
+          iframe.src = buildYouTubeUrl(baseSrc);
+        } else {
+          // Reset back to the non-playing base URL
+          iframe.src = baseSrc;
+        }
+      });
+    }, { threshold: 0.6 });
+
+    // Start observing each iframe
+    document.querySelectorAll('iframe[data-src]').forEach(el => observer.observe(el));
+  });
+</script>
+
 </body>
 </html>
