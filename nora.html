@@ -1,330 +1,136 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta name="generator" content="Hugo 0.66.0" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
-  <!-- <link rel="stylesheet" href="../css/normalize.css"> -->
-  <!-- <link rel="stylesheet" href="../css/skeleton.css"> -->
-  <!-- <link rel="stylesheet" href="../css/custom.css"> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="alternate" href="index.xml" type="application/rss+xml" title="Speech Research">
-  <!-- <link rel="shortcut icon" href="favicon.png" type="image/x-icon" /> -->
   <title>NORA: A Small Open-Sourced Generalist Vision Language Action Model for Embodied Tasks</title>
-<style>
-figcaption {
-	color: inherit;
-	font-size: inherit;
-	font-family: inherit;
-}
-table {
-	font-family: inherit;
-	font-size: inherit;
-}
-thead {
-	background-color: inherit;
-	border-bottom: inherit;
-}
-h2 {
-	font-size: 1.5rem;
-}
-.container {
-	color: #061E61;
-}
-</style>
+  <!-- Fonts & CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+  <style>
+    body { font-family: 'Roboto', sans-serif; background: #f8f9fa; color: #061E61; margin: 0; }
+    .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+    .logo { width: 80px; margin-right: 1rem; }
+    .title { font-size: 2rem; color: #000093; margin: 0; }
+    .authors { text-align: center; margin-top: .5rem; font-weight: 500; }
+    .affiliations { text-align: center; font-size: .9rem; color: #555; margin-bottom: 1.5rem; }
+    .abstract { background: #fff; padding: 2rem; border-radius: .75rem; box-shadow: 0 4px 8px rgba(0,0,0,0.05); margin: 2rem auto; max-width: 1200px; }
+    .teaser { width: 100%; height: auto; display: block; margin: 1rem 0; border-radius: .75rem; object-fit: contain; }
+    .links { text-align: center; margin: .5rem 0 2rem; }
+    .links a { margin: 0 .75rem; font-weight: 600; color: #000093; text-decoration: none; }
+    .architecture { margin: 2rem auto; max-width: 800px; }
+    .architecture img { width: 100%; height: auto; border-radius: .75rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    .architecture-caption { text-align: center; font-style: italic; margin-top: .5rem; color: #555; }
+    .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 1.5rem; margin-bottom: 3rem; }
+    .video-item { display: flex; flex-direction: column; background: #fff; border-radius: .75rem; box-shadow: 0 4px 8px rgba(0,0,0,0.05); overflow: visible; }
+    .iframe-wrapper { position: relative; width: 100%; padding-top: 56.25%; background: #000; border-top-left-radius: .75rem; border-top-right-radius: .75rem; overflow: hidden; }
+    .iframe-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+    .video-caption { padding: .75rem; text-align: center; font-weight: 600; background: #fff; border-bottom-left-radius: .75rem; border-bottom-right-radius: .75rem; }
+    footer { text-align: center; padding: 2rem 0; font-size: .875rem; color: #6c757d; }
+  </style>
 </head>
+<body>
+  <header class="header">
+    <img src="https://raw.githubusercontent.com/declare-lab/nora/main/assets/nora-logo.png" alt="NORA Logo" class="logo">
+    <h1 class="title">NORA: A Small Open-Sourced Generalist Vision Language Action Model for Embodied Tasks</h1>
+  </header>
+  <div class="authors">
+    Chia-Yu Hung¹, Qi Sun¹, Pengfei Hong¹, Amir Zadeh², Chuan Li², U-Xuan Tan¹, Navonil Majumder¹, Soujanya Poria¹
+  </div>
+  <div class="affiliations">
+    ¹ DeCLaRe Lab, Singapore University of Technology and Design &nbsp;&nbsp;|&nbsp;&nbsp; ² Lambda Labs
+  </div>
+  <main class="container">
+    <!-- Teaser and Links -->
+    <img src="https://declare-lab.github.io/NORA_teaser.png" alt="NORA Teaser" class="teaser">
+    <section class="abstract">
+      <h2>Abstract</h2>
+      <p>Existing Visual-Language-Action (VLA) models have shown promising performance in zero-shot scenarios, demonstrating impressive task execution and reasoning capabilities. However, a significant challenge arises from the limitations of visual encoding, which can result in failures during tasks such as object grasping. Moreover, these models typically suffer from high computational overhead due to their large sizes, often exceeding 7B parameters. While these models excel in reasoning and task planning, the substantial computational overhead they incur makes them impractical for real-time robotic environments, where speed and efficiency are paramount. Given the common practice of fine-tuning VLA models for specific tasks, there is a clear need for a smaller, more efficient model that can be fine-tuned on consumer-grade GPUs.</p>
+      <p>To address the limitations of existing VLA models, we propose NORA, a 3B-parameter model designed to reduce computational overhead while maintaining strong task performance. NORA adopts the Qwen-2.5-VL-3B multimodal model as the backbone, leveraging its superior visual-semantic understanding to enhance visual reasoning and action grounding. Additionally, NORA is trained on 970k real-world robot demonstrations and equipped with the FAST+ tokenizer for efficient action sequence generation. Experimental results demonstrate that NORA outperforms existing large-scale VLA models, achieving better task performance with significantly reduced computational overhead, making it a more practical solution for real-time robotic autonomy.</p>
+    </section>
 
-  <font size="5">
-
-    <div class="container">
-
-      <header role="banner">
-
-      </header>
-      <main role="main">
-        <article itemscope itemtype="https://schema.org/BlogPosting">
-          <br>
-          <h1 itemprop="headline" align="center">
-            <font color="000093" size="7">NORA: A Small Open-Sourced Generalist Vision Language Action Model for Embodied Tasks</font>
-          </h1>
-          <br>
-          <p style="line-height:1" align="center"><b>
-              <font color="061E61">Chia-Yu Hung<sup>1</sup>, Qi Sun<sup>1</sup>, Pengfei Hong<sup>1</sup>, Amir Zadeh<sup>2</sup>, Chuan Li<sup>2</sup></font>
-            </b></p>
-          <p style="line-height:1" align="center"><b>
-              <font color="061E61">U-Xuan Tan<sup>1</sup>, Navonil Majumder<sup>1</sup>, Soujanya Poria<sup>1</sup></font>
-            </b></p>
-          <p style="line-height:0.6" align="center">
-            <font color="061E61"><sup>1</sup>DeCLaRe Lab, Singapore University of Technology and Design, Singapore</font>
-          </p>
-          <p style="line-height:0.6" align="center">
-            <font color="061E61"><sup>2</sup>Lambda Labs</font>
-          </p>
- <!--          <p style="line-height:0.6" align="center">
-            <font color="061E61"> <sup>2</sup>Department of EEE, Imperial College London, London, UK</font>
-          </p>
-          <p style="line-height:1" align="center">
-            <font color="061E61"><sup>*</sup>Equal Contribution</font>
-          </p> -->
-          <section itemprop="entry-text">
-            <br>
-            <div class="container">
-              <center>
-                <p><a href="https://arxiv.org/abs/2504.19854">[Paper on ArXiv]</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/declare-lab/nora">[Code on GitHub]</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://huggingface.co/collections/declare-lab/nora-6811ba3e820ef362d9eca281">[Hugging Face]</a></p>
-              </center>
-            </div>
-            <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/_6AsL7AAPzk?si=di4MXco-w73zlj1y" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
-            <br>
-            <h2 id="abstract">
-              <font color="000093">Abstract</font>
-            </h2>
-            
-            <p style="text-align: justify;">
-              <font color="061E61">Existing Visual-Language-Action (VLA) models have shown promising performance in zero-shot scenarios, demonstrating impressive task execution and reasoning capabilities. However, a significant challenge arises from the limitations of visual encoding, which can result in failures during tasks such as object grasping. Moreover, these models typically suffer from high computational overhead due to their large sizes, often exceeding 7B parameters. While these models excel in reasoning and task planning, the substantial computational overhead they incur makes them impractical for real-time robotic environments, where speed and efficiency are paramount. Given the common practice of fine-tuning VLA models for specific tasks, there is a clear need for a smaller, more efficient model that can be fine-tuned on consumer-grade GPUs.  To address the limitations of existing VLA models, we propose NORA, a 3B-parameter model designed to reduce computational overhead while maintaining strong task performance. NORA adopts the Qwen-2.5-VL-3B multimodal model as the backbone, leveraging its superior visual-semantic understanding to enhance visual reasoning and action grounding. Additionally, our NORA is trained on 970k real-world robot demonstrations and equipped with the FAST+ tokenizer for efficient action sequence generation. Experimental results demonstrate that NORA outperforms existing large-scale VLA models, achieving better task performance with significantly reduced computational overhead, making it a more practical solution for real-time robotic autonomy.</font>
-            </p>
-
-            <!-- <h2 id="note"> -->
-            <!--   <font color="000093">Note</font> -->
-            <!-- </h2> -->
-            <!-- <li> -->
-            <!--   <font color="061E61"> TANGO generates text-conditional sound effects, including human speech, and music.</font> -->
-            <!-- </li> -->
-            <!-- <li> -->
-            <!--   <font color="061E61"> The LDM is trained on a four A6000 GPUs, with text supervision from instruction tuned LLM -- FLAN-T5. </font> -->
-            <!-- </li> -->
-            <!-- <li> -->
-            <!--   <font color="061E61"> Despite training TANGO's LDM with 63x less data, it manages to produce superior sound quality to the baselines</font> -->
-            <!-- </li> -->
-
-            <br>
-            <figure>
-              <p align="center"><img src="../NORA.png" width="80%" class="center" /></p>
-              <figcaption>
-                <p style="text-align: justify">
-		<font color="061E61"><b>Figure 1:</b> NORA, as depicted in this figure, has three major components: (i) image encoder, (ii) vision language model, and (iii) FAST+ action tokenizer. The image encoder encodes the current state of the environment. Subsequently, the VLM predicts the next action in order to accomplish the input goal, given the current state. Thereafter, FAST+ decodes the VLM output tokens into actionable robot tokens.</font>
-                </p>
-              </figcaption>
-            </figure>
-
-
-            <br>
-            <p id="demos"><b>
-              <font color="061E61">Examples of NORA performing difficult tasks:</font>
-            </b></p>
-
-          <table class="table" align="center" style="table-layout: fixed;word-break:break-word">
-              <tr>
-                <td scope="col" width="33%">
-                  <font color="061E61"><i>Task Instruction</i></font>
-                </td>
-                <td scope="col" width="66%">
-                  <font color="061E61"><i>Policy Execution</i></font>
-                </td>
-              </tr>
-            <tbody>
-              <tr>
-                  <td scope="row"><b>With object distraction:</b><br>Put the pink toy in pot </td>
-                <td>
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/HiYl45UZLZw?si=2VLnDXTyNHXlm1eR" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </td>
-          </tr>
-          <tr>
-              <td scope="row"><b>With human distraction:</b><br>Put the carrot in pot </td>
-            <td>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/uwFSFn1sqmk?si=iNxxOeiaQEjswyGx"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </td>
-        </tr>
-        <tr>
-            <td scope="row"><b>With human+object distraction:</b><br>Put the pink toy in pot </td>
-          <td>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/txOXdlM40oQ?si=WNe2O4d3WrCzgr4F"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </td>
-      </tr>
-            <p><b>
-            </iframe>
-          </td>
-        </tr>
-      </tbody>
-      </table>
-                <font color="061E61">More examples of NORA in action:</font>
-              </b></p>
-
-            <table class="table" align="center" style="table-layout: fixed;word-break:break-word">
-                <tr>
-                  <td scope="col" width="33%">
-                    <font color="061E61"><i>Task Instruction</i></font>
-                  </td>
-                  <td scope="col" width="66%">
-                    <font color="061E61"><i>Policy Execution</i></font>
-                  </td>
-                </tr>
-              <tbody>
-                <tr>
-                  <td scope="row">Put the blue cube on the plate</td>
-                  <td>
-                    
-                    <iframe width="560" height="315"
-                      src="https://www.youtube.com/embed/vhRcvLRs5lI" 
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                    </iframe>
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row">Put the corn and carrot in pan</td>
-                  <td>
-                    <iframe width="560" height="315"
-                      src="https://www.youtube.com/embed/k3seqSaGftU"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                    </iframe>
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row">Put banana and carrot in pot</td>
-                  <td>
-                    <iframe width="560" height="315"
-                      src="https://www.youtube.com/embed/8RzuMsOkw2o"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                    </iframe>
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row">Move the banana close to the pan</td>
-                  <td>
-                    <iframe width="560" height="315"
-                      src="https://www.youtube.com/embed/AFZP3-1MEvY"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                    </iframe>
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row">Put carrot in the pot</td>
-                  <td>
-                    <iframe width="560" height="315"
-                      src="https://www.youtube.com/embed/L9eydFNtEWI"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                    </iframe>
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row">Put the pink toy at the right corner</td>
-                  <td>
-                    <iframe width="560" height="315"
-                      src="https://www.youtube.com/embed/N0ZTQq3G37A"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                    </iframe>
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row">Put the carrot and hotdog in pot</td>
-                  <td>
-                    <iframe width="560" height="315"
-                      src="https://www.youtube.com/embed/QigpozIXbQ0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                    </iframe>
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row">Put the blue cube on the plate</td>
-                  <td>
-                    <iframe width="560" height="315"
-                      src="https://www.youtube.com/embed/Xajw9eaB940"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                    </iframe>
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row">Put banana in pot</td>
-                  <td>
-                    <iframe width="560" height="315"
-                      src="https://www.youtube.com/embed/YF6RH24j5nI"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                    </iframe>
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row">Put the red bottle and the hamburger in the pan</td>
-                  <td>
-                    <iframe width="560" height="315"
-                      src="https://www.youtube.com/embed/ftHc9aISAQw"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                    </iframe>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-
-
-
-            <h2 id="Acknowledgement">
-              <font color="000093">Acknowledgement</font>
-            </h2>
-            <div class="container">
-              <p>
-                This website is created based on <a href = "https://github.com/AudioLDM/AudioLDM.github.io."> https://github.com/AudioLDM/AudioLDM.github.io </a>
-              </p>
-            </div> 
-          </section>
-        </article>
-      </main>
-
+    <div class="links">
+      <a href="https://arxiv.org/abs/2504.19854" target="_blank">[Paper on ArXiv]</a>
+      <a href="https://github.com/declare-lab/nora" target="_blank">[Code on GitHub]</a>
+      <a href="https://huggingface.co/collections/declare-lab/nora-6811ba3e820ef362d9eca281" target="_blank">[Hugging Face]</a>
     </div>
-</font>
 
-    <script>
-      (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-          (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-      ga('create', 'UA-139981676-1', 'auto');
-      ga('send', 'pageview');
-    </script>
+    <!-- Architecture Diagram -->
+    <div class="architecture">
+      <img src="https://declare-lab.github.io/NORA.png" alt="NORA Architecture">
+      <div class="architecture-caption">Figure: NORA system architecture with image encoder, VLM, and FAST+ tokenizer.</div>
+    </div>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <!-- Intro Video -->
+    <div class="video-grid">
+      <div class="video-item">
+        <div class="iframe-wrapper">
+          <iframe data-src="https://www.youtube.com/embed/_6AsL7AAPzk?si=di4MXco-w73zlj1y" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- No caption for intro -->
+      </div>
+    </div>
 
+    <h2 class="section-title">Examples of NORA Performing Difficult Tasks</h2>
+    <div class="video-grid">
+      <div class="video-item">
+        <div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/HiYl45UZLZw?si=2VLnDXTyNHXlm1eR" allowfullscreen></iframe></div>
+        <div class="video-caption">With object distraction: Put the pink toy in pot</div>
+      </div>
+      <div class="video-item">
+        <div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/uwFSFn1sqmk?si=iNxxOeiaQEjswyGx" allowfullscreen></iframe></div>
+        <div class="video-caption">With human distraction: Put the carrot in pot</div>
+      </div>
+      <div class="video-item">
+        <div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/txOXdlM40oQ?si=WNe2O4d3WrCzgr4F" allowfullscreen></iframe></div>
+        <div class="video-caption">With human + object distraction: Put the pink toy in pot</div>
+      </div>
+    </div>
 
+    <h2 class="section-title">More Examples of NORA in Action</h2>
+    <div class="video-grid">
+      <div class="video-item"><div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/vhRcvLRs5lI" allowfullscreen></iframe></div><div class="video-caption">Put the blue cube on the plate</div></div>
+      <div class="video-item"><div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/k3seqSaGftU" allowfullscreen></iframe></div><div class="video-caption">Put the corn and carrot in pan</div></div>
+      <div class="video-item"><div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/8RzuMsOkw2o" allowfullscreen></iframe></div><div class="video-caption">Put banana and carrot in pot</div></div>
+      <div class="video-item"><div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/AFZP3-1MEvY" allowfullscreen></iframe></div><div class="video-caption">Move the banana close to the pan</div></div>
+      <div class="video-item"><div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/L9eydFNtEWI" allowfullscreen></iframe></div><div class="video-caption">Put carrot in the pot</div></div>
+      <div class="video-item"><div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/N0ZTQq3G37A" allowfullscreen></iframe></div><div class="video-caption">Put the pink toy at the right corner</div></div>
+      <div class="video-item"><div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/QigpozIXbQ0" allowfullscreen></iframe></div><div class="video-caption">Put the carrot and hotdog in pot</div></div>
+      <div class="video-item"><div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/Xajw9eaB940" allowfullscreen></iframe></div><div class="video-caption">Put the blue cube on the plate</div></div>
+      <div class="video-item"><div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/YF6RH24j5nI" allowfullscreen></iframe></div><div class="video-caption">Put banana in pot</div></div>
+      <div class="video-item"><div class="iframe-wrapper"><iframe data-src="https://www.youtube.com/embed/ftHc9aISAQw" allowfullscreen></iframe></div><div class="video-caption">Put the red bottle and the hamburger in the pan</div></div>
+    </div>
+  </main>
+  <footer>&copy; 2025 DeCLaRe Lab, Singapore University of Technology and Design</footer>
 
-    <script type="text/x-mathjax-config">
-     MathJax.Hub.Config({
-         HTML: ["input/TeX","output/HTML-CSS"],
-         TeX: {
-                Macros: {
-                         bm: ["\\boldsymbol{#1}", 1],
-                         argmax: ["\\mathop{\\rm arg\\,max}\\limits"],
-                         argmin: ["\\mathop{\\rm arg\\,min}\\limits"]},
-                extensions: ["AMSmath.js","AMSsymbols.js"],
-                equationNumbers: { autoNumber: "AMS" } },
-         extensions: ["tex2jax.js"],
-         jax: ["input/TeX","output/HTML-CSS"],
-         tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-                    processEscapes: true },
-         "HTML-CSS": { availableFonts: ["TeX"],
-                       linebreaks: { automatic: true } }
-     });
- </script>
-
-    <script type="text/x-mathjax-config">
-     MathJax.Hub.Config({
-       tex2jax: {
-         skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-       }
-     });
- </script>
-
-    <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
-      </script>
-
-
-
-
-
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Load all iframes initially
+      document.querySelectorAll('iframe[data-src]').forEach(iframe => {
+        iframe.src = iframe.getAttribute('data-src');
+      });
+      // Autoplay on scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const iframe = entry.target;
+          const src = iframe.getAttribute('data-src');
+          if (entry.isIntersecting) {
+            iframe.src = src + (src.includes('?') ? '&' : '?') + 'autoplay=1&mute=1';
+          } else {
+            iframe.src = src;
+          }
+        });
+      }, { threshold: 0.6 });
+      document.querySelectorAll('iframe[data-src]').forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
 </html>
