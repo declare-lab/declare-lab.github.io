@@ -59,20 +59,27 @@
       font-weight: 500;
       margin-bottom: var(--spacing);
     }
+    /* Updated affiliations for responsiveness */
     .affiliations {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      gap: calc(var(--spacing) * 1.5);
+      gap: calc(var(--spacing) * 1);
       margin-bottom: var(--spacing);
+    }
+    .affiliations a {
+      display: block;
+      flex: 0 1 auto;
+      margin: 0.5rem;
     }
     .affiliations img {
       height: 60px;
+      max-width: 100%;
+      width: auto;
       transition: transform 0.3s;
     }
-    .affiliations img:hover {
-      transform: scale(1.1);
-    }
+    .affiliations img:hover { transform: scale(1.1); }
     .links {
       margin-bottom: calc(var(--spacing) * 1.5);
     }
@@ -210,7 +217,7 @@
     <div class="links">
       <a href="https://arxiv.org/abs/2504.19854" class="btn btn-lg" target="_blank">arXiv</a>
       <a href="https://github.com/declare-lab/nora" class="btn btn-lg" target="_blank">GitHub</a>
-      <a href="https://huggingface.co/collections/declare-lab/nora-6811ba3e820ef362d9eca281" class="btn btn-lg" target="_blank">HuggingFace</a>
+      <a href="https://huggingface.co/collections/declare-lab/nora-6811ba3e820ef362d9eca281" class="btn btn-lg" target="_blank">Hugging Face</a>
     </div>
   </header>
 
