@@ -21,6 +21,7 @@ Here are some key research by our lab that got some attention:
 - **LLM Evaluation:** [InstructEval](https://arxiv.org/pdf/2306.04757), [Reasoning Problems](https://arxiv.org/pdf/2401.09395), [PuzzleVQA and AlgoPuzzleVQA](https://arxiv.org/pdf/2502.01081)
 - **AI Safety/Bias:** [Red Teaming](https://arxiv.org/pdf/2308.09662), [Resta](https://arxiv.org/pdf/2402.11746), [Gender Bias](https://arxiv.org/abs/2009.05021), [Cultural Bias](https://arxiv.org/pdf/2405.04655)
 - **Retrieval Augmented Generation:** [CoK](https://arxiv.org/pdf/2305.13269), [Trust-Score](https://arxiv.org/pdf/2409.11242)
+- **Embodied AI:** [NORA](https://www.arxiv.org/abs/2504.19854), [Emma-X](https://arxiv.org/pdf/2412.11974)
 
 # Keen to Join Our Lab?
 <div class="notice--success">
