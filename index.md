@@ -23,6 +23,15 @@ Here are some key research by our lab that got some attention:
 - **Retrieval Augmented Generation:** [CoK](https://arxiv.org/pdf/2305.13269), [Trust-Score](https://arxiv.org/pdf/2409.11242)
 - **Embodied AI:** [NORA](https://www.arxiv.org/abs/2504.19854), [Emma-X](https://arxiv.org/pdf/2412.11974)
 
+# Updates
+
+<p>
+  <span style="color: #007ACC;">🌞 After this exciting summer, we are thrilled to be moving to <strong>NTU</strong>! 🎓</span><br>
+  We're on the lookout for passionate <strong>Postdocs</strong> and <strong>PhD students</strong> to join our team. 🚀🧠<br>
+  Interested? Drop me a message at <em>soujanya [dot] poria [at] gmail [dot] com</em>.<br>
+  Let's build something amazing together! 🌟
+</p>
+
 # Keen to Join Our Lab?
 <div class="notice--success">
   <h4>Please Read these Slides</h4>
