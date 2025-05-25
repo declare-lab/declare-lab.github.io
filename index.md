@@ -26,10 +26,9 @@ Here are some key research by our lab that got some attention:
 # Updates
 
 <p>
-  <span style="color: #007ACC;">🌞 We are thrilled to share that we will be moving to <strong>NTU</strong> after this summer! 🎓</span><br>
+  <span style="color: #007ACC;">🌞 We will be moving to <strong>NTU</strong> after this summer! 🎓</span><br>
   We're on the lookout for passionate <strong>Postdocs</strong> and <strong>PhD students</strong> to join our team. 🚀🧠<br>
-  Interested? Drop us a message at <em>soujanya [dot] poria [at] gmail [dot] com</em>.<br>
-  Let's build something amazing together! 🌟
+  Interested? Drop us a message at <em>soujanya [dot] poria [at] gmail [dot] com</em>.<br> 🌟
 </p>
 
 # Keen to Join Our Lab?
