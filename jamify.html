@@ -448,23 +448,101 @@ Aesthetic Alignment</title>
                 grid-template-columns: 1fr;
             }
         }
+        .title-section {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.logo-container {
+    flex-shrink: 0;
+    position: relative;
+}
+
+.project-logo {
+    width: 80px;
+    height: auto;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+    transition: all 0.3s ease;
+}
+
+.project-logo:hover {
+    transform: scale(1.08) rotate(2deg);
+    filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.2));
+}
+
+.title-content {
+    flex: 1;
+    text-align: left;
+    max-width: 800px;
+}
+
+.title {
+    font-size: 2.2em;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.subtitle {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+/* Remove the old project badge */
+.project-badge {
+    display: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .title-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .title-content {
+        text-align: center;
+    }
+    
+    .title {
+        text-align: center;
+        font-size: 1.8em;
+    }
+    
+    .subtitle {
+        text-align: center;
+    }
+    
+    .project-logo {
+        width: 60px;
+    }
+}
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1 class="title">JAM-1: A Tiny Flow-based Song Generator with Fine-grained Controllability and Aesthetic Alignment</h1>
+                <div class="title-section">
+        <div class="logo-container">
+            <img src="jamify-logo-no-bg.png" alt="Project Jamify Logo" class="project-logo">
+        </div>
+        <div class="title-content">
+            <h1 class="title">JAM-1: Fine-Grained Word-Level Control for Lyrics-to-Song Generation</h1>
             <p class="subtitle">The First Model of Project Jamify</p>
-            <div class="project-badge">🎵🎸 Project Jamify</div>
+        </div>
+    </div>
             
 <div class="buttons-container">
-    <a href="#" class="btn btn-huggingface">
+    <a href="https://huggingface.co/declare-lab/JAM-1" class="btn btn-huggingface">
         🤗 Hugging Face Model
     </a>
-    <a href="#" class="btn btn-demo">
+    <a href="https://huggingface.co/spaces/declare-lab/JAM-1" class="btn btn-demo">
         🎵 Interactive Demo
     </a>
-    <a href="#" class="btn btn-arxiv">
+    <a href="https://github.com/declare-lab/jamify" class="btn btn-arxiv">
         📄 arXiv Paper
     </a>
     <a href="#" class="btn btn-github">
