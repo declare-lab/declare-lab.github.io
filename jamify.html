@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAM-1: A Tiny Flow-based Song Generator with Fine-grained Controllability and
+Aesthetic Alignment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #2d3748 0%, #4a5568 50%, #2d3748 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 2.5em;
+            font-weight: 700;
+            background: linear-gradient(45deg, #3182ce, #805ad5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .project-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #38a169, #2c7a7b);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .buttons-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, #3182ce, #2c5aa0);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(49, 130, 206, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(49, 130, 206, 0.4);
+        }
+
+        .btn-huggingface {
+            background: linear-gradient(45deg, #ff9d00, #ffb327);
+            box-shadow: 0 5px 15px rgba(255, 157, 0, 0.3);
+        }
+
+        .btn-huggingface:hover {
+            box-shadow: 0 10px 25px rgba(255, 157, 0, 0.4);
+        }
+
+        .btn-github {
+            background: linear-gradient(45deg, #333, #555);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-github:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .abstract {
+            font-size: 1.1em;
+            line-height: 1.8;
+            text-align: justify;
+            color: #555;
+        }
+
+        .contributions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .contribution-card {
+            background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contribution-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.1);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .contribution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .contribution-card:hover::before {
+            opacity: 1;
+        }
+
+        .contribution-card:nth-child(2n) {
+            background: linear-gradient(135deg, #805ad5 0%, #6b46c1 100%);
+        }
+
+        .contribution-card:nth-child(3n) {
+            background: linear-gradient(135deg, #38a169 0%, #2f855a 100%);
+        }
+
+        .contribution-card:nth-child(4n) {
+            background: linear-gradient(135deg, #d69e2e 0%, #b7791f 100%);
+        }
+
+        .contribution-card:nth-child(5n) {
+            background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+        }
+
+        .contribution-card:nth-child(6n) {
+            background: linear-gradient(135deg, #319795 0%, #2c7a7b 100%);
+        }
+
+        .contribution-title {
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .contribution-desc {
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        .comparison-section {
+            margin-top: 40px;
+        }
+
+        .demo-lyrics {
+            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border-left: 5px solid #3182ce;
+        }
+
+        .example-selector {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .example-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .example-btn {
+            padding: 15px 25px;
+            background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e0 100%);
+            border: 2px solid transparent;
+            border-radius: 10px;
+            color: #2d3748;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .example-btn:hover {
+            background: linear-gradient(135deg, #3182ce 0%, #2c5aa0 100%);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .example-btn.active {
+            background: linear-gradient(135deg, #3182ce 0%, #2c5aa0 100%);
+            color: white;
+            border-color: #2c5aa0;
+        }
+
+        .demo-lyrics h3 {
+            color: #63b3ed;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .lyrics-text {
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+
+        .comparison-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .audio-player {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+        }
+
+        .audio-player:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .audio-player.jam1 {
+            border-color: #3182ce;
+            background: linear-gradient(135deg, rgba(49, 130, 206, 0.05) 0%, rgba(128, 90, 213, 0.05) 100%);
+        }
+
+        .audio-player.diffrhythm {
+            border-color: #805ad5;
+            background: linear-gradient(135deg, rgba(128, 90, 213, 0.05) 0%, rgba(107, 70, 193, 0.05) 100%);
+        }
+
+        .model-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #2d3748;
+            text-align: center;
+        }
+
+        .audio-player.jam1 .model-title {
+            color: #3182ce;
+        }
+
+        .audio-player.diffrhythm .model-title {
+            color: #805ad5;
+        }
+
+        .play-button {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: none;
+            background: linear-gradient(45deg, #3182ce, #2c5aa0);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(49, 130, 206, 0.3);
+        }
+
+        .audio-player.diffrhythm .play-button {
+            background: linear-gradient(45deg, #805ad5, #6b46c1);
+            box-shadow: 0 5px 15px rgba(128, 90, 213, 0.3);
+        }
+
+        .play-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(49, 130, 206, 0.4);
+        }
+
+        .audio-player.diffrhythm .play-button:hover {
+            box-shadow: 0 8px 25px rgba(128, 90, 213, 0.4);
+        }
+
+        .play-button.playing {
+            background: linear-gradient(45deg, #38a169, #2f855a);
+        }
+
+        .play-icon {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        .audio-info {
+            text-align: center;
+            color: #4a5568;
+        }
+
+        .audio-duration {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .audio-specs {
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: #e2e8f0;
+            border-radius: 2px;
+            margin: 15px 0;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(45deg, #3182ce, #2c5aa0);
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        .audio-player.diffrhythm .progress-fill {
+            background: linear-gradient(45deg, #805ad5, #6b46c1);
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .time-display {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .error-message {
+            color: #e53e3e;
+            text-align: center;
+            font-size: 0.9em;
+            margin-top: 10px;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2em;
+            }
+            
+            .buttons-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contributions-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-container {
+                grid-template-columns: 1fr;
+            }
+
+            .example-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">JAM-1: A Tiny Flow-based Song Generator with Fine-grained Controllability and Aesthetic Alignment</h1>
+            <p class="subtitle">The First Model of Project Jamify</p>
+            <div class="project-badge">🎵🎸 Project Jamify</div>
+            
+            <div class="buttons-container">
+                <a href="https://huggingface.co/declare-lab/JAM-1" class="btn btn-huggingface">
+                    🤗 HuggingFace
+                </a>
+                <a href="https://github.com/declare-lab/jamify" class="btn btn-github">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Abstract</h2>
+            <p class="abstract">
+                Diffusion and flow-matching models have revolutionized automatic text-to-audio generation in recent times. These models are increasingly capable of generating high quality and faithful audio outputs capturing speech and acoustic events. However, there is still much room for improvement in creative audio generation that primarily involves music and songs. Recent open lyrics-to-song models, such as DiffRhythm, Ace-Step, and Levo, have set an acceptable standard in automatic song generation for recreational use. However, these models lack fine-grained word-level controllability often desired by musicians in their workflows. To the best of our knowledge, our flow-matching-based JAM-1 is the first effort toward endowing word-level timing and duration control in song generation, allowing fine-grained vocal control. Furthermore, we aim to standardize the evaluation of such lyrics-to-song models through our public evaluation dataset JAME. We show that JAM-1 outperforms the existing models.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Key Contributions</h2>
+            <div class="contributions-grid">
+                <div class="contribution-card">
+                    <div class="contribution-title">🏗️ Compact Architecture</div>
+                    <div class="contribution-desc">
+                        At 530M parameters, JAM-1 is less than half the size of the next smallest system (DiffRhythm-1.1B), enabling faster inference and reduced resource demands.
+                    </div>
+                </div>
+                
+                <div class="contribution-card">
+                    <div class="contribution-title">🎯 Fine-Grained Alignment</div>
+                    <div class="contribution-desc">
+                        By accepting word- and phoneme-level timing inputs, JAM-1 lets users control the exact placement of each vocal sound, improving rhythmic flexibility and expressive timing.
+                    </div>
+                </div>
+                
+                <div class="contribution-card">
+                    <div class="contribution-title">📝 Enhanced Lyric Fidelity</div>
+                    <div class="contribution-desc">
+                        This precise alignment reduces WER and PER by over 3× compared to prior work, as the model can directly attend to phoneme boundaries and correct misalignments.
+                    </div>
+                </div>
+                
+                <div class="contribution-card">
+                    <div class="contribution-title">⏱️ Global Duration Control</div>
+                    <div class="contribution-desc">
+                        Our novel duration mechanism controls inter-word pacing and specifies how much instrumental introduction and coda to generate, giving composers full control over song structure.
+                    </div>
+                </div>
+                
+                <div class="contribution-card">
+                    <div class="contribution-title">🧪 Rigorous Evaluation</div>
+                    <div class="contribution-desc">
+                        We compiled lyrics for 250 tracks released after models' training cut-offs to avoid data contamination, spanning various genres for comprehensive evaluation.
+                    </div>
+                </div>
+                
+                <div class="contribution-card">
+                    <div class="contribution-title">🎨 Aesthetic Alignment</div>
+                    <div class="contribution-desc">
+                        Using automated song-quality models like SongEval to generate synthetic preference labels, we apply alignment in multiple rounds for additional performance gains.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section comparison-section">
+            <h2 class="section-title">Model Comparison Demo</h2>
+            
+            <div class="example-selector">
+                <h3 style="margin-bottom: 15px; color: #2d3748;">Choose an Example:</h3>
+                <div class="example-grid">
+                    <button class="example-btn active" onclick="selectExample(0)">🌅 Morning Dreams</button>
+                    <button class="example-btn" onclick="selectExample(1)">💔 Heartbreak Ballad</button>
+                </div>
+            </div>
+            
+            <div class="demo-lyrics">
+                <h3>🎵 Demo Lyrics</h3>
+                <div class="lyrics-text" id="current-lyrics">
+                    In the silence of the morning light<br>
+                    I find my voice, I find my sight<br>
+                    Every dream that seemed so far<br>
+                    Now shines bright like a distant star<br><br>
+                    
+                    We are the ones who dare to fly<br>
+                    Beyond the clouds up in the sky<br>
+                    With every step we're breaking ground<br>
+                    Our hearts beat with a powerful sound
+                </div>
+            </div>
+            
+            <div class="comparison-container">
+                <div class="audio-player jam1">
+                    <div class="model-title">JAM-1 (Ours)</div>
+                    <button class="play-button" onclick="togglePlay('jam1')">
+                        <svg class="play-icon" viewBox="0 0 24 24" id="jam1-icon">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </button>
+                    <div class="progress-bar" onclick="seekAudio('jam1', event)">
+                        <div class="progress-fill" id="jam1-progress"></div>
+                    </div>
+                    <div class="time-display">
+                        <span id="jam1-current-time">0:00</span>
+                        <span id="jam1-total-time">0:00</span>
+                    </div>
+                    <div class="audio-info">
+                        <div class="audio-duration" id="jam1-duration">Duration: 2:34</div>
+                        <div class="audio-specs">
+                            ✨ Fine-grained word-level control<br>
+                            📊 <span id="jam1-wer">WER: 0.12</span> | Parameters: 530M<br>
+                            🎯 Phoneme-aligned timing
+                        </div>
+                    </div>
+                    <div class="error-message" id="jam1-error">Audio file not found</div>
+                </div>
+                
+                <div class="audio-player diffrhythm">
+                    <div class="model-title">DiffRhythm</div>
+                    <button class="play-button" onclick="togglePlay('diffrhythm')">
+                        <svg class="play-icon" viewBox="0 0 24 24" id="diffrhythm-icon">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </button>
+                    <div class="progress-bar" onclick="seekAudio('diffrhythm', event)">
+                        <div class="progress-fill" id="diffrhythm-progress"></div>
+                    </div>
+                    <div class="time-display">
+                        <span id="diffrhythm-current-time">0:00</span>
+                        <span id="diffrhythm-total-time">0:00</span>
+                    </div>
+                    <div class="audio-info">
+                        <div class="audio-duration" id="diffrhythm-duration">Duration: 2:41</div>
+                        <div class="audio-specs">
+                            🎵 Standard generation quality<br>
+                            📊 <span id="diffrhythm-wer">WER: 0.38</span> | Parameters: 1.1B<br>
+                            ⚖️ No fine-grained control
+                        </div>
+                    </div>
+                    <div class="error-message" id="diffrhythm-error">Audio file not found</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden audio elements -->
+    <audio id="jam1-audio" preload="metadata"></audio>
+    <audio id="diffrhythm-audio" preload="metadata"></audio>
+
+    <script>
+        // Global variables
+        let currentlyPlaying = null;
+        let intervals = {};
+        let currentExample = 0;
+
+        // Audio file paths - update these with your actual file paths
+        const audioFiles = {
+            0: { // Morning Dreams
+                jam1: "audio/morning-dreams-jam1.mp3",
+                diffrhythm: "audio/morning-dreams-diffrhythm.mp3"
+            },
+            1: { // Heartbreak
+                jam1: "audio/heartbreak-jam1.mp3", 
+                diffrhythm: "audio/heartbreak-diffrhythm.mp3"
+            }
+        };
+
+        // Example data
+        const examples = [
+            {
+                title: "🌅 Morning Dreams",
+                lyrics: `In the silence of the morning light<br>
+I find my voice, I find my sight<br>
+Every dream that seemed so far<br>
+Now shines bright like a distant star<br><br>
+
+We are the ones who dare to fly<br>
+Beyond the clouds up in the sky<br>
+With every step we're breaking ground<br>
+Our hearts beat with a powerful sound`,
+                jam1: { duration: "2:34", wer: "0.12" },
+                diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+            {
+                title: "💔 Heartbreak Ballad",
+                lyrics: `Empty rooms and silent calls<br>
+Pictures hanging on these walls<br>
+Tell the story of what we had<br>
+Now I'm left here feeling sad<br><br>
+
+But I know that time will heal<br>
+All these wounds that feel so real<br>
+Though you're gone I'll find my way<br>
+To a brighter, better day`,
+                jam1: { duration: "3:12", wer: "0.09" },
+                diffrhythm: { duration: "3:18", wer: "0.42" }
+            }
+        ];
+
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = Math.floor(seconds % 60);
+            return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+        }
+
+        function selectExample(index) {
+            if (!examples[index]) {
+                console.error(`Example ${index} not found`);
+                return;
+            }
+            
+            // Stop any currently playing audio
+            if (currentlyPlaying) {
+                togglePlay(currentlyPlaying);
+            }
+            
+            currentExample = index;
+            
+            // Update active button
+            document.querySelectorAll('.example-btn').forEach((btn, i) => {
+                btn.classList.toggle('active', i === index);
+            });
+            
+            // Update lyrics display
+            document.getElementById('current-lyrics').innerHTML = examples[index].lyrics;
+            
+            // Update audio info
+            document.getElementById('jam1-duration').textContent = `Duration: ${examples[index].jam1.duration}`;
+            document.getElementById('jam1-wer').textContent = `WER: ${examples[index].jam1.wer}`;
+            document.getElementById('diffrhythm-duration').textContent = `Duration: ${examples[index].diffrhythm.duration}`;
+            document.getElementById('diffrhythm-wer').textContent = `WER: ${examples[index].diffrhythm.wer}`;
+            
+            // Load new audio files
+            loadAudioForExample(index);
+        }
+
+        function loadAudioForExample(index) {
+            const jam1Audio = document.getElementById('jam1-audio');
+            const diffrhythmAudio = document.getElementById('diffrhythm-audio');
+            
+            // Reset progress bars and times
+            document.getElementById('jam1-progress').style.width = '0%';
+            document.getElementById('diffrhythm-progress').style.width = '0%';
+            document.getElementById('jam1-current-time').textContent = '0:00';
+            document.getElementById('diffrhythm-current-time').textContent = '0:00';
+            document.getElementById('jam1-total-time').textContent = '0:00';
+            document.getElementById('diffrhythm-total-time').textContent = '0:00';
+            
+            // Hide error messages
+            document.getElementById('jam1-error').style.display = 'none';
+            document.getElementById('diffrhythm-error').style.display = 'none';
+            
+            if (audioFiles[index]) {
+                jam1Audio.src = audioFiles[index].jam1;
+                diffrhythmAudio.src = audioFiles[index].diffrhythm;
+                
+                // Add event listeners for metadata loaded
+                jam1Audio.addEventListener('loadedmetadata', () => updateDuration('jam1'));
+                diffrhythmAudio.addEventListener('loadedmetadata', () => updateDuration('diffrhythm'));
+                
+                // Add event listeners for errors
+                jam1Audio.addEventListener('error', () => showError('jam1'));
+                diffrhythmAudio.addEventListener('error', () => showError('diffrhythm'));
+            }
+        }
+
+        function updateDuration(modelName) {
+            const audio = document.getElementById(`${modelName}-audio`);
+            const totalTimeElement = document.getElementById(`${modelName}-total-time`);
+            
+            if (audio.duration && !isNaN(audio.duration)) {
+                totalTimeElement.textContent = formatTime(audio.duration);
+            }
+        }
+
+        function showError(modelName) {
+            document.getElementById(`${modelName}-error`).style.display = 'block';
+        }
+
+        function togglePlay(modelName) {
+            const audio = document.getElementById(`${modelName}-audio`);
+            const playButton = document.querySelector(`.audio-player.${modelName} .play-button`);
+            const playIcon = document.getElementById(`${modelName}-icon`);
+            
+            // Stop other playing audio
+            if (currentlyPlaying && currentlyPlaying !== modelName) {
+                const otherAudio = document.getElementById(`${currentlyPlaying}-audio`);
+                const otherButton = document.querySelector(`.audio-player.${currentlyPlaying} .play-button`);
+                const otherIcon = document.getElementById(`${currentlyPlaying}-icon`);
+                
+                otherAudio.pause();
+                otherButton.classList.remove('playing');
+                otherIcon.innerHTML = '<path d="M8 5v14l11-7z"/>';
+                // Complete the togglePlay function (continues from where it was cut off)
+                clearInterval(intervals[currentlyPlaying]);
+                currentlyPlaying = null;
+            }
+            
+            if (audio.paused) {
+                audio.play().then(() => {
+                    playButton.classList.add('playing');
+                    playIcon.innerHTML = '<path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>';
+                    currentlyPlaying = modelName;
+                    startProgressTracking(modelName);
+                }).catch(error => {
+                    console.error('Error playing audio:', error);
+                    showError(modelName);
+                });
+            } else {
+                audio.pause();
+                playButton.classList.remove('playing');
+                playIcon.innerHTML = '<path d="M8 5v14l11-7z"/>';
+                clearInterval(intervals[modelName]);
+                currentlyPlaying = null;
+            }
+        }
+
+        function startProgressTracking(modelName) {
+            const audio = document.getElementById(`${modelName}-audio`);
+            
+            intervals[modelName] = setInterval(() => {
+                if (audio.duration) {
+                    const progress = (audio.currentTime / audio.duration) * 100;
+                    document.getElementById(`${modelName}-progress`).style.width = `${progress}%`;
+                    document.getElementById(`${modelName}-current-time`).textContent = formatTime(audio.currentTime);
+                }
+                
+                if (audio.ended) {
+                    const playButton = document.querySelector(`.audio-player.${modelName} .play-button`);
+                    const playIcon = document.getElementById(`${modelName}-icon`);
+                    
+                    playButton.classList.remove('playing');
+                    playIcon.innerHTML = '<path d="M8 5v14l11-7z"/>';
+                    clearInterval(intervals[modelName]);
+                    currentlyPlaying = null;
+                    
+                    // Reset progress
+                    document.getElementById(`${modelName}-progress`).style.width = '0%';
+                    document.getElementById(`${modelName}-current-time`).textContent = '0:00';
+                }
+            }, 100);
+        }
+
+        function seekAudio(modelName, event) {
+            const audio = document.getElementById(`${modelName}-audio`);
+            const progressBar = event.currentTarget;
+            const rect = progressBar.getBoundingClientRect();
+            const clickPosition = (event.clientX - rect.left) / rect.width;
+            
+            if (audio.duration) {
+                audio.currentTime = clickPosition * audio.duration;
+            }
+        }
+
+        // Initialize the first example on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            selectExample(0);
+        });
+
+        // Add this at the end to properly close the script tag and HTML
+    </script>
+</body>
+</html>
