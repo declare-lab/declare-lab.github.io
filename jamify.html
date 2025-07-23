@@ -220,13 +220,20 @@ Aesthetic Alignment</title>
         }
 
         .demo-lyrics {
-            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
-            color: white;
-            padding: 25px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-            border-left: 5px solid #3182ce;
-        }
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border-left: 5px solid #3182ce;
+    
+    /* Fixed size and scroll properties */
+    width: 100%;            /* Keep the full width */
+    height: 300px;          /* Set fixed height */
+    max-height: 300px;      /* Prevent expansion beyond height */
+    overflow: auto;         /* Show scrollbars when content overflows */
+    box-sizing: border-box; /* Include padding in size calculations */
+}
 
         .example-selector {
             background: white;
@@ -537,7 +544,7 @@ Aesthetic Alignment</title>
             
 <div class="buttons-container">
     <a href="https://huggingface.co/declare-lab/JAM-1" class="btn btn-huggingface">
-        🤗 Hugging Face Model
+        🤗 HuggingFace Model
     </a>
     <a href="https://huggingface.co/spaces/declare-lab/JAM-1" class="btn btn-demo">
         🎵 Interactive Demo
@@ -614,13 +621,21 @@ Aesthetic Alignment</title>
             <div class="example-selector">
                 <h3 style="margin-bottom: 15px; color: #2d3748;">Choose an Example:</h3>
                 <div class="example-grid">
-                    <button class="example-btn active" onclick="selectExample(0)">🌅 Morning Dreams</button>
-                    <button class="example-btn" onclick="selectExample(1)">💔 Heartbreak Ballad</button>
+                    <button class="example-btn active" onclick="selectExample(0)">CHANEY - Prayer</button>
+                    <button class="example-btn" onclick="selectExample(1)">Deeps - RUN!</button>
+                    <button class="example-btn" onclick="selectExample(2)">Hybrid Minds, Brodie - Heroin</button>
+                    <button class="example-btn" onclick="selectExample(3)">Jade Bird - Avalanche</button>
+                    <button class="example-btn" onclick="selectExample(4)">Kwengface - Parallel Theory</button>
+                    <button class="example-btn" onclick="selectExample(5)">Liang Lawrence - A Day Off In Margaritaville</button>
+                    <button class="example-btn" onclick="selectExample(6)">Lizzie Berchie - Happiness</button>
+                    <button class="example-btn" onclick="selectExample(7)">Nathan Dawe, Shayan - Over You</button>
+                    <button class="example-btn" onclick="selectExample(8)">Waylon Wyatt - Sincerely, Your Son</button>
+                    <button class="example-btn" onclick="selectExample(9)">Wunderhorse - The Rope</button>
                 </div>
             </div>
             
             <div class="demo-lyrics">
-                <h3>🎵 Demo Lyrics</h3>
+                <h3>🎵 Lyrics</h3>
                 <div class="lyrics-text" id="current-lyrics">
                     In the silence of the morning light<br>
                     I find my voice, I find my sight<br>
@@ -650,10 +665,10 @@ Aesthetic Alignment</title>
                         <span id="jam1-total-time">0:00</span>
                     </div>
                     <div class="audio-info">
-                        <div class="audio-duration" id="jam1-duration">Duration: 2:34</div>
+                        <!-- <div class="audio-duration" id="jam1-duration">Duration: 2:34</div> -->
                         <div class="audio-specs">
                             ✨ Fine-grained word-level control<br>
-                            📊 <span id="jam1-wer">WER: 0.12</span> | Parameters: 530M<br>
+                            📊 <span id="jam1-wer">WER: 0.10</span> | Parameters: 530M<br>
                             🎯 Phoneme-aligned timing
                         </div>
                     </div>
@@ -675,10 +690,10 @@ Aesthetic Alignment</title>
                         <span id="diffrhythm-total-time">0:00</span>
                     </div>
                     <div class="audio-info">
-                        <div class="audio-duration" id="diffrhythm-duration">Duration: 2:41</div>
+                        <!-- <div class="audio-duration" id="diffrhythm-duration">Duration: 2:41</div> -->
                         <div class="audio-specs">
                             🎵 Standard generation quality<br>
-                            📊 <span id="diffrhythm-wer">WER: 0.38</span> | Parameters: 1.1B<br>
+                            📊 <span id="diffrhythm-wer">WER: 0.35</span> | Parameters: 1.1B<br>
                             ⚖️ No fine-grained control
                         </div>
                     </div>
@@ -701,44 +716,661 @@ Aesthetic Alignment</title>
         // Audio file paths - update these with your actual file paths
         const audioFiles = {
             0: { // Morning Dreams
-                jam1: "audio/morning-dreams-jam1.mp3",
-                diffrhythm: "audio/morning-dreams-diffrhythm.mp3"
+                jam1: "audio/jam1/CHANEY - Prayer.mp3",
+                diffrhythm: "audio/diffrhythm/CHANEY - Prayer.mp3"
             },
             1: { // Heartbreak
-                jam1: "audio/heartbreak-jam1.mp3", 
-                diffrhythm: "audio/heartbreak-diffrhythm.mp3"
+                jam1: "audio/jam1/Deeps - RUN!.mp3", 
+                diffrhythm: "audio/diffrhythm/Deeps - RUN!.mp3"
+            },
+            2: { // Heartbreak
+                jam1: "audio/jam1/Hybrid Minds, Brodie - Heroin.mp3", 
+                diffrhythm: "audio/diffrhythm/Hybrid Minds, Brodie - Heroin.mp3"
+            },
+            3: { // Heartbreak
+                jam1: "audio/jam1/Jade Bird - Avalanche.mp3", 
+                diffrhythm: "audio/diffrhythm/Jade Bird - Avalanche.mp3"
+            },
+            4: { // Heartbreak
+                jam1: "audio/jam1/Kwengface - Parallel Theory.mp3", 
+                diffrhythm: "audio/diffrhythm/Kwengface - Parallel Theory.mp3"
+            },
+            5: { // Heartbreak
+                jam1: "audio/jam1/Liang Lawrence - A Day Off In Margaritaville.mp3", 
+                diffrhythm: "audio/diffrhythm/Liang Lawrence - A Day Off In Margaritaville.mp3"
+            },
+            6: { // Heartbreak
+                jam1: "audio/jam1/Lizzie Berchie - Happiness.mp3", 
+                diffrhythm: "audio/diffrhythm/Lizzie Berchie - Happiness.mp3"
+            },
+            7: { // Heartbreak
+                jam1: "audio/jam1/Nathan Dawe, Shayan - Over You.mp3", 
+                diffrhythm: "audio/diffrhythm/Nathan Dawe, Shayan - Over You.mp3"
+            },
+            8: { // Heartbreak
+                jam1: "audio/jam1/Waylon Wyatt - Sincerely, Your Son.mp3", 
+                diffrhythm: "audio/diffrhythm/Waylon Wyatt - Sincerely, Your Son.mp3"
+            },
+            9: { // Heartbreak
+                jam1: "audio/jam1/Wunderhorse - The Rope.mp3", 
+                diffrhythm: "audio/diffrhythm/Wunderhorse - The Rope.mp3"
             }
         };
 
         // Example data
         const examples = [
             {
-                title: "🌅 Morning Dreams",
-                lyrics: `In the silence of the morning light<br>
-I find my voice, I find my sight<br>
-Every dream that seemed so far<br>
-Now shines bright like a distant star<br><br>
-
-We are the ones who dare to fly<br>
-Beyond the clouds up in the sky<br>
-With every step we're breaking ground<br>
-Our hearts beat with a powerful sound`,
-                jam1: { duration: "2:34", wer: "0.12" },
-                diffrhythm: { duration: "2:41", wer: "0.38" }
+                title: "CHANEY - Prayer",
+                lyrics: `God gave me a brand new song<br>
+God gave me a brand new prayer<br>
+God gave me a brand new song to sing<br>
+God gave me a brand new prayer`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
             },
             {
-                title: "💔 Heartbreak Ballad",
-                lyrics: `Empty rooms and silent calls<br>
-Pictures hanging on these walls<br>
-Tell the story of what we had<br>
-Now I'm left here feeling sad<br><br>
-
-But I know that time will heal<br>
-All these wounds that feel so real<br>
-Though you're gone I'll find my way<br>
-To a brighter, better day`,
-                jam1: { duration: "3:12", wer: "0.09" },
-                diffrhythm: { duration: "3:18", wer: "0.42" }
+                title: "Deeps - RUN!",
+                lyrics: `[Verse]<br>
+Same spot<br>
+Different places<br>
+I can tell that from the look on your face<br>
+That we, are way past<br>
+Gone are the days<br>
+Where we could turn back<br>
+And be better off separately<br>
+I'm attached<br>
+The puppet strings you pull from my back<br>
+Moral compass keeps me on track<br>
+I get frustrated<br>
+No, we won't last<br>
+But I don't wanna let you leave<br>
+<br>
+[Pre-Chorus]<br>
+I get so defensive<br>
+I don't open up<br>
+Try to find an exit<br>
+From the walls of your love<br>
+Why am I pretending?<br>
+Like something is wrong<br>
+Cause I get lost in my head<br>
+When I don't feel good enough<br>
+And I RUN!<br>
+I RUN!<br>
+<br>
+See upcoming pop shows<br>
+Get tickets for your favorite artists<br>
+You might also like<br>
+Sapphire - Ed Sheeran<br>
+Daylight - David Kushner<br>
+Makes Me Wanna Dance - Zimmer90<br>
+<br>
+[Chorus]<br>
+I run from myself but I'm stuck in a maze<br>
+Scared to get help cause I don't wanna face it<br>
+Run out of words, I've got nothing to say<br>
+Leaving you hurts<br>
+But I don't want you waiting<br>
+Run out of breath<br>
+Getting stuck in my ways<br>
+Need to accept<br>
+That I don't want to change<br>
+I run out of words<br>
+I've got nothing to say<br>
+Leaving you hurts<br>
+But I'm running away<br>
+<br>
+[Verse 2]<br>
+Hands on my knees<br>
+These roads are too familiar<br>
+With the soles of my feet<br>
+One minute I'm here with you<br>
+Then I up and I leave<br>
+No warning just a self-indulgent apology<br>
+(I'm sorry)<br>
+<br>
+[Pre-Chorus]<br>
+I get so defensive<br>
+I don't open up<br>
+Try to find an exit<br>
+From the walls of your love<br>
+Why am I pretending? (-tending)<br>
+Like something is wrong (-thing is wrong)<br>
+Cause I get lost in my head<br>
+When I don't feel good enough<br>
+And I RUN!<br>
+I RUN!<br>
+<br>
+[Chorus]<br>
+I run from myself but I'm stuck in a maze<br>
+Scared to get help cause I don't wanna face it<br>
+Run out of words, I've got nothing to say (I got nothing to say)<br>
+Leaving you hurts<br>
+But I don't want you waiting<br>
+Run out of breath<br>
+Getting stuck in my ways (In my way)<br>
+Need to accept<br>
+That I don't want to change<br>
+I run out of words<br>
+I've got nothing to say<br>
+Leaving you hurts<br>
+But I'm running away<br>
+<br>
+[Bridge]<br>
+Cause I'm running away<br>
+Cause I'm running away<br>
+Cause I'm running away<br>
+<br>
+[Outro]<br>
+Why am I pretending?<br>
+Like something is wrong<br>
+Cause I get lost in my head<br>
+When I don't feel good enough<br>
+And I RUN!<br>
+I RUN!
+`,
+                // jam1: { duration: "3:12", wer: "0.09" },
+                // diffrhythm: { duration: "3:18", wer: "0.42" }
+            },
+                        {
+                title: "Hybrid Minds, Brodie - Heroin",
+                lyrics: `[Verse 1]<br>
+Never been controlled by evil<br>
+But it's got my soul<br>
+Sticking electrical only way to fill my hole<br>
+Straight from the needle to my head, my eyes will roll<br>
+Straight from the needle<br>
+<br>
+[Build]<br>
+I hear those distant voices and they get me high like my heavy wind<br>
+I think I found my poison<br>
+No, that's my medicine<br>
+It's like a constant craving<br>
+And it gets me high like heavy wind<br>
+Toxic love like poison<br>
+But that's my medicine<br>
+<br>
+[Drop]<br>
+My-My medic<br>
+My medic, my medic<br>
+My-My medic<br>
+My medic, my medic<br>
+My-My medic<br>
+My medic, my medic<br>
+My-My medic<br>
+But that's my poison<br>
+My-My medic<br>
+My medic, my medic<br>
+My-My medic<br>
+My medic, my medic<br>
+My-My medic<br>
+My medic, my medic<br>
+My-My medic<br>
+But that's my poison<br>
+<br>
+See upcoming pop shows<br>
+Get tickets for your favorite artists<br>
+You might also like<br>
+Rescue Lights - Hybrid Minds & homesick (EDM)<br>
+Deep Dive - Etherwood<br>
+Tear Drops - Hybrid Minds & LYVIA (UK)<br>
+<br>
+[Bridge]<br>
+Your love's like heavy wind<br>
+Never win, never win<br>
+Your love's like heavy wind<br>
+Never win, never win<br>
+Your love's like heavy wind<br>
+Never win, never win<br>
+But that's my poison<br>
+<br>
+[Verse 2]<br>
+Deep down moving all around with the [?]<br>
+Keep going back to you<br>
+Deep dive and I'm gonna drown with the [?] 'cause I like the view<br>
+And anyway I could never leave if I tried this<br>
+Pointless, what's the use?<br>
+Quick [?], pulling with your big hands telling me it's love<br>
+But it's substance abuse<br>
+<br>
+[Build]<br>
+I hear those distant voices and they get me high like my heavy wind<br>
+I think I found my poison<br>
+No, that's my medicine<br>
+It's like a constant craving<br>
+And it gets me high like heavy wind<br>
+Toxic love like poison<br>
+But that's my medicine<br>
+<br>
+[Drop]<br>
+My medic, my-my medic-medic<br>
+My-My medic, my medic-medic<br>
+My medic, my-my medic-medic<br>
+My-My medic, but that's my poison<br>
+My medic, my-my medic-medic<br>
+My-My medic, my medic-medic<br>
+My medic, my-my medic-medic<br>
+My-My medic, but that's my poison<br>
+<br>
+[Outro]<br>
+Your love's like heavy wind<br>
+Never win, never win<br>
+Your love's like heavy wind<br>
+Never win, never win<br>
+Your love's like heavy wind<br>
+Never win, never win<br>
+But that's my poison
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+            {
+                title: "Jade Bird - Avalanche",
+                lyrics: `[Verse 1]<br>
+Sun shines through the ice<br>
+I realize that I'm frozen<br>
+Stuck inside this moment in time<br>
+Crystallized in the life I have chosen<br>
+<br>
+[Chorus]<br>
+I am under an avalanche<br>
+And there's no one who can find me<br>
+I am under an avalanche<br>
+So send out a search party<br>
+<br>
+[Verse 2]<br>
+Face to the sky, but it's just a sheet of white<br>
+And I open my eyes 'cause I'm chokin'<br>
+Sun burns so bright, I feel like daylight<br>
+Though I'm buried tight, I'm still hopin'<br>
+<br>
+[Chorus]<br>
+I am under an avalanche<br>
+And there is no one who can find me<br>
+I am under an avalanche<br>
+So send out a search party<br>
+<br>
+[Bridge]<br>
+Hallelujah<br>
+Hallelujah<br>
+Hallelujah<br>
+Hallelujah<br>
+<br>
+[Chorus]<br>
+I am under an avalanche<br>
+And there's no one who can find me<br>
+I am under an avalanche<br>
+So send out a search party
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+            {
+                title: "Kwengface - Parallel Theory",
+                lyrics: `[Intro]<br>
+(Ayo, Trinz)<br>
+<br>
+[Chorus]<br>
+It's the parallel theory (True), the parallel theory (Oi)<br>
+If I didn't do drugs, would I see life so clearly? (Would I?)<br>
+Went left instead of right, where would my lifestyle steer me? (Where)<br>
+If I didn't have fame, would these women still cheerlead? (Would they?)<br>
+The parallel theory (Oi), the parallel theory (Oi)<br>
+Weren't raised how I was, would I still be this weary? (Would I?)<br>
+Had no expensive pain, would I be cheap and cheery? (Mm)<br>
+The parallel theory, the parallel<br>
+<br>
+[Verse]<br>
+Would bro have a life sentence if he stayed in cunch? (Free bro)<br>
+Got a lighter sentence, went guilty for grub? (Would he?)<br>
+Would Jerry be a drunk if he avoided the pub? (Mm)<br>
+Would his kids love him more if he weren't beatin' their mum? (Ah)<br>
+Would I be doin' time if I took the left and never took the right? (Skrt-skrr)<br>
+If I didn't chill in Crane, would weed be my kryptonite? (High)<br>
+What if Lois Lane was in love with Clarke Kent? (Woo)<br>
+What if I didn't have your mains in my apartment? (Woo)<br>
+What if we linked with **** and still had beef with Brickky? (Nah)<br>
+Who am I kiddin'? Any life, man, them **** there ***** (Mm)<br>
+Same way if Caresha didn't link up with Diddy<br>
+She would still be rappin' 'bout her arse and her titties (Ayy)<br>
+If Little Rot 9 didn't fight for our rights<br>
+Schools will still be separate, no Blacks and no whites (True)<br>
+No Morley's on your left (True), no Shaquels on your right (True)<br>
+Sometimes pree life (True) in a whole different light (True, true)<br>
+If I had a girl first instead of a son<br>
+Would she look like me or would she look like her mum? (Mm)<br>
+If music didn't save me, would I still be a bum? (Would I?)<br>
+Would I still be slappin' my—?<br>
+What if Hollow never made 'Walk in da Park'<br>
+I'd say, "Fuck rap, I'm wrappin' up dark"<br>
+Made me wanna do music and perfect my craft<br>
+Even though we had guns in the car<br>
+If PS stayed outta jail, he woulda been top three<br>
+And not drill, that's the UK scene<br>
+And if we weren't from the 'Narm, we'd still tape off scenes<br>
+Blaze machines and still chase that cream<br>
+<br>
+[Chorus]<br>
+It's the parallel theory (True), the parallel theory (Oi)<br>
+If I didn't do drugs, would I see life so clearly? (Would I?)<br>
+Went left instead of right, where would my lifestyle steer me? (Where)<br>
+If I didn't have fame, would these women still cheerlead? (Would they?)<br>
+The parallel theory (Oi), the parallel theory (Oi)<br>
+Weren't raised how I was, would I still be this weary? (Would I?)<br>
+Had no expensive pain, would I be cheap and cheery? (Mm)<br>
+The parallel theory, the parallel
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+                        {
+                title: "Liang Lawrence - A Day Off In Margaritaville",
+                lyrics: `[Verse 1]<br>
+Stateside, wasting the day<br>
+Another check-in and breakfast buffet<br>
+State lines faded away<br>
+I swear I'm gonna lose it, don't you dare hit the brakes<br>
+I don't know if I got what it takes<br>
+<br>
+[Chorus]<br>
+Punched out, but we just hit the road<br>
+Barely made a dent, and there's so far to go<br>
+Broke down, but we're riding the lows<br>
+It never rained in California 'til I hit the coast<br>
+<br>
+[Verse 2]<br>
+Killing time 'til it beats me to it<br>
+Never mind the hand, I drew it<br>
+Hope Heaven doesn't have an interstate<br>
+I don't know if I got what it takes<br>
+<br>
+[Chorus]<br>
+Punched out, but we just hit the road<br>
+Barely made a dent, and there's so far to go<br>
+Broke down, but we're riding the lows<br>
+It never rained in California 'til I hit the coast<br>
+<br>
+[Instrumental Break]<br>
+<br>
+[Chorus]<br>
+Punched out, but we just hit the road<br>
+Barely made a dent, and there's so far to go<br>
+Broke down, but we're riding the lows<br>
+It never rained in California 'til I hit the coast<br>
+Punched out, but we just hit the road<br>
+Barely made a dent, and there's so far to go<br>
+Broke down, but we're riding the lows<br>
+It never rained in California 'til I hit the coast
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+                        {
+                title: "Lizzie Berchie - Happiness",
+                lyrics: `Ooh, ooh-ooh<br>
+Hey, yeah<br>
+<br>
+<strong>[Chorus]</strong><br>
+I found my happiness, ooh<br>
+I found my happiness, ooh<br>
+I found my happiness, ooh<br>
+I found my happiness, ooh<br>
+<br>
+<strong>[Verse]</strong><br>
+Woke up this morning with a smile on my face<br>
+God knows I′ve been waiting for a brighter day<br>
+I've been told<br>
+In life′s highs and lows<br>
+Don't lose who you are<br>
+Hold on to your hope<br>
+<br>
+<strong>[Pre-Chorus]</strong><br>
+I know you see it coming<br>
+Good times, that's all we know<br>
+It′s been a long time coming, I know<br>
+<br>
+<strong>[Chorus]</strong><br>
+I found my happiness, ooh<br>
+I found my happiness, ooh<br>
+I found my happiness, ooh<br>
+I found my happiness, ooh<br>
+<br>
+<strong>[Verse]</strong><br>
+They can never steal<br>
+And they can never hurt<br>
+My joy′s a much to handle<br>
+And it's deep within my soul<br>
+It′s everything I know<br>
+It's everything I′ve earned<br>
+<br>
+<strong>[Pre-Chorus]</strong><br>
+I know you see it coming<br>
+Good times, that's all we know<br>
+It′s been a long time coming, I know<br>
+<br>
+<strong>[Bridge]</strong><br>
+I know you see it coming (I know)<br>
+Good times, that's all we know<br>
+It's been a long time coming, I know<br>
+<br>
+<strong>[Hook]</strong><br>
+I found, I found, I found, I found, I found a home<br>
+Oh, I found it in me<br>
+Oh, it was always there<br>
+I found my happiness<br>
+<br>
+<strong>[Outro]</strong><br>
+He turned my sadness into joy (joy)<br>
+He lifted my soul away<br>
+There may be pain in the night<br>
+But there′s joy come in the morning
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+                        {
+                title: "Nathan Dawe, Shayan - Over You",
+                lyrics: `Remembering the first time I met you<br>
+I didn't see the heartbreak in your eyes<br>
+And now I'm building bridges over you<br>
+I'll get over you, get over you<br>
+<br>
+Remembering the first time I met you<br>
+I didn't see the heartbreak in your eyes<br>
+Now I'm building bridges over you<br>
+I'll get over you, get over you<br>
+<br>
+Over you<br>
+Over you<br>
+Over you<br>
+I'll get over you<br>
+Over you<br>
+Over you<br>
+I'll get over you<br>
+Get over you<br>
+<br>
+Remembering the first time I met you<br>
+I didn't see the heartbreak in your eyes<br>
+And now I'm building bridges over you<br>
+I'll get over you<br>
+<br>
+I know what I gotta do, gotta do<br>
+Gotta do, gotta do<br>
+<br>
+See upcoming pop shows<br>
+Get tickets for your favorite artists<br>
+You might also like<br>
+Save My Love – Marshmello, Ellie Goulding & AVAION<br>
+Blessings – Calvin Harris & Clementine Douglas<br>
+Can’t Decide – Max Dean, Luke Dean & Locky<br>
+<br>
+I've been hurting for a while<br>
+You took it out on me, made me lose my mind<br>
+Now I gotta leave you behind<br>
+I'll put it in the back of my heart<br>
+I won't let you mess with my mind<br>
+I'm ready to let go now<br>
+And leave it all behind<br>
+<br>
+I know what I gotta do, gotta do<br>
+Gotta do, gotta do<br>
+Gotta do, gotta do<br>
+Gotta do (Over you)<br>
+Oh<br>
+<br>
+Remembering the first time I met you<br>
+I didn't see the heartbreak in your eyes<br>
+And now I'm building bridges over you<br>
+I'll get over you<br>
+<br>
+I know what I gotta do, gotta do<br>
+Gotta do, gotta do<br>
+Gotta do, gotta do<br>
+Gotta do<br>
+I'll get over you, get over you<br>
+<br>
+I'll get over you, I'll get over you<br>
+I'll get over you<br>
+I'll get over you<br>
+I'll get over you, get over you
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+                        {
+                title: "Waylon Wyatt - Sincerely, Your Son",
+                lyrics: `[Verse 1]<br>
+Dear Ma<br>
+I'd like to call you mother though I can't be bothered now<br>
+Busy playing another place, singing to a crowd<br>
+But I mentioned your name<br>
+Since you can't be here yourself<br>
+I know it ain't the same<br>
+Don't have to say it, I can tell<br>
+<br>
+[Chorus]<br>
+Well, your boy he's been dreaming of this life for so long<br>
+Claims it's all he's ever needed, yet why's it feel so wrong?<br>
+No one could ever do for me what you have done<br>
+I miss you, Ma<br>
+And I love you dearly<br>
+Sincerely, your son<br>
+<br>
+[Verse 2]<br>
+Dear Pa<br>
+Raised yourself a good son, though it often looks the other way<br>
+But I can guarantee you no one will ever take your place<br>
+And I mentioned your name<br>
+To the same crowd as I did Ma<br>
+'Cause even though you're by me<br>
+You're why I'm on a stage<br>
+Singing my songs<br>
+<br>
+See upcoming country shows<br>
+Get tickets for your favorite artists<br>
+You might also like<br>
+You Had To Be There – Megan Moroney & Kenny Chesney<br>
+Small Town Girls – Thomas Rhett<br>
+Falling Apart – Morgan Wallen<br>
+<br>
+[Chorus]<br>
+And your boy he's been dreaming of this life for so long<br>
+Claims it's all he's ever needed, yet why's it feel so wrong?<br>
+No one could ever do for me what you have done<br>
+I miss you, Pa<br>
+And I love you dearly<br>
+Sincerely, your son<br>
+<br>
+[Bridge]<br>
+Well, your boy he's been dreaming fantasies up in the air<br>
+But a dream without y'all is what I'd call a nightmare<br>
+'Cause no one could ever do for me what y'all have done<br>
+<br>
+[Outro]<br>
+I thank you, Pa<br>
+And I miss you, Ma<br>
+And I love you both dearly<br>
+Sincerely, your son
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+                        {
+                title: "Wunderhorse - The Rope",
+                lyrics: `[Verse 1]<br>
+I was talking to Johnny<br>
+'Bout the shape I'm in<br>
+With the pinhole eyes<br>
+And the darkness within<br>
+Ah, but the kid don't lie<br>
+He says, "We know what we know"<br>
+I'm sick of kicking out my life<br>
+In the glare of a world<br>
+That just don't wanna know<br>
+<br>
+[Chorus]<br>
+Don't let go<br>
+Don't let go<br>
+Don't let go<br>
+Don't let go of the rope, don't<br>
+<br>
+[Verse 2]<br>
+But the kid don't lie<br>
+Never says a word<br>
+But he looked me in the eye<br>
+And I stared right down that barrel<br>
+Into the bottom of the world<br>
+<br>
+[Chorus]<br>
+Don't let go<br>
+Don't let go<br>
+Don't let go<br>
+Don't let go of the rope<br>
+<br>
+See upcoming rock shows<br>
+Get tickets for your favorite artists<br>
+You might also like<br>
+Opraph Winfrey (Is This Love?) – Wunderhorse<br>
+Arizona – Wunderhorse<br>
+Purple – Wunderhorse<br>
+<br>
+[Post-Chorus]<br>
+And, if you're rolling easy, go steady<br>
+You gotta do what you do to get along<br>
+Did they leave you screaming in the rain?<br>
+Yeah, no one told you that they loved you<br>
+Were you cheated? Were you robbed?<br>
+<br>
+[Chorus]<br>
+Just hold on<br>
+And don't let go<br>
+Don't let go<br>
+Don't let go of the rope<br>
+<br>
+[Post-Chorus]<br>
+And, if you're rolling easy, go steady<br>
+You gotta do what you can to get along<br>
+They left us screaming in the rain<br>
+Yeah, they tossed us with the garbage<br>
+Into the justice of the dark, oh, no<br>
+<br>
+[Bridge]<br>
+Hey, hey, hey<br>
+Hey, hey, hey<br>
+Hey, hey, hey<br>
+<br>
+[Chorus]<br>
+Ah, don't let go (Hey, hey, hey)<br>
+Don't let go (Hey, hey, hey)<br>
+No, don't let go<br>
+Don't let go of the rope<br>
+Don't let go of the rope<br>
+Don't let go the—<br>
+<br>
+[Outro]<br>
+Fuck off
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
             }
         ];
 
@@ -770,10 +1402,10 @@ To a brighter, better day`,
             document.getElementById('current-lyrics').innerHTML = examples[index].lyrics;
             
             // Update audio info
-            document.getElementById('jam1-duration').textContent = `Duration: ${examples[index].jam1.duration}`;
-            document.getElementById('jam1-wer').textContent = `WER: ${examples[index].jam1.wer}`;
-            document.getElementById('diffrhythm-duration').textContent = `Duration: ${examples[index].diffrhythm.duration}`;
-            document.getElementById('diffrhythm-wer').textContent = `WER: ${examples[index].diffrhythm.wer}`;
+            // document.getElementById('jam1-duration').textContent = `Duration: ${examples[index].jam1.duration}`;
+            // document.getElementById('jam1-wer').textContent = `WER: ${examples[index].jam1.wer}`;
+            // document.getElementById('diffrhythm-duration').textContent = `Duration: ${examples[index].diffrhythm.duration}`;
+            // document.getElementById('diffrhythm-wer').textContent = `WER: ${examples[index].diffrhythm.wer}`;
             
             // Load new audio files
             loadAudioForExample(index);
