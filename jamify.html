@@ -621,7 +621,7 @@ Aesthetic Alignment</title>
             <div class="example-selector">
                 <h3 style="margin-bottom: 15px; color: #2d3748;">Choose an Example:</h3>
                 <div class="example-grid">
-                    <button class="example-btn active" onclick="selectExample(0)">CHANEY - Prayer</button>
+                    <button class="example-btn active" onclick="selectExample(0)">Amy Macdonald - I'm Done (Games That You Play)</button>
                     <button class="example-btn" onclick="selectExample(1)">Deeps - RUN!</button>
                     <button class="example-btn" onclick="selectExample(2)">Hybrid Minds, Brodie - Heroin</button>
                     <button class="example-btn" onclick="selectExample(3)">Jade Bird - Avalanche</button>
@@ -643,6 +643,22 @@ Aesthetic Alignment</title>
                     <button class="example-btn" onclick="selectExample(19)">Aidan Bissett - dance around it</button>
                     <button class="example-btn" onclick="selectExample(20)">crysometimes - Tell Me</button>
                     <button class="example-btn" onclick="selectExample(21)">Liang Lawrence - A Day Off In Margaritaville</button>
+                    <button class="example-btn" onclick="selectExample(22)">Charlotte OC - Romeo</button>
+                    <button class="example-btn" onclick="selectExample(23)">Conan Gray - This Song</button>
+                    <button class="example-btn" onclick="selectExample(24)">David Guetta, Cedric Gervais - A Better World</button>
+                    <button class="example-btn" onclick="selectExample(25)">DellaXOZ - The Money Song</button>
+                    <button class="example-btn" onclick="selectExample(26)">EsDeeKid, Fimiguerrero - 5am</button>
+                    <button class="example-btn" onclick="selectExample(27)">Geese - Taxes</button>
+                    <button class="example-btn" onclick="selectExample(28)">HAIM - All over me</button>
+                    <button class="example-btn" onclick="selectExample(29)">James Marriott - Something's Wrong</button>
+                    <button class="example-btn" onclick="selectExample(30)">James TW - edge of the world</button>
+                    <button class="example-btn" onclick="selectExample(31)">Joey Valence & Brae, JPEGMAFIA - WASSUP (feat. JPEGMAFIA)</button>
+                    <button class="example-btn" onclick="selectExample(32)">KAROL G - Papasito</button>
+                    <button class="example-btn" onclick="selectExample(33)">Leon Thomas - NOT FAIR</button>
+                    <button class="example-btn" onclick="selectExample(34)">Mac DeMarco - Home</button>
+                    <button class="example-btn" onclick="selectExample(35)">RAYE - Grandma Calls The Boy Bad News</button>
+                    <button class="example-btn" onclick="selectExample(36)">Switch Disco, Tones And I - HIDEAWAY</button>
+                    <button class="example-btn" onclick="selectExample(37)">The K's - Me and Your Sister</button>
                 </div>
             </div>
             
@@ -728,8 +744,8 @@ Aesthetic Alignment</title>
         // Audio file paths - update these with your actual file paths
         const audioFiles = {
             0: { // Morning Dreams
-                jam1: "assets/audios/jam1/CHANEY - Prayer.mp3",
-                diffrhythm: "assets/audios/diffrhythm/CHANEY - Prayer.mp3"
+                jam1: "assets/audios/jam1/Amy Macdonald - I'm Done (Games That You Play).mp3",
+                diffrhythm: "assets/audios/diffrhythm/Amy Macdonald - I'm Done (Games That You Play).mp3"
             },
             1: { // Heartbreak
                 jam1: "assets/audios/jam1/Deeps - RUN!.mp3", 
@@ -768,8 +784,8 @@ Aesthetic Alignment</title>
                 diffrhythm: "assets/audios/diffrhythm/Wunderhorse - The Rope.mp3"
             },
             10: { // Heartbreak
-                jam1: "assets/audios/jam1/Kingfishr - Diamonds & Roses.mp3", 
-                diffrhythm: "assets/audios/diffrhythm/Kingfishr - Diamonds & Roses.mp3"
+                jam1: "assets/audios/jam1/WKingfishr - Diamonds & Roses.mp3", 
+                diffrhythm: "assets/audios/diffrhythm/WKingfishr - Diamonds & Roses.mp3"
             },
             11: { // Heartbreak
                 jam1: "assets/audios/jam1/Lewis Capaldi - Survive.mp3", 
@@ -814,17 +830,113 @@ Aesthetic Alignment</title>
             21: { // Heartbreak
                 jam1: "assets/audios/jam1/Liang Lawrence - A Day Off In Margaritaville.mp3", 
                 diffrhythm: "assets/audios/diffrhythm/Liang Lawrence - A Day Off In Margaritaville.mp3"
-            }
+            },
+            22: { // Heartbreak
+                jam1: "assets/audios/jam1/Charlotte OC - Romeo.mp3", 
+                diffrhythm: "assets/audios/diffrhythm/Charlotte OC - Romeo.mp3"
+            },
+            23: { // Heartbreak
+                jam1: "assets/audios/jam1/Conan Gray - This Song.mp3", 
+                diffrhythm: "assets/audios/Conan Gray - This Song.mp3"
+            },
+            24: { // Heartbreak
+                jam1: "assets/audios/jam1/David Guetta, Cedric Gervais - A Better World.mp3", 
+                diffrhythm: "assets/audios/diffrhythm/David Guetta, Cedric Gervais - A Better World.mp3"
+            },
+            25: { // Heartbreak
+                jam1: "assets/audios/jam1/DellaXOZ - The Money Song.mp3", 
+                diffrhythm: "assets/audios/diffrhythm/DellaXOZ - The Money Song.mp3"
+            },
+            26: { // Heartbreak
+                jam1: "assets/audios/jam1/EsDeeKid, Fimiguerrero - 5am.mp3", 
+                diffrhythm: "assets/audios/diffrhythm/EsDeeKid, Fimiguerrero - 5am.mp3"
+            },
+            27: { // Heartbreak
+                jam1: "assets/audios/jam1/Geese - Taxes.mp3", 
+                diffrhythm: "assets/audios/diffrhythm/Geese - Taxes.mp3"
+            },
+            28: { // Heartbreak
+                jam1: "assets/audios/jam1/HAIM - All over me.mp3", 
+                diffrhythm: "assets/audios/diffrhythm/HAIM - All over me.mp3"
+            },
+            29: { // Heartbreak
+                jam1: "assets/audios/jam1/James Marriott - Something's Wrong.mp3", 
+                diffrhythm: "assets/audios/diffrhythm/James Marriott - Something's Wrong.mp3"
+            },
+            30: { // Heartbreak
+                jam1: "assets/audios/jam1/James TW - edge of the world.mp3", 
+                diffrhythm: "assets/audios/diffrhythm/James TW - edge of the world.mp3"
+            },
+            31: { // Heartbreak
+                jam1: "assets/audios/jam1/Joey Valence & Brae, JPEGMAFIA - WASSUP (feat. JPEGMAFIA).mp3", 
+                diffrhythm: "assets/audios/diffrhythm/Joey Valence & Brae, JPEGMAFIA - WASSUP (feat. JPEGMAFIA).mp3"
+            },
+            32: { // Heartbreak
+                jam1: "assets/audios/jam1/KAROL G - Papasito.mp3", 
+                diffrhythm: "assets/audios/diffrhythm/KAROL G - Papasito.mp3"
+            },
+            33: { // Heartbreak
+                jam1: "assets/audios/jam1/Leon Thomas - NOT FAIR.mp3", 
+                diffrhythm: "assets/audios/diffrhythm/Leon Thomas - NOT FAIR.mp3"
+            },
+            34: { // Heartbreak
+                jam1: "assets/audios/jam1/Mac DeMarco - Home.mp3", 
+                diffrhythm: "assets/audios/diffrhythm/Mac DeMarco - Home.mp3"
+            },
+            35: { // Heartbreak
+                jam1: "assets/audios/jam1/RAYE - Grandma Calls The Boy Bad News.mp3", 
+                diffrhythm: "assets/audios/diffrhythm/RAYE - Grandma Calls The Boy Bad News.mp3"
+            },
+            36: { // Heartbreak
+                jam1: "assets/audios/jam1/Switch Disco, Tones And I - HIDEAWAY.mp3", 
+                diffrhythm: "assets/audios/diffrhythm/Switch Disco, Tones And I - HIDEAWAY.mp3"
+            },
+            37: { // Heartbreak
+                jam1: "assets/audios/jam1/The K's - Me and Your Sister.mp3.mp3", 
+                diffrhythm: "assets/audios/diffrhythm/The K's - Me and Your Sister.mp3.mp3"
+            }    
         };
 
         // Example data
         const examples = [
             {
-                title: "CHANEY - Prayer",
-                lyrics: `God gave me a brand new song<br>
-God gave me a brand new prayer<br>
-God gave me a brand new song to sing<br>
-God gave me a brand new prayer`,
+                title: "Amy Macdonald - I'm Done (Games That You Play)",
+                lyrics: `Here I go again, running around on my own again<br>
+My adventure in the rain<br>
+I can’t find my way, through this concrete mess I made<br>
+No one seems to care at all<br>
+<br>
+They look right through you<br>
+As if they knew you before<br>
+But it don’t matter<br>
+You’re not that person No more<br>
+<br>
+And here I go again<br>
+Through the darkest place I know<br>
+But I’ve seen it all before<br>
+<br>
+And you know<br>
+<br>
+I’ve been trying far too long<br>
+I know I’ll get there<br>
+One more song<br>
+And you said I’ll never ever leave you<br>
+And you said I’m always gonna need you<br>
+And I  said  I’m never ever gonna stay<br>
+With the games that you play<br>
+<br>
+I’m done, I’m done<br>
+<br>
+Feel the cold again, running around on the road again<br>
+My ambition led astray<br>
+I won't last another day, in this concrete mess you made<br>
+You won’t catch me when I fall<br>
+<br>
+I’m Done, with the games that you play<br>
+They look right through you<br>
+As if they knew you before<br>
+They look like through you<br>
+But it don’t matter no more<br>`,
                 // jam1: { duration: "2:34", wer: "0.12" },
                 // diffrhythm: { duration: "2:41", wer: "0.38" }
             },
@@ -1420,7 +1532,7 @@ Fuck off
                 // diffrhythm: { duration: "2:41", wer: "0.38" }
             },
     {
-                title: "Kingfishr - Diamonds & Roses",
+                title: "WKingfishr - Diamonds & Roses",
                 lyrics: `[Verse 1]
 <br>Gone are the days of the ivory towers
 <br>Butterfly kisses and analogue flowers
@@ -2073,6 +2185,986 @@ Fuck off
                 // jam1: { duration: "2:34", wer: "0.12" },
                 // diffrhythm: { duration: "2:41", wer: "0.38" }
             },
+            {
+                title: "Charlotte OC - Romeo",
+                lyrics: `[Verse 1]<br>
+About time<br>
+I feel like I've known you my whole life<br>
+Did I meet you in my mind?<br>
+<br>
+[Pre-Chorus]<br>
+I didn't think we'd be drunk on one another<br>
+Both our names are written in the vodka<br>
+So good, these feelings out of order (Eee-eeeh)<br>
+<br>
+[Chorus]<br>
+Romeo<br>
+Met your match in me<br>
+Late night lothario<br>
+This love was your best bad idea<br>
+And I've never laughed this much, I swear<br>
+When I saw you in the mirror<br>
+I wasn't sure I'd find you there<br>
+<br>
+[Verse 2]<br>
+Stereotype<br>
+Cut the head off a rose<br>
+Just like a valentine<br>
+Lovе's a cliche when it's clear<br>
+<br>
+[Pre-Chorus]<br>
+Whеn we talk is a different kind of closer<br>
+Summer comes but now it's technicolour<br>
+So good, these feelings out of order (Eee-eeeh)<br>
+<br>
+[Chorus]<br>
+Romeo<br>
+Met your match in me<br>
+Late night lothario<br>
+This love was your best bad idea<br>
+And I've never laughed this much, I swear<br>
+When I saw you in the mirror<br>
+I wasn't sure I'd find you there<br>
+<br>
+[Bridge]<br>
+My words laid bare<br>
+And so are yours<br>
+You're mine and I'm yours Mmm-mm, yeah<br>
+<br>
+[Chorus]<br>
+Romeo<br>
+Met your match in me<br>
+Late night lothario<br>
+Yeah, this love was your best bad idea<br>
+And I've never laughed this much, I swear<br>
+When I saw you in the mirror<br>
+I wasn't sure I'd find you there, yeah<br>
+<br>
+[Outro]<br>
+Met your match in me, call me Romeo<br>
+Baby, I'm the man, I'm lothario (Yeah)<br>
+Met your match in me, call me Romeo<br>
+Baby, I'm the man, I'm lothario (Eee-eeeh)<br>
+Met your match in me, call me Romeo<br>
+Baby, I'm the man, I'm lothario (I'm lothario)<br>
+Met your match in me, call me Romeo<br>
+Baby, I'm the man, I'm lothario<br>
+Met your match in me, call me Romeo<br>
+Baby, I'm the man, I'm lothario<br>
+Met your match in me, call me Romeo<br>
+Baby, I'm the man, I'm lothario<br>
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+            {
+                title: "Conan Gray - This Song",
+                lyrics: `[Verse 1]<br>
+You know that I love you<br>
+And I have a feeling that you love me back<br>
+We're sat in my bedroom<br>
+And I hear your heart like a train on the tracks<br>
+Your eyes are like Heaven, your voice is like rain<br>
+11:11s, they all hear your name<br>
+I'm too shy to tell you the words on my mind<br>
+I hope you can see if you read through these lines<br>
+<br>
+[Chorus]<br>
+That I wrote this song about you<br>
+Something I wish you knew<br>
+Something I've tried to say<br>
+But now I'll say it straight<br>
+I wrote this song about you<br>
+<br>
+[Verse 2]<br>
+We drive through the suburbs<br>
+And you're playin' all of your favorite songs<br>
+You joke 'bout your mothеr<br>
+She can't help but cry when shе hears Elton John<br>
+You're singing obnoxious, I'm laughing like spring<br>
+Your brown racer jacket, my hands through the sleeves<br>
+The smell of your perfume is all over me<br>
+I can't wash it off, so it's easy to see<br>
+<br>
+[Chorus]<br>
+That I wrote this song about you<br>
+Something I wish you knew<br>
+Something I've tried to say<br>
+But now I'll say it straight<br>
+I wrote this song about you<br>
+<br>
+[Bridge]<br>
+You know that I love you<br>
+Is it dumb believing you might love me too?<br>
+Yeah<br>
+<br>
+[Outro]<br>
+(I wrote this song about you)<br>
+(I wrote this song about you)<br>
+Now you know that I love you<br>
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+            {
+                title: "David Guetta, Cedric Gervais - A Better World",
+                lyrics: `[Intro]<br>
+If it wasn't for this, and wasn't for that<br>
+It could be a better world, yeah<br>
+<br>
+[Verse 1]<br>
+If it wasn't for the happiness I'm bringing<br>
+If it wasn't for the joy up in my life<br>
+If it wasn't for this melody I'm singing<br>
+Maybe I would be more broken up inside<br>
+If it wasn't for the money and the power<br>
+If it wasn't for the superficial things<br>
+Maybe love would be the only thing that matters<br>
+Ooh, woah, and we just gotta let it in<br>
+<br>
+[Build]<br>
+If it wasn't for this, and wasn't for that<br>
+It could be a better world, yeah<br>
+<br>
+[Drop]<br>
+If it wasn't for this, and wasn't for that<br>
+It could be a better world, yeah<br>
+If it wasn't for this, and wasn't for that<br>
+It could be a better world, yeah<br>
+Wasn't for this, wasn't for that<br>
+Wasn't for this, wasn't for that<br>
+Wasn't for this, wasn't for that<br>
+It could be a better world, yеah<br>
+<br>
+[Verse 2]<br>
+The world is in an uproar, yeah<br>
+Countries arе just talking about a war<br>
+Children are starving<br>
+They don't even know what for, yeah<br>
+If we learn to love each other, oh<br>
+Try to live just like sisters and brothers<br>
+A peaceful world this will be<br>
+Oh, it's a great big world, you see, yeah<br>
+<br>
+[Build]<br>
+If it wasn't for this, and wasn't for that<br>
+It could be a better world, yeah<br>
+If it wasn't for this, and wasn't for that<br>
+It could be a better world, yeah (Oh)<br>
+If it wasn't for this, and wasn't for that<br>
+Wasn't for this, wasn't for that<br>
+Wasn't for this, wasn't for that<br>
+It could be a better world, yeah<br>
+<br>
+[Drop]<br>
+If it wasn't for this, and wasn't for that<br>
+It could be a better world, yeah<br>
+If it wasn't for this, and wasn't for that<br>
+It could be a better world, yeah<br>
+Wasn't for this, wasn't for that<br>
+Wasn't for this, wasn't for that<br>
+Wasn't for this, wasn't for that<br>
+It could be a better world, yeah<br>
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+            {
+                title: "DellaXOZ - The Money Song",
+                lyrics: `[Verse 1]<br>
+I wish money grew on trees<br>
+Like struggle grows on me<br>
+Oh, shit, man, I'm so clumsy<br>
+'Cause I keep on breaking the bank just by breathing, in fact<br>
+<br>
+[Chorus]<br>
+What a big dent, water, gas, rent<br>
+But I still rock holes in my sweater, I'm thousands deep in debt here<br>
+What a big dent, pay today, next week again<br>
+I just feel under the weather, can't afford an umbrella<br>
+So life just rains on me<br>
+<br>
+[Verse 2]<br>
+I'm trying not to lose my head<br>
+'Cause breathing already costs an arm and a leg<br>
+I just wanna feel full again<br>
+And just clear my mess<br>
+<br>
+[Chorus]<br>
+What a big dent, water, gas, rent<br>
+But I still rock holes in my sweater, I'm thousands deep in debt here<br>
+What a big dent, pay today, next week again<br>
+I just feel under the weather, can't afford an umbrella<br>
+So life just rains on me<br>
+<br>
+[Bridge]<br>
+(Ah-ah-ah-ah-ah, ah-ah-ah-ah-ah, ah-ah-ah-ah-ah, ah-ah)<br>
+(Ah-ah-ah-ah-ah, ah-ah-ah-ah-ah, ah-ah-ah-ah-ah, ah-ah)<br>
+(Ah-ah-ah-ah-ah, ah-ah-ah-ah-ah, ah-ah-ah-ah-ah, ah-ah)<br>
+(Ah-ah-ah-ah-ah, ah-ah-ah-ah-ah, ah-ah-ah-ah-ah, ah-ah)<br>
+<br>
+[Chorus]<br>
+What a big dent, water, gas, rent<br>
+But I still rock holes in my sweater, I'm thousands deep in debt here<br>
+What a big dent, pay today, next week again<br>
+I just feel under the weather, can't afford an umbrella (What a big dent)<br>
+What a big dent, water, gas, rent (What a big dent)<br>
+But I still rock holes in my sweater, I'm thousands deep in debt here (What a big dent)<br>
+What a big dent, pay today, next week again (What a big dent)<br>
+I just feel under the weather, can't afford an umbrella (What a big dent)<br>
+<br>
+[Outro]<br>
+I wish money grew on trees<br>
+Like struggle grows on me<br>
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+            {
+                title: "EsDeeKid, Fimiguerrero - 5am",
+                lyrics: `[Intro]<br>
+(Hahaha)<br>
+Ayy, ayy, EsDee<br>
+<br>
+[Chorus]<br>
+Me belt comes heavy like me smoke game<br>
+White tee, fresh, so pure like cocaine<br>
+Young kid, I'm just left in me own lane<br>
+Blow it to the breeze, numb mind so there's no pain<br>
+Walking round London, 5 in the morning<br>
+I Hopped on a Lime bike, going exploring<br>
+Made five tunes while you're tucked up snoring<br>
+Don't talk shit, lad, you know you just boring<br>
+Need a tour life, Uzi, lad, me life's kinda feeling like a movie<br>
+Got the cup and I spilt it on me Ksubis<br>
+I'm feeling like Ruby, I'm shooting all the loogies<br>
+<br>
+[Verse]<br>
+My Scouse ting's rolling up the jabba<br>
+My Yankee one rolling up the grabba<br>
+I like my South ting, but she's been a yapper<br>
+I fuck 'em all back-to-back, logo of Kappa<br>
+I'm a myth, like you lost your friend in Carni<br>
+Shell a show in Liverpool, I'm Paul McCartney<br>
+I've been stacking bread on top of cheese like a sarni<br>
+So she tell me choke her, like The Great Khali<br>
+<br>
+[Chorus]<br>
+Me belt comes heavy like me smoke game<br>
+White tee, fresh, so pure like cocaine<br>
+Young kid, I'm just left in me own lane<br>
+Blow it to the breeze, numb mind so there's no pain<br>
+Walking round London, 5 in the morning<br>
+I Hopped on a Lime bike, going exploring<br>
+Made five tunes while you're tucked up snoring<br>
+Don't talk shit, lad, you know you just boring<br>
+Need a tour life, Uzi, lad, me life's kinda feeling like a movie<br>
+Got the cup and I spilt it on me Ksubis<br>
+I'm feeling like Ruby, I'm shooting all the loogies<br>
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+            {
+                title: "Geese - Taxes",
+                lyrics: `[Intro]<br>
+I should burn in hell<br>
+I should burn in hell<br>
+But I don’t deserve this<br>
+Nobody deserves this<br>
+Ooh-ooh, ooh-ooh<br>
+Ooh-ooh, ooh-ooh<br>
+<br>
+[Verse 1]<br>
+If you want me to pay my taxes<br>
+If you want me to pay my taxes<br>
+You’d better come over with a crucifix<br>
+You’re gonna have to nail me down<br>
+Ooh-ooh, ooh-ooh<br>
+Ooh-ooh<br>
+<br>
+[Verse 2]<br>
+Doctor, doctor! Heal yourself<br>
+Doctor, doctor! Heal yourself<br>
+And I will break my own heart<br>
+I will break my own heart from now on<br>
+Ooh-ooh, ooh-ooh<br>
+Ooh-ooh, ooh-ooh<br>
+Ooh<br>
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+            {
+                title: "HAIM - All over me",
+                lyrics: `[Verse 1]<br>
+Your place or my place, it doesn't matter to me<br>
+Your lips, my tongue, they're intertwined<br>
+You want us locked in, and I'll give you my sympathy<br>
+But that's one thing I won't define<br>
+<br>
+[Pre-Chorus]<br>
+So take off your clothes (Clothes)<br>
+Unlock your door (Door)<br>
+'Cause when I come over<br>
+You're gonna get some<br>
+I know it's not (Not)<br>
+Quite what you want (Want)<br>
+Being on call for me, waitin' up for me<br>
+But when I want you<br>
+<br>
+[Chorus]<br>
+I want you all over me<br>
+I want you all over me<br>
+<br>
+[Verse 2]<br>
+Your bed or my floor, but don't tell me that you're in love<br>
+'Cause I'm not trying to walk the line<br>
+And whoеver you see, I'm saying it's fine with me<br>
+'Causе I won't say what I'm doing tonight<br>
+<br>
+[Pre-Chorus]<br>
+You know I've always had a wild heart<br>
+And that won't ever change<br>
+So when you see me out with someone else<br>
+I will not be ashamed<br>
+<br>
+[Chorus]<br>
+To want you all over me (When I want you)<br>
+I want you all over me (When I want you)<br>
+I want you all over me (When I want you)<br>
+I want you all over me (When I want you)<br>
+<br>
+[Instrumental break]<br>
+<br>
+[Bridge]<br>
+Walk away from me<br>
+Don't talk that way to me<br>
+Just trust me, uh<br>
+We'll meet in secrecy<br>
+After the party<br>
+And when you're face to face with me<br>
+On your knees or underneath<br>
+<br>
+[Chorus]<br>
+I want you all over me (When I want you)<br>
+I want you all over me, but when I want you<br>
+I want you all over me (When I want you)<br>
+I want you all over me (When I want you)<br>
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+            {
+                title: "James Marriott - Something's Wrong",
+                lyrics: `[Verse 1]<br>
+I've never been better, except when I lie<br>
+A brand new addiction to not asking why<br>
+As hard as it's getting, I'm forgetting to try<br>
+But who could make sense of you and I?<br>
+Do I have what you don't?<br>
+Could you get me alone?<br>
+I'm whatever you want and I'm nothing at all<br>
+Hoping you'll tell me but scared that you might<br>
+Praying you'll take this slowly<br>
+<br>
+[Pre-Chorus]<br>
+You're unforgettable, but your name has slipped my mind<br>
+Make me remember this time<br>
+<br>
+[Chorus]<br>
+If you want me, give me something to cry about<br>
+You can hurt me, we could have it out 'til it's early<br>
+If you need to know that we're through, give me all your love and we're done<br>
+<br>
+[Post-Chorus]<br>
+Does it feel like something's wrong?<br>
+Does it feel like something's off?<br>
+Does it feel like something's wrong?<br>
+Does it feel like something's—<br>
+<br>
+[Verse 2]<br>
+Off for a moment back in my stride?<br>
+You used to be pretty, I used to be nice<br>
+She says I'd look better with her at my side<br>
+But now her face is in front of mine<br>
+And she's doing the most, I should give up the ghost<br>
+But how can I speak with her hand on my throat<br>
+I move my foot back, but she's stepping in time<br>
+Can you not make this easy?<br>
+<br>
+[Pre-Chorus]<br>
+You're undeniable until you're out of sight<br>
+Should probably end it tonight<br>
+<br>
+[Chorus]<br>
+If you want me, give me something to cry about<br>
+You could hurt me, we could have it out 'til it's early<br>
+And if you need to know that we're through<br>
+Give me all your love and we're done<br>
+<br>
+[Outro]<br>
+Does it feel like something's wrong?<br>
+Does it feel like something's off?<br>
+Does it feel like something's wrong?<br>
+Does it feel like something's off?<br>
+Does it feel like something's wrong?<br>
+Does it feel like something's off?<br>
+Does it feel like something's wrong?<br>
+Does it feel like something's off?<br>
+Does it feel like something's wrong?<br>
+Does it feel like something's off?<br>
+Does it feel like something's wrong?<br>
+Does it feel like something's off?<br>
+Does it feel like something's wrong?<br>
+Does it feel like something's off?<br>
+Does it feel like something's wrong?<br>
+Does it feel like something?<br>
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+            {
+                title: "James TW - edge of the world",
+                lyrics: `Meet me by the edge of the world<br>
+I'll save you a seat<br>
+We can dangle our feet off the edge<br>
+<br>
+Meet me by the edge of the world<br>
+We'll look out at the stars<br>
+See Jupiter and Mars up ahead<br>
+<br>
+I'll bring a bottle of wine<br>
+We can drink it all night<br>
+As the sun turns into the moon<br>
+Meet me by the edge of the world<br>
+I'll see you soon<br>
+<br>
+Where oceans and constellations<br>
+Go for their conversations<br>
+And stars brush like two ships passing<br>
+In the night as the Earth's slow dancing<br>
+Where no one's listening<br>
+Except the universe<br>
+Say you'll be there<br>
+You'll meet me by the edge of the world<br>
+<br>
+Meet me by the edge of the world<br>
+I'll bring my guitar<br>
+We can sing chasing cars out of key<br>
+Meet me by the edge of the world<br>
+You can lay in my arms<br>
+Pillow talk till you're falling asleep<br>
+Supernova violins break the sound of silence<br>
+As you're dreaming the biggest dreams<br>
+Meet me by the edge of the world<br>
+That's all I need<br>
+<br>
+Where oceans and constellations<br>
+Go for their conversations<br>
+Stars brush like two ships passing<br>
+In the night as the Earth's slow dancing<br>
+Where no one's listening<br>
+Except the universe<br>
+Say you'll be there<br>
+You'll meet me by the edge of the world<br>
+<br>
+Meet me by the edge of the world<br>
+Meet me by the edge of the world<br>
+Meet me by the edge of the world<br>
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+            {
+                title: "Joey Valence & Brae, JPEGMAFIA - WASSUP (feat. JPEGMAFIA)",
+                lyrics: `[Intro]<br>
+JVB, sucka<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ugh, ugh, ladies!)<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ha, ha, yo!)<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ugh, ugh, ladies!)<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ha, ha, yo!)<br>
+<br>
+[Verse 1]<br>
+Uh, uh, you wanna know<br>
+So I'm let the music talk<br>
+I'm makin' bops and all you make is shitty pop<br>
+You rappers soft<br>
+You think you hard, you really not<br>
+Like, oh my god<br>
+Your whole career is really chopped<br>
+<br>
+[Chorus]<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ugh, ugh, ladies!)<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ha, ha, yo!)<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ugh, ugh, ladies! Ayy)<br>
+Wassup? Wassup? (Ayy)<br>
+Wass- Ayy<br>
+One, two, three, woo!<br>
+<br>
+[Verse 2]<br>
+I'll do this shit two times like a Twix<br>
+I got checks, got bands, I got bricks<br>
+Swerve the corner in a four-door<br>
+Videos of the show give you FOMO<br>
+You green with envy, your fits are trash<br>
+Oscar the Grouch head lookin' ass<br>
+How you gonna hate from VIP?<br>
+The real party's with JVB<br>
+<br>
+[Verse 3]<br>
+Whoop, there it is!<br>
+You wish you could do it like this<br>
+Yeah, pardon me, it's just a part of me<br>
+Bitch, I'm a star, astronomy, uh<br>
+I feel like Gumby, uh, 'cause all I see is green<br>
+I hear your drum beats, yeah, you just a MIDI-me<br>
+<br>
+[Chorus]<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ugh, ugh, ladies!)<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ha, ha, yo!)<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ugh, ugh, ladies!)<br>
+Wassup? Wassup?<br>
+Yeah, you think you know me?<br>
+<br>
+[Verse 4]<br>
+I am the pick of the litter<br>
+That infamous nigga<br>
+The creature that you heard about<br>
+Best thing to happen to rappin' since Earl<br>
+I'm impatient I think I want props right now<br>
+They wanna stack a bankroll like the mafia<br>
+You niggas don't even sell out your town<br>
+How in the fuck you look forty?<br>
+You twenty and dress like a bum, you don't switch up your sound<br>
+Wassup?<br>
+Packin' a Dillinger, 'bout to do something corrupt, lyrical assassin<br>
+We playin' twister, I reach for my waist, get to twistin' you up<br>
+Nigga, wassup?<br>
+Still on a bender<br>
+Higher off life than I was on them benzos<br>
+Got hit the fresh maker, it's not a mentos<br>
+Hold my chopper close like that bitch a memento (One, two, three, woo!)<br>
+<br>
+[Chorus]<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ugh, ugh, ladies!)<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ha, ha, yo!)<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ugh, ugh, ladies!)<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ha, ha, yo!)<br>
+(Wassup!)<br>
+<br>
+[Bridge]<br>
+Uh, now shake that shit<br>
+Now shake that shit, girl wassup?<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ugh, ugh, ladies!)<br>
+I think I want props right now<br>
+I think I wanna bounce right now<br>
+Nigga, wassup?<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ha, ha, yo!)<br>
+Wassup with y'all up in the front? Lemme see you jump<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ugh, ugh, ladies!)<br>
+Now everybody in the club, now just say, "Wassup?"<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ha, ha, yo!)<br>
+One, two, three, woo!<br>
+<br>
+[Chorus]<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ugh, ugh, ladies!)<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ha, ha, yo!)<br>
+Wassup? Wassup?<br>
+Wassup? Wassup? Wassup? (Ugh, ugh, ladies!)<br>
+Wassup? Wassup?<br>
+Wass-<br>
+Now shake it, shake it, shake it, shake it<br>
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+            {
+                title: "KAROL G - Papasito",
+                lyrics: `[Intro]<br>
+O-O-Ovy On The Drums<br>
+<br>
+[Verso 1]<br>
+I saw you there looking so good tonight<br>
+I swear to God, I'm dying to kiss you<br>
+My heart, bebé, it's beating so so fast<br>
+I didn't know how much that I need you<br>
+You're getting closer and now my legs<br>
+Started shaking<br>
+Would be delicious to have a taste of you<br>
+Right now, if I could try<br>
+It would make me so psychotic<br>
+For that addiction, I would need a rehab<br>
+<br>
+[Coro]<br>
+Papacito, ay, qué rico tú<br>
+I want you and not just for a little<br>
+Touching your body is my desire<br>
+Please, don't be mad, si me le robo un besito<br>
+<br>
+[Verso 2]<br>
+Y es que quiero algo más que suene más oficial<br>
+Hacerte mi propiedad, y no quiero que se me haga tarde<br>
+Sí, no está mal, lo que hacemos es genial<br>
+Fotico en la Polaroid, te la dejo pa' que me recuerdes<br>
+I am gonna hold you so so tight, it's my deseo<br>
+I'm gonna be your Juliet and you my Romeo<br>
+'Cause no one loves you like me, with you, I feel so lucky<br>
+Baby, te quiero pa' mí<br>
+<br>
+[Pre-Coro]<br>
+Love me hard with sentimiento<br>
+And stay together and live la vida loca<br>
+Let's go and live it with no regrets and shadows<br>
+For that addiction<br>
+I would need a rehab<br>
+<br>
+[Coro]<br>
+Papacito, ay, que rico tú<br>
+I want you and not just for a little<br>
+Touching your body is my desire<br>
+Please, don't be mad, si me le robo un besito<br>
+<br>
+[Interludio]<br>
+Ay, amor<br>
+You're my dream come true<br>
+<br>
+[Coro]<br>
+Papacito, ay, qué rico tú<br>
+Te quiero pa' mí, no pa' un ratico<br>
+Desear tu cuerpo es mi delito (Ah)<br>
+No se me enoje si le robo un besito<br>
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+            {
+                title: "Leon Thomas - NOT FAIR",
+                lyrics: `[Chorus]<br>
+It's not fair<br>
+How you just gon' take off your clothes and sit right there? (There you go)<br>
+That's it (There you go), that's it<br>
+That right there, ah, there<br>
+How you just do whatever you want?<br>
+How you gon' put a spell on me just to front?<br>
+How you keep make me falling in love, it's just not fair<br>
+<br>
+[Verse 1]<br>
+I just wanna see you, must be santería<br>
+I just need a re-up, I don't need a prenup<br>
+Niggas wanna be us, bitches wanna be her<br>
+Looking so good, finna get these niggas beat up<br>
+<br>
+[Pre-Chorus]<br>
+I will fight a thousand times just to touch you<br>
+Even when I know you're lying, won't interrupt you<br>
+'Cause I love you<br>
+You would be right all the time if it was up to me<br>
+Wе could've fought all night long<br>
+When you had your clothes on<br>
+But now I'd rathеr be wrong than to be alone<br>
+Girl, you know that's not fair<br>
+<br>
+[Chorus]<br>
+It's not fair<br>
+How you just gon' take off your clothes and sit right there? (There you go)<br>
+That's it (There you go), that's it<br>
+That right there, ah, there<br>
+How you just do whatever you want?<br>
+How you gon' put a spell on me just to front?<br>
+How you keep make me falling in love, it's just not fair<br>
+<br>
+[Verse 2]<br>
+Funny thing to speed up, you just wanted freedom<br>
+I just wanna be the strongest leader, longest lover<br>
+Hands up, feet up like, baby, put the seat up<br>
+Backseat meet-up<br>
+<br>
+[Pre-Chorus]<br>
+I will fight a thousand times just to touch you<br>
+Even when I know you're lying, won't interrupt you<br>
+'Cause I love you<br>
+You would be right all the time if it was up to me<br>
+We could've fought all night long<br>
+When you had your clothes on<br>
+But now I'd rather be wrong than to be alone<br>
+Girl, you know that's not fair<br>
+<br>
+[Chorus]<br>
+It's not fair<br>
+How you just gon' take off your clothes and sit right there? (There you go)<br>
+That's it (There you go), that's it<br>
+That right there, ah, there<br>
+How you just do whatever you want?<br>
+How you gon' put a spell on me just to front?<br>
+How you keep make me falling in love, it's just not fair<br>
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+            {
+                title: "Mac DeMarco - Home",
+                lyrics: `[Verse 1]<br>
+These days, I'd much rather be on my own<br>
+No more walking those streets, that I once called my home<br>
+Because down every lane, there are faces and names<br>
+That have memories attached, that I'd sooner let go<br>
+<br>
+[Chorus]<br>
+Sooner than I'd go home again<br>
+Sooner than I'd go home again<br>
+Sooner than I'd go home again<br>
+Sooner than I'd go home again<br>
+<br>
+[Verse 2]<br>
+I never called, let our friendship dissolve<br>
+Now my welcome's worn out, and your hate for me's grown<br>
+To the point, when I try to amend all the lies<br>
+All those memories return, that I'd sooner let go<br>
+<br>
+[Chorus]<br>
+Sooner than I'd go home again<br>
+Sooner than I'd go home again<br>
+Sooner than I'd go home again<br>
+Sooner than I'd go home again<br>
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+            {
+                title: "RAYE - Grandma Calls The Boy Bad News",
+                lyrics: `[Intro]<br>
+Yeah, yeah (Do better, do, do-do-do), yeah<br>
+I said, girl, you can do (Do better, do-do-do, ooh)<br>
+What would she do?<br>
+What would grandma do, do, do?<br>
+<br>
+[Verse 1]<br>
+On a Monday night at the Rose and Crown was a man watching me<br>
+He had the refrigerated lager demeanor, bit the bottle top with his teeth, oh<br>
+He has auburn hair and trouble in his eyes and a smile to start a fire<br>
+There inside my dull, uninspired heart, mm<br>
+Fast-forward to a couple of weeks and I think I've fallen in love<br>
+He doesn't have anything going for him<br>
+But has a little red car, he calls her Carly (Carly)<br>
+I'm sitting beside him with my hand in his pocket and we're driving with nowhere to go<br>
+But how it soothes my aching soul<br>
+<br>
+[Chorus]<br>
+Girl, what would your mother say?<br>
+She said, "Take your time, baby, you can go both ways"<br>
+Girl, what would your daddy say?<br>
+He said I could do better, do, do-do-do better<br>
+Woo-woo-woo, what would your grandma do?<br>
+Oh, what would she do?<br>
+She would get on her knees and pray that I don't make this mistake<br>
+Grandma calls the boy bad news<br>
+<br>
+[Post-Chorus]<br>
+Oh-oh, oh (Yeah, yeah)<br>
+(Oh, yeah, oh, yeah)<br>
+And she says that I can do (Do better, do, do-do-do)<br>
+<br>
+[Verse 2]<br>
+On a Tuesday morn' in his bedroom, I lay tangled in his arms<br>
+He still lives in his mother's house, but it does add to his charms<br>
+I lay my head on his tattooed chest that spells out "Carpe Diem," baby<br>
+Then he asked me to be his lady, gotta think 'bout<br>
+<br>
+[Chorus]<br>
+Girl, what would your mother say?<br>
+She said, "Take your time, baby, you can go both ways"<br>
+Girl, what would your daddy say?<br>
+Oh, said I could do better, do, do-do-do better<br>
+Woo-woo-woo, what would your grandma do?<br>
+Oh, what would she do?<br>
+She would get on her knees and pray that I don't make this mistake<br>
+Grandma calls the boy bad news<br>
+<br>
+[Bridge]<br>
+And she calls the boy<br>
+Bad, bad news, baby<br>
+Running, running 'round town with her baby<br>
+Falling to her knees and she's praying (What would grandma do?)<br>
+And now she cussin' me out on the phone<br>
+She told me get a car and get my ass back home<br>
+Hoping I will come to my senses, oh, oh, oh<br>
+<br>
+[Chorus]<br>
+Well, what would your mother say?<br>
+She said, "Take your time, baby, you can go both ways"<br>
+Girl, what would your daddy say?<br>
+He said I could do better, do, do-do-do better<br>
+Woo-woo-woo, what would your grandma do?<br>
+Oh, what would she do?<br>
+She'd get on her knees and pray that I don't make this mistake<br>
+Grandma calls the boy bad news<br>
+<br>
+[Outro]<br>
+And she says that I can do (Do better, do, do-do-do)<br>
+And she thinks that I should (Do better, do, do-do-do)<br>
+But she thinks that I could (Do better, do, do-do-do)<br>
+But who knows if I will or won't or I won't do (Do better, do, do-do-do)<br>
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+            {
+                title: "Switch Disco, Tones And I - HIDEAWAY",
+                lyrics: `[Verse 1]<br>
+Taking me higher than I've ever been before<br>
+I'm holding it back, just wanna shout out, give me more<br>
+You're just a hideaway, you're just a feeling<br>
+You let my heart escape beyond the meaning<br>
+Not even I can find a way to stop the storm<br>
+Oh, baby, it's out of my control, what's going on? Mm<br>
+You're just a chance I take to keep on dreaming<br>
+You're just another day that keeps me breathing<br>
+<br>
+[Chorus]<br>
+Baby, I love the way that there's nothing sure<br>
+Baby, don't stop me, hideaway with me some more<br>
+Ah-ah-ah<br>
+Ah-ah, hideaway with me some more<br>
+<br>
+[Build]<br>
+Ooh, ah, ah, ooh<br>
+Ooh, ah, ah<br>
+Hideaway with me some more<br>
+<br>
+[Drop]<br>
+Ooh, ah, ah, ooh<br>
+Ooh, ah, ah, ooh<br>
+<br>
+[Verse 2]<br>
+You're sending me shivers up my spine, might overflow<br>
+You're bringing me closer to the edge of letting go, no<br>
+You're just a hideaway, you're just a feeling<br>
+You let my heart escape beyond no meaning<br>
+Pulling my head into the clouds, I'm floating off<br>
+When you get me going, I can't find a way to stop, oh-oh<br>
+But you're just a chance I take to keep on dreaming<br>
+You're just another day that keeps me breathing<br>
+<br>
+[Bridge]<br>
+Ooh, ah, ah<br>
+(Day that keeps me breathing)<br>
+Ooh, ah, ah<br>
+(Hideaway with me some more)<br>
+<br>
+[Chorus]<br>
+Baby, I love the way that there's nothing sure<br>
+Baby, don't stop me, hideaway with me some more<br>
+Ah-ah-ah<br>
+Oh-oh-oh, hideaway with me some more<br>
+<br>
+[Drop]<br>
+Ooh, ah, ah, ooh<br>
+Ooh, ah, ah<br>
+Hideaway with me some more<br>
+Ooh (Oh, ah-ah, yeah), ah (Ooh, ah-ah, ah-ah, yeah)<br>
+Ooh (Ooh-ooh-ooh), ah<br>
+Hideaway with me some more<br>
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            },
+            {
+                title: "The K's - Me and Your Sister",
+                lyrics: `[Verse 1]<br>
+Yeah, she cuts like a razor<br>
+It's not normal behaviour<br>
+Leaves me feeling so blue<br>
+And I've forgotten how to feel it<br>
+I forgot that I had feelings like you other people do<br>
+Till you entered the room<br>
+<br>
+[Pre-Chorus]<br>
+Now I'll never ever get another chance<br>
+I left you speechless, there's nothing between us<br>
+I ignored all the signs<br>
+Now I'll never ever get another chance to understand it<br>
+I couldn't have planned it<br>
+Any worse if I tried<br>
+<br>
+[Chorus]<br>
+'Cause I said me and your sister have the same dealer<br>
+I met a few of your friends in Ibiza<br>
+They came to a show, so I went out to meet 'em<br>
+They say I'm the type of boy that you need and<br>
+Every time you post<br>
+Oh, it's the most important thing I'll see all day<br>
+<br>
+[Verse 2]<br>
+And I'm resisting and reactive<br>
+I'm so distant, unattractive<br>
+I can't regulate my mood<br>
+I talk too much and too loud, it's annoying<br>
+But I'm hiding the fact that I'm only avoiding<br>
+And dancing 'round the truth<br>
+But I won't do that shit to you<br>
+<br>
+[Pre-Chorus]<br>
+Now I'll never ever get another chance<br>
+I left you speechless, there's nothing between us<br>
+I ignored all the signs<br>
+Now I'll never ever get another chance to understand it<br>
+I couldn't have planned it<br>
+Any worse if I tried<br>
+<br>
+[Chorus]<br>
+'Cause I said me and your sister have the same dealer<br>
+I met a few of your friends in Ibiza<br>
+They came to a show, so I went out to meet 'em<br>
+They say I'm the type of boy that you need and<br>
+Every time you post<br>
+Oh, it's the most important thing I'll see all day<br>
+<br>
+[Bridge]<br>
+And all that you can say is<br>
+"I'm sorry, do I know ya?<br>
+Remind me of your name"<br>
+I'll say, "I wouldn't say I know ya<br>
+But I'd like to get to know you all the same<br>
+If that's okay, if that's okay<br>
+But I'd like to get to know you all the same<br>
+If that's okay, if that's okay"<br>
+<br>
+[Chorus]<br>
+Me and your sister have the same dealer<br>
+I met a few of your friends in Ibiza<br>
+They came to a show, so I went out to meet 'em<br>
+They say I'm the type of boy that you need and<br>
+Me and your sister have the same dealer<br>
+I met a few of your friends in Ibiza<br>
+They came to a show, so I went out to meet 'em<br>
+They say I'm the type of boy that you need and<br>
+Every time you post<br>
+Oh, it's the most important thing I'll see all day<br>
+`,
+                // jam1: { duration: "2:34", wer: "0.12" },
+                // diffrhythm: { duration: "2:41", wer: "0.38" }
+            }
         ];
 
         function formatTime(seconds) {
