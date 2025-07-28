@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAM-1: A Tiny Flow-based Song Generator with Fine-grained Controllability and
+    <title>JAM: A Tiny Flow-based Song Generator with Fine-grained Controllability and
 Aesthetic Alignment</title>
     <style>
         * {
@@ -537,16 +537,16 @@ Aesthetic Alignment</title>
             <img src="jamify-logo-new.png" alt="Project Jamify Logo" class="project-logo">
         </div>
         <div class="title-content">
-            <h1 class="title">JAM-1: A Tiny Flow-based Song Generator with Fine-grained Controllability and Aesthetic Alignment</h1>
+            <h1 class="title">JAM: A Tiny Flow-based Song Generator with Fine-grained Controllability and Aesthetic Alignment</h1>
             <p class="subtitle">The First Model of Project Jamify</p>
         </div>
     </div>
             
 <div class="buttons-container">
-    <a href="https://huggingface.co/declare-lab/JAM-1" class="btn btn-huggingface">
+    <a href="https://huggingface.co/declare-lab/JAM" class="btn btn-huggingface">
         🤗 HuggingFace Model
     </a>
-    <a href="https://huggingface.co/spaces/declare-lab/JAM-1" class="btn btn-demo">
+    <a href="https://huggingface.co/spaces/declare-lab/JAM" class="btn btn-demo">
         🎵 Interactive Demo
     </a>
     <a href="" class="btn btn-arxiv">
@@ -564,7 +564,7 @@ Aesthetic Alignment</title>
         <div class="section">
             <h2 class="section-title">Abstract</h2>
             <p class="abstract">
-                Diffusion and flow-matching models have revolutionized automatic text-to-audio generation in recent times. These models are increasingly capable of generating high quality and faithful audio outputs capturing speech and acoustic events. However, there is still much room for improvement in creative audio generation that primarily involves music and songs. Recent open lyrics-to-song models, such as DiffRhythm, Ace-Step, and Levo, have set an acceptable standard in automatic song generation for recreational use. However, these models lack fine-grained word-level controllability often desired by musicians in their workflows. To the best of our knowledge, our flow-matching-based JAM-1 is the first effort toward endowing word-level timing and duration control in song generation, allowing fine-grained vocal control. Furthermore, we aim to standardize the evaluation of such lyrics-to-song models through our public evaluation dataset JAME. We show that JAM-1 outperforms the existing models.
+                Diffusion and flow-matching models have revolutionized automatic text-to-audio generation in recent times. These models are increasingly capable of generating high quality and faithful audio outputs capturing to speech and acoustic events. However, there is still much room for improvement in creative audio generation that primarily involves music and songs. Recent open lyrics-to-song models, such as, DiffRhythm, ACE-Step, and LeVo, have set an acceptable standard in automatic song generation for recreational use. However, these models lack fine-grained word-level controllability often desired by musicians in their workflows. To the best of our knowledge, our flow-matching-based JAM is the first effort toward endowing word-level timing and duration control in song generation, allowing fine-grained vocal control. To enhance the quality of generated songs to better align with human preferences, we implement aesthetic alignment through Direct Preference Optimization, which iteratively refines the model using a synthetic dataset, eliminating the need or manual data annotations. Furthermore, we aim to standardize the evaluation of such lyrics-to-song models through our public evaluation dataset JAME. We show that JAM outperforms the existing models in terms of the music-specific attributes.
             </p>
         </div>
 
@@ -574,14 +574,14 @@ Aesthetic Alignment</title>
                 <div class="contribution-card">
                     <div class="contribution-title">🏗️ Compact Architecture</div>
                     <div class="contribution-desc">
-                        At 530M parameters, JAM-1 is less than half the size of the next smallest system (DiffRhythm-1.1B), enabling faster inference and reduced resource demands.
+                        At 530M parameters, JAM is less than half the size of the next smallest system (DiffRhythm-1.1B), enabling faster inference and reduced resource demands.
                     </div>
                 </div>
                 
                 <div class="contribution-card">
                     <div class="contribution-title">🎯 Fine-Grained Alignment</div>
                     <div class="contribution-desc">
-                        By accepting word- and phoneme-level timing inputs, JAM-1 lets users control the exact placement of each vocal sound, improving rhythmic flexibility and expressive timing.
+                        By accepting word- and phoneme-level timing inputs, JAM lets users control the exact placement of each vocal sound, improving rhythmic flexibility and expressive timing.
                     </div>
                 </div>
                 
@@ -679,7 +679,7 @@ Aesthetic Alignment</title>
             
             <div class="comparison-container">
                 <div class="audio-player jam1">
-                    <div class="model-title">JAM-1 (Ours)</div>
+                    <div class="model-title">JAM (Ours)</div>
                     <button class="play-button" onclick="togglePlay('jam1')">
                         <svg class="play-icon" viewBox="0 0 24 24" id="jam1-icon">
                             <path d="M8 5v14l11-7z"/>
