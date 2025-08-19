@@ -9,7 +9,7 @@ related: false
 logo:
   - image_path: /assets/images/logos/square-light.png
     id: "big-home-logo"
-    excerpt: "Welcome, fellow researchers, to the DeCLaRe Lab! We are a small group of researchers located at Nanyang Technological University (NTU) working on challenging problems in AI. To know more about our work, please browse our catalog of [publications](/publications/)."
+    excerpt: "Welcome, fellow researchers, to the DeCLaRe Lab! We are a small group of researchers located at Nanyang Technological University (NTU) working on challenging problems in AI. To know more about our work, please browse our catalog of [publications](https://scholar.google.co.in/citations?hl=en&user=oS6gRc4AAAAJ&view_op=list_works&sortby=pubdate)."
 ---
 
 {% include feature_row_home_img id="logo" type="left" %}
@@ -26,7 +26,7 @@ Here are some key research works by our lab that got some attention:
 # Updates
 
 <p>
-  <span style="color: #007ACC;">🌞 We will be moving to <strong>NTU</strong> after this summer! 🎓</span><br>
+  <span style="color: #007ACC;">🌞 We have moved to <strong>NTU</strong> this summer! 🎓</span><br>
   We're on the lookout for passionate <strong>Postdocs</strong> and <strong>PhD students</strong> to join our team. 🚀🧠<br>
   Interested? Drop us a message at <em>soujanya [dot] poria [at] gmail [dot] com</em>.<br> 🌟
 </p>
