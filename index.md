@@ -28,13 +28,13 @@ Here are some key research works by our lab that got some attention:
 <p>
   <span style="color: #007ACC;">🌞 We have moved to <strong>NTU</strong> this summer! 🎓</span><br>
   We're on the lookout for passionate <strong>Postdocs</strong> and <strong>PhD students</strong> to join our team. 🚀🧠<br>
-  Interested? Drop us a message at <em>soujanya [dot] poria [at] gmail [dot] com</em>.<br> 🌟
+  Interested? Drop us a message at <em>soujanya [dot] poria [at] ntu [dot] edu [dot] sg</em>.<br> 🌟
 </p>
 
 # Keen to Join Our Lab?
 <div class="notice--success">
   <h4>Please Read these Slides</h4>
-  <p> If you would like to join our lab, we encourage you to get familiar with the research topics we are interested in. <a href = "https://docs.google.com/presentation/d/17edmwBfMHhduRq4KSKrXz8_pK_aokH0SHawiR4ZNK9U/edit?usp=sharing">Here are the slides for this.</a>  
+  <p> If you would like to join our lab, we encourage you to get familiar with the research topics we are interested in. <a href = "https://drive.google.com/file/d/10lmu5YGDzr2Yw6kBFWwe7ifZ9Ec9WCl1/view?usp=sharing">Here are the slides for this.</a>  
   </p>
 </div>
   
