@@ -230,14 +230,14 @@ title: ""
       <p>Efficient training through dynamic data selection.</p>
     </article>
     <article>
-      <span>2025</span>
+      <span>arXiv 2025</span>
       <h3>NORA: A Small Open-Sourced Generalist Vision Language Action Model</h3>
       <p>Efficient embodied AI and action grounding.</p>
     </article>
     <article>
-      <span>ACL / EMNLP / AAAI / ACM MM</span>
-      <h3>MELD, Tensor Fusion Network, DialogueRNN, and MISA</h3>
-      <p>Established multimodal and conversational AI foundations.</p>
+      <span>ICLR 2026</span>
+      <h3>TangoFlux: Super Fast and Faithful Text-to-Audio Generation with Flow Matching</h3>
+      <p>Fast, faithful text-to-audio generation via flow matching.</p>
     </article>
   </div>
 </section>

@@ -751,8 +751,8 @@
 
 .content-text .team-photo {
   width: 100%;
-  max-height: 520px;
-  object-fit: cover;
+  height: auto;
+  display: block;
   border-radius: 8px;
   border: 1px solid var(--declare-line);
 }

@@ -10,13 +10,6 @@ classes: wide
 
 <section class="updates-intro">
   <p>A flexible record for papers, grants, awards, student milestones, visitors, releases, and lab announcements. Prospective students and collaborators can use this page to understand what the group is actively building.</p>
-  <div class="update-type-strip" aria-label="Update types">
-    <span>Grants</span>
-    <span>Papers</span>
-    <span>Awards</span>
-    <span>Releases</span>
-    <span>Lab Milestones</span>
-  </div>
 </section>
 
 <section class="updates-feed">
