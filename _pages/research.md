@@ -1,82 +1,264 @@
 ---
 layout: single
-title: "Research"
+title: "Research Themes"
 permalink: /research/
 author_profile: false
 related: false
-toc: true
-toc_label: "Research themes"
-articlecolour: "#00001a"
-toc_sticky: true
+toc: false
 classes: wide
-
-
-mustard:
-  - image_path: /assets/images/research/mustard.png
-    excerpt: "**Multimodal Sarcasm**: Sarcasm is a linguistic device that uses irony to express contempt or ridicule. Despite being a linguistic problem, sarcasm often lacks explicit linguistic markers, thus requiring additional cues that can reveal the speaker's intentions. Our work in this area is to leverage multiple modalities and/or context history in dialogues to detect *contextual incongruity* that goes beyond the surface text. [Read more](/resources/) about our efforts in this topic."
-
-msa:
-   - image_path: /assets/images/research/motivation.png
-     excerpt: "**Multimodal Sentiment Analysis**: Traditional sentiment  analysis has  been  primarily applied  to  a  wide  variety  of  texts. In contrast, sentiment analysis on user-generated content is fundamentally multimodal in nature and has gained attention due to the explosive growth of many social media platforms. The primary advantage of multimodal treatment is the surplus of behavioral cues present in acoustic and visual modalities, which provides important information to better identify affective states of the opinion holder. This allows to create a more robust sentiment analysis model. <br><br> In this topic, we are interested in finding effective fusion strategies of multimodal data along with building robust sentiment analysis systems that can be deployed in the wild."
-
-csk:
-  - image_path: /assets/images/research/csk.png
-    excerpt: "Commonsense knowledge (CSK) involves the basic understanding of situations and events commonly shared amongst people, which affects our logical and social decisions in day-to-day life.
-	The quest for AI to mimic such behavior – to understand both human needs, actions, and to interact with us – makes it imperative for them to incorporate CSK. For example, in the sentence, *Can an elephant enter the doorway?*, CSK is required to compare the size of the two objects. Such information about the sizes of *elephant* and *door* can be acquired via online articles (e.g. Wikipedia), without any need to visibly observe them. This kind of inference, though simple for humans, becomes extremely different for machines as such knowledge might not be present in explicit form both in the current sample and also in historical training data. Thus, equipping deep neural models with such CSK is paramount to their understanding and reasoning capabilities, albeit challenging.
-
-	Our primary goal is to leverage CSK to improve the performance of a wide range of NLP problems, thus showing the worthiness of CSK for NLP at large. The problems we will consider include, but are not limited to, *natural language inference*, *domain adaptation*, *dialogue generation*, and *zero-shot learning*."
-
-qa:
-  - image_path: /assets/images/research/qa2.png
-    excerpt: "Integrating reasoning for question answering (QA) with explanation is a critical problem in the progress of natural language understanding. The recent works in QA (BiDAF, GA Reader, AoA Reader, etc.) on challenge machine compresenhion datasets (SQuAD, RACE, Narrative QA, etc.) have focused on 'shallow' QA tasks that can be tackled by existing retrieval-based techniques or learning surface patterns.
-    With the progress of 'attention' mechanisms, these models have become very good in lexical matching to answer questinos. However, it is unclear whether they posses ability to understand the complex semantics required for the task.
-
-    <br>
-
-    To address this problem, recent datasets (CommonsenseQA, SQuAD 2.0, HotpotQA, MutiRC, etc.) pose 'complex' questions requiring intelligent reasoning and inference capabilities from the agent. Although, the reasoning required to tackle these QA tasks has many forms, it is often studied in a very narrow sense. Ideally, answering these “complex” questions should require inference/reasoning over multiple spans, including causal, abductive, deductive, inductive, temporal, quantitative and many other kinds of reasoning. Moreover, there has been growing interest for explainability of QA algorithms, along with many other AI challenges at large. Here, the goal is to provide understandability over the reasoning adopted by the models to decide a particular solution. Thus, instead of just answering a specific query, the system should be able to provide explanations for the judgement it made, and be able to provide further recommendations in an interactive manner. To combat these challenges, we are exploring ways to make QA systems perform causal reasoning, leverage external knowledge and generate explanations."
-
-dia:
-  - image_path: /assets/images/research/conv.png
-    excerpt: Conversations - task oriented and chit-chat - are governed by multiple pragmatic factors, such as topic, interlocutors’ personality, argumentation logic, viewpoint, and intent. As seen in the figure, topic ($$Topic$$) and interlocutor personality ($$P_*$$) influence the conversation throughout. For each utterance, the speaker makes up their mind ($$S^t_*$$) about the reply ($$U^t_*$$) based on the preceding utterances ($$U^{< t}_*$$) from both the interlocutors, the previous utterance being the most important one to make the largest change in the joint task model (for task-oriented conversations) or the speaker’s emotional state (for chit-chat). Delving deeper, the pragmatic features mentioned before, are encoded in speaker state ($$S^t_*$$). Intent ($$I^t_*$$) of the speaker is decided based on previous intent $$I_*^{t-2}$$ and speaker state $$S_*^t$$, as the interlocutor may change his/her intent based on the counterpart’s utterance and current situation. Then, the speaker formulates appropriate emotion $$E_*^t$$ for the response based on the state $$S^t_*$$ and intent $$I^t_*$$. Finally, the response $$U^t_*$$ is produced based on the speaker state $$S^t_*$$, intent $$I^t_*$$, and emotion $$E^t_*$$. We surmise that considering these factors would help representing the argument and discourse structure of the conversation, which leads to improved **dialogue understanding**, including emotion recognition and also **dialogue generation**.
-
-mda:
-  - image_path: /assets/images/research/mda.png
-    excerpt: "**Multimodal Dialogue Processing**: Research on building dialogue systems that converse with humans naturally has recently attracted a lot of attention. Most work on this area assumes text-based conversation, where the user message is modeled as a sequence of words in a vocabulary. Real-world human conversation, in contrast, involves other modalities, such as voice, facial expression and body language, which can influence the conversation significantly in certain scenarios. In this project, we are exploring the impact of incorporating the audio features of the user message into generative dialogue systems." 
 ---
 
-At the DeCLaRe Lab, we engage ourselves in multiple research topics with the aim to improve semantic understanding of media and to build simple yet intuitive algorithms. We are always on the lookout to explore interesting directions and our motto is to generate *impactful research*.
+<section class="page-lead page-lead--compact">
+  <p>Each theme combines recent work with long-running foundations from the group, from multimodal emotion and sentiment analysis to retrieval-grounded generation, scientific discovery, efficient learning, and vision-language-action models.</p>
+  <div class="page-chip-strip" aria-label="Research themes">
+    <a href="#safety">Safety</a>
+    <a href="#trustworthiness">Trustworthiness</a>
+    <a href="#multimodality">Multimodality</a>
+    <a href="#ai-for-science">AI for Science</a>
+    <a href="#efficiency">Efficiency</a>
+    <a href="#embodied-ai">Embodied AI</a>
+  </div>
+</section>
 
-Our current research interests can be broadly categorized as: 
+<h2 id="safety">Safety</h2>
 
-## Multimodal Interaction
-<button type="button" class="btn btn-primary btn-sg">Funded by</button> : *Adobe Research.*
+<div class="research-theme">
+  <div>
+    <p>We study whether AI systems behave safely inside the situations they are built for, especially when LLM agents face off-topic, adversarial, or underspecified requests.</p>
+    <ul class="clean-list">
+      <li>Operational safety for task-specific LLM agents</li>
+      <li>Red-teaming, jailbreak analysis, and refusal behavior</li>
+      <li>Test-time alignment and model steering for safer responses</li>
+    </ul>
+  </div>
+  <div class="project-grid">
+    <article class="project-card project-card--large">
+      <img src="/assets/images/logos/jailbreakprompt_main_paper.png" alt="Safety evaluation visual">
+      <div class="project-card__body">
+        <span class="project-tag">Operational Safety</span>
+        <h3>OffTopicEval</h3>
+        <p>An evaluation suite for measuring whether LLM agents accept valid in-domain requests and refuse out-of-domain ones.</p>
+        <div class="project-links">
+          <a href="https://arxiv.org/abs/2509.26495">Paper</a>
+        </div>
+        <p class="project-team">Team: Jingdi Lei, Varun Gumma, Rishabh Bhardwaj, Seok Min Lim, Chuan Li, Amir Zadeh, Soujanya Poria</p>
+      </div>
+    </article>
+    <article class="project-card">
+      <img src="/assets/images/research/qa.png" alt="Safety alignment visual">
+      <div class="project-card__body">
+        <span class="project-tag">Alignment</span>
+        <h3>Safety Arithmetic</h3>
+        <p>A test-time framework for steering language models toward safer behavior through parameters and activations.</p>
+        <div class="project-links">
+          <a href="https://aclanthology.org/2024.emnlp-main.1212/">Paper</a>
+        </div>
+        <p class="project-team">Team: Safety and alignment group</p>
+      </div>
+    </article>
+  </div>
+</div>
 
+<h2 id="trustworthiness">Trustworthiness</h2>
 
-{% include feature_row id="msa" type="left" %}
+<div class="research-theme">
+  <div>
+    <p>We develop methods for AI systems that know when to answer, when to cite, when to refuse, and how to communicate uncertainty in grounded settings.</p>
+    <ul class="clean-list">
+      <li>Trustworthy retrieval-augmented generation</li>
+      <li>Grounded attribution and citation-aware generation</li>
+      <li>Trust calibration in multi-agent and human-facing systems</li>
+    </ul>
+  </div>
+  <div class="project-grid">
+    <article class="project-card project-card--large">
+      <img src="/assets/images/research/qa2.png" alt="Trustworthy retrieval augmented generation visual">
+      <div class="project-card__body">
+        <span class="project-tag">RAG</span>
+        <h3>Trust-Score and Trust-Align</h3>
+        <p>Trust-Score evaluates RAG trustworthiness, while Trust-Align improves grounded attribution, refusal, and citation quality.</p>
+        <div class="project-links">
+          <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/4c88827decab6c046b881a2c3a99c76f-Abstract-Conference.html">Paper</a>
+          <a href="https://github.com/declare-lab/trust-align">Code</a>
+        </div>
+        <p class="project-team">Team: Maojia Song, Shang Hong Sim, Rishabh Bhardwaj, Hai Leong Chieu, Navonil Majumder, Soujanya Poria</p>
+      </div>
+    </article>
+    <article class="project-card">
+      <img src="/assets/images/research/conv.png" alt="Multi-agent trust visual">
+      <div class="project-card__body">
+        <span class="project-tag">Multi-Agent Trust</span>
+        <h3>Epistemic Context Learning</h3>
+        <p>Studying trust formation and calibrated reliance in LLM-based multi-agent systems.</p>
+        <div class="project-links">
+          <a href="https://arxiv.org/abs/2601.21742">Paper</a>
+        </div>
+        <p class="project-team">Team: Trustworthy and interactive AI group</p>
+      </div>
+    </article>
+  </div>
+</div>
 
+<h2 id="multimodality">Multimodality</h2>
 
-{% include feature_row id="mda" type="left" %}
+<div class="research-theme">
+  <div>
+    <p>Multimodality is a long-running foundation of DeCLaRe Lab: we build models and benchmarks that integrate language, vision, audio, video, and social context.</p>
+    <ul class="clean-list">
+      <li>Multimodal fusion and representation learning</li>
+      <li>Emotion, sentiment, sarcasm, and social signal understanding</li>
+      <li>Vision-language and audio-language reasoning benchmarks</li>
+    </ul>
+  </div>
+  <div class="project-grid">
+    <article class="project-card project-card--large">
+      <img src="/assets/images/resources/meld.png" alt="MELD dataset visual">
+      <div class="project-card__body">
+        <span class="project-tag">Conversational AI</span>
+        <h3>MELD and DialogueRNN</h3>
+        <p>Highly cited resources and models for multimodal, multi-party emotion recognition in conversations.</p>
+        <div class="project-links">
+          <a href="https://aclanthology.org/P19-1050/">MELD</a>
+          <a href="https://ojs.aaai.org/index.php/AAAI/article/view/4657">DialogueRNN</a>
+          <a href="https://github.com/declare-lab/MELD">Dataset</a>
+        </div>
+        <p class="project-team">Team: Soujanya Poria, Devamanyu Hazarika, Navonil Majumder, collaborators</p>
+      </div>
+    </article>
+    <article class="project-card">
+      <img src="/assets/images/research/tfn.png" alt="Tensor Fusion Network visual">
+      <div class="project-card__body">
+        <span class="project-tag">Fusion</span>
+        <h3>TFN, MISA, and Multimodal Fusion</h3>
+        <p>Foundational work on modality interaction, invariant and specific representations, and robust multimodal sentiment analysis.</p>
+        <div class="project-links">
+          <a href="https://aclanthology.org/D17-1115/">TFN</a>
+          <a href="https://dl.acm.org/doi/10.1145/3394171.3413678">MISA</a>
+        </div>
+        <p class="project-team">Team: Multimodal learning group</p>
+      </div>
+    </article>
+  </div>
+</div>
 
+<h2 id="ai-for-science">AI for Science</h2>
 
-{% include feature_row id="mustard" type="left" %}
+<div class="research-theme">
+  <div>
+    <p>We explore how language models and agentic systems can help scientific reasoning: retrieving inspirations, forming hypotheses, ranking ideas, and synthesizing evidence.</p>
+    <ul class="clean-list">
+      <li>Scientific hypothesis discovery and rediscovery</li>
+      <li>Chemistry-focused benchmarks and multi-agent discovery pipelines</li>
+      <li>Open-domain scientific literature reasoning</li>
+    </ul>
+  </div>
+  <div class="project-grid">
+    <article class="project-card project-card--large">
+      <img src="/assets/images/research/moose-chem.png" alt="MOOSE-Chem visual">
+      <div class="project-card__body">
+        <span class="project-tag">Scientific Discovery</span>
+        <h3>MOOSE-Chem</h3>
+        <p>An ICLR 2025 benchmark and framework for testing whether LLMs can rediscover valid chemistry hypotheses from background questions and literature.</p>
+        <div class="project-links">
+          <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/51fd9a7d1706023cb9f8210cc6ac357c-Abstract-Conference.html">Paper</a>
+        </div>
+        <p class="project-team">Team: Zonglin Yang, Wanhao Liu, Ben Gao, Tong Xie, Yuqiang Li, Wanli Ouyang, Soujanya Poria, Erik Cambria, Dongzhan Zhou</p>
+      </div>
+    </article>
+    <article class="project-card">
+      <img src="/assets/images/research/qa.png" alt="Scientific hypothesis discovery visual">
+      <div class="project-card__body">
+        <span class="project-tag">Hypothesis Discovery</span>
+        <h3>Open-Domain Scientific Hypotheses</h3>
+        <p>LLM methods for automated scientific hypothesis discovery across broad literature collections.</p>
+        <div class="project-links">
+          <a href="https://aclanthology.org/2024.findings-acl.804/">Paper</a>
+        </div>
+        <p class="project-team">Team: Scientific reasoning group</p>
+      </div>
+    </article>
+  </div>
+</div>
 
+<h2 id="efficiency">Efficiency</h2>
 
+<div class="research-theme">
+  <div>
+    <p>We build techniques that make training, adaptation, and inference cheaper without losing reliability or downstream performance.</p>
+    <ul class="clean-list">
+      <li>Dynamic data selection and data-efficient training</li>
+      <li>Adapters, distillation, token retention, and long-context methods</li>
+      <li>Compact multimodal and embodied models for practical deployment</li>
+    </ul>
+  </div>
+  <div class="project-grid">
+    <article class="project-card project-card--large">
+      <img src="/assets/images/research/data-agent.png" alt="Data Agent visual">
+      <div class="project-card__body">
+        <span class="project-tag">Data Selection</span>
+        <h3>Data Agent</h3>
+        <p>An end-to-end dynamic data selection framework that learns sample-wise policies to accelerate training while preserving performance.</p>
+        <div class="project-links">
+          <a href="https://arxiv.org/abs/2603.07433">Paper</a>
+        </div>
+        <p class="project-team">Team: Suorong Yang, Fangjian Su, Hai Gan, Ziqi Ye, Jie Li, Baile Xu, Furao Shen, Soujanya Poria</p>
+      </div>
+    </article>
+    <article class="project-card">
+      <img src="/assets/images/research/qa2.png" alt="Efficient LLM visual">
+      <div class="project-card__body">
+        <span class="project-tag">Efficient LLMs</span>
+        <h3>PromptDistill, LLM-Adapters, UDApter</h3>
+        <p>Efficient inference, parameter-efficient fine-tuning, and adapter-based transfer for language and speech models.</p>
+        <div class="project-links">
+          <a href="/publications/?q=PromptDistill">PromptDistill</a>
+          <a href="/publications/?q=LLM-Adapters">LLM-Adapters</a>
+          <a href="/publications/?q=UDApter">UDApter</a>
+        </div>
+        <p class="project-team">Team: Efficient learning group</p>
+      </div>
+    </article>
+  </div>
+</div>
 
-## Commonsense-aware NLP
-<button type="button" class="btn btn-primary btn-sg">Funded by</button> : *The MoE Tier-2.*
+<h2 id="embodied-ai">Embodied AI</h2>
 
-{% include feature_row id="csk" type="left" %}
-
-## Question Answering
-<button type="button" class="btn btn-primary btn-sg">Funded by</button> : *DSO National Laboratories, AME Programmatic Fund.*
-
-{% include feature_row id="qa" type="left" %}
-
-
-## Affective and Empathetic Dialogue Understanding
-<button type="button" class="btn btn-primary btn-sg">Funded by</button> : *Adobe Research.*
-
-{% include feature_row id="dia" type="left" %}
-
-
-
+<div class="research-theme">
+  <div>
+    <p>We develop embodied agents that perceive, reason, and act, with emphasis on compact VLA models, action grounding, and interactive benchmarks.</p>
+    <ul class="clean-list">
+      <li>Vision-language-action models for robotic tasks</li>
+      <li>World-model and action-based preference rewards</li>
+      <li>Interactive reasoning benchmarks from perception to action</li>
+    </ul>
+  </div>
+  <div class="project-grid">
+    <article class="project-card project-card--large">
+      <img src="/assets/images/nora-1.5-arxiv-teaser.png" alt="NORA teaser">
+      <div class="project-card__body">
+        <span class="project-tag">VLA</span>
+        <h3>NORA and NORA 1.5</h3>
+        <p>Small generalist vision-language-action models designed for efficient action grounding and dependable embodied behavior.</p>
+        <div class="project-links">
+          <a href="/nora.html">Project</a>
+          <a href="/nora-1.5.html">NORA 1.5</a>
+          <a href="https://arxiv.org/abs/2504.19854">Paper</a>
+        </div>
+        <p class="project-team">Team: Chia-Yu Hung, Qi Sun, Pengfei Hong, Amir Zadeh, Chuan Li, U-Xuan Tan, Navonil Majumder, Soujanya Poria</p>
+      </div>
+    </article>
+    <article class="project-card">
+      <img src="/assets/images/nora1.5-new.png" alt="Embodied AI benchmark visual">
+      <div class="project-card__body">
+        <span class="project-tag">Interactive Evaluation</span>
+        <h3>Emma-X and Perception-to-Action</h3>
+        <p>Embodied foundation models and benchmarks that evaluate how agents move from visual reasoning to action.</p>
+        <div class="project-links">
+          <a href="https://aclanthology.org/2025.acl-long.695/">Emma-X</a>
+          <a href="https://arxiv.org/abs/2602.21015">Benchmark</a>
+        </div>
+        <p class="project-team">Team: Embodied AI group</p>
+      </div>
+    </article>
+  </div>
+</div>

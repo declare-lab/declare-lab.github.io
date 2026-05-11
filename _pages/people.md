@@ -1,238 +1,147 @@
 ---
 layout: single
-title: "People"
+title: "People at DeCLaRe Lab"
 permalink: /people/
 author_profile: false
-<!-- classes: wide -->
 related: false
-toc: true
-toc_label: "Team"
-toc_icon: "cogs"
-toc_sticky: true
-
-articlecolour: "#00001a"
-
-
-
-soujanya:
-  - image_path: /assets/images/people/soujanya.JPG
-    excerpt: "**Soujanya Poria**"
-    url: "https://people.sutd.edu.sg/~sporia/"
-navonil:
-  - image_path: /assets/images/people/navo.jpg
-    excerpt: "**Navonil Mazumder**"
-    url: "https://scholar.google.com/citations?user=jPfEvuQAAAAJ&hl=en&oi=ao"
-rima:
-  - image_path: /assets/images/people/rima.jpeg
-    excerpt: "**Rima Hazra**"
-    url: "https://www.linkedin.com/in/rimahazra93/?originalSubdomain=sg"
-ambuj:
-  - image_path: /assets/images/people/ambuj.jpeg
-    excerpt: "**Ambuj Mehrish**"
-    url: "https://www.linkedin.com/in/ambuj-mehrish-159a0417b/"
-
-devamanyu:
-  - image_path: /assets/images/people/devamanyu.jpg
-    excerpt: "**Devamanyu Hazarika**"
-    url: "http://devamanyu.com"
-
-sarthak:
-  - image_path: /assets/images/people/sarthak.jpg
-    excerpt: "**Sarthak Bhagat**"
-
-shagun:
-  - image_path: /assets/images/people/shagun.jpg
-    excerpt: "**Shagun Uppal**"
-
-henry_lim:
-  - image_path: /assets/images/people/henry_lim.jpg
-    excerpt: "**Henry Lim**"
-    
-shaozuo:
-  - image_path: /assets/images/people/shaozuo.jpg
-    excerpt: "**Shaozuo Zhang**"
-
-yixuan: 
-  - image_path: /assets/images/people/yixuan.jpg
-    excerpt: "**Yi Xuan Tan**"
-
-deepanway:
-  - image_path: /assets/images/people/deepanway.jpeg
-    excerpt: "**Deepanway Ghosal**"
-    url: "https://deepanwayx.github.io/"
-   
-hui:
-  - image_path: /assets/images/people/hui_chen.jpg
-    excerpt: "**Hui Chen**"
-    url: "https://chchenhui.github.io/"
-
-rishabh:
-  - image_path: /assets/images/people/rishabh.jpg
-    excerpt: "**Rishabh Bhardwaj**"
-    url: "https://scholar.google.com/citations?user=nomHn1sAAAAJ&hl=en"
-
-shunqi:
-  - image_path: /assets/images/people/shunqi_wang.jpeg
-    excerpt: "**Shunqi Wang**"
-
-henryhan:
-  - image_path: /assets/images/people/henryhan.jpeg
-    excerpt: "**Wei Han**"
-    url: "https://github.com/Clement25"
-
-ken:
-  - image_path: /assets/images/people/ken.jpg
-    excerpt: "**Chia Yew Ken**"
-    url: "http://chiayewken.herokuapp.com/"
-  
-yingting:
-  - image_path: /assets/images/people/yingting.jpg
-    excerpt: "**Yingting Li**"
-
-xiaocui:
-  - image_path: /assets/images/people/xiaocui.jpg
-    excerpt: "**Yang Xiaocui**"
-
-jiankun:
-  - image_path: /assets/images/people/jiankun.jpeg
-    excerpt: "**Jiankun Lu**"
-    url: "https://www.linkedin.com/in/jiankun-lu-314b38150/"
-
-shanshan:
-  - image_path: /assets/images/people/shanshan.jpeg
-    excerpt: "**Shanshan Peng**"
-    url: "https://www.linkedin.com/in/shanshan-peng-a9b674146/"
-  
-samson:
-  - image_path: /assets/images/people/samson.jpg
-    excerpt: "**Samson Yu**"
-    
-joanna:
-  - image_path: /assets/images/people/joanna.jpeg
-    excerpt: "**Joanna Saw**"
-    url: "https://www.linkedin.com/in/joannasaw/"
-    
-pengfei:
-  - image_path: /assets/images/people/hongpengfei.jpg
-    excerpt: "**Pengfei Hong**"
-    url: "https://github.com/Emrys-Hong"
-
-cherina:
-  - image_path: /assets/images/people/cherina.jpg
-    excerpt: "**Cherina**"
-    url: "."
-
-qi:
-  - image_path: /assets/images/people/qi.jpg
-    excerpt: "**Qi Sun**"
-    url: "."
-
-rada:
-  - image_path: /assets/images/people/rada.jpg
-    excerpt: "**Rada Mihalcea**"
-    url: "http://web.eecs.umich.edu/~mihalcea"
-
-hovy:
-  - image_path: /assets/images/people/hovy.jpg
-    excerpt: "**Edward Hovy**"
-    url: "http://www.cs.cmu.edu/~hovy"
-
-morency:
-  - image_path: /assets/images/people/morency.jpg
-    excerpt: "**Louis-Philippe Morency**"
-    url: "http://www.cs.cmu.edu/~morency/"
-
-gelbukh:
-  - image_path: /assets/images/people/gelbukh.jpg
-    excerpt: "**Alexander Gelbukh**"
-    url: "https://www.gelbukh.com"
-
-zadeh:
-  - image_path: /assets/images/people/zadeh.jpg
-    excerpt: "**Amir Zadeh**"
-    url: "https://www.amir-zadeh.com/"
-    
-amir:
-  - image_path: /assets/images/people/amir.jpg
-    excerpt: "**Amir Hussain**"
-    url: "https://www.napier.ac.uk/people/amir-hussain"
-       
-asif:
-  - image_path: /assets/images/people/asif.jpg
-    excerpt: "**Asif Ekbal**"
-    url: "https://www.iitp.ac.in/~asif/"
-  
-pushpak:
-  - image_path: /assets/images/people/pushpak.jpg
-    excerpt: "**Pushpak Bhattacharyya**"
-    url: "https://www.cse.iitb.ac.in/~pb/"
-    
-roger:
-  - image_path: /assets/images/people/roger.jpg
-    excerpt: "**Roger Zimmermann**"
-    url: "https://eiger.ddns.comp.nus.edu.sg"
-    
-niyati:
-  - image_path: /assets/images/people/niyati.jpg
-    excerpt: "**Niyati Chhaya**"
-    url: "https://research.adobe.com/person/niyati-chhaya/"
-    
-newton:
-  - image_path: /assets/images/people/newton.jpg
-    excerpt: "**Newton Howard**"
-    url: "https://www.nds.ox.ac.uk/team/newton-howard"
-   
-rajiv:
-  - image_path: /assets/images/people/rajiv.jpg
-    excerpt: "**Rajiv Ratn Shah**"
-    url: "https://www.iiitd.edu.in/~rajivratn/"
-     
+toc: false
+classes: wide
 ---
 
-We have an amazing team of researchers comprising PhD Students, Senior Researchers, and Collaborators at the DeCLaRe Lab. If you want to join DeCLaRe Lab, please email any of our team members.
+<section class="page-lead page-lead--compact">
+  <p>We work across multimodal AI, reasoning, generative modeling, embodied intelligence, affective computing, and responsible AI.</p>
+  <div class="page-chip-strip" aria-label="People sections">
+    <a href="#faculty">Faculty</a>
+    <a href="#research-scientists">Research Scientists</a>
+    <a href="#phd-students">PhD Students</a>
+    <a href="#research-assistants">Research Assistants</a>
+    <a href="#alumni">Alumni</a>
+  </div>
+</section>
 
-![image-center](/assets/images/resources/team.jpg){: .width-paper-image-100 .align-center}
+![DeCLaRe Lab team](/assets/images/resources/team.jpg){: .team-photo}
 
-## Principal Investigator
+<h2 id="faculty">Faculty</h2>
 
-* [**Soujanya Poria**](https://people.sutd.edu.sg/~sporia/)
+<div class="people-grid people-grid--featured">
+  <article class="person-card">
+    <img src="/assets/images/people/soujanya.JPG" alt="Soujanya Poria">
+    <div>
+      <h3>Soujanya Poria</h3>
+      <p>Principal Investigator · Multimodal AI, reasoning, affective computing, responsible AI</p>
+      <div class="person-links">
+        <a href="https://soujanyaporia.github.io/">Website</a>
+        <a href="https://scholar.google.co.in/citations?hl=en&user=oS6gRc4AAAAJ&view_op=list_works&sortby=pubdate">Scholar</a>
+        <a href="mailto:soujanya.poria@ntu.edu.sg">Email</a>
+      </div>
+    </div>
+  </article>
+</div>
 
-## Research Staff
+<h2 id="research-scientists">Research Scientists</h2>
 
-* [**Navonil Majumder**](https://scholar.google.com/citations?user=jPfEvuQAAAAJ&hl=en&oi=ao)
-* [**Ambuj Mehrish**](https://www.linkedin.com/in/ambuj-mehrish-159a0417b/)
-* [**Qi Sun**](https://scholar.google.com/citations?user=GpH4vXwAAAAJ)
-* [**Rishabh Bhardwaj**](https://scholar.google.com/citations?user=nomHn1sAAAAJ&hl=en)
-* [**Shang Hong**](https://scholar.google.com/citations?user=Oh-S7jsAAAAJ&hl=en)
+<div class="people-grid">
+  <article class="person-card">
+    <img src="/assets/images/people/suorong-yang.png" alt="Suorong Yang">
+    <div><h3>Suorong Yang</h3><p>Data-centric AI, AI4Sci, trustworthy AI, reasoning models</p><div class="person-links"><a href="https://suorongyang.github.io/">Website</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/rishabh-bhardwaj.png" alt="Rishabh Bhardwaj">
+    <div><h3>Rishabh Bhardwaj</h3><p>AI safety</p><div class="person-links"><a href="https://www.rishabhbhardwaj.info/">Website</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/navonil-majumder.png" alt="Navonil Majumder">
+    <div><h3>Navonil Majumder</h3><p>Multimodal learning, dialogue, generative AI</p><div class="person-links"><a href="https://scholar.google.com/citations?user=jPfEvuQAAAAJ&hl=en&oi=ao">Scholar</a></div></div>
+  </article>
+</div>
 
-## Ph.D. Students
+<h2 id="phd-students">PhD Students</h2>
 
-* [**Maojia Song**](https://scholar.google.com/citations?user=J1cg8fIAAAAJ&hl=zh-CN)
-* [**Vernon Toh**](https://scholar.google.com/citations?user=ZUPDabgAAAAJ&hl=en)
-* [**Weisheng Jin**](https://scholar.google.com/citations?user=6ycWC-cAAAAJ&hl=en)
-* [**Javid Akhtar**](https://www.linkedin.com/in/jaavid-aktar-7481451bb/)
-* [**Chia Yu**](https://github.com/hungchiayu1)
-* [**Pala Tej Deep**](https://github.com/Tej-Deep)
+<div class="people-grid">
+  <article class="person-card">
+    <img src="/assets/images/people/jingdi-lei.jpg" alt="Jingdi Lei">
+    <div><h3>Jingdi Lei</h3><p>LLMs, post-training</p><div class="person-links"><a href="https://kyrielei.github.io/">Website</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/hung-chia-yu.jpg" alt="Hung Chia-Yu">
+    <div><h3>Hung Chia-Yu</h3><p>Multimodal generation, vision-language-action models, world models</p><div class="person-links"><a href="https://hungchiayu1.github.io/">Website</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/nithish-selvaraj.png" alt="Nithish Selvaraj">
+    <div><h3>Nithish Selvaraj</h3><p>Multi-agent systems</p><div class="person-links"><a href="https://scholar.google.com/citations?user=L2QSO1wAAAAJ&hl=en">Scholar</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/liu-renhang.png" alt="Liu Renhang">
+    <div><h3>Liu Renhang</h3><p>Generative models, world modelling for robotics</p><div class="person-links"><a href="https://scholar.google.com/citations?user=naBGDfIAAAAJ&hl=en">Scholar</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/varun-gumma.jpg" alt="Varun Gumma">
+    <div><h3>Varun Gumma</h3><p>LLMs, reinforcement learning, efficiency, reasoning and modelling</p><div class="person-links"><a href="https://varungumma.netlify.app/">Website</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/vernon.jpeg" alt="Vernon Toh">
+    <div><h3>Vernon Toh</h3><p>Reasoning and prompt augmentation</p><div class="person-links"><a href="https://scholar.google.com/citations?user=ZUPDabgAAAAJ&hl=en">Scholar</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/tej-deep-pala.jpg" alt="Tej Deep Pala">
+    <div><h3>Tej Deep Pala</h3><p>LLM reasoning, reinforcement learning, multi-agent systems</p><div class="person-links"><a href="https://tej-deep.github.io">Website</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/maojia-song.png" alt="Maojia Song">
+    <div><h3>Maojia Song</h3><p>Adaptive intelligence, foundation agents, multimodal interaction, embodied AI</p><div class="person-links"><a href="https://maojiasong.github.io/">Website</a></div></div>
+  </article>
+</div>
 
-## Former PhD Students
+<h2 id="research-assistants">Research Assistants</h2>
 
-* [**Deepanway Ghosal**](https://deepanwayx.github.io/) (Now at Deepmind)
-* [**Chia Yew Ken**](http://chiayewken.herokuapp.com/) (Now at Alibaba)
-* [**Hui Chen**](https://chchenhui.github.io/) (Now postdoc at NUS)
-* [**Devamanyu Hazarika**](http://devamanyu.com) (Now at Meta, Ex-Amazon)
-* [**Rishabh Bhardwaj**](https://scholar.google.com/citations?user=nomHn1sAAAAJ&hl=en) (Founder of Walled AI)
-* [**Wei Han**](https://github.com/Clement25) (Now at Huawei)
-* [**Pengfei Hong**](https://github.com/Emrys-Hong)
+<div class="people-grid">
+  <article class="person-card">
+    <img src="/assets/images/people/soumitra-sinhahajari.jpg" alt="Soumitra Sinhahajari">
+    <div><h3>Soumitra Sinhahajari</h3><p>Reinforcement learning, LLM reasoning, multi-agent systems</p><div class="person-links"><a href="https://scholar.google.com/citations?user=p4RW1qkAAAAJ&hl=en">Scholar</a></div></div>
+  </article>
+</div>
 
-## Former Masters Students and Research Staff
+<h2 id="alumni">Alumni</h2>
 
-* [**Bryan Chew**](https://www.linkedin.com/in/bchewlj/?originalSubdomain=sg)
-* [**Samson Yu**](https://samsonyubaijian.github.io) (Now RA at NUS)
-* [**Yi Xuan Tan**](https://sg.linkedin.com/in/yi-xuan-tan-41b64617a)
-* [**Rima Hazra**](https://www.linkedin.com/in/rimahazra93)
-* [**Jiankun Lu**](https://www.linkedin.com/in/jiankun-lu-314b38150/) (Now at Apple)
-* [**Shanshan Peng**](https://www.linkedin.com/in/shanshan-peng-a9b674146/) (Now at Apple)
-* [**Joanna Saw**](https://www.linkedin.com/in/joannasaw/)
-* [**Yingting Li**](https://www.linkedin.com/in/yingting-li-a598481b8)
-* [**Yang Xiaocui**](https://yangxiaocui1215.github.io)
-* [**Shaozuo Zhang**](https://sg.linkedin.com/in/shaozuo-zhang-233a7b195)
+<div class="people-grid">
+  <article class="person-card">
+    <img src="/assets/images/people/ambuj.jpeg" alt="Ambuj Mehrish">
+    <div><h3>Ambuj Mehrish</h3><p>Alumnus · Now at Ca’ Foscari University of Venice</p><div class="person-links"><a href="https://www.linkedin.com/in/ambuj-mehrish-159a0417b/">Profile</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/qi.jpg" alt="Qi Sun">
+    <div><h3>Qi Sun</h3><p>Alumnus · Now at Alibaba</p><div class="person-links"><a href="https://scholar.google.com/citations?user=GpH4vXwAAAAJ">Scholar</a></div></div>
+  </article>
+  <article class="person-card">
+    <div class="person-avatar" aria-hidden="true">WJ</div>
+    <div><h3>Weisheng Jin</h3><p>Alumnus</p><div class="person-links"><a href="https://scholar.google.com/citations?user=6ycWC-cAAAAJ&hl=en">Scholar</a></div></div>
+  </article>
+  <article class="person-card">
+    <div class="person-avatar" aria-hidden="true">JA</div>
+    <div><h3>Javid Akhtar</h3><p>Alumnus</p><div class="person-links"><a href="https://www.linkedin.com/in/jaavid-aktar-7481451bb/">Profile</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/deepanway.jpeg" alt="Deepanway Ghosal">
+    <div><h3>Deepanway Ghosal</h3><p>Former PhD student · Now at DeepMind</p><div class="person-links"><a href="https://deepanwayx.github.io/">Website</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/ken.jpg" alt="Chia Yew Ken">
+    <div><h3>Chia Yew Ken</h3><p>Former PhD student · Now at Alibaba</p><div class="person-links"><a href="http://chiayewken.herokuapp.com/">Website</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/hui_chen.jpg" alt="Hui Chen">
+    <div><h3>Hui Chen</h3><p>Former PhD student · Now postdoc at NUS</p><div class="person-links"><a href="https://chchenhui.github.io/">Website</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/devamanyu.jpg" alt="Devamanyu Hazarika">
+    <div><h3>Devamanyu Hazarika</h3><p>Former PhD student · Now at Meta</p><div class="person-links"><a href="http://devamanyu.com">Website</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/henryhan.jpeg" alt="Wei Han">
+    <div><h3>Wei Han</h3><p>Former PhD student · Now at Huawei</p><div class="person-links"><a href="https://github.com/Clement25">GitHub</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/hongpengfei.jpg" alt="Pengfei Hong">
+    <div><h3>Pengfei Hong</h3><p>Former PhD student</p><div class="person-links"><a href="https://github.com/Emrys-Hong">GitHub</a></div></div>
+  </article>
+</div>
