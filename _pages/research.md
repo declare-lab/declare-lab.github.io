@@ -56,6 +56,43 @@ classes: wide
         <p class="project-team">Team: Safety and alignment group</p>
       </div>
     </article>
+    <article class="project-card">
+      <img src="/assets/images/research/resta.png" alt="RESTA safety realignment figure">
+      <div class="project-card__body">
+        <span class="project-tag">Safety Re-Alignment</span>
+        <h3>RESTA</h3>
+        <p>Restoring safety in fine-tuned language models through task arithmetic while retaining downstream task capability.</p>
+        <div class="project-links">
+          <a href="https://aclanthology.org/2024.acl-long.762">Paper</a>
+          <a href="https://github.com/declare-lab/resta">Code</a>
+        </div>
+        <p class="project-team">Team: Rishabh Bhardwaj, Do Duc Anh, Soujanya Poria</p>
+      </div>
+    </article>
+    <article class="project-card">
+      <img src="/assets/images/research/chain-utterances.png" alt="Chain of Utterances red-teaming figure">
+      <div class="project-card__body">
+        <span class="project-tag">Red-Teaming</span>
+        <h3>Chain of Utterances</h3>
+        <p>RED-EVAL and Chain-of-Utterances prompting for probing harmful behavior and studying safety alignment in LLMs.</p>
+        <div class="project-links">
+          <a href="https://arxiv.org/abs/2308.09662">Paper</a>
+        </div>
+        <p class="project-team">Team: Safety and dialogue systems group</p>
+      </div>
+    </article>
+    <article class="project-card">
+      <img src="/assets/images/research/gender-bias-bert.png" alt="Gender bias probing figure for BERT">
+      <div class="project-card__body">
+        <span class="project-tag">Bias Analysis</span>
+        <h3>Gender Bias in BERT</h3>
+        <p>A highly cited analysis of gender bias encoded in contextualized language representations.</p>
+        <div class="project-links">
+          <a href="https://doi.org/10.1007/s12559-021-09881-2">Paper</a>
+        </div>
+        <p class="project-team">Team: Bias and responsible AI collaborators</p>
+      </div>
+    </article>
   </div>
 </div>
 
@@ -82,6 +119,19 @@ classes: wide
           <a href="https://github.com/declare-lab/trust-align">Code</a>
         </div>
         <p class="project-team">Team: Maojia Song, Shang Hong Sim, Rishabh Bhardwaj, Hai Leong Chieu, Navonil Majumder, Soujanya Poria</p>
+      </div>
+    </article>
+    <article class="project-card">
+      <img src="/assets/images/research/chain-knowledge.png" alt="Chain-of-Knowledge framework figure">
+      <div class="project-card__body">
+        <span class="project-tag">Grounded Generation</span>
+        <h3>Chain-of-Knowledge</h3>
+        <p>A highly cited framework for grounding LLM generation through dynamic knowledge adaptation over heterogeneous sources.</p>
+        <div class="project-links">
+          <a href="https://proceedings.iclr.cc/paper_files/paper/2024/hash/285ba60a67a66d2efeeb7cb25c5067fe-Abstract-Conference.html">Paper</a>
+          <a href="https://openreview.net/pdf?id=cPgh4gWZlz">PDF</a>
+        </div>
+        <p class="project-team">Team: Xiang Lisa Li, Ruochen Zhao, Yew Ken Chia, Bosheng Ding, Shafiq Joty, Soujanya Poria, Lidong Bing</p>
       </div>
     </article>
     <article class="project-card">
@@ -136,6 +186,19 @@ classes: wide
           <a href="https://dl.acm.org/doi/10.1145/3394171.3413678">MISA</a>
         </div>
         <p class="project-team">Team: Multimodal learning group</p>
+      </div>
+    </article>
+    <article class="project-card">
+      <img src="/assets/images/research/tangoflux.png" alt="TangoFlux training pipeline figure">
+      <div class="project-card__body">
+        <span class="project-tag">Audio Generation</span>
+        <h3>Tango and TangoFlux</h3>
+        <p>Text-to-audio generation research spanning diffusion-based audio synthesis and fast preference-optimized flow matching.</p>
+        <div class="project-links">
+          <a href="https://doi.org/10.1145/3581783.3612348">Tango</a>
+          <a href="https://arxiv.org/abs/2412.21037">TangoFlux</a>
+        </div>
+        <p class="project-team">Team: Audio, speech, and generative AI group</p>
       </div>
     </article>
   </div>
@@ -202,6 +265,30 @@ classes: wide
           <a href="https://arxiv.org/abs/2603.07433">Paper</a>
         </div>
         <p class="project-team">Team: Suorong Yang, Fangjian Su, Hai Gan, Ziqi Ye, Jie Li, Baile Xu, Furao Shen, Soujanya Poria</p>
+      </div>
+    </article>
+    <article class="project-card">
+      <img src="/assets/images/research/della-merging.png" alt="DELLA-Merging method figure">
+      <div class="project-card__body">
+        <span class="project-tag">Model Merging</span>
+        <h3>DELLA-Merging</h3>
+        <p>Magnitude-based sampling for reducing interference when merging task-specialized language models.</p>
+        <div class="project-links">
+          <a href="https://arxiv.org/abs/2406.11617">Paper</a>
+        </div>
+        <p class="project-team">Team: Prateek Yadav Deep, Rishabh Bhardwaj, Soujanya Poria</p>
+      </div>
+    </article>
+    <article class="project-card">
+      <img src="/assets/images/research/efla.png" alt="EFLA linear attention figure">
+      <div class="project-card__body">
+        <span class="project-tag">Linear Attention</span>
+        <h3>EFLA</h3>
+        <p>Error-Free Linear Attention derives an exact continuous-time solution for robust long-context computation.</p>
+        <div class="project-links">
+          <a href="https://arxiv.org/abs/2512.12602">Paper</a>
+        </div>
+        <p class="project-team">Team: Jingdi Lei, Dong Zhang, Soujanya Poria</p>
       </div>
     </article>
     <article class="project-card">

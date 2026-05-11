@@ -467,6 +467,99 @@
   font-size: 0.78rem !important;
 }
 
+.content-text .representative-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.content-text .representative-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 330px;
+  overflow: hidden;
+  border: 1px solid var(--declare-line);
+  border-radius: 8px;
+  background: var(--bg-card);
+  box-shadow: 0 10px 28px rgba(17, 24, 39, 0.05);
+}
+
+.content-text .representative-card__head {
+  padding: 1rem;
+  border-bottom: 1px solid var(--declare-line);
+  background:
+    linear-gradient(135deg, rgba(36, 87, 166, 0.08), rgba(8, 127, 122, 0.06)),
+    var(--bg-card);
+}
+
+.content-text .representative-card--safety .representative-card__head {
+  background: linear-gradient(135deg, rgba(194, 58, 120, 0.12), rgba(36, 87, 166, 0.06)), var(--bg-card);
+}
+
+.content-text .representative-card--trust .representative-card__head,
+.content-text .representative-card--science .representative-card__head {
+  background: linear-gradient(135deg, rgba(8, 127, 122, 0.12), rgba(36, 87, 166, 0.06)), var(--bg-card);
+}
+
+.content-text .representative-card--efficiency .representative-card__head {
+  background: linear-gradient(135deg, rgba(138, 90, 0, 0.12), rgba(36, 87, 166, 0.06)), var(--bg-card);
+}
+
+.content-text .representative-card h3 {
+  margin: 0.55rem 0 0.45rem;
+  color: var(--declare-ink);
+  font-size: 1.08rem;
+  line-height: 1.25;
+}
+
+.content-text .representative-card p {
+  margin: 0;
+  color: var(--declare-muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.content-text .representative-list {
+  display: grid;
+  align-content: start;
+}
+
+.content-text .representative-list a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.75rem;
+  align-items: baseline;
+  min-height: 58px;
+  padding: 0.72rem 1rem;
+  border-bottom: 1px solid var(--declare-line);
+  color: var(--declare-ink);
+  text-decoration: none;
+}
+
+.content-text .representative-list a:last-child {
+  border-bottom: 0;
+}
+
+.content-text .representative-list a:hover {
+  background: var(--declare-soft);
+  color: var(--declare-blue-dark);
+  text-decoration: none;
+}
+
+.content-text .representative-list strong {
+  font-size: 0.92rem;
+  line-height: 1.3;
+}
+
+.content-text .representative-list span {
+  color: var(--declare-muted);
+  font-size: 0.74rem;
+  font-weight: 800;
+  line-height: 1.25;
+  text-align: right;
+  white-space: nowrap;
+}
+
 .content-text .highlight-list,
 .content-text .publication-list--compact {
   display: grid;
@@ -517,19 +610,22 @@
 
 .content-text .funding-list {
   display: grid;
-  gap: 0;
-  border-top: 1px solid var(--declare-line);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
 }
 
 .content-text .funding-list article {
-  display: grid;
-  grid-template-columns: minmax(190px, 0.32fr) minmax(0, 1fr);
-  gap: 1rem;
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--declare-line);
+  min-height: 190px;
+  padding: 1rem;
+  border: 1px solid var(--declare-line);
+  border-radius: 8px;
+  background: var(--bg-card);
+  box-shadow: 0 10px 28px rgba(17, 24, 39, 0.05);
 }
 
 .content-text .funding-list span {
+  display: block;
+  margin-bottom: 0.75rem;
   color: var(--declare-teal);
   font-size: 0.72rem;
   font-weight: 850;
@@ -541,7 +637,7 @@
 .content-text .funding-list h3 {
   margin: 0 0 0.25rem;
   color: var(--declare-ink);
-  font-size: 1.02rem;
+  font-size: 1.05rem;
   line-height: 1.28;
 }
 
@@ -1450,8 +1546,10 @@
   }
 
   .content-text .project-grid--featured,
+  .content-text .representative-grid,
   .content-text .pillar-grid,
   .content-text .project-grid,
+  .content-text .funding-list,
   .content-text .opportunity-grid,
   .content-text .notes-grid,
   .content-text .publication-tools {
@@ -1501,9 +1599,11 @@
   }
 
   .content-text .project-grid--featured,
+  .content-text .representative-grid,
   .content-text .pillar-grid,
   .content-text .project-grid,
   .content-text .people-grid,
+  .content-text .funding-list,
   .content-text .opportunity-grid,
   .content-text .notes-grid,
   .content-text .publication-tools,
@@ -1522,8 +1622,7 @@
   .content-text .timeline article,
   .content-text .updates-year,
   .content-text .update-entry,
-  .content-text .update-card,
-  .content-text .funding-list article {
+  .content-text .update-card {
     grid-template-columns: 1fr;
   }
 

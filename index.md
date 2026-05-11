@@ -117,77 +117,83 @@ title: ""
     </div>
     <a class="btn-secondary" href="/research/">All research</a>
   </div>
-  <div class="project-grid project-grid--featured">
-    <article class="project-card project-card--large">
-      <img src="/assets/images/logos/jailbreakprompt_main_paper.png" alt="Safety evaluation visual">
-      <div class="project-card__body">
+  <div class="representative-grid">
+    <article class="representative-card representative-card--safety">
+      <div class="representative-card__head">
         <span class="project-tag">Safety</span>
-        <h3>OffTopicEval and Safety Arithmetic</h3>
-        <p>Evaluation and intervention methods for task-boundary violations, refusal behavior, and test-time safety alignment in language models.</p>
-        <div class="project-links">
-          <a href="https://arxiv.org/abs/2509.26495">OffTopicEval</a>
-          <a href="https://aclanthology.org/2024.emnlp-main.1212/">Safety Arithmetic</a>
-        </div>
+        <h3>Safety, red-teaming, and bias</h3>
+        <p>From operational safety and jailbreak evaluation to realignment and bias analysis.</p>
+      </div>
+      <div class="representative-list">
+        <a href="https://arxiv.org/abs/2509.26495"><strong>OffTopicEval</strong><span>ICLR 2026</span></a>
+        <a href="https://aclanthology.org/2024.acl-long.762"><strong>RESTA / Safety Re-Alignment</strong><span>ACL 2024</span></a>
+        <a href="https://arxiv.org/abs/2308.09662"><strong>Chain of Utterances</strong><span>Red-teaming LLMs</span></a>
+        <a href="https://doi.org/10.1007/s12559-021-09881-2"><strong>Gender Bias in BERT</strong><span>Cognitive Computation</span></a>
       </div>
     </article>
-    <article class="project-card project-card--large">
-      <img src="/assets/images/research/qa2.png" alt="Trustworthy RAG visual">
-      <div class="project-card__body">
+
+    <article class="representative-card representative-card--trust">
+      <div class="representative-card__head">
         <span class="project-tag">Trustworthiness</span>
-        <h3>Trust-Score and Trust-Align</h3>
-        <p>Metrics and alignment methods for grounded attribution, citation quality, and refusal in retrieval-augmented generation.</p>
-        <div class="project-links">
-          <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/4c88827decab6c046b881a2c3a99c76f-Abstract-Conference.html">Paper</a>
-          <a href="https://github.com/declare-lab/trust-align">Code</a>
-        </div>
+        <h3>Grounding, attribution, and refusal</h3>
+        <p>Methods that improve factuality, citation quality, and reliability in knowledge-intensive generation.</p>
+      </div>
+      <div class="representative-list">
+        <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/4c88827decab6c046b881a2c3a99c76f-Abstract-Conference.html"><strong>Trust-Score and Trust-Align</strong><span>ICLR 2025</span></a>
+        <a href="https://proceedings.iclr.cc/paper_files/paper/2024/hash/285ba60a67a66d2efeeb7cb25c5067fe-Abstract-Conference.html"><strong>Chain-of-Knowledge</strong><span>ICLR 2024</span></a>
+        <a href="/publications/?topic=RAG"><strong>Retrieval-aware reasoning</strong><span>RAG publications</span></a>
       </div>
     </article>
-    <article class="project-card">
-      <img src="/assets/images/resources/meld.png" alt="Multimodal dataset visual">
-      <div class="project-card__body">
+
+    <article class="representative-card representative-card--multimodal">
+      <div class="representative-card__head">
         <span class="project-tag">Multimodality</span>
-        <h3>MELD, TFN, MISA, DialogueRNN</h3>
-        <p>Foundational datasets and models for multimodal emotion, sentiment, fusion, and conversational understanding.</p>
-        <div class="project-links">
-          <a href="https://aclanthology.org/P19-1050/">MELD</a>
-          <a href="https://aclanthology.org/D17-1115/">TFN</a>
-        </div>
+        <h3>Multimodal understanding and generation</h3>
+        <p>Long-running work on multimodal emotion, fusion, and text-to-audio generation.</p>
+      </div>
+      <div class="representative-list">
+        <a href="https://aclanthology.org/P19-1050/"><strong>MELD</strong><span>ACL 2019</span></a>
+        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/4657"><strong>DialogueRNN</strong><span>AAAI 2019</span></a>
+        <a href="https://aclanthology.org/D17-1115/"><strong>TFN</strong><span>EMNLP 2017</span></a>
+        <a href="https://arxiv.org/abs/2412.21037"><strong>TangoFlux</strong><span>ICLR 2026</span></a>
       </div>
     </article>
-    <article class="project-card">
-      <img src="/assets/images/research/moose-chem.png" alt="MOOSE-Chem visual">
-      <div class="project-card__body">
+
+    <article class="representative-card representative-card--science">
+      <div class="representative-card__head">
         <span class="project-tag">AI for Science</span>
-        <h3>MOOSE-Chem</h3>
-        <p>A benchmark and framework for studying LLM-based rediscovery of chemistry hypotheses from scientific literature.</p>
-        <div class="project-links">
-          <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/51fd9a7d1706023cb9f8210cc6ac357c-Abstract-Conference.html">Paper</a>
-        </div>
+        <h3>Scientific hypothesis discovery</h3>
+        <p>LLM systems for rediscovering and proposing scientific hypotheses from literature.</p>
+      </div>
+      <div class="representative-list">
+        <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/51fd9a7d1706023cb9f8210cc6ac357c-Abstract-Conference.html"><strong>MOOSE-Chem</strong><span>ICLR 2025</span></a>
+        <a href="https://aclanthology.org/2024.findings-acl.804"><strong>Open-domain hypotheses</strong><span>ACL Findings 2024</span></a>
       </div>
     </article>
-    <article class="project-card">
-      <img src="/assets/images/research/data-agent.png" alt="Data Agent visual">
-      <div class="project-card__body">
+
+    <article class="representative-card representative-card--efficiency">
+      <div class="representative-card__head">
         <span class="project-tag">Efficiency</span>
-        <h3>Data Agent</h3>
-        <p>End-to-end dynamic data selection for learning sample-wise policies that improve training efficiency.</p>
-        <div class="project-links">
-          <a href="https://arxiv.org/abs/2603.07433">Paper</a>
-          <a href="/publications/?q=efficient">Related work</a>
-        </div>
+        <h3>Efficient training, merging, and attention</h3>
+        <p>Methods for cheaper adaptation, model merging, data selection, and long-context computation.</p>
+      </div>
+      <div class="representative-list">
+        <a href="https://arxiv.org/abs/2603.07433"><strong>Data Agent</strong><span>ICML 2026</span></a>
+        <a href="https://arxiv.org/abs/2406.11617"><strong>DELLA-Merging</strong><span>Model merging</span></a>
+        <a href="https://arxiv.org/abs/2512.12602"><strong>EFLA</strong><span>Error-free linear attention</span></a>
       </div>
     </article>
-    <article class="project-card">
-      <img src="/assets/images/nora-1.5-arxiv-teaser.png" alt="NORA embodied AI teaser">
-      <div class="project-card__body">
+
+    <article class="representative-card representative-card--embodied">
+      <div class="representative-card__head">
         <span class="project-tag">Embodied AI</span>
-        <h3>NORA and NORA 1.5</h3>
-        <p>Compact vision-language-action models and reward-guided post-training for embodied tasks.</p>
-        <div class="project-links">
-          <a href="https://arxiv.org/abs/2504.19854">Paper</a>
-          <a href="/nora.html">Project</a>
-          <a href="/nora-1.5.html">NORA 1.5</a>
-        </div>
+        <h3>Vision-language-action models</h3>
+        <p>Compact embodied models and reward-guided post-training for perception-to-action systems.</p>
+      </div>
+      <div class="representative-list">
+        <a href="https://arxiv.org/abs/2504.19854"><strong>NORA</strong><span>Generalist VLA model</span></a>
+        <a href="https://arxiv.org/abs/2511.14659"><strong>NORA 1.5</strong><span>World-model rewards</span></a>
+        <a href="/nora.html"><strong>Project page</strong><span>Interactive overview</span></a>
       </div>
     </article>
   </div>
