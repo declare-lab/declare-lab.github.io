@@ -170,8 +170,13 @@
   content: "";
   position: absolute;
   inset: 12%;
-  border: 1px dashed rgba(36, 87, 166, 0.32);
+  border: 2px dashed var(--declare-blue);
   border-radius: 50%;
+  opacity: 0.6;
+}
+
+[data-theme="dark"] .content-text .research-map::before {
+  border-color: var(--declare-teal);
 }
 
 .content-text .research-map__logo {
