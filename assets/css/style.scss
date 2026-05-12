@@ -417,6 +417,26 @@ strong { font-weight: 600; }
   align-items: center;
 }
 
+.declare-hero .hero-actions {
+  gap: 0.52em;
+  flex-wrap: nowrap;
+}
+
+.hero-actions a {
+  gap: 0.48em;
+}
+
+.declare-hero .hero-actions a {
+  padding: 0.52em 0.72em;
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+
+.hero-actions i {
+  font-size: 0.95em;
+  line-height: 1;
+}
+
 .hero-actions a[href^="#"]::after {
   content: "↓";
   font-size: 0.95em;
@@ -474,6 +494,12 @@ strong { font-weight: 600; }
   border-color: var(--accent);
   background: var(--accent-light);
   text-decoration: none;
+}
+
+@media (max-width: 860px) {
+  .declare-hero .hero-actions {
+    flex-wrap: wrap;
+  }
 }
 
 .intro-panel {
