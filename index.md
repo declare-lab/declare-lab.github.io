@@ -36,11 +36,10 @@ title: ""
 <nav class="home-index" aria-label="Homepage sections">
   <div class="home-index__links">
     <a href="#about">About</a>
-    <a href="#logo">Logo</a>
+    <a href="#lab-identity">Lab's Identity</a>
     <a href="#research-areas">Research Areas</a>
     <a href="#representative-work">Representative Work</a>
     <a href="#hot-papers">Hot Papers 🔥</a>
-    <a href="#funded-projects">Funded Projects</a>
   </div>
 </nav>
 
@@ -55,9 +54,9 @@ title: ""
   </div>
 </section>
 
-<section class="logo-story" id="logo">
+<section class="logo-story" id="lab-identity">
   <div>
-    <p class="work-kicker">Lab identity</p>
+    <p class="work-kicker">Lab's identity</p>
     <h2>The meaning behind the DeCLaRe logo</h2>
     <p>The robot-like structure recalls an old computer and illustrates DeCLaRe in Mandarin. The colored eyes point to the lab's interest in machines that understand affect: the logo frames cognition and language as ways to infuse machines with richer emotional and social understanding.</p>
   </div>
@@ -242,14 +241,14 @@ title: ""
   </div>
 </section>
 
-<section class="declare-section funded-projects" id="funded-projects">
+<section class="declare-section funded-projects" id="research-support">
   <div class="declare-section__header">
     <div>
       <p class="work-kicker">Research support</p>
-      <h2>Funded Projects</h2>
-      <p class="section-note">Current and recent research support.</p>
+      <h2>Funded Research Directions</h2>
+      <p class="section-note">A brief view of major active support. The full grant record is maintained separately.</p>
     </div>
-    <a class="btn-secondary" href="/join/">Join the lab</a>
+    <a class="btn-secondary" href="/funded-projects/">View funded projects</a>
   </div>
   <div class="funding-list">
     <article>
@@ -263,24 +262,9 @@ title: ""
       <p>S$1.5M support for vision-language-action models, action grounding, and embodied evaluation.</p>
     </article>
     <article>
-      <span>Google DeepMind · 2026</span>
-      <h3>Google DeepMind GCP Grant</h3>
-      <p>S$100K compute support for large-scale language, multimodal, and agentic AI research.</p>
-    </article>
-    <article>
-      <span>Meta · 2025</span>
-      <h3>Meta Audiobox Research Grant</h3>
-      <p>S$70K support for audio generation and multimodal generative modeling research.</p>
-    </article>
-    <article>
       <span>DSO · 2023-2026</span>
-      <h3>Prevent Hallucination in LLMs</h3>
-      <p>S$800K support for grounded, reliable, and trustworthy language model generation.</p>
-    </article>
-    <article>
-      <span>AI Singapore · 2024-2026</span>
-      <h3>AI Governance Grant</h3>
-      <p>S$500K support for responsible AI, governance, and evaluation of deployed AI systems.</p>
+      <h3>Detecting, Measuring and Mitigating Hallucinations in LLMs</h3>
+      <p>S$600K support for grounded, reliable, and trustworthy language model generation.</p>
     </article>
   </div>
 </section>
