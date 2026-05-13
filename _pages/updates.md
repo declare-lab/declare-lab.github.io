@@ -13,6 +13,18 @@ classes: wide
 </section>
 
 <section class="updates-feed">
+  <article class="update-card update-card--paper">
+    <div class="update-card__meta">
+      <span>Paper</span>
+      <time>May 2026</time>
+    </div>
+    <div class="update-card__body">
+      <h3>δ-mem introduces lightweight online memory for LLMs</h3>
+      <p>The new arXiv paper studies how a compact online memory state can evolve during interaction and directly modulate Transformer attention without extending the explicit context.</p>
+      <a href="/lab-notes/delta-mem/">Read the lab note</a>
+    </div>
+  </article>
+
   <article class="update-card update-card--grant">
     <div class="update-card__meta">
       <span>Grant</span>

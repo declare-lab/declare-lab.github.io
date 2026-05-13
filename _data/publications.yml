@@ -2,6 +2,29 @@
 # Fields: title, authors, venue, year
 # Optional: publication_url, scholar_url, pdf, abstract, code, project, categories
 
+- title: 'δ-mem: Efficient Online Memory for Large Language Models'
+  authors: "J Lei, D Zhang, J Li, W Wang, K Fan, X Liu, Q Liu, X Ma, B Chen, S Poria"
+  venue: 'arXiv preprint arXiv:2605.12357'
+  year: 2026
+  scholar_url: 'https://scholar.google.com/scholar?q=delta-mem%3A+Efficient+Online+Memory+for+Large+Language+Models'
+  publication_url: 'https://arxiv.org/abs/2605.12357'
+  pdf: 'https://arxiv.org/pdf/2605.12357'
+  categories:
+    - 'ML Efficiency'
+    - 'Reasoning'
+    - 'Long Context'
+  abstract: |
+    Large language models increasingly need to accumulate and reuse historical information in long-term
+    assistants and agent systems. Simply expanding the context window is costly and often fails to
+    ensure effective context utilization. We propose δ-mem, a lightweight memory mechanism that augments
+    a frozen full-attention backbone with a compact online state of associative memory. δ-mem compresses
+    past information into a fixed-size state matrix updated by delta-rule learning, and uses its readout
+    to generate low-rank corrections to the backbone's attention computation during generation. With
+    only an 8 x 8 online memory state, δ-mem improves the average score to 1.10x that of the frozen
+    backbone and 1.15x that of the strongest non-δ-mem memory baseline. It achieves larger gains on
+    memory-heavy benchmarks, reaching 1.31x on MemoryAgentBench and 1.20x on LoCoMo, while largely
+    preserving general capabilities.
+
 - title: Tracking the Evolution of Multimodal Reasoning on Visual Puzzles
   authors: "V Toh, YK Chia, D Ghosal, S Poria"
   venue: Logical and Symbolic Reasoning in Language Models @ AAAI 2026
@@ -4868,4 +4891,3 @@
     named-entity features, and uses an SVM classifier with a set of lexical and structural features.
     Evaluation on the RTE-6 test sets reports micro-average F-scores for the submitted runs and provides
     detailed analysis for the main, novelty and KBP slot-filling validation tasks.
-

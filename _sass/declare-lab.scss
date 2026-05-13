@@ -354,6 +354,7 @@
 .content-text .pillar-card,
 .content-text .project-card,
 .content-text .person-card,
+.content-text .note-card-link,
 .content-text .opportunity-grid article,
 .content-text .opening-list article,
 .content-text .faq-list article,
@@ -448,23 +449,76 @@
   padding: 1rem;
 }
 
+.content-text .notes-grid article {
+  overflow: hidden;
+}
+
+.content-text .note-card-link {
+  display: block;
+  padding: 1rem;
+  color: var(--declare-ink);
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.content-text .note-card-link:hover {
+  border-color: rgba(36, 87, 166, 0.38);
+  color: var(--declare-ink);
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(17, 24, 39, 0.08);
+}
+
+.content-text .notes-grid img {
+  width: calc(100% + 2rem);
+  max-width: none;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin: -1rem -1rem 1rem;
+  border-bottom: 1px solid var(--declare-line);
+  background: var(--declare-soft);
+}
+
+.content-text .notes-grid .project-links {
+  margin-top: 0.9rem;
+}
+
 .content-text .project-links {
   margin-top: 0.85rem;
 }
 
 .content-text .project-links a,
+.content-text .project-links span,
 .content-text .person-links a,
 .content-text .publication-item__links a {
   display: inline-flex;
   align-items: center;
   min-height: 32px;
   padding: 0.32rem 0.55rem;
-  border: 1px solid var(--declare-line);
+  border: 1px solid rgba(36, 87, 166, 0.3);
   border-radius: 7px;
-  color: var(--declare-blue-dark);
+  background: rgba(36, 87, 166, 0.08);
+  color: var(--accent-hover);
   font-size: 0.78rem;
   font-weight: 800;
   text-decoration: none;
+}
+
+[data-theme="dark"] .content-text .project-links a,
+[data-theme="dark"] .content-text .project-links span,
+[data-theme="dark"] .content-text .person-links a,
+[data-theme="dark"] .content-text .publication-item__links a {
+  border-color: rgba(240, 92, 168, 0.36);
+  background: rgba(240, 92, 168, 0.14);
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .content-text .project-links a:hover,
+[data-theme="dark"] .content-text .person-links a:hover,
+[data-theme="dark"] .content-text .publication-item__links a:hover {
+  border-color: rgba(240, 92, 168, 0.62);
+  background: rgba(240, 92, 168, 0.24);
+  color: #fff;
 }
 
 .content-text .project-team {
@@ -1139,9 +1193,9 @@
   align-items: center;
   min-height: 32px;
   padding: 0.32rem 0.58rem;
-  border: 1px solid var(--accent);
+  border: 1px solid rgba(36, 87, 166, 0.42);
   border-radius: 7px;
-  background: var(--bg);
+  background: rgba(36, 87, 166, 0.08);
   color: var(--accent-hover);
   font-family: var(--font);
   font-size: 0.76rem;
@@ -1163,7 +1217,9 @@
 
 [data-theme="dark"] .content-text .pub-links a,
 [data-theme="dark"] .content-text .pub-abstract-toggle {
-  color: var(--text);
+  border-color: rgba(240, 92, 168, 0.36);
+  background: rgba(240, 92, 168, 0.14);
+  color: #f8fafc;
 }
 
 .content-text .pub-cats {
@@ -1462,6 +1518,80 @@
   color: var(--declare-muted);
 }
 
+.content-text .lab-note-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(380px, 1.05fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 1.2rem 0 2rem;
+  border-bottom: 1px solid var(--declare-line);
+}
+
+.content-text .lab-note-hero h1 {
+  margin: 0.3rem 0 0.7rem;
+  color: var(--declare-ink);
+  font-size: clamp(2.1rem, 4.5vw, 4rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.content-text .lab-note-hero p {
+  color: var(--declare-muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.content-text .note-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1rem 0;
+}
+
+.content-text .note-meta span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0.25rem 0.55rem;
+  border: 1px solid var(--declare-line);
+  border-radius: 7px;
+  background: var(--bg-card);
+  color: var(--declare-muted);
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.content-text .note-figure {
+  margin: 1.3rem 0 1.8rem;
+  overflow: hidden;
+  border: 1px solid var(--declare-line);
+  border-radius: 8px;
+  background: var(--bg-card);
+  box-shadow: 0 10px 28px rgba(17, 24, 39, 0.05);
+}
+
+.content-text .note-figure img {
+  display: block;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid var(--declare-line);
+}
+
+.content-text .note-figure figcaption {
+  padding: 0.75rem 0.9rem;
+  color: var(--declare-muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.content-text .note-figure--compact {
+  margin: 0;
+}
+
+.content-text .note-figure--small {
+  max-width: 860px;
+}
+
 .content-text .updates-board__aside {
   position: sticky;
   top: 5rem;
@@ -1539,6 +1669,7 @@
   .content-text .declare-hero,
   .content-text .declare-intro,
   .content-text .logo-story,
+  .content-text .lab-note-hero,
   .content-text .declare-split,
   .content-text .research-theme,
   .content-text .pub-layout,

@@ -177,6 +177,7 @@ title: ""
         <p>Methods for cheaper adaptation, model merging, data selection, and long-context computation.</p>
       </div>
       <div class="representative-list">
+        <a href="https://arxiv.org/abs/2605.12357"><strong>δ-mem</strong><span>arXiv 2026</span></a>
         <a href="https://arxiv.org/abs/2603.07433"><strong>Data Agent</strong><span>ICML 2026</span></a>
         <a href="https://arxiv.org/abs/2406.11617"><strong>DELLA-Merging</strong><span>Model merging</span></a>
         <a href="https://arxiv.org/abs/2512.12602"><strong>EFLA</strong><span>Error-free linear attention</span></a>
@@ -208,6 +209,11 @@ title: ""
     <a class="btn-secondary" href="/publications/">Publication archive</a>
   </div>
   <div class="hot-paper-list">
+    <article>
+      <span>arXiv 2026</span>
+      <h3>δ-mem: Efficient Online Memory for Large Language Models</h3>
+      <p>Lightweight online memory through a compact state directly coupled with attention.</p>
+    </article>
     <article>
       <span>ICLR 2026</span>
       <h3>OffTopicEval: When Large Language Models Enter the Wrong Chat, Almost Always!</h3>

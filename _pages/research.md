@@ -250,11 +250,24 @@ classes: wide
     <p>We build techniques that make training, adaptation, and inference cheaper without losing reliability or downstream performance.</p>
     <ul class="clean-list">
       <li>Dynamic data selection and data-efficient training</li>
-      <li>Adapters, distillation, token retention, and long-context methods</li>
+      <li>Online memory, adapters, distillation, token retention, and long-context methods</li>
       <li>Compact multimodal and embodied models for practical deployment</li>
     </ul>
   </div>
   <div class="project-grid">
+    <article class="project-card project-card--large">
+      <img src="/assets/images/lab-notes/delta-mem/architecture.png" alt="δ-mem online memory architecture">
+      <div class="project-card__body">
+        <span class="project-tag">Online Memory</span>
+        <h3>δ-mem</h3>
+        <p>A lightweight online memory mechanism that compresses history into a compact state and uses it to modulate frozen Transformer attention.</p>
+        <div class="project-links">
+          <a href="https://arxiv.org/abs/2605.12357">Paper</a>
+          <a href="/lab-notes/delta-mem/">Lab note</a>
+        </div>
+        <p class="project-team">Team: Jingdi Lei, Di Zhang, Junxian Li, Weida Wang, Kaixuan Fan, Xiang Liu, Qihan Liu, Xiaoteng Ma, Baian Chen, Soujanya Poria</p>
+      </div>
+    </article>
     <article class="project-card project-card--large">
       <img src="/assets/images/research/data-agent.png" alt="Data Agent visual">
       <div class="project-card__body">

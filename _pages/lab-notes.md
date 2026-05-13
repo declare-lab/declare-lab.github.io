@@ -9,11 +9,17 @@ classes: wide
 ---
 
 <section class="page-lead page-lead--compact">
-  <p>More coming soon. This page will host research explainers, benchmark notes, project retrospectives, and technical essays from the group.</p>
+  <p>Research explainers, benchmark notes, project retrospectives, and technical essays from DeCLaRe Lab.</p>
 </section>
 
-<section class="empty-state">
-  <p class="work-kicker">Coming Soon</p>
-  <h3>We are preparing the first set of lab notes</h3>
-  <p>Until then, please see the <a href="/publications/">publications archive</a> and <a href="/research/">research themes</a>.</p>
+<section class="notes-grid notes-grid--featured">
+  <a class="note-card-link" href="/lab-notes/delta-mem/">
+    <img src="/assets/images/lab-notes/delta-mem/architecture.png" alt="delta-mem architecture overview">
+    <span>Paper explainer · May 2026</span>
+    <h3>δ-mem: Efficient Online Memory for Large Language Models</h3>
+    <p>A note on why LLM memory should be more than long context, and how a compact online state can directly modulate attention.</p>
+    <div class="project-links">
+      <span>Read note</span>
+    </div>
+  </a>
 </section>
