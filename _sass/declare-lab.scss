@@ -1473,6 +1473,7 @@
 .content-text .update-card--paper .update-card__meta span { color: var(--declare-blue-dark); }
 .content-text .update-card--award .update-card__meta span { color: var(--declare-gold); }
 .content-text .update-card--release .update-card__meta span { color: var(--declare-rose); }
+.content-text .update-card--congratulation .update-card__meta span { color: var(--accent-hover); }
 
 [data-theme="dark"] .content-text .update-card--paper .update-card__meta span {
   color: var(--accent-hover);

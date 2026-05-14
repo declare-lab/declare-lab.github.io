@@ -13,6 +13,23 @@ classes: wide
 </section>
 
 <section class="updates-feed">
+  <article class="update-card update-card--congratulation">
+    <div class="update-card__meta">
+      <span>Congratulation</span>
+      <time>May 2026</time>
+    </div>
+    <div class="update-card__body">
+      <h3>DeCLaRe students begin research internships</h3>
+      <p>Congratulations to our students on beginning research internships with leading AI research teams.</p>
+      <ul>
+        <li>Jingdi Lei at Tencent</li>
+        <li>Ruiwen at MiniMax</li>
+        <li>Chia-Yu Hung at Meta's Super Intelligence Lab</li>
+        <li>Maojia Song at Meta's Super Intelligence Lab</li>
+      </ul>
+    </div>
+  </article>
+
   <article class="update-card update-card--paper">
     <div class="update-card__meta">
       <span>Paper</span>
