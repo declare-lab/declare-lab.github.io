@@ -1,0 +1,39 @@
+scope: "Publication archive, 2019 onward"
+total_papers: 166
+method_note: "Percentages summarize papers from 2019 onward; DeCLaRe members include current members and alumni."
+metrics:
+  - label: "Papers analyzed"
+    value: "166"
+    detail: "Publication archive, 2019 onward"
+  - label: "Average authors per paper"
+    value: "5.6"
+    detail: "Median: 5 authors"
+  - label: "DeCLaRe members per paper"
+    value: "2.4"
+    detail: "Current members and alumni; median: 2"
+edges:
+  - source: "DeCLaRe members"
+    target: "DeCLaRe members"
+    percent: 72
+    count: 120
+    takeaway: "Multiple DeCLaRe-affiliated authors appear on the same paper, counting current members and alumni as lab members"
+  - source: "DeCLaRe members"
+    target: "External collaborators"
+    percent: 89
+    count: 148
+    takeaway: "Most papers connect DeCLaRe members to broader research networks"
+  - source: "External collaborators"
+    target: "Academic partner papers"
+    percent: 83.8
+    count: 124
+    takeaway: "Externally collaborative papers with academic partners; mixed academic-industry papers are counted here"
+  - source: "External collaborators"
+    target: "Industry partner papers"
+    percent: 21.6
+    count: 32
+    takeaway: "Externally collaborative papers with industry partners; mixed academic-industry papers are counted here"
+external_types:
+  - label: "Academic partner papers"
+    detail: "124 of 148 externally collaborative papers"
+  - label: "Industry partner papers"
+    detail: "32 of 148 externally collaborative papers"

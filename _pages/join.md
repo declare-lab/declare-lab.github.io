@@ -12,6 +12,7 @@ classes: wide
   <p>DeCLaRe Lab is a good fit for people who enjoy building AI systems, asking careful scientific questions, and working across safety, trustworthiness, multimodality, AI for Science, efficiency, and embodied AI.</p>
   <div class="page-chip-strip" aria-label="Opportunity sections">
     <a href="#why-join-declare-lab">Why Join</a>
+    <a href="#collaboration-structure">Collaboration</a>
     <a href="#current-openings">Current Openings</a>
     <a href="#expected-backgrounds">Backgrounds</a>
     <a href="#how-to-apply">How to Apply</a>
@@ -35,6 +36,166 @@ classes: wide
     <p>The lab is recruiting at NTU across the six core themes of safety, trustworthiness, multimodality, AI for Science, efficiency, and embodied AI.</p>
   </article>
 </div>
+
+<section class="collaboration-section" id="collaboration-structure">
+  <div class="declare-section__header">
+    <div>
+      <p class="work-kicker">Collaboration structure</p>
+      <h2>How Collaboration Works in DeCLaRe</h2>
+      <p class="section-note">A star-schema view of coauthorship patterns in the lab's publication archive from 2019 onward: papers sit at the center, with author, collaborator, partner, and research-theme dimensions around them.</p>
+    </div>
+  </div>
+
+  <div class="collaboration-layout">
+    <div class="collaboration-metrics">
+      {% for metric in site.data.collaboration.metrics %}
+      <article>
+        <span>{{ metric.label }}</span>
+        <strong>{{ metric.value }}</strong>
+        <p>{{ metric.detail }}</p>
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="collaboration-map" aria-label="Interactive type-level collaboration network">
+      <svg viewBox="0 0 760 520" role="img" aria-labelledby="collab-map-title collab-map-desc">
+        <title id="collab-map-title">DeCLaRe type-level collaboration network</title>
+        <desc id="collab-map-desc">A star-schema view of the publication archive, with papers at the center and author, collaborator, partner, and research-theme dimensions around it.</desc>
+        <defs>
+          <linearGradient id="collabEdgeIntra" x1="270" y1="190" x2="490" y2="250" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#13bfa6"></stop>
+            <stop offset="1" stop-color="#60a5fa"></stop>
+          </linearGradient>
+          <linearGradient id="collabEdgeExternal" x1="420" y1="210" x2="690" y2="330" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#10b981"></stop>
+            <stop offset="0.52" stop-color="#38bdf8"></stop>
+            <stop offset="1" stop-color="#a78bfa"></stop>
+          </linearGradient>
+          <linearGradient id="collabEdgeAcademic" x1="620" y1="320" x2="460" y2="460" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#38bdf8"></stop>
+            <stop offset="1" stop-color="#22c55e"></stop>
+          </linearGradient>
+          <linearGradient id="collabEdgeIndustry" x1="650" y1="330" x2="640" y2="460" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#f472b6"></stop>
+            <stop offset="1" stop-color="#fb923c"></stop>
+          </linearGradient>
+          <linearGradient id="collabEdgeTheme" x1="330" y1="330" x2="190" y2="420" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#22c55e"></stop>
+            <stop offset="1" stop-color="#eab308"></stop>
+          </linearGradient>
+          <filter id="collabEdgeShadow" filterUnits="userSpaceOnUse" x="-120" y="-120" width="1000" height="760">
+            <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#0f172a" flood-opacity="0.22"></feDropShadow>
+          </filter>
+          <filter id="collabNodeGlow" filterUnits="userSpaceOnUse" x="-120" y="-120" width="1000" height="760">
+            <feDropShadow dx="0" dy="13" stdDeviation="9" flood-color="#0f172a" flood-opacity="0.2"></feDropShadow>
+          </filter>
+        </defs>
+        <g class="collab-links">
+          <g class="collab-link collab-link--intra is-active" tabindex="0" data-title="Papers with multiple DeCLaRe members" data-percent="72%" data-count="120 of 166 papers" data-detail="Multiple DeCLaRe-affiliated authors appear on the same paper, counting current members and alumni as lab members.">
+            <path d="M308 218 C270 188, 250 173, 238 175"></path>
+            <text x="256" y="177">72%</text>
+          </g>
+          <g class="collab-link collab-link--external" tabindex="0" data-title="DeCLaRe members with external collaborators" data-percent="89%" data-count="148 of 166 papers" data-detail="Most papers connect DeCLaRe members to broader research networks.">
+            <path d="M434 222 C478 184, 518 176, 548 182"></path>
+            <text x="486" y="166">89%</text>
+          </g>
+          <g class="collab-link collab-link--academic" tabindex="0" data-title="Academic partner papers" data-percent="83.8%" data-count="124 of 148 externally collaborative papers" data-detail="Externally collaborative papers with academic partners. Mixed academic-industry papers are counted here.">
+            <path d="M584 232 C588 296, 558 344, 520 366"></path>
+            <text x="548" y="310">83.8%</text>
+          </g>
+          <g class="collab-link collab-link--industry" tabindex="0" data-title="Industry partner papers" data-percent="21.6%" data-count="32 of 148 externally collaborative papers" data-detail="Externally collaborative papers with industry partners. Mixed academic-industry papers are counted here.">
+            <path d="M606 234 C646 286, 662 330, 656 366"></path>
+            <text x="650" y="308">21.6%</text>
+          </g>
+          <g class="collab-link collab-link--theme" tabindex="0" data-title="Multi-theme papers" data-percent="70%" data-count="117 of 166 papers" data-detail="Most papers connect more than one DeCLaRe research theme.">
+            <path d="M330 300 C292 340, 258 361, 224 362"></path>
+            <text x="260" y="348">70%</text>
+          </g>
+        </g>
+
+        <g class="collab-node collab-node--archive" transform="translate(370 240)">
+          <circle class="collab-node__halo" r="90"></circle>
+          <circle r="72"></circle>
+          <text text-anchor="middle"><tspan x="0" y="-8">Publication</tspan><tspan x="0" y="12">archive</tspan></text>
+        </g>
+        <g class="collab-node collab-node--current" transform="translate(185 175)">
+          <circle class="collab-node__halo" r="62"></circle>
+          <circle r="50"></circle>
+          <text text-anchor="middle"><tspan x="0" y="-12">DeCLaRe</tspan><tspan x="0" y="7">members</tspan><tspan x="0" y="25">on papers</tspan></text>
+        </g>
+        <g class="collab-node collab-node--external" transform="translate(600 190)">
+          <circle class="collab-node__halo" r="72"></circle>
+          <circle r="58"></circle>
+          <text text-anchor="middle"><tspan x="0" y="-10">External</tspan><tspan x="0" y="10">collaborators</tspan></text>
+        </g>
+        <g class="collab-node collab-node--small collab-node--academic" transform="translate(500 400)">
+          <circle class="collab-node__halo" r="44"></circle>
+          <circle r="36"></circle>
+          <text text-anchor="middle"><tspan x="0" y="-2">Academic</tspan><tspan x="0" y="15">partners</tspan></text>
+        </g>
+        <g class="collab-node collab-node--small collab-node--industry" transform="translate(655 400)">
+          <circle class="collab-node__halo" r="44"></circle>
+          <circle r="36"></circle>
+          <text text-anchor="middle"><tspan x="0" y="-2">Industry</tspan><tspan x="0" y="15">partners</tspan></text>
+        </g>
+        <g class="collab-node collab-node--small collab-node--theme" transform="translate(190 365)">
+          <circle class="collab-node__halo" r="46"></circle>
+          <circle r="38"></circle>
+          <text text-anchor="middle"><tspan x="0" y="-2">Multi-theme</tspan><tspan x="0" y="15">papers</tspan></text>
+        </g>
+      </svg>
+
+      <aside class="collab-inspector" aria-live="polite">
+        <span>Selected relationship</span>
+        <h3 id="collabInsightTitle">Papers with multiple DeCLaRe members</h3>
+        <strong id="collabInsightPercent">72%</strong>
+        <p id="collabInsightCount">120 of 166 papers</p>
+        <p id="collabInsightDetail">Multiple DeCLaRe-affiliated authors appear on the same paper, counting current members and alumni as lab members.</p>
+      </aside>
+    </div>
+  </div>
+
+  <div class="collaboration-notes">
+    <article>
+      <h3>What this means for students</h3>
+      <p>Students can work across themes and often collaborate with other DeCLaRe-affiliated authors and external research partners. The graph is intentionally type-level: it emphasizes the lab's collaborative structure rather than ranking individuals.</p>
+    </article>
+    <article>
+      <h3>How to read the numbers</h3>
+      <p>{{ site.data.collaboration.method_note }}</p>
+    </article>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var map = document.querySelector(".collaboration-map");
+    if (!map) return;
+
+    var links = Array.prototype.slice.call(map.querySelectorAll(".collab-link"));
+    var title = document.getElementById("collabInsightTitle");
+    var percent = document.getElementById("collabInsightPercent");
+    var count = document.getElementById("collabInsightCount");
+    var detail = document.getElementById("collabInsightDetail");
+
+    function selectLink(link) {
+      links.forEach(function (item) {
+        item.classList.remove("is-active");
+      });
+      link.classList.add("is-active");
+      title.textContent = link.getAttribute("data-title");
+      percent.textContent = link.getAttribute("data-percent");
+      count.textContent = link.getAttribute("data-count");
+      detail.textContent = link.getAttribute("data-detail");
+    }
+
+    links.forEach(function (link) {
+      link.addEventListener("mouseenter", function () { selectLink(link); });
+      link.addEventListener("focus", function () { selectLink(link); });
+      link.addEventListener("click", function () { selectLink(link); });
+    });
+  });
+</script>
 
 ## Current Openings
 

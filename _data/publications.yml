@@ -60,6 +60,7 @@
   scholar_url: 'https://scholar.google.com/scholar?q=Tangoflux%3A+Super+fast+and+faithful+text+to+audio+generation+with+flow+matching+and+clap-ranked+preference+optimization'
   publication_url: 'https://arxiv.org/abs/2412.21037'
   pdf: 'https://arxiv.org/pdf/2412.21037?'
+  code: 'https://github.com/declare-lab/TangoFlux'
   categories:
     - 'Alignment'
     - 'GenAI'
@@ -614,6 +615,7 @@
   scholar_url: 'https://scholar.google.com/scholar?q=Nora%3A+A+small+open-sourced+generalist+vision+language+action+model+for+embodied+tasks'
   publication_url: 'https://arxiv.org/abs/2504.19854'
   pdf: 'https://arxiv.org/pdf/2504.19854?'
+  code: 'https://github.com/declare-lab/nora'
   categories:
     - 'Embodied AI'
     - 'Multimodality'
@@ -688,6 +690,7 @@
   scholar_url: 'https://scholar.google.com/scholar?q=MOOSE-Chem%3A+Large+Language+Models+for+Rediscovering+Unseen+Chemistry+Scientific+Hypotheses'
   publication_url: 'https://proceedings.iclr.cc/paper_files/paper/2025/hash/51fd9a7d1706023cb9f8210cc6ac357c-Abstract-Conference.html'
   pdf: 'https://proceedings.iclr.cc/paper_files/paper/2025/file/51fd9a7d1706023cb9f8210cc6ac357c-Paper-Conference.pdf'
+  code: 'https://github.com/ZonglinY/MOOSE-Chem'
   categories:
     - 'Agentic AI'
     - 'Hypothesis Discovery'
@@ -739,6 +742,7 @@
   scholar_url: 'https://scholar.google.com/scholar?q=Measuring+and+Enhancing+Trustworthiness+of+LLMs+in+RAG+through+Grounded+Attributions+and+Learning+to+Refuse'
   publication_url: 'https://proceedings.iclr.cc/paper_files/paper/2025/hash/4c88827decab6c046b881a2c3a99c76f-Abstract-Conference.html'
   pdf: 'https://proceedings.iclr.cc/paper_files/paper/2025/file/4c88827decab6c046b881a2c3a99c76f-Paper-Conference.pdf'
+  code: 'https://github.com/declare-lab/trust-align'
   categories:
     - 'RAG'
     - 'Trustworthiness'

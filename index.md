@@ -222,31 +222,53 @@ title: ""
       <span>ICLR 2026</span>
       <h3>OffTopicEval: When Large Language Models Enter the Wrong Chat, Almost Always!</h3>
       <p>Operational safety and task-boundary evaluation for LLM agents.</p>
+      <div class="project-links">
+        <a href="https://arxiv.org/abs/2509.26495">Paper</a>
+      </div>
     </article>
     <article>
       <span>ICLR 2025</span>
       <h3>Measuring and Enhancing Trustworthiness of LLMs in RAG</h3>
       <p>Trust-Score, Trust-Align, grounded attributions, citations, and refusal.</p>
+      <div class="project-links">
+        <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/4c88827decab6c046b881a2c3a99c76f-Abstract-Conference.html">Paper</a>
+        <a href="https://github.com/declare-lab/trust-align">Code</a>
+      </div>
     </article>
     <article>
       <span>ICLR 2025</span>
       <h3>MOOSE-Chem: LLMs for Rediscovering Chemistry Scientific Hypotheses</h3>
       <p>AI for Science through literature-grounded chemistry hypothesis rediscovery.</p>
+      <div class="project-links">
+        <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/51fd9a7d1706023cb9f8210cc6ac357c-Abstract-Conference.html">Paper</a>
+        <a href="https://github.com/ZonglinY/MOOSE-Chem">Code</a>
+      </div>
     </article>
     <article>
       <span>ICML 2026</span>
       <h3>Data Agent: Learning to Select Data via End-to-End Dynamic Optimization</h3>
       <p>Efficient training through dynamic data selection.</p>
+      <div class="project-links">
+        <a href="https://arxiv.org/abs/2603.07433">Paper</a>
+      </div>
     </article>
     <article>
       <span>arXiv 2025</span>
       <h3>NORA: A Small Open-Sourced Generalist Vision Language Action Model</h3>
       <p>Efficient embodied AI and action grounding.</p>
+      <div class="project-links">
+        <a href="https://arxiv.org/abs/2504.19854">Paper</a>
+        <a href="https://github.com/declare-lab/nora">Code</a>
+      </div>
     </article>
     <article>
       <span>ICLR 2026</span>
       <h3>TangoFlux: Super Fast and Faithful Text-to-Audio Generation with Flow Matching</h3>
       <p>Fast, faithful text-to-audio generation via flow matching.</p>
+      <div class="project-links">
+        <a href="https://arxiv.org/abs/2412.21037">Paper</a>
+        <a href="https://github.com/declare-lab/TangoFlux">Code</a>
+      </div>
     </article>
   </div>
 </section>

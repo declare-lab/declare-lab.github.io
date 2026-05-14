@@ -1,0 +1,45 @@
+# Curated external collaborator affiliation types for Join page collaboration stats.
+# Names should match the compact author aliases used in _data/publications.yml.
+# Keep this conservative: add only collaborators whose external affiliation type is known.
+
+academic:
+  - R Mihalcea
+  - E Cambria
+  - A Gelbukh
+  - A Hussain
+  - R Zimmermann
+  - D Herremans
+  - LP Morency
+  - PP Liang
+  - E Hovy
+  - P Bhattacharyya
+  - A Ekbal
+  - MY Kan
+  - L Si
+  - W Hsu
+  - ML Lee
+  - RKW Lee
+  - U Naseem
+  - T Chakraborty
+  - KW Chang
+  - M Dras
+  - P Nakov
+  - N Peng
+  - O Ignat
+  - L Bai
+  - L Chiruzzo
+  - Z Jin
+  - C Kwizera
+  - J Nwatu
+  - B Ong
+  - WC Tjhi
+  - P Zhou
+  - S Yan
+
+industry:
+  - L Bing
+  - C Li
+  - N Chhaya
+  - F Gelli
+  - F Huang
+  - HL Chieu
