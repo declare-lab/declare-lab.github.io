@@ -213,6 +213,10 @@ title: ""
       <span>arXiv 2026</span>
       <h3>δ-mem: Efficient Online Memory for Large Language Models</h3>
       <p>Lightweight online memory through a compact state directly coupled with attention.</p>
+      <div class="project-links">
+        <a href="https://arxiv.org/abs/2605.12357">Paper</a>
+        <a href="https://github.com/declare-lab/delta-Mem">Code</a>
+      </div>
     </article>
     <article>
       <span>ICLR 2026</span>

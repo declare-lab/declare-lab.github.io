@@ -21,7 +21,7 @@ hide_title: true
     </div>
     <div class="project-links">
       <a href="https://arxiv.org/abs/2605.12357">Paper</a>
-      <a href="https://github.com/declare-lab">GitHub</a>
+      <a href="https://github.com/declare-lab/delta-Mem">GitHub</a>
     </div>
   </div>
   <figure class="note-figure note-figure--compact">

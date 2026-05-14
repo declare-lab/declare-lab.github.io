@@ -21,7 +21,10 @@ classes: wide
     <div class="update-card__body">
       <h3>δ-mem introduces lightweight online memory for LLMs</h3>
       <p>The new arXiv paper studies how a compact online memory state can evolve during interaction and directly modulate Transformer attention without extending the explicit context.</p>
-      <a href="/lab-notes/delta-mem/">Read the lab note</a>
+      <div class="project-links">
+        <a href="/lab-notes/delta-mem/">Read the lab note</a>
+        <a href="https://github.com/declare-lab/delta-Mem">Code</a>
+      </div>
     </div>
   </article>
 

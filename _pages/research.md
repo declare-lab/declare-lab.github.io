@@ -263,6 +263,7 @@ classes: wide
         <p>A lightweight online memory mechanism that compresses history into a compact state and uses it to modulate frozen Transformer attention.</p>
         <div class="project-links">
           <a href="https://arxiv.org/abs/2605.12357">Paper</a>
+          <a href="https://github.com/declare-lab/delta-Mem">Code</a>
           <a href="/lab-notes/delta-mem/">Lab note</a>
         </div>
         <p class="project-team">Team: Jingdi Lei, Di Zhang, Junxian Li, Weida Wang, Kaixuan Fan, Xiang Liu, Qihan Liu, Xiaoteng Ma, Baian Chen, Soujanya Poria</p>
