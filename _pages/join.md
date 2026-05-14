@@ -41,7 +41,7 @@ classes: wide
   <div class="declare-section__header">
     <div>
       <p class="work-kicker">Collaboration structure</p>
-      <h2>How Collaboration Works in DeCLaRe</h2>
+      <h2>How Students Collaborate in DeCLaRe</h2>
       <p class="section-note">A star-schema view of coauthorship patterns in the lab's publication archive from 2019 onward: papers sit at the center, with author, collaborator, partner, and research-theme dimensions around them.</p>
     </div>
   </div>
@@ -83,6 +83,10 @@ classes: wide
             <stop offset="0" stop-color="#22c55e"></stop>
             <stop offset="1" stop-color="#eab308"></stop>
           </linearGradient>
+          <linearGradient id="collabEdgePI" x1="330" y1="190" x2="330" y2="80" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#38bdf8"></stop>
+            <stop offset="1" stop-color="#f472b6"></stop>
+          </linearGradient>
           <filter id="collabEdgeShadow" filterUnits="userSpaceOnUse" x="-120" y="-120" width="1000" height="760">
             <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#0f172a" flood-opacity="0.22"></feDropShadow>
           </filter>
@@ -94,6 +98,10 @@ classes: wide
           <g class="collab-link collab-link--intra is-active" tabindex="0" data-title="Internal collaboration at DeCLaRe" data-percent="44.0%" data-count="73 of 166 papers" data-detail="At least two non-PI DeCLaRe members appear on the same paper. Current members and alumni are both counted as DeCLaRe members.">
             <path d="M308 218 C270 188, 250 173, 238 175"></path>
             <text x="256" y="177">44%</text>
+          </g>
+          <g class="collab-link collab-link--pi" tabindex="0" data-title="Initiated in DeCLaRe" data-percent="77.1%" data-count="128 of 166 papers" data-detail="Counted based on the PI authorship position: first, second, or last author.">
+            <path d="M350 170 C332 134, 318 106, 304 82"></path>
+            <text x="342" y="122">77.1%</text>
           </g>
           <g class="collab-link collab-link--external" tabindex="0" data-title="DeCLaRe members with external collaborators" data-percent="89%" data-count="148 of 166 papers" data-detail="Most papers connect DeCLaRe members to broader research networks.">
             <path d="M434 222 C478 184, 518 176, 548 182"></path>
@@ -108,8 +116,8 @@ classes: wide
             <text x="650" y="308">21.6%</text>
           </g>
           <g class="collab-link collab-link--theme" tabindex="0" data-title="Multi-theme papers" data-percent="70%" data-count="117 of 166 papers" data-detail="Most papers connect more than one DeCLaRe research theme.">
-            <path d="M330 300 C292 340, 258 361, 224 362"></path>
-            <text x="260" y="348">70%</text>
+            <path d="M330 300 C292 340, 262 360, 238 364"></path>
+            <text x="265" y="348">70%</text>
           </g>
         </g>
 
@@ -122,6 +130,11 @@ classes: wide
           <circle class="collab-node__halo" r="62"></circle>
           <circle r="50"></circle>
           <text text-anchor="middle"><tspan x="0" y="-12">Internal</tspan><tspan x="0" y="7">DeCLaRe</tspan><tspan x="0" y="25">collaboration</tspan></text>
+        </g>
+        <g class="collab-node collab-node--pi" transform="translate(300 64)">
+          <circle class="collab-node__halo" r="58"></circle>
+          <circle r="48"></circle>
+          <text text-anchor="middle"><tspan x="0" y="-2">Initiated</tspan><tspan x="0" y="15">in DeCLaRe</tspan></text>
         </g>
         <g class="collab-node collab-node--external" transform="translate(600 190)">
           <circle class="collab-node__halo" r="72"></circle>
@@ -138,9 +151,9 @@ classes: wide
           <circle r="36"></circle>
           <text text-anchor="middle"><tspan x="0" y="-2">Industry</tspan><tspan x="0" y="15">partners</tspan></text>
         </g>
-        <g class="collab-node collab-node--small collab-node--theme" transform="translate(190 365)">
-          <circle class="collab-node__halo" r="46"></circle>
-          <circle r="38"></circle>
+        <g class="collab-node collab-node--theme" transform="translate(190 365)">
+          <circle class="collab-node__halo" r="58"></circle>
+          <circle r="48"></circle>
           <text text-anchor="middle"><tspan x="0" y="-2">Multi-theme</tspan><tspan x="0" y="15">papers</tspan></text>
         </g>
       </svg>

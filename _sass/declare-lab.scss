@@ -1479,7 +1479,12 @@
 
 .content-text .collab-link--theme path {
   stroke: url(#collabEdgeTheme);
-  stroke-width: 7;
+  stroke-width: 9;
+}
+
+.content-text .collab-link--pi path {
+  stroke: url(#collabEdgePI);
+  stroke-width: 10;
 }
 
 .content-text .collab-link:nth-child(5) path,
@@ -1600,6 +1605,16 @@
   stroke: rgba(234, 179, 8, 0.62);
 }
 
+.content-text .collab-node--pi .collab-node__halo {
+  fill: rgba(244, 114, 182, 0.16);
+  stroke: rgba(244, 114, 182, 0.52);
+}
+
+.content-text .collab-node--pi > circle:not(.collab-node__halo) {
+  fill: rgba(253, 242, 248, 0.96);
+  stroke: rgba(244, 114, 182, 0.66);
+}
+
 .content-text .collab-node text {
   fill: var(--declare-ink);
   font-size: 0.78rem;
@@ -1609,6 +1624,11 @@
 
 .content-text .collab-node--small text {
   font-size: 0.62rem;
+}
+
+.content-text .collab-node--pi text,
+.content-text .collab-node--theme text {
+  font-size: 0.72rem;
 }
 
 .content-text .collab-inspector {
