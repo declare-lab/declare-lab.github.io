@@ -91,9 +91,9 @@ classes: wide
           </filter>
         </defs>
         <g class="collab-links">
-          <g class="collab-link collab-link--intra is-active" tabindex="0" data-title="Papers with multiple DeCLaRe members" data-percent="72%" data-count="120 of 166 papers" data-detail="Multiple DeCLaRe-affiliated authors appear on the same paper, counting current members and alumni as lab members.">
+          <g class="collab-link collab-link--intra is-active" tabindex="0" data-title="Internal collaboration at DeCLaRe" data-percent="44.0%" data-count="73 of 166 papers" data-detail="At least two non-PI DeCLaRe members appear on the same paper. Current members and alumni are both counted as DeCLaRe members.">
             <path d="M308 218 C270 188, 250 173, 238 175"></path>
-            <text x="256" y="177">72%</text>
+            <text x="256" y="177">44%</text>
           </g>
           <g class="collab-link collab-link--external" tabindex="0" data-title="DeCLaRe members with external collaborators" data-percent="89%" data-count="148 of 166 papers" data-detail="Most papers connect DeCLaRe members to broader research networks.">
             <path d="M434 222 C478 184, 518 176, 548 182"></path>
@@ -121,7 +121,7 @@ classes: wide
         <g class="collab-node collab-node--current" transform="translate(185 175)">
           <circle class="collab-node__halo" r="62"></circle>
           <circle r="50"></circle>
-          <text text-anchor="middle"><tspan x="0" y="-12">DeCLaRe</tspan><tspan x="0" y="7">members</tspan><tspan x="0" y="25">on papers</tspan></text>
+          <text text-anchor="middle"><tspan x="0" y="-12">Internal</tspan><tspan x="0" y="7">DeCLaRe</tspan><tspan x="0" y="25">collaboration</tspan></text>
         </g>
         <g class="collab-node collab-node--external" transform="translate(600 190)">
           <circle class="collab-node__halo" r="72"></circle>
@@ -147,10 +147,10 @@ classes: wide
 
       <aside class="collab-inspector" aria-live="polite">
         <span>Selected relationship</span>
-        <h3 id="collabInsightTitle">Papers with multiple DeCLaRe members</h3>
-        <strong id="collabInsightPercent">72%</strong>
-        <p id="collabInsightCount">120 of 166 papers</p>
-        <p id="collabInsightDetail">Multiple DeCLaRe-affiliated authors appear on the same paper, counting current members and alumni as lab members.</p>
+        <h3 id="collabInsightTitle">Internal collaboration at DeCLaRe</h3>
+        <strong id="collabInsightPercent">44.0%</strong>
+        <p id="collabInsightCount">73 of 166 papers</p>
+        <p id="collabInsightDetail">At least two non-PI DeCLaRe members appear on the same paper. Current members and alumni are both counted as DeCLaRe members.</p>
       </aside>
     </div>
   </div>
