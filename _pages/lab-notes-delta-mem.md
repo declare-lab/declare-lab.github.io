@@ -30,6 +30,8 @@ hide_title: true
   </figure>
 </section>
 
+{% include lab-note-share.html %}
+
 ## Why Memory Is Not Just Longer Context
 
 This paper starts from a simple but important question: how can a model truly possess memory?

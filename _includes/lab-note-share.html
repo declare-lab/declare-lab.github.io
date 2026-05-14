@@ -1,0 +1,35 @@
+{% assign share_url = page.url | absolute_url %}
+{% assign share_title = page.title | default: site.title %}
+
+<aside class="lab-note-share" aria-label="Share this lab note">
+  <span>Share</span>
+  <div>
+    <a
+      class="lab-note-share__button lab-note-share__button--facebook"
+      href="https://www.facebook.com/sharer/sharer.php?u={{ share_url | url_encode }}"
+      target="_blank"
+      rel="noopener"
+      aria-label="Share this lab note on Facebook"
+      title="Share on Facebook">
+      <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+    </a>
+    <a
+      class="lab-note-share__button lab-note-share__button--x"
+      href="https://x.com/intent/post?text={{ share_title | url_encode }}%20{{ share_url | url_encode }}"
+      target="_blank"
+      rel="noopener"
+      aria-label="Share this lab note on X"
+      title="Share on X">
+      <span class="lab-note-share__x-mark" aria-hidden="true">X</span>
+    </a>
+    <a
+      class="lab-note-share__button lab-note-share__button--linkedin"
+      href="https://www.linkedin.com/shareArticle?mini=true&url={{ share_url | url_encode }}&title={{ share_title | url_encode }}"
+      target="_blank"
+      rel="noopener"
+      aria-label="Share this lab note on LinkedIn"
+      title="Share on LinkedIn">
+      <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+    </a>
+  </div>
+</aside>
