@@ -10,7 +10,7 @@ title: ""
 <section class="home-hero declare-hero">
   <div class="declare-hero__copy">
     <p class="eyebrow">Deep Cognition and Language Research Lab</p>
-    <h1>Research in Safe, Trustworthy, Multimodal AI</h1>
+    <h1>Research in <em>Safe</em>, <em>Trustworthy</em>, <em>Multimodal</em> AI</h1>
     <p class="declare-hero__subhead">DeCLaRe Lab studies language, multimodal, and interactive AI systems across six themes: Safety, Trustworthiness, Multimodality, AI for Science, Efficiency, and Embodied AI.</p>
     <div class="hero-actions">
       <a class="btn-primary" href="/research/"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><span>Research Themes</span></a>
