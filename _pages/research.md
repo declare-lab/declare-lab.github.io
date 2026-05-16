@@ -10,15 +10,16 @@ classes: wide
 
 <section class="page-lead page-lead--compact">
   <p>Each theme combines recent work with long-running foundations from the group, from multimodal emotion and sentiment analysis to retrieval-grounded generation, scientific discovery, efficient learning, and vision-language-action models.</p>
-  <div class="page-chip-strip" aria-label="Research themes">
-    <a href="#safety">Safety</a>
-    <a href="#trustworthiness">Trustworthiness</a>
-    <a href="#multimodality">Multimodality</a>
-    <a href="#ai-for-science">AI for Science</a>
-    <a href="#efficiency">Efficiency</a>
-    <a href="#embodied-ai">Embodied AI</a>
-  </div>
 </section>
+
+<nav class="page-chip-strip" aria-label="Research themes">
+  <a href="#safety">Safety</a>
+  <a href="#trustworthiness">Trustworthiness</a>
+  <a href="#multimodality">Multimodality</a>
+  <a href="#ai-for-science">AI for Science</a>
+  <a href="#efficiency">Efficiency</a>
+  <a href="#embodied-ai">Embodied AI</a>
+</nav>
 
 <h2 id="safety">Safety</h2>
 

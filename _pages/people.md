@@ -10,14 +10,15 @@ classes: wide
 
 <section class="page-lead page-lead--compact">
   <p>We work across multimodal AI, reasoning, generative modeling, embodied intelligence, affective computing, and responsible AI.</p>
-  <div class="page-chip-strip" aria-label="People sections">
-    <a href="#faculty">Faculty</a>
-    <a href="#research-scientists">Research Scientists</a>
-    <a href="#phd-students">PhD Students</a>
-    <a href="#research-assistants">Research Assistants</a>
-    <a href="#alumni">Alumni</a>
-  </div>
 </section>
+
+<nav class="page-chip-strip" aria-label="People sections">
+  <a href="#faculty">Faculty</a>
+  <a href="#research-scientists">Research Scientists</a>
+  <a href="#phd-students">PhD Students</a>
+  <a href="#research-assistants">Research Assistants</a>
+  <a href="#alumni">Alumni</a>
+</nav>
 
 ![DeCLaRe Lab team](/assets/images/resources/team.jpg){: .team-photo}
 

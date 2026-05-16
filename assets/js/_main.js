@@ -133,4 +133,39 @@ $(document).ready(function() {
       $(this).append(anchor);
     }
   });
+
+  // Mobile nav accessibility and UX improvements
+  (function() {
+    var $menuToggle = $('.menu-toggle');
+    var $navLinks = $('.nav-links');
+
+    // set initial state
+    $menuToggle.attr('aria-expanded', 'false');
+
+    $menuToggle.on('click', function(e) {
+      // toggle open class and aria state
+      var isOpen = $navLinks.hasClass('open');
+      $navLinks.toggleClass('open', !isOpen);
+      $menuToggle.attr('aria-expanded', String(!isOpen));
+    });
+
+    // Close mobile nav when a link is clicked
+    $navLinks.find('a').on('click', function() {
+      if ($navLinks.hasClass('open')) {
+        $navLinks.removeClass('open');
+        $menuToggle.attr('aria-expanded', 'false');
+      }
+    });
+
+    // Close nav on outside click (mobile)
+    $(document).on('click touchstart', function(e) {
+      if ($navLinks.hasClass('open')) {
+        var $target = $(e.target);
+        if (!$target.closest('.nav-links').length && !$target.closest('.menu-toggle').length) {
+          $navLinks.removeClass('open');
+          $menuToggle.attr('aria-expanded', 'false');
+        }
+      }
+    });
+  })();
 });

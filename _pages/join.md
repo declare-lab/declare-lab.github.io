@@ -10,15 +10,16 @@ classes: wide
 
 <section class="page-lead page-lead--compact">
   <p>DeCLaRe Lab is a good fit for people who enjoy building AI systems, asking careful scientific questions, and working across safety, trustworthiness, multimodality, AI for Science, efficiency, and embodied AI.</p>
-  <div class="page-chip-strip" aria-label="Opportunity sections">
-    <a href="#why-join-declare-lab">Why Join</a>
-    <a href="#collaboration-structure">Collaboration</a>
-    <a href="#current-openings">Current Openings</a>
-    <a href="#expected-backgrounds">Backgrounds</a>
-    <a href="#how-to-apply">How to Apply</a>
-    <a href="#faq">FAQ</a>
-  </div>
 </section>
+
+<nav class="page-chip-strip" aria-label="Opportunity sections">
+  <a href="#why-join-declare-lab">Why Join</a>
+  <a href="#collaboration-structure">Collaboration</a>
+  <a href="#current-openings">Current Openings</a>
+  <a href="#expected-backgrounds">Backgrounds</a>
+  <a href="#how-to-apply">How to Apply</a>
+  <a href="#faq">FAQ</a>
+</nav>
 
 ## Why Join DeCLaRe Lab?
 
