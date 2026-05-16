@@ -1596,8 +1596,18 @@ strong { font-weight: 600; }
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
   .page-wrapper {
+    align-items: stretch;
     flex-direction: column;
   }
+
+  .page-wrapper .page-content,
+  .page-body,
+  .page-body .content-text {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
   .sidebar {
     width: 100%;
     position: static;
@@ -1650,7 +1660,7 @@ strong { font-weight: 600; }
   .nav-links {
     display: none;
     position: absolute;
-    top: 72px;
+    top: 100%;
     left: 0;
     right: 0;
     background: var(--bg);

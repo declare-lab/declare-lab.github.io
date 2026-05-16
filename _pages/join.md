@@ -30,7 +30,7 @@ classes: wide
   </article>
   <article>
     <h3>Collaborative culture</h3>
-    <p>Research directions often combine language, vision, audio, action, scientific reasoning, safety evaluation, and human-facing evaluation.</p>
+    <p>DeCLaRe is built around collaborative research, where students work closely with lab members, academic collaborators, and industry partners to shape ambitious AI projects.</p>
   </article>
   <article>
     <h3>Active research program</h3>

@@ -494,6 +494,7 @@
 .content-text .notes-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
   gap: 1rem;
 }
 
@@ -510,6 +511,13 @@
   border-radius: 8px;
   background: var(--bg-card);
   box-shadow: 0 10px 28px rgba(17, 24, 39, 0.05);
+}
+
+/* Make opportunity cards stretch to equal heights */
+.content-text .opportunity-grid article {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .content-text .pillar-card {
@@ -2396,7 +2404,11 @@
     position: sticky;
     top: 72px;
     z-index: 29;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
     order: -1;
+    overflow: hidden;
   }
 
   .content-text .pub-year-nav div {
