@@ -1577,56 +1577,76 @@
 }
 
 .content-text .collaboration-metrics article {
-  padding: 0.9rem;
+  padding: 1.1rem 1.15rem;
   border: 1px solid var(--declare-line);
-  border-radius: 8px;
+  border-radius: 12px;
   background: var(--bg-card);
+  transition: border-color 200ms ease, transform 200ms ease;
+}
+
+.content-text .collaboration-metrics article:hover {
+  border-color: rgba(36, 87, 166, 0.3);
+  transform: translateY(-1px);
 }
 
 .content-text .collaboration-metrics span {
   display: block;
-  color: var(--declare-muted);
-  font-size: 0.72rem;
+  color: var(--declare-rose);
+  font-size: 0.7rem;
   font-weight: 850;
-  letter-spacing: 0.02em;
-  text-transform: none;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .content-text .collaboration-metrics strong {
   display: block;
-  margin: 0.2rem 0 0.1rem;
+  margin: 0.35rem 0 0.2rem;
   color: var(--declare-ink);
-  font-size: 1.65rem;
-  line-height: 1.1;
+  font-family: var(--font-display);
+  font-size: 2.1rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  font-variation-settings: "opsz" 144, "SOFT" 50;
 }
 
 .content-text .collaboration-metrics p {
   margin: 0;
   color: var(--declare-muted);
-  font-size: 0.84rem;
-  line-height: 1.45;
+  font-size: 0.85rem;
+  line-height: 1.5;
 }
 
+/* ============================================================
+   Collaboration map - restrained, single-accent design
+   Default: monochrome neutral. Active edge: brand gradient.
+   ============================================================ */
+
 .content-text .collaboration-map {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 0;
   min-height: auto;
   overflow: hidden;
   border: 1px solid var(--declare-line);
-  border-radius: 8px;
+  border-radius: 16px;
   background:
-    radial-gradient(circle at 47% 45%, rgba(20, 184, 166, 0.16), transparent 32%),
-    radial-gradient(circle at 76% 58%, rgba(236, 72, 153, 0.14), transparent 30%),
-    linear-gradient(135deg, rgba(14, 165, 233, 0.08), rgba(168, 85, 247, 0.07)),
+    radial-gradient(circle at 50% 50%, rgba(36, 87, 166, 0.05), transparent 55%),
+    var(--bg-card);
+}
+
+[data-theme="dark"] .content-text .collaboration-map {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(155, 108, 255, 0.08), transparent 55%),
     var(--bg-card);
 }
 
 .content-text .collaboration-map svg {
   display: block;
   width: 100%;
-  height: 500px;
-  min-height: 500px;
+  height: 520px;
+  min-height: 520px;
 }
 
 .content-text .collab-link {
@@ -1634,182 +1654,158 @@
   outline: none;
 }
 
+/* All edges share the same quiet neutral by default. No gradients, no shadows. */
 .content-text .collab-link path {
   fill: none;
-  stroke: rgba(36, 87, 166, 0.36);
+  stroke: var(--declare-line);
+  stroke-width: 2.5;
   stroke-linecap: round;
-  filter: url(#collabEdgeShadow);
-  opacity: 0.78;
-  transition: opacity 160ms ease;
+  opacity: 0.7;
+  filter: none;
+  transition: stroke 220ms ease, stroke-width 220ms ease, opacity 220ms ease;
 }
 
-.content-text .collab-link--intra path {
-  stroke: url(#collabEdgeIntra);
-  stroke-width: 7;
+[data-theme="dark"] .content-text .collab-link path {
+  stroke: rgba(255, 255, 255, 0.14);
+  opacity: 1;
 }
 
-.content-text .collab-link--external path {
-  stroke: url(#collabEdgeExternal);
-  stroke-width: 14;
-}
-
-.content-text .collab-link--academic path {
-  stroke: url(#collabEdgeAcademic);
-  stroke-width: 8;
-}
-
-.content-text .collab-link--industry path {
-  stroke: url(#collabEdgeIndustry);
-  stroke-width: 5;
-}
-
-.content-text .collab-link--theme path {
-  stroke: url(#collabEdgeTheme);
-  stroke-width: 9;
-}
-
+/* Override the per-relationship SVG gradient strokes from the markup */
+.content-text .collab-link--intra path,
+.content-text .collab-link--external path,
+.content-text .collab-link--academic path,
+.content-text .collab-link--industry path,
+.content-text .collab-link--theme path,
 .content-text .collab-link--pi path {
-  stroke: url(#collabEdgePI);
-  stroke-width: 10;
+  stroke: var(--declare-line);
+  stroke-width: 2.5;
 }
 
-.content-text .collab-link:nth-child(5) path,
-.content-text .collab-link:nth-child(7) path {
-  stroke-width: 7;
+[data-theme="dark"] .content-text .collab-link--intra path,
+[data-theme="dark"] .content-text .collab-link--external path,
+[data-theme="dark"] .content-text .collab-link--academic path,
+[data-theme="dark"] .content-text .collab-link--industry path,
+[data-theme="dark"] .content-text .collab-link--theme path,
+[data-theme="dark"] .content-text .collab-link--pi path {
+  stroke: rgba(255, 255, 255, 0.14);
+  stroke-width: 2.5;
 }
 
-.content-text .collab-link:nth-child(6) path {
-  stroke-width: 5;
-}
-
-.content-text .collab-link text {
-  fill: var(--declare-ink);
-  font-size: 0.9rem;
-  font-weight: 900;
-  paint-order: stroke;
-  stroke: var(--bg-card);
-  stroke-width: 6px;
-}
-
+/* Active / hovered edge: lab brand gradient, full opacity, slightly thicker, soft glow */
 .content-text .collab-link:hover path,
 .content-text .collab-link:focus path,
 .content-text .collab-link.is-active path {
+  stroke: url(#collabEdgeIntra);
+  stroke-width: 5;
   opacity: 1;
-  filter: url(#collabEdgeShadow);
+  filter: drop-shadow(0 6px 14px rgba(36, 87, 166, 0.35));
+}
+
+[data-theme="dark"] .content-text .collab-link:hover path,
+[data-theme="dark"] .content-text .collab-link:focus path,
+[data-theme="dark"] .content-text .collab-link.is-active path {
+  filter: drop-shadow(0 6px 16px rgba(240, 92, 168, 0.45));
+}
+
+/* Edge labels: smaller, lighter, no heavy outline. Active gets the accent. */
+.content-text .collab-link text {
+  fill: var(--declare-muted);
+  font-family: var(--font);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+  paint-order: stroke;
+  stroke: var(--bg-card);
+  stroke-width: 4px;
+  transition: fill 220ms ease, font-size 220ms ease;
 }
 
 .content-text .collab-link:hover text,
 .content-text .collab-link:focus text,
 .content-text .collab-link.is-active text {
-  fill: var(--accent-hover);
+  fill: var(--declare-ink);
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+[data-theme="dark"] .content-text .collab-link text {
+  stroke: var(--bg-card);
 }
 
 .content-text .collab-guide {
   fill: none;
-  stroke: rgba(83, 97, 115, 0.3);
-  stroke-width: 2;
-  stroke-dasharray: 5 7;
+  stroke: rgba(83, 97, 115, 0.18);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 8;
   stroke-linecap: round;
 }
 
+/* All nodes share the same calm card-on-card treatment. No per-type color palettes. */
 .content-text .collab-node__halo {
-  fill: rgba(14, 165, 233, 0.1);
-  stroke: rgba(14, 165, 233, 0.26);
-  stroke-width: 1.5;
+  fill: transparent;
+  stroke: transparent;
 }
 
 .content-text .collab-node > circle:not(.collab-node__halo) {
-  fill: rgba(255, 255, 255, 0.96);
-  stroke: rgba(14, 165, 233, 0.42);
-  stroke-width: 2;
-  filter: url(#collabNodeGlow);
+  fill: var(--bg-card);
+  stroke: var(--declare-line);
+  stroke-width: 1.5;
+  filter: drop-shadow(0 8px 18px rgba(17, 24, 39, 0.08));
+  transition: stroke 200ms ease, stroke-width 200ms ease;
 }
 
-.content-text .collab-node--current .collab-node__halo {
-  fill: rgba(20, 184, 166, 0.18);
-  stroke: rgba(20, 184, 166, 0.45);
+[data-theme="dark"] .content-text .collab-node > circle:not(.collab-node__halo) {
+  fill: rgba(24, 27, 37, 0.95);
+  stroke: rgba(255, 255, 255, 0.12);
+  filter: drop-shadow(0 8px 22px rgba(0, 0, 0, 0.5));
 }
 
+/* The center "Publication archive" is the single visual anchor: brand gradient */
 .content-text .collab-node--archive .collab-node__halo {
-  fill: rgba(20, 184, 166, 0.2);
-  stroke: rgba(56, 189, 248, 0.52);
+  fill: rgba(36, 87, 166, 0.08);
+  stroke: rgba(36, 87, 166, 0.18);
+  stroke-width: 1;
+}
+
+[data-theme="dark"] .content-text .collab-node--archive .collab-node__halo {
+  fill: rgba(240, 92, 168, 0.1);
+  stroke: rgba(240, 92, 168, 0.2);
 }
 
 .content-text .collab-node--archive > circle:not(.collab-node__halo) {
-  fill: rgba(236, 253, 245, 0.98);
-  stroke: rgba(20, 184, 166, 0.7);
-  stroke-width: 3;
+  fill: url(#collabNodeCenter);
+  stroke: rgba(36, 87, 166, 0.6);
+  stroke-width: 2;
+  filter: drop-shadow(0 14px 36px rgba(36, 87, 166, 0.35));
 }
 
-.content-text .collab-node--current > circle:not(.collab-node__halo) {
-  fill: rgba(236, 253, 245, 0.96);
-  stroke: rgba(20, 184, 166, 0.66);
-  stroke-width: 3;
+[data-theme="dark"] .content-text .collab-node--archive > circle:not(.collab-node__halo) {
+  stroke: rgba(240, 92, 168, 0.55);
+  filter: drop-shadow(0 14px 36px rgba(240, 92, 168, 0.4));
 }
 
-.content-text .collab-node--current-roster .collab-node__halo {
-  fill: rgba(96, 165, 250, 0.16);
-  stroke: rgba(96, 165, 250, 0.42);
-}
-
-.content-text .collab-node--external .collab-node__halo {
-  fill: rgba(167, 139, 250, 0.18);
-  stroke: rgba(167, 139, 250, 0.48);
-}
-
-.content-text .collab-node--external > circle:not(.collab-node__halo) {
-  stroke: rgba(167, 139, 250, 0.62);
-}
-
-.content-text .collab-node--academic .collab-node__halo {
-  fill: rgba(34, 197, 94, 0.16);
-  stroke: rgba(34, 197, 94, 0.48);
-}
-
-.content-text .collab-node--academic > circle:not(.collab-node__halo) {
-  fill: rgba(240, 253, 244, 0.95);
-  stroke: rgba(34, 197, 94, 0.58);
-}
-
-.content-text .collab-node--industry .collab-node__halo {
-  fill: rgba(251, 146, 60, 0.16);
-  stroke: rgba(251, 146, 60, 0.5);
-}
-
-.content-text .collab-node--industry > circle:not(.collab-node__halo) {
-  fill: rgba(255, 247, 237, 0.96);
-  stroke: rgba(251, 146, 60, 0.62);
-}
-
-.content-text .collab-node--theme .collab-node__halo {
-  fill: rgba(234, 179, 8, 0.15);
-  stroke: rgba(234, 179, 8, 0.48);
-}
-
-.content-text .collab-node--theme > circle:not(.collab-node__halo) {
-  fill: rgba(254, 252, 232, 0.96);
-  stroke: rgba(234, 179, 8, 0.62);
-}
-
-.content-text .collab-node--pi .collab-node__halo {
-  fill: rgba(244, 114, 182, 0.16);
-  stroke: rgba(244, 114, 182, 0.52);
-}
-
-.content-text .collab-node--pi > circle:not(.collab-node__halo) {
-  fill: rgba(253, 242, 248, 0.96);
-  stroke: rgba(244, 114, 182, 0.66);
-}
+/* When a link is active, its connected outer node gets a subtle accent ring.
+   Hover-on-link doesn't propagate to nodes in CSS, so we keep node feedback
+   purely structural: the same gradient halo as the center on the archive node. */
 
 .content-text .collab-node text {
   fill: var(--declare-ink);
-  font-size: 0.78rem;
-  font-weight: 850;
+  font-family: var(--font);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: -0.005em;
   pointer-events: none;
 }
 
+.content-text .collab-node--archive text {
+  fill: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+}
+
 .content-text .collab-node--small text {
-  font-size: 0.62rem;
+  font-size: 0.7rem;
 }
 
 .content-text .collab-node--pi text,
@@ -1819,42 +1815,60 @@
 
 .content-text .collab-inspector {
   width: auto;
-  margin: -0.5rem 1rem 1rem;
-  padding: 0.85rem 0.95rem;
+  margin: -0.5rem 1.25rem 1.25rem;
+  padding: 1rem 1.15rem;
   border: 1px solid var(--declare-line);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 16px 34px rgba(17, 24, 39, 0.1);
-  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 16px 38px rgba(17, 24, 39, 0.08);
+  backdrop-filter: saturate(180%) blur(16px);
+  -webkit-backdrop-filter: saturate(180%) blur(16px);
 }
 
 .content-text .collab-inspector span {
-  color: var(--declare-muted);
+  color: var(--declare-rose);
   font-size: 0.68rem;
   font-weight: 850;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .content-text .collab-inspector h3 {
-  margin: 0.35rem 0 0.45rem;
+  margin: 0.35rem 0 0.5rem;
   color: var(--declare-ink);
-  font-size: 1rem;
-  line-height: 1.25;
+  font-family: var(--font);
+  font-size: 1.08rem;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+  line-height: 1.28;
+  font-variation-settings: normal;
 }
 
 .content-text .collab-inspector strong {
   display: block;
-  color: var(--accent-hover);
-  font-size: 2rem;
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
   line-height: 1;
+  font-variation-settings: "opsz" 144, "SOFT" 60;
+  background: linear-gradient(90deg, var(--declare-rose), var(--declare-blue) 55%, var(--declare-teal));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+[data-theme="dark"] .content-text .collab-inspector strong {
+  background: linear-gradient(90deg, #f05ca8, #9b6cff 50%, #72e4dc);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .content-text .collab-inspector p {
-  margin: 0.25rem 0 0;
+  margin: 0.35rem 0 0;
   color: var(--declare-muted);
-  font-size: 0.85rem;
-  line-height: 1.45;
+  font-size: 0.88rem;
+  line-height: 1.5;
 }
 
 .content-text .collaboration-notes {
@@ -1884,26 +1898,22 @@
   line-height: 1.6;
 }
 
-[data-theme="dark"] .content-text .collab-node circle,
 [data-theme="dark"] .content-text .collab-inspector {
-  background: rgba(15, 23, 42, 0.9);
+  background: rgba(15, 23, 42, 0.85);
 }
 
-[data-theme="dark"] .content-text .collab-link path {
-  opacity: 0.86;
-}
-
-[data-theme="dark"] .content-text .collab-node > circle:not(.collab-node__halo) {
-  fill: rgba(15, 23, 42, 0.92);
-}
-
-[data-theme="dark"] .content-text .collab-node text,
-[data-theme="dark"] .content-text .collab-link text {
+[data-theme="dark"] .content-text .collab-node text {
   fill: rgba(248, 250, 252, 0.96);
 }
 
 [data-theme="dark"] .content-text .collab-link text {
-  stroke: rgba(15, 23, 42, 0.92);
+  fill: rgba(178, 188, 207, 0.9);
+}
+
+[data-theme="dark"] .content-text .collab-link:hover text,
+[data-theme="dark"] .content-text .collab-link:focus text,
+[data-theme="dark"] .content-text .collab-link.is-active text {
+  fill: rgba(248, 250, 252, 1);
 }
 
 .content-text .timeline article {
