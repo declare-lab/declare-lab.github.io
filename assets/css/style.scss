@@ -74,10 +74,10 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
 
 img { max-width: 100%; height: auto; }
 
-h1, h2, h3, h4 { line-height: 1.25; font-weight: 750; letter-spacing: 0; color: var(--text); }
-h1 { font-size: 2.15em; letter-spacing: 0; }
-h2 { font-size: 1.42em; margin: 1.9em 0 0.55em; }
-h3 { font-size: 1.2em; margin: 1.5em 0 0.5em; }
+h1, h2, h3, h4 { line-height: 1.22; font-weight: 750; letter-spacing: -0.005em; color: var(--text); }
+h1 { font-size: 2.55em; letter-spacing: -0.015em; }
+h2 { font-size: 1.6em; margin: 1.9em 0 0.55em; letter-spacing: -0.01em; }
+h3 { font-size: 1.28em; margin: 1.5em 0 0.5em; }
 
 p { margin: 0 0 1em; }
 ul, ol { margin: 0 0 1em; padding-left: 1.5em; }
