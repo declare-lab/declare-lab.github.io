@@ -10,13 +10,14 @@ classes: wide
 
 <section class="page-lead page-lead--compact">
   <p>DeCLaRe Lab's funded projects support research across embodied AI, trustworthy language generation, responsible AI, audio generation, and multimodal foundation models. These projects also indicate active directions where students, postdocs, visitors, and collaborators can contribute.</p>
-  <div class="page-chip-strip" aria-label="Funded project sections">
-    <a href="#active-projects">Active Projects</a>
-    <a href="#completed-projects">Completed Projects</a>
-    <a href="#completed-support">Completed Support</a>
-    <a href="/join/">Join the Lab</a>
-  </div>
 </section>
+
+<nav class="page-chip-strip" aria-label="Funded project sections">
+  <a href="#active-projects">Active Projects</a>
+  <a href="#completed-projects">Completed Projects</a>
+  <a href="#completed-support">Completed Support</a>
+  <a href="/join/">Join the Lab</a>
+</nav>
 
 <h2 id="active-projects">Active Projects</h2>
 
