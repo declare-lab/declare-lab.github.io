@@ -63,37 +63,24 @@ classes: wide
         <title id="collab-map-title">DeCLaRe type-level collaboration network</title>
         <desc id="collab-map-desc">A star-schema view of the publication archive, with papers at the center and author, collaborator, partner, and research-theme dimensions around it.</desc>
         <defs>
-          <linearGradient id="collabEdgeIntra" x1="270" y1="190" x2="490" y2="250" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#13bfa6"></stop>
-            <stop offset="1" stop-color="#60a5fa"></stop>
+          <!-- Single brand gradient used for the active edge. All other defs alias to it
+               so per-relationship "rainbow" stroke colors collapse into one accent. -->
+          <linearGradient id="collabEdgeIntra" x1="0" y1="0" x2="1" y2="0.8">
+            <stop offset="0" stop-color="#c23a78"></stop>
+            <stop offset="0.55" stop-color="#2457a6"></stop>
+            <stop offset="1" stop-color="#087f7a"></stop>
           </linearGradient>
-          <linearGradient id="collabEdgeExternal" x1="420" y1="210" x2="690" y2="330" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#10b981"></stop>
-            <stop offset="0.52" stop-color="#38bdf8"></stop>
-            <stop offset="1" stop-color="#a78bfa"></stop>
-          </linearGradient>
-          <linearGradient id="collabEdgeAcademic" x1="620" y1="320" x2="460" y2="460" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#38bdf8"></stop>
-            <stop offset="1" stop-color="#22c55e"></stop>
-          </linearGradient>
-          <linearGradient id="collabEdgeIndustry" x1="650" y1="330" x2="640" y2="460" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#f472b6"></stop>
-            <stop offset="1" stop-color="#fb923c"></stop>
-          </linearGradient>
-          <linearGradient id="collabEdgeTheme" x1="330" y1="330" x2="190" y2="420" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#22c55e"></stop>
-            <stop offset="1" stop-color="#eab308"></stop>
-          </linearGradient>
-          <linearGradient id="collabEdgePI" x1="330" y1="190" x2="330" y2="80" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#38bdf8"></stop>
-            <stop offset="1" stop-color="#f472b6"></stop>
-          </linearGradient>
-          <filter id="collabEdgeShadow" filterUnits="userSpaceOnUse" x="-120" y="-120" width="1000" height="760">
-            <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#0f172a" flood-opacity="0.22"></feDropShadow>
-          </filter>
-          <filter id="collabNodeGlow" filterUnits="userSpaceOnUse" x="-120" y="-120" width="1000" height="760">
-            <feDropShadow dx="0" dy="13" stdDeviation="9" flood-color="#0f172a" flood-opacity="0.2"></feDropShadow>
-          </filter>
+          <linearGradient id="collabEdgeExternal" href="#collabEdgeIntra"></linearGradient>
+          <linearGradient id="collabEdgeAcademic" href="#collabEdgeIntra"></linearGradient>
+          <linearGradient id="collabEdgeIndustry" href="#collabEdgeIntra"></linearGradient>
+          <linearGradient id="collabEdgeTheme" href="#collabEdgeIntra"></linearGradient>
+          <linearGradient id="collabEdgePI" href="#collabEdgeIntra"></linearGradient>
+          <!-- Center anchor node fill -->
+          <radialGradient id="collabNodeCenter" cx="0.3" cy="0.3" r="0.9">
+            <stop offset="0" stop-color="#3b6fc6"></stop>
+            <stop offset="0.6" stop-color="#2457a6"></stop>
+            <stop offset="1" stop-color="#173f7d"></stop>
+          </radialGradient>
         </defs>
         <g class="collab-links">
           <g class="collab-link collab-link--intra is-active" tabindex="0" data-title="Internal collaboration at DeCLaRe" data-percent="44.0%" data-count="73 of 166 papers" data-detail="At least two non-PI DeCLaRe members appear on the same paper. Current members and alumni are both counted as DeCLaRe members.">
