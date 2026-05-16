@@ -102,6 +102,13 @@ strong { font-weight: 600; }
   border-bottom-color: rgba(43, 48, 64, 0.6);
 }
 
+/* Safe-area support for iOS notch and rounded displays */
+@supports (padding: env(safe-area-inset-top)) {
+  .site-header { padding-top: env(safe-area-inset-top); }
+  .header-inner { height: calc(76px + env(safe-area-inset-top)); }
+  .site-main { padding-bottom: calc(2.8em + env(safe-area-inset-bottom)); }
+}
+
 .header-inner {
   max-width: var(--max-width);
   margin: 0 auto;
