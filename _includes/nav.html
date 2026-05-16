@@ -24,3 +24,48 @@
     </nav>
   </div>
 </header>
+<script>
+  (function() {
+    var menuToggle = document.querySelector('.menu-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (!menuToggle || !navLinks) return;
+
+    function closeNav() {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }
+
+    menuToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      var isOpen = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    // Close when a link inside the nav is clicked
+    navLinks.addEventListener('click', function(e) {
+      var t = e.target;
+      while (t && t !== navLinks) {
+        if (t.tagName && t.tagName.toLowerCase() === 'a') {
+          closeNav();
+          break;
+        }
+        t = t.parentNode;
+      }
+    });
+
+    // Close on outside click
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      if (!navLinks.contains(target) && !menuToggle.contains(target)) {
+        closeNav();
+      }
+    }, true);
+
+    // Close on Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' || e.key === 'Esc') {
+        if (navLinks.classList.contains('open')) closeNav();
+      }
+    });
+  })();
+</script>
