@@ -99,9 +99,9 @@ classes: wide
             <path d="M308 218 C270 188, 250 173, 238 175"></path>
             <text x="256" y="177">44%</text>
           </g>
-          <g class="collab-link collab-link--pi" tabindex="0" data-title="Initiated in DeCLaRe" data-percent="77.1%" data-count="128 of 166 papers" data-detail="Counted based on the PI authorship position: first, second, or last author.">
+          <g class="collab-link collab-link--pi" tabindex="0" data-title="Initiated in DeCLaRe" data-percent="83.7%" data-count="139 of 166 papers" data-detail="Counted when the first author is a DeCLaRe member or the PI is first, second, or last author.">
             <path d="M350 170 C332 134, 318 106, 304 82"></path>
-            <text x="342" y="122">77.1%</text>
+            <text x="342" y="122">83.7%</text>
           </g>
           <g class="collab-link collab-link--external" tabindex="0" data-title="DeCLaRe members with external collaborators" data-percent="89%" data-count="148 of 166 papers" data-detail="Most papers connect DeCLaRe members to broader research networks.">
             <path d="M434 222 C478 184, 518 176, 548 182"></path>

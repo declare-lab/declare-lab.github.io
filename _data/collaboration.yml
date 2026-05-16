@@ -19,9 +19,9 @@ edges:
     takeaway: "At least two non-PI DeCLaRe members appear on the same paper"
   - source: "Initiated in DeCLaRe"
     target: "Publication archive"
-    percent: 77.1
-    count: 128
-    takeaway: "Counted based on the PI authorship position: first, second, or last author"
+    percent: 83.7
+    count: 139
+    takeaway: "Counted when the first author is a DeCLaRe member or the PI is first, second, or last author"
   - source: "DeCLaRe members"
     target: "External collaborators"
     percent: 89
