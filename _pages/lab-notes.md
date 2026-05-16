@@ -13,6 +13,24 @@ classes: wide
 </section>
 
 <section class="notes-grid notes-grid--featured">
+  <a class="note-card-link" href="/lab-notes/data-centric-training-part-ii/">
+    <img src="/assets/images/lab-notes/data-centric-training-part-ii/figure-01.png" alt="PODS oscillatory data-volume scheduling overview">
+    <span>Paper explainer · May 2026</span>
+    <h3>Toward Efficient Data-Centric Training, Part II</h3>
+    <p>PODS asks how much data a model should see over training, turning selection ratio into a dynamic scheduling signal.</p>
+    <div class="project-links">
+      <span>Read note</span>
+    </div>
+  </a>
+  <a class="note-card-link" href="/lab-notes/data-centric-training-part-i/">
+    <img src="/assets/images/lab-notes/data-centric-training-part-i/figure-02.png" alt="Data Agent training-loop overview">
+    <span>Paper explainer · May 2026</span>
+    <h3>Toward Efficient Data-Centric Training, Part I</h3>
+    <p>Data Agent learns a training-aware policy for selecting useful data as the target model evolves.</p>
+    <div class="project-links">
+      <span>Read note</span>
+    </div>
+  </a>
   <a class="note-card-link" href="/lab-notes/delta-mem/">
     <img src="/assets/images/lab-notes/delta-mem/architecture.png" alt="delta-mem architecture overview">
     <span>Paper explainer · May 2026</span>

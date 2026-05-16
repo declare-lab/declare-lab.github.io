@@ -250,6 +250,7 @@ title: ""
       <p>Efficient training through dynamic data selection.</p>
       <div class="project-links">
         <a href="https://arxiv.org/abs/2603.07433">Paper</a>
+        <a href="https://github.com/Jackbrocp/Data-Agent">Code</a>
       </div>
     </article>
     <article>

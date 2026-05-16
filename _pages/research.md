@@ -277,6 +277,8 @@ classes: wide
         <p>An end-to-end dynamic data selection framework that learns sample-wise policies to accelerate training while preserving performance.</p>
         <div class="project-links">
           <a href="https://arxiv.org/abs/2603.07433">Paper</a>
+          <a href="https://github.com/Jackbrocp/Data-Agent">Code</a>
+          <a href="/lab-notes/data-centric-training-part-i/">Lab note</a>
         </div>
         <p class="project-team">Team: Suorong Yang, Fangjian Su, Hai Gan, Ziqi Ye, Jie Li, Baile Xu, Furao Shen, Soujanya Poria</p>
       </div>

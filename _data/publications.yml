@@ -2,6 +2,26 @@
 # Fields: title, authors, venue, year
 # Optional: publication_url, scholar_url, pdf, abstract, code, project, categories
 
+- title: 'Beyond What to Select: A Plug-and-play Oscillatory Data-Volume Scheduling for Efficient Model Training'
+  authors: "S Yang, H Zhu, H Gan, F Su, G Li, F Shen, S Poria"
+  venue: 'arXiv preprint arXiv:2605.14773'
+  year: 2026
+  scholar_url: 'https://scholar.google.com/scholar?q=Beyond+What+to+Select%3A+A+Plug-and-play+Oscillatory+Data-Volume+Scheduling+for+Efficient+Model+Training'
+  publication_url: 'https://arxiv.org/abs/2605.14773'
+  pdf: 'https://arxiv.org/pdf/2605.14773'
+  categories:
+    - 'ML Efficiency'
+  abstract: |
+    Data selection accelerates training by identifying representative training data while preserving
+    model performance. However, most methods focus on what to select while keeping the selected data
+    volume fixed throughout training. We revisit data selection from an optimization perspective and
+    show that selected-data training induces an implicit regularization effect modulated by the
+    instantaneous selection ratio. Motivated by this observation, we propose PODS, a plug-and-play
+    oscillatory data-volume scheduling framework that alternates between low-ratio regularization
+    phases and high-ratio recovery phases under the same target data budget. PODS is compatible with
+    existing static and dynamic selection methods and improves the efficiency-generalization trade-off
+    across vision and language-model training settings, including ImageNet-1k and LLM instruction tuning.
+
 - title: 'δ-mem: Efficient Online Memory for Large Language Models'
   authors: "J Lei, D Zhang, J Li, W Wang, K Fan, X Liu, Q Liu, X Ma, B Chen, S Poria"
   venue: 'arXiv preprint arXiv:2605.12357'
@@ -279,6 +299,7 @@
   scholar_url: 'https://scholar.google.com/scholar?q=Data+Agent%3A+Learning+to+Select+Data+via+End-to-End+Dynamic+Optimization'
   publication_url: 'https://arxiv.org/abs/2603.07433'
   pdf: 'https://arxiv.org/pdf/2603.07433'
+  code: 'https://github.com/Jackbrocp/Data-Agent'
   categories:
     - 'Agentic AI'
   abstract: |

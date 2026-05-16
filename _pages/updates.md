@@ -36,6 +36,21 @@ classes: wide
       <time>May 2026</time>
     </div>
     <div class="update-card__body">
+      <h3>PODS studies how much data to use during efficient training</h3>
+      <p>The new arXiv paper complements Data Agent by scheduling the selected data volume over training, improving the efficiency-generalization trade-off under the same data budget.</p>
+      <div class="project-links">
+        <a href="/lab-notes/data-centric-training-part-ii/">Read the lab note</a>
+        <a href="https://arxiv.org/abs/2605.14773">Paper</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="update-card update-card--paper">
+    <div class="update-card__meta">
+      <span>Paper</span>
+      <time>May 2026</time>
+    </div>
+    <div class="update-card__body">
       <h3>δ-mem introduces lightweight online memory for LLMs</h3>
       <p>The new arXiv paper studies how a compact online memory state can evolve during interaction and directly modulate Transformer attention without extending the explicit context.</p>
       <div class="project-links">
@@ -89,7 +104,10 @@ classes: wide
     <div class="update-card__body">
       <h3>Data Agent advances efficient learning</h3>
       <p>Data Agent studies end-to-end dynamic data selection for training-aware efficiency.</p>
-      <a href="https://arxiv.org/abs/2603.07433">Read the paper</a>
+      <div class="project-links">
+        <a href="/lab-notes/data-centric-training-part-i/">Read the lab note</a>
+        <a href="https://github.com/Jackbrocp/Data-Agent">Code</a>
+      </div>
     </div>
   </article>
 
