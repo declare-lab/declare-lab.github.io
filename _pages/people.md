@@ -84,6 +84,14 @@ classes: wide
     <div><h3>Vernon Toh</h3><p>Reasoning and prompt augmentation</p><div class="person-links"><a href="https://scholar.google.com/citations?user=ZUPDabgAAAAJ&hl=en">Scholar</a></div></div>
   </article>
   <article class="person-card">
+    <img src="/assets/images/people/richmond-sin.png" alt="Richmond Sin">
+    <div><h3>Richmond Sin</h3><p>Reasoning</p><div class="person-links"><a href="https://richmondsin.vercel.app/">Website</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/peilin-feng.JPG" alt="Peilin Feng">
+    <div><h3>Peilin Feng</h3><p>Multimodal understanding, agents</p><div class="person-links"><a href="https://peilin-ff.github.io/">Website</a></div></div>
+  </article>
+  <article class="person-card">
     <img src="/assets/images/people/tej-deep-pala.jpg" alt="Tej Deep Pala">
     <div><h3>Tej Deep Pala</h3><p>LLM reasoning, reinforcement learning, multi-agent systems</p><div class="person-links"><a href="https://tej-deep.github.io">Website</a></div></div>
   </article>
