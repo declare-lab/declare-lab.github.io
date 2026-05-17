@@ -157,7 +157,7 @@ classes: wide
   </article>
   <article class="person-card">
     <img src="/assets/images/people/yingting.jpg" alt="Yingting Li">
-    <div><h3>Yingting Li</h3><p>Alumnus · Speech synthesis and multimodal learning</p><div class="person-links"><a href="https://soujanyaporia.github.io/publications/">Publications</a></div></div>
+    <div><h3>Yingting Li</h3><p>Alumnus · China Academy of Information and Communications Technology</p><div class="person-links"><a href="https://soujanyaporia.github.io/publications/">Publications</a></div></div>
   </article>
   <article class="person-card">
     <img src="/assets/images/people/xiaocui.jpg" alt="Xiaocui Yang">
