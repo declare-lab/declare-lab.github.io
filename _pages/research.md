@@ -34,7 +34,7 @@ classes: wide
   </div>
   <div class="project-grid">
     <article class="project-card project-card--large">
-      <img src="/assets/images/logos/jailbreakprompt_main_paper.png" alt="Safety evaluation visual">
+      <img src="/assets/images/research/offtopiceval.png" alt="OffTopicEval operational safety evaluation visual">
       <div class="project-card__body">
         <span class="project-tag">Operational Safety</span>
         <h3>OffTopicEval</h3>
@@ -46,7 +46,7 @@ classes: wide
       </div>
     </article>
     <article class="project-card">
-      <img src="/assets/images/research/qa.png" alt="Safety alignment visual">
+      <img src="/assets/images/research/safety-arithmetic.png" alt="Safety Arithmetic test-time steering visual">
       <div class="project-card__body">
         <span class="project-tag">Alignment</span>
         <h3>Safety Arithmetic</h3>
@@ -110,7 +110,7 @@ classes: wide
   </div>
   <div class="project-grid">
     <article class="project-card project-card--large">
-      <img src="/assets/images/research/qa2.png" alt="Trustworthy retrieval augmented generation visual">
+      <img src="/assets/images/research/trust-align.png" alt="Trust-Score and Trust-Align retrieval augmented generation visual">
       <div class="project-card__body">
         <span class="project-tag">RAG</span>
         <h3>Trust-Score and Trust-Align</h3>
@@ -136,7 +136,7 @@ classes: wide
       </div>
     </article>
     <article class="project-card">
-      <img src="/assets/images/research/conv.png" alt="Multi-agent trust visual">
+      <img src="/assets/images/research/ECL.png" alt="Epistemic Context Learning visual">
       <div class="project-card__body">
         <span class="project-tag">Multi-Agent Trust</span>
         <h3>Epistemic Context Learning</h3>
