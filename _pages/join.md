@@ -83,29 +83,29 @@ classes: wide
           </radialGradient>
         </defs>
         <g class="collab-links">
-          <g class="collab-link collab-link--intra is-active" tabindex="0" data-title="Internal collaboration at DeCLaRe" data-percent="44.0%" data-count="73 of 166 papers" data-detail="At least two non-PI DeCLaRe members appear on the same paper. Current members and alumni are both counted as DeCLaRe members.">
+          <g class="collab-link collab-link--intra is-active" tabindex="0" data-title="Internal collaboration at DeCLaRe" data-percent="49.1%" data-count="82 of 167 papers" data-detail="At least two non-PI DeCLaRe members appear on the same paper. Current members and alumni are both counted as DeCLaRe members.">
             <path d="M308 218 C270 188, 250 173, 238 175"></path>
-            <text x="256" y="177">44%</text>
+            <text x="256" y="177">49.1%</text>
           </g>
-          <g class="collab-link collab-link--pi" tabindex="0" data-title="Initiated in DeCLaRe" data-percent="83.7%" data-count="139 of 166 papers" data-detail="Counted when the first author is a DeCLaRe member or the PI is first, second, or last author.">
+          <g class="collab-link collab-link--pi" tabindex="0" data-title="Initiated in DeCLaRe" data-percent="84.4%" data-count="141 of 167 papers" data-detail="Counted when the first author is a DeCLaRe member or the PI is first, second, or last author.">
             <path d="M350 170 C332 134, 318 106, 304 82"></path>
-            <text x="342" y="122">83.7%</text>
+            <text x="342" y="122">84.4%</text>
           </g>
-          <g class="collab-link collab-link--external" tabindex="0" data-title="DeCLaRe members with external collaborators" data-percent="89%" data-count="148 of 166 papers" data-detail="Most papers connect DeCLaRe members to broader research networks.">
+          <g class="collab-link collab-link--external" tabindex="0" data-title="DeCLaRe members with external collaborators" data-percent="89.8%" data-count="150 of 167 papers" data-detail="Most papers connect DeCLaRe members to broader research networks.">
             <path d="M434 222 C478 184, 518 176, 548 182"></path>
-            <text x="486" y="166">89%</text>
+            <text x="486" y="166">89.8%</text>
           </g>
-          <g class="collab-link collab-link--academic" tabindex="0" data-title="Academic partner papers" data-percent="83.8%" data-count="124 of 148 externally collaborative papers" data-detail="Externally collaborative papers with academic partners. Mixed academic-industry papers are counted here.">
+          <g class="collab-link collab-link--academic" tabindex="0" data-title="Academic partner papers" data-percent="98.0%" data-count="147 of 150 externally collaborative papers" data-detail="Externally collaborative papers with academic partners or public-academic collaborators.">
             <path d="M584 232 C588 296, 558 344, 520 366"></path>
-            <text x="548" y="310">83.8%</text>
+            <text x="548" y="310">98.0%</text>
           </g>
-          <g class="collab-link collab-link--industry" tabindex="0" data-title="Industry partner papers" data-percent="21.6%" data-count="32 of 148 externally collaborative papers" data-detail="Externally collaborative papers with industry partners. Mixed academic-industry papers are counted here.">
+          <g class="collab-link collab-link--industry" tabindex="0" data-title="Industry partner papers" data-percent="21.3%" data-count="32 of 150 externally collaborative papers" data-detail="Externally collaborative papers with industry partners. Mixed academic-industry papers are counted here.">
             <path d="M606 234 C646 286, 662 330, 656 366"></path>
-            <text x="650" y="308">21.6%</text>
+            <text x="650" y="308">21.3%</text>
           </g>
-          <g class="collab-link collab-link--theme" tabindex="0" data-title="Multi-theme papers" data-percent="70%" data-count="117 of 166 papers" data-detail="Most papers connect more than one DeCLaRe research theme.">
+          <g class="collab-link collab-link--theme" tabindex="0" data-title="Multi-theme papers" data-percent="70.1%" data-count="117 of 167 papers" data-detail="Most papers connect more than one DeCLaRe research theme.">
             <path d="M330 300 C292 340, 262 360, 238 364"></path>
-            <text x="265" y="348">70%</text>
+            <text x="265" y="348">70.1%</text>
           </g>
         </g>
 
@@ -149,8 +149,8 @@ classes: wide
       <aside class="collab-inspector" aria-live="polite">
         <span>Selected relationship</span>
         <h3 id="collabInsightTitle">Internal collaboration at DeCLaRe</h3>
-        <strong id="collabInsightPercent">44.0%</strong>
-        <p id="collabInsightCount">73 of 166 papers</p>
+        <strong id="collabInsightPercent">49.1%</strong>
+        <p id="collabInsightCount">82 of 167 papers</p>
         <p id="collabInsightDetail">At least two non-PI DeCLaRe members appear on the same paper. Current members and alumni are both counted as DeCLaRe members.</p>
       </aside>
     </div>

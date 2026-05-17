@@ -17,6 +17,7 @@ classes: wide
   <a href="#research-scientists">Research Scientists</a>
   <a href="#phd-students">PhD Students</a>
   <a href="#research-assistants">Research Assistants</a>
+  <a href="#visiting-students">Visiting Students</a>
   <a href="#alumni">Alumni</a>
 </nav>
 
@@ -92,6 +93,10 @@ classes: wide
     <div><h3>Peilin Feng</h3><p>Multimodal understanding, agents</p><div class="person-links"><a href="https://peilin-ff.github.io/">Website</a></div></div>
   </article>
   <article class="person-card">
+    <img src="/assets/images/people/ruiwen-zhou.jpg" alt="Ruiwen Zhou">
+    <div><h3>Ruiwen Zhou</h3><p>LLM reasoning and AI agents · Co-supervised with Min-Yen Kan at NUS</p><div class="person-links"><a href="https://skyriver-2000.github.io/">Website</a></div></div>
+  </article>
+  <article class="person-card">
     <img src="/assets/images/people/tej-deep-pala.jpg" alt="Tej Deep Pala">
     <div><h3>Tej Deep Pala</h3><p>LLM reasoning, reinforcement learning, multi-agent systems</p><div class="person-links"><a href="https://tej-deep.github.io">Website</a></div></div>
   </article>
@@ -110,36 +115,81 @@ classes: wide
   </article>
 </div>
 
+<h2 id="visiting-students">Visiting Students</h2>
+
+<div class="people-grid">
+  <article class="person-card">
+    <img src="/assets/images/people/zhixuan-wu.jpeg" alt="Zhixuan Wu">
+    <div><h3>Zhixuan Wu</h3><p>Visiting student · PhD student at BUPT</p><div class="person-links"><a href="https://scholar.google.com/citations?user=BpjIMQcAAAAJ&hl=zh-CN">Scholar</a></div></div>
+  </article>
+</div>
+
 <h2 id="alumni">Alumni</h2>
 
 <div class="people-grid">
   <article class="person-card">
     <img src="/assets/images/people/ambuj.jpeg" alt="Ambuj Mehrish">
-    <div><h3>Ambuj Mehrish</h3><p>Alumnus · Now at Ca’ Foscari University of Venice</p><div class="person-links"><a href="https://www.linkedin.com/in/ambuj-mehrish-159a0417b/">Profile</a></div></div>
+    <div><h3>Ambuj Mehrish</h3><p>Alumnus · Now at Ca’ Foscari University of Venice</p><div class="person-links"><a href="https://www.unive.it/people/ambuj.mehrish">Profile</a></div></div>
   </article>
   <article class="person-card">
     <img src="/assets/images/people/qi.jpg" alt="Qi Sun">
     <div><h3>Qi Sun</h3><p>Alumnus · Now at Alibaba</p><div class="person-links"><a href="https://scholar.google.com/citations?user=GpH4vXwAAAAJ">Scholar</a></div></div>
   </article>
   <article class="person-card">
+    <img src="/assets/images/people/shang-hong-sim.png" alt="Shang Hong Sim">
+    <div><h3>Shang Hong Sim</h3><p>Alumnus · Now at Oumi AI</p><div class="person-links"><a href="https://shanghongsim.github.io/">Website</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/yixuan.jpg" alt="Yi Xuan Tan">
+    <div><h3>Yi Xuan Tan</h3><p>Alumnus · Spoken language understanding</p><div class="person-links"><a href="https://huggingface.co/declare-lab/segue-w2v2-base">Project</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/samson.jpg" alt="Samson Yu">
+    <div><h3>Samson Yu</h3><p>Alumnus · PhD student at NUS</p><div class="person-links"><a href="https://github.com/declare-lab/ASTE-RL">Project</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/sarthak.jpg" alt="Sarthak Bhagat">
+    <div><h3>Sarthak Bhagat</h3><p>Alumnus · Now at 1X Technologies</p><div class="person-links"><a href="https://sarthak268.github.io/">Website</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/shagun.jpg" alt="Shagun Uppal">
+    <div><h3>Shagun Uppal</h3><p>Alumnus · Now at Skild AI</p><div class="person-links"><a href="https://shagunuppal.github.io/">Website</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/yingting.jpg" alt="Yingting Li">
+    <div><h3>Yingting Li</h3><p>Alumnus · Speech synthesis and multimodal learning</p><div class="person-links"><a href="https://soujanyaporia.github.io/publications/">Publications</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/xiaocui.jpg" alt="Xiaocui Yang">
+    <div><h3>Xiaocui Yang</h3><p>Alumnus · Assistant Professor at Northeastern University</p><div class="person-links"><a href="https://openreview.net/profile?id=~Xiaocui_Yang1">Profile</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/shanshan.jpeg" alt="Shanshan Peng">
+    <div><h3>Shanshan Peng</h3><p>Alumnus · Now at Apple</p><div class="person-links"><a href="https://aclanthology.org/2020.emnlp-main.721/">Paper</a></div></div>
+  </article>
+  <article class="person-card">
+    <img src="/assets/images/people/jiankun.jpeg" alt="Jiankun Lu">
+    <div><h3>Jiankun Lu</h3><p>Alumnus · Now at Apple</p><div class="person-links"><a href="https://aclanthology.org/2020.emnlp-main.721/">Paper</a></div></div>
+  </article>
+  <article class="person-card">
     <div class="person-avatar" aria-hidden="true">WJ</div>
-    <div><h3>Weisheng Jin</h3><p>Alumnus</p><div class="person-links"><a href="https://scholar.google.com/citations?user=6ycWC-cAAAAJ&hl=en">Scholar</a></div></div>
+    <div><h3>Weisheng Jin</h3><p>Alumnus · PhD student at SUTD</p><div class="person-links"><a href="https://scholar.google.com/citations?user=6ycWC-cAAAAJ&hl=en">Scholar</a></div></div>
   </article>
   <article class="person-card">
     <div class="person-avatar" aria-hidden="true">JA</div>
-    <div><h3>Javid Akhtar</h3><p>Alumnus</p><div class="person-links"><a href="https://www.linkedin.com/in/jaavid-aktar-7481451bb/">Profile</a></div></div>
+    <div><h3>Jaavid Akhtar</h3><p>Alumnus · PhD student at SUTD</p><div class="person-links"><a href="https://www.linkedin.com/in/jaavid-aktar-7481451bb/">Profile</a></div></div>
   </article>
   <article class="person-card">
     <img src="/assets/images/people/deepanway.jpeg" alt="Deepanway Ghosal">
-    <div><h3>Deepanway Ghosal</h3><p>Former PhD student · Now at DeepMind</p><div class="person-links"><a href="https://deepanwayx.github.io/">Website</a></div></div>
+    <div><h3>Deepanway Ghosal</h3><p>Former PhD student · Now at Google DeepMind</p><div class="person-links"><a href="https://deepanwayx.github.io/">Website</a></div></div>
   </article>
   <article class="person-card">
     <img src="/assets/images/people/ken.jpg" alt="Chia Yew Ken">
-    <div><h3>Chia Yew Ken</h3><p>Former PhD student · Now at Alibaba</p><div class="person-links"><a href="http://chiayewken.herokuapp.com/">Website</a></div></div>
+    <div><h3>Chia Yew Ken</h3><p>Former PhD student · Balyasny Asset Management L.P.</p><div class="person-links"><a href="https://chiayewken.com/">Website</a></div></div>
   </article>
   <article class="person-card">
     <img src="/assets/images/people/hui_chen.jpg" alt="Hui Chen">
-    <div><h3>Hui Chen</h3><p>Former PhD student · Now postdoc at NUS</p><div class="person-links"><a href="https://chchenhui.github.io/">Website</a></div></div>
+    <div><h3>Hui Chen</h3><p>Former PhD student · Research Fellow at NUS</p><div class="person-links"><a href="https://chchenhui.github.io/">Website</a></div></div>
   </article>
   <article class="person-card">
     <img src="/assets/images/people/devamanyu.jpg" alt="Devamanyu Hazarika">
@@ -151,6 +201,6 @@ classes: wide
   </article>
   <article class="person-card">
     <img src="/assets/images/people/hongpengfei.jpg" alt="Pengfei Hong">
-    <div><h3>Pengfei Hong</h3><p>Former PhD student</p><div class="person-links"><a href="https://github.com/Emrys-Hong">GitHub</a></div></div>
+    <div><h3>Pengfei Hong</h3><p>Former PhD student · Now at Tonghuashun</p><div class="person-links"><a href="https://github.com/Emrys-Hong">GitHub</a></div></div>
   </article>
 </div>
