@@ -2499,8 +2499,11 @@
   .content-text .home-index {
     position: sticky;
     top: 64px;
+    width: 100%;
+    max-width: 100%;
     margin-top: 0.9rem;
     padding: 0.75rem;
+    overflow: hidden;
   }
 
   .content-text .home-index__links,
@@ -2509,7 +2512,9 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
     overflow-x: auto;
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior-inline: contain;
     scrollbar-width: none;
   }
 
@@ -2527,7 +2532,10 @@
 
   .content-text .page-chip-strip {
     top: 64px;
+    width: 100%;
+    max-width: 100%;
     margin: 0.75rem 0 1.1rem;
+    contain: paint;
   }
 
   .content-text .declare-hero__visual,
