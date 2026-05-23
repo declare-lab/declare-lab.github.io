@@ -13,6 +13,22 @@ classes: wide
 </section>
 
 <section class="updates-feed">
+  <article class="update-card update-card--media">
+    <div class="update-card__meta">
+      <span>Media</span>
+      <time>May 2026</time>
+    </div>
+    <div class="update-card__body">
+      <h3>VentureBeat features δ-mem as working memory for AI agents</h3>
+      <p>VentureBeat interviewed Kyrie Lei and covered δ-mem as a compact 0.12% parameter add-on that gives AI agents a lightweight internal working memory. The article frames δ-mem as an important move beyond simply expanding context windows or adding more RAG: fast, online memory inside the model for long-running agent workflows.</p>
+      <div class="project-links">
+        <a href="https://venturebeat.com/orchestration/a-0-12-parameter-add-on-gives-ai-agents-the-working-memory-rag-cant">Read VentureBeat</a>
+        <a href="/lab-notes/delta-mem/">Read the lab note</a>
+        <a href="https://github.com/declare-lab/delta-Mem">Code</a>
+      </div>
+    </div>
+  </article>
+
   <article class="update-card update-card--congratulation">
     <div class="update-card__meta">
       <span>Congratulation</span>
