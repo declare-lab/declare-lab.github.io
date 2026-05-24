@@ -8,10 +8,15 @@
   --declare-teal: #087f7a;
   --declare-rose: #c23a78;
   --declare-gold: #8a5a00;
+  --declare-sticky-top: calc(76px + 0.75rem);
 }
 
 /* Additional small-screen adjustments for very small devices */
 @media (max-width: 420px) {
+  :root {
+    --declare-sticky-top: calc(60px + 0.55rem);
+  }
+
   .content-text .declare-hero {
     padding: 1rem 0 0.8rem;
   }
@@ -155,7 +160,7 @@
 
 .content-text .home-index {
   position: sticky;
-  top: 72px;
+  top: var(--declare-sticky-top);
   z-index: 30;
   display: flex;
   align-items: center;
@@ -995,7 +1000,7 @@
 
 .content-text .page-chip-strip {
   position: sticky;
-  top: 72px;
+  top: var(--declare-sticky-top);
   z-index: 29;
   display: flex;
   flex-wrap: wrap;
@@ -1186,13 +1191,23 @@
 }
 
 .content-text .pub-toolbar {
+  position: sticky;
+  top: var(--declare-sticky-top);
+  z-index: 28;
   display: grid;
   gap: 0.8rem;
   margin: 0 0 1.2rem;
   padding: 1rem;
   border: 1px solid var(--declare-line);
   border-radius: 8px;
-  background: var(--bg-card);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.06);
+  backdrop-filter: blur(16px);
+}
+
+[data-theme="dark"] .content-text .pub-toolbar {
+  background: rgba(24, 27, 37, 0.9);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.22);
 }
 
 .content-text .pub-layout {
@@ -1208,11 +1223,19 @@
 
 .content-text .pub-year-nav {
   position: sticky;
-  top: 96px;
+  top: var(--declare-sticky-top);
+  z-index: 27;
   padding: 0.85rem;
   border: 1px solid var(--declare-line);
   border-radius: 8px;
-  background: var(--bg-card);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.06);
+  backdrop-filter: blur(16px);
+}
+
+[data-theme="dark"] .content-text .pub-year-nav {
+  background: rgba(24, 27, 37, 0.9);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.22);
 }
 
 .content-text .pub-year-nav span {
@@ -2315,7 +2338,7 @@
 
 .content-text .updates-board__aside {
   position: sticky;
-  top: 5rem;
+  top: var(--declare-sticky-top);
   padding-top: 0.35rem;
 }
 
@@ -2403,13 +2426,20 @@
 
   .content-text .pub-year-nav {
     position: sticky;
-    top: 72px;
+    top: var(--declare-sticky-top);
     z-index: 29;
     width: 100%;
     max-width: 100%;
     min-width: 0;
     order: -1;
     overflow: hidden;
+  }
+
+  .content-text .pub-toolbar {
+    position: static;
+    top: auto;
+    box-shadow: none;
+    backdrop-filter: none;
   }
 
   .content-text .pub-year-nav div {
@@ -2499,7 +2529,7 @@
 
   .content-text .home-index {
     position: sticky;
-    top: 64px;
+    top: var(--declare-sticky-top);
     width: 100%;
     max-width: 100%;
     margin-top: 0.9rem;
@@ -2532,7 +2562,7 @@
   }
 
   .content-text .page-chip-strip {
-    top: 64px;
+    top: var(--declare-sticky-top);
     width: 100%;
     max-width: 100%;
     margin: 0.75rem 0 1.1rem;
