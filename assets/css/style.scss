@@ -1607,7 +1607,7 @@ strong { font-weight: 600; }
   .page-wrapper .page-content,
   .page-body,
   .page-body .content-text {
-    overflow-x: clip;
+    overflow-x: visible;
   }
 
   .page-wrapper {
