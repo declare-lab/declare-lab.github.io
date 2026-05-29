@@ -12,12 +12,8 @@ classes: wide
   <p>DeCLaRe Lab's funded projects support research across embodied AI, trustworthy language generation, responsible AI, audio generation, and multimodal foundation models. These projects also indicate active directions where students, postdocs, visitors, and collaborators can contribute.</p>
 </section>
 
-<nav class="page-chip-strip" aria-label="Funded project sections">
-  <a href="#active-projects">Active Projects</a>
-  <a href="#completed-projects">Completed Projects</a>
-  <a href="#completed-support">Completed Support</a>
-  <a href="/join/">Join the Lab</a>
-</nav>
+<div class="side-layout">
+<div class="side-layout__main">
 
 <h2 id="active-projects">Active Projects</h2>
 
@@ -132,6 +128,19 @@ classes: wide
     <h3>Meta Research and In-Kind Support</h3>
     <p>S$67K research support and S$56K in-kind support, consolidated here to avoid duplicate Meta entries.</p>
   </article>
+</div>
+
+</div>
+
+<aside class="section-nav" aria-label="Funded project sections">
+  <span>Sections</span>
+  <div>
+    <a href="#active-projects">Active Projects</a>
+    <a href="#completed-projects">Completed Projects</a>
+    <a href="#completed-support">Completed Support</a>
+    <a href="/join/">Join the Lab</a>
+  </div>
+</aside>
 </div>
 
 <section class="join-band join-band--quiet">

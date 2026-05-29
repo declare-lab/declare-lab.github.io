@@ -35,57 +35,13 @@
       });
     }
 
-    const stickyMenus = Array.from(document.querySelectorAll('.home-index, .page-chip-strip, .pub-toolbar, .pub-year-nav'));
-    const fixedMenus = Array.from(document.querySelectorAll('.home-index, .page-chip-strip'));
-    const sectionMenus = Array.from(document.querySelectorAll('.home-index, .page-chip-strip, .pub-year-nav'));
+    const stickyMenus = Array.from(document.querySelectorAll('.home-index, .page-chip-strip, .pub-toolbar, .pub-year-nav, .section-nav'));
+    const sectionMenus = Array.from(document.querySelectorAll('.home-index, .page-chip-strip, .pub-year-nav, .section-nav'));
     const header = document.querySelector('.site-header');
     let stickyFrame = null;
 
-    fixedMenus.forEach(function(menu) {
-      const sentinel = document.createElement('div');
-      sentinel.className = 'page-menu-sentinel';
-      sentinel.setAttribute('aria-hidden', 'true');
-      menu.before(sentinel);
-      menu._pageMenuSentinel = sentinel;
-
-      const placeholder = document.createElement('div');
-      placeholder.className = 'page-menu-placeholder';
-      placeholder.setAttribute('aria-hidden', 'true');
-      menu.after(placeholder);
-      menu._pageMenuPlaceholder = placeholder;
-    });
-
-    function setMenuFixed(menu, shouldFix, fixedTop) {
-      const placeholder = menu._pageMenuPlaceholder;
-      menu.classList.toggle('is-fixed-menu', shouldFix);
-      menu.style.setProperty('--fixed-menu-top', fixedTop + 'px');
-      if (placeholder) {
-        placeholder.classList.toggle('is-active', shouldFix);
-        placeholder.style.setProperty('--page-menu-placeholder-height', shouldFix ? menu.offsetHeight + 'px' : '0px');
-      }
-    }
-
-    function measureFixedMenus() {
-      fixedMenus.forEach(function(menu) {
-        const wasFixed = menu.classList.contains('is-fixed-menu');
-        const placeholder = menu._pageMenuPlaceholder;
-        menu.classList.remove('is-fixed-menu');
-        if (placeholder) placeholder.classList.remove('is-active');
-        menu.style.setProperty('--fixed-menu-width', menu.getBoundingClientRect().width + 'px');
-        if (wasFixed) menu.classList.add('is-fixed-menu');
-        if (placeholder && wasFixed) placeholder.classList.add('is-active');
-      });
-    }
-
     function updatePageMenus() {
       const headerBottom = header ? header.getBoundingClientRect().bottom : 0;
-      const fixedTop = Math.round(headerBottom + 10);
-
-      fixedMenus.forEach(function(menu) {
-        const sentinel = menu._pageMenuSentinel;
-        const shouldFix = sentinel ? sentinel.getBoundingClientRect().top <= fixedTop : false;
-        setMenuFixed(menu, shouldFix, fixedTop);
-      });
 
       stickyMenus.forEach(function(menu) {
         const rect = menu.getBoundingClientRect();
@@ -112,17 +68,10 @@
     }
 
     if (stickyMenus.length) {
-      measureFixedMenus();
       updatePageMenus();
       window.addEventListener('scroll', requestMenuUpdate, { passive: true });
-      window.addEventListener('resize', function() {
-        measureFixedMenus();
-        requestMenuUpdate();
-      });
-      window.addEventListener('load', function() {
-        measureFixedMenus();
-        requestMenuUpdate();
-      });
+      window.addEventListener('resize', requestMenuUpdate);
+      window.addEventListener('load', requestMenuUpdate);
     }
   </script>
 </body>

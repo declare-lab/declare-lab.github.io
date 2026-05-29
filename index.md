@@ -33,15 +33,8 @@ title: ""
   </div>
 </section>
 
-<nav class="home-index" aria-label="Homepage sections">
-  <div class="home-index__links">
-    <a href="#about">About</a>
-    <a href="#lab-identity">Lab's Identity</a>
-    <a href="#research-areas">Research Areas</a>
-    <a href="#representative-work">Representative Work</a>
-    <a href="#hot-papers">Hot Papers 🔥</a>
-  </div>
-</nav>
+<div class="side-layout side-layout--home">
+<div class="side-layout__main">
 
 <section class="declare-intro" id="about">
   <div>
@@ -301,3 +294,18 @@ title: ""
     </article>
   </div>
 </section>
+
+</div>
+
+<aside class="section-nav" aria-label="Homepage sections">
+  <span>Sections</span>
+  <div>
+    <a href="#about">About</a>
+    <a href="#lab-identity">Lab's Identity</a>
+    <a href="#research-areas">Research Areas</a>
+    <a href="#representative-work">Representative Work</a>
+    <a href="#hot-papers">Hot Papers 🔥</a>
+    <a href="#research-support">Research Support</a>
+  </div>
+</aside>
+</div>

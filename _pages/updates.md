@@ -8,11 +8,16 @@ toc: false
 classes: wide
 ---
 
+<div class="side-layout">
+<div class="side-layout__main">
+
 <section class="updates-intro">
   <p>A flexible record for papers, grants, awards, student milestones, visitors, releases, and lab announcements. Prospective students and collaborators can use this page to understand what the group is actively building.</p>
 </section>
 
-<section class="updates-feed">
+<section class="updates-year" id="updates-2026">
+  <h2>2026</h2>
+  <div class="updates-feed">
   <article class="update-card update-card--media">
     <div class="update-card__meta">
       <span>Media</span>
@@ -138,6 +143,13 @@ classes: wide
     </div>
   </article>
 
+  </div>
+</section>
+
+<section class="updates-year" id="updates-2025">
+  <h2>2025</h2>
+  <div class="updates-feed">
+
   <article class="update-card update-card--grant">
     <div class="update-card__meta">
       <span>Grant</span>
@@ -185,4 +197,16 @@ classes: wide
       <a href="/join/">Opportunities</a>
     </div>
   </article>
+  </div>
 </section>
+
+</div>
+
+<aside class="section-nav" aria-label="Update years">
+  <span>Years</span>
+  <div>
+    <a href="#updates-2026">2026</a>
+    <a href="#updates-2025">2025</a>
+  </div>
+</aside>
+</div>

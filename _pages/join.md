@@ -12,16 +12,10 @@ classes: wide
   <p>DeCLaRe Lab is a good fit for people who enjoy building AI systems, asking careful scientific questions, and working across safety, trustworthiness, multimodality, AI for Science, efficiency, and embodied AI.</p>
 </section>
 
-<nav class="page-chip-strip" aria-label="Opportunity sections">
-  <a href="#why-join-declare-lab">Why Join</a>
-  <a href="#collaboration-structure">Collaboration</a>
-  <a href="#current-openings">Current Openings</a>
-  <a href="#expected-backgrounds">Backgrounds</a>
-  <a href="#how-to-apply">How to Apply</a>
-  <a href="#faq">FAQ</a>
-</nav>
+<div class="side-layout">
+<div class="side-layout__main">
 
-## Why Join DeCLaRe Lab?
+<h2 id="why-join-declare-lab">Why Join DeCLaRe Lab?</h2>
 
 <div class="opportunity-grid">
   <article>
@@ -198,7 +192,7 @@ classes: wide
   });
 </script>
 
-## Current Openings
+<h2 id="current-openings">Current Openings</h2>
 
 <div class="opening-list">
   <article>
@@ -215,9 +209,9 @@ classes: wide
   </article>
 </div>
 
-## Expected Backgrounds
+<h2 id="expected-backgrounds">Expected Backgrounds</h2>
 
-Strong candidates often have experience in one or more of the following:
+<p>Strong candidates often have experience in one or more of the following:</p>
 
 <div class="name-list">
   <span>Machine learning</span>
@@ -232,13 +226,13 @@ Strong candidates often have experience in one or more of the following:
   <span>Open-source engineering</span>
 </div>
 
-## How to Apply
+<h2 id="how-to-apply">How to Apply</h2>
 
-Please review the lab's [research slides](https://drive.google.com/file/d/10lmu5YGDzr2Yw6kBFWwe7ifZ9Ec9WCl1/view?usp=sharing), browse recent [publications](/publications/), and identify the research directions that genuinely connect with your interests.
+<p>Please review the lab's <a href="https://drive.google.com/file/d/10lmu5YGDzr2Yw6kBFWwe7ifZ9Ec9WCl1/view?usp=sharing">research slides</a>, browse recent <a href="/publications/">publications</a>, and identify the research directions that genuinely connect with your interests.</p>
 
-Send a concise email to `soujanya [dot] poria [at] ntu [dot] edu [dot] sg` with your CV, transcript if applicable, representative work, and a short note on the projects you would like to pursue.
+<p>Send a concise email to <code>soujanya [dot] poria [at] ntu [dot] edu [dot] sg</code> with your CV, transcript if applicable, representative work, and a short note on the projects you would like to pursue.</p>
 
-## FAQ
+<h2 id="faq">FAQ</h2>
 
 <div class="faq-list">
   <article>
@@ -253,4 +247,19 @@ Send a concise email to `soujanya [dot] poria [at] ntu [dot] edu [dot] sg` with 
     <h3>Can I propose a new direction?</h3>
     <p>Yes. The best proposals still connect clearly to DeCLaRe Lab's core agenda.</p>
   </article>
+</div>
+
+</div>
+
+<aside class="section-nav" aria-label="Join page sections">
+  <span>Sections</span>
+  <div>
+    <a href="#why-join-declare-lab">Why Join</a>
+    <a href="#collaboration-structure">Collaboration</a>
+    <a href="#current-openings">Openings</a>
+    <a href="#expected-backgrounds">Backgrounds</a>
+    <a href="#how-to-apply">How to Apply</a>
+    <a href="#faq">FAQ</a>
+  </div>
+</aside>
 </div>

@@ -8,11 +8,16 @@ toc: false
 classes: wide
 ---
 
+<div class="side-layout">
+<div class="side-layout__main">
+
 <section class="page-lead page-lead--compact">
   <p>Research explainers, benchmark notes, project retrospectives, and technical essays from DeCLaRe Lab.</p>
 </section>
 
-<section class="notes-grid notes-grid--featured">
+<section class="notes-year" id="notes-2026">
+  <h2>2026</h2>
+  <div class="notes-grid notes-grid--featured">
   <a class="note-card-link" href="/lab-notes/data-centric-training-part-ii/">
     <img src="/assets/images/lab-notes/data-centric-training-part-ii/figure-01.png" alt="PODS oscillatory data-volume scheduling overview">
     <span>Paper explainer · May 2026</span>
@@ -40,4 +45,15 @@ classes: wide
       <span>Read note</span>
     </div>
   </a>
+  </div>
 </section>
+
+</div>
+
+<aside class="section-nav" aria-label="Lab note years">
+  <span>Years</span>
+  <div>
+    <a href="#notes-2026">2026</a>
+  </div>
+</aside>
+</div>

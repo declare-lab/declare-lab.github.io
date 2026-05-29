@@ -12,16 +12,10 @@ classes: wide
   <p>We work across multimodal AI, reasoning, generative modeling, embodied intelligence, affective computing, and responsible AI.</p>
 </section>
 
-<nav class="page-chip-strip" aria-label="People sections">
-  <a href="#faculty">Faculty</a>
-  <a href="#research-scientists">Research Scientists</a>
-  <a href="#phd-students">PhD Students</a>
-  <a href="#research-assistants">Research Assistants</a>
-  <a href="#visiting-students">Visiting Students</a>
-  <a href="#alumni">Alumni</a>
-</nav>
+<div class="side-layout">
+<div class="side-layout__main">
 
-![DeCLaRe Lab team](/assets/images/resources/team.jpg){: .team-photo}
+<img class="team-photo" src="/assets/images/resources/team.jpg" alt="DeCLaRe Lab team">
 
 <h2 id="faculty">Faculty</h2>
 
@@ -203,4 +197,19 @@ classes: wide
     <img src="/assets/images/people/hongpengfei.jpg" alt="Pengfei Hong">
     <div><h3>Pengfei Hong</h3><p>Former PhD student · Now at Tonghuashun</p><div class="person-links"><a href="https://github.com/Emrys-Hong">GitHub</a></div></div>
   </article>
+</div>
+
+</div>
+
+<aside class="section-nav" aria-label="People sections">
+  <span>People</span>
+  <div>
+    <a href="#faculty">Faculty</a>
+    <a href="#research-scientists">Research Scientists</a>
+    <a href="#phd-students">PhD Students</a>
+    <a href="#research-assistants">Research Assistants</a>
+    <a href="#visiting-students">Visiting Students</a>
+    <a href="#alumni">Alumni</a>
+  </div>
+</aside>
 </div>

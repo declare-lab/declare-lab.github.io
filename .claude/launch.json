@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "jekyll",
+      "runtimeExecutable": "/Users/poriasoujanya/Documents/GitHub/declare-lab.github.io/.claude/jekyll-preview.sh",
+      "runtimeArgs": [],
+      "port": 4011
+    }
+  ]
+}
