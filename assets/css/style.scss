@@ -486,6 +486,9 @@ strong { font-weight: 600; }
 /* DeCLaRe robot (ratio 0.63:1, elongated portrait) — taller to match NTU's
    visual width; bottoms stay aligned via flex-end. */
 .author-affiliations .affiliation-dec { height: 70px; }
+.author-affiliations .affiliation-dec-dark { display: none; }
+[data-theme="dark"] .author-affiliations .affiliation-dec-light { display: none; }
+[data-theme="dark"] .author-affiliations .affiliation-dec-dark { display: block; }
 
 @media (max-width: 720px) {
   .author-affiliations { gap: 0.7em; margin: 0.5em 0 0.7em; }
