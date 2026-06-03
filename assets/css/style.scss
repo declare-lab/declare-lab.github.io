@@ -159,9 +159,9 @@ strong { font-weight: 600; }
 
 .site-logo {
   display: block;
-  width: 168px;
-  height: auto;
-  max-height: 42px;
+  width: auto;
+  height: 42px;
+  max-width: 180px;
   object-fit: contain;
 }
 
@@ -1732,7 +1732,7 @@ strong { font-weight: 600; }
 
 @media (max-width: 420px) {
   .header-inner { height: 60px; padding: 0 0.8em; }
-  .site-logo { width: 120px; max-height: 36px; }
+  .site-logo { width: auto; height: 36px; max-width: 132px; }
   .site-main { padding: 1.6em 0.8em; }
   .site-header { backdrop-filter: blur(12px); }
   .nav-links a { padding: 0.5em 0.6em; font-size: 0.9em; }

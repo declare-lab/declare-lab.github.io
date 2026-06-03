@@ -21,8 +21,8 @@ title: ""
   </div>
   <div class="declare-hero__visual" aria-label="DeCLaRe Lab research map">
     <div class="research-map">
-      <img class="research-map__logo research-map__logo--light" src="/assets/images/logos/square-light.png" alt="DeCLaRe Lab logo">
-      <img class="research-map__logo research-map__logo--dark" src="/assets/images/logos/square-dark.png" alt="DeCLaRe Lab logo">
+      <img class="research-map__logo research-map__logo--light" src="/assets/images/logos/declare-icon-light.png" alt="DeCLaRe Lab robot icon">
+      <img class="research-map__logo research-map__logo--dark" src="/assets/images/logos/declare-icon-dark.png" alt="DeCLaRe Lab robot icon">
       <a class="research-node research-node--safety" href="/research/#safety">Safety</a>
       <a class="research-node research-node--trustworthiness" href="/research/#trustworthiness">Trustworthiness</a>
       <a class="research-node research-node--multimodality" href="/research/#multimodality">Multimodality</a>
@@ -51,7 +51,7 @@ title: ""
   <div>
     <p class="work-kicker">Lab's identity</p>
     <h2>The meaning behind the DeCLaRe logo</h2>
-    <p>The robot-like structure recalls an old computer and illustrates DeCLaRe in Mandarin. The colored eyes point to the lab's interest in machines that understand affect: the logo frames cognition and language as ways to infuse machines with richer emotional and social understanding.</p>
+    <p>The DeCLaRe logo represents intelligence as something that emerges through connection. The robot anchors the identity as an intelligent social agent, while its red and green eyes reflect the affective, cognitive, and linguistic dimensions of AI. The DeCLaRe wordmark is built from geometric forms joined by a subtle internal construction line. This line carries multiple meanings at once: it suggests modular components assembled into a system, agents connected in an AI society, reasoning steps linked across time, memories and concepts interacting, and collaboration between humans, machines, and institutions. Together, the robot and wordmark express DeCLaRe's broader vision: intelligence is not isolated, but constructed, social, and collaborative.</p>
   </div>
   <a href="/assets/images/resources/logo-explanation.png" aria-label="Open DeCLaRe logo explanation">
     <img src="/assets/images/resources/logo-explanation.png" alt="Explanation of the DeCLaRe Lab logo">
