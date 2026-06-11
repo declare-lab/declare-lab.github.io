@@ -432,9 +432,18 @@
 .content-text .logo-story a {
   display: block;
   overflow: hidden;
-  border: 1px solid var(--declare-line);
-  border-radius: 8px;
-  background: #fff;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.content-text .logo-story .logo-explanation-link--dark,
+[data-theme="dark"] .content-text .logo-story .logo-explanation-link--light {
+  display: none;
+}
+
+[data-theme="dark"] .content-text .logo-story .logo-explanation-link--dark {
+  display: block;
 }
 
 .content-text .logo-story img {

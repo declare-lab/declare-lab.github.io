@@ -51,10 +51,13 @@ title: ""
   <div>
     <p class="work-kicker">Lab's identity</p>
     <h2>The meaning behind the DeCLaRe logo</h2>
-    <p>The DeCLaRe robot represents an intelligent social agent. Its form evokes 宣 (<em>xuān</em>), meaning “to declare,” while its expressive eyes reflect the human dimensions of AI.</p>
+    <p>The DeCLaRe robot represents an intelligent social agent. Its IBM-era computer silhouette traces the evolution from early computing to modern AI, while its form evokes 宣 (<em>xuān</em>), meaning “to declare.”</p>
   </div>
-  <a href="/assets/images/resources/logo-explanation.svg" aria-label="Open DeCLaRe logo explanation">
-    <img src="/assets/images/resources/logo-explanation.svg" alt="Explanation of the DeCLaRe Lab logo">
+  <a class="logo-explanation-link logo-explanation-link--light" href="/assets/images/resources/logo-explanation-light.svg" aria-label="Open DeCLaRe logo explanation">
+    <img src="/assets/images/resources/logo-explanation-light.svg" alt="Explanation of the DeCLaRe Lab logo">
+  </a>
+  <a class="logo-explanation-link logo-explanation-link--dark" href="/assets/images/resources/logo-explanation-dark.svg" aria-label="Open DeCLaRe logo explanation">
+    <img src="/assets/images/resources/logo-explanation-dark.svg" alt="Explanation of the DeCLaRe Lab logo">
   </a>
 </section>
 
