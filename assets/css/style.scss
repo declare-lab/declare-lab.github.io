@@ -159,8 +159,8 @@ strong { font-weight: 600; }
 
 .site-logo {
   display: block;
-  height: 56px;
-  width: auto;
+  width: 138px;
+  height: auto;
   max-width: none;
 }
 
@@ -1689,7 +1689,7 @@ strong { font-weight: 600; }
     overflow: hidden;
   }
 
-  .site-logo { height: 46px; }
+  .site-logo { width: 112px; height: auto; }
 
   .site-main {
     width: 100%;
@@ -1737,7 +1737,7 @@ strong { font-weight: 600; }
 
 @media (max-width: 420px) {
   .header-inner { height: 64px; padding: 0 0.8em; }
-  .site-logo { width: auto; height: 42px; max-width: none; }
+  .site-logo { width: 102px; height: auto; max-width: none; }
   .site-main { padding: 1.6em 0.8em; }
   .site-header { backdrop-filter: blur(12px); }
   .nav-links a { padding: 0.5em 0.6em; font-size: 0.9em; }

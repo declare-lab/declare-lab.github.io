@@ -405,9 +405,9 @@
 
 .content-text .logo-story {
   display: grid;
-  grid-template-columns: minmax(0, 0.78fr) minmax(320px, 1fr);
+  grid-template-columns: 1fr;
   gap: 1.5rem;
-  align-items: center;
+  align-items: start;
   padding: 1.6rem;
   border: 1px solid var(--declare-line);
   border-radius: 8px;
@@ -440,7 +440,7 @@
 .content-text .logo-story img {
   display: block;
   width: 100%;
-  max-height: 260px;
+  max-height: 560px;
   object-fit: contain;
 }
 
