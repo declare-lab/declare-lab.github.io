@@ -15,7 +15,7 @@
   .r-line { fill: none; stroke: #7C3AED; stroke-width: 6; stroke-linecap: butt; stroke-linejoin: miter; }
   .r-node { fill: #7C3AED; }
   .thread { fill: none; stroke: #A78BFA; stroke-width: 5; stroke-linecap: butt; }
-  .theme { fill: currentColor; font-family: Futura, sans-serif; font-size: 25px; font-weight: 500; letter-spacing: .2px; }
+  .theme { fill: currentColor; font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 500; letter-spacing: .2px; }
   /* Octagon style: lightweight monoline letters, bevel-cut (octagonal) corners,
      vertical gradient, and subtle "fused-lego" seams. */
   .octa { fill: none; stroke: url(#wm-grad); stroke-width: 14; stroke-linejoin: bevel; stroke-linecap: butt; }
@@ -34,18 +34,20 @@
     <rect x="41.3" y="63.7" width="14.6" height="11.8" fill="#fff"/>
     <rect x="34.1" y="167.5" width="121.3" height="20.7" fill="#fff"/>
     <rect x="52.1" y="106.2" width="85.3" height="53.9" fill="#fff"/>
-    <rect x="60.4" y="112.4" width="68.5" height="25.9" fill="#000"/>
-    <rect x="60.4" y="144.3" width="68.5" height="8.3" fill="#000"/>
+    <rect x="59.3" y="113.4" width="70.9" height="24" fill="#000"/>
+    <rect x="59.3" y="144.6" width="70.9" height="8.3" fill="#000"/>
     <rect x="84" y="9.9" width="13.7" height="20.7" transform="matrix(0.9301 -0.3673 0.3673 0.9301 -1.0708 34.7719)" fill="#fff"/>
     <path clip-path="url(#robot-antenna-clip)" fill="none" stroke="#000" stroke-width="6" d="M73.9,12.4c3.4,1.8,6.5,4.4,9.3,7.5c2.9,3.3,5.3,7.2,5.8,11.7"/>
     <rect x="34.1" y="24.6" width="121.3" height="43.4" fill="#fff"/>
-    <rect x="41.2" y="33.5" width="107" height="34.9" fill="#000"/>
+    <rect x="41.3" y="31.8" width="106.9" height="36.6" fill="#000"/>
   </mask>
   <g id="robot-master">
     <rect x="0" y="0" width="200" height="200" fill="currentColor" mask="url(#robot-knockout)"/>
     <circle cx="72.5" cy="52.5" r="12.9" fill="#34A853"/>
-    <rect x="103.9" y="57.2" width="26" height="5.4" fill="#EB4336"/>
-    <polygon points="103.8,57.1 123.4,43.2 125.4,47.3 105.9,61.1" fill="#EB4336"/>
+    <!-- Angular eye as two filled rectangles (matching the head's wall logic):
+         a horizontal bar and a diagonal bar sharing a vertical left edge, so
+         their intersection reads as a clean square corner, not a beveled cut. -->
+    <g fill="#EB4336"><rect x="103.72" y="57.2" width="26.18" height="5.4"/><rect x="0" y="-5.4" width="27" height="5.4" transform="translate(103.72 62.6) rotate(-35.3)"/></g>
   </g>
   <g id="robot-premium">
     <!-- curved quiff "hair" (lighter take on the original logo's curl) -->
