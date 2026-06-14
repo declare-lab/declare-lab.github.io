@@ -21,8 +21,8 @@ title: ""
   </div>
   <div class="declare-hero__visual" aria-label="DeCLaRe Lab research map">
     <div class="research-map">
-      <img class="research-map__logo research-map__logo--light" src="/assets/images/logos/declare-icon-light.svg" alt="DeCLaRe Lab robot icon">
-      <img class="research-map__logo research-map__logo--dark" src="/assets/images/logos/declare-icon-dark.svg" alt="DeCLaRe Lab robot icon">
+      <img class="research-map__logo research-map__logo--light" src="/assets/images/logos/declare-icon-light.png" alt="DeCLaRe Lab robot icon">
+      <img class="research-map__logo research-map__logo--dark" src="/assets/images/logos/declare-icon-dark.png" alt="DeCLaRe Lab robot icon">
       <a class="research-node research-node--safety" href="/research/#safety">Safety</a>
       <a class="research-node research-node--trustworthiness" href="/research/#trustworthiness">Trustworthiness</a>
       <a class="research-node research-node--multimodality" href="/research/#multimodality">Multimodality</a>
