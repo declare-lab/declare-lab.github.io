@@ -1,0 +1,151 @@
+last_verified: "2026-07-22"
+
+themes:
+  - id: safety
+    number: "01"
+    name: Safety
+    summary: Operational safety, red-teaming, refusal behavior, and alignment interventions.
+  - id: trustworthiness
+    number: "02"
+    name: Trustworthiness
+    summary: Grounded attribution, reliable retrieval, uncertainty, and citation-aware responses.
+  - id: multimodality
+    number: "03"
+    name: Multimodality
+    summary: Language, vision, audio, and video models for reasoning, generation, and interaction.
+  - id: ai-for-science
+    number: "04"
+    name: AI for Science
+    summary: Scientific hypothesis discovery, chemistry, and literature-grounded reasoning.
+  - id: efficiency
+    number: "05"
+    name: Efficiency
+    summary: Data selection, adapters, model merging, memory, and compact model training.
+  - id: embodied-ai
+    number: "06"
+    name: Embodied AI
+    summary: Vision-language-action systems, action grounding, and interactive evaluation.
+
+representative_work:
+  - id: safety
+    name: Safety
+    title: Safety, red-teaming, and bias
+    summary: Operational safety, adversarial evaluation, model realignment, and bias analysis.
+    works:
+      - title: OffTopicEval
+        meta: ICLR 2026
+        url: https://arxiv.org/abs/2509.26495
+      - title: RESTA / Safety Re-Alignment
+        meta: ACL 2024
+        url: https://aclanthology.org/2024.acl-long.762
+      - title: Chain of Utterances
+        meta: Red-teaming LLMs
+        url: https://arxiv.org/abs/2308.09662
+      - title: Gender Bias in BERT
+        meta: Cognitive Computation
+        url: https://doi.org/10.1007/s12559-021-09881-2
+  - id: trustworthiness
+    name: Trustworthiness
+    title: Grounding, attribution, and refusal
+    summary: Factuality, citation quality, calibration, and reliability in knowledge-intensive generation.
+    works:
+      - title: Trust-Score and Trust-Align
+        meta: ICLR 2025
+        url: https://proceedings.iclr.cc/paper_files/paper/2025/hash/4c88827decab6c046b881a2c3a99c76f-Abstract-Conference.html
+      - title: Chain-of-Knowledge
+        meta: ICLR 2024
+        url: https://proceedings.iclr.cc/paper_files/paper/2024/hash/285ba60a67a66d2efeeb7cb25c5067fe-Abstract-Conference.html
+      - title: Retrieval-aware reasoning
+        meta: RAG publications
+        url: /publications/?topic=RAG
+  - id: multimodality
+    name: Multimodality
+    title: Multimodal understanding and generation
+    summary: Multimodal emotion, representation learning, fusion, and text-to-audio generation.
+    works:
+      - title: MELD
+        meta: ACL 2019
+        url: https://aclanthology.org/P19-1050/
+      - title: DialogueRNN
+        meta: AAAI 2019
+        url: https://ojs.aaai.org/index.php/AAAI/article/view/4657
+      - title: TFN
+        meta: EMNLP 2017
+        url: https://aclanthology.org/D17-1115/
+      - title: TangoFlux
+        meta: ICLR 2026
+        url: https://arxiv.org/abs/2412.21037
+  - id: ai-for-science
+    name: AI for Science
+    title: Scientific hypothesis discovery
+    summary: Language-model systems for rediscovering and proposing hypotheses from scientific literature.
+    works:
+      - title: MOOSE-Chem
+        meta: ICLR 2025
+        url: https://proceedings.iclr.cc/paper_files/paper/2025/hash/51fd9a7d1706023cb9f8210cc6ac357c-Abstract-Conference.html
+      - title: Open-domain hypotheses
+        meta: ACL Findings 2024
+        url: https://aclanthology.org/2024.findings-acl.804
+  - id: efficiency
+    name: Efficiency
+    title: Efficient training, merging, and attention
+    summary: Cheaper adaptation, model merging, dynamic data selection, memory, and long-context computation.
+    works:
+      - title: δ-mem
+        meta: arXiv 2026
+        url: https://arxiv.org/abs/2605.12357
+      - title: Data Agent
+        meta: ICML 2026
+        url: https://arxiv.org/abs/2603.07433
+      - title: DELLA-Merging
+        meta: Model merging
+        url: https://arxiv.org/abs/2406.11617
+      - title: EFLA
+        meta: Linear attention
+        url: https://arxiv.org/abs/2512.12602
+  - id: embodied-ai
+    name: Embodied AI
+    title: Vision-language-action models
+    summary: Compact embodied models and reward-guided post-training for perception-to-action systems.
+    works:
+      - title: NORA
+        meta: Generalist VLA model
+        url: https://arxiv.org/abs/2504.19854
+      - title: NORA 1.5
+        meta: World-model rewards
+        url: https://arxiv.org/abs/2511.14659
+      - title: Project page
+        meta: Interactive overview
+        url: /nora.html
+
+hot_papers:
+  - venue: arXiv 2026
+    title: "δ-mem: Efficient Online Memory for Large Language Models"
+    summary: A compact online state gives language models working memory without extending the visible context.
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2605.12357
+      - label: Code
+        url: https://github.com/declare-lab/delta-Mem
+  - venue: ICLR 2026
+    title: "OffTopicEval: When Large Language Models Enter the Wrong Chat, Almost Always!"
+    summary: An operational-safety benchmark for whether task-specific agents respect their intended boundaries.
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2509.26495
+  - venue: ICML 2026
+    title: "Data Agent: Learning to Select Data via End-to-End Dynamic Optimization"
+    summary: A training-aware policy selects useful data as the target model evolves.
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2603.07433
+      - label: Code
+        url: https://github.com/Jackbrocp/Data-Agent
+  - venue: ICLR 2025
+    title: Measuring and Enhancing Trustworthiness of LLMs in RAG
+    summary: Trust-Score and Trust-Align evaluate and improve grounded attribution, citations, and refusal.
+    links:
+      - label: Paper
+        url: https://proceedings.iclr.cc/paper_files/paper/2025/hash/4c88827decab6c046b881a2c3a99c76f-Abstract-Conference.html
+      - label: Code
+        url: https://github.com/declare-lab/trust-align

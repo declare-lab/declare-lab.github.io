@@ -9,7 +9,7 @@ classes: wide
 ---
 
 <section class="page-lead page-lead--compact">
-  <p>Each theme combines recent work with long-running foundations from the group, from multimodal emotion and sentiment analysis to retrieval-grounded generation, scientific discovery, efficient learning, and vision-language-action models.</p>
+  <p>Research themes connect current projects with established contributions from the group. Each section pairs a focused agenda with representative papers, code, and project resources.</p>
 </section>
 
 <div class="side-layout">
@@ -28,7 +28,7 @@ classes: wide
   </div>
   <div class="project-grid">
     <article class="project-card project-card--large">
-      <img src="/assets/images/research/offtopiceval.png" alt="OffTopicEval operational safety evaluation visual">
+      <img loading="lazy" src="/assets/images/research/offtopiceval.png" alt="OffTopicEval operational safety evaluation visual">
       <div class="project-card__body">
         <span class="project-tag">Operational Safety</span>
         <h3>OffTopicEval</h3>
@@ -40,7 +40,7 @@ classes: wide
       </div>
     </article>
     <article class="project-card">
-      <img src="/assets/images/research/safety-arithmetic.png" alt="Safety Arithmetic test-time steering visual">
+      <img loading="lazy" src="/assets/images/research/safety-arithmetic.png" alt="Safety Arithmetic test-time steering visual">
       <div class="project-card__body">
         <span class="project-tag">Alignment</span>
         <h3>Safety Arithmetic</h3>
@@ -52,7 +52,7 @@ classes: wide
       </div>
     </article>
     <article class="project-card">
-      <img src="/assets/images/research/resta.png" alt="RESTA safety realignment figure">
+      <img loading="lazy" src="/assets/images/research/resta.png" alt="RESTA safety realignment figure">
       <div class="project-card__body">
         <span class="project-tag">Safety Re-Alignment</span>
         <h3>RESTA</h3>
@@ -65,7 +65,7 @@ classes: wide
       </div>
     </article>
     <article class="project-card">
-      <img src="/assets/images/research/chain-utterances.png" alt="Chain of Utterances red-teaming figure">
+      <img loading="lazy" src="/assets/images/research/chain-utterances.png" alt="Chain of Utterances red-teaming figure">
       <div class="project-card__body">
         <span class="project-tag">Red-Teaming</span>
         <h3>Chain of Utterances</h3>
@@ -77,7 +77,7 @@ classes: wide
       </div>
     </article>
     <article class="project-card">
-      <img src="/assets/images/research/gender-bias-bert.png" alt="Gender bias probing figure for BERT">
+      <img loading="lazy" src="/assets/images/research/gender-bias-bert.png" alt="Gender bias probing figure for BERT">
       <div class="project-card__body">
         <span class="project-tag">Bias Analysis</span>
         <h3>Gender Bias in BERT</h3>
@@ -104,7 +104,7 @@ classes: wide
   </div>
   <div class="project-grid">
     <article class="project-card project-card--large">
-      <img src="/assets/images/research/trust-align.png" alt="Trust-Score and Trust-Align retrieval augmented generation visual">
+      <img loading="lazy" src="/assets/images/research/trust-align.png" alt="Trust-Score and Trust-Align retrieval augmented generation visual">
       <div class="project-card__body">
         <span class="project-tag">RAG</span>
         <h3>Trust-Score and Trust-Align</h3>
@@ -117,7 +117,7 @@ classes: wide
       </div>
     </article>
     <article class="project-card">
-      <img src="/assets/images/research/chain-knowledge.png" alt="Chain-of-Knowledge framework figure">
+      <img loading="lazy" src="/assets/images/research/chain-knowledge.png" alt="Chain-of-Knowledge framework figure">
       <div class="project-card__body">
         <span class="project-tag">Grounded Generation</span>
         <h3>Chain-of-Knowledge</h3>
@@ -130,7 +130,7 @@ classes: wide
       </div>
     </article>
     <article class="project-card">
-      <img src="/assets/images/research/ECL.png" alt="Epistemic Context Learning visual">
+      <img loading="lazy" src="/assets/images/research/ECL.png" alt="Epistemic Context Learning visual">
       <div class="project-card__body">
         <span class="project-tag">Multi-Agent Trust</span>
         <h3>Epistemic Context Learning</h3>
@@ -157,7 +157,7 @@ classes: wide
   </div>
   <div class="project-grid">
     <article class="project-card project-card--large">
-      <img src="/assets/images/resources/meld.png" alt="MELD dataset visual">
+      <img loading="lazy" src="/assets/images/resources/meld.png" alt="MELD dataset visual">
       <div class="project-card__body">
         <span class="project-tag">Conversational AI</span>
         <h3>MELD and DialogueRNN</h3>
@@ -171,7 +171,7 @@ classes: wide
       </div>
     </article>
     <article class="project-card">
-      <img src="/assets/images/research/tfn.png" alt="Tensor Fusion Network visual">
+      <img loading="lazy" src="/assets/images/research/tfn.png" alt="Tensor Fusion Network visual">
       <div class="project-card__body">
         <span class="project-tag">Fusion</span>
         <h3>TFN, MISA, and Multimodal Fusion</h3>
@@ -184,7 +184,7 @@ classes: wide
       </div>
     </article>
     <article class="project-card">
-      <img src="/assets/images/research/tangoflux.png" alt="TangoFlux training pipeline figure">
+      <img loading="lazy" src="/assets/images/research/tangoflux.png" alt="TangoFlux training pipeline figure">
       <div class="project-card__body">
         <span class="project-tag">Audio Generation</span>
         <h3>Tango and TangoFlux</h3>
@@ -212,7 +212,7 @@ classes: wide
   </div>
   <div class="project-grid">
     <article class="project-card project-card--large">
-      <img src="/assets/images/research/moose-chem.png" alt="MOOSE-Chem visual">
+      <img loading="lazy" src="/assets/images/research/moose-chem.png" alt="MOOSE-Chem visual">
       <div class="project-card__body">
         <span class="project-tag">Scientific Discovery</span>
         <h3>MOOSE-Chem</h3>
@@ -224,7 +224,7 @@ classes: wide
       </div>
     </article>
     <article class="project-card">
-      <img src="/assets/images/research/qa.png" alt="Scientific hypothesis discovery visual">
+      <img loading="lazy" src="/assets/images/research/qa.png" alt="Scientific hypothesis discovery visual">
       <div class="project-card__body">
         <span class="project-tag">Hypothesis Discovery</span>
         <h3>Open-Domain Scientific Hypotheses</h3>
@@ -251,7 +251,7 @@ classes: wide
   </div>
   <div class="project-grid">
     <article class="project-card project-card--large">
-      <img src="/assets/images/lab-notes/delta-mem/architecture.png" alt="δ-mem online memory architecture">
+      <img loading="lazy" src="/assets/images/lab-notes/delta-mem/architecture.png" alt="δ-mem online memory architecture">
       <div class="project-card__body">
         <span class="project-tag">Online Memory</span>
         <h3>δ-mem</h3>
@@ -265,7 +265,7 @@ classes: wide
       </div>
     </article>
     <article class="project-card project-card--large">
-      <img src="/assets/images/research/data-agent.png" alt="Data Agent visual">
+      <img loading="lazy" src="/assets/images/research/data-agent.png" alt="Data Agent visual">
       <div class="project-card__body">
         <span class="project-tag">Data Selection</span>
         <h3>Data Agent</h3>
@@ -279,7 +279,7 @@ classes: wide
       </div>
     </article>
     <article class="project-card">
-      <img src="/assets/images/research/della-merging.png" alt="DELLA-Merging method figure">
+      <img loading="lazy" src="/assets/images/research/della-merging.png" alt="DELLA-Merging method figure">
       <div class="project-card__body">
         <span class="project-tag">Model Merging</span>
         <h3>DELLA-Merging</h3>
@@ -291,7 +291,7 @@ classes: wide
       </div>
     </article>
     <article class="project-card">
-      <img src="/assets/images/research/efla.png" alt="EFLA linear attention figure">
+      <img loading="lazy" src="/assets/images/research/efla.png" alt="EFLA linear attention figure">
       <div class="project-card__body">
         <span class="project-tag">Linear Attention</span>
         <h3>EFLA</h3>
@@ -303,7 +303,7 @@ classes: wide
       </div>
     </article>
     <article class="project-card">
-      <img src="/assets/images/research/qa2.png" alt="Efficient LLM visual">
+      <img loading="lazy" src="/assets/images/research/qa2.png" alt="Efficient LLM visual">
       <div class="project-card__body">
         <span class="project-tag">Efficient LLMs</span>
         <h3>PromptDistill, LLM-Adapters, UDApter</h3>
@@ -332,7 +332,7 @@ classes: wide
   </div>
   <div class="project-grid">
     <article class="project-card project-card--large">
-      <img src="/assets/images/nora-1.5-arxiv-teaser.png" alt="NORA teaser">
+      <img loading="lazy" src="/assets/images/nora-1.5-arxiv-teaser.png" alt="NORA teaser">
       <div class="project-card__body">
         <span class="project-tag">VLA</span>
         <h3>NORA and NORA 1.5</h3>
@@ -346,7 +346,7 @@ classes: wide
       </div>
     </article>
     <article class="project-card">
-      <img src="/assets/images/nora1.5-new.png" alt="Embodied AI benchmark visual">
+      <img loading="lazy" src="/assets/images/nora1.5-new.png" alt="Embodied AI benchmark visual">
       <div class="project-card__body">
         <span class="project-tag">Interactive Evaluation</span>
         <h3>Emma-X and Perception-to-Action</h3>

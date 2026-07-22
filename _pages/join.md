@@ -9,7 +9,7 @@ classes: wide
 ---
 
 <section class="page-lead page-lead--compact">
-  <p>DeCLaRe Lab is a good fit for people who enjoy building AI systems, asking careful scientific questions, and working across safety, trustworthiness, multimodality, AI for Science, efficiency, and embodied AI.</p>
+  <p>DeCLaRe is a collaborative academic community for researchers who value careful scientific questions, ambitious technical work, and sustained exchange across disciplines and institutions.</p>
 </section>
 
 <div class="side-layout">
@@ -19,16 +19,16 @@ classes: wide
 
 <div class="opportunity-grid">
   <article>
-    <h3>Project-centered research</h3>
-    <p>Work on models, benchmarks, demos, and open-source systems that connect papers to working artifacts.</p>
+    <h3>Research with evidence</h3>
+    <p>Develop models, evaluations, and open research artifacts around clearly stated scientific questions.</p>
   </article>
   <article>
     <h3>Collaborative culture</h3>
-    <p>DeCLaRe is built around collaborative research, where students work closely with lab members, academic collaborators, and industry partners to shape ambitious AI projects.</p>
+    <p>Work closely with lab members, academic collaborators, and industry researchers while retaining intellectual ownership of your direction.</p>
   </article>
   <article>
-    <h3>Active research program</h3>
-    <p>The lab is recruiting at NTU across the six core themes of safety, trustworthiness, multimodality, AI for Science, efficiency, and embodied AI.</p>
+    <h3>Room to define a direction</h3>
+    <p>Build from the lab's research agenda while developing questions that reflect your own technical strengths and scientific interests.</p>
   </article>
 </div>
 
@@ -37,7 +37,7 @@ classes: wide
     <div>
       <p class="work-kicker">Collaboration structure</p>
       <h2>How Students Collaborate in DeCLaRe</h2>
-      <p class="section-note">A star-schema view of coauthorship patterns in the lab's publication archive from 2019 onward: papers sit at the center, with author, collaborator, partner, and research-theme dimensions around them.</p>
+      <p class="section-note">Coauthorship patterns in the lab's publication archive show how internal, academic, and industry collaborations intersect.</p>
     </div>
   </div>
 
@@ -60,9 +60,9 @@ classes: wide
           <!-- Single brand gradient used for the active edge. All other defs alias to it
                so per-relationship "rainbow" stroke colors collapse into one accent. -->
           <linearGradient id="collabEdgeIntra" x1="0" y1="0" x2="1" y2="0.8">
-            <stop offset="0" stop-color="#c23a78"></stop>
-            <stop offset="0.55" stop-color="#2457a6"></stop>
-            <stop offset="1" stop-color="#087f7a"></stop>
+            <stop class="collab-stop--rose" offset="0"></stop>
+            <stop class="collab-stop--blue" offset="0.55"></stop>
+            <stop class="collab-stop--teal" offset="1"></stop>
           </linearGradient>
           <linearGradient id="collabEdgeExternal" href="#collabEdgeIntra"></linearGradient>
           <linearGradient id="collabEdgeAcademic" href="#collabEdgeIntra"></linearGradient>
@@ -71,9 +71,9 @@ classes: wide
           <linearGradient id="collabEdgePI" href="#collabEdgeIntra"></linearGradient>
           <!-- Center anchor node fill -->
           <radialGradient id="collabNodeCenter" cx="0.3" cy="0.3" r="0.9">
-            <stop offset="0" stop-color="#3b6fc6"></stop>
-            <stop offset="0.6" stop-color="#2457a6"></stop>
-            <stop offset="1" stop-color="#173f7d"></stop>
+            <stop class="collab-stop--blue-soft" offset="0"></stop>
+            <stop class="collab-stop--blue" offset="0.6"></stop>
+            <stop class="collab-stop--blue-deep" offset="1"></stop>
           </radialGradient>
         </defs>
         <g class="collab-links">
@@ -150,16 +150,7 @@ classes: wide
     </div>
   </div>
 
-  <div class="collaboration-notes">
-    <article>
-      <h3>What this means for students</h3>
-      <p>Students can work across themes and often collaborate with other DeCLaRe-affiliated authors and external research partners. The graph is intentionally type-level: it emphasizes the lab's collaborative structure rather than ranking individuals.</p>
-    </article>
-    <article>
-      <h3>How to read the numbers</h3>
-      <p>{{ site.data.collaboration.method_note }}</p>
-    </article>
-  </div>
+  <p class="collaboration-takeaway"><strong>For students:</strong> projects often cross research themes and connect DeCLaRe-affiliated authors with academic and industry partners. The graph describes collaboration types, not individual rankings.</p>
 </section>
 
 <script>

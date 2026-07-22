@@ -1,0 +1,86 @@
+---
+last_verified: '2026-07-22'
+sections:
+- id: active-projects
+  title: Active Projects
+  projects:
+  - meta: CNRS@CREATE / NRF · 2026-2029
+    title: Embodied Foundational Models
+    summary: Total S$10M; awarded S$3.33M. Research on embodied foundation models,
+      generalist interactive AI, and vision-language-action systems.
+  - meta: KLASS · 2026-2028
+    title: Toward Generalist Vision Language Action Models
+    summary: S$1.5M support for action grounding, embodied evaluation, and scalable
+      VLA model development.
+  - meta: Co-Principal Investigator · AI Singapore · Apr 2025-Mar 2028
+    title: LLM with Linear Transformers
+    summary: S$4.99M support for scalable language models built around efficient linear-transformer
+      architectures.
+  - meta: Principal Investigator · AI Singapore · Jan 2024-Dec 2026
+    title: Trustworthy and Responsible LLMs for Singapore Governance
+    summary: S$500K support for developing trustworthy and responsible large language
+      models for Singapore-specific governance issues.
+  - meta: Principal Investigator · DSO · Dec 2023-Dec 2026
+    title: Detecting, Measuring and Mitigating Hallucinations in LLMs
+    summary: S$600K support for grounded, reliable, and trustworthy language model
+      generation.
+  - meta: Google DeepMind · 2026
+    title: Google DeepMind GCP Grant
+    summary: S$100K compute support for large-scale language, multimodal, and agentic
+      AI research.
+- id: completed-projects
+  title: Completed Projects
+  projects:
+  - meta: Principal Investigator · MoE GAP · Jun 2024-Dec 2025
+    title: Walled AI
+    summary: S$245.7K support for research on responsible, bounded, and deployable
+      AI systems.
+  - meta: Principal Investigator · Ministry of Education · Oct 2021-Oct 2024
+    title: 'CSK-NLP: Leveraging Commonsense Knowledge for NLP'
+    summary: S$736.812K support for commonsense knowledge, language understanding,
+      and reasoning in NLP systems.
+  - meta: Principal Investigator · AME Research Grant · Feb 2020-Feb 2023
+    title: K-EMERGE
+    summary: S$910K support for knowledge extraction, modelling, and explainable reasoning
+      for general expertise.
+  - meta: Principal Investigator · DSO Research Grant · Feb 2020-Feb 2022
+    title: Intent Inference
+    summary: S$800K support for intent inference research in language and interaction
+      settings.
+  - meta: Co-Principal Investigator · Housing Development Board · Jul 2021-Jun 2024
+    title: ESTATE-IQ
+    summary: S$4.44064M support for an advanced AI system enabling smart HDB estate
+      services.
+  - meta: Principal Investigator · DSO Research Grant · Feb 2020-Jan 2021
+    title: AI for Hate Speech Detection on Social Media
+    summary: S$100K support for detecting harmful social media content using AI methods.
+  - meta: Co-Principal Investigator · SGPAI · Feb 2020-Jan 2023
+    title: 'THRUST 2: Discovery by AI'
+    summary: S$260.252K support for AI-assisted discovery research.
+  - meta: Principal Investigator · Adobe-e Research Corporate Funding · May 2018-May
+      2020
+    title: Multimodal Emotion Recognition in Dialogues
+    summary: S$10K per quarter support for multimodal conversational emotion recognition
+      research.
+- id: completed-support
+  title: Completed Corporate and In-Kind Support
+  projects:
+  - meta: Principal Investigator · Alibaba · Completed Dec 2024
+    title: Alibaba Research Support
+    summary: S$100K support for AI research.
+  - meta: Principal Investigator · Microsoft · Completed Jun 2024
+    title: Microsoft In-Kind Support
+    summary: S$56K in-kind support.
+  - meta: Principal Investigator · Oracle · Completed May 2024
+    title: Oracle In-Kind Support
+    summary: S$41.3K in-kind support.
+  - meta: Principal Investigator · Google · Completed May 2025
+    title: Google In-Kind Support
+    summary: S$6.805K in-kind support.
+  - meta: Co-lead Principal Investigator · OpenAI · Completed May 2025
+    title: OpenAI Research Support
+    summary: S$238.237K support for AI research.
+  - meta: Principal Investigator · Meta · Completed May-Jun 2025
+    title: Meta Research and In-Kind Support
+    summary: S$67K research support and S$56K in-kind support, consolidated here to
+      avoid duplicate Meta entries.

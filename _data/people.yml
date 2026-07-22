@@ -1,0 +1,243 @@
+---
+last_verified: '2026-07-22'
+sections:
+- id: faculty
+  title: Faculty
+  people:
+  - name: Soujanya Poria
+    description: Principal Investigator · Multimodal AI, reasoning, affective computing,
+      responsible AI
+    links:
+    - label: Website
+      url: https://soujanyaporia.github.io/
+    - label: Scholar
+      url: https://scholar.google.co.in/citations?hl=en&user=oS6gRc4AAAAJ&view_op=list_works&sortby=pubdate
+    - label: Email
+      url: mailto:soujanya.poria@ntu.edu.sg
+    image: "/assets/images/people/soujanya.JPG"
+- id: research-scientists
+  title: Research Scientists
+  people:
+  - name: Suorong Yang
+    description: Data-centric AI, AI4Sci, trustworthy AI, reasoning models
+    links:
+    - label: Website
+      url: https://suorongyang.github.io/
+    image: "/assets/images/people/suorong-yang.png"
+  - name: Rishabh Bhardwaj
+    description: AI safety
+    links:
+    - label: Website
+      url: https://www.rishabhbhardwaj.info/
+    image: "/assets/images/people/rishabh-bhardwaj.png"
+  - name: Navonil Majumder
+    description: Multimodal learning, dialogue, generative AI
+    links:
+    - label: Scholar
+      url: https://scholar.google.com/citations?user=jPfEvuQAAAAJ&hl=en&oi=ao
+    image: "/assets/images/people/navonil-majumder.png"
+- id: phd-students
+  title: PhD Students
+  people:
+  - name: Jingdi Lei
+    description: LLMs, post-training
+    links:
+    - label: Website
+      url: https://kyrielei.github.io/
+    image: "/assets/images/people/jingdi-lei.jpg"
+  - name: Hung Chia-Yu
+    description: Multimodal generation, vision-language-action models, world models
+    links:
+    - label: Website
+      url: https://hungchiayu1.github.io/
+    image: "/assets/images/people/hung-chia-yu.jpg"
+  - name: Nithish Selvaraj
+    description: Multi-agent systems
+    links:
+    - label: Scholar
+      url: https://scholar.google.com/citations?user=L2QSO1wAAAAJ&hl=en
+    image: "/assets/images/people/nithish-selvaraj.png"
+  - name: Liu Renhang
+    description: Generative models, world modelling for robotics
+    links:
+    - label: Scholar
+      url: https://scholar.google.com/citations?user=naBGDfIAAAAJ&hl=en
+    image: "/assets/images/people/liu-renhang.png"
+  - name: Varun Gumma
+    description: LLMs, reinforcement learning, efficiency, reasoning and modelling
+    links:
+    - label: Website
+      url: https://varungumma.netlify.app/
+    image: "/assets/images/people/varun-gumma.jpg"
+  - name: Vernon Toh
+    description: Reasoning and prompt augmentation
+    links:
+    - label: Scholar
+      url: https://scholar.google.com/citations?user=ZUPDabgAAAAJ&hl=en
+    image: "/assets/images/people/vernon.jpeg"
+  - name: Richmond Sin
+    description: Reasoning
+    links:
+    - label: Website
+      url: https://richmondsin.vercel.app/
+    image: "/assets/images/people/richmond-sin.png"
+  - name: Peilin Feng
+    description: Multimodal understanding, agents
+    links:
+    - label: Website
+      url: https://peilin-ff.github.io/
+    image: "/assets/images/people/peilin-feng.JPG"
+  - name: Ruiwen Zhou
+    description: LLM reasoning and AI agents · Co-supervised with Min-Yen Kan at NUS
+    links:
+    - label: Website
+      url: https://skyriver-2000.github.io/
+    image: "/assets/images/people/ruiwen-zhou.jpg"
+  - name: Tej Deep Pala
+    description: LLM reasoning, reinforcement learning, multi-agent systems
+    links:
+    - label: Website
+      url: https://tej-deep.github.io
+    image: "/assets/images/people/tej-deep-pala.jpg"
+  - name: Maojia Song
+    description: Adaptive intelligence, foundation agents, multimodal interaction,
+      embodied AI
+    links:
+    - label: Website
+      url: https://maojiasong.github.io/
+    image: "/assets/images/people/maojia-song.png"
+- id: research-assistants
+  title: Research Assistants
+  people:
+  - name: Soumitra Sinhahajari
+    description: Reinforcement learning, LLM reasoning, multi-agent systems
+    links:
+    - label: Scholar
+      url: https://scholar.google.com/citations?user=p4RW1qkAAAAJ&hl=en
+    image: "/assets/images/people/soumitra-sinhahajari.jpg"
+- id: visiting-students
+  title: Visiting Students
+  people:
+  - name: Zhixuan Wu
+    description: Visiting student · PhD student at BUPT
+    links:
+    - label: Scholar
+      url: https://scholar.google.com/citations?user=BpjIMQcAAAAJ&hl=zh-CN
+    image: "/assets/images/people/zhixuan-wu.jpeg"
+- id: alumni
+  title: Alumni
+  people:
+  - name: Ambuj Mehrish
+    description: Alumnus · Now at Ca’ Foscari University of Venice
+    links:
+    - label: Profile
+      url: https://www.unive.it/people/ambuj.mehrish
+    image: "/assets/images/people/ambuj.jpeg"
+  - name: Qi Sun
+    description: Alumnus · Now at Alibaba
+    links:
+    - label: Scholar
+      url: https://scholar.google.com/citations?user=GpH4vXwAAAAJ
+    image: "/assets/images/people/qi.jpg"
+  - name: Shang Hong Sim
+    description: Alumnus · Now at Oumi AI
+    links:
+    - label: Website
+      url: https://shanghongsim.github.io/
+    image: "/assets/images/people/shang-hong-sim.png"
+  - name: Yi Xuan Tan
+    description: Alumnus · Spoken language understanding
+    links:
+    - label: Project
+      url: https://huggingface.co/declare-lab/segue-w2v2-base
+    image: "/assets/images/people/yixuan.jpg"
+  - name: Samson Yu
+    description: Alumnus · PhD student at NUS
+    links:
+    - label: Project
+      url: https://github.com/declare-lab/ASTE-RL
+    image: "/assets/images/people/samson.jpg"
+  - name: Sarthak Bhagat
+    description: Alumnus · Now at 1X Technologies
+    links:
+    - label: Website
+      url: https://sarthak268.github.io/
+    image: "/assets/images/people/sarthak.jpg"
+  - name: Shagun Uppal
+    description: Alumnus · Now at Skild AI
+    links:
+    - label: Website
+      url: https://shagunuppal.github.io/
+    image: "/assets/images/people/shagun.jpg"
+  - name: Yingting Li
+    description: Alumnus · China Academy of Information and Communications Technology
+    links:
+    - label: Publications
+      url: https://soujanyaporia.github.io/publications/
+    image: "/assets/images/people/yingting.jpg"
+  - name: Xiaocui Yang
+    description: Alumnus · Assistant Professor at Northeastern University
+    links:
+    - label: Profile
+      url: https://openreview.net/profile?id=~Xiaocui_Yang1
+    image: "/assets/images/people/xiaocui.jpg"
+  - name: Shanshan Peng
+    description: Alumnus · Now at Apple
+    links:
+    - label: Paper
+      url: https://aclanthology.org/2020.emnlp-main.721/
+    image: "/assets/images/people/shanshan.jpeg"
+  - name: Jiankun Lu
+    description: Alumnus · Now at Apple
+    links:
+    - label: Paper
+      url: https://aclanthology.org/2020.emnlp-main.721/
+    image: "/assets/images/people/jiankun.jpeg"
+  - name: Weisheng Jin
+    description: Alumnus · PhD student at SUTD
+    links:
+    - label: Scholar
+      url: https://scholar.google.com/citations?user=6ycWC-cAAAAJ&hl=en
+    avatar: WJ
+  - name: Jaavid Akhtar
+    description: Alumnus · PhD student at SUTD
+    links:
+    - label: Profile
+      url: https://www.linkedin.com/in/jaavid-aktar-7481451bb/
+    avatar: JA
+  - name: Deepanway Ghosal
+    description: Former PhD student · Now at Google DeepMind
+    links:
+    - label: Website
+      url: https://deepanwayx.github.io/
+    image: "/assets/images/people/deepanway.jpeg"
+  - name: Chia Yew Ken
+    description: Former PhD student · Balyasny Asset Management L.P.
+    links:
+    - label: Website
+      url: https://chiayewken.com/
+    image: "/assets/images/people/ken.jpg"
+  - name: Hui Chen
+    description: Former PhD student · Research Fellow at NUS
+    links:
+    - label: Website
+      url: https://chchenhui.github.io/
+    image: "/assets/images/people/hui_chen.jpg"
+  - name: Devamanyu Hazarika
+    description: Former PhD student · Now at Meta
+    links:
+    - label: Website
+      url: http://devamanyu.com
+    image: "/assets/images/people/devamanyu.jpg"
+  - name: Wei Han
+    description: Former PhD student · Now at Huawei
+    links:
+    - label: GitHub
+      url: https://github.com/Clement25
+    image: "/assets/images/people/henryhan.jpeg"
+  - name: Pengfei Hong
+    description: Former PhD student · Now at Tonghuashun
+    links:
+    - label: GitHub
+      url: https://github.com/Emrys-Hong
+    image: "/assets/images/people/hongpengfei.jpg"

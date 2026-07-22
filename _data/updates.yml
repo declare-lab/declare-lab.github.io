@@ -1,0 +1,139 @@
+---
+last_verified: '2026-07-22'
+items:
+- year: 2026
+  kind: Media
+  date: May 2026
+  title: VentureBeat features δ-mem as working memory for AI agents
+  summary: 'VentureBeat interviewed Kyrie Lei and covered δ-mem as a compact 0.12%
+    parameter add-on that gives AI agents a lightweight internal working memory. The
+    article frames δ-mem as an important move beyond simply expanding context windows
+    or adding more RAG: fast, online memory inside the model for long-running agent
+    workflows.'
+  links:
+  - label: Read VentureBeat
+    url: https://venturebeat.com/orchestration/a-0-12-parameter-add-on-gives-ai-agents-the-working-memory-rag-cant
+  - label: Read the lab note
+    url: "/lab-notes/delta-mem/"
+  - label: Code
+    url: https://github.com/declare-lab/delta-Mem
+- year: 2026
+  kind: Congratulation
+  date: May 2026
+  title: DeCLaRe students begin research internships
+  summary: Congratulations to our students on beginning research internships with
+    leading AI research teams.
+  links: []
+  bullets:
+  - Jingdi Lei at Tencent
+  - Ruiwen at MiniMax
+  - Chia-Yu Hung at Meta's Super Intelligence Lab
+  - Maojia Song at Meta's Super Intelligence Lab
+- year: 2026
+  kind: Paper
+  date: May 2026
+  title: PODS studies how much data to use during efficient training
+  summary: The new arXiv paper complements Data Agent by scheduling the selected data
+    volume over training, improving the efficiency-generalization trade-off under
+    the same data budget.
+  links:
+  - label: Read the lab note
+    url: "/lab-notes/data-centric-training-part-ii/"
+  - label: Paper
+    url: https://arxiv.org/abs/2605.14773
+- year: 2026
+  kind: Paper
+  date: May 2026
+  title: δ-mem introduces lightweight online memory for LLMs
+  summary: The new arXiv paper studies how a compact online memory state can evolve
+    during interaction and directly modulate Transformer attention without extending
+    the explicit context.
+  links:
+  - label: Read the lab note
+    url: "/lab-notes/delta-mem/"
+  - label: Code
+    url: https://github.com/declare-lab/delta-Mem
+- year: 2026
+  kind: Grant
+  date: 2026-2029
+  title: Embodied Foundational Models funded by CNRS@CREATE and NRF
+  summary: The project supports research on embodied foundation models, generalist
+    interactive AI, and vision-language-action systems. Students interested in embodied
+    AI are encouraged to review our research themes and apply.
+  links:
+  - label: Join DeCLaRe Lab
+    url: "/join/"
+- year: 2026
+  kind: Grant
+  date: 2026-2028
+  title: Toward Generalist Vision Language Action Models supported by KLASS
+  summary: This funded project focuses on VLA models, action grounding, and embodied
+    evaluation. We welcome inquiries from students with interests in robotics, multimodal
+    learning, and efficient model training.
+  links:
+  - label: Embodied AI theme
+    url: "/research/#embodied-ai"
+- year: 2026
+  kind: Paper
+  date: ICLR 2026
+  title: OffTopicEval studies operational safety for LLM agents
+  summary: OffTopicEval evaluates whether task-specific LLM agents can accept in-domain
+    queries while refusing out-of-domain requests.
+  links:
+  - label: Read the paper
+    url: https://arxiv.org/abs/2509.26495
+- year: 2026
+  kind: Paper
+  date: ICML 2026
+  title: Data Agent advances efficient learning
+  summary: Data Agent studies end-to-end dynamic data selection for training-aware
+    efficiency.
+  links:
+  - label: Read the lab note
+    url: "/lab-notes/data-centric-training-part-i/"
+  - label: Code
+    url: https://github.com/Jackbrocp/Data-Agent
+- year: 2026
+  kind: Award
+  date: '2026'
+  title: Highly Cited Researcher recognition
+  summary: Soujanya Poria was recognized by Web of Science as a Highly Cited Researcher.
+  links: []
+- year: 2025
+  kind: Grant
+  date: '2025'
+  title: Meta Audiobox Research Grant supports audio generation research
+  summary: The grant supports work on audio generation and multimodal generative modeling.
+    Students interested in speech, audio, music, and multimodal generation can follow
+    the Publications page for related work.
+  links:
+  - label: Speech and audio papers
+    url: "/publications/?topic=Speech%20%26%20Audio"
+- year: 2025
+  kind: Paper
+  date: ICLR 2025
+  title: Trust-Score/Trust-Align and MOOSE-Chem accepted at ICLR
+  summary: These papers study trustworthy retrieval-augmented generation and AI for
+    Science through chemistry hypothesis rediscovery.
+  links:
+  - label: Related publications
+    url: "/publications/?q=Trust-Score"
+- year: 2025
+  kind: Release
+  date: '2025'
+  title: NORA and NORA 1.5 project pages released
+  summary: The lab released project pages for compact vision-language-action models
+    and reward-guided post-training for embodied tasks.
+  links:
+  - label: NORA project
+    url: "/nora.html"
+- year: 2025
+  kind: Lab
+  date: '2025'
+  title: DeCLaRe Lab at NTU
+  summary: The lab is based at Nanyang Technological University, Singapore. We welcome
+    inquiries from students, postdocs, visiting researchers, and collaborators whose
+    interests connect to the lab's research themes.
+  links:
+  - label: Opportunities
+    url: "/join/"

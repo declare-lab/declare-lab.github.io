@@ -9,9 +9,9 @@ title: ""
 
 <section class="home-hero declare-hero">
   <div class="declare-hero__copy">
-    <p class="eyebrow">Deep Cognition and Language Research Lab</p>
+    <p class="declare-kicker">Deep Cognition and Language Research Lab</p>
     <h1>Research in <em>Safe</em>, <em>Trustworthy</em>, <em>Multimodal</em> AI</h1>
-    <p class="declare-hero__subhead">DeCLaRe Lab studies language, multimodal, and interactive AI systems across six themes: Safety, Trustworthiness, Multimodality, AI for Science, Efficiency, and Embodied AI.</p>
+    <p class="declare-hero__subhead">DeCLaRe studies how intelligent systems reason, perceive, communicate, and act across language, vision, audio, scientific knowledge, and embodied environments.</p>
     <div class="hero-actions">
       <a class="btn-primary" href="/research/"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><span>Research Themes</span></a>
       <a class="btn-secondary" href="/publications/"><i class="fa-regular fa-file-lines" aria-hidden="true"></i><span>Publications</span></a>
@@ -19,16 +19,16 @@ title: ""
       <a class="btn-secondary" href="https://drive.google.com/file/d/10lmu5YGDzr2Yw6kBFWwe7ifZ9Ec9WCl1/view?usp=sharing" target="_blank" rel="noopener"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i><span>Research Slides</span></a>
     </div>
   </div>
-  <div class="declare-hero__visual" aria-label="DeCLaRe Lab research map">
-    <div class="research-map">
+  <div class="declare-hero__visual" aria-label="Interactive map of DeCLaRe research themes">
+    <div class="research-map" id="researchMap">
+      <div class="research-map__spokes" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
       <img class="research-map__logo research-map__logo--light" src="/assets/images/logos/declare-icon-light.png" alt="DeCLaRe Lab robot icon">
       <img class="research-map__logo research-map__logo--dark" src="/assets/images/logos/declare-icon-dark.png" alt="DeCLaRe Lab robot icon">
-      <a class="research-node research-node--safety" href="/research/#safety">Safety</a>
-      <a class="research-node research-node--trustworthiness" href="/research/#trustworthiness">Trustworthiness</a>
-      <a class="research-node research-node--multimodality" href="/research/#multimodality">Multimodality</a>
-      <a class="research-node research-node--science" href="/research/#ai-for-science">AI for Science</a>
-      <a class="research-node research-node--efficiency" href="/research/#efficiency">Efficiency</a>
-      <a class="research-node research-node--embodied" href="/research/#embodied-ai">Embodied AI</a>
+      {% for theme in site.data.home.themes %}
+      <a class="research-node research-node--{{ theme.id }}" data-theme="{{ theme.id }}" href="/research/#{{ theme.id }}">{{ theme.name }}</a>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -36,29 +36,27 @@ title: ""
 <div class="side-layout side-layout--home">
 <div class="side-layout__main">
 
-<section class="declare-intro" id="about">
+<section class="declare-intro lab-overview" id="about">
   <div>
-    <p class="eyebrow">About DeCLaRe Lab</p>
+    <p class="eyebrow">About DeCLaRe</p>
     <h2>Deep Cognition and Language Research</h2>
   </div>
-  <div>
-    <p>DeCLaRe stands for Deep Cognition and Language Research. The lab was established at the Singapore University of Technology and Design in 2019 by Soujanya Poria, with Navonil Majumder, Devamanyu Hazarika, and Deepanway Ghosal as founding members. In 2025, DeCLaRe Lab moved to Nanyang Technological University.</p>
-    <p>Today the lab works on methods, benchmarks, and open research artifacts for language, vision, audio, video, knowledge, and action, with the goal of building AI systems that are capable, grounded, interpretable, and robust in settings that require more than benchmark accuracy.</p>
+  <div class="lab-overview__body">
+    <div class="lab-overview__copy">
+      <p>Soujanya Poria established DeCLaRe at the Singapore University of Technology and Design in 2019 with founding members Navonil Majumder, Devamanyu Hazarika, and Deepanway Ghosal. The lab moved to Nanyang Technological University in 2025.</p>
+      <p>Our research develops grounded, interpretable, and robust AI systems for settings in which benchmark accuracy alone is insufficient.</p>
+      <div class="identity-summary">
+        <span>Lab's identity</span>
+        <p>The robot recalls early computing while forming 宣 (<em>xuān</em>), “to declare”: an intelligent social agent connecting computing’s history with collaborative AI.</p>
+      </div>
+    </div>
+    <a class="identity-figure identity-figure--light" href="/assets/images/resources/logo-explanation-light.svg" aria-label="Open the DeCLaRe logo explanation">
+      <img src="/assets/images/resources/logo-explanation-light.svg" alt="Visual explanation of the DeCLaRe Lab identity" loading="lazy">
+    </a>
+    <a class="identity-figure identity-figure--dark" href="/assets/images/resources/logo-explanation-dark.svg" aria-label="Open the DeCLaRe logo explanation">
+      <img src="/assets/images/resources/logo-explanation-dark.svg" alt="Visual explanation of the DeCLaRe Lab identity" loading="lazy">
+    </a>
   </div>
-</section>
-
-<section class="logo-story" id="lab-identity">
-  <div>
-    <p class="work-kicker">Lab's identity</p>
-    <h2>The meaning behind the DeCLaRe logo</h2>
-    <p>The DeCLaRe robot represents an intelligent social agent. Its IBM-era computer silhouette traces the evolution from early computing to modern AI, while its form evokes 宣 (<em>xuān</em>), meaning “to declare.”</p>
-  </div>
-  <a class="logo-explanation-link logo-explanation-link--light" href="/assets/images/resources/logo-explanation-light.svg" aria-label="Open DeCLaRe logo explanation">
-    <img src="/assets/images/resources/logo-explanation-light.svg" alt="Explanation of the DeCLaRe Lab logo">
-  </a>
-  <a class="logo-explanation-link logo-explanation-link--dark" href="/assets/images/resources/logo-explanation-dark.svg" aria-label="Open DeCLaRe logo explanation">
-    <img src="/assets/images/resources/logo-explanation-dark.svg" alt="Explanation of the DeCLaRe Lab logo">
-  </a>
 </section>
 
 <section class="declare-section declare-section--compact" id="research-areas">
@@ -66,132 +64,44 @@ title: ""
     <div>
       <p class="work-kicker">Research themes</p>
       <h2>Research Areas</h2>
-      <p class="section-note">Six connected themes that organize the lab's current work.</p>
+      <p class="section-note">Six connected directions organize the lab's research.</p>
     </div>
   </div>
-  <div class="pillar-grid pillar-grid--compact">
-    <a class="pillar-card" href="/research/#safety">
-      <span>01</span>
-      <h3>Safety</h3>
-      <p>Operational safety, red-teaming, refusal behavior, and alignment interventions.</p>
+  <div class="theme-index">
+    {% for theme in site.data.home.themes %}
+    <a class="theme-index__item" data-theme="{{ theme.id }}" href="/research/#{{ theme.id }}">
+      <span>{{ theme.number }}</span>
+      <div><h3>{{ theme.name }}</h3><p>{{ theme.summary }}</p></div>
+      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
     </a>
-    <a class="pillar-card" href="/research/#trustworthiness">
-      <span>02</span>
-      <h3>Trustworthiness</h3>
-      <p>Grounded attribution, reliable RAG, uncertainty, and citation-aware responses.</p>
-    </a>
-    <a class="pillar-card" href="/research/#multimodality">
-      <span>03</span>
-      <h3>Multimodality</h3>
-      <p>Language, vision, audio, and video models for reasoning and interaction.</p>
-    </a>
-    <a class="pillar-card" href="/research/#ai-for-science">
-      <span>04</span>
-      <h3>AI for Science</h3>
-      <p>Scientific hypothesis discovery, chemistry, and literature-grounded reasoning.</p>
-    </a>
-    <a class="pillar-card" href="/research/#efficiency">
-      <span>05</span>
-      <h3>Efficiency</h3>
-      <p>Data selection, adapters, token pruning, and compact model training.</p>
-    </a>
-    <a class="pillar-card" href="/research/#embodied-ai">
-      <span>06</span>
-      <h3>Embodied AI</h3>
-      <p>Vision-language-action systems, action grounding, and interactive evaluation.</p>
-    </a>
+    {% endfor %}
   </div>
 </section>
 
 <section class="declare-section declare-featured" id="representative-work">
   <div class="declare-section__header">
     <div>
-      <p class="work-kicker">Projects</p>
+      <p class="work-kicker">Research record</p>
       <h2>Representative Work</h2>
-      <p class="section-note">Recent work and long-running research lines across the lab's themes.</p>
+      <p class="section-note">Recent projects alongside established research lines from the group.</p>
     </div>
     <a class="btn-secondary" href="/research/">All research</a>
   </div>
   <div class="representative-grid">
-    <article class="representative-card representative-card--safety">
+    {% for group in site.data.home.representative_work %}
+    <article class="representative-card representative-card--{{ group.id }}" data-theme="{{ group.id }}">
       <div class="representative-card__head">
-        <span class="project-tag">Safety</span>
-        <h3>Safety, red-teaming, and bias</h3>
-        <p>From operational safety and jailbreak evaluation to realignment and bias analysis.</p>
+        <span class="project-tag">{{ group.name }}</span>
+        <h3>{{ group.title }}</h3>
+        <p>{{ group.summary }}</p>
       </div>
       <div class="representative-list">
-        <a href="https://arxiv.org/abs/2509.26495"><strong>OffTopicEval</strong><span>ICLR 2026</span></a>
-        <a href="https://aclanthology.org/2024.acl-long.762"><strong>RESTA / Safety Re-Alignment</strong><span>ACL 2024</span></a>
-        <a href="https://arxiv.org/abs/2308.09662"><strong>Chain of Utterances</strong><span>Red-teaming LLMs</span></a>
-        <a href="https://doi.org/10.1007/s12559-021-09881-2"><strong>Gender Bias in BERT</strong><span>Cognitive Computation</span></a>
+        {% for work in group.works %}
+        <a href="{{ work.url }}"><strong>{{ work.title }}</strong><span>{{ work.meta }}</span></a>
+        {% endfor %}
       </div>
     </article>
-
-    <article class="representative-card representative-card--trust">
-      <div class="representative-card__head">
-        <span class="project-tag">Trustworthiness</span>
-        <h3>Grounding, attribution, and refusal</h3>
-        <p>Methods that improve factuality, citation quality, and reliability in knowledge-intensive generation.</p>
-      </div>
-      <div class="representative-list">
-        <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/4c88827decab6c046b881a2c3a99c76f-Abstract-Conference.html"><strong>Trust-Score and Trust-Align</strong><span>ICLR 2025</span></a>
-        <a href="https://proceedings.iclr.cc/paper_files/paper/2024/hash/285ba60a67a66d2efeeb7cb25c5067fe-Abstract-Conference.html"><strong>Chain-of-Knowledge</strong><span>ICLR 2024</span></a>
-        <a href="/publications/?topic=RAG"><strong>Retrieval-aware reasoning</strong><span>RAG publications</span></a>
-      </div>
-    </article>
-
-    <article class="representative-card representative-card--multimodal">
-      <div class="representative-card__head">
-        <span class="project-tag">Multimodality</span>
-        <h3>Multimodal understanding and generation</h3>
-        <p>Long-running work on multimodal emotion, fusion, and text-to-audio generation.</p>
-      </div>
-      <div class="representative-list">
-        <a href="https://aclanthology.org/P19-1050/"><strong>MELD</strong><span>ACL 2019</span></a>
-        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/4657"><strong>DialogueRNN</strong><span>AAAI 2019</span></a>
-        <a href="https://aclanthology.org/D17-1115/"><strong>TFN</strong><span>EMNLP 2017</span></a>
-        <a href="https://arxiv.org/abs/2412.21037"><strong>TangoFlux</strong><span>ICLR 2026</span></a>
-      </div>
-    </article>
-
-    <article class="representative-card representative-card--science">
-      <div class="representative-card__head">
-        <span class="project-tag">AI for Science</span>
-        <h3>Scientific hypothesis discovery</h3>
-        <p>LLM systems for rediscovering and proposing scientific hypotheses from literature.</p>
-      </div>
-      <div class="representative-list">
-        <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/51fd9a7d1706023cb9f8210cc6ac357c-Abstract-Conference.html"><strong>MOOSE-Chem</strong><span>ICLR 2025</span></a>
-        <a href="https://aclanthology.org/2024.findings-acl.804"><strong>Open-domain hypotheses</strong><span>ACL Findings 2024</span></a>
-      </div>
-    </article>
-
-    <article class="representative-card representative-card--efficiency">
-      <div class="representative-card__head">
-        <span class="project-tag">Efficiency</span>
-        <h3>Efficient training, merging, and attention</h3>
-        <p>Methods for cheaper adaptation, model merging, data selection, and long-context computation.</p>
-      </div>
-      <div class="representative-list">
-        <a href="https://arxiv.org/abs/2605.12357"><strong>δ-mem</strong><span>arXiv 2026</span></a>
-        <a href="https://arxiv.org/abs/2603.07433"><strong>Data Agent</strong><span>ICML 2026</span></a>
-        <a href="https://arxiv.org/abs/2406.11617"><strong>DELLA-Merging</strong><span>Model merging</span></a>
-        <a href="https://arxiv.org/abs/2512.12602"><strong>EFLA</strong><span>Error-free linear attention</span></a>
-      </div>
-    </article>
-
-    <article class="representative-card representative-card--embodied">
-      <div class="representative-card__head">
-        <span class="project-tag">Embodied AI</span>
-        <h3>Vision-language-action models</h3>
-        <p>Compact embodied models and reward-guided post-training for perception-to-action systems.</p>
-      </div>
-      <div class="representative-list">
-        <a href="https://arxiv.org/abs/2504.19854"><strong>NORA</strong><span>Generalist VLA model</span></a>
-        <a href="https://arxiv.org/abs/2511.14659"><strong>NORA 1.5</strong><span>World-model rewards</span></a>
-        <a href="/nora.html"><strong>Project page</strong><span>Interactive overview</span></a>
-      </div>
-    </article>
+    {% endfor %}
   </div>
 </section>
 
@@ -200,101 +110,38 @@ title: ""
     <div>
       <p class="work-kicker">Publications</p>
       <h2>Hot Papers 🔥</h2>
-      <p class="section-note">Selected recent and highly cited papers.</p>
+      <p class="section-note">Four current anchors across the lab's research program.</p>
     </div>
     <a class="btn-secondary" href="/publications/">Publication archive</a>
   </div>
   <div class="hot-paper-list">
+    {% for paper in site.data.home.hot_papers %}
     <article>
-      <span>arXiv 2026</span>
-      <h3>δ-mem: Efficient Online Memory for Large Language Models</h3>
-      <p>Lightweight online memory through a compact state directly coupled with attention.</p>
+      <span>{{ paper.venue }}</span>
+      <h3>{{ paper.title }}</h3>
+      <p>{{ paper.summary }}</p>
       <div class="project-links">
-        <a href="https://arxiv.org/abs/2605.12357">Paper</a>
-        <a href="https://github.com/declare-lab/delta-Mem">Code</a>
+        {% for link in paper.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
       </div>
     </article>
-    <article>
-      <span>ICLR 2026</span>
-      <h3>OffTopicEval: When Large Language Models Enter the Wrong Chat, Almost Always!</h3>
-      <p>Operational safety and task-boundary evaluation for LLM agents.</p>
-      <div class="project-links">
-        <a href="https://arxiv.org/abs/2509.26495">Paper</a>
-      </div>
-    </article>
-    <article>
-      <span>ICLR 2025</span>
-      <h3>Measuring and Enhancing Trustworthiness of LLMs in RAG</h3>
-      <p>Trust-Score, Trust-Align, grounded attributions, citations, and refusal.</p>
-      <div class="project-links">
-        <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/4c88827decab6c046b881a2c3a99c76f-Abstract-Conference.html">Paper</a>
-        <a href="https://github.com/declare-lab/trust-align">Code</a>
-      </div>
-    </article>
-    <article>
-      <span>ICLR 2025</span>
-      <h3>MOOSE-Chem: LLMs for Rediscovering Chemistry Scientific Hypotheses</h3>
-      <p>AI for Science through literature-grounded chemistry hypothesis rediscovery.</p>
-      <div class="project-links">
-        <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/51fd9a7d1706023cb9f8210cc6ac357c-Abstract-Conference.html">Paper</a>
-        <a href="https://github.com/ZonglinY/MOOSE-Chem">Code</a>
-      </div>
-    </article>
-    <article>
-      <span>ICML 2026</span>
-      <h3>Data Agent: Learning to Select Data via End-to-End Dynamic Optimization</h3>
-      <p>Efficient training through dynamic data selection.</p>
-      <div class="project-links">
-        <a href="https://arxiv.org/abs/2603.07433">Paper</a>
-        <a href="https://github.com/Jackbrocp/Data-Agent">Code</a>
-      </div>
-    </article>
-    <article>
-      <span>arXiv 2025</span>
-      <h3>NORA: A Small Open-Sourced Generalist Vision Language Action Model</h3>
-      <p>Efficient embodied AI and action grounding.</p>
-      <div class="project-links">
-        <a href="https://arxiv.org/abs/2504.19854">Paper</a>
-        <a href="https://github.com/declare-lab/nora">Code</a>
-      </div>
-    </article>
-    <article>
-      <span>ICLR 2026</span>
-      <h3>TangoFlux: Super Fast and Faithful Text-to-Audio Generation with Flow Matching</h3>
-      <p>Fast, faithful text-to-audio generation via flow matching.</p>
-      <div class="project-links">
-        <a href="https://arxiv.org/abs/2412.21037">Paper</a>
-        <a href="https://github.com/declare-lab/TangoFlux">Code</a>
-      </div>
-    </article>
+    {% endfor %}
   </div>
 </section>
 
-<section class="declare-section funded-projects" id="research-support">
+<section class="declare-section research-support" id="research-support">
   <div class="declare-section__header">
     <div>
       <p class="work-kicker">Research support</p>
       <h2>Funded Research Directions</h2>
-      <p class="section-note">A brief view of major active support. The full grant record is maintained separately.</p>
+      <p class="section-note">Active support spans embodied foundation models, trustworthy language generation, efficient architectures, and multimodal AI.</p>
     </div>
-    <a class="btn-secondary" href="/funded-projects/">View funded projects</a>
   </div>
-  <div class="funding-list">
-    <article>
-      <span>CNRS@CREATE / NRF · 2026-2029</span>
-      <h3>Embodied Foundational Models</h3>
-      <p>Total S$10M; awarded S$3.33M. Research on embodied foundation models and generalist interactive AI.</p>
-    </article>
-    <article>
-      <span>KLASS · 2026-2028</span>
-      <h3>Toward Generalist Vision Language Action Models</h3>
-      <p>S$1.5M support for vision-language-action models, action grounding, and embodied evaluation.</p>
-    </article>
-    <article>
-      <span>DSO · 2023-2026</span>
-      <h3>Detecting, Measuring and Mitigating Hallucinations in LLMs</h3>
-      <p>S$600K support for grounded, reliable, and trustworthy language model generation.</p>
-    </article>
+  <div class="research-support__gateway">
+    <p>Explore active and completed projects, funding periods, agencies, and the research directions they support.</p>
+    <div>
+      <a class="btn-primary" href="/funded-projects/">Funded projects</a>
+      <a class="btn-secondary" href="/join/">Research opportunities</a>
+    </div>
   </div>
 </section>
 
@@ -304,7 +151,6 @@ title: ""
   <span>Sections</span>
   <div>
     <a href="#about">About</a>
-    <a href="#lab-identity">Lab's Identity</a>
     <a href="#research-areas">Research Areas</a>
     <a href="#representative-work">Representative Work</a>
     <a href="#hot-papers">Hot Papers 🔥</a>
@@ -312,3 +158,35 @@ title: ""
   </div>
 </aside>
 </div>
+
+<script>
+  (function () {
+    var map = document.getElementById("researchMap");
+    if (!map) return;
+
+    var nodes = Array.prototype.slice.call(map.querySelectorAll("[data-theme]"));
+    var related = Array.prototype.slice.call(document.querySelectorAll(".theme-index__item[data-theme], .representative-card[data-theme]"));
+
+    function setTheme(theme) {
+      map.setAttribute("data-active-theme", theme);
+      nodes.forEach(function (node) {
+        node.classList.toggle("is-active", node.getAttribute("data-theme") === theme);
+      });
+      related.forEach(function (item) {
+        item.classList.toggle("is-linked", item.getAttribute("data-theme") === theme);
+      });
+    }
+
+    function clearTheme() {
+      map.removeAttribute("data-active-theme");
+      nodes.concat(related).forEach(function (item) { item.classList.remove("is-active", "is-linked"); });
+    }
+
+    nodes.forEach(function (node) {
+      node.addEventListener("mouseenter", function () { setTheme(node.getAttribute("data-theme")); });
+      node.addEventListener("focus", function () { setTheme(node.getAttribute("data-theme")); });
+      node.addEventListener("mouseleave", clearTheme);
+      node.addEventListener("blur", clearTheme);
+    });
+  }());
+</script>
