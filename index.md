@@ -38,12 +38,11 @@ title: ""
 
 <section class="declare-intro lab-overview" id="about">
   <div>
-    <p class="eyebrow">About DeCLaRe</p>
-    <h2>Deep Cognition and Language Research</h2>
+    <h2 data-section-label="PROFILE">About DeCLaRe</h2>
   </div>
   <div class="lab-overview__body">
     <div class="lab-overview__copy">
-      <p>Soujanya Poria established DeCLaRe at the Singapore University of Technology and Design in 2019 with founding members Navonil Majumder, Devamanyu Hazarika, and Deepanway Ghosal. The lab moved to Nanyang Technological University in 2025.</p>
+      <p>DeCLaRe, short for Deep Cognition and Language Research, was established by Soujanya Poria at the Singapore University of Technology and Design in 2019 with founding members Navonil Majumder, Devamanyu Hazarika, and Deepanway Ghosal. The lab moved to Nanyang Technological University in 2025.</p>
       <p>Our research develops grounded, interpretable, and robust AI systems for settings in which benchmark accuracy alone is insufficient.</p>
       <div class="identity-summary">
         <span>Lab's identity</span>
@@ -62,8 +61,7 @@ title: ""
 <section class="declare-section declare-section--compact" id="research-areas">
   <div class="declare-section__header">
     <div>
-      <p class="work-kicker">Research themes</p>
-      <h2>Research Areas</h2>
+      <h2 data-section-label="AGENDA">Research Themes</h2>
       <p class="section-note">Six connected directions organize the lab's research.</p>
     </div>
   </div>
@@ -81,8 +79,7 @@ title: ""
 <section class="declare-section declare-featured" id="representative-work">
   <div class="declare-section__header">
     <div>
-      <p class="work-kicker">Research record</p>
-      <h2>Representative Work</h2>
+      <h2 data-section-label="SELECTED">Representative Work</h2>
       <p class="section-note">Recent projects alongside established research lines from the group.</p>
     </div>
     <a class="btn-secondary" href="/research/">All research</a>
@@ -108,8 +105,7 @@ title: ""
 <section class="declare-section hot-papers" id="hot-papers">
   <div class="declare-section__header">
     <div>
-      <p class="work-kicker">Publications</p>
-      <h2>Hot Papers 🔥</h2>
+      <h2 data-section-label="CURRENT">Hot Papers 🔥</h2>
       <p class="section-note">Four current anchors across the lab's research program.</p>
     </div>
     <a class="btn-secondary" href="/publications/">Publication archive</a>
@@ -131,8 +127,7 @@ title: ""
 <section class="declare-section research-support" id="research-support">
   <div class="declare-section__header">
     <div>
-      <p class="work-kicker">Research support</p>
-      <h2>Funded Research Directions</h2>
+      <h2 data-section-label="SUPPORT">Funded Research Directions</h2>
       <p class="section-note">Active support spans embodied foundation models, trustworthy language generation, efficient architectures, and multimodal AI.</p>
     </div>
   </div>
@@ -151,7 +146,7 @@ title: ""
   <span>Sections</span>
   <div>
     <a href="#about">About</a>
-    <a href="#research-areas">Research Areas</a>
+    <a href="#research-areas">Research Themes</a>
     <a href="#representative-work">Representative Work</a>
     <a href="#hot-papers">Hot Papers 🔥</a>
     <a href="#research-support">Research Support</a>

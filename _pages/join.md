@@ -15,7 +15,7 @@ classes: wide
 <div class="side-layout">
 <div class="side-layout__main">
 
-<h2 id="why-join-declare-lab">Why Join DeCLaRe Lab?</h2>
+<h2 id="why-join-declare-lab" data-section-label="CULTURE">What DeCLaRe Offers</h2>
 
 <div class="opportunity-grid">
   <article>
@@ -35,8 +35,7 @@ classes: wide
 <section class="collaboration-section" id="collaboration-structure">
   <div class="declare-section__header">
     <div>
-      <p class="work-kicker">Collaboration structure</p>
-      <h2>How Students Collaborate in DeCLaRe</h2>
+      <h2 data-section-label="NETWORK">How Students Collaborate in DeCLaRe</h2>
       <p class="section-note">Coauthorship patterns in the lab's publication archive show how internal, academic, and industry collaborations intersect.</p>
     </div>
   </div>
@@ -183,7 +182,7 @@ classes: wide
   });
 </script>
 
-<h2 id="current-openings">Current Openings</h2>
+<h2 id="current-openings" data-section-label="ROLES">Current Openings</h2>
 
 <div class="opening-list">
   <article>
@@ -200,7 +199,7 @@ classes: wide
   </article>
 </div>
 
-<h2 id="expected-backgrounds">Expected Backgrounds</h2>
+<h2 id="expected-backgrounds" data-section-label="PROFILE">Expected Backgrounds</h2>
 
 <p>Strong candidates often have experience in one or more of the following:</p>
 
@@ -217,13 +216,13 @@ classes: wide
   <span>Open-source engineering</span>
 </div>
 
-<h2 id="how-to-apply">How to Apply</h2>
+<h2 id="how-to-apply" data-section-label="PROCESS">How to Apply</h2>
 
 <p>Please review the lab's <a href="https://drive.google.com/file/d/10lmu5YGDzr2Yw6kBFWwe7ifZ9Ec9WCl1/view?usp=sharing">research slides</a>, browse recent <a href="/publications/">publications</a>, and identify the research directions that genuinely connect with your interests.</p>
 
 <p>Send a concise email to <code>soujanya [dot] poria [at] ntu [dot] edu [dot] sg</code> with your CV, transcript if applicable, representative work, and a short note on the projects you would like to pursue.</p>
 
-<h2 id="faq">FAQ</h2>
+<h2 id="faq" data-section-label="DETAILS">FAQ</h2>
 
 <div class="faq-list">
   <article>
@@ -245,7 +244,7 @@ classes: wide
 <aside class="section-nav" aria-label="Join page sections">
   <span>Sections</span>
   <div>
-    <a href="#why-join-declare-lab">Why Join</a>
+    <a href="#why-join-declare-lab">What We Offer</a>
     <a href="#collaboration-structure">Collaboration</a>
     <a href="#current-openings">Openings</a>
     <a href="#expected-backgrounds">Backgrounds</a>

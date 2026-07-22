@@ -33,7 +33,7 @@ classes: wide
     </section>
 
     {% for group in grouped %}
-    <h2 class="pub-year-heading" id="pub-year-{{ group.name }}">{{ group.name }}</h2>
+    <h2 class="pub-year-heading" id="pub-year-{{ group.name }}" data-section-label="YEAR">{{ group.name }}</h2>
 
     {% for pub in group.items %}
     {% assign category_string = pub.categories | join: "," %}

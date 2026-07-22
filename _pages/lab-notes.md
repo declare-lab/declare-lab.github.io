@@ -16,7 +16,7 @@ classes: wide
 </section>
 
 <section class="notes-year" id="notes-2026">
-  <h2>2026</h2>
+  <h2 data-section-label="YEAR">2026</h2>
   <div class="notes-grid notes-grid--featured">
   <a class="note-card-link" href="/lab-notes/data-centric-training-part-ii/">
     <img loading="lazy" src="/assets/images/lab-notes/data-centric-training-part-ii/figure-01.png" alt="PODS oscillatory data-volume scheduling overview">

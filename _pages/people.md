@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "People at DeCLaRe Lab"
+title: "People"
 permalink: /people/
 author_profile: false
 related: false
@@ -19,7 +19,7 @@ classes: wide
 <img class="team-photo" src="/assets/images/resources/team.jpg" alt="Members of DeCLaRe Lab" loading="eager">
 
 {% for section in site.data.people.sections %}
-<h2 id="{{ section.id }}">{{ section.title }}</h2>
+<h2 id="{{ section.id }}" data-section-label="GROUP 0{{ forloop.index }}">{{ section.title }}</h2>
 
 <div class="people-grid{% if section.id == 'faculty' %} people-grid--featured{% endif %}">
   {% for person in section.people %}

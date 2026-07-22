@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "News from DeCLaRe Lab"
+title: "Updates"
 permalink: /updates/
 author_profile: false
 related: false
@@ -20,7 +20,7 @@ classes: wide
 
 {% for year in update_years %}
 <section class="updates-year" id="updates-{{ year.name }}">
-  <h2>{{ year.name }}</h2>
+  <h2 data-section-label="YEAR">{{ year.name }}</h2>
   <div class="updates-feed">
     {% for update in year.items %}
     {% assign kind_class = update.kind | downcase | replace: " ", "-" %}

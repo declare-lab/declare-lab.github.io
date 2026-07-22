@@ -9,13 +9,13 @@ classes: wide
 ---
 
 <section class="page-lead page-lead--compact">
-  <p>Research themes connect current projects with established contributions from the group. Each section pairs a focused agenda with representative papers, code, and project resources.</p>
+  <p>Six directions connect current projects with established contributions from the group. Each section pairs a focused agenda with representative papers, code, and project resources.</p>
 </section>
 
 <div class="side-layout">
 <div class="side-layout__main">
 
-<h2 id="safety">Safety</h2>
+<h2 id="safety" data-section-label="THEME 01">Safety</h2>
 
 <div class="research-theme">
   <div>
@@ -91,7 +91,7 @@ classes: wide
   </div>
 </div>
 
-<h2 id="trustworthiness">Trustworthiness</h2>
+<h2 id="trustworthiness" data-section-label="THEME 02">Trustworthiness</h2>
 
 <div class="research-theme">
   <div>
@@ -144,7 +144,7 @@ classes: wide
   </div>
 </div>
 
-<h2 id="multimodality">Multimodality</h2>
+<h2 id="multimodality" data-section-label="THEME 03">Multimodality</h2>
 
 <div class="research-theme">
   <div>
@@ -199,7 +199,7 @@ classes: wide
   </div>
 </div>
 
-<h2 id="ai-for-science">AI for Science</h2>
+<h2 id="ai-for-science" data-section-label="THEME 04">AI for Science</h2>
 
 <div class="research-theme">
   <div>
@@ -238,7 +238,7 @@ classes: wide
   </div>
 </div>
 
-<h2 id="efficiency">Efficiency</h2>
+<h2 id="efficiency" data-section-label="THEME 05">Efficiency</h2>
 
 <div class="research-theme">
   <div>
@@ -319,7 +319,7 @@ classes: wide
   </div>
 </div>
 
-<h2 id="embodied-ai">Embodied AI</h2>
+<h2 id="embodied-ai" data-section-label="THEME 06">Embodied AI</h2>
 
 <div class="research-theme">
   <div>

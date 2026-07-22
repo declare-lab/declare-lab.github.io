@@ -17,9 +17,9 @@ classes: wide
 <div class="side-layout__main">
 
 {% for section in site.data.funded_projects.sections %}
-<h2 id="{{ section.id }}">{{ section.title }}</h2>
+<h2 id="{{ section.id }}" data-section-label="SET 0{{ forloop.index }}">{{ section.title }}</h2>
 
-<div class="funding-list funding-list--page{% unless section.id == 'active-projects' %} funding-list--records{% endunless %}{% if section.id == 'completed-support' %} funding-list--compact{% endif %}">
+<div class="funding-list funding-list--page funding-list--records{% if section.id == 'completed-support' %} funding-list--compact{% endif %}">
   {% for project in section.projects %}
   <article>
     <span>{{ project.meta }}</span>
@@ -43,8 +43,7 @@ classes: wide
 
 <section class="join-band join-band--quiet">
   <div>
-    <p class="work-kicker">Research opportunities</p>
-    <h2>Work With DeCLaRe</h2>
+    <h2 data-section-label="OPPORTUNITY">Work With DeCLaRe</h2>
     <p>Current funded directions create opportunities for students and collaborators whose research aligns with the lab.</p>
   </div>
   <a class="btn-primary" href="/join/">Open positions</a>
