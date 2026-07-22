@@ -13,10 +13,10 @@ title: ""
     <h1>Research in <em>Safe</em>, <em>Trustworthy</em>, <em>Multimodal</em> AI</h1>
     <p class="declare-hero__subhead">DeCLaRe studies how intelligent systems reason, perceive, communicate, and act across language, vision, audio, scientific knowledge, and embodied environments.</p>
     <div class="hero-actions">
-      <a class="btn-primary" href="/research/"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><span>Research Themes</span></a>
-      <a class="btn-secondary" href="/publications/"><i class="fa-regular fa-file-lines" aria-hidden="true"></i><span>Publications</span></a>
+      <a class="btn-primary" href="/research/"><i class="fa-solid fa-compass" aria-hidden="true"></i><span>Research Themes</span></a>
+      <a class="btn-secondary" href="/publications/"><i class="fa-solid fa-book-open" aria-hidden="true"></i><span>Publications</span></a>
       <a class="btn-secondary" href="https://github.com/declare-lab" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a>
-      <a class="btn-secondary" href="https://drive.google.com/file/d/10lmu5YGDzr2Yw6kBFWwe7ifZ9Ec9WCl1/view?usp=sharing" target="_blank" rel="noopener"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i><span>Research Slides</span></a>
+      <a class="btn-secondary" href="https://drive.google.com/file/d/10lmu5YGDzr2Yw6kBFWwe7ifZ9Ec9WCl1/view?usp=sharing" target="_blank" rel="noopener"><i class="fa-solid fa-file-powerpoint" aria-hidden="true"></i><span>Research Slides</span></a>
     </div>
   </div>
   <div class="declare-hero__visual" aria-label="Interactive map of DeCLaRe research themes">

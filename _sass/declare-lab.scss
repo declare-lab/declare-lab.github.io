@@ -5282,6 +5282,18 @@ body {
   line-height: 1.2;
 }
 
+.content-text .hero-actions a > i,
+.content-text .declare-actions a > i,
+.content-text .project-links a > i,
+.content-text .publication-item__links a > i,
+.content-text .pub-links a > i {
+  width: 1em;
+  flex: 0 0 1em;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-align: center;
+}
+
 .page-meta-strip {
   font-size: 0.75rem;
   line-height: 1.4;
