@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{% if page.url == '/' %}{{ site.title }}{% elsif page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncatewords: 50 }}">
   <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
   <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -76,6 +76,7 @@
 
     function updatePageMenus() {
       const headerBottom = header ? header.getBoundingClientRect().bottom : 0;
+      const activationLine = headerBottom + Math.max(96, (window.innerHeight - headerBottom) * 0.62);
 
       stickyMenus.forEach(function(menu) {
         const rect = menu.getBoundingClientRect();
@@ -85,11 +86,19 @@
       sectionMenus.forEach(function(menu) {
         const links = Array.from(menu.querySelectorAll('a[href^="#"]'));
         let current = null;
+        let firstAvailable = null;
+        let lastAvailable = null;
         links.forEach(function(link) {
           const id = decodeURIComponent(link.getAttribute('href').slice(1));
           const section = document.getElementById(id);
-          if (section && section.getBoundingClientRect().top <= headerBottom + 96) current = link;
+          if (!section) return;
+          if (!firstAvailable) firstAvailable = link;
+          lastAvailable = link;
+          if (section.getBoundingClientRect().top <= activationLine) current = link;
         });
+        const documentEnd = Math.ceil(window.scrollY + window.innerHeight) >= document.documentElement.scrollHeight - 2;
+        if (!current && firstAvailable) current = firstAvailable;
+        if (documentEnd && lastAvailable) current = lastAvailable;
         links.forEach(function(link) {
           link.classList.toggle('is-current', link === current);
         });

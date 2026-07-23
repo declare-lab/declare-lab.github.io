@@ -1,0 +1,8 @@
+<aside class="pub-year-nav {{ include.class }}" aria-label="Publication years">
+  <span>Years</span>
+  <div>
+    {% for group in grouped %}
+    <a href="#pub-year-{{ group.name }}">{{ group.name }}</a>
+    {% endfor %}
+  </div>
+</aside>

@@ -148,7 +148,7 @@ classes: wide
 
 <div class="research-theme">
   <div>
-    <p>Multimodality is a long-running foundation of DeCLaRe Lab: we build models and benchmarks that integrate language, vision, audio, video, and social context.</p>
+    <p>Multimodality is a long-running foundation of DeCLaRe Lab: we develop models and benchmarks that integrate language, vision, audio, video, and social context.</p>
     <ul class="clean-list">
       <li>Multimodal fusion and representation learning</li>
       <li>Emotion, sentiment, sarcasm, and social signal understanding</li>
@@ -242,7 +242,7 @@ classes: wide
 
 <div class="research-theme">
   <div>
-    <p>We build techniques that make training, adaptation, and inference cheaper without losing reliability or downstream performance.</p>
+    <p>We study methods that reduce the cost of training, adaptation, and inference without compromising reliability or downstream performance.</p>
     <ul class="clean-list">
       <li>Dynamic data selection and data-efficient training</li>
       <li>Online memory, adapters, distillation, token retention, and long-context methods</li>

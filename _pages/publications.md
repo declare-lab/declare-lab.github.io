@@ -32,6 +32,8 @@ classes: wide
       <div class="pub-cat-row" id="categoryButtons"></div>
     </section>
 
+    {% include publication-year-nav.html class="pub-year-nav--mobile" %}
+
     {% for group in grouped %}
     <h2 class="pub-year-heading" id="pub-year-{{ group.name }}" data-section-label="YEAR">{{ group.name }}</h2>
 
@@ -97,14 +99,7 @@ classes: wide
     {% endfor %}
   </div>
 
-  <aside class="pub-year-nav" aria-label="Publication years">
-    <span>Years</span>
-    <div>
-      {% for group in grouped %}
-      <a href="#pub-year-{{ group.name }}">{{ group.name }}</a>
-      {% endfor %}
-    </div>
-  </aside>
+  {% include publication-year-nav.html class="pub-year-nav--desktop" %}
 </div>
 
 <script>

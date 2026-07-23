@@ -36,12 +36,12 @@ classes: wide
   <span>Sections</span>
   <div>
     {% for section in site.data.funded_projects.sections %}<a href="#{{ section.id }}">{{ section.title | replace: "Corporate and In-Kind ", "" }}</a>{% endfor %}
-    <a href="/join/">Join the Lab</a>
+    <a href="#join-lab">Join the Lab</a>
   </div>
 </aside>
 </div>
 
-<section class="join-band join-band--quiet">
+<section class="join-band join-band--quiet funded-page-cta" id="join-lab">
   <div>
     <h2 data-section-label="OPPORTUNITY">Work With DeCLaRe</h2>
     <p>Current funded directions create opportunities for students and collaborators whose research aligns with the lab.</p>

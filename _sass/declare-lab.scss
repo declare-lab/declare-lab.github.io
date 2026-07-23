@@ -32,10 +32,6 @@
   .content-text .declare-hero {
     padding: 1rem 0 0.8rem;
   }
-  .content-text .declare-hero__visual,
-  .content-text .research-map {
-    min-height: 180px;
-  }
   .content-text .declare-hero h1 {
     font-size: clamp(1.6rem, 10vw, 2.2rem);
   }
@@ -163,10 +159,6 @@
   color: #fff;
 }
 
-.content-text .declare-hero__visual {
-  min-height: 420px;
-}
-
 .content-text .home-index {
   position: sticky;
   top: var(--declare-sticky-top);
@@ -264,126 +256,10 @@
   box-shadow: none;
 }
 
-.content-text .research-map {
-  position: relative;
-  min-height: 460px;
-  border: 1px solid var(--declare-line);
-  border-radius: 16px;
-  background: var(--bg-card);
-  overflow: hidden;
-}
-
-[data-theme="dark"] .content-text .research-map {
-  background: var(--bg-card);
-}
-
-.content-text .research-map::before {
-  content: "";
-  position: absolute;
-  inset: 50% auto auto 50%;
-  width: 138px;
-  height: 138px;
-  margin: -69px 0 0 -69px;
-  border-radius: 50%;
-  background: var(--bg-card);
-  box-shadow: 0 8px 22px rgba(25, 32, 41, 0.08);
-  z-index: 1;
-}
-
-[data-theme="dark"] .content-text .research-map::before {
-  background: var(--bg-card);
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
-}
-
-.content-text .research-map__logo {
-  position: absolute;
-  inset: 50% auto auto 50%;
-  width: auto;
-  height: 112px;
-  transform: translate(-50%, -50%);
-  filter: drop-shadow(0 18px 24px rgba(17, 24, 39, 0.14));
-  z-index: 2;
-  display: none;
-}
-
-.content-text .research-map__logo--dark,
-[data-theme="dark"] .content-text .research-map__logo--light {
-  display: none;
-}
-
-.content-text .research-map__logo--light,
-[data-theme="dark"] .content-text .research-map__logo--dark {
-  display: block;
-}
-
 .content-text .preserve-case {
   letter-spacing: 0 !important;
   text-transform: none !important;
 }
-
-.content-text .research-node {
-  position: absolute;
-  display: inline-flex;
-  width: min(150px, 40%);
-  min-height: 44px;
-  align-items: center;
-  justify-content: center;
-  padding: 0.6rem 0.85rem;
-  border: 1px solid var(--declare-line);
-  border-radius: 10px;
-  background: var(--bg-card);
-  color: var(--declare-ink);
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: -0.005em;
-  text-align: center;
-  text-decoration: none;
-  box-shadow: 0 10px 28px rgba(17, 24, 39, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-}
-
-.content-text .research-node:hover {
-  transform: translateY(-3px) scale(1.04);
-  border-color: var(--declare-blue);
-  box-shadow: 0 8px 20px rgba(25, 32, 41, 0.1);
-  text-decoration: none;
-}
-
-[data-theme="dark"] .content-text .research-node:hover {
-  border-color: var(--declare-blue);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.24);
-}
-
-.content-text .research-node::before {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-right: 0.45rem;
-  border-radius: 50%;
-  background: var(--declare-blue);
-  flex-shrink: 0;
-}
-
-.content-text .research-node--safety::before { background: var(--declare-rose); }
-.content-text .research-node--trustworthiness::before { background: var(--declare-teal); }
-.content-text .research-node--multimodality::before { background: var(--declare-blue); }
-.content-text .research-node--science::before { background: var(--declare-teal); }
-.content-text .research-node--efficiency::before { background: var(--declare-gold); }
-.content-text .research-node--embodied::before { background: var(--declare-rose); }
-
-.content-text .research-node--safety { top: 6%; left: 50%; transform: translateX(-50%); }
-.content-text .research-node--trustworthiness { top: 30%; left: 4%; }
-.content-text .research-node--multimodality { top: 30%; right: 4%; }
-.content-text .research-node--science,
-.content-text .research-node--ai-for-science { bottom: 30%; left: 4%; }
-.content-text .research-node--efficiency { right: 4%; bottom: 30%; }
-.content-text .research-node--embodied,
-.content-text .research-node--embodied-ai { bottom: 6%; left: 50%; transform: translateX(-50%); }
-
-.content-text .research-node--safety:hover { transform: translateX(-50%) translateY(-3px) scale(1.04); }
-.content-text .research-node--embodied:hover,
-.content-text .research-node--embodied-ai:hover { transform: translateX(-50%) translateY(-3px) scale(1.04); }
 
 .content-text .declare-intro,
 .content-text .declare-split,
@@ -475,9 +351,9 @@
   scroll-margin-top: 130px;
 }
 
-.content-text .declare-section + .declare-section {
-  border-top: 1px solid var(--declare-line);
-}
+/* No top rule here: a section that follows another already has the previous
+ * section's closing rule above it, and adding one produced a doubled line.
+ * Section separation is defined once, at the end of this file. */
 
 .content-text .declare-section--compact {
   padding-top: 3.6rem;
@@ -497,11 +373,6 @@
 [data-theme="dark"] .content-text .hot-papers,
 [data-theme="dark"] .content-text .funded-projects {
   background: var(--bg-soft);
-}
-
-.content-text .declare-section + .hot-papers,
-.content-text .declare-section + .funded-projects {
-  border-top: 0;
 }
 
 .content-text .declare-section__header {
@@ -2281,23 +2152,6 @@
   align-items: start;
 }
 
-.content-text .updates-intro {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 1.5rem;
-  align-items: end;
-  padding: 0.4rem 0 1.5rem;
-  border-bottom: 1px solid var(--declare-line);
-}
-
-.content-text .updates-intro p {
-  max-width: 860px;
-  margin: 0;
-  color: var(--declare-muted);
-  font-size: 1rem;
-  line-height: 1.65;
-}
-
 .content-text .update-type-strip {
   display: flex;
   flex-wrap: wrap;
@@ -2605,19 +2459,18 @@
   gap: 2rem;
 }
 
+/* The year heading sits above its feed, as section headings do on every other
+ * page. It used to live in an 88px left rail, which stopped fitting once the
+ * heading gained the label chip: the chip and the year collided, and the grid
+ * stretched the heading so it floated halfway down the section. */
 .content-text .updates-year {
   display: grid;
-  grid-template-columns: 88px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.25rem;
-  border-top: 1px solid var(--declare-line);
-  padding-top: 1rem;
 }
 
 .content-text .updates-year h2 {
   margin: 0;
-  color: var(--declare-teal);
-  font-size: 1rem;
-  line-height: 1.3;
 }
 
 .content-text .notes-year {
@@ -2629,9 +2482,6 @@
 
 .content-text .notes-year h2 {
   margin: 0;
-  color: var(--declare-teal);
-  font-size: 1rem;
-  line-height: 1.3;
 }
 
 .content-text .update-entry {
@@ -2679,7 +2529,7 @@
   .content-text .side-layout,
   .content-text .collaboration-layout,
   .content-text .collaboration-notes,
-  .content-text .updates-intro,
+  .content-text .page-lead--compact,
   .content-text .updates-board {
     grid-template-columns: 1fr;
   }
@@ -2840,23 +2690,6 @@
     width: 100%;
     max-width: 100%;
     margin: 0.75rem 0 1.1rem;
-  }
-
-  .content-text .declare-hero__visual,
-  .content-text .research-map {
-    min-height: 360px;
-  }
-
-  .content-text .research-node {
-    width: min(132px, 41%);
-    font-size: 0.72rem;
-    padding: 0.5rem 0.65rem;
-  }
-
-  .content-text .research-node::before {
-    width: 6px;
-    height: 6px;
-    margin-right: 0.35rem;
   }
 
   .content-text .declare-section__header,
@@ -3032,44 +2865,6 @@ body .content-text * {
   box-shadow: none;
 }
 
-.content-text .research-map {
-  border-radius: 8px;
-  background:
-    radial-gradient(circle at center, transparent 0 28%, color-mix(in srgb, var(--declare-blue) 14%, transparent) 28.4% 28.8%, transparent 29.2%),
-    radial-gradient(circle at center, transparent 0 44%, color-mix(in srgb, var(--declare-teal) 12%, transparent) 44.4% 44.8%, transparent 45.2%),
-    var(--bg-card);
-}
-
-[data-theme="dark"] .content-text .research-map {
-  background:
-    radial-gradient(circle at center, transparent 0 28%, color-mix(in srgb, var(--declare-blue) 19%, transparent) 28.4% 28.8%, transparent 29.2%),
-    radial-gradient(circle at center, transparent 0 44%, color-mix(in srgb, var(--declare-teal) 17%, transparent) 44.4% 44.8%, transparent 45.2%),
-    var(--bg-card);
-}
-
-.content-text .research-map::before,
-[data-theme="dark"] .content-text .research-map::before {
-  border: 1px solid color-mix(in srgb, var(--declare-blue) 26%, var(--border));
-  background: var(--bg-card);
-  box-shadow: 0 8px 22px rgba(25, 32, 41, 0.08);
-}
-
-.content-text .research-map__logo {
-  filter: none;
-}
-
-.content-text .research-node {
-  border-radius: 7px;
-  box-shadow: 0 3px 12px rgba(25, 32, 41, 0.06);
-  font-family: var(--font-sans);
-  font-weight: 700;
-}
-
-.content-text .research-node:hover,
-[data-theme="dark"] .content-text .research-node:hover {
-  box-shadow: 0 8px 20px rgba(25, 32, 41, 0.1);
-}
-
 .content-text .declare-intro,
 .content-text .declare-split,
 .content-text .research-theme {
@@ -3103,8 +2898,7 @@ body .content-text * {
 }
 
 .content-text .section-note,
-.content-text .page-lead p,
-.content-text .updates-intro p {
+.content-text .page-lead p {
   font-family: var(--font-serif);
   color: var(--declare-muted);
   line-height: 1.72;
@@ -3370,7 +3164,7 @@ body .content-text * {
   gap: clamp(2rem, 4.5vw, 3.5rem);
   min-height: 450px;
   padding: 3rem 0 2.75rem;
-  border-bottom: 1.5px solid var(--text);
+  border-bottom: 1px solid var(--border);
 }
 
 .content-text .declare-kicker {
@@ -3427,7 +3221,7 @@ body .content-text * {
 .content-text .hero-actions .btn-secondary {
   min-height: 42px;
   padding: 0.62rem 0.85rem;
-  border: 1.5px solid var(--text);
+  border: 1px solid var(--text);
   border-radius: 0;
   background: var(--bg-card);
   color: var(--text);
@@ -3454,55 +3248,6 @@ body .content-text * {
   background: var(--accent-light);
   color: var(--accent-hover);
   transform: none;
-}
-
-.content-text .research-map,
-[data-theme="dark"] .content-text .research-map {
-  min-height: 390px;
-  border: 1.5px solid var(--text);
-  border-radius: 0;
-  background:
-    radial-gradient(circle at center, transparent 0 29%, color-mix(in srgb, var(--accent) 16%, transparent) 29.3% 29.7%, transparent 30%),
-    radial-gradient(circle at center, transparent 0 45%, color-mix(in srgb, var(--accent) 11%, transparent) 45.3% 45.7%, transparent 46%),
-    var(--bg-card);
-  box-shadow: none;
-}
-
-.content-text .research-map::before,
-[data-theme="dark"] .content-text .research-map::before {
-  border: 1.5px solid var(--accent);
-  border-radius: 50%;
-  box-shadow: none;
-}
-
-.content-text .research-node,
-[data-theme="dark"] .content-text .research-node {
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--accent);
-  border-radius: 0;
-  background: var(--bg-card);
-  box-shadow: none;
-  color: var(--text);
-  font-family: var(--font-sans);
-  font-variation-settings: "wdth" var(--heading-width);
-  font-weight: var(--card-title-weight);
-  line-height: 1.3;
-}
-
-.content-text .research-node::before,
-.content-text .research-node--safety::before,
-.content-text .research-node--trustworthiness::before,
-.content-text .research-node--multimodality::before,
-.content-text .research-node--science::before,
-.content-text .research-node--efficiency::before,
-.content-text .research-node--embodied::before {
-  background: var(--accent);
-}
-
-.content-text .research-node:hover,
-[data-theme="dark"] .content-text .research-node:hover {
-  border-color: var(--accent);
-  box-shadow: none;
 }
 
 .content-text .side-layout__main > h2[id],
@@ -3700,7 +3445,7 @@ body .content-text * {
 .content-text .name-list span {
   min-height: 32px;
   padding: 0.34rem 0.58rem;
-  border: 1.5px solid var(--text);
+  border: 1px solid var(--text);
   border-radius: 0;
   background: var(--bg-card);
   color: var(--text);
@@ -3779,7 +3524,7 @@ body .content-text * {
 }
 
 .content-text .team-photo {
-  border: 1.5px solid var(--text);
+  border: 1px solid var(--text);
   border-radius: 0;
   box-shadow: none;
 }
@@ -3794,7 +3539,7 @@ body .content-text * {
 [data-theme="dark"] .content-text .pub-toolbar,
 [data-theme="dark"] .content-text .pub-toolbar.is-stuck {
   padding: 0.9rem;
-  border: 1.5px solid var(--text);
+  border: 1px solid var(--text);
   border-radius: 0;
   background: color-mix(in srgb, var(--bg-card) 94%, transparent);
   box-shadow: none;
@@ -3802,20 +3547,21 @@ body .content-text * {
 
 .content-text .pub-search {
   min-height: 42px;
-  border: 1.5px solid var(--text);
+  border: 1px solid var(--text);
   border-radius: 0;
   background: var(--bg-card);
   color: var(--text);
   font-family: var(--font-serif);
 }
 
+/* Section headings carry the label chip alone; no page adds a rule of its own. */
 .content-text .pub-year-heading {
   display: flex;
   gap: 12px;
   align-items: center;
   margin: 2.35rem 0 0.8rem;
-  padding-bottom: 0.55rem;
-  border-bottom: 1.5px solid var(--text);
+  padding-bottom: 0;
+  border-bottom: 0;
   font-family: var(--font-sans);
   font-size: 1.35rem;
   font-variation-settings: "wdth" var(--heading-width);
@@ -3882,7 +3628,7 @@ body .content-text * {
 [data-theme="dark"] .content-text .pub-year-nav.is-stuck {
   padding: 0.2rem 0 0.2rem 0.8rem;
   border: 0;
-  border-left: 1.5px solid var(--text);
+  border-left: 1px solid var(--text);
   border-radius: 0;
   background: transparent;
   box-shadow: none;
@@ -3997,9 +3743,6 @@ body .content-text * {
     font-size: 1.35rem;
   }
 
-  .content-text .research-map {
-    min-height: 330px;
-  }
 }
 
 /* ===== Editorial consolidation and interaction pass ===== */
@@ -4074,119 +3817,6 @@ body .content-text * {
   display: block;
 }
 
-.content-text .theme-index {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 2rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.content-text .theme-index__item {
-  display: grid;
-  grid-template-columns: 38px minmax(0, 1fr) 18px;
-  gap: 0.8rem;
-  align-items: start;
-  min-height: 126px;
-  padding: 1rem 0.7rem;
-  border-top: 1px solid var(--border);
-  color: var(--text);
-  text-decoration: none;
-  transition: background-color 180ms ease, box-shadow 180ms ease, opacity 180ms ease;
-}
-
-.content-text .theme-index__item:hover,
-.content-text .theme-index__item:focus-visible,
-.content-text .theme-index__item.is-linked {
-  background: color-mix(in srgb, var(--accent-light) 58%, transparent);
-  box-shadow: inset 3px 0 0 var(--accent);
-  color: var(--text);
-  text-decoration: none;
-}
-
-.content-text .theme-index__item > span {
-  color: var(--accent);
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 600;
-  line-height: 1.6;
-}
-
-.content-text .theme-index__item h3 {
-  margin: 0 0 0.3rem;
-  color: var(--text);
-  font-family: var(--font-sans);
-  font-size: 1.08rem;
-  font-variation-settings: "wdth" var(--heading-width);
-  font-weight: var(--card-title-weight);
-  line-height: 1.3;
-}
-
-.content-text .theme-index__item p {
-  max-width: 47ch;
-  margin: 0;
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  line-height: 1.55;
-}
-
-.content-text .theme-index__item > i {
-  margin-top: 0.22rem;
-  color: var(--accent);
-  font-size: 0.78rem;
-}
-
-.content-text .research-map__spokes {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.content-text .research-map__spokes span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 43%;
-  height: 1px;
-  background: color-mix(in srgb, var(--accent) 34%, var(--border));
-  opacity: 0.42;
-  transform-origin: left center;
-  transition: height 180ms ease, opacity 180ms ease, background-color 180ms ease;
-}
-
-.content-text .research-map__spokes span:nth-child(1) { transform: rotate(-90deg); }
-.content-text .research-map__spokes span:nth-child(2) { transform: rotate(-150deg); }
-.content-text .research-map__spokes span:nth-child(3) { transform: rotate(-30deg); }
-.content-text .research-map__spokes span:nth-child(4) { transform: rotate(150deg); }
-.content-text .research-map__spokes span:nth-child(5) { transform: rotate(30deg); }
-.content-text .research-map__spokes span:nth-child(6) { transform: rotate(90deg); }
-
-.content-text .research-map[data-active-theme] .research-node:not(.is-active) {
-  opacity: 0.42;
-}
-
-.content-text .research-map .research-node.is-active,
-[data-theme="dark"] .content-text .research-map .research-node.is-active {
-  border-color: var(--accent);
-  background: var(--accent-light);
-  color: var(--accent-hover);
-  box-shadow: inset 0 0 0 1px var(--accent);
-  opacity: 1;
-}
-
-.content-text .research-map[data-active-theme="safety"] .research-map__spokes span:nth-child(1),
-.content-text .research-map[data-active-theme="trustworthiness"] .research-map__spokes span:nth-child(2),
-.content-text .research-map[data-active-theme="multimodality"] .research-map__spokes span:nth-child(3),
-.content-text .research-map[data-active-theme="science"] .research-map__spokes span:nth-child(4),
-.content-text .research-map[data-active-theme="ai-for-science"] .research-map__spokes span:nth-child(4),
-.content-text .research-map[data-active-theme="efficiency"] .research-map__spokes span:nth-child(5),
-.content-text .research-map[data-active-theme="embodied"] .research-map__spokes span:nth-child(6),
-.content-text .research-map[data-active-theme="embodied-ai"] .research-map__spokes span:nth-child(6) {
-  height: 2px;
-  background: var(--accent);
-  opacity: 1;
-}
-
 .content-text .representative-card {
   transition: border-color 180ms ease, box-shadow 180ms ease, opacity 180ms ease;
 }
@@ -4219,8 +3849,7 @@ body .content-text * {
   gap: 1.5rem;
   align-items: center;
   padding: 1.4rem 0;
-  border-top: 1.5px solid var(--text);
-  border-bottom: 1px solid var(--border);
+  border-top: 1px solid var(--text);
 }
 
 .content-text .research-support__gateway p {
@@ -4242,7 +3871,7 @@ body .content-text * {
   min-height: 0;
   padding: 1rem 0;
   border: 0;
-  border-top: 1.5px solid var(--text);
+  border-top: 1px solid var(--text);
   border-radius: 0;
   background: transparent;
   box-shadow: none;
@@ -4420,34 +4049,6 @@ body .content-text * {
     justify-content: flex-start;
   }
 
-  .content-text .research-map {
-    min-height: 320px;
-  }
-
-  .content-text .research-map::before {
-    width: 112px;
-    height: 112px;
-    margin: -56px 0 0 -56px;
-  }
-
-  .content-text .research-map__logo {
-    height: 90px;
-  }
-
-  .content-text .research-node {
-    width: min(116px, 38%);
-    min-height: 40px;
-    padding: 0.42rem 0.5rem;
-    font-size: 0.68rem;
-    hyphens: none;
-    overflow-wrap: normal;
-    word-break: normal;
-  }
-
-  .content-text .research-node--trustworthiness {
-    font-size: 0.6rem;
-  }
-
   .content-text .declare-intro.lab-overview,
   .content-text .declare-section,
   .content-text .hot-papers,
@@ -4462,16 +4063,6 @@ body .content-text * {
 
   .content-text .identity-figure img {
     max-height: 250px;
-  }
-
-  .content-text .theme-index {
-    grid-template-columns: 1fr;
-  }
-
-  .content-text .theme-index__item {
-    min-height: 0;
-    grid-template-columns: 30px minmax(0, 1fr) 16px;
-    padding: 0.9rem 0.65rem;
   }
 
   .content-text .research-support__gateway {
@@ -4503,21 +4094,9 @@ body .content-text * {
   }
 }
 
-@media (max-width: 390px) {
-  .content-text .research-map {
-    min-height: 300px;
-  }
-
-  .content-text .research-node {
-    width: min(108px, 39%);
-    font-size: 0.64rem;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .content-text .research-node,
-  .content-text .research-map__spokes span,
-  .content-text .theme-index__item,
+  .content-text .research-map__spoke,
   .content-text .representative-card {
     transition: none;
   }
@@ -4648,14 +4227,15 @@ body .content-text * {
 }
 
 /* A page-level call to action is a band, not a card. */
+/* A band opens with one ink rule. It carries no bottom rule: the section it
+ * sits in already closes with one, which is what doubled the line here. */
 .content-text .join-band,
 .content-text .join-band--quiet,
 [data-theme="dark"] .content-text .join-band,
 [data-theme="dark"] .content-text .join-band--quiet {
   padding: 1.5rem 0;
   border: 0;
-  border-top: 1.5px solid var(--text);
-  border-bottom: 1px solid var(--border);
+  border-top: 1px solid var(--text);
   border-radius: 0;
   background: transparent;
   box-shadow: none;
@@ -4782,7 +4362,7 @@ body .content-text * {
   gap: 0.45rem;
   min-height: 42px;
   padding: 0.62rem 0.85rem;
-  border: 1.5px solid var(--text);
+  border: 1px solid var(--text);
   border-radius: 0;
   background: var(--bg-card);
   color: var(--text);
@@ -5245,6 +4825,8 @@ body {
 .content-text .side-layout__main > .declare-section > .declare-section__header h2,
 .content-text .side-layout__main > section[id] > h2:first-child,
 .content-text .side-layout__main > section[id] > .declare-section__header h2,
+.content-text .join-section > h2:first-child,
+.content-text .join-section > .declare-section__header h2,
 .content-text .join-band h2 {
   font-size: var(--type-section-title);
 }
@@ -5327,8 +4909,8 @@ body {
 }
 
 .site-footer {
-  margin-top: 4rem;
-  border-top: 2px solid var(--text);
+  margin-top: 0;
+  border-top: 1px solid var(--border);
   background: var(--bg-page);
 }
 
@@ -5379,5 +4961,574 @@ body {
   .theme-toggle .icon-sun,
   .theme-toggle .icon-moon {
     transition: none;
+  }
+}
+
+
+/* ===== Research map =====
+ * A compass: the lab mark at the hub, two concentric rings, and six bearings.
+ * The SVG uses a 100x76 viewBox over a field locked to the same aspect ratio,
+ * so SVG coordinates and the percentage-positioned label boxes are one
+ * coordinate space.
+ *
+ * Each connector runs radially to the bearing ring (r 20.5), then turns to
+ * approach its box perpendicular to the edge it meets -- a diagonal line ending
+ * on a vertical edge reads as a graze, however exact the maths. Boxes stay
+ * horizontal, and every box is anchored by the edge that faces the hub, so the
+ * connector lands on that edge's midpoint at any viewport width.
+ *
+ * The rings clear all six boxes: the bearing ring's widest point is x 70.5 and
+ * the side boxes start at 72.2; the north and south boxes stop at r 24.45.
+ */
+.content-text .research-map {
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+}
+
+.content-text .research-map__field {
+  container-type: inline-size;
+  position: relative;
+  aspect-ratio: 100 / 76;
+}
+
+.content-text .research-map__grid {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content-text .research-map__grid > * {
+  vector-effect: non-scaling-stroke;
+}
+
+.content-text .research-map__ring {
+  fill: none;
+  stroke: color-mix(in srgb, var(--accent) 26%, transparent);
+  stroke-width: 1;
+}
+
+.content-text .research-map__spoke {
+  fill: none;
+  stroke: color-mix(in srgb, var(--accent) 34%, var(--border));
+  stroke-width: 1;
+  transition: stroke 180ms ease, stroke-width 180ms ease;
+}
+
+.content-text .research-map__hub {
+  fill: var(--bg-card);
+  stroke: var(--accent);
+  stroke-width: 1.5;
+}
+
+.content-text .research-map__logo {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: auto;
+  height: 20cqw;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.content-text .research-map__logo--light,
+[data-theme="dark"] .content-text .research-map__logo--dark {
+  display: block;
+}
+
+.content-text .research-map__logo--dark,
+[data-theme="dark"] .content-text .research-map__logo--light {
+  display: none;
+}
+
+.content-text .research-node {
+  position: absolute;
+  display: flex;
+  width: 23.5cqw;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.4rem;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: clamp(0.6rem, 2.45cqw, 0.82rem);
+  font-variation-settings: "wdth" var(--heading-width);
+  font-weight: var(--card-title-weight);
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 180ms ease, border-color 180ms ease, opacity 180ms ease;
+}
+
+/* The accent bar sits on the edge that faces the hub, so all six point inward
+ * and each connector docks into its own bar. */
+.content-text .research-node--safety {
+  bottom: 82.171%; /* inner edge y 13.55 of 76 */
+  left: 50%;
+  border-bottom: 3px solid var(--accent);
+  transform: translateX(-50%);
+}
+
+.content-text .research-node--embodied-ai {
+  top: 82.171%; /* inner edge y 62.45 of 76 */
+  left: 50%;
+  border-top: 3px solid var(--accent);
+  transform: translateX(-50%);
+}
+
+.content-text .research-node--trustworthiness,
+.content-text .research-node--ai-for-science {
+  right: 72.2%; /* inner edge x 27.8 */
+  border-right: 3px solid var(--accent);
+  transform: translateY(-50%);
+}
+
+.content-text .research-node--multimodality,
+.content-text .research-node--efficiency {
+  left: 72.2%; /* inner edge x 72.2 */
+  border-left: 3px solid var(--accent);
+  transform: translateY(-50%);
+}
+
+/* The flat approach segments run at y 27.75 and y 48.25 of 76. */
+.content-text .research-node--trustworthiness,
+.content-text .research-node--multimodality {
+  top: 36.513%;
+}
+
+.content-text .research-node--ai-for-science,
+.content-text .research-node--efficiency {
+  top: 63.487%;
+}
+
+.content-text .research-node:hover,
+.content-text .research-node:focus-visible,
+.content-text .research-node.is-active,
+[data-theme="dark"] .content-text .research-node.is-active {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent-light) 58%, var(--bg-card));
+  color: var(--text);
+  opacity: 1;
+  text-decoration: none;
+}
+
+.content-text .research-map[data-active-theme] .research-node:not(.is-active) {
+  opacity: 0.5;
+}
+
+.content-text .research-map[data-active-theme="safety"] .research-map__spoke[data-spoke="safety"],
+.content-text .research-map[data-active-theme="trustworthiness"] .research-map__spoke[data-spoke="trustworthiness"],
+.content-text .research-map[data-active-theme="multimodality"] .research-map__spoke[data-spoke="multimodality"],
+.content-text .research-map[data-active-theme="ai-for-science"] .research-map__spoke[data-spoke="ai-for-science"],
+.content-text .research-map[data-active-theme="efficiency"] .research-map__spoke[data-spoke="efficiency"],
+.content-text .research-map[data-active-theme="embodied-ai"] .research-map__spoke[data-spoke="embodied-ai"] {
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+/* Once the hero stacks, the figure would otherwise stretch to the full column
+ * and outgrow its capped label type; hold it near its two-column scale. */
+@media (max-width: 1020px) {
+  .content-text .research-map {
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 700px) {
+  .content-text .research-node {
+    width: 27cqw;
+    min-height: 44px;
+    padding: 0.4rem 0.3rem;
+    font-size: clamp(0.68rem, 2.85cqw, 0.82rem);
+  }
+}
+
+/* ===== Section separation (single source of truth) =====
+ * Before this block, section boundaries were drawn six different ways: a bottom
+ * rule on the home page, a top rule on Updates / Lab Notes / Join, a rule on an
+ * inner grid on Research and Funded Projects, and nothing at all on People and
+ * Publications. Where a bottom rule met a top rule the boundary doubled.
+ *
+ * The rule is now: a section closes with ONE hairline on its bottom edge, and
+ * nothing draws a rule on its top edge. To give a new section a divider, add it
+ * to the list below -- do not add a border to the section's own component.
+ *
+ * Row rules inside a list (cards, people, publications) are a separate object
+ * and are left alone; they separate rows, not sections.
+ */
+/* The rule also needs consistent air. Sections used to put their space on
+ * either side of it at random: the home page padded 4rem before the rule, while
+ * Research padded 0 and put 56px after it, so its rule sat 1px under the last
+ * card like a tangent. One gap before, one gap after, everywhere. */
+:root {
+  --section-space-before-rule: 2.5rem;
+  --section-space-after-rule: 2.5rem;
+}
+
+.content-text .declare-section,
+.content-text .declare-intro,
+.content-text .research-theme,
+.content-text .people-grid,
+.content-text .funding-list--page,
+.content-text .join-section,
+.content-text .updates-year,
+.content-text .notes-year {
+  border-top: 0;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: var(--section-space-before-rule);
+  margin-bottom: var(--section-space-after-rule);
+}
+
+/* The gap above a section now comes from the previous section's margin, so the
+ * home page's sections no longer carry their own top padding as well. */
+.content-text .declare-section,
+.content-text .declare-intro,
+.content-text .declare-intro.lab-overview {
+  padding-top: 0;
+  padding-bottom: var(--section-space-before-rule);
+}
+
+.content-text .page-lead--compact {
+  margin-bottom: var(--section-space-after-rule);
+}
+
+.content-text .join-section {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.content-text .join-section > h2:first-child,
+.content-text .join-section > .declare-section__header:first-child {
+  margin-top: 0;
+}
+
+/* Every section closes with the rule, the last one included. An exception for
+ * the final section meant a page's sections did not all look alike, which read
+ * as a missing border rather than as a deliberate ending. No special case. */
+
+/* Inner containers that were drawing a second line at a section boundary. */
+.content-text .representative-grid,
+.content-text .updates-feed,
+.content-text .join-section .opening-list,
+.content-text .join-section .faq-list {
+  border-bottom: 0;
+}
+
+.content-text .hot-paper-list {
+  border-top: 0;
+}
+
+/* The hero closes like any other section; the kicker rule above it is the
+ * page-header divider, matching .page-meta-strip on the inner pages. */
+.content-text .declare-hero {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: var(--section-space-before-rule);
+  margin-bottom: var(--section-space-after-rule);
+}
+
+.content-text .declare-kicker,
+.page-header .page-meta-strip {
+  border-bottom: 2px solid var(--text);
+}
+
+/* Shared inner-page header: metadata, one 2px rule, then the title. */
+.page-header {
+  margin-bottom: var(--section-space-after-rule);
+}
+
+.page-header .page-meta-strip {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.page-header h1 {
+  margin: 0;
+  padding-bottom: 0;
+  border: 0;
+}
+
+/* Section navigation is visually quiet until it is actively docked. */
+.content-text .section-nav,
+.content-text .pub-year-nav,
+[data-theme="dark"] .content-text .section-nav,
+[data-theme="dark"] .content-text .pub-year-nav {
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.content-text .section-nav.is-stuck,
+.content-text .pub-year-nav.is-stuck,
+[data-theme="dark"] .content-text .section-nav.is-stuck,
+[data-theme="dark"] .content-text .pub-year-nav.is-stuck {
+  background: color-mix(in srgb, var(--bg-page) 88%, transparent);
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--text) 8%, transparent);
+  backdrop-filter: saturate(130%) blur(14px);
+  -webkit-backdrop-filter: saturate(130%) blur(14px);
+}
+
+/* Generated archives and the funded-project CTA do not have the section
+ * wrappers used elsewhere, so they close their pages explicitly. */
+.content-text .pub-layout__main::after {
+  display: block;
+  margin-top: var(--section-space-before-rule);
+  border-bottom: 1px solid var(--border);
+  content: "";
+}
+
+.content-text .funded-page-cta,
+[data-theme="dark"] .content-text .funded-page-cta {
+  margin-bottom: 0;
+  padding-bottom: var(--section-space-before-rule);
+  border-top: 0;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Dense publication archives are records, not cards: every paper closes with
+ * the same bottom separator used on the personal publication archive. */
+.content-text .pub-card,
+.content-text .publication-item,
+[data-theme="dark"] .content-text .pub-card,
+[data-theme="dark"] .content-text .publication-item {
+  margin: 0;
+  padding: 1.1rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.content-text .pub-card:hover,
+.content-text .publication-item:hover,
+[data-theme="dark"] .content-text .pub-card:hover,
+[data-theme="dark"] .content-text .publication-item:hover {
+  border-bottom-color: var(--border);
+  background: color-mix(in srgb, var(--accent-light) 32%, transparent);
+  box-shadow: none;
+  transform: none;
+}
+
+.content-text .pub-cat-row {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.25rem;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.content-text .pub-cat-row > * {
+  flex: 0 0 auto;
+}
+
+.content-text .pub-year-nav--mobile {
+  display: none;
+}
+
+/* The final section closes the page, then site-main owns the only footer gap. */
+.content-text .side-layout__main > .declare-section:last-child,
+.content-text .side-layout__main > .research-theme:last-child,
+.content-text .side-layout__main > .people-grid:last-child,
+.content-text .side-layout__main > .join-section:last-child,
+.content-text .side-layout__main > .updates-year:last-child,
+.content-text .side-layout__main > .notes-year:last-child {
+  margin-bottom: 0;
+}
+
+.menu-icon-close,
+.theme-toggle-label,
+.theme-toggle-value,
+.nav-scrim {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle[aria-expanded="true"] .menu-icon-open {
+  display: none;
+}
+
+.menu-toggle[aria-expanded="true"] .menu-icon-close {
+  display: inline-block;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --section-space-before-rule: 1.75rem;
+    --section-space-after-rule: 1.75rem;
+  }
+
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  .site-title.site-logo-title {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  .site-logo-title .site-logo {
+    width: auto;
+    max-width: min(210px, calc(100vw - 88px));
+    height: 50px;
+    object-fit: contain;
+    object-position: left center;
+  }
+
+  .menu-toggle {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 0;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+    color: var(--text);
+    box-shadow: none;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 76px;
+    right: 0.75rem;
+    left: 0.75rem;
+    width: auto;
+    max-width: none;
+    box-sizing: border-box;
+    z-index: 104;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.25rem;
+    margin: 0;
+    padding: 0.55rem;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+    box-shadow: 0 12px 28px color-mix(in srgb, var(--text) 14%, transparent);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-8px) scale(0.985);
+    transform-origin: top right;
+    transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
+    backdrop-filter: blur(24px) saturate(140%);
+    -webkit-backdrop-filter: blur(24px) saturate(140%);
+  }
+
+  .nav-links.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+  }
+
+  .nav-links a {
+    display: flex;
+    min-height: 46px;
+    align-items: center;
+    padding: 0.6rem 0.75rem;
+    color: var(--text-secondary);
+    text-align: left;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    background: color-mix(in srgb, var(--accent) 12%, var(--bg-soft));
+    color: var(--text);
+  }
+
+  .nav-links a.active {
+    box-shadow: inset 3px 0 0 var(--accent);
+  }
+
+  .nav-links .theme-toggle {
+    display: grid;
+    width: 100%;
+    height: auto;
+    min-height: 48px;
+    grid-template-columns: 20px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.65rem;
+    align-self: auto;
+    margin: 0.25rem 0 0;
+    padding: 0.65rem 0.75rem;
+    border: 0;
+    border-top: 1px solid var(--border);
+    border-radius: 0;
+    text-align: left;
+  }
+
+  .theme-toggle-label {
+    display: inline;
+    color: var(--text-secondary);
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .theme-toggle-value {
+    display: inline;
+    color: var(--text-muted);
+    font-size: 0.72rem;
+    font-weight: 650;
+    text-transform: uppercase;
+  }
+
+  .theme-toggle-value::after {
+    content: "Light";
+  }
+
+  [data-theme="dark"] .theme-toggle-value::after {
+    content: "Dark";
+  }
+
+  .nav-scrim {
+    position: fixed;
+    inset: 68px 0 0;
+    z-index: 102;
+    display: block;
+    background: rgba(20, 23, 31, 0.28);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--transition), visibility var(--transition);
+  }
+
+  [data-theme="dark"] .nav-scrim {
+    background: rgba(0, 0, 0, 0.48);
+  }
+
+  .nav-scrim.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+@media (max-width: 1020px) {
+  .content-text .pub-year-nav--desktop {
+    display: none;
+  }
+
+  .content-text .pub-year-nav--mobile {
+    position: sticky;
+    top: var(--declare-sticky-top);
+    z-index: 29;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1.25rem;
+    box-sizing: border-box;
   }
 }

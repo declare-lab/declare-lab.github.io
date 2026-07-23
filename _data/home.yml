@@ -5,32 +5,6 @@ themes:
     number: "01"
     name: Safety
     summary: Operational safety, red-teaming, refusal behavior, and alignment interventions.
-  - id: trustworthiness
-    number: "02"
-    name: Trustworthiness
-    summary: Grounded attribution, reliable retrieval, uncertainty, and citation-aware responses.
-  - id: multimodality
-    number: "03"
-    name: Multimodality
-    summary: Language, vision, audio, and video models for reasoning, generation, and interaction.
-  - id: ai-for-science
-    number: "04"
-    name: AI for Science
-    summary: Scientific hypothesis discovery, chemistry, and literature-grounded reasoning.
-  - id: efficiency
-    number: "05"
-    name: Efficiency
-    summary: Data selection, adapters, model merging, memory, and compact model training.
-  - id: embodied-ai
-    number: "06"
-    name: Embodied AI
-    summary: Vision-language-action systems, action grounding, and interactive evaluation.
-
-representative_work:
-  - id: safety
-    name: Safety
-    title: Safety, red-teaming, and bias
-    summary: Operational safety, adversarial evaluation, model realignment, and bias analysis.
     works:
       - title: OffTopicEval
         meta: ICLR 2026
@@ -45,9 +19,9 @@ representative_work:
         meta: Cognitive Computation
         url: https://doi.org/10.1007/s12559-021-09881-2
   - id: trustworthiness
+    number: "02"
     name: Trustworthiness
-    title: Grounding, attribution, and refusal
-    summary: Factuality, citation quality, calibration, and reliability in knowledge-intensive generation.
+    summary: Grounded attribution, reliable retrieval, uncertainty, and citation-aware responses.
     works:
       - title: Trust-Score and Trust-Align
         meta: ICLR 2025
@@ -59,9 +33,9 @@ representative_work:
         meta: RAG publications
         url: /publications/?topic=RAG
   - id: multimodality
+    number: "03"
     name: Multimodality
-    title: Multimodal understanding and generation
-    summary: Multimodal emotion, representation learning, fusion, and text-to-audio generation.
+    summary: Language, vision, audio, and video models for reasoning, generation, and interaction.
     works:
       - title: MELD
         meta: ACL 2019
@@ -76,9 +50,9 @@ representative_work:
         meta: ICLR 2026
         url: https://arxiv.org/abs/2412.21037
   - id: ai-for-science
+    number: "04"
     name: AI for Science
-    title: Scientific hypothesis discovery
-    summary: Language-model systems for rediscovering and proposing hypotheses from scientific literature.
+    summary: Scientific hypothesis discovery, chemistry, and literature-grounded reasoning.
     works:
       - title: MOOSE-Chem
         meta: ICLR 2025
@@ -87,9 +61,9 @@ representative_work:
         meta: ACL Findings 2024
         url: https://aclanthology.org/2024.findings-acl.804
   - id: efficiency
+    number: "05"
     name: Efficiency
-    title: Efficient training, merging, and attention
-    summary: Cheaper adaptation, model merging, dynamic data selection, memory, and long-context computation.
+    summary: Data selection, adapters, model merging, memory, and compact model training.
     works:
       - title: δ-mem
         meta: arXiv 2026
@@ -104,9 +78,9 @@ representative_work:
         meta: Linear attention
         url: https://arxiv.org/abs/2512.12602
   - id: embodied-ai
+    number: "06"
     name: Embodied AI
-    title: Vision-language-action models
-    summary: Compact embodied models and reward-guided post-training for perception-to-action systems.
+    summary: Vision-language-action systems, action grounding, and interactive evaluation.
     works:
       - title: NORA
         meta: Generalist VLA model

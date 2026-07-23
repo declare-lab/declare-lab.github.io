@@ -15,27 +15,29 @@ classes: wide
 <div class="side-layout">
 <div class="side-layout__main">
 
-<h2 id="why-join-declare-lab" data-section-label="CULTURE">What DeCLaRe Offers</h2>
+<section class="join-section">
+<h2 id="why-join-declare-lab" data-section-label="CULTURE">Research Culture at DeCLaRe</h2>
 
 <div class="opportunity-grid">
   <article>
-    <h3>Research with evidence</h3>
+    <h3>Question-driven, reproducible research</h3>
     <p>Develop models, evaluations, and open research artifacts around clearly stated scientific questions.</p>
   </article>
   <article>
     <h3>Collaborative culture</h3>
-    <p>Work closely with lab members, academic collaborators, and industry researchers while retaining intellectual ownership of your direction.</p>
+    <p>Work closely with lab members, academic collaborators, and industry researchers while developing your own scientific voice.</p>
   </article>
   <article>
     <h3>Room to define a direction</h3>
     <p>Build from the lab's research agenda while developing questions that reflect your own technical strengths and scientific interests.</p>
   </article>
 </div>
+</section>
 
-<section class="collaboration-section" id="collaboration-structure">
+<section class="join-section collaboration-section" id="collaboration-structure">
   <div class="declare-section__header">
     <div>
-      <h2 data-section-label="NETWORK">How Students Collaborate in DeCLaRe</h2>
+      <h2 data-section-label="NETWORK">How Students Collaborate at DeCLaRe</h2>
       <p class="section-note">Coauthorship patterns in the lab's publication archive show how internal, academic, and industry collaborations intersect.</p>
     </div>
   </div>
@@ -182,6 +184,7 @@ classes: wide
   });
 </script>
 
+<section class="join-section">
 <h2 id="current-openings" data-section-label="ROLES">Current Openings</h2>
 
 <div class="opening-list">
@@ -195,10 +198,12 @@ classes: wide
   </article>
   <article>
     <h3>Research Interns and Visiting Researchers</h3>
-    <p>For students and collaborators who can contribute to focused projects, benchmarks, demos, or open-source releases.</p>
+    <p>For students and collaborators who can contribute to focused studies, benchmarks, research software, or open-source releases.</p>
   </article>
 </div>
+</section>
 
+<section class="join-section">
 <h2 id="expected-backgrounds" data-section-label="PROFILE">Expected Backgrounds</h2>
 
 <p>Strong candidates often have experience in one or more of the following:</p>
@@ -215,13 +220,17 @@ classes: wide
   <span>AI safety and alignment</span>
   <span>Open-source engineering</span>
 </div>
+</section>
 
+<section class="join-section">
 <h2 id="how-to-apply" data-section-label="PROCESS">How to Apply</h2>
 
 <p>Please review the lab's <a href="https://drive.google.com/file/d/10lmu5YGDzr2Yw6kBFWwe7ifZ9Ec9WCl1/view?usp=sharing">research slides</a>, browse recent <a href="/publications/">publications</a>, and identify the research directions that genuinely connect with your interests.</p>
 
 <p>Send a concise email to <code>soujanya [dot] poria [at] ntu [dot] edu [dot] sg</code> with your CV, transcript if applicable, representative work, and a short note on the projects you would like to pursue.</p>
+</section>
 
+<section class="join-section">
 <h2 id="faq" data-section-label="DETAILS">FAQ</h2>
 
 <div class="faq-list">
@@ -231,20 +240,21 @@ classes: wide
   </article>
   <article>
     <h3>Do I need prior publications?</h3>
-    <p>Publications help, but strong engineering ability, research taste, and evidence of persistence also matter.</p>
+    <p>Publications help, but strong engineering ability, research judgment, and evidence of persistence also matter.</p>
   </article>
   <article>
     <h3>Can I propose a new direction?</h3>
     <p>Yes. The best proposals still connect clearly to DeCLaRe Lab's core agenda.</p>
   </article>
 </div>
+</section>
 
 </div>
 
 <aside class="section-nav" aria-label="Join page sections">
   <span>Sections</span>
   <div>
-    <a href="#why-join-declare-lab">What We Offer</a>
+    <a href="#why-join-declare-lab">Research Culture</a>
     <a href="#collaboration-structure">Collaboration</a>
     <a href="#current-openings">Openings</a>
     <a href="#expected-backgrounds">Backgrounds</a>

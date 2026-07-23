@@ -8,12 +8,12 @@ toc: false
 classes: wide
 ---
 
-<div class="side-layout">
-<div class="side-layout__main">
-
 <section class="page-lead page-lead--compact">
   <p>Technical notes that unpack research questions, methods, results, and lessons from DeCLaRe projects.</p>
 </section>
+
+<div class="side-layout">
+<div class="side-layout__main">
 
 <section class="notes-year" id="notes-2026">
   <h2 data-section-label="YEAR">2026</h2>

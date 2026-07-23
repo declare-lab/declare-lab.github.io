@@ -21,14 +21,29 @@ title: ""
   </div>
   <div class="declare-hero__visual" aria-label="Interactive map of DeCLaRe research themes">
     <div class="research-map" id="researchMap">
-      <div class="research-map__spokes" aria-hidden="true">
-        <span></span><span></span><span></span><span></span><span></span><span></span>
+      <div class="research-map__field">
+        <!-- Compass geometry, in a 100x76 field centred on (50,38).
+             Hub r 13, inner ring r 17, bearing ring r 20.5. Each connector runs
+             radially from the hub edge out to the bearing ring, then turns to
+             approach its box square-on. North and south need no visible turn:
+             vertical is already perpendicular to those boxes' edges. -->
+        <svg class="research-map__grid" viewBox="0 0 100 76" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+          <circle class="research-map__ring" cx="50" cy="38" r="20.5"></circle>
+          <circle class="research-map__ring" cx="50" cy="38" r="17"></circle>
+          <path class="research-map__spoke" data-spoke="safety" d="M50 25 V13.55"></path>
+          <path class="research-map__spoke" data-spoke="embodied-ai" d="M50 51 V62.45"></path>
+          <path class="research-map__spoke" data-spoke="trustworthiness" d="M38.742 31.5 L32.247 27.75 H27.8"></path>
+          <path class="research-map__spoke" data-spoke="multimodality" d="M61.258 31.5 L67.753 27.75 H72.2"></path>
+          <path class="research-map__spoke" data-spoke="ai-for-science" d="M38.742 44.5 L32.247 48.25 H27.8"></path>
+          <path class="research-map__spoke" data-spoke="efficiency" d="M61.258 44.5 L67.753 48.25 H72.2"></path>
+          <circle class="research-map__hub" cx="50" cy="38" r="13"></circle>
+        </svg>
+        <img class="research-map__logo research-map__logo--light" src="/assets/images/logos/declare-icon-light.png" alt="DeCLaRe Lab robot icon">
+        <img class="research-map__logo research-map__logo--dark" src="/assets/images/logos/declare-icon-dark.png" alt="DeCLaRe Lab robot icon">
+        {% for theme in site.data.home.themes %}
+        <a class="research-node research-node--{{ theme.id }}" data-theme="{{ theme.id }}" href="/research/#{{ theme.id }}">{{ theme.name }}</a>
+        {% endfor %}
       </div>
-      <img class="research-map__logo research-map__logo--light" src="/assets/images/logos/declare-icon-light.png" alt="DeCLaRe Lab robot icon">
-      <img class="research-map__logo research-map__logo--dark" src="/assets/images/logos/declare-icon-dark.png" alt="DeCLaRe Lab robot icon">
-      {% for theme in site.data.home.themes %}
-      <a class="research-node research-node--{{ theme.id }}" data-theme="{{ theme.id }}" href="/research/#{{ theme.id }}">{{ theme.name }}</a>
-      {% endfor %}
     </div>
   </div>
 </section>
@@ -58,44 +73,27 @@ title: ""
   </div>
 </section>
 
-<section class="declare-section declare-section--compact" id="research-areas">
+<section class="declare-section declare-featured" id="research-areas">
   <div class="declare-section__header">
     <div>
       <h2 data-section-label="AGENDA">Research Themes</h2>
-      <p class="section-note">Six connected directions organize the lab's research.</p>
-    </div>
-  </div>
-  <div class="theme-index">
-    {% for theme in site.data.home.themes %}
-    <a class="theme-index__item" data-theme="{{ theme.id }}" href="/research/#{{ theme.id }}">
-      <span>{{ theme.number }}</span>
-      <div><h3>{{ theme.name }}</h3><p>{{ theme.summary }}</p></div>
-      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-    </a>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="declare-section declare-featured" id="representative-work">
-  <div class="declare-section__header">
-    <div>
-      <h2 data-section-label="SELECTED">Representative Work</h2>
-      <p class="section-note">Recent projects alongside established research lines from the group.</p>
+      <p class="section-note">What each direction covers, and the work that anchors it.</p>
     </div>
     <a class="btn-secondary" href="/research/">All research</a>
   </div>
   <div class="representative-grid">
-    {% for group in site.data.home.representative_work %}
-    <article class="representative-card representative-card--{{ group.id }}" data-theme="{{ group.id }}">
+    {% for theme in site.data.home.themes %}
+    <article class="representative-card representative-card--{{ theme.id }}" data-theme="{{ theme.id }}">
       <div class="representative-card__head">
-        <span class="project-tag">{{ group.name }}</span>
-        <h3>{{ group.title }}</h3>
-        <p>{{ group.summary }}</p>
+        <span class="project-tag">{{ theme.number }}</span>
+        <h3>{{ theme.name }}</h3>
+        <p>{{ theme.summary }}</p>
       </div>
       <div class="representative-list">
-        {% for work in group.works %}
+        {% for work in theme.works %}
         <a href="{{ work.url }}"><strong>{{ work.title }}</strong><span>{{ work.meta }}</span></a>
         {% endfor %}
+        <a href="/research/#{{ theme.id }}"><strong>All {{ theme.name | downcase }} work</strong><span>Research</span></a>
       </div>
     </article>
     {% endfor %}
@@ -147,7 +145,6 @@ title: ""
   <div>
     <a href="#about">About</a>
     <a href="#research-areas">Research Themes</a>
-    <a href="#representative-work">Representative Work</a>
     <a href="#hot-papers">Hot Papers 🔥</a>
     <a href="#research-support">Research Support</a>
   </div>
@@ -160,7 +157,7 @@ title: ""
     if (!map) return;
 
     var nodes = Array.prototype.slice.call(map.querySelectorAll("[data-theme]"));
-    var related = Array.prototype.slice.call(document.querySelectorAll(".theme-index__item[data-theme], .representative-card[data-theme]"));
+    var related = Array.prototype.slice.call(document.querySelectorAll(".representative-card[data-theme]"));
 
     function setTheme(theme) {
       map.setAttribute("data-active-theme", theme);

@@ -10,13 +10,13 @@ classes: wide
 
 {% assign update_years = site.data.updates.items | group_by: "year" %}
 
-<div class="side-layout">
-<div class="side-layout__main">
-
-<section class="updates-intro">
+<section class="page-lead page-lead--compact">
   <p>Research releases, grants, awards, student milestones, and changes in the life of the lab.</p>
   <span class="data-verification">Updated {{ site.data.updates.last_verified | date: "%B %Y" }}</span>
 </section>
+
+<div class="side-layout">
+<div class="side-layout__main">
 
 {% for year in update_years %}
 <section class="updates-year" id="updates-{{ year.name }}">
