@@ -5369,7 +5369,7 @@ body {
   }
 
   body.menu-open {
-    overflow: hidden;
+    overflow-x: clip;
   }
 
   .site-title.site-logo-title {
@@ -5401,8 +5401,8 @@ body {
   }
 
   .nav-links {
-    position: fixed;
-    top: 76px;
+    position: absolute;
+    top: calc(100% + 8px);
     right: 0.75rem;
     left: 0.75rem;
     width: auto;
@@ -5410,10 +5410,14 @@ body {
     box-sizing: border-box;
     z-index: 104;
     display: grid;
+    max-height: calc(100vh - 88px);
+    max-height: calc(100dvh - 88px);
     grid-template-columns: minmax(0, 1fr);
     gap: 0.25rem;
     margin: 0;
     padding: 0.55rem;
+    overflow-y: auto;
+    overscroll-behavior: contain;
     border: 1px solid var(--border);
     background: var(--bg-card);
     box-shadow: 0 12px 28px color-mix(in srgb, var(--text) 14%, transparent);
@@ -5494,8 +5498,12 @@ body {
   }
 
   .nav-scrim {
-    position: fixed;
-    inset: 68px 0 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    height: calc(100vh - 68px);
+    height: calc(100dvh - 68px);
     z-index: 102;
     display: block;
     background: rgba(20, 23, 31, 0.28);
@@ -5513,6 +5521,8 @@ body {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    touch-action: none;
+    overscroll-behavior: contain;
   }
 }
 
