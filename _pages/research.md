@@ -9,7 +9,7 @@ classes: wide
 ---
 
 <section class="page-lead page-lead--compact">
-  <p>Six directions connect current projects with established contributions from the group. Each section pairs a focused agenda with representative papers, code, and project resources.</p>
+  <p>DeCLaRe works across six research themes: Safety, Trustworthiness, Multimodality, AI for Science, Efficiency, and Embodied AI. Recent notable work includes online memory for LLMs, dynamic data selection for efficient ML training, vision-language-action models, text-to-audio generation, trustworthy RAG, and operational AI safety.</p>
 </section>
 
 <div class="side-layout">

@@ -10,8 +10,8 @@ title: ""
 <section class="home-hero declare-hero">
   <div class="declare-hero__copy">
     <p class="declare-kicker">Deep Cognition and Language Research Lab</p>
-    <h1>Research in <em>Safe</em>, <em>Trustworthy</em>, <em>Multimodal</em> AI</h1>
-    <p class="declare-hero__subhead">DeCLaRe studies how intelligent systems reason, perceive, communicate, and act across language, vision, audio, scientific knowledge, and embodied environments.</p>
+    <h1>Research across Six Themes in <em>AI</em></h1>
+    <p class="declare-hero__subhead">DeCLaRe is a research group at NTU working across Safety, Trustworthiness, Multimodality, AI for Science, Efficiency, and Embodied AI. Recent notable work includes online memory for LLMs, dynamic data selection for efficient ML training, vision-language-action models, text-to-audio generation, trustworthy RAG, and operational AI safety.</p>
     <div class="hero-actions">
       <a class="btn-primary" href="/research/"><i class="fa-solid fa-compass" aria-hidden="true"></i><span>Research Themes</span></a>
       <a class="btn-secondary" href="/publications/"><i class="fa-solid fa-book-open" aria-hidden="true"></i><span>Publications</span></a>
@@ -58,7 +58,7 @@ title: ""
   <div class="lab-overview__body">
     <div class="lab-overview__copy">
       <p>DeCLaRe, short for Deep Cognition and Language Research, was established by Soujanya Poria at the Singapore University of Technology and Design in 2019 with founding members Navonil Majumder, Devamanyu Hazarika, and Deepanway Ghosal. The lab moved to Nanyang Technological University in 2025.</p>
-      <p>Our research develops grounded, interpretable, and robust AI systems for settings in which benchmark accuracy alone is insufficient.</p>
+      <p>Our research is organized around six connected themes, bringing together foundational methods, evaluation, and systems for consequential real-world settings.</p>
       <div class="identity-summary">
         <span>Lab's identity</span>
         <p>The robot recalls early computing while forming 宣 (<em>xuān</em>), “to declare”: an intelligent social agent connecting computing’s history with collaborative AI.</p>
@@ -77,7 +77,7 @@ title: ""
   <div class="declare-section__header">
     <div>
       <h2 data-section-label="AGENDA">Research Themes</h2>
-      <p class="section-note">What each direction covers, and the work that anchors it.</p>
+      <p class="section-note">Six connected themes, each grounded in representative work from the group.</p>
     </div>
     <a class="btn-secondary" href="/research/">All research</a>
   </div>

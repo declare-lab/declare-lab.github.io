@@ -14,7 +14,7 @@ title                    : "DeCLaRe Lab"
 title_separator          : "-"
 subtitle                 : "" # site tagline that appears below site title in masthead
 name                     : "DeCLaRe"
-description              : "DeCLaRe Lab at Nanyang Technological University studies how intelligent systems reason, perceive, communicate, and act across language, multimodality, scientific knowledge, and embodied environments."
+description              : "DeCLaRe Lab at Nanyang Technological University works across six research themes: Safety, Trustworthiness, Multimodality, AI for Science, Efficiency, and Embodied AI."
 url                      : "https://declare-lab.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "declare-lab/declare-lab.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"

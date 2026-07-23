@@ -5542,3 +5542,397 @@ body {
     box-sizing: border-box;
   }
 }
+
+/* ===== People directory ===== */
+/* Individual profiles are genuine browsable objects, so they use cards.
+ * Section introductions and the group photograph remain in the page flow. */
+.content-text .people-layout .team-portrait {
+  width: min(640px, 100%);
+  margin: 0 0 2.75rem;
+}
+
+.content-text .people-layout .team-photo,
+[data-theme="dark"] .content-text .people-layout .team-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.content-text .people-layout .team-portrait figcaption {
+  margin-top: 0.65rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  line-height: 1.45;
+}
+
+.content-text .people-section {
+  margin: 0;
+  padding: 0 0 var(--section-space-before-rule);
+  border-bottom: 1px solid var(--border);
+  scroll-margin-top: calc(var(--declare-sticky-top) + 1rem);
+}
+
+.content-text .people-section + .people-section {
+  padding-top: var(--section-space-after-rule);
+}
+
+.content-text .people-section__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.15rem;
+}
+
+.content-text .people-section__header h2 {
+  margin: 0;
+}
+
+.content-text .people-section__count {
+  flex: 0 0 auto;
+  padding-bottom: 0.18rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  line-height: 1.3;
+}
+
+.content-text .people-layout .people-grid,
+.content-text .people-layout .people-grid--featured {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  max-width: none;
+  margin: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.content-text .people-layout .people-grid--faculty {
+  grid-template-columns: minmax(0, 760px);
+}
+
+.content-text .people-layout .people-grid--research-assistants,
+.content-text .people-layout .people-grid--visiting-students {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.content-text .people-layout .person-card,
+[data-theme="dark"] .content-text .people-layout .person-card {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  min-height: 154px;
+  grid-template-columns: 74px minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: start;
+  padding: 1rem;
+  overflow: visible;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--bg-card) 92%, transparent);
+  box-shadow: none;
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.content-text .people-layout .person-card:hover,
+[data-theme="dark"] .content-text .people-layout .person-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 56%, var(--border));
+  box-shadow: 0 10px 26px color-mix(in srgb, var(--text) 8%, transparent);
+  transform: translateY(-2px);
+}
+
+.content-text .people-layout .person-card:has(.person-card__primary:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.content-text .people-layout .person-card__portrait {
+  position: relative;
+  z-index: 0;
+  width: 74px;
+  height: 74px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--text) 13%, var(--border));
+  border-radius: 50%;
+  background: var(--bg-soft);
+}
+
+.content-text .people-layout .person-card img,
+.content-text .people-layout .person-avatar {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  background: var(--bg-soft);
+}
+
+.content-text .people-layout .person-card img {
+  display: block;
+  object-fit: cover;
+  object-position: var(--portrait-position);
+  transform: scale(var(--portrait-scale));
+  transform-origin: var(--portrait-origin);
+}
+
+.content-text .people-layout .person-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 720;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.content-text .people-layout .person-card__body {
+  min-width: 0;
+}
+
+.content-text .people-layout .person-card__role {
+  margin: 0 0 0.28rem;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  font-weight: 650;
+  line-height: 1.35;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.content-text .people-layout .person-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.content-text .people-layout .person-card__primary {
+  color: inherit;
+  text-decoration: none;
+}
+
+.content-text .people-layout .person-card__primary::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  content: "";
+}
+
+.content-text .people-layout .person-card:hover .person-card__primary {
+  color: var(--accent);
+}
+
+.content-text .people-layout .person-card__affiliation,
+.content-text .people-layout .person-card__interests,
+.content-text .people-layout .person-card__note {
+  margin: 0.34rem 0 0;
+  overflow-wrap: anywhere;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  line-height: 1.46;
+}
+
+.content-text .people-layout .person-card__affiliation {
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-weight: 560;
+}
+
+.content-text .people-layout .person-card__note {
+  color: var(--text-muted);
+  font-size: 0.72rem;
+}
+
+.content-text .people-layout .person-links {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.7rem;
+}
+
+.content-text .people-layout .person-links .person-action,
+[data-theme="dark"] .content-text .people-layout .person-links .person-action {
+  position: relative;
+  display: inline-flex;
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  min-height: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--text-secondary);
+  box-shadow: none;
+  font-size: 0.76rem;
+  text-decoration: none;
+}
+
+.content-text .people-layout .person-links .person-action:hover,
+.content-text .people-layout .person-links .person-action:focus-visible,
+[data-theme="dark"] .content-text .people-layout .person-links .person-action:hover,
+[data-theme="dark"] .content-text .people-layout .person-links .person-action:focus-visible {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+[data-theme="dark"] .content-text .people-layout .person-links .person-action:hover,
+[data-theme="dark"] .content-text .people-layout .person-links .person-action:focus-visible {
+  color: #11171d;
+}
+
+.content-text .people-layout .person-action::after {
+  position: absolute;
+  top: calc(100% + 0.45rem);
+  left: 50%;
+  z-index: 5;
+  width: max-content;
+  max-width: 150px;
+  padding: 0.3rem 0.44rem;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--text);
+  color: var(--bg-page);
+  content: attr(data-tooltip);
+  font-family: var(--font-sans);
+  font-size: 0.66rem;
+  font-weight: 650;
+  line-height: 1.2;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -3px);
+  transition: opacity var(--transition), transform var(--transition);
+}
+
+.content-text .people-layout .person-action:hover::after,
+.content-text .people-layout .person-action:focus-visible::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.content-text .people-layout .people-grid--faculty .person-card {
+  min-height: 184px;
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+
+.content-text .people-layout .people-grid--faculty .person-card__portrait {
+  width: 128px;
+  height: 128px;
+}
+
+.content-text .people-layout .people-grid--faculty .person-card h3 {
+  font-size: 1.35rem;
+}
+
+.content-text .people-layout .people-grid--faculty .person-card__affiliation,
+.content-text .people-layout .people-grid--faculty .person-card__interests {
+  font-size: 0.88rem;
+}
+
+.content-text .people-layout .people-grid--alumni .person-card {
+  min-height: 126px;
+  grid-template-columns: 62px minmax(0, 1fr);
+  gap: 0.75rem;
+  padding: 0.85rem;
+}
+
+.content-text .people-layout .people-grid--alumni .person-card__portrait {
+  width: 62px;
+  height: 62px;
+}
+
+.content-text .people-layout .people-grid--alumni .person-card__role {
+  color: var(--text-muted);
+}
+
+.content-text .people-layout .people-grid--alumni .person-card__affiliation,
+.content-text .people-layout .people-grid--alumni .person-card__interests {
+  font-size: 0.74rem;
+}
+
+.content-text .people-layout .people-grid--alumni .person-links {
+  margin-top: 0.55rem;
+}
+
+.content-text .people-layout .people-grid--alumni .person-links .person-action {
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  min-height: 28px;
+}
+
+@media (max-width: 1180px) {
+  .content-text .people-layout .people-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .content-text .people-layout .people-grid--faculty {
+    grid-template-columns: minmax(0, 760px);
+  }
+}
+
+@media (max-width: 720px) {
+  .content-text .people-layout .team-portrait {
+    margin-bottom: 2rem;
+  }
+
+  .content-text .people-section__header {
+    align-items: baseline;
+  }
+
+  .content-text .people-section__header h2 {
+    font-size: 1.55rem;
+  }
+
+  .content-text .people-layout .people-grid,
+  .content-text .people-layout .people-grid--faculty,
+  .content-text .people-layout .people-grid--research-assistants,
+  .content-text .people-layout .people-grid--visiting-students {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .content-text .people-layout .person-card,
+  .content-text .people-layout .people-grid--alumni .person-card {
+    min-height: 0;
+    grid-template-columns: 72px minmax(0, 1fr);
+    padding: 0.9rem;
+  }
+
+  .content-text .people-layout .person-card__portrait,
+  .content-text .people-layout .people-grid--alumni .person-card__portrait {
+    width: 72px;
+    height: 72px;
+  }
+
+  .content-text .people-layout .people-grid--faculty .person-card {
+    min-height: 0;
+    grid-template-columns: 92px minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .content-text .people-layout .people-grid--faculty .person-card__portrait {
+    width: 92px;
+    height: 92px;
+  }
+
+  .content-text .people-layout .people-grid--faculty .person-card h3 {
+    font-size: 1.15rem;
+  }
+}

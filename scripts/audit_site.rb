@@ -110,7 +110,13 @@ end
 people.fetch("sections", []).each do |section|
   errors << "people.yml: section id/title is required" if section["id"].to_s.empty? || section["title"].to_s.empty?
   section.fetch("people", []).each do |person|
-    errors << "people.yml: name and description are required" if person["name"].to_s.empty? || person["description"].to_s.empty?
+    profile_fields = %w[role affiliation interests description]
+    profile_has_detail = profile_fields.any? { |field| !person[field].to_s.empty? }
+    errors << "people.yml: name and profile detail are required" if person["name"].to_s.empty? || !profile_has_detail
+
+    person.fetch("links", []).each do |link|
+      errors << "people.yml: link label and url are required for #{person['name']}" if link["label"].to_s.empty? || link["url"].to_s.empty?
+    end
     next if person["image"].to_s.empty?
 
     image_path = source_root.join(person["image"].delete_prefix("/"))

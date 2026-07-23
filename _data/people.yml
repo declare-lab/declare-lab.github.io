@@ -5,8 +5,12 @@ sections:
   title: Faculty
   people:
   - name: Soujanya Poria
-    description: Principal Investigator · Multimodal AI, reasoning, affective computing,
-      responsible AI
+    role: Principal Investigator
+    interests: Multimodal AI, reasoning, affective computing, trustworthy AI
+    affiliation: Nanyang Technological University
+    image_position: 50% 0%
+    image_scale: 1.05
+    image_origin: 50% 0%
     links:
     - label: Website
       url: https://soujanyaporia.github.io/
@@ -19,88 +23,132 @@ sections:
   title: Research Scientists
   people:
   - name: Suorong Yang
-    description: Data-centric AI, AI4Sci, trustworthy AI, reasoning models
+    role: Research Scientist
+    interests: Data-centric AI, AI for Science, trustworthy AI, reasoning models
+    image_position: 50% 0%
+    image_scale: 1.4
+    image_origin: 50% 0%
     links:
     - label: Website
       url: https://suorongyang.github.io/
     image: "/assets/images/people/suorong-yang.png"
   - name: Rishabh Bhardwaj
-    description: AI safety
+    role: Research Scientist
+    interests: AI safety
     links:
     - label: Website
       url: https://www.rishabhbhardwaj.info/
     image: "/assets/images/people/rishabh-bhardwaj.png"
   - name: Navonil Majumder
-    description: Multimodal learning, dialogue, generative AI
+    role: Research Scientist
+    interests: Multimodal learning, dialogue, generative AI
+    image_position: 46% 50%
+    image_scale: 1.35
+    image_origin: 50% 0%
     links:
     - label: Scholar
       url: https://scholar.google.com/citations?user=jPfEvuQAAAAJ&hl=en&oi=ao
-    image: "/assets/images/people/navonil-majumder.png"
+    image: "/assets/images/people/navonil-majumder-portrait.png"
 - id: phd-students
   title: PhD Students
   people:
   - name: Jingdi Lei
-    description: LLMs, post-training
+    role: PhD Student
+    interests: LLMs, post-training
     links:
     - label: Website
       url: https://kyrielei.github.io/
     image: "/assets/images/people/jingdi-lei.jpg"
+  - name: Keith Kwok
+    role: PhD Student
+    interests: AI safety and alignment; sycophancy, emotional manipulation, and parasocial
+      attachment
+    image_position: 50% 20%
+    image_scale: 1.25
+    image_origin: 50% 0%
+    links:
+    - label: Website
+      url: https://kwokkeith.github.io/
+    image: "/assets/images/people/keith-kwok.png"
   - name: Hung Chia-Yu
-    description: Multimodal generation, vision-language-action models, world models
+    role: PhD Student
+    interests: Multimodal generation, vision-language-action models, world models
+    image_position: 50% 35%
+    image_scale: 1.4
     links:
     - label: Website
       url: https://hungchiayu1.github.io/
     image: "/assets/images/people/hung-chia-yu.jpg"
   - name: Nithish Selvaraj
-    description: Multi-agent systems
+    role: PhD Student
+    interests: Multi-agent systems
+    image_position: 50% 32%
+    image_scale: 3.2
+    image_origin: 44% 45%
     links:
     - label: Scholar
       url: https://scholar.google.com/citations?user=L2QSO1wAAAAJ&hl=en
     image: "/assets/images/people/nithish-selvaraj.png"
   - name: Liu Renhang
-    description: Generative models, world modelling for robotics
+    role: PhD Student
+    interests: Generative models, world modelling for robotics
     links:
     - label: Scholar
       url: https://scholar.google.com/citations?user=naBGDfIAAAAJ&hl=en
     image: "/assets/images/people/liu-renhang.png"
   - name: Varun Gumma
-    description: LLMs, reinforcement learning, efficiency, reasoning and modelling
+    role: PhD Student
+    interests: LLMs, reinforcement learning, efficiency, reasoning and modelling
+    image_position: 70% 50%
+    image_scale: 1.08
     links:
     - label: Website
       url: https://varungumma.netlify.app/
     image: "/assets/images/people/varun-gumma.jpg"
   - name: Vernon Toh
-    description: Reasoning and prompt augmentation
+    role: PhD Student
+    interests: Reasoning and prompt augmentation
     links:
     - label: Scholar
       url: https://scholar.google.com/citations?user=ZUPDabgAAAAJ&hl=en
     image: "/assets/images/people/vernon.jpeg"
   - name: Richmond Sin
-    description: Reasoning
+    role: PhD Student
+    interests: Reasoning
+    image_position: 50% 35%
+    image_scale: 1.5
     links:
     - label: Website
       url: https://richmondsin.vercel.app/
     image: "/assets/images/people/richmond-sin.png"
   - name: Peilin Feng
-    description: Multimodal understanding, agents
+    role: PhD Student
+    interests: Multimodal understanding, agents
+    image_scale: 1.7
     links:
     - label: Website
       url: https://peilin-ff.github.io/
     image: "/assets/images/people/peilin-feng.JPG"
   - name: Ruiwen Zhou
-    description: LLM reasoning and AI agents · Co-supervised with Min-Yen Kan at NUS
+    role: PhD Student
+    interests: LLM reasoning and AI agents
+    note: Co-supervised with Min-Yen Kan at NUS
+    image_scale: 1.7
+    image_origin: 58% 48%
     links:
     - label: Website
       url: https://skyriver-2000.github.io/
     image: "/assets/images/people/ruiwen-zhou.jpg"
   - name: Tej Deep Pala
-    description: LLM reasoning, reinforcement learning, multi-agent systems
+    role: PhD Student
+    interests: LLM reasoning, reinforcement learning, multi-agent systems
     links:
     - label: Website
       url: https://tej-deep.github.io
     image: "/assets/images/people/tej-deep-pala.jpg"
   - name: Maojia Song
-    description: Adaptive intelligence, foundation agents, multimodal interaction,
+    role: PhD Student
+    interests: Adaptive intelligence, foundation agents, multimodal interaction,
       embodied AI
     links:
     - label: Website
@@ -110,7 +158,11 @@ sections:
   title: Research Assistants
   people:
   - name: Soumitra Sinhahajari
-    description: Reinforcement learning, LLM reasoning, multi-agent systems
+    role: Research Assistant
+    interests: Reinforcement learning, LLM reasoning, multi-agent systems
+    image_position: 50% 52%
+    image_scale: 4
+    image_origin: 30% 68%
     links:
     - label: Scholar
       url: https://scholar.google.com/citations?user=p4RW1qkAAAAJ&hl=en
@@ -119,7 +171,8 @@ sections:
   title: Visiting Students
   people:
   - name: Zhixuan Wu
-    description: Visiting student · PhD student at BUPT
+    role: Visiting Student
+    affiliation: PhD student at BUPT
     links:
     - label: Scholar
       url: https://scholar.google.com/citations?user=BpjIMQcAAAAJ&hl=zh-CN
@@ -128,115 +181,159 @@ sections:
   title: Alumni
   people:
   - name: Ambuj Mehrish
-    description: Alumnus · Now at Ca’ Foscari University of Venice
+    role: Alumnus
+    affiliation: Ca’ Foscari University of Venice
     links:
     - label: Profile
       url: https://www.unive.it/people/ambuj.mehrish
     image: "/assets/images/people/ambuj.jpeg"
   - name: Qi Sun
-    description: Alumnus · Now at Alibaba
+    role: Alumnus
+    affiliation: Alibaba
+    image_position: 50% 36%
+    image_scale: 1.08
     links:
     - label: Scholar
       url: https://scholar.google.com/citations?user=GpH4vXwAAAAJ
     image: "/assets/images/people/qi.jpg"
   - name: Shang Hong Sim
-    description: Alumnus · Now at Oumi AI
+    role: Alumnus
+    affiliation: Oumi AI
+    image_position: 50% 35%
+    image_scale: 1.3
     links:
     - label: Website
       url: https://shanghongsim.github.io/
     image: "/assets/images/people/shang-hong-sim.png"
   - name: Yi Xuan Tan
-    description: Alumnus · Spoken language understanding
+    role: Alumnus
+    interests: Spoken language understanding
     links:
     - label: Project
       url: https://huggingface.co/declare-lab/segue-w2v2-base
     image: "/assets/images/people/yixuan.jpg"
   - name: Samson Yu
-    description: Alumnus · PhD student at NUS
+    role: Alumnus
+    affiliation: PhD student at NUS
+    image_position: 50% 35%
+    image_scale: 1.35
     links:
     - label: Project
       url: https://github.com/declare-lab/ASTE-RL
     image: "/assets/images/people/samson.jpg"
   - name: Sarthak Bhagat
-    description: Alumnus · Now at 1X Technologies
+    role: Alumnus
+    affiliation: 1X Technologies
+    image_position: 50% 35%
+    image_scale: 1.35
     links:
     - label: Website
       url: https://sarthak268.github.io/
     image: "/assets/images/people/sarthak.jpg"
   - name: Shagun Uppal
-    description: Alumnus · Now at Skild AI
+    role: Alumnus
+    affiliation: Skild AI
+    image_position: 60% 28%
+    image_scale: 1.1
     links:
     - label: Website
       url: https://shagunuppal.github.io/
     image: "/assets/images/people/shagun.jpg"
   - name: Yingting Li
-    description: Alumnus · China Academy of Information and Communications Technology
+    role: Alumnus
+    affiliation: China Academy of Information and Communications Technology
+    image_scale: 1.5
+    image_origin: 48% 45%
     links:
     - label: Publications
       url: https://soujanyaporia.github.io/publications/
     image: "/assets/images/people/yingting.jpg"
   - name: Xiaocui Yang
-    description: Alumnus · Assistant Professor at Northeastern University
+    role: Alumnus
+    affiliation: Assistant Professor at Northeastern University
+    image_position: 50% 45%
+    image_scale: 1.35
     links:
     - label: Profile
       url: https://openreview.net/profile?id=~Xiaocui_Yang1
     image: "/assets/images/people/xiaocui.jpg"
   - name: Shanshan Peng
-    description: Alumnus · Now at Apple
+    role: Alumnus
+    affiliation: Apple
+    image_position: 32% 45%
+    image_scale: 2.2
+    image_origin: 35% 38%
     links:
     - label: Paper
       url: https://aclanthology.org/2020.emnlp-main.721/
     image: "/assets/images/people/shanshan.jpeg"
   - name: Jiankun Lu
-    description: Alumnus · Now at Apple
+    role: Alumnus
+    affiliation: Apple
+    image_position: 50% 28%
+    image_scale: 1.12
     links:
     - label: Paper
       url: https://aclanthology.org/2020.emnlp-main.721/
     image: "/assets/images/people/jiankun.jpeg"
   - name: Weisheng Jin
-    description: Alumnus · PhD student at SUTD
+    role: Alumnus
+    affiliation: PhD student at SUTD
     links:
     - label: Scholar
       url: https://scholar.google.com/citations?user=6ycWC-cAAAAJ&hl=en
     avatar: WJ
   - name: Jaavid Akhtar
-    description: Alumnus · PhD student at SUTD
+    role: Alumnus
+    affiliation: PhD student at SUTD
     links:
     - label: Profile
       url: https://www.linkedin.com/in/jaavid-aktar-7481451bb/
     avatar: JA
   - name: Deepanway Ghosal
-    description: Former PhD student · Now at Google DeepMind
+    role: Former PhD Student
+    affiliation: Google DeepMind
+    image_position: 35% 40%
+    image_scale: 1.25
     links:
     - label: Website
       url: https://deepanwayx.github.io/
     image: "/assets/images/people/deepanway.jpeg"
   - name: Chia Yew Ken
-    description: Former PhD student · Balyasny Asset Management L.P.
+    role: Former PhD Student
+    affiliation: Balyasny Asset Management L.P.
     links:
     - label: Website
       url: https://chiayewken.com/
     image: "/assets/images/people/ken.jpg"
   - name: Hui Chen
-    description: Former PhD student · Research Fellow at NUS
+    role: Former PhD Student
+    affiliation: Research Fellow at NUS
+    image_scale: 1.5
+    image_origin: 55% 48%
     links:
     - label: Website
       url: https://chchenhui.github.io/
     image: "/assets/images/people/hui_chen.jpg"
   - name: Devamanyu Hazarika
-    description: Former PhD student · Now at Meta
+    role: Former PhD Student
+    affiliation: Meta
     links:
     - label: Website
       url: http://devamanyu.com
     image: "/assets/images/people/devamanyu.jpg"
   - name: Wei Han
-    description: Former PhD student · Now at Huawei
+    role: Former PhD Student
+    affiliation: Huawei
     links:
     - label: GitHub
       url: https://github.com/Clement25
     image: "/assets/images/people/henryhan.jpeg"
   - name: Pengfei Hong
-    description: Former PhD student · Now at Tonghuashun
+    role: Former PhD Student
+    affiliation: Tonghuashun
+    image_position: 50% 35%
+    image_scale: 1.35
     links:
     - label: GitHub
       url: https://github.com/Emrys-Hong
