@@ -11,13 +11,19 @@
  * component geometry remains in declare-lab.scss; page rhythm is configured
  * once through the shared public API. */
 @include declare-customize(
-  $page-space-top: 1.9rem,
-  $page-space-bottom: 2.75rem,
+  $layout-max-width: 1040px,
+  $rail-width: 164px,
+  $rail-gap: 1.5rem,
+  $publication-rail-width: 124px,
+  $publication-rail-gap: 1.25rem,
+  $page-space-top: 1.6rem,
+  $page-space-bottom: 2.4rem,
   $page-header-gap: 1.1rem,
-  $page-lead-gap: 1.35rem,
-  $page-lead-padding: 1.1rem,
-  $section-space: 2.15rem,
-  $section-rule-space: 1.65rem,
-  $section-boundary-before: 1.65rem,
-  $section-boundary-after: 1.65rem
+  $page-lead-gap: 1.15rem,
+  $page-lead-padding: 0.95rem,
+  $section-space: 1.9rem,
+  $section-rule-space: 1.45rem,
+  $section-boundary-before: 1.45rem,
+  $section-boundary-after: 1.45rem,
+  $content-measure: 64ch
 );

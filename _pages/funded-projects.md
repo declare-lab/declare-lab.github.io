@@ -9,7 +9,7 @@ classes: wide
 ---
 
 <section class="page-lead page-lead--compact">
-  <p>External grants and research support underpin DeCLaRe's work on embodied models, trustworthy generation, efficient architectures, scientific AI, and multimodal learning.</p>
+  <p>Active and completed research support.</p>
   <span class="data-verification">Funding record verified {{ site.data.funded_projects.last_verified | date: "%B %Y" }}</span>
 </section>
 
@@ -44,7 +44,7 @@ classes: wide
 <section class="join-band join-band--quiet funded-page-cta" id="join-lab">
   <div>
     <h2 data-section-label="{{ site.data.funded_projects.sections | size | plus: 1 | prepend: '0' | slice: -2, 2 }}">Work With DeCLaRe</h2>
-    <p>Current funded directions create opportunities for students and collaborators whose research aligns with the lab.</p>
+    <p>Current projects offer opportunities for students and collaborators.</p>
   </div>
   <a class="btn-primary" href="/join/">Open positions</a>
 </section>

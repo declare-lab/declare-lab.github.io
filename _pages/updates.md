@@ -10,26 +10,27 @@ classes: wide
 
 {% assign update_years = site.data.updates.items | group_by: "year" %}
 
-<section class="page-lead page-lead--compact">
-  <p>Research releases, grants, awards, student milestones, and changes in the life of the lab.</p>
-  <span class="data-verification">Updated {{ site.data.updates.last_verified | date: "%B %Y" }}</span>
-</section>
-
 <div class="side-layout">
 <div class="side-layout__main">
+
+<span class="data-verification">Updated {{ site.data.updates.last_verified | date: "%B %Y" }}</span>
 
 {% for year in update_years %}
 <section class="updates-year" id="updates-{{ year.name }}">
   <h2>{{ year.name }}</h2>
-  <div class="updates-feed">
+  <div class="updates-feed timeline-list">
     {% for update in year.items %}
     {% assign kind_class = update.kind | downcase | replace: " ", "-" %}
-    <article class="update-card update-card--{{ kind_class }}">
-      <div class="update-card__meta">
-        <span>{{ update.kind }}</span>
-        <time>{{ update.date }}</time>
+    {% assign date_parts = update.date | split: " " %}
+    <article class="update-card update-card--{{ kind_class }} timeline-item">
+      <div class="update-card__meta timeline-item__marker">
+        <time class="date-marker date-marker--timeline">
+          <span class="date-marker__primary">{{ date_parts | first }}</span>
+          {% if date_parts.size > 1 %}<span class="date-marker__secondary">{{ date_parts | last }}</span>{% endif %}
+        </time>
       </div>
-      <div class="update-card__body">
+      <div class="update-card__body timeline-item__content">
+        <span class="update-card__kind record-badge">{{ update.kind }}</span>
         <h3>{{ update.title }}</h3>
         <p>{{ update.summary }}</p>
         {% if update.bullets %}

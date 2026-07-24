@@ -8,10 +8,6 @@ toc: false
 classes: wide
 ---
 
-<section class="page-lead page-lead--compact">
-  <p>DeCLaRe is a collaborative academic community for researchers who value careful scientific questions, ambitious technical work, and sustained exchange across disciplines and institutions.</p>
-</section>
-
 <div class="side-layout">
 <div class="side-layout__main">
 
@@ -38,7 +34,6 @@ classes: wide
   <div class="declare-section__header">
     <div>
       <h2 data-section-label="02">How Students Collaborate at DeCLaRe</h2>
-      <p class="section-note">Coauthorship patterns in the lab's publication archive show how internal, academic, and industry collaborations intersect.</p>
     </div>
   </div>
 
@@ -110,33 +105,33 @@ classes: wide
           <text text-anchor="middle"><tspan x="0" y="-8">Publication</tspan><tspan x="0" y="12">archive</tspan></text>
         </g>
         <g class="collab-node collab-node--current" transform="translate(185 175)">
-          <circle class="collab-node__halo" r="62"></circle>
-          <circle r="50"></circle>
+          <circle class="collab-node__halo" r="66"></circle>
+          <circle r="54"></circle>
           <text text-anchor="middle"><tspan x="0" y="-12">Internal</tspan><tspan x="0" y="7">DeCLaRe</tspan><tspan x="0" y="25">collaboration</tspan></text>
         </g>
         <g class="collab-node collab-node--pi" transform="translate(300 64)">
-          <circle class="collab-node__halo" r="58"></circle>
-          <circle r="48"></circle>
+          <circle class="collab-node__halo" r="62"></circle>
+          <circle r="52"></circle>
           <text text-anchor="middle"><tspan x="0" y="-2">Initiated</tspan><tspan x="0" y="15">in DeCLaRe</tspan></text>
         </g>
         <g class="collab-node collab-node--external" transform="translate(600 190)">
-          <circle class="collab-node__halo" r="72"></circle>
-          <circle r="58"></circle>
+          <circle class="collab-node__halo" r="76"></circle>
+          <circle r="62"></circle>
           <text text-anchor="middle"><tspan x="0" y="-10">External</tspan><tspan x="0" y="10">collaborators</tspan></text>
         </g>
         <g class="collab-node collab-node--small collab-node--academic" transform="translate(500 400)">
-          <circle class="collab-node__halo" r="44"></circle>
-          <circle r="36"></circle>
+          <circle class="collab-node__halo" r="50"></circle>
+          <circle r="42"></circle>
           <text text-anchor="middle"><tspan x="0" y="-2">Academic</tspan><tspan x="0" y="15">partners</tspan></text>
         </g>
         <g class="collab-node collab-node--small collab-node--industry" transform="translate(655 400)">
-          <circle class="collab-node__halo" r="44"></circle>
-          <circle r="36"></circle>
+          <circle class="collab-node__halo" r="50"></circle>
+          <circle r="42"></circle>
           <text text-anchor="middle"><tspan x="0" y="-2">Industry</tspan><tspan x="0" y="15">partners</tspan></text>
         </g>
         <g class="collab-node collab-node--theme" transform="translate(190 365)">
-          <circle class="collab-node__halo" r="58"></circle>
-          <circle r="48"></circle>
+          <circle class="collab-node__halo" r="62"></circle>
+          <circle r="52"></circle>
           <text text-anchor="middle"><tspan x="0" y="-2">Multi-theme</tspan><tspan x="0" y="15">papers</tspan></text>
         </g>
       </svg>

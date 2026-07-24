@@ -13,7 +13,7 @@ classes: wide
 {% assign grouped = sorted_pubs | group_by: "year" %}
 
 <section class="page-lead page-lead--compact">
-  <p>Search DeCLaRe publications from 2019 onward by title, author, topic, citation status, or PDF availability. Publication links remain visible while abstracts expand in place.</p>
+  <p>DeCLaRe publications since 2019.</p>
   <span class="data-verification">Citation metadata is periodically verified against Google Scholar</span>
 </section>
 

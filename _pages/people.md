@@ -9,7 +9,7 @@ classes: wide
 ---
 
 <section class="page-lead page-lead--compact">
-  <p>DeCLaRe is a research group at NTU working across Safety, Trustworthiness, Multimodality, AI for Science, Efficiency, and Embodied AI.</p>
+  <p>Current members and alumni.</p>
   <span class="data-verification">Roster updated {{ site.data.people.last_verified | date: "%B %Y" }}</span>
 </section>
 
@@ -32,19 +32,14 @@ classes: wide
   {% for person in section.people %}
   {% assign primary_link = person.links | first %}
   <article class="person-card">
-    <div class="person-card__portrait" style="--portrait-position: {{ person.image_position | default: '50% 50%' }}; --portrait-scale: {{ person.image_scale | default: 1 }}; --portrait-origin: {{ person.image_origin | default: '50% 50%' }};">
-    {% if person.image %}
-      <img src="{{ person.image }}" alt="{{ person.name }}" loading="lazy">
-    {% else %}
-      <div class="person-avatar" aria-hidden="true">{{ person.avatar }}</div>
-    {% endif %}
-    </div>
-    <div class="person-card__body">
-      {% if person.role %}<p class="person-card__role">{{ person.role }}</p>{% endif %}
-      <h3>{% if primary_link %}<a class="person-card__primary" href="{{ primary_link.url }}"{% unless primary_link.url contains 'mailto:' %} target="_blank" rel="noopener"{% endunless %}>{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}</h3>
-      {% if person.affiliation %}<p class="person-card__affiliation">{{ person.affiliation }}</p>{% endif %}
-      {% if person.interests %}<p class="person-card__interests">{{ person.interests }}</p>{% endif %}
-      {% if person.note %}<p class="person-card__note">{{ person.note }}</p>{% endif %}
+    <div class="person-card__media">
+      <div class="person-card__portrait" style="--portrait-position: {{ person.image_position | default: '50% 50%' }}; --portrait-scale: {{ person.image_scale | default: 1 }}; --portrait-origin: {{ person.image_origin | default: '50% 50%' }};">
+      {% if person.image %}
+        <img src="{{ person.image }}" alt="{{ person.name }}" loading="lazy">
+      {% else %}
+        <div class="person-avatar" aria-hidden="true">{{ person.avatar }}</div>
+      {% endif %}
+      </div>
       {% if person.links %}
       <div class="person-links" aria-label="Links for {{ person.name }}">
         {% for link in person.links %}
@@ -67,6 +62,13 @@ classes: wide
         {% endfor %}
       </div>
       {% endif %}
+    </div>
+    <div class="person-card__body">
+      {% if person.role %}<p class="person-card__role">{{ person.role }}</p>{% endif %}
+      <h3>{% if primary_link %}<a class="person-card__primary" href="{{ primary_link.url }}"{% unless primary_link.url contains 'mailto:' %} target="_blank" rel="noopener"{% endunless %}>{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}</h3>
+      {% if person.affiliation %}<p class="person-card__affiliation">{{ person.affiliation }}</p>{% endif %}
+      {% if person.interests %}<p class="person-card__interests">{{ person.interests }}</p>{% endif %}
+      {% if person.note %}<p class="person-card__note">{{ person.note }}</p>{% endif %}
     </div>
   </article>
   {% endfor %}

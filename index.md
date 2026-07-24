@@ -13,10 +13,10 @@ title: ""
     <h1>Research across Six Themes in <em>AI</em></h1>
     <p class="declare-hero__subhead">DeCLaRe is a research group at NTU working across Safety, Trustworthiness, Multimodality, AI for Science, Efficiency, and Embodied AI. Recent notable work includes online memory for LLMs, dynamic data selection for efficient ML training, vision-language-action models, text-to-audio generation, trustworthy RAG, and operational AI safety.</p>
     <div class="hero-actions hero-actions--lab">
-      <a class="btn-primary" href="/research/"><i class="fa-solid fa-compass" aria-hidden="true"></i><span>Research Themes</span></a>
-      <a class="btn-secondary" href="/publications/"><i class="fa-solid fa-book-open" aria-hidden="true"></i><span>Publications</span></a>
-      <a class="btn-secondary" href="https://github.com/declare-lab" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a>
-      <a class="btn-secondary" href="https://drive.google.com/file/d/10lmu5YGDzr2Yw6kBFWwe7ifZ9Ec9WCl1/view?usp=sharing" target="_blank" rel="noopener"><i class="fa-solid fa-file-powerpoint" aria-hidden="true"></i><span>Research Slides</span></a>
+      <a class="btn-primary btn--compact" href="/research/"><i class="fa-solid fa-compass" aria-hidden="true"></i><span>Research Themes</span></a>
+      <a class="btn-secondary btn--compact" href="/publications/"><i class="fa-solid fa-book-open" aria-hidden="true"></i><span>Publications</span></a>
+      <a class="btn-secondary btn--compact" href="https://github.com/declare-lab" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+      <a class="btn-secondary btn--compact" href="https://drive.google.com/file/d/10lmu5YGDzr2Yw6kBFWwe7ifZ9Ec9WCl1/view?usp=sharing" target="_blank" rel="noopener"><i class="fa-solid fa-file-powerpoint" aria-hidden="true"></i><span>Research Slides</span></a>
     </div>
   </div>
   <div class="declare-hero__visual" aria-label="Interactive map of DeCLaRe research themes">
@@ -32,16 +32,16 @@ title: ""
           <circle class="research-map__ring" cx="50" cy="38" r="17"></circle>
           <path class="research-map__spoke" data-spoke="safety" d="M50 25 V13.55"></path>
           <path class="research-map__spoke" data-spoke="embodied-ai" d="M50 51 V62.45"></path>
-          <path class="research-map__spoke" data-spoke="trustworthiness" d="M38.742 31.5 L32.247 27.75 H27.8"></path>
-          <path class="research-map__spoke" data-spoke="multimodality" d="M61.258 31.5 L67.753 27.75 H72.2"></path>
-          <path class="research-map__spoke" data-spoke="ai-for-science" d="M38.742 44.5 L32.247 48.25 H27.8"></path>
-          <path class="research-map__spoke" data-spoke="efficiency" d="M61.258 44.5 L67.753 48.25 H72.2"></path>
+          <path class="research-map__spoke" data-spoke="trustworthiness" d="M38.742 31.5 L32.247 27.75 H32"></path>
+          <path class="research-map__spoke" data-spoke="multimodality" d="M61.258 31.5 L67.753 27.75 H68"></path>
+          <path class="research-map__spoke" data-spoke="ai-for-science" d="M38.742 44.5 L32.247 48.25 H32"></path>
+          <path class="research-map__spoke" data-spoke="efficiency" d="M61.258 44.5 L67.753 48.25 H68"></path>
           <circle class="research-map__hub" cx="50" cy="38" r="13"></circle>
         </svg>
         <img class="research-map__logo research-map__logo--light" src="/assets/images/logos/declare-icon-light.png" alt="DeCLaRe Lab robot icon">
         <img class="research-map__logo research-map__logo--dark" src="/assets/images/logos/declare-icon-dark.png" alt="DeCLaRe Lab robot icon">
         {% for theme in site.data.home.themes %}
-        <a class="research-node research-node--{{ theme.id }}" data-theme="{{ theme.id }}" href="/research/#{{ theme.id }}">{{ theme.name }}</a>
+        <a class="research-node research-node--{{ theme.id }}" data-theme="{{ theme.id }}" href="/research/#{{ theme.id }}">{% if theme.id == "trustworthiness" %}Trust<wbr>worthiness{% elsif theme.id == "multimodality" %}Multi<wbr>modality{% else %}{{ theme.name }}{% endif %}</a>
         {% endfor %}
       </div>
     </div>
@@ -57,8 +57,7 @@ title: ""
   </div>
   <div class="lab-overview__body">
     <div class="lab-overview__copy">
-      <p>DeCLaRe, short for Deep Cognition and Language Research, was established by Soujanya Poria at the Singapore University of Technology and Design in 2019 with founding members Navonil Majumder, Devamanyu Hazarika, and Deepanway Ghosal. The lab moved to Nanyang Technological University in 2025.</p>
-      <p>Our research is organized around six connected themes, bringing together foundational methods, evaluation, and systems for consequential real-world settings.</p>
+      <p>DeCLaRe, short for Deep Cognition and Language Research, was founded by Soujanya Poria at the Singapore University of Technology and Design in 2019 with Navonil Majumder, Devamanyu Hazarika, and Deepanway Ghosal. The lab moved to Nanyang Technological University in 2025.</p>
       <div class="identity-summary">
         <span>Lab's identity</span>
         <p>The robot recalls early computing while forming 宣 (<em>xuān</em>), “to declare”: an intelligent social agent connecting computing’s history with collaborative AI.</p>
@@ -77,7 +76,6 @@ title: ""
   <div class="declare-section__header">
     <div>
       <h2 data-section-label="02">Research Themes</h2>
-      <p class="section-note">Six connected themes, each grounded in representative work from the group.</p>
     </div>
     <a class="btn-secondary" href="/research/">All research</a>
   </div>
@@ -90,7 +88,7 @@ title: ""
         <p>{{ theme.summary }}</p>
       </div>
       <div class="representative-list">
-        {% for work in theme.works %}
+        {% for work in theme.works limit: 2 %}
         <a href="{{ work.url }}"><strong>{{ work.title }}</strong><span>{{ work.meta }}</span></a>
         {% endfor %}
         <a href="/research/#{{ theme.id }}"><strong>All {{ theme.name | downcase }} work</strong><span>Research</span></a>
@@ -104,7 +102,6 @@ title: ""
   <div class="declare-section__header">
     <div>
       <h2 data-section-label="03">Hot Papers 🔥</h2>
-      <p class="section-note">Four current anchors across the lab's research program.</p>
     </div>
     <a class="btn-secondary" href="/publications/">Publication archive</a>
   </div>
@@ -126,11 +123,10 @@ title: ""
   <div class="declare-section__header">
     <div>
       <h2 data-section-label="04">Funded Research Directions</h2>
-      <p class="section-note">Active support spans embodied foundation models, trustworthy language generation, efficient architectures, and multimodal AI.</p>
     </div>
   </div>
   <div class="research-support__gateway">
-    <p>Explore active and completed projects, funding periods, agencies, and the research directions they support.</p>
+    <p>Active and completed research support.</p>
     <div>
       <a class="btn-primary" href="/funded-projects/">Funded projects</a>
       <a class="btn-secondary" href="/join/">Research opportunities</a>

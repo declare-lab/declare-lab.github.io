@@ -927,69 +927,6 @@
   fill: var(--dark-text);
 }
 
-.content-text .updates-feed {
-  display: grid;
-  gap: 0.9rem;
-}
-
-.content-text .update-card {
-  display: grid;
-  grid-template-columns: minmax(160px, 0.24fr) minmax(0, 1fr);
-  gap: 1.2rem;
-  padding: 1rem 0;
-  border-top: 1px solid var(--declare-line);
-}
-
-.content-text .update-card:last-child {
-  border-bottom: 1px solid var(--declare-line);
-}
-
-.content-text .update-card__meta {
-  display: grid;
-  align-content: start;
-  gap: 0.35rem;
-}
-
-.content-text .update-card__meta span {
-  width: fit-content;
-  padding: 0.22rem 0.52rem;
-  border: 1px solid var(--declare-line);
-  border-radius: 7px;
-  background: var(--bg-card);
-  color: var(--declare-ink);
-}
-
-.content-text .update-card__meta time {
-  color: var(--declare-muted);
-}
-
-.content-text .update-card--grant .update-card__meta span { color: var(--declare-teal); }
-.content-text .update-card--paper .update-card__meta span { color: var(--declare-blue-dark); }
-.content-text .update-card--award .update-card__meta span { color: var(--declare-gold); }
-.content-text .update-card--release .update-card__meta span { color: var(--declare-rose); }
-.content-text .update-card--congratulation .update-card__meta span { color: var(--accent-hover); }
-.content-text .update-card--media .update-card__meta span { color: var(--declare-teal); }
-
-[data-theme="dark"] .content-text .update-card--paper .update-card__meta span {
-  color: var(--accent-hover);
-}
-
-.content-text .update-card__body h3 {
-  margin: 0 0 0.35rem;
-  color: var(--declare-ink);
-}
-
-.content-text .update-card__body p {
-  max-width: 860px;
-  margin: 0;
-  color: var(--declare-muted);
-}
-
-.content-text .update-card__body a {
-  display: inline-flex;
-  margin-top: 0.65rem;
-}
-
 .content-text .lab-note-hero {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(380px, 1.05fr);
@@ -1253,8 +1190,7 @@
   }
 
   .content-text .person-card,
-  .content-text .updates-year,
-  .content-text .update-card {
+  .content-text .updates-year {
     grid-template-columns: 1fr;
   }
 
@@ -1299,7 +1235,6 @@
 .content-text .declare-kicker,
 .content-text .work-kicker,
 .content-text .project-tag,
-.content-text .update-card__meta,
 .content-text .notes-grid span,
 .content-text .funding-list span,
 .content-text .hot-paper-list > article > span {
@@ -1385,8 +1320,7 @@
 .content-text .opening-list article,
 .content-text .notes-grid article,
 .content-text .representative-card,
-.content-text .funding-list article,
-.content-text .update-card {
+.content-text .funding-list article {
   border-radius: 7px;
   box-shadow: 0 3px 14px color-mix(in srgb, var(--shadow-color) 4.5%, transparent);
 }
@@ -1395,8 +1329,7 @@
 .content-text .project-card:hover,
 .content-text .person-card:hover,
 .content-text .note-card-link:hover,
-.content-text .representative-card:hover,
-.content-text .update-card:hover {
+.content-text .representative-card:hover {
   border-color: var(--border-hover);
   box-shadow: 0 8px 22px color-mix(in srgb, var(--shadow-color) 7.5%, transparent);
   transform: translateY(-1px);
@@ -1410,8 +1343,7 @@
 .content-text .opening-list h3,
 .content-text .representative-card h3,
 .content-text .hot-paper-list h3,
-.content-text .funding-list h3,
-.content-text .update-card h3 {
+.content-text .funding-list h3 {
 }
 
 .content-text .updates-year > h2 {
@@ -1572,7 +1504,6 @@
 .content-text .work-kicker,
 .content-text .eyebrow,
 .content-text .project-tag,
-.content-text .update-card__meta,
 .content-text .notes-grid span,
 .content-text .funding-list span,
 .content-text .hot-paper-list > article > span {
@@ -1593,7 +1524,6 @@
 .content-text .notes-grid article,
 .content-text .representative-card,
 .content-text .funding-list article,
-.content-text .update-card,
 .content-text .collaboration-metrics article,
 .content-text .collab-inspector {
   border: 1px solid var(--border);
@@ -1607,8 +1537,7 @@
 .content-text .project-card:hover,
 .content-text .person-card:hover,
 .content-text .note-card-link:hover,
-.content-text .representative-card:hover,
-.content-text .update-card:hover {
+.content-text .representative-card:hover {
   border-color: var(--accent);
   border-left-color: var(--accent);
   box-shadow: none;
@@ -1631,7 +1560,6 @@
 .content-text .representative-card h3,
 .content-text .hot-paper-list h3,
 .content-text .funding-list h3,
-.content-text .update-card h3,
 .content-text .collab-inspector h3 {
 }
 
@@ -1680,7 +1608,6 @@
 [data-theme="dark"] .content-text .notes-grid article,
 [data-theme="dark"] .content-text .representative-card,
 [data-theme="dark"] .content-text .funding-list article,
-[data-theme="dark"] .content-text .update-card,
 [data-theme="dark"] .content-text .collaboration-metrics article,
 [data-theme="dark"] .content-text .collab-inspector {
   border-left-color: var(--accent);
@@ -1698,14 +1625,6 @@
 }
 
 /* Section headings carry the label chip alone; no page adds a rule of its own. */
-
-.content-text .updates-feed {
-  gap: 0.8rem;
-}
-
-.content-text .update-card {
-  padding: 1rem;
-}
 
 .content-text .collab-inspector {
   backdrop-filter: none;
@@ -1918,37 +1837,6 @@
 .content-text .funding-list--records p {
 }
 
-.content-text .updates-feed {
-  gap: 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.content-text .update-card,
-[data-theme="dark"] .content-text .update-card {
-  padding: 1.15rem 0;
-  border: 0;
-  border-top: 1px solid var(--border);
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
-}
-
-.content-text .update-card:last-child {
-  border-bottom: 0;
-}
-
-.content-text .update-card:hover {
-  border-color: var(--accent);
-  border-left: 0;
-  background: color-mix(in srgb, var(--accent-light) 35%, transparent);
-}
-
-.content-text .update-card__meta span {
-  padding: 0;
-  border: 0;
-  background: transparent;
-}
-
 .content-text .collaboration-takeaway {
   max-width: 74ch;
   margin: 1.25rem 0 0;
@@ -2128,8 +2016,8 @@
 
 /* Representative work is a thematic index, not a set of object cards. */
 .content-text .representative-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0 2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 1.35rem;
   border-bottom: 1px solid var(--border);
 }
 
@@ -2149,13 +2037,22 @@
 .content-text .representative-card__head,
 .content-text .representative-card--safety .representative-card__head,
 .content-text .representative-card--efficiency .representative-card__head {
-  padding: 1rem 0;
+  padding: 0.8rem 0 0.65rem;
   background: transparent;
 }
 
 .content-text .representative-list a {
+  min-height: 0;
+  padding-top: 0.55rem;
   padding-right: 0;
+  padding-bottom: 0.55rem;
   padding-left: 0;
+}
+
+@media (max-width: 1100px) {
+  .content-text .representative-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .content-text .representative-card:hover,
@@ -2247,6 +2144,15 @@
   align-items: stretch;
 }
 
+/* The research page is a project catalogue. Theme explanations live on the
+ * homepage, so a project grid should begin immediately below each heading. */
+.content-text .research-theme > .project-grid {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  border-bottom: 0;
+}
+
 .content-text .research-theme .project-card img {
   aspect-ratio: 11 / 5;
 }
@@ -2280,22 +2186,10 @@
 /* Keep all page-level calls to action on the same compact control scale. */
 
 /* One label system for research tags, update types, and compact metadata. */
-.content-text .update-card .update-card__meta span,
 .content-text .collaboration-metrics span,
 .content-text .note-card-link > span:first-of-type,
 .content-text .note-meta span {
   color: var(--accent);
-}
-
-.content-text .update-card .update-card__meta span {
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-}
-
-.content-text .update-card__meta time {
-  color: var(--text-secondary);
 }
 
 .content-text .collaboration-metrics strong {
@@ -2428,8 +2322,8 @@
  * horizontal, and every box is anchored by the edge that faces the hub, so the
  * connector lands on that edge's midpoint at any viewport width.
  *
- * The rings clear all six boxes: the bearing ring's widest point is x 70.5 and
- * the side boxes start at 72.2; the north and south boxes stop at r 24.45.
+ * At the side-box bearings the outer ring reaches x 32.25 and x 67.75; the
+ * wider side labels begin at x 32 and x 68. North and south stop at r 24.45.
  */
 .content-text .research-map {
   border: 1px solid var(--border);
@@ -2526,16 +2420,20 @@
 
 .content-text .research-node--trustworthiness,
 .content-text .research-node--ai-for-science {
-  right: 72.2%; /* inner edge x 27.8 */
+  right: 68%; /* inner edge x 32 */
+  width: 28cqw;
   border-right: 3px solid var(--accent);
   transform: translateY(-50%);
+  white-space: normal;
 }
 
 .content-text .research-node--multimodality,
 .content-text .research-node--efficiency {
-  left: 72.2%; /* inner edge x 72.2 */
+  left: 68%; /* inner edge x 68 */
+  width: 28cqw;
   border-left: 3px solid var(--accent);
   transform: translateY(-50%);
+  white-space: normal;
 }
 
 /* The flat approach segments run at y 27.75 and y 48.25 of 76. */
@@ -2584,9 +2482,16 @@
 
 @media (max-width: 700px) {
   .content-text .research-node {
-    width: 27cqw;
+    width: 29cqw;
     min-height: 44px;
     padding: 0.4rem 0.3rem;
+  }
+
+  .content-text .research-node--trustworthiness,
+  .content-text .research-node--multimodality,
+  .content-text .research-node--ai-for-science,
+  .content-text .research-node--efficiency {
+    width: 28cqw;
   }
 }
 
@@ -2646,7 +2551,6 @@
 
 /* Inner containers that were drawing a second line at a section boundary. */
 .content-text .representative-grid,
-.content-text .updates-feed,
 .content-text .join-section .opening-list {
   border-bottom: 0;
 }
@@ -2661,6 +2565,17 @@
   border-bottom: 1px solid var(--border);
   padding-bottom: var(--section-boundary-before);
   margin-bottom: var(--section-boundary-after);
+}
+
+.content-text .hero-actions--lab {
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+
+@media (max-width: 1160px) {
+  .content-text .declare-hero {
+    grid-template-columns: 1fr;
+  }
 }
 
 .content-text .declare-kicker {
@@ -2834,6 +2749,14 @@
   background: var(--bg-soft);
 }
 
+.content-text .people-layout .person-card__media {
+  display: grid;
+  min-width: 0;
+  justify-items: center;
+  align-content: start;
+  gap: 0.5rem;
+}
+
 .content-text .people-layout .person-card img,
 .content-text .people-layout .person-avatar {
   width: 100%;
@@ -2908,8 +2831,10 @@
   z-index: 2;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
   gap: 0.35rem;
-  margin-top: 0.7rem;
+  margin-top: 0;
 }
 
 .content-text .people-layout .person-links .person-action,
@@ -2999,7 +2924,7 @@
 }
 
 .content-text .people-layout .people-grid--alumni .person-links {
-  margin-top: 0.55rem;
+  margin-top: 0;
 }
 
 .content-text .people-layout .people-grid--alumni .person-links .person-action {
@@ -3007,6 +2932,29 @@
   min-width: 28px;
   height: 28px;
   min-height: 28px;
+}
+
+/* Balanced institutional composition. The shared shell owns the canvas and
+ * rail widths; these rules only arrange DeCLaRe-specific objects within it. */
+.content-text .declare-hero {
+  grid-template-columns: minmax(0, 1.14fr) minmax(300px, 0.86fr);
+  gap: clamp(1.5rem, 3vw, 2.25rem);
+  min-height: 0;
+  padding: 2.35rem 0 2.1rem;
+}
+
+.content-text .declare-hero__subhead {
+  max-width: 64ch;
+}
+
+.content-text .hero-actions--lab {
+  gap: 0.35rem;
+}
+
+@media (max-width: 1160px) {
+  .content-text .declare-hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 @media (max-width: 1180px) {

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Research Themes"
+title: "Research Projects"
 permalink: /research/
 author_profile: false
 related: false
@@ -8,24 +8,16 @@ toc: false
 classes: wide
 ---
 
-<section class="page-lead page-lead--compact">
-  <p>DeCLaRe works across six research themes: Safety, Trustworthiness, Multimodality, AI for Science, Efficiency, and Embodied AI. Recent notable work includes online memory for LLMs, dynamic data selection for efficient ML training, vision-language-action models, text-to-audio generation, trustworthy RAG, and operational AI safety.</p>
-</section>
-
 <div class="side-layout">
 <div class="side-layout__main">
+
+<section class="page-lead page-lead--compact">
+  <p>Papers, code, datasets, and project pages, grouped by research theme.</p>
+</section>
 
 <h2 id="safety" data-section-label="01">Safety</h2>
 
 <div class="research-theme">
-  <div>
-    <p>We study whether AI systems behave safely inside the situations they are built for, especially when LLM agents face off-topic, adversarial, or underspecified requests.</p>
-    <ul class="clean-list">
-      <li>Operational safety for task-specific LLM agents</li>
-      <li>Red-teaming, jailbreak analysis, and refusal behavior</li>
-      <li>Test-time alignment and model steering for safer responses</li>
-    </ul>
-  </div>
   <div class="project-grid">
     <article class="project-card project-card--large">
       <img loading="lazy" src="/assets/images/research/offtopiceval.png" alt="OffTopicEval operational safety evaluation visual">
@@ -94,14 +86,6 @@ classes: wide
 <h2 id="trustworthiness" data-section-label="02">Trustworthiness</h2>
 
 <div class="research-theme">
-  <div>
-    <p>We develop methods for AI systems that know when to answer, when to cite, when to refuse, and how to communicate uncertainty in grounded settings.</p>
-    <ul class="clean-list">
-      <li>Trustworthy retrieval-augmented generation</li>
-      <li>Grounded attribution and citation-aware generation</li>
-      <li>Trust calibration in multi-agent and human-facing systems</li>
-    </ul>
-  </div>
   <div class="project-grid">
     <article class="project-card project-card--large">
       <img loading="lazy" src="/assets/images/research/trust-align.png" alt="Trust-Score and Trust-Align retrieval augmented generation visual">
@@ -147,14 +131,6 @@ classes: wide
 <h2 id="multimodality" data-section-label="03">Multimodality</h2>
 
 <div class="research-theme">
-  <div>
-    <p>Multimodality is a long-running foundation of DeCLaRe Lab: we develop models and benchmarks that integrate language, vision, audio, video, and social context.</p>
-    <ul class="clean-list">
-      <li>Multimodal fusion and representation learning</li>
-      <li>Emotion, sentiment, sarcasm, and social signal understanding</li>
-      <li>Vision-language and audio-language reasoning benchmarks</li>
-    </ul>
-  </div>
   <div class="project-grid">
     <article class="project-card project-card--large">
       <img loading="lazy" src="/assets/images/resources/meld.png" alt="MELD dataset visual">
@@ -202,14 +178,6 @@ classes: wide
 <h2 id="ai-for-science" data-section-label="04">AI for Science</h2>
 
 <div class="research-theme">
-  <div>
-    <p>We explore how language models and agentic systems can help scientific reasoning: retrieving inspirations, forming hypotheses, ranking ideas, and synthesizing evidence.</p>
-    <ul class="clean-list">
-      <li>Scientific hypothesis discovery and rediscovery</li>
-      <li>Chemistry-focused benchmarks and multi-agent discovery pipelines</li>
-      <li>Open-domain scientific literature reasoning</li>
-    </ul>
-  </div>
   <div class="project-grid">
     <article class="project-card project-card--large">
       <img loading="lazy" src="/assets/images/research/moose-chem.png" alt="MOOSE-Chem visual">
@@ -241,14 +209,6 @@ classes: wide
 <h2 id="efficiency" data-section-label="05">Efficiency</h2>
 
 <div class="research-theme">
-  <div>
-    <p>We study methods that reduce the cost of training, adaptation, and inference without compromising reliability or downstream performance.</p>
-    <ul class="clean-list">
-      <li>Dynamic data selection and data-efficient training</li>
-      <li>Online memory, adapters, distillation, token retention, and long-context methods</li>
-      <li>Compact multimodal and embodied models for practical deployment</li>
-    </ul>
-  </div>
   <div class="project-grid">
     <article class="project-card project-card--large">
       <img loading="lazy" src="/assets/images/lab-notes/delta-mem/architecture.png" alt="δ-mem online memory architecture">
@@ -322,14 +282,6 @@ classes: wide
 <h2 id="embodied-ai" data-section-label="06">Embodied AI</h2>
 
 <div class="research-theme">
-  <div>
-    <p>We develop embodied agents that perceive, reason, and act, with emphasis on compact VLA models, action grounding, and interactive benchmarks.</p>
-    <ul class="clean-list">
-      <li>Vision-language-action models for robotic tasks</li>
-      <li>World-model and action-based preference rewards</li>
-      <li>Interactive reasoning benchmarks from perception to action</li>
-    </ul>
-  </div>
   <div class="project-grid">
     <article class="project-card project-card--large">
       <img loading="lazy" src="/assets/images/nora-1.5-arxiv-teaser.png" alt="NORA teaser">
