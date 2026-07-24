@@ -1,3 +1,7 @@
+---
+layout: null
+permalink: /nora-1.5/
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +12,7 @@
   <!-- Tailwind + Chart.js -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="/assets/css/style.css">
 
   <style>
     /* Overview small charts (responsive) */
@@ -28,18 +33,14 @@
 
     /* ---------- Teaser & Comparison Styles (inserted) ---------- */
     :root{--teaser-bg:#0b1220;--muted:#9aa4b2;--accent:#6ee7b7}
-/*    .teaser{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);border-radius:18px;padding:36px;display:flex;align-items:center;justify-content:center;position:relative;height:420px;box-shadow:0 10px 40px rgba(2,6,23,0.6), inset 0 1px rgba(255,255,255,0.02);margin:2rem 0}
-    .teaser-inner{display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
-    .teaser .image-placeholder{width:128px;height:128px;border-radius:18px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#4753ff,#9b6bff);border:4px solid rgba(255,255,255,0.03);color:#fff;font-size:42px;box-shadow:0 18px 40px rgba(66,53,160,0.28), 0 4px 14px rgba(2,6,23,0.6)}
-    .teaser .image-placeholder img{width:64px;height:64px;object-fit:contain}*/
-        .teaser{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);border-radius:18px;padding:36px;display:flex;align-items:center;justify-content:center;position:relative;height:auto;min-height:600px;box-shadow:0 10px 40px rgba(2,6,23,0.6), inset 0 1px rgba(255,255,255,0.02);margin:2rem 0}
+    .teaser{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);border-radius:18px;padding:36px;display:flex;align-items:center;justify-content:center;position:relative;height:auto;min-height:600px;box-shadow:0 10px 40px rgba(2,6,23,0.6), inset 0 1px rgba(255,255,255,0.02);margin:2rem 0}
     .teaser-inner{display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center;width:100%;max-width:1400px}
-    .teaser .image-placeholder{width:100%;max-width:1200px;height:auto;border-radius:18px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#4753ff,#9b6bff);border:4px solid rgba(255,255,255,0.03);color:#fff;font-size:42px;box-shadow:0 18px 40px rgba(66,53,160,0.28), 0 4px 14px rgba(2,6,23,0.6);overflow:hidden}
+    .teaser .image-placeholder{width:100%;max-width:1200px;height:auto;border-radius:18px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#4753ff,#9b6bff);border:4px solid rgba(255,255,255,0.03);color:#fff;font-size:var(--type-display);box-shadow:0 18px 40px rgba(66,53,160,0.28), 0 4px 14px rgba(2,6,23,0.6);overflow:hidden}
     .teaser .image-placeholder img{width:100%;height:auto;object-fit:contain;display:block}
-    .teaser .label{font-size:18px;color:var(--muted);margin-top:6px}
-    .teaser .teaser-title{font-size:20px;margin:0;font-weight:700}
-    .teaser .teaser-desc{color:var(--muted);font-size:13px;max-width:640px}
-    .upload-hint{margin-top:10px;font-size:12px;color:var(--muted)}
+    .teaser .label{font-size:var(--type-body);color:var(--muted);margin-top:6px}
+    .teaser .teaser-title{font-size:var(--type-card-title);margin:0;font-weight:var(--weight-card)}
+    .teaser .teaser-desc{color:var(--muted);font-size:var(--type-control);max-width:640px}
+    .upload-hint{margin-top:10px;font-size:var(--type-meta);color:var(--muted)}
 
     .compare{margin-top:28px;background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);margin-bottom:2rem}
     .compare .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -47,17 +48,31 @@
     .video-wrap{border-radius:8px;overflow:hidden;background:#000;display:flex;align-items:center;justify-content:center}
     video{width:100%;height:240px;object-fit:cover;display:block}
     .meta{display:flex;align-items:center;justify-content:space-between;margin-top:10px}
-    .meta .tag{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px}
-    .meta .tag.small{font-weight:500;font-size:12px;color:var(--muted);background:transparent}
-    .summary{margin-top:8px;color:var(--muted);font-size:13px;line-height:1.35}
-    .tagline{font-weight:700;margin-top:10px}
+    .meta .tag{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-weight:var(--weight-label);font-size:var(--type-control)}
+    .meta .tag.small{font-weight:var(--weight-meta);font-size:var(--type-meta);color:var(--muted);background:transparent}
+    .summary{margin-top:8px;color:var(--muted);font-size:var(--type-control);line-height:var(--compact-leading)}
+    .tagline{font-weight:var(--weight-card);margin-top:10px}
+
+    .project-page .text-6xl { font-size: var(--type-page-title) !important; }
+    .project-page h2.text-2xl,
+    .project-page h2.text-3xl,
+    .project-page h2.text-4xl { font-size: var(--type-section-title) !important; }
+    .project-page h3.text-2xl { font-size: var(--type-card-title) !important; }
+    .project-page .text-2xl:not(h2):not(h3) { font-size: var(--type-feature-title) !important; }
+    .project-page .text-lg { font-size: var(--type-body) !important; }
+    .project-page .text-sm { font-size: var(--type-small) !important; }
+    .project-page h1,
+    .project-page h2,
+    .project-page h3,
+    .project-page h4 { font-family: var(--font-sans); }
+    .project-page p { font-family: var(--font-serif); }
     .tagline .highlight{color:var(--accent)}
 
     @media (max-width:880px){.teaser{height:360px;padding:24px}.compare .grid{grid-template-columns:1fr}video{height:200px}}
     /* ---------- end inserted styles ---------- */
   </style>
 </head>
-<body class="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white">
+<body class="site-layout site-layout--lab project-page min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white">
   <header class="relative overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
     <div class="container mx-auto px-6 py-20 relative z-10">
@@ -266,8 +281,8 @@
 
       <div class="compare">
         <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px">
-          <div style="font-weight:700">Video Demo — Baseline vs Reward-driven DPO</div>
-          <div style="color:var(--muted);font-size:13px">Play both videos to observe motion differences</div>
+          <div style="font-weight:var(--weight-card)">Video Demo — Baseline vs Reward-driven DPO</div>
+          <div style="color:var(--muted);font-size:var(--type-control)">Play both videos to observe motion differences</div>
         </div>
 
         <div class="grid">
@@ -304,14 +319,6 @@
           </article>
         </div>
 
-<!--         <div style="margin-top:16px;color:var(--muted);font-size:13px">
-          <strong>Quick comparison:</strong>
-          <ul style="margin:8px 0 0 18px">
-            <li>Baseline: high motion variance, frequent target-loss.</li>
-            <li>DPO: stabilized policy with clean target acquisition.</li>
-            <li>Side-by-side playback highlights reduction in corrective actions.</li>
-          </ul>
-        </div> -->
       </div>
     </div>
   </section>

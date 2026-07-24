@@ -6,6 +6,7 @@ author_profile: false
 related: false
 toc: false
 classes: wide
+body_class: lab-note-page
 hide_title: true
 ---
 

@@ -90,7 +90,7 @@ themes:
         url: https://arxiv.org/abs/2511.14659
       - title: Project page
         meta: Interactive overview
-        url: /nora.html
+        url: /nora/
 
 hot_papers:
   - venue: arXiv 2026

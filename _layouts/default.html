@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 | default: 'en' }}" data-theme="light">
+<html class="declare-core" lang="{{ site.locale | slice: 0,2 | default: 'en' }}" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +11,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
 </head>
-<body>
+<body class="site-layout site-layout--lab{% if page.body_class %} {{ page.body_class }}{% endif %}">
   {% include nav.html %}
 
   <main class="site-main">
@@ -23,120 +23,6 @@
 
   {% include footer.html %}
 
-  <script>
-    const toggle = document.getElementById('theme-toggle');
-    if (toggle) {
-      const saved = localStorage.getItem('theme');
-      if (saved) document.documentElement.setAttribute('data-theme', saved);
-
-      const updateThemeControl = function() {
-        const current = document.documentElement.getAttribute('data-theme');
-        toggle.setAttribute('aria-label', current === 'dark' ? 'Use light theme' : 'Use dark theme');
-      };
-
-      updateThemeControl();
-      toggle.addEventListener('click', function() {
-        const current = document.documentElement.getAttribute('data-theme');
-        const next = current === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-        updateThemeControl();
-      });
-    }
-
-    const stickyMenus = Array.from(document.querySelectorAll('.home-index, .page-chip-strip, .pub-toolbar, .pub-year-nav, .section-nav'));
-    const sectionMenus = Array.from(document.querySelectorAll('.home-index, .page-chip-strip, .pub-year-nav, .section-nav'));
-    const header = document.querySelector('.site-header');
-    let stickyFrame = null;
-
-    function getMenuScroller(menu) {
-      if (menu.classList.contains('home-index')) return menu.querySelector('.home-index__links') || menu;
-      if (menu.classList.contains('pub-year-nav') || menu.classList.contains('section-nav')) return menu.querySelector('div') || menu;
-      return menu;
-    }
-
-    function keepActiveLinkVisible(menu, link) {
-      const isMobileMenu = window.matchMedia('(max-width: 720px)').matches;
-      if (!isMobileMenu || !link || menu._currentLink === link) return;
-
-      const scroller = getMenuScroller(menu);
-      if (!scroller || scroller.scrollWidth <= scroller.clientWidth + 2) {
-        menu._currentLink = link;
-        return;
-      }
-
-      const scrollerRect = scroller.getBoundingClientRect();
-      const linkRect = link.getBoundingClientRect();
-      const linkCenter = linkRect.left - scrollerRect.left + scroller.scrollLeft + (linkRect.width / 2);
-      const targetLeft = Math.max(0, linkCenter - (scroller.clientWidth / 2));
-
-      scroller.scrollTo({ left: targetLeft, behavior: 'smooth' });
-      menu._currentLink = link;
-    }
-
-    function updatePageMenus() {
-      const headerBottom = header ? header.getBoundingClientRect().bottom : 0;
-      const activationLine = headerBottom + Math.max(96, (window.innerHeight - headerBottom) * 0.62);
-
-      stickyMenus.forEach(function(menu) {
-        const rect = menu.getBoundingClientRect();
-        menu.classList.toggle('is-stuck', rect.top <= headerBottom + 18);
-      });
-
-      sectionMenus.forEach(function(menu) {
-        const links = Array.from(menu.querySelectorAll('a[href^="#"]'));
-        let current = null;
-        let firstAvailable = null;
-        let lastAvailable = null;
-        links.forEach(function(link) {
-          const id = decodeURIComponent(link.getAttribute('href').slice(1));
-          const section = document.getElementById(id);
-          if (!section) return;
-          if (!firstAvailable) firstAvailable = link;
-          lastAvailable = link;
-          if (section.getBoundingClientRect().top <= activationLine) current = link;
-        });
-        const documentEnd = Math.ceil(window.scrollY + window.innerHeight) >= document.documentElement.scrollHeight - 2;
-        if (!current && firstAvailable) current = firstAvailable;
-        if (documentEnd && lastAvailable) current = lastAvailable;
-        links.forEach(function(link) {
-          link.classList.toggle('is-current', link === current);
-        });
-        keepActiveLinkVisible(menu, current);
-      });
-      stickyFrame = null;
-    }
-
-    function requestMenuUpdate() {
-      if (!stickyFrame) stickyFrame = window.requestAnimationFrame(updatePageMenus);
-    }
-
-    if (stickyMenus.length) {
-      sectionMenus.forEach(function(menu) {
-        const links = Array.from(menu.querySelectorAll('a[href^="#"]'));
-        links.forEach(function(link) {
-          link.addEventListener('mouseenter', function() {
-            link.classList.add('is-hovered');
-            keepActiveLinkVisible(menu, link);
-          });
-          link.addEventListener('mouseleave', function() {
-            link.classList.remove('is-hovered');
-          });
-          link.addEventListener('focus', function() {
-            link.classList.add('is-hovered');
-            keepActiveLinkVisible(menu, link);
-          });
-          link.addEventListener('blur', function() {
-            link.classList.remove('is-hovered');
-          });
-        });
-      });
-
-      updatePageMenus();
-      window.addEventListener('scroll', requestMenuUpdate, { passive: true });
-      window.addEventListener('resize', requestMenuUpdate);
-      window.addEventListener('load', requestMenuUpdate);
-    }
-  </script>
+  <script src="{{ '/assets/declare-core/js/site.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 </body>
 </html>

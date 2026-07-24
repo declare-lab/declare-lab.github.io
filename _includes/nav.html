@@ -11,9 +11,16 @@
     <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
       {%- for link in site.data.navigation.main -%}
         {%- if link.url contains '://' -%}
-          <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.title }}</a>
+          <a href="{{ link.url }}" target="_blank" rel="noopener">
+            <i class="nav-icon {{ link.icon }}" aria-hidden="true"></i>
+            <span>{{ link.title }}</span>
+            <i class="nav-external fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          </a>
         {%- else -%}
-          <a href="{{ link.url | relative_url }}" {% if page.url == link.url %}class="active" aria-current="page"{% endif %}>{{ link.title }}</a>
+          <a href="{{ link.url | relative_url }}" {% if page.url == link.url %}class="active" aria-current="page"{% endif %}>
+            <i class="nav-icon {{ link.icon }}" aria-hidden="true"></i>
+            <span>{{ link.title }}</span>
+          </a>
         {%- endif -%}
       {%- endfor -%}
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Use dark theme">
@@ -28,39 +35,3 @@
   </div>
   <div class="nav-scrim" aria-hidden="true"></div>
 </header>
-<script>
-  (function() {
-    var menuToggle = document.querySelector('.menu-toggle');
-    var nav = document.querySelector('.nav-links');
-    var scrim = document.querySelector('.nav-scrim');
-    if (!menuToggle || !nav || !scrim) return;
-
-    function setMenu(open) {
-      nav.classList.toggle('open', open);
-      scrim.classList.toggle('open', open);
-      document.body.classList.toggle('menu-open', open);
-      menuToggle.setAttribute('aria-expanded', String(open));
-      menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-    }
-
-    menuToggle.addEventListener('click', function() {
-      setMenu(menuToggle.getAttribute('aria-expanded') !== 'true');
-    });
-
-    scrim.addEventListener('click', function() { setMenu(false); });
-    nav.querySelectorAll('a').forEach(function(link) {
-      link.addEventListener('click', function() { setMenu(false); });
-    });
-
-    document.addEventListener('keydown', function(event) {
-      if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
-        setMenu(false);
-        menuToggle.focus();
-      }
-    });
-
-    window.addEventListener('resize', function() {
-      if (window.innerWidth > 720) setMenu(false);
-    });
-  })();
-</script>

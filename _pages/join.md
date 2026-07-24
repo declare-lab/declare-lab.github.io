@@ -16,7 +16,7 @@ classes: wide
 <div class="side-layout__main">
 
 <section class="join-section">
-<h2 id="why-join-declare-lab" data-section-label="CULTURE">Research Culture at DeCLaRe</h2>
+<h2 id="why-join-declare-lab" data-section-label="01">Research Culture at DeCLaRe</h2>
 
 <div class="opportunity-grid">
   <article>
@@ -37,7 +37,7 @@ classes: wide
 <section class="join-section collaboration-section" id="collaboration-structure">
   <div class="declare-section__header">
     <div>
-      <h2 data-section-label="NETWORK">How Students Collaborate at DeCLaRe</h2>
+      <h2 data-section-label="02">How Students Collaborate at DeCLaRe</h2>
       <p class="section-note">Coauthorship patterns in the lab's publication archive show how internal, academic, and industry collaborations intersect.</p>
     </div>
   </div>
@@ -185,7 +185,7 @@ classes: wide
 </script>
 
 <section class="join-section">
-<h2 id="current-openings" data-section-label="ROLES">Current Openings</h2>
+<h2 id="current-openings" data-section-label="03">Current Openings</h2>
 
 <div class="opening-list">
   <article>
@@ -204,7 +204,7 @@ classes: wide
 </section>
 
 <section class="join-section">
-<h2 id="expected-backgrounds" data-section-label="PROFILE">Expected Backgrounds</h2>
+<h2 id="expected-backgrounds" data-section-label="04">Expected Backgrounds</h2>
 
 <p>Strong candidates often have experience in one or more of the following:</p>
 
@@ -223,7 +223,7 @@ classes: wide
 </section>
 
 <section class="join-section">
-<h2 id="how-to-apply" data-section-label="PROCESS">How to Apply</h2>
+<h2 id="how-to-apply" data-section-label="05">How to Apply</h2>
 
 <p>Please review the lab's <a href="https://drive.google.com/file/d/10lmu5YGDzr2Yw6kBFWwe7ifZ9Ec9WCl1/view?usp=sharing">research slides</a>, browse recent <a href="/publications/">publications</a>, and identify the research directions that genuinely connect with your interests.</p>
 
@@ -231,7 +231,7 @@ classes: wide
 </section>
 
 <section class="join-section">
-<h2 id="faq" data-section-label="DETAILS">FAQ</h2>
+<h2 id="faq" data-section-label="06">FAQ</h2>
 
 <div class="faq-list">
   <article>
@@ -251,9 +251,9 @@ classes: wide
 
 </div>
 
-<aside class="section-nav" aria-label="Join page sections">
-  <span>Sections</span>
-  <div>
+<aside class="section-menu section-menu--rail section-nav" data-section-menu aria-label="Join page sections">
+  <span class="section-menu__label">Sections</span>
+  <div class="section-menu__items" data-section-menu-scroll>
     <a href="#why-join-declare-lab">Research Culture</a>
     <a href="#collaboration-structure">Collaboration</a>
     <a href="#current-openings">Openings</a>

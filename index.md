@@ -12,7 +12,7 @@ title: ""
     <p class="declare-kicker">Deep Cognition and Language Research Lab</p>
     <h1>Research across Six Themes in <em>AI</em></h1>
     <p class="declare-hero__subhead">DeCLaRe is a research group at NTU working across Safety, Trustworthiness, Multimodality, AI for Science, Efficiency, and Embodied AI. Recent notable work includes online memory for LLMs, dynamic data selection for efficient ML training, vision-language-action models, text-to-audio generation, trustworthy RAG, and operational AI safety.</p>
-    <div class="hero-actions">
+    <div class="hero-actions hero-actions--lab">
       <a class="btn-primary" href="/research/"><i class="fa-solid fa-compass" aria-hidden="true"></i><span>Research Themes</span></a>
       <a class="btn-secondary" href="/publications/"><i class="fa-solid fa-book-open" aria-hidden="true"></i><span>Publications</span></a>
       <a class="btn-secondary" href="https://github.com/declare-lab" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a>
@@ -53,7 +53,7 @@ title: ""
 
 <section class="declare-intro lab-overview" id="about">
   <div>
-    <h2 data-section-label="PROFILE">About DeCLaRe</h2>
+    <h2 data-section-label="01">About DeCLaRe</h2>
   </div>
   <div class="lab-overview__body">
     <div class="lab-overview__copy">
@@ -76,7 +76,7 @@ title: ""
 <section class="declare-section declare-featured" id="research-areas">
   <div class="declare-section__header">
     <div>
-      <h2 data-section-label="AGENDA">Research Themes</h2>
+      <h2 data-section-label="02">Research Themes</h2>
       <p class="section-note">Six connected themes, each grounded in representative work from the group.</p>
     </div>
     <a class="btn-secondary" href="/research/">All research</a>
@@ -103,7 +103,7 @@ title: ""
 <section class="declare-section hot-papers" id="hot-papers">
   <div class="declare-section__header">
     <div>
-      <h2 data-section-label="CURRENT">Hot Papers 🔥</h2>
+      <h2 data-section-label="03">Hot Papers 🔥</h2>
       <p class="section-note">Four current anchors across the lab's research program.</p>
     </div>
     <a class="btn-secondary" href="/publications/">Publication archive</a>
@@ -125,7 +125,7 @@ title: ""
 <section class="declare-section research-support" id="research-support">
   <div class="declare-section__header">
     <div>
-      <h2 data-section-label="SUPPORT">Funded Research Directions</h2>
+      <h2 data-section-label="04">Funded Research Directions</h2>
       <p class="section-note">Active support spans embodied foundation models, trustworthy language generation, efficient architectures, and multimodal AI.</p>
     </div>
   </div>
@@ -140,9 +140,9 @@ title: ""
 
 </div>
 
-<aside class="section-nav" aria-label="Homepage sections">
-  <span>Sections</span>
-  <div>
+<aside class="section-menu section-menu--rail section-nav" data-section-menu aria-label="Homepage sections">
+  <span class="section-menu__label">Sections</span>
+  <div class="section-menu__items" data-section-menu-scroll>
     <a href="#about">About</a>
     <a href="#research-areas">Research Themes</a>
     <a href="#hot-papers">Hot Papers 🔥</a>

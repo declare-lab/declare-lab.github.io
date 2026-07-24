@@ -17,7 +17,7 @@ classes: wide
 <div class="side-layout__main">
 
 {% for section in site.data.funded_projects.sections %}
-<h2 id="{{ section.id }}" data-section-label="SET 0{{ forloop.index }}">{{ section.title }}</h2>
+<h2 id="{{ section.id }}" data-section-label="{{ forloop.index | prepend: '0' | slice: -2, 2 }}">{{ section.title }}</h2>
 
 <div class="funding-list funding-list--page funding-list--records{% if section.id == 'completed-support' %} funding-list--compact{% endif %}">
   {% for project in section.projects %}
@@ -32,9 +32,9 @@ classes: wide
 
 </div>
 
-<aside class="section-nav" aria-label="Funded project sections">
-  <span>Sections</span>
-  <div>
+<aside class="section-menu section-menu--rail section-nav" data-section-menu aria-label="Funded project sections">
+  <span class="section-menu__label">Sections</span>
+  <div class="section-menu__items" data-section-menu-scroll>
     {% for section in site.data.funded_projects.sections %}<a href="#{{ section.id }}">{{ section.title | replace: "Corporate and In-Kind ", "" }}</a>{% endfor %}
     <a href="#join-lab">Join the Lab</a>
   </div>
@@ -43,7 +43,7 @@ classes: wide
 
 <section class="join-band join-band--quiet funded-page-cta" id="join-lab">
   <div>
-    <h2 data-section-label="OPPORTUNITY">Work With DeCLaRe</h2>
+    <h2 data-section-label="{{ site.data.funded_projects.sections | size | plus: 1 | prepend: '0' | slice: -2, 2 }}">Work With DeCLaRe</h2>
     <p>Current funded directions create opportunities for students and collaborators whose research aligns with the lab.</p>
   </div>
   <a class="btn-primary" href="/join/">Open positions</a>

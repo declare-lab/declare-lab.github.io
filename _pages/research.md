@@ -15,7 +15,7 @@ classes: wide
 <div class="side-layout">
 <div class="side-layout__main">
 
-<h2 id="safety" data-section-label="THEME 01">Safety</h2>
+<h2 id="safety" data-section-label="01">Safety</h2>
 
 <div class="research-theme">
   <div>
@@ -91,7 +91,7 @@ classes: wide
   </div>
 </div>
 
-<h2 id="trustworthiness" data-section-label="THEME 02">Trustworthiness</h2>
+<h2 id="trustworthiness" data-section-label="02">Trustworthiness</h2>
 
 <div class="research-theme">
   <div>
@@ -144,7 +144,7 @@ classes: wide
   </div>
 </div>
 
-<h2 id="multimodality" data-section-label="THEME 03">Multimodality</h2>
+<h2 id="multimodality" data-section-label="03">Multimodality</h2>
 
 <div class="research-theme">
   <div>
@@ -199,7 +199,7 @@ classes: wide
   </div>
 </div>
 
-<h2 id="ai-for-science" data-section-label="THEME 04">AI for Science</h2>
+<h2 id="ai-for-science" data-section-label="04">AI for Science</h2>
 
 <div class="research-theme">
   <div>
@@ -238,7 +238,7 @@ classes: wide
   </div>
 </div>
 
-<h2 id="efficiency" data-section-label="THEME 05">Efficiency</h2>
+<h2 id="efficiency" data-section-label="05">Efficiency</h2>
 
 <div class="research-theme">
   <div>
@@ -319,7 +319,7 @@ classes: wide
   </div>
 </div>
 
-<h2 id="embodied-ai" data-section-label="THEME 06">Embodied AI</h2>
+<h2 id="embodied-ai" data-section-label="06">Embodied AI</h2>
 
 <div class="research-theme">
   <div>
@@ -338,8 +338,8 @@ classes: wide
         <h3>NORA and NORA 1.5</h3>
         <p>Small generalist vision-language-action models designed for efficient action grounding and dependable embodied behavior.</p>
         <div class="project-links">
-          <a href="/nora.html">Project</a>
-          <a href="/nora-1.5.html">NORA 1.5</a>
+          <a href="/nora/">Project</a>
+          <a href="/nora-1.5/">NORA 1.5</a>
           <a href="https://arxiv.org/abs/2504.19854">Paper</a>
         </div>
         <p class="project-team">Team: Chia-Yu Hung, Qi Sun, Pengfei Hong, Amir Zadeh, Chuan Li, U-Xuan Tan, Navonil Majumder, Soujanya Poria</p>
@@ -363,9 +363,9 @@ classes: wide
 
 </div>
 
-<aside class="section-nav" aria-label="Research themes">
-  <span>Themes</span>
-  <div>
+<aside class="section-menu section-menu--rail section-nav" data-section-menu aria-label="Research themes">
+  <span class="section-menu__label">Themes</span>
+  <div class="section-menu__items" data-section-menu-scroll>
     <a href="#safety">Safety</a>
     <a href="#trustworthiness">Trustworthiness</a>
     <a href="#multimodality">Multimodality</a>

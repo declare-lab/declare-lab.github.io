@@ -19,7 +19,7 @@ classes: wide
 
 <div class="pub-layout">
   <div class="pub-layout__main">
-    <section class="pub-toolbar" aria-label="Publication filters">
+    <section class="pub-toolbar pub-toolbar--sticky" aria-label="Publication filters">
       <input type="text" class="pub-search" id="pubSearch" placeholder="Search by title, author, venue, category, or abstract">
       <div class="pub-toolbar__row">
         <div class="pub-filter-row">
@@ -35,7 +35,7 @@ classes: wide
     {% include publication-year-nav.html class="pub-year-nav--mobile" %}
 
     {% for group in grouped %}
-    <h2 class="pub-year-heading" id="pub-year-{{ group.name }}" data-section-label="YEAR">{{ group.name }}</h2>
+    <h2 class="pub-year-heading" id="pub-year-{{ group.name }}">{{ group.name }}</h2>
 
     {% for pub in group.items %}
     {% assign category_string = pub.categories | join: "," %}
@@ -224,7 +224,7 @@ classes: wide
       button.className = "pub-cat-btn";
       button.type = "button";
       button.setAttribute("data-cat", category);
-      button.innerHTML = category + " <span>" + categoryCounts[category] + "</span>";
+      button.innerHTML = category + ' <span class="pub-cat-count">' + categoryCounts[category] + "</span>";
       button.onclick = function () { toggleCatFilter(category); };
       categoryContainer.appendChild(button);
     });

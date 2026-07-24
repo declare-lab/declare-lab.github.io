@@ -20,7 +20,7 @@ classes: wide
 
 {% for year in update_years %}
 <section class="updates-year" id="updates-{{ year.name }}">
-  <h2 data-section-label="YEAR">{{ year.name }}</h2>
+  <h2>{{ year.name }}</h2>
   <div class="updates-feed">
     {% for update in year.items %}
     {% assign kind_class = update.kind | downcase | replace: " ", "-" %}
@@ -47,8 +47,8 @@ classes: wide
 
 </div>
 
-<aside class="section-nav" aria-label="Update years">
-  <span>Years</span>
-  <div>{% for year in update_years %}<a href="#updates-{{ year.name }}">{{ year.name }}</a>{% endfor %}</div>
+<aside class="section-menu section-menu--rail section-nav" data-section-menu aria-label="Update years">
+  <span class="section-menu__label">Years</span>
+  <div class="section-menu__items" data-section-menu-scroll>{% for year in update_years %}<a href="#updates-{{ year.name }}">{{ year.name }}</a>{% endfor %}</div>
 </aside>
 </div>

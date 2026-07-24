@@ -16,7 +16,7 @@ classes: wide
 <div class="side-layout__main">
 
 <section class="notes-year" id="notes-2026">
-  <h2 data-section-label="YEAR">2026</h2>
+  <h2>2026</h2>
   <div class="notes-grid notes-grid--featured">
   <a class="note-card-link" href="/lab-notes/data-centric-training-part-ii/">
     <img loading="lazy" src="/assets/images/lab-notes/data-centric-training-part-ii/figure-01.png" alt="PODS oscillatory data-volume scheduling overview">
@@ -50,9 +50,9 @@ classes: wide
 
 </div>
 
-<aside class="section-nav" aria-label="Lab note years">
-  <span>Years</span>
-  <div>
+<aside class="section-menu section-menu--rail section-nav" data-section-menu aria-label="Lab note years">
+  <span class="section-menu__label">Years</span>
+  <div class="section-menu__items" data-section-menu-scroll>
     <a href="#notes-2026">2026</a>
   </div>
 </aside>

@@ -175,7 +175,7 @@ keep_files:
   - .git
   - .svn
 encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md,html"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 
 # Conversion
@@ -201,6 +201,8 @@ kramdown:
 # Sass/SCSS
 sass:
   sass_dir: _sass
+  load_paths:
+    - assets/declare-core/scss
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 

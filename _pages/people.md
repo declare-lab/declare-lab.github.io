@@ -24,7 +24,7 @@ classes: wide
 {% for section in site.data.people.sections %}
 <section class="people-section people-section--{{ section.id }}" id="{{ section.id }}">
 <div class="people-section__header">
-  <h2 data-section-label="0{{ forloop.index }}">{{ section.title }}</h2>
+  <h2 data-section-label="{{ forloop.index | prepend: '0' | slice: -2, 2 }}">{{ section.title }}</h2>
   <span class="people-section__count">{{ section.people | size }} {% if section.people.size == 1 %}member{% else %}members{% endif %}</span>
 </div>
 
@@ -76,9 +76,9 @@ classes: wide
 
 </div>
 
-<aside class="section-nav" aria-label="People sections">
-  <span>People</span>
-  <div>
+<aside class="section-menu section-menu--rail section-nav" data-section-menu aria-label="People sections">
+  <span class="section-menu__label">People</span>
+  <div class="section-menu__items" data-section-menu-scroll>
     {% for section in site.data.people.sections %}<a href="#{{ section.id }}">{{ section.title }}</a>{% endfor %}
   </div>
 </aside>

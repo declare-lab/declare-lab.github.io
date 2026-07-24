@@ -2,20 +2,28 @@
 main:
   - title: "Home"
     url: /
+    icon: "fa-solid fa-house"
   - title: "Research"
     url: /research/
+    icon: "fa-solid fa-compass"
   - title: "Funded Projects"
     url: /funded-projects/
+    icon: "fa-solid fa-award"
   - title: "People"
     url: /people/
+    icon: "fa-solid fa-users"
   - title: "Publications"
     url: /publications/
+    icon: "fa-solid fa-book-open"
   - title: "Join Us"
     url: /join/
+    icon: "fa-solid fa-user-plus"
   - title: "Updates"
     url: /updates/
+    icon: "fa-solid fa-bolt"
   - title: "Lab Notes"
     url: /lab-notes/
+    icon: "fa-solid fa-note-sticky"
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/

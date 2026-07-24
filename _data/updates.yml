@@ -126,7 +126,7 @@ items:
     and reward-guided post-training for embodied tasks.
   links:
   - label: NORA project
-    url: "/nora.html"
+    url: "/nora/"
 - year: 2025
   kind: Lab
   date: '2025'

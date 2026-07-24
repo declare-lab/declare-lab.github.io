@@ -2,15 +2,15 @@
 layout: default
 ---
 
-<div class="page-wrapper {% if page.toc %}has-toc{% endif %} {% if page.author_profile %}has-sidebar{% endif %}">
+<div class="page-wrapper site-shell {% if page.toc %}has-toc{% endif %} {% if page.author_profile %}has-sidebar{% endif %}">
 
   {% if page.author_profile %}
-  <aside class="sidebar">
+  <aside class="sidebar site-shell__sidebar">
     {% include author-profile.html %}
   </aside>
   {% endif %}
 
-  <article class="page-content">
+  <article class="page-content site-shell__content">
     {% if page.title and page.title != "" and page.hide_title != true %}
     <header class="page-header">
       <div class="page-meta-strip" aria-label="Institutional affiliation">
@@ -20,7 +20,7 @@ layout: default
     </header>
     {% endif %}
 
-    <div class="page-body">
+    <div class="page-body site-content">
       {% if page.toc %}
       <nav class="toc-nav">
         <div class="toc-sticky">
