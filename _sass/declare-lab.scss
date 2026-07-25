@@ -1413,7 +1413,7 @@
 .content-text .declare-kicker {
   margin-bottom: 1.5rem;
   padding-bottom: 0.9rem;
-  border-bottom: 2px solid var(--text);
+  border-bottom: var(--rule-heavy);
   color: var(--text-secondary);
 }
 
@@ -2579,7 +2579,7 @@
 }
 
 .content-text .declare-kicker {
-  border-bottom: 2px solid var(--text);
+  border-bottom: var(--rule-heavy);
 }
 
 /* Section navigation is visually quiet until it is actively docked. */
