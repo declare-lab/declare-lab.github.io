@@ -1837,8 +1837,9 @@
 .content-text .funding-list--records p {
 }
 
+/* Fills its column; a 74ch cap left ~175px dead to the right of the rule. */
 .content-text .collaboration-takeaway {
-  max-width: 74ch;
+  max-width: none;
   margin: 1.25rem 0 0;
   padding: 0.2rem 0 0.2rem 1rem;
   border-left: 3px solid var(--accent);
@@ -2940,11 +2941,11 @@
   grid-template-columns: minmax(0, 1.14fr) minmax(300px, 0.86fr);
   gap: clamp(1.5rem, 3vw, 2.25rem);
   min-height: 0;
-  padding: 2.35rem 0 2.1rem;
+  padding: 2rem 0 1.75rem;
 }
 
 .content-text .declare-hero__subhead {
-  max-width: 64ch;
+  max-width: 60ch;
 }
 
 .content-text .hero-actions--lab {
@@ -2954,6 +2955,8 @@
 @media (max-width: 1160px) {
   .content-text .declare-hero {
     grid-template-columns: minmax(0, 1fr);
+    gap: 1.35rem;
+    padding: 1.5rem 0 1.35rem;
   }
 }
 
@@ -2968,6 +2971,56 @@
 }
 
 @media (max-width: 720px) {
+  .content-text .declare-hero {
+    gap: 1rem;
+    padding: 1rem 0 1.1rem;
+  }
+
+  /* The desktop compass becomes a compact theme index on phones. The same six
+   * links remain available without making visitors scroll through a diagram
+   * before reaching the lab overview. */
+  .content-text .declare-hero__visual,
+  .content-text .research-map {
+    width: 100%;
+    max-width: none;
+  }
+
+  .content-text .research-map {
+    border: 0;
+    background: transparent;
+  }
+
+  .content-text .research-map__field {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.55rem;
+    aspect-ratio: auto;
+  }
+
+  .content-text .research-map__grid,
+  .content-text .research-map__logo,
+  [data-theme] .content-text .research-map__logo--light,
+  [data-theme] .content-text .research-map__logo--dark {
+    display: none;
+  }
+
+  .content-text .research-node,
+  .content-text .research-node--safety,
+  .content-text .research-node--trustworthiness,
+  .content-text .research-node--multimodality,
+  .content-text .research-node--ai-for-science,
+  .content-text .research-node--efficiency,
+  .content-text .research-node--embodied-ai {
+    position: static;
+    width: auto;
+    min-height: 44px;
+    padding: 0.55rem;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    transform: none;
+    white-space: normal;
+  }
+
   .content-text .people-layout .team-portrait {
     margin-bottom: 2rem;
   }

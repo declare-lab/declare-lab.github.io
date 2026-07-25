@@ -48,9 +48,6 @@ title: ""
   </div>
 </section>
 
-<div class="side-layout side-layout--home">
-<div class="side-layout__main">
-
 <section class="declare-intro lab-overview" id="about">
   <div>
     <h2 data-section-label="01">About DeCLaRe</h2>
@@ -72,102 +69,23 @@ title: ""
   </div>
 </section>
 
-<section class="declare-section declare-featured" id="research-areas">
-  <div class="declare-section__header">
-    <div>
-      <h2 data-section-label="02">Research Themes</h2>
-    </div>
-    <a class="btn-secondary" href="/research/">All research</a>
-  </div>
-  <div class="representative-grid">
-    {% for theme in site.data.home.themes %}
-    <article class="representative-card representative-card--{{ theme.id }}" data-theme="{{ theme.id }}">
-      <div class="representative-card__head">
-        <span class="project-tag">{{ theme.number }}</span>
-        <h3>{{ theme.name }}</h3>
-        <p>{{ theme.summary }}</p>
-      </div>
-      <div class="representative-list">
-        {% for work in theme.works limit: 2 %}
-        <a href="{{ work.url }}"><strong>{{ work.title }}</strong><span>{{ work.meta }}</span></a>
-        {% endfor %}
-        <a href="/research/#{{ theme.id }}"><strong>All {{ theme.name | downcase }} work</strong><span>Research</span></a>
-      </div>
-    </article>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="declare-section hot-papers" id="hot-papers">
-  <div class="declare-section__header">
-    <div>
-      <h2 data-section-label="03">Hot Papers 🔥</h2>
-    </div>
-    <a class="btn-secondary" href="/publications/">Publication archive</a>
-  </div>
-  <div class="hot-paper-list">
-    {% for paper in site.data.home.hot_papers %}
-    <article>
-      <span>{{ paper.venue }}</span>
-      <h3>{{ paper.title }}</h3>
-      <p>{{ paper.summary }}</p>
-      <div class="project-links">
-        {% for link in paper.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
-      </div>
-    </article>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="declare-section research-support" id="research-support">
-  <div class="declare-section__header">
-    <div>
-      <h2 data-section-label="04">Funded Research Directions</h2>
-    </div>
-  </div>
-  <div class="research-support__gateway">
-    <p>Active and completed research support.</p>
-    <div>
-      <a class="btn-primary" href="/funded-projects/">Funded projects</a>
-      <a class="btn-secondary" href="/join/">Research opportunities</a>
-    </div>
-  </div>
-</section>
-
-</div>
-
-<aside class="section-menu section-menu--rail section-nav" data-section-menu aria-label="Homepage sections">
-  <span class="section-menu__label">Sections</span>
-  <div class="section-menu__items" data-section-menu-scroll>
-    <a href="#about">About</a>
-    <a href="#research-areas">Research Themes</a>
-    <a href="#hot-papers">Hot Papers 🔥</a>
-    <a href="#research-support">Research Support</a>
-  </div>
-</aside>
-</div>
-
 <script>
   (function () {
     var map = document.getElementById("researchMap");
     if (!map) return;
 
     var nodes = Array.prototype.slice.call(map.querySelectorAll("[data-theme]"));
-    var related = Array.prototype.slice.call(document.querySelectorAll(".representative-card[data-theme]"));
 
     function setTheme(theme) {
       map.setAttribute("data-active-theme", theme);
       nodes.forEach(function (node) {
         node.classList.toggle("is-active", node.getAttribute("data-theme") === theme);
       });
-      related.forEach(function (item) {
-        item.classList.toggle("is-linked", item.getAttribute("data-theme") === theme);
-      });
     }
 
     function clearTheme() {
       map.removeAttribute("data-active-theme");
-      nodes.concat(related).forEach(function (item) { item.classList.remove("is-active", "is-linked"); });
+      nodes.forEach(function (item) { item.classList.remove("is-active"); });
     }
 
     nodes.forEach(function (node) {
