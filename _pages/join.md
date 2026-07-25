@@ -8,8 +8,7 @@ toc: false
 classes: wide
 ---
 
-<div class="side-layout">
-<div class="side-layout__main">
+<div class="page-flow">
 
 <section class="join-section">
 <h2 id="why-join-declare-lab" data-section-label="01">Research Culture at DeCLaRe</h2>
@@ -105,8 +104,8 @@ classes: wide
           <text text-anchor="middle"><tspan x="0" y="-8">Publication</tspan><tspan x="0" y="12">archive</tspan></text>
         </g>
         <g class="collab-node collab-node--current" transform="translate(185 175)">
-          <circle class="collab-node__halo" r="66"></circle>
-          <circle r="54"></circle>
+          <circle class="collab-node__halo" r="76"></circle>
+          <circle r="62"></circle>
           <text text-anchor="middle"><tspan x="0" y="-12">Internal</tspan><tspan x="0" y="7">DeCLaRe</tspan><tspan x="0" y="25">collaboration</tspan></text>
         </g>
         <g class="collab-node collab-node--pi" transform="translate(300 64)">
@@ -244,17 +243,4 @@ classes: wide
 </div>
 </section>
 
-</div>
-
-<aside class="section-menu section-menu--rail section-nav" data-section-menu aria-label="Join page sections">
-  <span class="section-menu__label">Sections</span>
-  <div class="section-menu__items" data-section-menu-scroll>
-    <a href="#why-join-declare-lab">Research Culture</a>
-    <a href="#collaboration-structure">Collaboration</a>
-    <a href="#current-openings">Openings</a>
-    <a href="#expected-backgrounds">Backgrounds</a>
-    <a href="#how-to-apply">How to Apply</a>
-    <a href="#faq">FAQ</a>
-  </div>
-</aside>
 </div>

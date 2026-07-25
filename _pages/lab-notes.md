@@ -8,8 +8,7 @@ toc: false
 classes: wide
 ---
 
-<div class="side-layout">
-<div class="side-layout__main">
+<div class="page-flow">
 
 <section class="notes-year" id="notes-2026">
   <h2>2026</h2>
@@ -44,12 +43,4 @@ classes: wide
   </div>
 </section>
 
-</div>
-
-<aside class="section-menu section-menu--rail section-nav" data-section-menu aria-label="Lab note years">
-  <span class="section-menu__label">Years</span>
-  <div class="section-menu__items" data-section-menu-scroll>
-    <a href="#notes-2026">2026</a>
-  </div>
-</aside>
 </div>

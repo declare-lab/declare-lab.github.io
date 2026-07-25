@@ -12,13 +12,7 @@ classes: wide
 {% assign sorted_pubs = lab_pubs | sort: "year" | reverse %}
 {% assign grouped = sorted_pubs | group_by: "year" %}
 
-<section class="page-lead page-lead--compact">
-  <p>DeCLaRe publications since 2019.</p>
-  <span class="data-verification">Citation metadata is periodically verified against Google Scholar</span>
-</section>
-
-<div class="pub-layout">
-  <div class="pub-layout__main">
+<div class="page-flow publication-archive">
     <section class="pub-toolbar pub-toolbar--sticky" aria-label="Publication filters">
       <input type="text" class="pub-search" id="pubSearch" placeholder="Search by title, author, venue, category, or abstract">
       <div class="pub-toolbar__row">
@@ -27,12 +21,18 @@ classes: wide
           <button class="pub-filter" type="button" data-filter="hot" onclick="setPubFilter('hot', this)">Highly cited ★</button>
           <button class="pub-filter" type="button" data-filter="pdf" onclick="setPubFilter('pdf', this)">Has PDF</button>
         </div>
+        <label class="pub-year-jump">
+          <span class="pub-year-jump__label">Year</span>
+          <select class="pub-year-select" data-year-jump aria-label="Jump to publication year">
+            <option value="">All years</option>
+            {% for group in grouped %}<option value="pub-year-{{ group.name }}">{{ group.name }}</option>{% endfor %}
+          </select>
+        </label>
         <span id="pubCount" class="pub-count-display">{{ lab_pubs | size }} papers since 2019</span>
       </div>
       <div class="pub-cat-row" id="categoryButtons"></div>
+      <span class="data-verification">Citation metadata is periodically verified against Google Scholar</span>
     </section>
-
-    {% include publication-year-nav.html class="pub-year-nav--mobile" %}
 
     {% for group in grouped %}
     <h2 class="pub-year-heading" id="pub-year-{{ group.name }}">{{ group.name }}</h2>
@@ -97,9 +97,6 @@ classes: wide
     </article>
     {% endfor %}
     {% endfor %}
-  </div>
-
-  {% include publication-year-nav.html class="pub-year-nav--desktop" %}
 </div>
 
 <script>

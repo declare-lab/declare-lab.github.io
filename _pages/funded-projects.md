@@ -8,13 +8,9 @@ toc: false
 classes: wide
 ---
 
-<section class="page-lead page-lead--compact">
-  <p>Active and completed research support.</p>
-  <span class="data-verification">Funding record verified {{ site.data.funded_projects.last_verified | date: "%B %Y" }}</span>
-</section>
+<div class="page-flow">
 
-<div class="side-layout">
-<div class="side-layout__main">
+<span class="data-verification">Funding record verified {{ site.data.funded_projects.last_verified | date: "%B %Y" }}</span>
 
 {% for section in site.data.funded_projects.sections %}
 <h2 id="{{ section.id }}" data-section-label="{{ forloop.index | prepend: '0' | slice: -2, 2 }}">{{ section.title }}</h2>
@@ -30,15 +26,6 @@ classes: wide
 </div>
 {% endfor %}
 
-</div>
-
-<aside class="section-menu section-menu--rail section-nav" data-section-menu aria-label="Funded project sections">
-  <span class="section-menu__label">Sections</span>
-  <div class="section-menu__items" data-section-menu-scroll>
-    {% for section in site.data.funded_projects.sections %}<a href="#{{ section.id }}">{{ section.title | replace: "Corporate and In-Kind ", "" }}</a>{% endfor %}
-    <a href="#join-lab">Join the Lab</a>
-  </div>
-</aside>
 </div>
 
 <section class="join-band join-band--quiet funded-page-cta" id="join-lab">

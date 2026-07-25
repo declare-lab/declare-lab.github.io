@@ -8,13 +8,9 @@ toc: false
 classes: wide
 ---
 
-<section class="page-lead page-lead--compact">
-  <p>Current members and alumni.</p>
-  <span class="data-verification">Roster updated {{ site.data.people.last_verified | date: "%B %Y" }}</span>
-</section>
+<div class="page-flow people-layout">
 
-<div class="side-layout people-layout">
-<div class="side-layout__main">
+<span class="data-verification">Roster updated {{ site.data.people.last_verified | date: "%B %Y" }}</span>
 
 <figure class="team-portrait">
   <img class="team-photo" src="/assets/images/resources/team.jpg" alt="Members of DeCLaRe Lab in 2021" loading="eager">
@@ -76,12 +72,4 @@ classes: wide
 </section>
 {% endfor %}
 
-</div>
-
-<aside class="section-menu section-menu--rail section-nav" data-section-menu aria-label="People sections">
-  <span class="section-menu__label">People</span>
-  <div class="section-menu__items" data-section-menu-scroll>
-    {% for section in site.data.people.sections %}<a href="#{{ section.id }}">{{ section.title }}</a>{% endfor %}
-  </div>
-</aside>
 </div>

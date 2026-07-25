@@ -42,7 +42,7 @@
 
 .content-text .declare-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.78fr);
+  grid-template-columns: minmax(0, 1fr) minmax(450px, 0.9fr);
   gap: 2rem;
   align-items: center;
   min-height: 480px;
@@ -96,7 +96,6 @@
 .content-text .declare-intro,
 .content-text .research-theme {
   display: grid;
-  grid-template-columns: minmax(220px, 0.45fr) minmax(0, 1fr);
   gap: 2rem;
   align-items: start;
 }
@@ -505,18 +504,18 @@
 }
 
 .content-text > h2[id],
-.content-text .side-layout__main > h2[id] {
+.content-text .page-flow > h2[id] {
   position: relative;
   margin-top: var(--section-boundary-before);
   padding-top: var(--section-boundary-after);
 }
 
-.content-text .side-layout__main > h2[id]:first-child {
+.content-text .page-flow > h2[id]:first-child {
   margin-top: 0;
 }
 
 .content-text > h2[id]::before,
-.content-text .side-layout__main > h2[id]::before {
+.content-text .page-flow > h2[id]::before {
   content: "";
   position: absolute;
   top: 0;
@@ -528,7 +527,7 @@
 }
 
 [data-theme="dark"] .content-text > h2[id]::before,
-[data-theme="dark"] .content-text .side-layout__main > h2[id]::before {
+[data-theme="dark"] .content-text .page-flow > h2[id]::before {
   background: var(--declare-blue);
 }
 
@@ -613,37 +612,6 @@
   margin: 1rem 0 3rem;
 }
 
-.content-text .research-theme .project-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: stretch;
-}
-
-.content-text .research-theme .project-card,
-.content-text .research-theme .project-card--large {
-  grid-column: auto;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.content-text .research-theme .project-card img {
-  aspect-ratio: 16 / 9;
-}
-
-.content-text .research-theme .project-card__body {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-}
-
-.content-text .research-theme .project-links {
-  margin-top: auto;
-  padding-top: 0.85rem;
-}
-
-.content-text .research-theme .project-team {
-  margin-top: 0.7rem;
-}
 
 .content-text .opening-list {
   display: grid;
@@ -1282,7 +1250,7 @@
 .content-text .declare-section__header h2,
 .content-text .join-band h2,
 .content-text > h2[id],
-.content-text .side-layout__main > h2[id] {
+.content-text .page-flow > h2[id] {
 }
 
 .content-text .declare-section {
@@ -1291,7 +1259,7 @@
 
 .content-text .declare-section__header > div::before,
 .content-text > h2[id]::before,
-.content-text .side-layout__main > h2[id]::before {
+.content-text .page-flow > h2[id]::before {
   width: 34px;
   height: 2px;
   border-radius: 0;
@@ -1395,9 +1363,6 @@
     padding: 2.75rem 0;
   }
 
-  .content-text .research-theme .project-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* ===== Technical report system, matched to the Soujanya Poria reference ===== */
@@ -1440,11 +1405,11 @@
   margin-top: 1.2rem;
 }
 
-.content-text .side-layout__main > h2[id],
-.content-text .side-layout__main > .declare-intro h2,
-.content-text .side-layout__main > .declare-section > .declare-section__header h2,
-.content-text .side-layout__main > section[id] > h2:first-child,
-.content-text .side-layout__main > section[id] > .declare-section__header h2 {
+.content-text .page-flow > h2[id],
+.content-text .page-flow > .declare-intro h2,
+.content-text .page-flow > .declare-section > .declare-section__header h2,
+.content-text .page-flow > section[id] > h2:first-child,
+.content-text .page-flow > section[id] > .declare-section__header h2 {
   display: flex;
   gap: 14px;
   align-items: center;
@@ -1454,11 +1419,11 @@
   color: var(--text);
 }
 
-.content-text .side-layout__main > h2[id]::before,
-.content-text .side-layout__main > .declare-intro h2::before,
-.content-text .side-layout__main > .declare-section > .declare-section__header h2::before,
-.content-text .side-layout__main > section[id] > h2:first-child::before,
-.content-text .side-layout__main > section[id] > .declare-section__header h2::before {
+.content-text .page-flow > h2[id]::before,
+.content-text .page-flow > .declare-intro h2::before,
+.content-text .page-flow > .declare-section > .declare-section__header h2::before,
+.content-text .page-flow > section[id] > h2:first-child::before,
+.content-text .page-flow > section[id] > .declare-section__header h2::before {
   content: attr(data-section-label);
   position: static;
   display: inline-flex;
@@ -1591,11 +1556,11 @@
   color: var(--accent-contrast);
 }
 
-[data-theme="dark"] .content-text .side-layout__main > h2[id]::before,
-[data-theme="dark"] .content-text .side-layout__main > .declare-intro h2::before,
-[data-theme="dark"] .content-text .side-layout__main > .declare-section > .declare-section__header h2::before,
-[data-theme="dark"] .content-text .side-layout__main > section[id] > h2:first-child::before,
-[data-theme="dark"] .content-text .side-layout__main > section[id] > .declare-section__header h2::before {
+[data-theme="dark"] .content-text .page-flow > h2[id]::before,
+[data-theme="dark"] .content-text .page-flow > .declare-intro h2::before,
+[data-theme="dark"] .content-text .page-flow > .declare-section > .declare-section__header h2::before,
+[data-theme="dark"] .content-text .page-flow > section[id] > h2:first-child::before,
+[data-theme="dark"] .content-text .page-flow > section[id] > .declare-section__header h2::before {
   color: var(--accent-contrast);
 }
 
@@ -1656,11 +1621,11 @@
     padding: 2.6rem 0;
   }
 
-  .content-text .side-layout__main > h2[id],
-  .content-text .side-layout__main > .declare-intro h2,
-  .content-text .side-layout__main > .declare-section > .declare-section__header h2,
-  .content-text .side-layout__main > section[id] > h2:first-child,
-  .content-text .side-layout__main > section[id] > .declare-section__header h2 {
+  .content-text .page-flow > h2[id],
+  .content-text .page-flow > .declare-intro h2,
+  .content-text .page-flow > .declare-section > .declare-section__header h2,
+  .content-text .page-flow > section[id] > h2:first-child,
+  .content-text .page-flow > section[id] > .declare-section__header h2 {
     gap: 10px;
   }
 
@@ -1869,9 +1834,6 @@
   min-width: 0;
 }
 
-.content-text .research-theme .project-card__body {
-  min-height: 295px;
-}
 
 .content-text img {
   max-width: 100%;
@@ -1953,9 +1915,6 @@
     grid-template-columns: 1fr;
   }
 
-  .content-text .research-theme .project-card__body {
-    min-height: 0;
-  }
 
   .content-text .collaboration-map svg {
     width: 100%;
@@ -2139,11 +2098,6 @@
   padding-left: 1.1rem;
 }
 
-.content-text .research-theme .project-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  align-items: stretch;
-}
 
 /* The research page is a project catalogue. Theme explanations live on the
  * homepage, so a project grid should begin immediately below each heading. */
@@ -2154,13 +2108,7 @@
   border-bottom: 0;
 }
 
-.content-text .research-theme .project-card img {
-  aspect-ratio: 11 / 5;
-}
 
-.content-text .research-theme .project-card__body {
-  min-height: 0;
-}
 
 @media (max-width: 820px) {
   .content-text .research-theme > div:first-child {
@@ -2179,9 +2127,6 @@
     grid-template-columns: 1fr;
   }
 
-  .content-text .research-theme .project-card img {
-    aspect-ratio: 16 / 9;
-  }
 }
 
 /* Keep all page-level calls to action on the same compact control scale. */
@@ -2323,8 +2268,9 @@
  * horizontal, and every box is anchored by the edge that faces the hub, so the
  * connector lands on that edge's midpoint at any viewport width.
  *
- * At the side-box bearings the outer ring reaches x 32.25 and x 67.75; the
- * wider side labels begin at x 32 and x 68. North and south stop at r 24.45.
+ * At the side-box bearings the outer ring reaches x 32.25 and x 67.75. The
+ * connectors meet labels at x 30.2 and x 69.8, leaving a visible frame inset.
+ * North and south stop at r 24.45.
  */
 .content-text .research-map {
   border: 1px solid var(--border);
@@ -2421,20 +2367,20 @@
 
 .content-text .research-node--trustworthiness,
 .content-text .research-node--ai-for-science {
-  right: 68%; /* inner edge x 32 */
-  width: 28cqw;
+  right: 69.8%;
+  width: 27.4cqw;
   border-right: 3px solid var(--accent);
   transform: translateY(-50%);
-  white-space: normal;
+  white-space: nowrap;
 }
 
 .content-text .research-node--multimodality,
 .content-text .research-node--efficiency {
-  left: 68%; /* inner edge x 68 */
-  width: 28cqw;
+  left: 69.8%;
+  width: 27.4cqw;
   border-left: 3px solid var(--accent);
   transform: translateY(-50%);
-  white-space: normal;
+  white-space: nowrap;
 }
 
 /* The flat approach segments run at y 27.75 and y 48.25 of 76. */
@@ -2516,6 +2462,7 @@
 .content-text .declare-section,
 .content-text .declare-intro,
 .content-text .research-theme,
+.content-text .theme-works,
 .content-text .people-grid,
 .content-text .funding-list--page,
 .content-text .join-section,
@@ -2583,11 +2530,9 @@
   border-bottom: var(--rule-heavy);
 }
 
-/* Section navigation is visually quiet until it is actively docked. */
-
 /* Generated archives and the funded-project CTA do not have the section
  * wrappers used elsewhere, so they close their pages explicitly. */
-.content-text .pub-layout__main::after {
+.content-text .publication-archive::after {
   display: block;
   margin-top: var(--section-boundary-before);
   border-bottom: 1px solid var(--border);
@@ -2611,12 +2556,12 @@
 }
 
 /* The final section closes the page, then site-main owns the only footer gap. */
-.content-text .side-layout__main > .declare-section:last-child,
-.content-text .side-layout__main > .research-theme:last-child,
-.content-text .side-layout__main > .people-grid:last-child,
-.content-text .side-layout__main > .join-section:last-child,
-.content-text .side-layout__main > .updates-year:last-child,
-.content-text .side-layout__main > .notes-year:last-child {
+.content-text .page-flow > .declare-section:last-child,
+.content-text .page-flow > .research-theme:last-child,
+.content-text .page-flow > .people-grid:last-child,
+.content-text .page-flow > .join-section:last-child,
+.content-text .page-flow > .updates-year:last-child,
+.content-text .page-flow > .notes-year:last-child {
   margin-bottom: 0;
 }
 
@@ -2938,7 +2883,7 @@
 /* Balanced institutional composition. The shared shell owns the canvas and
  * rail widths; these rules only arrange DeCLaRe-specific objects within it. */
 .content-text .declare-hero {
-  grid-template-columns: minmax(0, 1.14fr) minmax(300px, 0.86fr);
+  grid-template-columns: minmax(0, 1fr) minmax(460px, 0.9fr);
   gap: clamp(1.5rem, 3vw, 2.25rem);
   min-height: 0;
   padding: 2rem 0 1.75rem;
@@ -3065,5 +3010,73 @@
   }
 
   .content-text .people-layout .people-grid--faculty .person-card h3 {
+  }
+}
+
+/* ===== Research theme: motivation + selected work =====
+ * Each theme now opens with the question the work is trying to answer, then
+ * lists selected papers as ruled rows.
+ *
+ * This replaced a grid of figure cards. Half of those figures (10 of 20) were
+ * 404s rendering as tall empty boxes, the surviving figures were mostly white
+ * research diagrams that read as blank at thumbnail size, and no theme carried
+ * any statement of purpose -- the page was a wall of cards with nothing framing
+ * them. Rows also let a paper carry Paper / Code / Lab-note links together,
+ * which a single-link card title could not.
+ */
+.content-text .theme-brief {
+  max-width: none;
+  margin: var(--section-intro-gap) 0 1.5rem;
+  color: var(--text-secondary);
+}
+
+.content-text .theme-works {
+  display: grid;
+  border-top: 1px solid var(--border);
+}
+
+/* Meta rail carries the sub-area, so a theme's internal structure is scannable
+ * without opening anything. */
+.content-text .theme-work {
+  display: grid;
+  grid-template-columns: minmax(0, 170px) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.content-text .theme-work:last-child {
+  border-bottom: 0;
+}
+
+.content-text .theme-work__meta {
+  color: var(--accent);
+}
+
+.content-text .theme-work__copy {
+  min-width: 0;
+}
+
+.content-text .theme-work__copy h3 {
+  margin: 0 0 0.3rem;
+}
+
+.content-text .theme-work__copy p {
+  max-width: none;
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.content-text .theme-work__copy .project-links {
+  margin-top: 0.7rem;
+}
+
+/* The meta rail becomes a label above the entry once the row is too narrow to
+ * carry two columns. */
+@media (max-width: 720px) {
+  .content-text .theme-work {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.4rem;
   }
 }

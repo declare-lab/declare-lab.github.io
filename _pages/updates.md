@@ -10,8 +10,7 @@ classes: wide
 
 {% assign update_years = site.data.updates.items | group_by: "year" %}
 
-<div class="side-layout">
-<div class="side-layout__main">
+<div class="page-flow">
 
 <span class="data-verification">Updated {{ site.data.updates.last_verified | date: "%B %Y" }}</span>
 
@@ -46,10 +45,4 @@ classes: wide
 </section>
 {% endfor %}
 
-</div>
-
-<aside class="section-menu section-menu--rail section-nav" data-section-menu aria-label="Update years">
-  <span class="section-menu__label">Years</span>
-  <div class="section-menu__items" data-section-menu-scroll>{% for year in update_years %}<a href="#updates-{{ year.name }}">{{ year.name }}</a>{% endfor %}</div>
-</aside>
 </div>
