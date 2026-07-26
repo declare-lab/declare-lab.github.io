@@ -2424,6 +2424,21 @@
   }
 }
 
+/* The compass field carries a transparent band above its top box and below its
+ * bottom one — the boxes sit inside a 100x92 coordinate space and do not reach
+ * its edges. Aligned flush with the headline, that band pushed the first thing
+ * you actually see 57px below the first line of type, and left the figure
+ * hanging 176px past the end of the copy. Pulling the column up by the depth of
+ * that band lands "Safety" level with the headline instead of the empty space
+ * above it. The value tracks the column width, which is what the band scales
+ * with. Two-column layout only; below 1160px the hero stacks. */
+@media (min-width: 1161px) {
+  .content-text .declare-hero__visual {
+    margin-top: -12.4%;
+  }
+}
+
+
 .content-text .declare-kicker {
   border-bottom: var(--rule-heavy);
 }
@@ -2784,7 +2799,15 @@
   grid-template-columns: minmax(0, 1fr) minmax(460px, 0.9fr);
   gap: clamp(1.5rem, 3vw, 2.25rem);
   min-height: 0;
-  padding: 2rem 0 1.75rem;
+  /* Note: .content-text .declare-hero sets padding in five places in this file
+   * at identical specificity; this is the last one, so it is the one that
+   * applies. Worth consolidating.
+   *
+   * Little is needed at the foot. The compass field ends with the same
+   * transparent band it begins with, so it already leaves ~57px above the
+   * closing rule; a further 1.75rem on top read as an empty stripe between the
+   * hero and About. */
+  padding: 2rem 0 0.75rem;
 }
 
 .content-text .declare-hero__subhead {
