@@ -1,44 +1,43 @@
 scope: "Publication archive, 2019 onward"
 total_papers: 167
 method_note: "Percentages summarize papers from 2019 onward; DeCLaRe members include current members and alumni. Internal collaboration excludes the PI."
-metrics:
-  - label: "Papers analyzed"
-    value: "167"
-    detail: "Publication archive, 2019 onward"
-  - label: "Average authors per paper"
-    value: "5.6"
-    detail: "Median: 5 authors"
-  - label: "Non-PI DeCLaRe members per paper"
-    value: "1.5"
-    detail: "Current members and alumni; median: 1"
+# One entry per edge in the collaboration map. The legend beside the map is
+# generated from this list and keyed by `id`, so a relationship cannot appear
+# in one and not the other. `nodes` names the two circles an edge lights up.
 edges:
-  - source: "Internal DeCLaRe collaboration"
-    target: "Publication archive"
-    percent: 49.1
-    count: 82
-    takeaway: "At least two non-PI DeCLaRe members appear on the same paper"
-  - source: "Initiated in DeCLaRe"
-    target: "Publication archive"
-    percent: 84.4
-    count: 141
-    takeaway: "Counted when the first author is a DeCLaRe member or the PI is first, second, or last author"
-  - source: "DeCLaRe members"
-    target: "External collaborators"
-    percent: 89.8
-    count: 150
-    takeaway: "Most papers connect DeCLaRe members to broader research networks"
-  - source: "External collaborators"
-    target: "Academic partner papers"
-    percent: 98
-    count: 147
-    takeaway: "Externally collaborative papers with academic partners or public-academic collaborators"
-  - source: "External collaborators"
-    target: "Industry partner papers"
-    percent: 21.3
-    count: 32
-    takeaway: "Externally collaborative papers with industry partners; mixed academic-industry papers are counted here"
-external_types:
-  - label: "Academic partner papers"
-    detail: "147 of 150 externally collaborative papers"
-  - label: "Industry partner papers"
-    detail: "32 of 150 externally collaborative papers"
+  - id: "intra"
+    label: "Internal collaboration"
+    nodes: "internal archive"
+    percent: "49.1%"
+    count: "82 of 167 papers"
+    detail: "At least two non-PI DeCLaRe members appear on the same paper. Current members and alumni both count."
+  - id: "pi"
+    label: "Initiated in DeCLaRe"
+    nodes: "pi archive"
+    percent: "84.4%"
+    count: "141 of 167 papers"
+    detail: "The first author is a DeCLaRe member, or the PI is first, second, or last author."
+  - id: "external"
+    label: "External collaborators"
+    nodes: "archive external"
+    percent: "89.8%"
+    count: "150 of 167 papers"
+    detail: "Most papers connect DeCLaRe members to research networks beyond the lab."
+  - id: "theme"
+    label: "Crosses research themes"
+    nodes: "archive theme"
+    percent: "70.1%"
+    count: "117 of 167 papers"
+    detail: "The paper draws on more than one of the lab's six research themes."
+  - id: "academic"
+    label: "Academic partners"
+    nodes: "external academic"
+    percent: "98.0%"
+    count: "147 of 150 external papers"
+    detail: "Of the externally collaborative papers, nearly all involve academic or public-research partners."
+  - id: "industry"
+    label: "Industry partners"
+    nodes: "external industry"
+    percent: "21.3%"
+    count: "32 of 150 external papers"
+    detail: "Roughly a fifth of externally collaborative papers involve an industry partner. Mixed academic-industry papers count here."

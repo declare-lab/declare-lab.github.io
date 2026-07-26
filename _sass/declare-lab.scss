@@ -46,7 +46,13 @@
   gap: 2rem;
   align-items: center;
   min-height: 480px;
-  padding: 3.4rem 0 2.8rem;
+  /* The affiliation strip now sits above this section, so the landing page
+   * opens at exactly the same distance below the masthead as every inner page.
+   * Inside the hero the two columns stay vertically centred against each other,
+   * which is what the compass wants; that centring is why the strip could not
+   * stay in the left column — it drifted 94px lower than the identical strip on
+   * every other page. */
+  padding: 0 0 2.8rem;
   border-bottom: 1px solid var(--declare-line);
 }
 
@@ -200,11 +206,6 @@
 }
 
 /* Make opportunity cards stretch to equal heights */
-.content-text .opportunity-grid article {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
 
 /* Per-theme accent stripe - mirrors representative-card variants */
 
@@ -515,22 +516,6 @@
 }
 
 .content-text > h2[id]::before,
-.content-text .page-flow > h2[id]::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 3px;
-  border-radius: 2px;
-  background: var(--declare-blue);
-}
-
-[data-theme="dark"] .content-text > h2[id]::before,
-[data-theme="dark"] .content-text .page-flow > h2[id]::before {
-  background: var(--declare-blue);
-}
-
 .content-text .team-photo {
   display: block;
   width: min(520px, 100%);
@@ -582,25 +567,7 @@
   color: var(--text);
 }
 
-.content-text .name-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-  margin: 1rem 0 2rem;
-}
 
-.content-text .name-list a,
-.content-text .name-list span {
-  display: inline-flex;
-  align-items: center;
-  min-height: 36px;
-  padding: 0.42rem 0.7rem;
-  border: 1px solid var(--declare-line);
-  border-radius: 8px;
-  background: var(--bg-card);
-  color: var(--declare-blue-dark);
-  text-decoration: none;
-}
 
 .content-text .clean-list {
   margin: 1rem 0;
@@ -618,282 +585,63 @@
   gap: 0.85rem;
 }
 
-.content-text .collaboration-section {
-  margin: 2.2rem 0 2.6rem;
-  padding: 1.25rem 0 0;
-  border-top: 1px solid var(--declare-line);
-}
 
-.content-text .collaboration-layout {
-  display: grid;
-  grid-template-columns: minmax(240px, 0.38fr) minmax(0, 1fr);
-  gap: 1.2rem;
-  align-items: start;
-}
 
-.content-text .collaboration-metrics {
-  display: grid;
-  gap: 0.65rem;
-}
 
-.content-text .collaboration-metrics article {
-  padding: 1.1rem 1.15rem;
-  border: 1px solid var(--declare-line);
-  border-radius: 12px;
-  background: var(--bg-card);
-  transition: border-color 200ms ease, transform 200ms ease;
-}
 
-.content-text .collaboration-metrics article:hover {
-  border-color: color-mix(in srgb, var(--declare-blue) 36%, var(--declare-line));
-  transform: translateY(-1px);
-}
 
-.content-text .collaboration-metrics span {
-  display: block;
-  color: var(--declare-rose);
-}
 
-.content-text .collaboration-metrics strong {
-  display: block;
-  margin: 0.35rem 0 0.2rem;
-  color: var(--declare-ink);
-}
 
-.content-text .collaboration-metrics p {
-  margin: 0;
-  color: var(--declare-muted);
-}
 
 /* ============================================================
    Collaboration map - restrained, single-accent design
    Default: monochrome neutral. Active edge: brand gradient.
    ============================================================ */
 
-.content-text .collaboration-map {
-  position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 0;
-  min-height: auto;
-  overflow: hidden;
-  border: 1px solid var(--declare-line);
-  border-radius: 16px;
-  background: var(--bg-card);
-}
 
-[data-theme="dark"] .content-text .collaboration-map {
-  background: var(--bg-card);
-}
 
-.content-text .collaboration-map svg {
-  display: block;
-  width: 100%;
-  height: 520px;
-  min-height: 520px;
-}
 
-.content-text .collab-stop--rose { stop-color: var(--declare-rose); }
-.content-text .collab-stop--blue { stop-color: var(--declare-blue); }
-.content-text .collab-stop--teal { stop-color: var(--declare-teal); }
-.content-text .collab-stop--blue-soft { stop-color: var(--declare-blue-soft); }
-.content-text .collab-stop--blue-deep { stop-color: var(--declare-blue-deep); }
 
-.content-text .collab-link {
-  cursor: pointer;
-  outline: none;
-}
 
 /* All edges share the same quiet neutral by default. No gradients, no shadows. */
-.content-text .collab-link path {
-  fill: none;
-  stroke: var(--declare-line);
-  stroke-width: 2.5;
-  stroke-linecap: round;
-  opacity: 0.7;
-  filter: none;
-  transition: stroke 220ms ease, stroke-width 220ms ease, opacity 220ms ease;
-}
 
-[data-theme="dark"] .content-text .collab-link path {
-  stroke: color-mix(in srgb, var(--absolute-white) 14%, transparent);
-  opacity: 1;
-}
 
 /* Override the per-relationship SVG gradient strokes from the markup */
-.content-text .collab-link--intra path,
-.content-text .collab-link--external path,
-.content-text .collab-link--academic path,
-.content-text .collab-link--industry path,
-.content-text .collab-link--theme path,
-.content-text .collab-link--pi path {
-  stroke: var(--declare-line);
-  stroke-width: 2.5;
-}
 
-[data-theme="dark"] .content-text .collab-link--intra path,
-[data-theme="dark"] .content-text .collab-link--external path,
-[data-theme="dark"] .content-text .collab-link--academic path,
-[data-theme="dark"] .content-text .collab-link--industry path,
-[data-theme="dark"] .content-text .collab-link--theme path,
-[data-theme="dark"] .content-text .collab-link--pi path {
-  stroke: color-mix(in srgb, var(--absolute-white) 14%, transparent);
-  stroke-width: 2.5;
-}
 
 /* Active / hovered edge: lab brand gradient, full opacity, slightly thicker, soft glow */
-.content-text .collab-link:hover path,
-.content-text .collab-link:focus path,
-.content-text .collab-link.is-active path {
-  stroke: url(#collabEdgeIntra);
-  stroke-width: 5;
-  opacity: 1;
-  filter: drop-shadow(0 5px 12px color-mix(in srgb, var(--declare-blue) 34%, transparent));
-}
 
-[data-theme="dark"] .content-text .collab-link:hover path,
-[data-theme="dark"] .content-text .collab-link:focus path,
-[data-theme="dark"] .content-text .collab-link.is-active path {
-  filter: drop-shadow(0 5px 14px color-mix(in srgb, var(--declare-blue) 38%, transparent));
-}
 
 /* Edge labels: smaller, lighter, no heavy outline. Active gets the accent. */
-.content-text .collab-link text {
-  fill: var(--declare-muted);
-  paint-order: stroke;
-  stroke: var(--bg-card);
-  stroke-width: 4px;
-  transition: fill 220ms ease, font-size 220ms ease;
-}
 
-.content-text .collab-link:hover text,
-.content-text .collab-link:focus text,
-.content-text .collab-link.is-active text {
-  fill: var(--declare-ink);
-}
 
-[data-theme="dark"] .content-text .collab-link text {
-  stroke: var(--bg-card);
-}
 
 /* All nodes share the same calm card-on-card treatment. No per-type color palettes. */
-.content-text .collab-node__halo {
-  fill: transparent;
-  stroke: transparent;
-}
 
-.content-text .collab-node > circle:not(.collab-node__halo) {
-  fill: var(--bg-card);
-  stroke: var(--declare-line);
-  stroke-width: 1.5;
-  filter: drop-shadow(0 8px 18px color-mix(in srgb, var(--shadow-color) 8%, transparent));
-  transition: stroke 200ms ease, stroke-width 200ms ease;
-}
 
-[data-theme="dark"] .content-text .collab-node > circle:not(.collab-node__halo) {
-  fill: color-mix(in srgb, var(--dark-panel) 95%, transparent);
-  stroke: color-mix(in srgb, var(--absolute-white) 12%, transparent);
-  filter: drop-shadow(0 8px 22px color-mix(in srgb, var(--absolute-black) 50%, transparent));
-}
 
 /* The center "Publication archive" is the single visual anchor: brand gradient */
-.content-text .collab-node--archive .collab-node__halo {
-  fill: color-mix(in srgb, var(--declare-blue) 8%, transparent);
-  stroke: color-mix(in srgb, var(--declare-blue) 22%, transparent);
-  stroke-width: 1;
-}
 
-[data-theme="dark"] .content-text .collab-node--archive .collab-node__halo {
-  fill: color-mix(in srgb, var(--declare-blue) 10%, transparent);
-  stroke: color-mix(in srgb, var(--declare-blue) 24%, transparent);
-}
 
-.content-text .collab-node--archive > circle:not(.collab-node__halo) {
-  fill: url(#collabNodeCenter);
-  stroke: var(--declare-blue);
-  stroke-width: 2;
-  filter: drop-shadow(0 12px 28px color-mix(in srgb, var(--declare-blue) 32%, transparent));
-}
 
-[data-theme="dark"] .content-text .collab-node--archive > circle:not(.collab-node__halo) {
-  stroke: var(--declare-blue);
-  filter: drop-shadow(0 12px 28px color-mix(in srgb, var(--declare-blue) 36%, transparent));
-}
 
 /* When a link is active, its connected outer node gets a subtle accent ring.
    Hover-on-link doesn't propagate to nodes in CSS, so we keep node feedback
    purely structural: the same gradient halo as the center on the archive node. */
 
-.content-text .collab-node text {
-  fill: var(--declare-ink);
-  pointer-events: none;
-}
 
-.content-text .collab-node--archive text {
-  fill: var(--absolute-white);
-}
 
-.content-text .collab-node--small text {
-}
 
-.content-text .collab-node--pi text,
-.content-text .collab-node--theme text {
-}
 
-.content-text .collab-inspector {
-  width: auto;
-  margin: -0.5rem 1.25rem 1.25rem;
-  padding: 1rem 1.15rem;
-  border: 1px solid var(--declare-line);
-  border-radius: 12px;
-  background: color-mix(in srgb, var(--absolute-white) 78%, transparent);
-  box-shadow: 0 16px 38px color-mix(in srgb, var(--shadow-color) 8%, transparent);
-  backdrop-filter: saturate(180%) blur(16px);
-  -webkit-backdrop-filter: saturate(180%) blur(16px);
-}
 
-.content-text .collab-inspector span {
-  color: var(--declare-rose);
-}
 
-.content-text .collab-inspector h3 {
-  margin: 0.35rem 0 0.5rem;
-  color: var(--declare-ink);
-}
 
-.content-text .collab-inspector strong {
-  display: block;
-  background: none;
-  color: var(--declare-blue-dark);
-}
 
-[data-theme="dark"] .content-text .collab-inspector strong {
-  background: none;
-  color: var(--declare-blue-dark);
-}
 
-.content-text .collab-inspector p {
-  margin: 0.35rem 0 0;
-  color: var(--declare-muted);
-}
 
-[data-theme="dark"] .content-text .collab-inspector {
-  background: color-mix(in srgb, var(--bg-card) 90%, transparent);
-}
 
-[data-theme="dark"] .content-text .collab-node text {
-  fill: color-mix(in srgb, var(--dark-text) 96%, transparent);
-}
 
-[data-theme="dark"] .content-text .collab-link text {
-  fill: color-mix(in srgb, var(--dark-muted) 90%, transparent);
-}
 
-[data-theme="dark"] .content-text .collab-link:hover text,
-[data-theme="dark"] .content-text .collab-link:focus text,
-[data-theme="dark"] .content-text .collab-link.is-active text {
-  fill: var(--dark-text);
-}
 
 .content-text .lab-note-hero {
   display: grid;
@@ -1166,21 +914,8 @@
     grid-template-columns: 1fr;
   }
 
-  .content-text .collaboration-map {
-    grid-template-columns: 1fr;
-    min-height: auto;
-  }
 
-  .content-text .collaboration-map svg {
-    height: auto;
-    min-height: 390px;
-  }
 
-  .content-text .collab-inspector {
-    position: static;
-    width: auto;
-    margin: -0.35rem 1rem 0.85rem;
-  }
 
   .content-text .hot-paper-list article,
   .content-text .hot-paper-list article:nth-child(even),
@@ -1259,13 +994,6 @@
 
 .content-text .declare-section__header > div::before,
 .content-text > h2[id]::before,
-.content-text .page-flow > h2[id]::before {
-  width: 34px;
-  height: 2px;
-  border-radius: 0;
-  background: var(--declare-blue);
-}
-
 .content-text .section-note {
   color: var(--declare-muted);
 }
@@ -1419,11 +1147,17 @@
   color: var(--text);
 }
 
-.content-text .page-flow > h2[id]::before,
-.content-text .page-flow > .declare-intro h2::before,
-.content-text .page-flow > .declare-section > .declare-section__header h2::before,
-.content-text .page-flow > section[id] > h2:first-child::before,
-.content-text .page-flow > section[id] > .declare-section__header h2::before {
+/* The chip is drawn only where there is a label to draw. This used to paint on
+ * any section heading and rely on a separate :not([data-section-label]) rule to
+ * suppress it, but that guard was two specificity steps weaker than the
+ * selectors here, so unlabelled headings — the year headings on Updates and
+ * Publications — rendered an empty accent rectangle. Requiring the attribute on
+ * the painting selectors removes the need for a guard at all. */
+.content-text .page-flow > h2[id][data-section-label]::before,
+.content-text .page-flow > .declare-intro h2[data-section-label]::before,
+.content-text .page-flow > .declare-section > .declare-section__header h2[data-section-label]::before,
+.content-text .page-flow > section[id] > h2:first-child[data-section-label]::before,
+.content-text .page-flow > section[id] > .declare-section__header h2[data-section-label]::before {
   content: attr(data-section-label);
   position: static;
   display: inline-flex;
@@ -1496,6 +1230,10 @@
   border-radius: 0;
   background: var(--bg-card);
   box-shadow: none;
+  /* Justification needs a measure to work with. In a card column — often
+   * under 300px in a three-up grid — it opens rivers between words instead.
+   * Cards set their own alignment; full-width prose keeps the global one. */
+  --prose-align: left;
 }
 
 
@@ -1559,7 +1297,7 @@
 [data-theme="dark"] .content-text .page-flow > h2[id]::before,
 [data-theme="dark"] .content-text .page-flow > .declare-intro h2::before,
 [data-theme="dark"] .content-text .page-flow > .declare-section > .declare-section__header h2::before,
-[data-theme="dark"] .content-text .page-flow > section[id] > h2:first-child::before,
+[data-theme="dark"] .content-text .page-flow > section[id] > h2:first-child[data-section-label]::before,
 [data-theme="dark"] .content-text .page-flow > section[id] > .declare-section__header h2::before {
   color: var(--accent-contrast);
 }
@@ -1591,14 +1329,7 @@
 
 /* Section headings carry the label chip alone; no page adds a rule of its own. */
 
-.content-text .collab-inspector {
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-}
 
-.content-text .collab-inspector strong {
-  color: var(--accent);
-}
 
 @media (max-width: 1020px) {
   .content-text .declare-hero {
@@ -1754,26 +1485,8 @@
 }
 
 /* Cards are reserved for comparable projects, people, and active opportunities. */
-.content-text .opportunity-grid article,
-.content-text .collaboration-metrics article {
-  min-height: 0;
-  padding: 1rem 0;
-  border: 0;
-  border-top: 1px solid var(--text);
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
-}
 
-.content-text .opportunity-grid article:hover,
-.content-text .collaboration-metrics article:hover {
-  border-top-color: var(--accent);
-  transform: none;
-}
 
-.content-text .opportunity-grid article h3 {
-  margin-top: 0;
-}
 
 .content-text .funding-list--records {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1803,13 +1516,6 @@
 }
 
 /* Fills its column; a 74ch cap left ~175px dead to the right of the rule. */
-.content-text .collaboration-takeaway {
-  max-width: none;
-  margin: 1.25rem 0 0;
-  padding: 0.2rem 0 0.2rem 1rem;
-  border-left: 3px solid var(--accent);
-  color: var(--text-secondary);
-}
 
 .content-text .project-card img,
 .content-text .research-theme .project-card img {
@@ -1846,13 +1552,7 @@
   color: var(--text-secondary);
 }
 
-.content-text .collaboration-map {
-  border-radius: 0;
-}
 
-.content-text .collab-inspector {
-  border-radius: 0;
-}
 
 @media (max-width: 1020px) {
   .content-text .declare-intro.lab-overview,
@@ -1916,17 +1616,7 @@
   }
 
 
-  .content-text .collaboration-map svg {
-    width: 100%;
-    height: auto;
-    min-height: 0;
-    aspect-ratio: 760 / 520;
-  }
 
-  .content-text .collab-inspector {
-    margin: 0;
-    border-width: 1px 0 0;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2138,21 +1828,9 @@
   color: var(--accent);
 }
 
-.content-text .collaboration-metrics strong {
-  color: var(--text);
-}
 
-.content-text .collaboration-metrics p {
-  margin-bottom: 0;
-}
 
-.content-text .collab-inspector strong {
-  color: var(--accent);
-}
 
-.content-text .collab-inspector > span {
-  color: var(--accent);
-}
 
 .content-text .note-meta span {
   border-radius: 0;
@@ -2272,15 +1950,19 @@
  * connectors meet labels at x 30.2 and x 69.8, leaving a visible frame inset.
  * North and south stop at r 24.45.
  */
+/* No outer frame. The label boxes carry 1px rules in the same colour and
+ * weight, so a frame around them read as one more competing rectangle rather
+ * than as containment. The compass -- hub, rings, six legs -- defines its own
+ * edge. */
 .content-text .research-map {
-  border: 1px solid var(--border);
-  background: var(--bg-card);
+  border: 0;
+  background: transparent;
 }
 
 .content-text .research-map__field {
   container-type: inline-size;
   position: relative;
-  aspect-ratio: 100 / 76;
+  aspect-ratio: 100 / 92;
 }
 
 .content-text .research-map__grid {
@@ -2296,28 +1978,48 @@
 
 .content-text .research-map__ring {
   fill: none;
-  stroke: color-mix(in srgb, var(--accent) 26%, transparent);
+  stroke: color-mix(in srgb, var(--accent) 30%, transparent);
   stroke-width: 1;
+}
+
+/* The bearing ring carries the connectors, so it reads as structure rather
+ * than decoration and is drawn a step heavier than the inner one. */
+.content-text .research-map__ring--outer {
+  stroke: color-mix(in srgb, var(--text) 26%, transparent);
+  stroke-width: 1.25;
+}
+
+.content-text .research-map__ticks path {
+  fill: none;
+  stroke: color-mix(in srgb, var(--text) 34%, transparent);
+  stroke-width: 1.25;
+  stroke-linecap: round;
 }
 
 .content-text .research-map__spoke {
   fill: none;
-  stroke: color-mix(in srgb, var(--accent) 34%, var(--border));
-  stroke-width: 1;
+  stroke: color-mix(in srgb, var(--text) 38%, transparent);
+  stroke-width: 1.4;
+  stroke-linecap: round;
   transition: stroke 180ms ease, stroke-width 180ms ease;
 }
 
+/* The hub is the same surface as the six theme boxes — the site's card colour,
+ * ringed in the accent. Filling it with ink (or with white in dark mode) made
+ * the centre a black or white hole that belonged to no part of the palette.
+ * Matching the theme costs nothing in legibility: the logo's eyes read at
+ * 3.54:1 and 2.78:1 here, slightly better than they did on the inverted disc. */
 .content-text .research-map__hub {
   fill: var(--bg-card);
   stroke: var(--accent);
-  stroke-width: 1.5;
+  stroke-width: 2.5;
 }
 
 .content-text .research-map__logo {
   position: absolute;
   inset: 50% auto auto 50%;
   width: auto;
-  height: 20cqw;
+  height: 17cqw;
   transform: translate(-50%, -50%);
   display: none;
 }
@@ -2335,63 +2037,76 @@
 .content-text .research-node {
   position: absolute;
   display: flex;
-  width: 23.5cqw;
+  width: 26cqw;
   min-height: 44px;
   align-items: center;
   justify-content: center;
   padding: 0.5rem 0.4rem;
+  /* One uniform rule on every side. The accent edge is drawn as an inset
+   * shadow instead of a border so showing and hiding it cannot move the box:
+   * --edge-x / --edge-y point it at whichever side faces the hub. */
+  --edge-x: 0;
+  --edge-y: 0;
   border: 1px solid var(--border);
+  box-shadow: inset var(--edge-x) var(--edge-y) 0 0 transparent;
   background: var(--bg-card);
   color: var(--text);
+  font-family: var(--font-display);
+  font-size: var(--type-small);
+  font-weight: 600;
+  letter-spacing: -0.005em;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
-  transition: background-color 180ms ease, border-color 180ms ease, opacity 180ms ease;
+  transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, opacity 180ms ease;
 }
 
 /* The accent bar sits on the edge that faces the hub, so all six point inward
  * and each connector docks into its own bar. */
+/* Each box presents its near edge at radius 24 in the 100x92 field, so all six
+ * sit the same distance from the centre. Previously the vertical pair were 24.45
+ * units out and the side pair 19.8, which is what made the ring look lopsided.
+ * The percentages are symmetric by construction: the vertical pair share one
+ * offset, the four diagonals share another, and each pair of tops sums to 100. */
 .content-text .research-node--safety {
-  bottom: 82.171%; /* inner edge y 13.55 of 76 */
+  bottom: 76.087%; /* near edge y 22 of 92 */
   left: 50%;
-  border-bottom: 3px solid var(--accent);
+  --edge-y: -3px;
   transform: translateX(-50%);
 }
 
 .content-text .research-node--embodied-ai {
-  top: 82.171%; /* inner edge y 62.45 of 76 */
+  top: 76.087%; /* near edge y 70 of 92 */
   left: 50%;
-  border-top: 3px solid var(--accent);
+  --edge-y: 3px;
   transform: translateX(-50%);
 }
 
 .content-text .research-node--trustworthiness,
 .content-text .research-node--ai-for-science {
-  right: 69.8%;
-  width: 27.4cqw;
-  border-right: 3px solid var(--accent);
+  right: 71.7%; /* near edge x 28.3 */
+  --edge-x: -3px;
   transform: translateY(-50%);
   white-space: nowrap;
 }
 
 .content-text .research-node--multimodality,
 .content-text .research-node--efficiency {
-  left: 69.8%;
-  width: 27.4cqw;
-  border-left: 3px solid var(--accent);
+  left: 71.7%; /* near edge x 71.7 */
+  --edge-x: 3px;
   transform: translateY(-50%);
   white-space: nowrap;
 }
 
-/* The flat approach segments run at y 27.75 and y 48.25 of 76. */
+/* The elbow approach segments run at y 35.75 and y 56.25 of 92. */
 .content-text .research-node--trustworthiness,
 .content-text .research-node--multimodality {
-  top: 36.513%;
+  top: 38.859%;
 }
 
 .content-text .research-node--ai-for-science,
 .content-text .research-node--efficiency {
-  top: 63.487%;
+  top: 61.141%;
 }
 
 .content-text .research-node:hover,
@@ -2399,6 +2114,7 @@
 .content-text .research-node.is-active,
 [data-theme="dark"] .content-text .research-node.is-active {
   border-color: var(--accent);
+  box-shadow: inset var(--edge-x) var(--edge-y) 0 0 var(--accent);
   background: color-mix(in srgb, var(--accent-light) 58%, var(--bg-card));
   color: var(--text);
   opacity: 1;
@@ -2416,7 +2132,7 @@
 .content-text .research-map[data-active-theme="efficiency"] .research-map__spoke[data-spoke="efficiency"],
 .content-text .research-map[data-active-theme="embodied-ai"] .research-map__spoke[data-spoke="embodied-ai"] {
   stroke: var(--accent);
-  stroke-width: 2;
+  stroke-width: 2.5;
 }
 
 /* Once the hero stacks, the figure would otherwise stretch to the full column
@@ -2429,17 +2145,12 @@
 
 @media (max-width: 700px) {
   .content-text .research-node {
-    width: 29cqw;
+    width: 28cqw;
     min-height: 44px;
     padding: 0.4rem 0.3rem;
   }
 
-  .content-text .research-node--trustworthiness,
-  .content-text .research-node--multimodality,
-  .content-text .research-node--ai-for-science,
-  .content-text .research-node--efficiency {
-    width: 28cqw;
-  }
+  /* Widths stay equal across all six at every size. */
 }
 
 /* ===== Section separation (single source of truth) =====
@@ -2501,6 +2212,240 @@
 .content-text .representative-grid,
 .content-text .join-section .opening-list {
   border-bottom: 0;
+}
+
+/* ── Collaboration network ─────────────────────────────────────────
+ * A legend that is also the control. Every relationship is listed with
+ * its figure; hovering a row lights the matching edge and the two circles
+ * it joins, and hovering the map drives the list the same way. The old
+ * layout put a detail panel under the graph, far from the edge being
+ * pointed at, so the number and the thing it described never appeared
+ * together. */
+.content-text .collab {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.42fr) minmax(0, 1fr);
+  gap: 1.75rem;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+.content-text .collab-legend {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--border);
+  /* Same reason as the cards: this column is far too narrow to justify. */
+  --prose-align: left;
+}
+
+.content-text .collab-legend li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.content-text .collab-legend__row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: 0.75rem;
+  width: 100%;
+  padding: 0.7rem 0.75rem 0.7rem 0.65rem;
+  border: 0;
+  border-left: 3px solid transparent;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.content-text .collab-legend__row:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.content-text .collab-legend__row.is-active {
+  border-left-color: var(--accent);
+  background: var(--bg-card);
+}
+
+.content-text .collab-legend__pct {
+  grid-row: 1 / span 2;
+  align-self: start;
+  min-width: 3.4rem;
+  font-family: var(--font-display);
+  font-size: var(--type-feature-title);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.15;
+  color: var(--text-secondary);
+  transition: color 160ms ease;
+}
+
+.content-text .collab-legend__row.is-active .collab-legend__pct {
+  color: var(--accent);
+}
+
+.content-text .collab-legend__label {
+  font-family: var(--font-display);
+  font-size: var(--type-body);
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--text);
+}
+
+.content-text .collab-legend__count {
+  font-family: var(--font-mono);
+  font-size: var(--type-meta);
+  color: var(--text-secondary);
+}
+
+/* The detail sentence belongs to the selected row only. Collapsing it on the
+ * others keeps six relationships readable at a glance instead of six
+ * paragraphs competing for attention. */
+.content-text .collab-legend__detail {
+  grid-column: 2;
+  overflow: hidden;
+  max-height: 0;
+  margin-top: 0;
+  font-size: var(--type-small);
+  line-height: 1.5;
+  color: var(--text-secondary);
+  opacity: 0;
+  transition: max-height 200ms ease, opacity 160ms ease, margin-top 200ms ease;
+}
+
+.content-text .collab-legend__row.is-active .collab-legend__detail {
+  max-height: 7rem;
+  margin-top: 0.4rem;
+  opacity: 1;
+}
+
+.content-text .collab-graph {
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+}
+
+.content-text .collab-graph svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 760 / 520;
+}
+
+/* Edges. Everything unselected recedes so one relationship reads at a time. */
+.content-text .collab-edge {
+  cursor: pointer;
+}
+
+.content-text .collab-edge path {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 2;
+  stroke-linecap: round;
+  transition: stroke 200ms ease, stroke-width 200ms ease, opacity 200ms ease;
+}
+
+.content-text .collab-edge text {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  fill: var(--text-secondary);
+  paint-order: stroke;
+  stroke: var(--bg-card);
+  stroke-width: 4px;
+  transition: fill 200ms ease, opacity 200ms ease;
+}
+
+.content-text .collab[data-active] .collab-edge:not(.is-active) path,
+.content-text .collab[data-active] .collab-edge:not(.is-active) text {
+  opacity: 0.4;
+}
+
+.content-text .collab-edge.is-active path {
+  stroke: var(--accent);
+  stroke-width: 3.5;
+  stroke-dasharray: 7 5;
+  animation: collab-flow 900ms linear infinite;
+}
+
+.content-text .collab-edge.is-active text {
+  fill: var(--text);
+  font-weight: 600;
+}
+
+/* The dashes travel from the outer node toward the archive, which reads as
+ * papers flowing into the centre rather than as a decorative shimmer. */
+@keyframes collab-flow {
+  to { stroke-dashoffset: -24; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content-text .collab-edge.is-active path {
+    stroke-dasharray: none;
+    animation: none;
+  }
+}
+
+/* Nodes. Only the two ends of the selected relationship come forward. */
+.content-text .collab-node circle {
+  fill: var(--bg);
+  stroke: var(--border);
+  stroke-width: 1.5;
+  transition: stroke 200ms ease, stroke-width 200ms ease, fill 200ms ease;
+}
+
+.content-text .collab-node text {
+  font-family: var(--font-display);
+  font-size: 13px;
+  fill: var(--text-secondary);
+  pointer-events: none;
+  transition: fill 200ms ease;
+}
+
+.content-text .collab-node--small text {
+  font-size: 12px;
+}
+
+.content-text .collab-node.is-active circle {
+  stroke: var(--accent);
+  stroke-width: 2.5;
+}
+
+.content-text .collab-node.is-active text {
+  fill: var(--text);
+}
+
+/* The archive is the anchor every relationship is measured against, so it
+ * stays filled whether or not it is part of the current selection. */
+.content-text .collab-node--hub circle {
+  fill: var(--accent);
+  stroke: var(--accent);
+}
+
+.content-text .collab-node--hub text {
+  font-size: 14px;
+  font-weight: 600;
+  fill: var(--accent-contrast);
+}
+
+.content-text .collab-node--hub.is-active circle {
+  stroke: var(--text);
+  stroke-width: 2.5;
+}
+
+.content-text .collaboration-takeaway {
+  max-width: none;
+  margin: 1.25rem 0 0;
+  font-size: var(--type-small);
+  color: var(--text-secondary);
+}
+
+@media (max-width: 900px) {
+  .content-text .collab {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
 }
 
 .content-text .hot-paper-list {
@@ -3080,3 +3025,36 @@
     gap: 0.4rem;
   }
 }
+
+/* Supporting line under the open-position list. */
+.content-text .opening-note {
+  margin: 1rem 0 0;
+  color: var(--text-secondary);
+  font-size: var(--type-small);
+}
+
+/* Reveal control for the update archive. Sits at the end of the feed and
+ * carries the count so the length of the tail is never a surprise. */
+.content-text .updates-more-btn {
+  display: block;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border);
+  border-top: var(--rule-heavy);
+  background: var(--bg-card);
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: var(--type-small);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.content-text .updates-more-btn:hover,
+.content-text .updates-more-btn:focus-visible {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+

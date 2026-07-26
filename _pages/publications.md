@@ -63,7 +63,7 @@ classes: wide
         </div>
         <div class="pub-links" aria-label="Publication links">
           {% if pub.abstract %}
-          <button class="pub-abstract-toggle" type="button" onclick="toggleAbstract('abs-{{ group.name }}-{{ forloop.index }}')">Abstract</button>
+          <button class="pub-abstract-toggle" type="button" aria-expanded="false" aria-controls="abs-{{ group.name }}-{{ forloop.index }}">Abstract</button>
           {% endif %}
           {% if pub.pdf %}<a href="{{ pub.pdf }}" target="_blank" rel="noopener">PDF</a>{% endif %}
           {% if pub.publication_url %}<a class="pub-link-primary" href="{{ pub.publication_url }}" target="_blank" rel="noopener">Publication</a>{% endif %}
@@ -101,11 +101,6 @@ classes: wide
 
 <script>
   var activeCategories = new Set();
-
-  function toggleAbstract(id) {
-    var el = document.getElementById(id);
-    if (el) el.classList.toggle("show");
-  }
 
   function normalize(value) {
     return (value || "").toLowerCase();
