@@ -22,6 +22,8 @@
   .content-text .declare-hero {
     padding: 1rem 0 0.8rem;
   }
+  .content-text .declare-hero h1 {
+  }
   .content-text .declare-hero__subhead {
   }
   .content-text .person-card img,
@@ -35,12 +37,19 @@
 .content-text .declare-intro,
 .content-text .declare-section,
 .content-text .join-band,
+.content-text .notes-grid {
+}
 
 .content-text .declare-hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(450px, 0.9fr);
   gap: 2rem;
-  align-items: center;
+  /* The copy starts level with the top of the figure. It used to be centred
+   * against it, which was invisible while the affiliation strip lived inside
+   * this column — the strip padded the column out. Once the strip moved above
+   * the hero, centring left a 136px void between the strip's rule and the
+   * headline. */
+  align-items: start;
   min-height: 480px;
   /* The affiliation strip now sits above this section, so the landing page
    * opens at exactly the same distance below the masthead as every inner page.
@@ -81,12 +90,14 @@
   color: var(--declare-muted);
 }
 
+
 .content-text .project-links,
 .content-text .person-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem;
 }
+
 
 .content-text .project-links a:hover,
 .content-text .person-links a:hover {
@@ -176,6 +187,7 @@
   color: var(--declare-muted);
 }
 
+
 .content-text .project-grid,
 .content-text .people-grid,
 .content-text .opportunity-grid,
@@ -202,10 +214,12 @@
 
 /* Per-theme accent stripe - mirrors representative-card variants */
 
+
 .content-text .project-tag,
 .content-text .notes-grid span {
   color: var(--declare-rose);
 }
+
 
 .content-text .project-card h3,
 .content-text .person-card h3,
@@ -215,6 +229,7 @@
   margin: 0.55rem 0 0.4rem;
   color: var(--declare-ink);
 }
+
 
 .content-text .project-card p,
 .content-text .person-card p,
@@ -387,6 +402,9 @@
   text-decoration: none;
 }
 
+.content-text .representative-list strong {
+}
+
 .content-text .representative-list span {
   color: var(--declare-muted);
   text-align: right;
@@ -554,6 +572,8 @@
   color: var(--text);
 }
 
+
+
 .content-text .clean-list {
   margin: 1rem 0;
   padding-left: 1.1rem;
@@ -564,31 +584,69 @@
   margin: 1rem 0 3rem;
 }
 
+
 .content-text .opening-list {
   display: grid;
   gap: 0.85rem;
 }
+
+
+
+
+
+
+
+
 
 /* ============================================================
    Collaboration map - restrained, single-accent design
    Default: monochrome neutral. Active edge: brand gradient.
    ============================================================ */
 
+
+
+
+
+
 /* All edges share the same quiet neutral by default. No gradients, no shadows. */
+
 
 /* Override the per-relationship SVG gradient strokes from the markup */
 
+
 /* Active / hovered edge: lab brand gradient, full opacity, slightly thicker, soft glow */
+
 
 /* Edge labels: smaller, lighter, no heavy outline. Active gets the accent. */
 
+
+
 /* All nodes share the same calm card-on-card treatment. No per-type color palettes. */
 
+
+
 /* The center "Publication archive" is the single visual anchor: brand gradient */
+
+
+
 
 /* When a link is active, its connected outer node gets a subtle accent ring.
    Hover-on-link doesn't propagate to nodes in CSS, so we keep node feedback
    purely structural: the same gradient halo as the center on the archive node. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .content-text .lab-note-hero {
   display: grid;
@@ -793,6 +851,7 @@
     flex-direction: row;
   }
 
+
   .content-text .representative-grid,
   .content-text .project-grid,
   .content-text .funding-list,
@@ -806,6 +865,9 @@
   .content-text .declare-hero {
     min-height: auto;
     padding-top: 2rem;
+  }
+
+  .content-text .declare-hero h1 {
   }
 
   .content-text .declare-section {
@@ -834,6 +896,7 @@
     flex-direction: column;
   }
 
+
   .content-text .representative-grid,
   .content-text .project-grid,
   .content-text .people-grid,
@@ -855,6 +918,9 @@
   .content-text .hot-paper-list {
     grid-template-columns: 1fr;
   }
+
+
+
 
   .content-text .hot-paper-list article,
   .content-text .hot-paper-list article:nth-child(even),
@@ -879,16 +945,24 @@
 .content-text .project-tag,
 .content-text .notes-grid span,
 .content-text .funding-list span,
+.content-text .hot-paper-list > article > span {
+}
+
 
 .content-text .project-links a,
 .content-text .person-links a,
 .content-text .name-list a,
+.content-text .name-list span {
+}
 
 .content-text .declare-hero {
   grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.92fr);
   gap: clamp(2rem, 5vw, 4rem);
   min-height: 500px;
   padding: 3.8rem 0 3.2rem;
+}
+
+.content-text .declare-hero h1 {
 }
 
 .content-text .declare-hero h1 em,
@@ -916,6 +990,8 @@
 .content-text .declare-section__header h2,
 .content-text .join-band h2,
 .content-text > h2[id],
+.content-text .page-flow > h2[id] {
+}
 
 .content-text .declare-section {
   padding: 4.15rem 0 3.75rem;
@@ -937,6 +1013,7 @@
   background: transparent;
 }
 
+
 .content-text .project-card,
 .content-text .person-card,
 .content-text .note-card-link,
@@ -949,6 +1026,7 @@
   box-shadow: 0 3px 14px color-mix(in srgb, var(--shadow-color) 4.5%, transparent);
 }
 
+
 .content-text .project-card:hover,
 .content-text .person-card:hover,
 .content-text .note-card-link:hover,
@@ -958,6 +1036,7 @@
   transform: translateY(-1px);
 }
 
+
 .content-text .project-card h3,
 .content-text .person-card h3,
 .content-text .notes-grid h3,
@@ -965,6 +1044,11 @@
 .content-text .opening-list h3,
 .content-text .representative-card h3,
 .content-text .hot-paper-list h3,
+.content-text .funding-list h3 {
+}
+
+.content-text .updates-year > h2 {
+}
 
 .content-text .representative-card {
   position: relative;
@@ -978,6 +1062,12 @@
 .content-text .representative-card--safety .representative-card__head,
 .content-text .representative-card--efficiency .representative-card__head {
   background: var(--bg-card);
+}
+
+.content-text .representative-list a {
+}
+
+.content-text .representative-list span {
 }
 
 .content-text .project-links a,
@@ -995,6 +1085,9 @@
   .content-text .declare-hero {
     gap: 1.5rem;
     padding-top: 2.25rem;
+  }
+
+  .content-text .declare-hero h1 {
   }
 
   .content-text .declare-section,
@@ -1059,6 +1152,7 @@
   color: var(--text);
 }
 
+
 .content-text .declare-section__header > div::before,
 .content-text > h2[id]::before {
   display: none;
@@ -1100,6 +1194,7 @@
   margin-top: 0.5rem;
 }
 
+
 .content-text .project-card,
 .content-text .person-card,
 .content-text .note-card-link,
@@ -1115,7 +1210,11 @@
   border-radius: 0;
   background: var(--bg-card);
   box-shadow: none;
+  /* Justification needs a measure to work with. In a card column — often
+   * under 300px in a three-up grid — it opens rivers between words instead.
+   * Cards set their own alignment; full-width prose keeps the global one. */
 }
+
 
 .content-text .project-card:hover,
 .content-text .person-card:hover,
@@ -1134,6 +1233,7 @@
   border-left: 3px solid var(--accent);
 }
 
+
 .content-text .project-card h3,
 .content-text .person-card h3,
 .content-text .notes-grid h3,
@@ -1142,6 +1242,8 @@
 .content-text .representative-card h3,
 .content-text .hot-paper-list h3,
 .content-text .funding-list h3,
+.content-text .collab-inspector h3 {
+}
 
 .content-text .project-links a,
 .content-text .project-links span,
@@ -1164,10 +1266,21 @@
   color: var(--accent-contrast);
 }
 
+
+
 [data-theme="dark"] .content-text .project-links a:hover,
 [data-theme="dark"] .content-text .person-links a:hover {
   color: var(--accent-contrast);
 }
+
+[data-theme="dark"] .content-text .page-flow > h2[id]::before,
+[data-theme="dark"] .content-text .page-flow > .declare-intro h2::before,
+[data-theme="dark"] .content-text .page-flow > .declare-section > .declare-section__header h2::before,
+[data-theme="dark"] .content-text .page-flow > section[id] > h2:first-child[data-section-label]::before,
+[data-theme="dark"] .content-text .page-flow > section[id] > .declare-section__header h2::before {
+  color: var(--accent-contrast);
+}
+
 
 [data-theme="dark"] .content-text .project-card,
 [data-theme="dark"] .content-text .person-card,
@@ -1195,6 +1308,8 @@
 
 /* Section headings carry the label chip alone; no page adds a rule of its own. */
 
+
+
 @media (max-width: 1020px) {
   .content-text .declare-hero {
     grid-template-columns: 1fr;
@@ -1204,6 +1319,9 @@
 @media (max-width: 720px) {
   .content-text .declare-hero {
     padding-top: 2rem;
+  }
+
+  .content-text .declare-hero h1 {
   }
 
   .content-text .declare-section,
@@ -1347,6 +1465,8 @@
 
 /* Cards are reserved for comparable projects, people, and active opportunities. */
 
+
+
 .content-text .funding-list--records {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0 2rem;
@@ -1366,6 +1486,12 @@
 
 .content-text .funding-list--records span {
   margin-bottom: 0.4rem;
+}
+
+.content-text .funding-list--records h3 {
+}
+
+.content-text .funding-list--records p {
 }
 
 /* Fills its column; a 74ch cap left ~175px dead to the right of the rule. */
@@ -1393,6 +1519,7 @@
   min-width: 0;
 }
 
+
 .content-text img {
   max-width: 100%;
 }
@@ -1403,6 +1530,8 @@
   margin-top: 0.1rem;
   color: var(--text-secondary);
 }
+
+
 
 @media (max-width: 1020px) {
   .content-text .declare-intro.lab-overview,
@@ -1420,6 +1549,9 @@
   .content-text .declare-hero {
     gap: 1.75rem;
     padding-bottom: 2.25rem;
+  }
+
+  .content-text .declare-hero__subhead {
   }
 
   .content-text .hero-actions--lab {
@@ -1461,6 +1593,8 @@
   .content-text .funding-list--records {
     grid-template-columns: 1fr;
   }
+
+
 
 }
 
@@ -1596,6 +1730,12 @@
   box-shadow: none;
 }
 
+.content-text .funding-list h3 {
+}
+
+.content-text .funding-list p {
+}
+
 /* Theme context comes first; the project grid then uses the full content width. */
 .content-text .research-theme {
   display: block;
@@ -1627,6 +1767,7 @@
   padding-left: 1.1rem;
 }
 
+
 /* The research page is a project catalogue. Theme explanations live on the
  * homepage, so a project grid should begin immediately below each heading. */
 .content-text .research-theme > .project-grid {
@@ -1635,6 +1776,8 @@
   padding: 0;
   border-bottom: 0;
 }
+
+
 
 @media (max-width: 820px) {
   .content-text .research-theme > div:first-child {
@@ -1664,6 +1807,10 @@
   color: var(--accent);
 }
 
+
+
+
+
 .content-text .note-meta span {
   border-radius: 0;
 }
@@ -1683,6 +1830,8 @@
 }
 
 /* Lab notes retain an editorial hero and use the standard section scale below it. */
+.content-text .lab-note-hero h1 {
+}
 
 .lab-note-page .content-text .lab-note-hero ~ h2 {
   counter-increment: lab-note-section;
@@ -1717,6 +1866,9 @@
 .content-text .note-figure {
   border-radius: 0;
   box-shadow: none;
+}
+
+.content-text .lab-note-share > span {
 }
 
 /* Homepage overview is a DeCLaRe-specific composition; shared typography and
@@ -2059,6 +2211,7 @@
   padding: 0;
   list-style: none;
   border-top: 1px solid var(--border);
+  /* Same reason as the cards: this column is far too narrow to justify. */
 }
 
 .content-text .collab-legend li {
@@ -2205,6 +2358,9 @@
   fill: var(--text-secondary);
   pointer-events: none;
   transition: fill 200ms ease;
+}
+
+.content-text .collab-node--small text {
 }
 
 .content-text .collab-node.is-active circle {
@@ -2716,6 +2872,9 @@
     align-items: baseline;
   }
 
+  .content-text .people-section__header h2 {
+  }
+
   .content-text .people-layout .people-grid,
   .content-text .people-layout .people-grid--faculty,
   .content-text .people-layout .people-grid--research-assistants,
@@ -2748,6 +2907,8 @@
     height: 92px;
   }
 
+  .content-text .people-layout .people-grid--faculty .person-card h3 {
+  }
 }
 
 /* ===== Research theme: motivation + selected work =====
