@@ -46,7 +46,7 @@
   gap: 2rem;
   /* The copy starts level with the top of the figure. It used to be centred
    * against it, which was invisible while the affiliation strip lived inside
-   * this column — the strip padded the column out. Once the strip moved above
+   * this column, because the strip padded the column out. Once the strip moved above
    * the hero, centring left a 136px void between the strip's rule and the
    * headline. */
   align-items: start;
@@ -55,7 +55,7 @@
    * opens at exactly the same distance below the masthead as every inner page.
    * Inside the hero the two columns stay vertically centred against each other,
    * which is what the compass wants; that centring is why the strip could not
-   * stay in the left column — it drifted 94px lower than the identical strip on
+   * stay in the left column: it drifted 94px lower than the identical strip on
    * every other page. */
   padding: 0 0 2.8rem;
   border-bottom: 1px solid var(--declare-line);
@@ -1210,8 +1210,8 @@
   border-radius: 0;
   background: var(--bg-card);
   box-shadow: none;
-  /* Justification needs a measure to work with. In a card column — often
-   * under 300px in a three-up grid — it opens rivers between words instead.
+  /* Justification needs a measure to work with. In a card column,
+   * often under 300px in a three-up grid, it opens rivers between words instead.
    * Cards set their own alignment; full-width prose keeps the global one. */
 }
 
@@ -1987,7 +1987,7 @@
   transition: stroke 180ms ease, stroke-width 180ms ease;
 }
 
-/* The hub is the same surface as the six theme boxes — the site's card colour,
+/* The hub is the same surface as the six theme boxes, the site's card colour,
  * ringed in the accent. Filling it with ink (or with white in dark mode) made
  * the centre a black or white hole that belonged to no part of the palette.
  * Matching the theme costs nothing in legibility: the logo's eyes read at
@@ -2429,7 +2429,7 @@
 }
 
 /* The compass field carries a transparent band above its top box and below its
- * bottom one — the boxes sit inside a 100x92 coordinate space and do not reach
+ * bottom one, because the boxes sit inside a 100x92 coordinate space and do not reach
  * its edges. Aligned flush with the headline, that band pushed the first thing
  * you actually see 57px below the first line of type, and left the figure
  * hanging 176px past the end of the copy. Pulling the column up by the depth of

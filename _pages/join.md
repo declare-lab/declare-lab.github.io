@@ -19,7 +19,7 @@ classes: wide
 <section class="join-section collaboration-section" id="collaboration-structure">
 <h2 data-section-label="02">How Work Gets Done Here</h2>
 
-<p>Almost nothing here is written alone. A paper carries 5.6 authors on average — a median of five — and typically one or two are DeCLaRe members, with the rest from elsewhere. Reading the lab's 167 papers since 2019 as a set of collaboration types gives the shape of it; pick a relationship to trace it through the map.</p>
+<p>Almost nothing here is written alone. A paper carries 5.6 authors on average, a median of five, and typically one or two are DeCLaRe members, with the rest from elsewhere. Reading the lab's 167 papers since 2019 as a set of collaboration types gives the shape of it; pick a relationship to trace it through the map.</p>
 
 <div class="collab" id="collabMap">
   <ol class="collab-legend">
@@ -142,7 +142,7 @@ classes: wide
 <div class="opening-list">
   <article>
     <h3>PhD Students</h3>
-    <p>For applicants drawn to one of the six themes — safety, trustworthiness, multimodality, AI for Science, efficiency, or embodied AI. Publications help but are not required; engineering ability, research judgment, and persistence matter as much.</p>
+    <p>For applicants drawn to one of the six themes: safety, trustworthiness, multimodality, AI for Science, efficiency, or embodied AI. Publications help but are not required; engineering ability, research judgment, and persistence matter as much.</p>
   </article>
   <article>
     <h3>Postdoctoral Researchers</h3>
@@ -162,7 +162,7 @@ classes: wide
 
 <p>Read the <a href="https://drive.google.com/file/d/10lmu5YGDzr2Yw6kBFWwe7ifZ9Ec9WCl1/view?usp=sharing">research slides</a> and browse recent <a href="/publications/">publications</a> first, then email <code>soujanya [dot] poria [at] ntu [dot] edu [dot] sg</code> with your CV, a transcript if applicable, representative work, and a short note naming the theme or paper your interests connect to.</p>
 
-<p>Keep it short and specific — a concrete note about one paper says more than a general statement of interest.</p>
+<p>Keep it short and specific. A concrete note about one paper says more than a general statement of interest.</p>
 </section>
 
 </div>

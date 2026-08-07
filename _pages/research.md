@@ -59,7 +59,7 @@ classes: wide
 
 <h2 id="trustworthiness" data-section-label="02">Trustworthiness</h2>
 
-<p class="theme-brief">A fluent answer and a trustworthy one are not the same thing. We work on systems that ground what they say in retrieved evidence, attribute it honestly, decline when the evidence will not support an answer, and — where several agents cooperate — calibrate how much they should rely on one another.</p>
+<p class="theme-brief">A fluent answer and a trustworthy one are not the same thing. We work on systems that ground what they say in retrieved evidence, attribute it honestly, decline when the evidence will not support an answer, and, where several agents cooperate, calibrate how much they should rely on one another.</p>
 
 <div class="theme-works">
   <article class="theme-work">
@@ -90,7 +90,7 @@ classes: wide
 
 <h2 id="multimodality" data-section-label="03">Multimodality</h2>
 
-<p class="theme-brief">Meaning arrives through words, voice, face, and scene at once, and a model that reads only one channel misses most of it. We study how to fuse those channels — separating what they share from what belongs to each — and how to generate in them, from emotion in multi-party conversation to text-to-audio synthesis.</p>
+<p class="theme-brief">Meaning arrives through words, voice, face, and scene at once, and a model that reads only one channel misses most of it. We study how to fuse those channels, separating what they share from what belongs to each, and how to generate in them, from emotion in multi-party conversation to text-to-audio synthesis.</p>
 
 <div class="theme-works">
   <article class="theme-work">
@@ -121,7 +121,7 @@ classes: wide
 
 <h2 id="ai-for-science" data-section-label="04">AI for Science</h2>
 
-<p class="theme-brief">We ask whether language models can do more than summarize the literature — whether they can propose hypotheses a scientist would think worth testing. Measuring that claim honestly is half the problem, so we build benchmarks that check whether a model rediscovers findings deliberately held out of its training data.</p>
+<p class="theme-brief">We ask whether language models can do more than summarize the literature, whether they can propose hypotheses a scientist would think worth testing. Measuring that claim honestly is half the problem, so we build benchmarks that check whether a model rediscovers findings deliberately held out of its training data.</p>
 
 <div class="theme-works">
   <article class="theme-work">
@@ -191,7 +191,7 @@ classes: wide
 
 <h2 id="embodied-ai" data-section-label="06">Embodied AI</h2>
 
-<p class="theme-brief">Language and vision only matter to a robot if they end in the right action. We build compact vision-language-action models that ground perception in behavior, and evaluations that test the whole path — from what the agent sees, through what it decides, to what it actually does.</p>
+<p class="theme-brief">Language and vision only matter to a robot if they end in the right action. We build compact vision-language-action models that ground perception in behavior, and evaluations that test the whole path, from what the agent sees, through what it decides, to what it actually does.</p>
 
 <div class="theme-works">
   <article class="theme-work">

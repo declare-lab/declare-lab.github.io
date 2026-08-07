@@ -23,7 +23,7 @@ classes: wide
     {%- comment -%}
       The rail carries a month and nothing else. Each entry already sits inside a
       section headed with its year, so printing the year again restated the group
-      heading down the whole column. `date` is not uniformly a date, though —
+      heading down the whole column. `date` is not uniformly a date, though:
       some entries hold a venue ("ICLR 2026") or a grant span ("2026-2029"), and
       taking the first token blindly rendered "ICLR" and "2026-2029" as if they
       were months. So the month prints only when it really is one; the venue and
@@ -89,7 +89,7 @@ classes: wide
       more.hidden = left <= 0;
       if (left > 0) {
         more.textContent = left > BATCH
-          ? "Show " + BATCH + " more — " + left + " remaining"
+          ? "Show " + BATCH + " more, " + left + " remaining"
           : "Show the remaining " + left;
       }
     }

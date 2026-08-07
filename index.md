@@ -13,8 +13,8 @@ title: ""
 
 <section class="home-hero declare-hero">
   <div class="declare-hero__copy">
-    <h1>Research across Six Themes in <em>AI</em></h1>
-    <p class="declare-hero__subhead">DeCLaRe is a research group at NTU working across Safety, Trustworthiness, Multimodality, AI for Science, Efficiency, and Embodied AI.</p>
+    <h1>Hi! <span lang="zh">你好</span><br>We are from <em>DeCLaRe Lab</em></h1>
+    <p class="declare-hero__subhead">We are a research group at NTU Singapore, working across Safety, Trustworthiness, Multimodality, AI for Science, Efficiency, and Embodied AI.</p>
     <div class="hero-actions hero-actions--lab">
       <a class="btn-primary btn--compact" href="/research/"><i class="fa-solid fa-compass" aria-hidden="true"></i><span>Themes</span></a>
       <a class="btn-secondary btn--compact" href="/publications/"><i class="fa-solid fa-book-open" aria-hidden="true"></i><span>Papers</span></a>
@@ -31,7 +31,7 @@ title: ""
              Every theme box presents its near edge at radius 24, so all six
              sit the same distance from the centre: the vertical pair by their
              horizontal edge (y 22 and y 70), the four diagonals by the midpoint
-             of their vertical edge, at (±21.7, ∓10.25) from the centre —
+             of their vertical edge, at (±21.7, ∓10.25) from the centre:
              sqrt(21.7² + 10.25²) = 24. Each connector runs radially to the
              bearing ring and then turns to meet its box square-on. -->
         <svg class="research-map__grid" viewBox="0 0 100 92" preserveAspectRatio="none" aria-hidden="true" focusable="false">
