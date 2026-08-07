@@ -1,8 +1,7 @@
 <header class="site-header">
   <div class="header-inner">
     <a class="site-title site-logo-title" href="{{ '/' | relative_url }}" aria-label="{{ site.title }}">
-      <img class="site-logo site-logo--light" src="{{ '/assets/declare-core/brand/logos/declare-horizontal-light.svg' | relative_url }}" alt="{{ site.title }}">
-      <img class="site-logo site-logo--dark" src="{{ '/assets/declare-core/brand/logos/declare-horizontal-dark.svg' | relative_url }}" alt="{{ site.title }}">
+      {% include brand/logo-horizontal.html class="site-logo" %}
     </a>
     <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
       <i class="fas fa-bars menu-icon-open" aria-hidden="true"></i>
