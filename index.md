@@ -57,8 +57,8 @@ title: ""
           <path class="research-map__spoke" data-spoke="efficiency" d="M61.258 52.5 L67.753 56.25 H71.7"></path>
           <circle class="research-map__hub" cx="50" cy="46" r="13"></circle>
         </svg>
-        <img class="research-map__logo research-map__logo--light" src="/assets/images/logos/declare-icon-light.png" alt="DeCLaRe Lab robot icon">
-        <img class="research-map__logo research-map__logo--dark" src="/assets/images/logos/declare-icon-dark.png" alt="DeCLaRe Lab robot icon">
+        <img class="research-map__logo research-map__logo--light" src="/assets/declare-core/brand/logos/declare-icon-light.svg" alt="DeCLaRe Lab robot icon">
+        <img class="research-map__logo research-map__logo--dark" src="/assets/declare-core/brand/logos/declare-icon-dark.svg" alt="DeCLaRe Lab robot icon">
         {% for theme in site.data.home.themes %}
         <a class="research-node research-node--{{ theme.id }}" data-theme="{{ theme.id }}" href="/research/#{{ theme.id }}">{{ theme.name }}</a>
         {% endfor %}
