@@ -13,7 +13,7 @@ title: ""
 
 <section class="home-hero declare-hero">
   <div class="declare-hero__copy">
-    <h1>Hi! <span lang="zh">你好</span><br>We are from <em>DeCLaRe Lab</em></h1>
+    <h1>Hi! <span lang="zh">你好</span><br>We're the <em>DeCLaRe Lab</em></h1>
     <p class="declare-hero__subhead">We are a research group at NTU Singapore, working across Safety, Trustworthiness, Multimodality, AI for Science, Efficiency, and Embodied AI.</p>
     <div class="hero-actions hero-actions--lab">
       <a class="btn-primary btn--compact" href="/research/"><i class="fa-solid fa-compass" aria-hidden="true"></i><span>Themes</span></a>
