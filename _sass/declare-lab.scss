@@ -1998,23 +1998,15 @@
   stroke-width: 2.5;
 }
 
+/* One inline mark serves both themes now: its ink is currentColor, so the
+   light/dark pair and the display toggling between them are gone. */
 .content-text .research-map__logo {
   position: absolute;
   inset: 50% auto auto 50%;
   width: auto;
   height: 17cqw;
   transform: translate(-50%, -50%);
-  display: none;
-}
-
-.content-text .research-map__logo--light,
-[data-theme="dark"] .content-text .research-map__logo--dark {
   display: block;
-}
-
-.content-text .research-map__logo--dark,
-[data-theme="dark"] .content-text .research-map__logo--light {
-  display: none;
 }
 
 .content-text .research-node {
@@ -3040,9 +3032,7 @@
   }
 
   .content-text .research-map__grid,
-  .content-text .research-map__logo,
-  [data-theme] .content-text .research-map__logo--light,
-  [data-theme] .content-text .research-map__logo--dark {
+  .content-text .research-map__logo {
     display: none;
   }
 
