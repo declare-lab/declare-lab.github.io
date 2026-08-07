@@ -57,7 +57,7 @@ title: ""
           <path class="research-map__spoke" data-spoke="efficiency" d="M61.258 52.5 L67.753 56.25 H71.7"></path>
           <circle class="research-map__hub" cx="50" cy="46" r="13"></circle>
         </svg>
-        {% include brand/logo-icon.html class="research-map__logo" %}
+        {% include brand/logo-icon.html class="research-map__logo" uid="compassmark" %}
         {% for theme in site.data.home.themes %}
         <a class="research-node research-node--{{ theme.id }}" data-theme="{{ theme.id }}" href="/research/#{{ theme.id }}">{{ theme.name }}</a>
         {% endfor %}
