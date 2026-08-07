@@ -78,11 +78,11 @@ items:
   summary: Work spanning text-to-audio generation, operational safety, multi-agent social
     dynamics, and retrieval evaluation.
   bullets:
-  - TangoFlux: fast, faithful text-to-audio generation with flow matching
-  - OffTopicEval: whether task-specific agents accept in-domain queries while refusing the
-    rest
-  - LLMs Can't Handle Peer Pressure: models crumbling under multi-agent social influence
-  - Demystifying Deep Search: a hint-free multi-hop evaluation of search agents
+  - "TangoFlux: fast, faithful text-to-audio generation with flow matching"
+  - "OffTopicEval: whether task-specific agents accept in-domain queries while
+    refusing the rest"
+  - "LLMs Can't Handle Peer Pressure: models crumbling under multi-agent social influence"
+  - "Demystifying Deep Search: a hint-free multi-hop evaluation of search agents"
   links:
   - label: TangoFlux
     url: https://arxiv.org/abs/2412.21037
@@ -99,8 +99,8 @@ items:
   summary: 'Both concern doing more with less: which data a model should train on, and where
     a video model should look.'
   bullets:
-  - Data Agent: end-to-end dynamic data selection for training-aware efficiency
-  - Chain-of-Glimpse: search-guided, object-grounded progressive reasoning over video
+  - "Data Agent: end-to-end dynamic data selection for training-aware efficiency"
+  - "Chain-of-Glimpse: search-guided, object-grounded progressive reasoning over video"
   links:
   - label: Data Agent
     url: https://arxiv.org/abs/2603.07433
